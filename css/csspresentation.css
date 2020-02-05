@@ -308,6 +308,7 @@ h3{
 
 
 #envoi {
+    background-color: white;
     box-shadow:inset -5px -5px 5px grey, inset -5px -5px 5px white, inset -5px 5px 5px white, inset 5px -5px 5px white!important}
 #envoi:hover{color:rgb(255, 255, 255)!important; background-color: darkgrey!important; 
     box-shadow: inset 5px 5px 5px grey, inset -5px -5px 5px white, inset -5px 5px 15px white, inset 5px -5px 5px white!important}
