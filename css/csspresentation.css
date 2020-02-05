@@ -368,7 +368,7 @@ h3{
 .JP-border{border:1px solid #ccc!important}
 .JP-input{
     background-color: darkgrey;
-    box-shadow: inset 5px 5px 10px grey, inset -5px -5px 10px white, -5px -5px 10px grey, 5px 5px 10px grey, inset -5px 5px 10px white, inset 5px -5px 10px white, 5px -5px 10px grey, -5px 5px 10px grey;
+    box-shadow: inset 5px 5px 10px grey, inset -5px 5px 10px white, inset 5px -5px 10px white, inset -5px -5px 10px white;
     margin: 0 0 15px;
     border-radius: 20px;
     padding:8px;
