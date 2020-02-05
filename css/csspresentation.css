@@ -367,6 +367,8 @@ h3{
 .JP-display-topright{position:absolute;right:0;top:0}
 .JP-border{border:1px solid #ccc!important}
 .JP-input{
+    box-shadow: -5px -5px 10px white, 5px -5px 10px white, -5px 5px 10px grey, 5px 5px 10px grey;
+    margin: 0 0 15px;
     border-radius: 20px;
     padding:8px;
     display:block;
