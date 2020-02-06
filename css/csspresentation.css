@@ -457,3 +457,18 @@ h3{
 .JP-display-container:hover .w3-display-hover{display:block}.JP-display-container:hover span.w3-display-hover{display:inline-block}.w3-display-hover{display:none}
 .JP-round,.w3-round-medium{border-radius:15px}
 .JP-xxlarge{font-size:36px!important}
+
+/*couleur du surlignement pour WebKit
+(utilisé par Chrome et Safari, par exemple)*/
+::selection {
+    color: #fff;
+    background: rgb(212, 0, 255);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+/*couleur du surlignement pour Gecko 
+(utilisé par Mozilla Firefox, par exemple)*/
+::-moz-selection {
+    color: #fff;
+    background: rgb(212, 0, 255);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
