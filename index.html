@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="fr">
-<title>Parallax</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="shortcut icon" type="image/x-icon" href="images/petitspoids.jpg">
-<link rel="stylesheet" href="css/csspresentation.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <header>
+        <title>Parallax</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/x-icon" href="images/petitspoids.jpg">
+        <link rel="stylesheet" href="css/csspresentation.css">
+        <link rel="stylesheet" href="css/test2.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="js/test2.js"></script>
+    </header>
 <body>
 
     <!-- Navbar (sit on top) -->
@@ -129,19 +132,45 @@
     <!-- Container (Portfolio Section) -->
     <div class="JP-content JP-container JP-padding-64" id="portfolio">
         <h3 class="JP-center"><i class="fa fa-instagram"></i></h3>
-        <p class="JP-center">Quelques photos tirées de mon insta<br>clique dessus pour plus d'infos</p><br>
+        <p class="JP-center">Quelques photos tirées de mon insta:</p><br>
 
         <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+        <div translate="no" style="--n-rows: 3;--n-cols: 6;">
+            <div id=hive>
+                <div class="hex-cell"><img class="imgHive" onclick="onClick(this)" alt="Rue Saint-Laurent"
+                        src="https://scontent-mrs2-2.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/69214340_437447796865230_7722286184549352147_n.jpg?_nc_ht=scontent-mrs2-2.cdninstagram.com&_nc_cat=106&_nc_ohc=XpyQaLyWG4cAX_-Gd86&oh=45866dfb03d8abc3fe9a1639cb91a6a2&oe=5ED8E85C">
+                </div>
+                <div class="hex-cell"><img class="imgHive" onclick="onClick(this)" alt="La Bastille"
+                        src="https://scontent-mrs2-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/69099063_418104738815327_8913744291706338658_n.jpg?_nc_ht=scontent-mrs2-1.cdninstagram.com&_nc_cat=111&_nc_ohc=Ndq4ITrDXvAAX_02kp1&oh=c611a44a526b3542ae9e88e5468632c3&oe=5ED3A74D">
+                </div>
+                <div class="hex-cell"><img class="imgHive" onclick="onClick(this)" alt="MC²: Maison de la Culture"
+                        src="https://scontent-mrs2-2.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/69553316_937868303256991_5559877357789259839_n.jpg?_nc_ht=scontent-mrs2-2.cdninstagram.com&_nc_cat=107&_nc_ohc=LUQK8TCQOxUAX_N8_U3&oh=46da3f2e706fb4217e8f0b88c1cfbbe1&oe=5EC33E61">
+                </div>
+                <div class="hex-cell"><img class="imgHive" onclick="onClick(this)" alt="1.2..3... textes"
+                        src="https://scontent-mrs2-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/66106303_365149037720432_1075803235121459111_n.jpg?_nc_ht=scontent-mrs2-1.cdninstagram.com&_nc_cat=108&_nc_ohc=xqEtAYDcMJ0AX8abm9J&oh=26f5c53604dd5e5163984acfd0903038&oe=5ED8B6CF">
+                </div>
+                <div class="hex-cell"><img class="imgHive" onclick="onClick(this)" alt="Qui es?"
+                        src="https://scontent-mrs2-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/69645643_447042179502411_1109652311207328199_n.jpg?_nc_ht=scontent-mrs2-1.cdninstagram.com&_nc_cat=103&_nc_ohc=FzAizKPWn84AX-aL7Rf&oh=43e45572c60b24dc7565b80eabfd8fa0&oe=5ED798E9">
+                </div>
+                <div class="hex-cell"><img class="imgHive" onclick="onClick(this)" alt="Street Art"
+                        src="https://scontent-mrs2-2.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/66675879_157778465360017_3874226051628043580_n.jpg?_nc_ht=scontent-mrs2-2.cdninstagram.com&_nc_cat=101&_nc_ohc=mHn-FiyEKIYAX-e8JCu&oh=f5ce3b63ef06fac7af6cb96f6a360937&oe=5ED44429">
+                </div>
+                <div class="hex-cell"><img class="imgHive" onclick="onClick(this)" alt="404 Gaming & Drinks"
+                        src="https://scontent-mrs2-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/70946652_167929570925859_726448088344891296_n.jpg?_nc_ht=scontent-mrs2-1.cdninstagram.com&_nc_cat=103&_nc_ohc=Edi9Tbp1HIoAX8-My1n&oh=e0c798858255a5de9856f673b6dca4ce&oe=5ED1D866">
+                </div>
+            </div>
+        </div>
+
+        <!--
         <div class="JP-row-padding JP-center">
             <div class="JP-col m3">
                 <img src="https://scontent-mrs2-2.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/69214340_437447796865230_7722286184549352147_n.jpg?_nc_ht=scontent-mrs2-2.cdninstagram.com&_nc_cat=106&_nc_ohc=XpyQaLyWG4cAX_-Gd86&oh=45866dfb03d8abc3fe9a1639cb91a6a2&oe=5ED8E85C"
-                    style="width:100%" onclick="onClick(this)" class="JP-hover-opacity"
-                    alt="Rue Saint-Laurent">
+                    style="width:100%" onclick="onClick(this)" class="JP-hover-opacity" alt="Rue Saint-Laurent">
             </div>
 
             <div class="JP-col m3">
                 <img src="https://scontent-mrs2-2.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/69553316_937868303256991_5559877357789259839_n.jpg?_nc_ht=scontent-mrs2-2.cdninstagram.com&_nc_cat=107&_nc_ohc=LUQK8TCQOxUAX_N8_U3&oh=46da3f2e706fb4217e8f0b88c1cfbbe1&oe=5EC33E61"
-                    style="width:100%" onclick="onClick(this)" class="JP-hover-opacity" alt="MC2: Maison de la Culture">
+                    style="width:100%" onclick="onClick(this)" class="JP-hover-opacity" alt="MC²: Maison de la Culture">
             </div>
 
             <div class="JP-col m3">
@@ -175,11 +204,11 @@
                 <img src="https://scontent-mrs2-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/66106303_365149037720432_1075803235121459111_n.jpg?_nc_ht=scontent-mrs2-1.cdninstagram.com&_nc_cat=108&_nc_ohc=xqEtAYDcMJ0AX8abm9J&oh=26f5c53604dd5e5163984acfd0903038&oe=5ED8B6CF"
                     style="width:100%" onclick="onClick(this)" class="JP-hover-opacity" alt="1.2..3... textes">
             </div>
-            <a href="https://www.instagram.com/psychoactif_38/" target="_blank"><button
-                    class="boutons JP-padding-large JP-light-grey" style="margin-top:64px">Mon Insta</button></a>
         </div>
+    --><div class="JP-center">
+            <a href="https://www.instagram.com/psychoactif_38/" target="_blank"><button 
+                    class="boutons JP-padding-large JP-light-grey" style="margin-top:64px">Mon Insta</button></a></div>
     </div>
-
     <!-- Modal for full size images on click-->
     <div id="modal01" class="JP-modal noir" onclick="this.style.display='none'">
         <span class="boutons JP-large noir JP-display-topright" title="Close Modal Image"><i
