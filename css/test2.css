@@ -1,50 +1,97 @@
+/* HIVEimage */
 
+#hive {
+    --l: calc(100vw/var(--n-cols));
+    --hl: calc(.5*var(--l));
+    --ri: calc(.5*1.73205*var(--l));
+    box-sizing: border-box;
+    display: grid;
+    place-content: center;
+    grid-template: repeat(var(--n-rows), var(--l))/repeat(var(--n-cols), var(--ri));
+    grid-gap: var(--hl) 0;
+    overflow: hidden;
+    margin: 0;
+    padding: var(--hl) 0;
+    height: 100%;
+    width: 100%;
+    filter: drop-shadow(2px 2px 5px);
+}
+
+@media (orientation: landscape) {
     #hive {
-        --l: calc(100vw/var(--n-cols));
-        --hl: calc(.5*var(--l));
-        --ri: calc(.5*1.73205*var(--l));
-        box-sizing: border-box;
-        display: grid;
-        place-content: center;
-        grid-template: repeat(var(--n-rows), var(--l))/repeat(var(--n-cols), var(--ri));
-        grid-gap: var(--hl) 0;
-        overflow: hidden;
-        margin: 0;
-        padding: var(--hl) 0;
-        height: 100%;
-        width: 100%;
-        filter: drop-shadow(2px 2px 5px);
-      }
-      @media (orientation: landscape) {
-        #hive {
-          --l: calc(100vh/(var(--n-rows) + 3));
-        }
-      }
-      
-      .hex-cell {
-        overflow: hidden;
-        grid-column-end: span 2;
-        margin: calc(-1*var(--hl)) 0;
-        transform: scale(0.95);
-        clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-      }
-      
-      .imgHive {
-        --hl: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transform: scale(calc(1 + .2*var(--hl)));
-        filter: brightness(calc(.6*(1 + var(--hl))));
-        transition: .7s;
-      }
-      .imgHive:hover {
-        --hl: 1;
-      }
+        --l: calc(100vh/(var(--n-rows) + 3));
+    }
+}
 
+.hex-cell {
+    overflow: hidden;
+    grid-column-end: span 2;
+    margin: calc(-1*var(--hl)) 0;
+    transform: scale(0.95);
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
 
+.imgHive {
+    --hl: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(calc(1 + .2*var(--hl)));
+    filter: brightness(calc(.6*(1 + var(--hl))));
+    transition: .7s;
+}
 
+.imgHive:hover {
+    --hl: 1;
+}
 
+.hex-cell:nth-of-type(5n + 1) { grid-column-start: 2 }
 
+/* Fin HIVEimage */
 
-      .hex-cell:nth-of-type(5n + 1) { grid-column-start: 2 }
+/* Arrivee d'image */
+
+.vignettes {
+    animation: fadein 3s;
+    -moz-animation: fadein 3s; /* Firefox */
+    -webkit-animation: fadein 3s; /* Safari et Chrome */
+    -o-animation: fadein 3s; /* Opera */
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+    @-moz-keyframes fadein { /* sur Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+    @-webkit-keyframes fadein { /* sur Safari et Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+@-o-keyframes fadein { /* sur Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Fin d'arrivee d'image */
