@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="js/test2.js"></script>
+        <script src="js/prallax.js"></script>
     </head>
 <body>
 
@@ -279,37 +280,6 @@
         <p>Powered by <a href="https://www.w3schools.com/" title="W3.CSS" target="_blank"
                 class="JP-hover-text-green">w3.css</a></p>
     </footer>
-
-    <script>
-        // Modal Image Gallery
-        function onClick(element) {
-            document.getElementById("img01").src = element.src;
-            document.getElementById("modal01").style.display = "block";
-            var captionText = document.getElementById("caption");
-            captionText.innerHTML = element.alt;
-        }
-
-        // Change style of navbar on scroll
-        window.onscroll = function () { myFunction() };
-        function myFunction() {
-            var navbar = document.getElementById("Navbar");
-            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                navbar.className = "nav-bar" + " card" + " animate-top" + " blanc";
-            } else {
-                navbar.className = navbar.className.replace(" card animate-top blanc", "");
-            }
-        }
-
-        // Used to toggle the menu on small screens when clicking on the menu button
-        function toggleFunction() {
-            var x = document.getElementById("Demo");
-            if (x.className.indexOf("voir") == -1) {
-                x.className += " voir";
-            } else {
-                x.className = x.className.replace(" voir", "");
-            }
-        }
-    </script>
 
 </body>
 
