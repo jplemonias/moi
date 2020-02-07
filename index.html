@@ -4,13 +4,13 @@
         <title>Parallax</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="shortcut icon" type="image/x-icon" href="images/ptitspoid.png">
-        <link rel="stylesheet" href="css/csspresentation.css">
-        <link rel="stylesheet" href="css/test2.css">
+        <link rel="shortcut icon" type="image/x-icon" href="public/img/ptitspoid.png">
+        <link rel="stylesheet" href="public/css/csspresentation.css">
+        <link rel="stylesheet" href="public/css/hiveETpopimg.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="js/test2.js"></script>
-        <script src="js/parallax.js"></script>
+        <script src="public/js/test2.js"></script>
+        <script src="public/js/parallax.js"></script>
     </head>
 <body>
 
@@ -22,9 +22,9 @@
                 <i class="fa fa-bars"></i>
             </a>
             <a href="#home" class="objetBar boutons"><i class="fa fa-home"></i></a>
-            <a href="#about" class="objetBar boutons cacher-small"><i class="fa fa-user"></i> ABOUT</a>
-            <a href="#portfolio" class="objetBar boutons cacher-small"><i class="fa fa-th"></i> PORTFOLIO</a>
-            <a href="#contact" class="objetBar boutons cacher-small"><i class="fa fa-envelope"></i> CONTACT</a>
+            <a href="#about" class="objetBar boutons cacher-small"><i class="fa fa-user"></i> MOI</a>
+            <a href="#bgimg-2" class="objetBar boutons cacher-small"><i class="fa fa-instagram"></i> INSTA</a>
+            <a href="#bgimg-3" class="objetBar boutons cacher-small"><i class="fa fa-envelope"></i> CONTACT</a>
             <a href="#" class="objetBar boutons cacher-small droite flotter-rouge">
                 <i class="fa fa-search"></i>
             </a>
@@ -32,9 +32,9 @@
 
         <!-- Navbar on small screens -->
         <div id="Demo" class="navmoving blanc cacher cacher-large cacher-medium">
-            <a href="#about" class="objetBar boutons" onclick="toggleFunction()">ABOUT</a>
-            <a href="#portfolio" class="objetBar boutons" onclick="toggleFunction()">PORTFOLIO</a>
-            <a href="#contact" class="objetBar boutons" onclick="toggleFunction()">CONTACT</a>
+            <a href="#about" class="objetBar boutons" onclick="toggleFunction()">MOI</a>
+            <a href="#bgimg-2" class="objetBar boutons" onclick="toggleFunction()">INSTA</a>
+            <a href="#bgimg-3" class="objetBar boutons" onclick="toggleFunction()">CONTACT</a>
             <a href="#" class="objetBar boutons">SEARCH</a>
         </div>
     </div>
@@ -62,7 +62,7 @@
         <div class="JP-row">
             <div class="vignettes JP-col m6 JP-center JP-padding-large">
                 <p><br><b><i class="fa fa-user JP-margin-right"></i>Moi</b></p><br>
-                <img src="../moi/images/moi.jpg" class="JP-round JP-image JP-opacity JP-hover-opacity-off"
+                <img src="../moi/public/img/moi.jpg" class="JP-round JP-image JP-opacity JP-hover-opacity-off"
                     alt="Photo of Me" width="500" height="333" oncontextmenu="return false" onmousedown="return false">
             </div>
 
@@ -75,12 +75,13 @@
                     un acquis.<br><br>Si en plus cela peut aider certains ou en motiver d'autre je serais ravis car je pars du principe que la
                     richesse de la vie est le savoir, et de pouvoir en partager est tout aussi important.<br><br>Je vais donc commencer par
                     cette page. Elle contient bien évidemment de l'html du css ce qui est la base pour avoir une page statique viable et un peut
-                    de javaScript pour le parallaxe par exemple.
-            </p>
+                    de javaScript pour le parallaxe par exemple.<br>Où comme <a href="grenoble.html" target="_blank" class="JP-hover-text-violet" style="text-decoration: none;"><span><</span>ici<span>></span></a> pour
+                    le Responsive.
+                </p>
+                <p>Attention préparez vos mirettes, car j'espère  bien vous éblouir <span style='font-size:20px;'>&#128527;</span>.</p>
             </div>
         </div>
-        <p style="padding: 0 24px;">Pourquoi choisir un thème sombre..?<br>Pensons à notre &#127757;<br> car 1 pixel éteint c'est 0
-            consommation.<br><br></p>
+        <p style="padding: 0 24px;">Pourquoi choisir un thème sombre..?<br>Pensons à notre &#127757;<br> car 1 pixel éteint c'est 0 consommation.<br><br></p>
         <p class="JP-large JP-center JP-padding-16">The geek in me in graphic :</p>
         <p class="w3-wide" style="letter-spacing: 10px;"><i class="fa fa-laptop"></i>GeeKries...<i
                 class="fa fa-heart"></i></p>
@@ -134,7 +135,7 @@
     </div>
 
     <!-- Second Parallax Image with Portfolio Text -->
-    <div class="bgimg-2 JP-display-container">
+    <div id="bgimg-2" class="bgimg-2 JP-display-container">
         <div class="JP-display-middle">
             <span class="JP-xxlarge JP-text-white w3-wide" style="letter-spacing: 10px;">INSTAGRAM</span>
         </div>
@@ -163,7 +164,7 @@
                 <div class="hex-cell"><img class="imgHive" onclick="onClick(this)" alt="Qui es?" oncontextmenu="return false" onmousedown="return false"
                         src="https://scontent-mrs2-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/69645643_447042179502411_1109652311207328199_n.jpg?_nc_ht=scontent-mrs2-1.cdninstagram.com&_nc_cat=103&_nc_ohc=FzAizKPWn84AX-aL7Rf&oh=43e45572c60b24dc7565b80eabfd8fa0&oe=5ED798E9">
                 </div>
-                <div class="hex-cell"><img class="imgHive" onclick="onClick(this)" alt="Street Art Fest" oncontextmenu="return false" onmousedown="return false"
+                <div class="hex-cell"><img class="imgHive" onclick="onClick(this)" alt="Street Art" oncontextmenu="return false" onmousedown="return false"
                         src="https://scontent-mrs2-2.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/66675879_157778465360017_3874226051628043580_n.jpg?_nc_ht=scontent-mrs2-2.cdninstagram.com&_nc_cat=101&_nc_ohc=mHn-FiyEKIYAX-e8JCu&oh=f5ce3b63ef06fac7af6cb96f6a360937&oe=5ED44429">
                 </div>
                 <div class="hex-cell"><img class="imgHive" onclick="onClick(this)" alt="404 Gaming & Drinks" oncontextmenu="return false" onmousedown="return false"
@@ -178,39 +179,32 @@
                 <img src="https://scontent-mrs2-2.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/69214340_437447796865230_7722286184549352147_n.jpg?_nc_ht=scontent-mrs2-2.cdninstagram.com&_nc_cat=106&_nc_ohc=XpyQaLyWG4cAX_-Gd86&oh=45866dfb03d8abc3fe9a1639cb91a6a2&oe=5ED8E85C"
                     style="width:100%" onclick="onClick(this)" class="JP-hover-opacity" alt="Rue Saint-Laurent">
             </div>
-
             <div class="JP-col m3">
                 <img src="https://scontent-mrs2-2.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/69553316_937868303256991_5559877357789259839_n.jpg?_nc_ht=scontent-mrs2-2.cdninstagram.com&_nc_cat=107&_nc_ohc=LUQK8TCQOxUAX_N8_U3&oh=46da3f2e706fb4217e8f0b88c1cfbbe1&oe=5EC33E61"
                     style="width:100%" onclick="onClick(this)" class="JP-hover-opacity" alt="MC²: Maison de la Culture">
             </div>
-
             <div class="JP-col m3">
                 <img src="https://scontent-mrs2-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/69099063_418104738815327_8913744291706338658_n.jpg?_nc_ht=scontent-mrs2-1.cdninstagram.com&_nc_cat=111&_nc_ohc=Ndq4ITrDXvAAX_02kp1&oh=c611a44a526b3542ae9e88e5468632c3&oe=5ED3A74D"
                     style="width:100%" onclick="onClick(this)" class="JP-hover-opacity" alt="Fort de La Bastille">
             </div>
-
             <div class="JP-col m3">
                 <img src="https://scontent-mrs2-2.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/67943436_167300497687603_2377618402945118445_n.jpg?_nc_ht=scontent-mrs2-2.cdninstagram.com&_nc_cat=107&_nc_ohc=aG1vTobzy4cAX-pY6Hy&oh=5f4435db7976347c7d76af4029424025&oe=5ECB77BF"
                     style="width:100%" onclick="onClick(this)" class="JP-hover-opacity" alt="Hummmmmm!!!">
             </div>
         </div>
-
         <div class="JP-row-padding JP-center JP-section">
             <div class="JP-col m3">
                 <img src="https://scontent-mrs2-2.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/66675879_157778465360017_3874226051628043580_n.jpg?_nc_ht=scontent-mrs2-2.cdninstagram.com&_nc_cat=101&_nc_ohc=mHn-FiyEKIYAX-e8JCu&oh=f5ce3b63ef06fac7af6cb96f6a360937&oe=5ED44429"
                     style="width:100%" onclick="onClick(this)" class="JP-hover-opacity" alt="Rue Denis Papin">
             </div>
-
             <div class="JP-col m3">
                 <img src="https://scontent-mrs2-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/70946652_167929570925859_726448088344891296_n.jpg?_nc_ht=scontent-mrs2-1.cdninstagram.com&_nc_cat=103&_nc_ohc=Edi9Tbp1HIoAX8-My1n&oh=e0c798858255a5de9856f673b6dca4ce&oe=5ED1D866"
                     style="width:100%" onclick="onClick(this)" class="JP-hover-opacity" alt="404 Gaming & Drinks">
             </div>
-
             <div class="JP-col m3">
                 <img src="https://scontent-mrs2-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/69645643_447042179502411_1109652311207328199_n.jpg?_nc_ht=scontent-mrs2-1.cdninstagram.com&_nc_cat=103&_nc_ohc=FzAizKPWn84AX-aL7Rf&oh=43e45572c60b24dc7565b80eabfd8fa0&oe=5ED798E9"
                     style="width:100%" onclick="onClick(this)" class="JP-hover-opacity" alt="Qui es?">
             </div>
-
             <div class="JP-col m3">
                 <img src="https://scontent-mrs2-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/66106303_365149037720432_1075803235121459111_n.jpg?_nc_ht=scontent-mrs2-1.cdninstagram.com&_nc_cat=108&_nc_ohc=xqEtAYDcMJ0AX8abm9J&oh=26f5c53604dd5e5163984acfd0903038&oe=5ED8B6CF"
                     style="width:100%" onclick="onClick(this)" class="JP-hover-opacity" alt="1.2..3... textes">
@@ -218,7 +212,7 @@
         </div>
     --><div class="JP-center">
             <a href="https://www.instagram.com/psychoactif_38/" target="_blank"><button 
-                    class="boutons JP-padding-large JP-light-grey" style="margin-top:64px">Mon <i class="fa fa-instagram instabtn"></i></button></a></div>
+                    class="boutons JP-padding-large JP-light-grey" style="margin-top:64px;">Mon <i class="fa fa-instagram instabtn"></i></button></a></div>
     </div>
     <!-- Modal for full size images on click-->
     <div id="modal01" class="JP-modal noir" onclick="this.style.display='none'">
@@ -231,7 +225,7 @@
     </div>
 
     <!-- Third Parallax Image with Portfolio Text -->
-    <div class="bgimg-3 JP-display-container">
+    <div id="bgimg-3"  class="bgimg-3 JP-display-container">
         <div class="JP-display-middle">
             <span class="JP-xxlarge JP-text-white w3-wide"
                 style="letter-spacing: 10px;text-shadow: black 0.1em 0.1em 0.2em;">CONTACT</span>
@@ -245,7 +239,7 @@
 
         <div class="JP-row JP-padding-32 JP-section">
             <div class="vignettes JP-col m4 JP-container">
-                <img src="images/frcoffe.jpg" class="JP-image JP-round" style="width:100%" oncontextmenu="return false" onmousedown="return false">
+                <img src="public/img/frcoffe.jpg" class="JP-image JP-round" style="width:100%" oncontextmenu="return false" onmousedown="return false">
             </div>
             <div class="JP-col m8 JP-panel" style="margin-top: 15%;">
                 <div class="JP-large JP-margin-bottom">
@@ -278,7 +272,7 @@
 
     <!-- Footer -->
     <footer class="JP-center noir JP-padding-14 JP-opacity JP-hover-opacity-off">
-        <a href="#home" class="boutons JP-light-grey" style="border-radius: 0 0 19px 19PX;"><i class="fa fa-arrow-up JP-margin-right"></i>Haut de page</a>
+        <a href="#home" class="boutons JP-light-grey" style="border-radius: 0 0 19px 19PX;" ><i class="fa fa-arrow-up JP-margin-right"></i>Haut de page</a>
         <div class="JP-xlarge JP-section">
             <i class="fa fa-facebook-official JP-hover-opacity"></i>
             <i class="fa fa-instagram JP-hover-opacity"></i>
@@ -294,4 +288,3 @@
 </body>
 
 </html>
-<!--Pe@cE-->
