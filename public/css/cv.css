@@ -60,6 +60,7 @@ img{vertical-align:middle}a{color:inherit}
 .w3-text-black,.w3-hover-text-black:hover{color:#000!important}
 .w3-white,.w3-hover-white:hover{color:#000!important;background-color:#fff!important}
 .w3-text-grey,.w3-hover-text-grey:hover,.w3-text-gray,.w3-hover-text-gray:hover{color:#757575!important}
+.w3-text-grey,.w3-hover-text-grey:hover,.w3-text-gray,.JP-hover-text-darcktapgreen:hover{color:#008a7e!important}
 .w3-card-4,.w3-hover-shadow:hover{box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)}
 .w3-text-teal,.w3-hover-text-teal:hover{color:#04c4b4!important}
 .w3-teal,.w3-hover-teal:hover{color:#fff!important;background-color:rgb(4, 196, 180)!important}
