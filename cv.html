@@ -19,7 +19,7 @@
       var pourcentageHauteur = Math.floor(ratioHauteur * 100); // Pourcentage de la hauteur
 
       // Affichage de l'évolution du pourcentage de la hauteur dans la console (optionnel)
-      console.log("Pourcentage de la hauteur parcourue : " + pourcentageHauteur + "%");
+      //console.log("Pourcentage de la hauteur parcourue : " + pourcentageHauteur + "%");
 
       return pourcentageHauteur;
     }
@@ -32,45 +32,10 @@
       });
       $("#barre-1 .pourcentage").html(calculPourcentageHauteur() + "%");
     }
-
-    // Jauge verticale de défilement classique en fonction du scroll
-    function jaugeDefilement() {
-      var cible = $("#barre-2 .progression");
-      cible.css({
-        "height": calculPourcentageHauteur() + "%"
-      });
-      $("#barre-2 .pourcentage").html(calculPourcentageHauteur() + "%");
-    }
-
-    // Cercle de défilement en fonction du scroll
-    function cercleDefilement() {
-      // Conversion des pourcentages en degrés de rotation
-      var boucle = 100 / calculPourcentageHauteur();
-      var incrementation = Math.round(360 / boucle);
-      var degre = (90 + incrementation) // On ajoute 90deg pour partir du haut
-
-      var cible = $("#barre-3 .progression");
-      if (incrementation < 180) {
-        cible.css({
-          'background-image': 'linear-gradient(90deg, #222 50%, transparent 50%), linear-gradient(' + degre + 'deg, #007db7 50%, #222 50%)',
-          'background': '-moz-linear-gradient(90deg, #222 50%, transparent 50%), -moz-linear-gradient(' + degre + 'deg, #007db7 50%, #222 50%)',
-          'background': '-webkit-linear-gradient(90deg, #222 50%, transparent 50%), -webkit-linear-gradient(' + degre + 'deg, #007db7 50%, #222 50%)',
-        });
-      } else {
-        cible.css({
-          'background-image': 'linear-gradient(' + degre + 'deg, #007db7 50%, transparent 50%), linear-gradient(270deg, #007db7 50%, #222 50%)',
-          'background': '-moz-linear-gradient(' + degre + 'deg, #007db7 50%, transparent 50%), -moz-linear-gradient(270deg, #007db7 50%, #222 50%)',
-          'background': '-webkit-linear-gradient(' + degre + 'deg, #007db7 50%, transparent 50%), -webkit-linear-gradient(270deg, #007db7 50%, #222 50%)',
-        });
-      }
-      $("#barre-3 .pourcentage").html(calculPourcentageHauteur() + "%");
-    }
-
+    
     // Chargement des fonctions lors du chargement et du scroll
     $(window).on("load scroll", function () {
-      barreDefilement(); // Barre-1
-      jaugeDefilement(); // Barre-2
-      cercleDefilement(); // Barre-3
+      barreDefilement();
     });
   })(jQuery);
 </script>
