@@ -478,6 +478,11 @@ h3{
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
+/*ScrollBarre en pied de page*/
+#barre-1 {position:fixed; bottom:0; height:5px; width:100%; background:#222; border:2px solid #222;}
+#barre-1 .progression {background:#007db7; width:0%; height:100%; transition:width 0.3s;}
+/*#barre-1 .pourcentage {position:absolute; top:0; font-size:1.5em; line-height:1.5em; text-align:center; width:100%; color:#fff;}*/
+
 .instabtn:before {
     font-size: 25px;
 }
