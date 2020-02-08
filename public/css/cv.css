@@ -92,5 +92,9 @@ img{vertical-align:middle}a{color:inherit}
 }
 /*ScrollBarre en pied de page*/
 #barre-1 {position:fixed; bottom:0; height:5px; width:100%; background:#222; border:2px solid #222;}
-#barre-1 .progression {background:linear-gradient(90deg,#ffffff,#04c4b4,); height:100%; transition:width 0.3s;}
+#barre-1 .progression {
+    background:linear-gradient(90deg,#ffffff,#04c4b4,);
+     height:100%;
+     transition:width 0.3s;
+    }
 /*#barre-1 .pourcentage {position:absolute; top:0; font-size:1.5em; line-height:1.5em; text-align:center; width:100%; color:#fff;}*/
