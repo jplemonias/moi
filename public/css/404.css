@@ -141,7 +141,6 @@ a:hover{
     left: 0;
     right: 0;
     bottom: 0;
-    width: 100%;
     margin: auto;
     color: rgb(255, 255, 255);
     text-align: center;
@@ -150,7 +149,6 @@ a:hover{
   }
   .top-text {
     font-size: 65px!important;
-    width: 100%;
     display: flex;
     justify-content: space-between;
   }
