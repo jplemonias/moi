@@ -149,7 +149,7 @@ a:hover{
   }
   .top-text {
     font-size: 65px!important;
-    display: flex;
+    display: block;
     justify-content: space-between;
   }
   .bigger-letter {
@@ -157,5 +157,11 @@ a:hover{
   }
   .trange {
     margin-top: 5px;
+  }
+}
+@media (max-width: 500px) {
+  
+h2{
+  font-size: 30px;
   }
 }
