@@ -58,7 +58,7 @@ nav ul li {
   padding-left: 40px;
 }
 
-a {
+a { font-family: 'Josefin Sans', sans-serif;
   text-decoration: none;
   color: white;
 }
