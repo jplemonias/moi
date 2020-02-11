@@ -1,6 +1,7 @@
 body {
   background-color: black;
 }
+
 * {
   box-sizing: border-box;
   font-family: 'Lora', serif;
@@ -8,9 +9,6 @@ body {
 
 hr{
   box-shadow:0px 0px 8px #ff451e;
-}
-.top{
-  width: 510px;
 }
 
 p {
@@ -145,6 +143,10 @@ a:hover{
 
 .trange{
   font-size: 0.9em;
+}
+
+.top{
+  width: 510px;
 }
 
 @media (max-width: 1024px) {
