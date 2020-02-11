@@ -1,3 +1,7 @@
+html {
+  min-width: 370px;
+}
+
 body {
   background-color: black;
 }
@@ -198,7 +202,7 @@ a:hover{
     transition: all 3s linear;
   }
   
-a{
+.nav{
   font-size: 15px;
   }
   ul{
