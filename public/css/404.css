@@ -3,7 +3,10 @@
       box-sizing: border-box;
       font-family: 'Lora', serif;
     }
-    
+    hr{
+      box-shadow:0px 0px 8px #ff451e;
+    }
+
     p {
       font-family: 'Josefin Sans', sans-serif;
     }
@@ -59,7 +62,7 @@
       color: black;
       -webkit-text-stroke-width: 2px;
       -webkit-text-stroke-color: #a7140d;
-      text-shadow: 0px 0px 6px #ff451e;
+      text-shadow: 0px 0px 10px #ff451e;
       margin-bottom: -40px;
       letter-spacing: -.01em;
     }
