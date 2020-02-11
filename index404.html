@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Psycho@ctiF</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/x-icon" href="public/img/ptitspoid.png">
+        <link rel="stylesheet" href="public/css/csspresentation404.css">
+        <link rel="stylesheet" href="public/css/hiveETpopimg.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="public/js/test2.js"></script>
+        <script src="public/js/parallax.js"></script>
+        <script src="https://kit.fontawesome.com/d70a89f18c.js" crossorigin="anonymous"></script>
+        <script type="application/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+        <script type="application/javascript">
+        (function() {
+            function calculPourcentageHauteur() {
+                var hauteurDocument = $(document).height(); // Hauteur du document complet
+                var hauteurFenetre = $(window).height(); // Hauteur de la fenêtre courante (viewport)
+                var position = $(window).scrollTop(); // Position haute au moment du scroll
+                var positionDernierEcran = hauteurDocument - hauteurFenetre; // Position haute du dernier écran visible
+                var ratioHauteur = position / positionDernierEcran; // Ratio de la hauteur
+                var pourcentageHauteur = Math.floor(ratioHauteur * 100); // Pourcentage de la hauteur
+        
+                // Affichage de l'évolution du pourcentage de la hauteur dans la console (optionnel)
+                console.log("Pourcentage de la hauteur parcourue : " + pourcentageHauteur + "%");
+        
+                return pourcentageHauteur;
+            }
+        
+            // Barre de défilement horizontale en fonction du scroll
+            function barreDefilement() {
+                var cible = $("#barre-1 .progression");
+                cible.css({
+                    "width": calculPourcentageHauteur()+"%"
+                });
+                $("#barre-1 .pourcentage").html(calculPourcentageHauteur()+"%");
+            }
+        
+            // Jauge verticale de défilement classique en fonction du scroll
+            function jaugeDefilement() {
+                var cible = $("#barre-2 .progression");
+                cible.css({
+                    "height": calculPourcentageHauteur()+"%"
+                });
+                $("#barre-2 .pourcentage").html(calculPourcentageHauteur()+"%");	
+            }
+        
+            // Cercle de défilement en fonction du scroll
+            function cercleDefilement() {
+                // Conversion des pourcentages en degrés de rotation
+                var boucle = 100 / calculPourcentageHauteur();
+                var incrementation = Math.round(360 / boucle);
+                var degre = (90 + incrementation) // On ajoute 90deg pour partir du haut
+        
+                var cible = $("#barre-3 .progression");
+                if(incrementation < 180) { 
+                    cible.css({
+                        'background-image':'linear-gradient(90deg, #222 50%, transparent 50%), linear-gradient('+degre+'deg, #007db7 50%, #222 50%)',
+                        'background':'-moz-linear-gradient(90deg, #222 50%, transparent 50%), -moz-linear-gradient('+degre+'deg, #007db7 50%, #222 50%)',
+                        'background':'-webkit-linear-gradient(90deg, #222 50%, transparent 50%), -webkit-linear-gradient('+degre+'deg, #007db7 50%, #222 50%)',
+                    });
+                } else {
+                    cible.css({
+                        'background-image':'linear-gradient('+degre+'deg, #007db7 50%, transparent 50%), linear-gradient(270deg, #007db7 50%, #222 50%)',
+                        'background':'-moz-linear-gradient('+degre+'deg, #007db7 50%, transparent 50%), -moz-linear-gradient(270deg, #007db7 50%, #222 50%)',
+                        'background':'-webkit-linear-gradient('+degre+'deg, #007db7 50%, transparent 50%), -webkit-linear-gradient(270deg, #007db7 50%, #222 50%)',
+                    });
+                }
+                $("#barre-3 .pourcentage").html(calculPourcentageHauteur()+"%");
+            }
+        
+            // Chargement des fonctions lors du chargement et du scroll
+            $(window).on("load scroll", function() {
+                barreDefilement(); // Barre-1
+                jaugeDefilement(); // Barre-2
+                cercleDefilement(); // Barre-3
+            });
+        })(jQuery);
+        </script>
+    </head>
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="top">
+        <div style="transform: scaleY(-1);" class="nav-bar" id="Navbar">
+            <a class="objetBar boutons flotter-black cacher-medium cacher-large droite" href="javascript:void(0);"
+                onclick="toggleFunction()" title="Toggle Navigation Menu">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="https://jplemonias.github.io/moi/" class="objetBar boutons"><i class="fa fa-home"></i></a>
+            <a href="https://jplemonias.github.io/moi/" class="objetBar boutons cacher-small"><i class="fa fa-user"></i> MOI</a>
+            <a href="https://jplemonias.github.io/moi/" class="objetBar boutons cacher-small"><i class="fab fa-instagram"></i> INSTA</a>
+            <a href="https://jplemonias.github.io/moi/" class="objetBar boutons cacher-small"><i class="fa fa-envelope"></i> CONTACT</a>
+            <a href="https://jplemonias.github.io/moi/" target="_blank" class="objetBar boutons cacher-small droite flotter-rouge">
+                <i class="fa fa-file-text-o"></i>
+            </a>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="Demo" class="navmoving blanc cacher cacher-large cacher-medium">
+            <a href="https://jplemonias.github.io/moi/" class="objetBar boutons" onclick="toggleFunction()">MOI</a>
+            <a href="https://jplemonias.github.io/moi/" class="objetBar boutons" onclick="toggleFunction()">INSTA</a>
+            <a href="https://jplemonias.github.io/moi/" class="objetBar boutons" onclick="toggleFunction()">CONTACT</a>
+            <a href="https://jplemonias.github.io/moi/" target="_blank" class="objetBar boutons">Curriculum Vitæ</a>
+        </div>
+    </div>
+
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 JP-display-container" id="home">
+        <div class="JP-display-middle" style="white-space:nowrap; top: 96%; left: 50%; transform: translate(-50%,-0%);">
+            <span class="JP-center JP-padding-large noir JP-xlarge w3-wide JP-animate-opacity"
+                style="letter-spacing: 10px; border-radius: 25px 25px 0 0;">Psycho<i class="fa fa-at"></i>ctiF</span>
+        </div>
+    </div>
+
+    <!-- Container (About Section) -->
+    <div  style="transform: scaleY(-1);" class="JP-content JP-container JP-padding-64" id="about">
+        <h3 class="JP-center">Quelques mots sur moi</h3>
+        <p class="JP-center"><em>tout à commencé avec une Atari 26oo</em></p>
+        <p style="text-align:justify">Mon intéressement au monde des pixels à commencé sur Chopper Command le jour où mes parents on acheté une
+            Atari 26oo. Du coup cela vous
+            donne une idée sur mon âge satisfaisons votre curiosité en vous avouant qu'en ce debut 2o2o j'ai 33 hivers
+            de passés. C'est pourquoi
+            ajourd'hui, je décide faire d'un plaisir mon gagne pain. Non pas que mon domaine professionnel me déplaise,
+            mais plutôt parce que je
+            souhaite un avenir où mon travail serait une de mes passions.
+        </p>
+        <div class="JP-row">
+            <div class="vignettes JP-col m6 JP-center JP-padding-large">
+                <p><br><b><i class="fa fa-user JP-margin-right"></i>Moi</b></p><br>
+                <img src="../moi/public/img/moi.jpg" class="JP-round JP-image JP-opacity JP-hover-opacity-off"
+                    alt="Photo of Me" width="500" height="333" oncontextmenu="return false" onmousedown="return false">
+            </div>
+
+            <!-- Hide this text on small devices -->
+            <div class="JP-col m6 JP-padding-large" style="margin-top: 15px;">
+                <h3 class="JP-center">Je sais que je ne sais rien</h3>
+                <p style="text-align:justify">Dans le but d'y parvenir, je vais vous partager via github mon apprentissage avec un maximum de
+                    commentaires explicatif dans les codes affin de pouvoir informer de ma réel évolution. Car on est d'accord c'est sympa de
+                    savoir faire Ctrl+C Ctrl+V... mais le but est de comprendre ce qui est copier affin de pouvoir le modifier et d'en faire
+                    un acquis.<br><br>Si en plus cela peut aider certains ou en motiver d'autre je serais ravis car je pars du principe qu'une
+                    des richesses de la vie est le savoir, et de pouvoir en partager est tout aussi important.<br><br>Je vais donc commencer
+                    par cette page. Elle contient bien évidemment de l'html du css ce qui est la base pour avoir une page statique viable et
+                    un peut de javaScript pour le parallaxe par exemple.<br>Où comme <a href="https://jplemonias.github.io/moi/" target="_blank" class="JP-hover-text-violet" style="text-decoration: none;"><span><</span>ici<span>></span></a>
+                    pour le Responsive.
+                </p>
+                <p>Attention préparez vos mirettes, car j'espère  bien vous éblouir <span style='font-size:20px;'>&#128527;</span>.</p>
+            </div>
+        </div>
+        <p style="padding: 0 24px;">Pourquoi choisir un thème sombre..?<br>Pensons à notre &#127757;<br> car 1 pixel éteint c'est 0 consommation.<br><br></p>
+        <p class="JP-large JP-center JP-padding-16">The geek in me in graphic :</p>
+        <p class="w3-wide" style="letter-spacing: 10px;"><i class="fa fa-laptop"></i>GeeKries...<i
+                class="fa fa-heart"></i></p>
+        <div  style="border-radius: 5px 15px 15px 5px;" class="JP-light-grey">
+            <div class="JP-container JP-padding-small JP-dark-grey JP-center"
+                style="width:90%; padding: 4px 0px 4px 10%!important;
+                border-radius: 5px 15px 15px 5px;"><i class="fa fa-star"></i><i
+                    class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                    class="fas fa-star-half-alt"></i></div>
+        </div>
+        <p class="w3-wide" style="letter-spacing: 10px;"><i class="fa fa-film"></i>Ciné/séries</p>
+        <div  style="border-radius: 5px 15px 15px 5px;" class="JP-light-grey">
+            <div class="JP-container JP-padding-small JP-dark-grey JP-center"
+                style="width:80%; padding: 4px 0px 4px 20%!important; 
+                border-radius: 5px 15px 15px 5px;"><i class="fa fa-star"></i><i
+                    class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                    class="fa fa-star-o"></i></div>
+        </div>
+        <p class="w3-wide" style="letter-spacing: 10px;"><i class="fa fa-gamepad"></i>Jeux vidéo</p>
+        <div  style="border-radius: 5px 15px 15px 5px;" class="JP-light-grey">
+            <div class="JP-container JP-padding-small JP-dark-grey JP-center"
+                style="width:75%; padding: 4px 0px 4px 25%!important; 
+                border-radius: 5px 15px 15px 5px;"><i class="fa fa-star"></i><i
+                    class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                    class="fa fa-star-o"></i></div>
+        </div>
+        <p class="w3-wide" style="letter-spacing: 10px;"><i class="fa fa-code"></i>Web Design</p>
+        <div style="border-radius: 5px 15px 15px 5px;" class="JP-light-grey JP-center">
+            <div class="JP-container JP-padding-small JP-dark-grey JP-center" style="width:15%; 
+            border-radius: 5px 15px 15px 5px;"><p style="color: #777777; margin: 0 0 0 350%">nO_ob</p></div>
+        </div>
+    </div>
+
+    <div style="transform: scaleY(-1);" class="JP-row JP-center JP-dark-grey JP-padding-16">
+        <div style="transform: scaleY(1);" class="JP-quarter JP-section">
+            <span class="JP-xlarge">&#128512;</span><br>
+            Chat
+        </div>
+        <div style="transform: scaleY(1);" class="JP-quarter JP-section">
+            <span class="JP-xlarge">&#128512;</span><br>
+            Cappuccino
+        </div>
+        <div style="transform: scaleY(1);" class="JP-quarter JP-section">
+            <span class="JP-xlarge">&#128544;</span><br>
+            Les pigeons
+        </div>
+        <div style="transform: scaleY(1);" class="JP-quarter JP-section">
+            <span class="JP-xlarge">&#128544;</span><br>
+            L'incivisme
+        </div>
+    </div>
+
+    <!-- Second Parallax Image with Portfolio Text -->
+    <div id="bgimg-2" class="bgimg-2 JP-display-container">
+        <div class="JP-display-middle">
+            <span class="JP-xxlarge JP-text-white w3-wide" style="letter-spacing: 10px;">INSTAGRAM</span>
+        </div>
+    </div>
+
+    <!-- Container (Portfolio Section) -->
+    <div  style="transform: scaleY(-1);" class="JP-content JP-container JP-padding-64" id="portfolio">
+        <h3 class="JP-center"><i class="fa fa-instagram"></i></h3>
+        <p class="JP-center">Quelques photos tirées de mon insta<br>clique dessus pour plus d'infos</p><br>
+
+        <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+        <div translate="no" style="--n-rows: 3;--n-cols: 6;">
+            <div id="hive" class="vignettes">
+                <div class="hex-cell"><img class="imgHive" onclick="onClick(this)" alt="Rue Saint-Laurent" oncontextmenu="return false" onmousedown="return false"
+                        src="https://scontent-mrs2-2.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/69214340_437447796865230_7722286184549352147_n.jpg?_nc_ht=scontent-mrs2-2.cdninstagram.com&_nc_cat=106&_nc_ohc=XpyQaLyWG4cAX_-Gd86&oh=45866dfb03d8abc3fe9a1639cb91a6a2&oe=5ED8E85C">
+                </div>
+                <div class="hex-cell"><img class="imgHive" onclick="onClick(this)" alt="La Bastille" oncontextmenu="return false" onmousedown="return false"
+                        src="https://scontent-mrs2-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/69099063_418104738815327_8913744291706338658_n.jpg?_nc_ht=scontent-mrs2-1.cdninstagram.com&_nc_cat=111&_nc_ohc=Ndq4ITrDXvAAX_02kp1&oh=c611a44a526b3542ae9e88e5468632c3&oe=5ED3A74D">
+                </div>
+                <div class="hex-cell"><img class="imgHive" onclick="onClick(this)" alt="MC²: Maison de la Culture" oncontextmenu="return false" onmousedown="return false"
+                        src="https://scontent-mrs2-2.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/69553316_937868303256991_5559877357789259839_n.jpg?_nc_ht=scontent-mrs2-2.cdninstagram.com&_nc_cat=107&_nc_ohc=LUQK8TCQOxUAX_N8_U3&oh=46da3f2e706fb4217e8f0b88c1cfbbe1&oe=5EC33E61">
+                </div>
+                <div class="hex-cell"><img class="imgHive" onclick="onClick(this)" alt="1.2..3... textes" oncontextmenu="return false" onmousedown="return false"
+                        src="https://scontent-mrs2-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/66106303_365149037720432_1075803235121459111_n.jpg?_nc_ht=scontent-mrs2-1.cdninstagram.com&_nc_cat=108&_nc_ohc=xqEtAYDcMJ0AX8abm9J&oh=26f5c53604dd5e5163984acfd0903038&oe=5ED8B6CF">
+                </div>
+                <div class="hex-cell"><img class="imgHive" onclick="onClick(this)" alt="Qui es?" oncontextmenu="return false" onmousedown="return false"
+                        src="https://scontent-mrs2-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/69645643_447042179502411_1109652311207328199_n.jpg?_nc_ht=scontent-mrs2-1.cdninstagram.com&_nc_cat=103&_nc_ohc=FzAizKPWn84AX-aL7Rf&oh=43e45572c60b24dc7565b80eabfd8fa0&oe=5ED798E9">
+                </div>
+                <div class="hex-cell"><img class="imgHive" onclick="onClick(this)" alt="Street Art" oncontextmenu="return false" onmousedown="return false"
+                        src="https://scontent-mrs2-2.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/66675879_157778465360017_3874226051628043580_n.jpg?_nc_ht=scontent-mrs2-2.cdninstagram.com&_nc_cat=101&_nc_ohc=mHn-FiyEKIYAX-e8JCu&oh=f5ce3b63ef06fac7af6cb96f6a360937&oe=5ED44429">
+                </div>
+                <div class="hex-cell"><img class="imgHive" onclick="onClick(this)" alt="404 Gaming & Drinks" oncontextmenu="return false" onmousedown="return false"
+                        src="https://scontent-mrs2-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/70946652_167929570925859_726448088344891296_n.jpg?_nc_ht=scontent-mrs2-1.cdninstagram.com&_nc_cat=103&_nc_ohc=Edi9Tbp1HIoAX8-My1n&oh=e0c798858255a5de9856f673b6dca4ce&oe=5ED1D866">
+                </div>
+            </div>
+        </div>
+
+        <!--
+        <div class="JP-row-padding JP-center">
+            <div class="JP-col m3">
+                <img src="https://scontent-mrs2-2.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/69214340_437447796865230_7722286184549352147_n.jpg?_nc_ht=scontent-mrs2-2.cdninstagram.com&_nc_cat=106&_nc_ohc=XpyQaLyWG4cAX_-Gd86&oh=45866dfb03d8abc3fe9a1639cb91a6a2&oe=5ED8E85C"
+                    style="width:100%" onclick="onClick(this)" class="JP-hover-opacity" alt="Rue Saint-Laurent">
+            </div>
+            <div class="JP-col m3">
+                <img src="https://scontent-mrs2-2.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/69553316_937868303256991_5559877357789259839_n.jpg?_nc_ht=scontent-mrs2-2.cdninstagram.com&_nc_cat=107&_nc_ohc=LUQK8TCQOxUAX_N8_U3&oh=46da3f2e706fb4217e8f0b88c1cfbbe1&oe=5EC33E61"
+                    style="width:100%" onclick="onClick(this)" class="JP-hover-opacity" alt="MC²: Maison de la Culture">
+            </div>
+            <div class="JP-col m3">
+                <img src="https://scontent-mrs2-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/69099063_418104738815327_8913744291706338658_n.jpg?_nc_ht=scontent-mrs2-1.cdninstagram.com&_nc_cat=111&_nc_ohc=Ndq4ITrDXvAAX_02kp1&oh=c611a44a526b3542ae9e88e5468632c3&oe=5ED3A74D"
+                    style="width:100%" onclick="onClick(this)" class="JP-hover-opacity" alt="Fort de La Bastille">
+            </div>
+            <div class="JP-col m3">
+                <img src="https://scontent-mrs2-2.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/67943436_167300497687603_2377618402945118445_n.jpg?_nc_ht=scontent-mrs2-2.cdninstagram.com&_nc_cat=107&_nc_ohc=aG1vTobzy4cAX-pY6Hy&oh=5f4435db7976347c7d76af4029424025&oe=5ECB77BF"
+                    style="width:100%" onclick="onClick(this)" class="JP-hover-opacity" alt="Hummmmmm!!!">
+            </div>
+        </div>
+        <div class="JP-row-padding JP-center JP-section">
+            <div class="JP-col m3">
+                <img src="https://scontent-mrs2-2.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/66675879_157778465360017_3874226051628043580_n.jpg?_nc_ht=scontent-mrs2-2.cdninstagram.com&_nc_cat=101&_nc_ohc=mHn-FiyEKIYAX-e8JCu&oh=f5ce3b63ef06fac7af6cb96f6a360937&oe=5ED44429"
+                    style="width:100%" onclick="onClick(this)" class="JP-hover-opacity" alt="Rue Denis Papin">
+            </div>
+            <div class="JP-col m3">
+                <img src="https://scontent-mrs2-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/70946652_167929570925859_726448088344891296_n.jpg?_nc_ht=scontent-mrs2-1.cdninstagram.com&_nc_cat=103&_nc_ohc=Edi9Tbp1HIoAX8-My1n&oh=e0c798858255a5de9856f673b6dca4ce&oe=5ED1D866"
+                    style="width:100%" onclick="onClick(this)" class="JP-hover-opacity" alt="404 Gaming & Drinks">
+            </div>
+            <div class="JP-col m3">
+                <img src="https://scontent-mrs2-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/69645643_447042179502411_1109652311207328199_n.jpg?_nc_ht=scontent-mrs2-1.cdninstagram.com&_nc_cat=103&_nc_ohc=FzAizKPWn84AX-aL7Rf&oh=43e45572c60b24dc7565b80eabfd8fa0&oe=5ED798E9"
+                    style="width:100%" onclick="onClick(this)" class="JP-hover-opacity" alt="Qui es?">
+            </div>
+            <div class="JP-col m3">
+                <img src="https://scontent-mrs2-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/66106303_365149037720432_1075803235121459111_n.jpg?_nc_ht=scontent-mrs2-1.cdninstagram.com&_nc_cat=108&_nc_ohc=xqEtAYDcMJ0AX8abm9J&oh=26f5c53604dd5e5163984acfd0903038&oe=5ED8B6CF"
+                    style="width:100%" onclick="onClick(this)" class="JP-hover-opacity" alt="1.2..3... textes">
+            </div>
+        </div>
+    --><div class="JP-center">
+            <a href="https://jplemonias.github.io/moi/"><button 
+                    class="boutons JP-padding-large JP-light-grey" style="margin-top:64px;">Mon <i class="fab fa-instagram instabtn"></i></button></a></div>
+    </div>
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="JP-modal noir" onclick="this.style.display='none'">
+        <span class="boutons JP-large noir JP-display-topright" title="Close Modal Image"><i
+                class="fa fa-remove"></i></span>
+        <div class="JP-modal-content JP-animate-zoom JP-center JP-transparent JP-padding-64">
+            <img id="img01" class="JP-image">
+            <p id="caption" class="JP-opacity JP-large"></p>
+        </div>
+    </div>
+
+    <!-- Third Parallax Image with Portfolio Text -->
+    <div id="bgimg-3"  class="bgimg-3 JP-display-container">
+        <div class="JP-display-middle">
+            <span class="JP-xxlarge JP-text-white w3-wide"
+                style="letter-spacing: 10px;text-shadow: black 0.1em 0.1em 0.2em;">CONTACT</span>
+        </div>
+    </div>
+
+    <!-- Container (Contact Section) -->
+    <div style="transform: scaleY(-1);" class="JP-content JP-container JP-padding-64" id="contact" style="padding-bottom: 0px!important;">
+        <h3 class="JP-center">ME CONTACTER</h3>
+        <p class="JP-center"><em>J'attends vos retours</em></p>
+
+        <div class="JP-row JP-padding-32 JP-section">
+            <div class="vignettes JP-col m4 JP-container">
+                <img src="public/img/frcoffe.jpg" class="JP-image JP-round" style="width:100%" oncontextmenu="return false" onmousedown="return false">
+            </div>
+            <div class="JP-col m8 JP-panel">
+                <div style="transform: scaleY(1);" class="JP-large JP-margin-bottom">
+                    <i class="fa fa-map-marker fa-fw JP-hover-text-black JP-xlarge JP-margin-right"></i> Grenoble,
+                    France<br>
+                    <i class="fa fa-phone fa-fw JP-hover-text-black JP-xlarge JP-margin-right"></i> Phone: +33
+                    XXXXXXX33<br>
+                    <i class="fa fa-envelope fa-fw JP-hover-text-black JP-xlarge JP-margin-right"></i> Email:
+                    mail@mail.com<br>
+                </div>
+                <p>Toujours prêt à partager autour d'un <a href="https://www.google.com/search?q=french%20coffee&oq=frenche+coff&aqs=chrome.1.69i57j0l4.8053j0j4&sourceid=chrome&ie=UTF-8&sxsrf=ACYBGNQQhxaVlWhQUvy3bZXa_JM0d01PBg:1581332623728&npsic=0&rflfq=1&rlha=0&rllag=45188965,5725967,489&tbm=lcl&rldimm=3891499178132782458&lqi=Cg1mcmVuY2ggY29mZmVlWh4KDWZyZW5jaCBjb2ZmZWUiDWZyZW5jaCBjb2ZmZWU&ved=2ahUKEwjxj7yK68bnAhVoxoUKHUsRDHcQvS4wC3oECAsQHw&rldoc=1&tbs=lrf:!1m4!1u3!2m2!3m1!1e1!2m1!1e3!3sIAE,lf:1,lf_ui:3&rlst=f#rlfi=hd:;si:3891499178132782458,l,Cg1mcmVuY2ggY29mZmVlWh4KDWZyZW5jaCBjb2ZmZWUiDWZyZW5jaCBjb2ZmZWU;mv:[[45.193124399999995,5.7297364],[45.1848063,5.722198199999999]]" target="_blank"><i class="fa fa-coffee"></i></a>, ou par message:</p>
+                <form action="https://jplemonias.github.io/moi/">
+                    <!--PHP-->
+                    <div class="JP-row-padding" style="margin:0 -16px 8px -16px">
+                        <div class="JP-half">
+                            <input class="JP-input JP-border" type="text" placeholder="Nom" required name="Name">
+                        </div>
+                        <div class="JP-half">
+                            <input class="JP-input JP-border" type="text" placeholder="Email" required name="Email">
+                        </div>
+                    </div>
+                    <textarea class="JP-input JP-border" type="text" placeholder="Message / merci de lire le &#9888; ci-dessous" required name="Message" style="height: 100px; resize:none;"></textarea>
+                    <button id="envoi" class="boutons droite JP-section" type="submit" style="border-radius: 19px;">
+                        <i class="fa fa-paper-plane"></i> Envoi du message
+                    </button>
+                </form>
+                <p style="margin-top: 88px;" >&#9888; L'envoi du message doit vous amener sur une page 4o5 Not Allowed;<br>cela signifie que l'hébergeur  utilisé, ici githhub, reconnait le format
+                    de la page mais ne le traite pas. Donc l'envoi n'a pas aboutit.<br>Si le cœur vous en dit, de quand même vouloir le faire. je l'ai aussi héberge
+                    <a href="https://jpgrenoble.000webhostapp.com/moi/index.html" target="_blank" class="JP-hover-text-violet" style="text-decoration: none;"><span><</span>ici<span>></span></a>
+                    sur 000webhostapp ne moyennant aucune demande pécuniaire mais un petit "Powered By 000webhost" en guise de footer <span id="smile">&#128527;</span>.<br>
+                    Ou simplement en prenant mon mail plus haut ( quand il y sera ).
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer style="transform: scaleY(-1);" class="JP-center noir JP-padding-14 JP-opacity JP-hover-opacity-off">
+        <a href="https://jplemonias.github.io/moi/" class="boutons JP-light-grey" style="border-radius: 0 0 19px 19PX;" ><i class="fa fa-arrow-up JP-margin-right"></i>Haut de page</a>
+        <div class="JP-section">
+            <p>Médias sociaux</p>
+            <a href="https://jplemonias.github.io/moi/" target="_blank"><i class="fab fa-codepen w3-hover-opacity"></i></a>
+            <a href="https://jplemonias.github.io/moi/" target="_blank"><i class="fab fa-instagram w3-hover-opacity"></i></a>
+            <a href="https://jplemonias.github.io/moi/" target="_blank"><i class="fab fa-linkedin w3-hover-opacity"></i></a>
+        <p><i style="margin-left: 16px; font-size: 22px; color: #000; float: left;" class="fas fa-peace"></i>Powered by <a href="https://jplemonias.github.io/moi/" title="W3.CSS" target="_blank"
+                class="JP-hover-text-green">w3.css</a><i style="margin-right: 16px; font-size: 22px; color: #f1f1f1; float: right;" class="fas fa-peace"></i></p>
+        </div>
+    </footer>
+
+</body>
+<div id="barre-1"><div class="progression" style="width: 0%;"></div></div>
+</html>
+<!--Psycho@ctiF-->
+<!------Pe@cE---->
+
+
+<!--
+conteuneur Html page 4o4
+<div class="container">
+  <form class="four-oh-four-form">
+    <input type="text" class="404-input">
+  </form>
+
+  <div class="terminal">
+      <p class="prompt">The page you requested cannot be found right meow. Try typing '404'.<br> ___&nbsp;&nbsp;&nbsp;___&nbsp;&nbsp;&nbsp;&nbsp;________&nbsp;&nbsp;&nbsp;&nbsp;___&nbsp;&nbsp;&nbsp;___
+        |\&nbsp;&nbsp;\ |\&nbsp;&nbsp;\&nbsp;&nbsp;|\&nbsp;&nbsp;&nbsp;__&nbsp;&nbsp;\&nbsp;&nbsp;|\&nbsp;&nbsp;\ |\&nbsp;&nbsp;\
+        \&nbsp;\&nbsp;&nbsp;\\_\&nbsp;&nbsp;\ \ \&nbsp;&nbsp;\|\&nbsp;&nbsp;\ \ \&nbsp;&nbsp;\\_\&nbsp;&nbsp;\
+        &nbsp;\ \______&nbsp;&nbsp;\ \ \&nbsp;&nbsp;\\\&nbsp;&nbsp;\ \ \______&nbsp;&nbsp;\
+  &nbsp;&nbsp;\|_____|\&nbsp;&nbsp;\ \ \&nbsp;&nbsp;\\\&nbsp;&nbsp;\ \|_____|\&nbsp;&nbsp;\
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\ \__\ \ \_______\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\ \__\
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\|__|&nbsp;&nbsp;\|_______|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\|__|</p>
+      <p class="prompt output new-output"></p>
+  </div>
+</div>
+
+
+// Mon ASCII 4o4
+ ___   ___    ________    ___   ___
+|\  \ |\  \  |\   __  \  |\  \ |\  \
+\ \  \\_\  \ \ \  \|\  \ \ \  \\_\  \
+ \ \______  \ \ \  \\\  \ \ \______  \
+  \|_____|\  \ \ \  \\\  \ \|_____|\  \
+         \ \__\ \ \_______\       \ \__\
+          \|__|  \|_______|        \|__|
+
+var inputReady = true;
+var input = $('.404-input');
+input.focus();
+$('.container').on('click', function(e){
+  input.focus();
+});
+
+input.on('keyup', function(e){
+  $('.new-output').text(input.val());
+  // console.log(inputReady);
+});
+
+$('.four-oh-four-form').on('submit', function(e){
+  e.preventDefault();
+  var val = $(this).children($('.404-input')).val().toLowerCase();
+  var href;
+
+	 if (val === '404'){
+    showKittens();
+  }else {
+    resetForm();
+  }
+});
+
+function resetForm(withKittens){
+  var message = "Sorry that command is not recognized."
+  var input = $('.404-input');
+
+  if (withKittens){
+    $('.kittens').removeClass('kittens');
+    message = "Huzzzzzah Kittehs!"
+  }
+
+  $('.new-output').removeClass('new-output');
+  input.val('');
+  $('.terminal').append('<p class="prompt">' + message + '</p><p class="prompt output new-output"></p>');
+
+  $('.new-output').velocity(
+    'scroll'
+  ), {duration: 100}
+}
+
+// faire apparaitre ld div en mode matrix
+function showKittens(){
+		$('.terminal').append("<div class='kittens'>"+
+								 "<p class='prompt'> ___   ___    ________    ___   ___</p>" +
+								 "<p class='prompt'>|\  \ |\  \  |\   __  \  |\  \ |\  \</p>" +
+								 "<p class='prompt'>\ \  \\_\  \ \ \  \|\  \ \ \  \\_\  \</p>" +
+								 "<p class='prompt'> \ \______  \ \ \  \\\  \ \ \______  \</p>" +
+								 "<p class='prompt'>  \|_____|\  \ \ \  \\\  \ \|_____|\  \</p>" +
+								 "<p class='prompt'>         \ \__\ \ \_______\       \ \__\</p>" +
+								 "<p class='prompt'>          \|__|  \|_______|        &#92;|__|</p>" +
+								 "<p class='prompt'>                                                              </p></div>");
+
+		
+		var lines = $('.kittens p');
+		$.each(lines, function(index, line){
+			setTimeout(function(){
+				$(line).css({
+					"opacity": 1
+				});
+
+				textEffect($(line))
+			}, index * 100);
+		});
+
+		$('.new-output').velocity(
+			'scroll'
+		), {duration: 100}
+
+		setTimeout(function(){
+			var gif;
+
+			$.get('http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=kittens', function(result){
+				gif = result.data.image_url;
+				$('.terminal').append('<img class="kitten-gif" src="' + gif + '"">');
+				resetForm(true);
+			});
+		}, (lines.length * 100) + 1000);
+    }
+    
+function textEffect(line){
+		var alpha = [';', '.', ',', ':', ';', '~', '`'];
+		var animationSpeed = 10;
+		var index = 0;
+		var string = line.text();
+		var splitString = string.split("");
+		var copyString = splitString.slice(0);
+
+		var emptyString = copyString.map(function(el){
+		    return [alpha[Math.floor(Math.random() * (alpha.length))], index++];
+		})
+
+		emptyString = shuffle(emptyString);
+
+		$.each(copyString, function(i, el){
+		    var newChar = emptyString[i];
+		    toUnderscore(copyString, line, newChar);
+
+		    setTimeout(function(){
+		      fromUnderscore(copyString, splitString, newChar, line);
+		    },i * animationSpeed);
+		  })
+	}
+
+	function toUnderscore(copyString, line, newChar){
+		copyString[newChar[1]] = newChar[0];
+		line.text(copyString.join(''));
+	}
+
+	function fromUnderscore(copyString, splitString, newChar, line){
+		copyString[newChar[1]] = splitString[newChar[1]];
+		line.text(copyString.join(""));
+	}
+
+
+	function shuffle(o){
+	    for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+	    return o;
+	};
+
+
+
+
+
+-->
