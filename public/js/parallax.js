@@ -11,7 +11,7 @@ window.onscroll = function () { myFunction() };
 function myFunction() {
     var navbar = document.getElementById("Navbar");
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-           navbar.className = "nav-bar" + " card" + " animate-top" + " blanc";
+        navbar.className = "nav-bar" + " card" + " animate-top" + " blanc";
     } else {
         navbar.className = navbar.className.replace(" card animate-top blanc", "");
     }
