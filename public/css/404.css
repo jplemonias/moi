@@ -9,6 +9,9 @@ body {
 hr{
   box-shadow:0px 0px 8px #ff451e;
 }
+.top{
+  width: 510px;
+}
 
 p {
   font-family: 'Josefin Sans', sans-serif;
@@ -171,10 +174,10 @@ a:hover{
   .trange {
     margin-top: 5px;
   }
-  .g {width: 14%!important;
+  .g {width: 80px!important;
     margin-right: 0px;
   }
-  .d {width: 14%!important;
+  .d {width: 80px!important;
     margin-left: 0px;
   }
 }
