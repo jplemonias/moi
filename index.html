@@ -330,15 +330,15 @@
                     <div class="JP-row-padding" style="margin:0 -16px 8px -16px">
                         <div class="JP-half">
                             <input id="Name" class="JP-input JP-border" type="text" placeholder="Nom (Min 3carac. Max20)" name="Name"
-                                onblur="mev('',this.id)" />
+                            maxlength="20" onblur="mev('',this.id)" />
                         </div>
                         <div class="JP-half">
                             <input id="Email" class="JP-input JP-border" type="text" placeholder="Email" name="Email"
-                                onblur="mev('',this.id)" />
+                            onblur="mev('',this.id)" />
                         </div>
                         <div class="JP-half" style="width: 100%;">
                             <textarea id="Message" class="JP-input JP-border" type="text"
-                                placeholder="Message / merci de lire le &#9888; ci-dessous" name="Message"
+                                placeholder="merci de lire le &#9888; ci-dessous / Message (Min 3carac. Max5oo) " name="Message" maxlength="500"
                                 style="height: 100px; resize: none;" onblur="mev('',this.id)"></textarea>
                         </div>
                         <div class="JP-half">
