@@ -12,8 +12,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="public/js/test2.js"></script>
     <script src="public/js/parallax.js"></script>
+    <script language="javascript" src="public/js/verifform.js"></script>
     <script src="https://kit.fontawesome.com/d70a89f18c.js" crossorigin="anonymous"></script>
     <script type="application/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <!--script ammenant la barre d'indication de niveau de scroll--> 
     <script type="application/javascript">
         (function () {
             function calculPourcentageHauteur() {
@@ -38,12 +40,29 @@
                 });
                 $("#barre-1 .pourcentage").html(calculPourcentageHauteur() + "%");
             }
-            
+
             // Chargement des fonctions lors du chargement et du scroll
             $(window).on("load scroll", function () {
                 barreDefilement();
             });
         })(jQuery);
+    </script>
+    <!--script ammenant la validation des champs pour l'envoie de message--> 
+    <script language="javascript" type="text/javascript">
+        var b_nom = false;
+        var b_mail = false;
+        var b_msg = false;
+
+        function envoyer() {
+            if (b_nom == true && b_mail == true && b_msg == true) {
+                document.getElementById('mesgInfo').innerText = 'Message envoyé';
+                document.getElementById('form_msg').submit();
+            }
+            else {
+                document.getElementById('mesgInfo').innerText = "O_o... le formulaire d'énvoi n'a pas l'air complet";
+            }
+            //document.getElementById('mesgInfo').innerText += '\n' + '-' + b_nom + '-' + b_mail + '-' + b_msg;
+        }
     </script>
 </head>
 
@@ -305,24 +324,39 @@
                 <p>Toujours prêt à partager autour d'un <a
                         href="https://www.google.com/search?q=french%20coffee&oq=frenche+coff&aqs=chrome.1.69i57j0l4.8053j0j4&sourceid=chrome&ie=UTF-8&sxsrf=ACYBGNQQhxaVlWhQUvy3bZXa_JM0d01PBg:1581332623728&npsic=0&rflfq=1&rlha=0&rllag=45188965,5725967,489&tbm=lcl&rldimm=3891499178132782458&lqi=Cg1mcmVuY2ggY29mZmVlWh4KDWZyZW5jaCBjb2ZmZWUiDWZyZW5jaCBjb2ZmZWU&ved=2ahUKEwjxj7yK68bnAhVoxoUKHUsRDHcQvS4wC3oECAsQHw&rldoc=1&tbs=lrf:!1m4!1u3!2m2!3m1!1e1!2m1!1e3!3sIAE,lf:1,lf_ui:3&rlst=f#rlfi=hd:;si:3891499178132782458,l,Cg1mcmVuY2ggY29mZmVlWh4KDWZyZW5jaCBjb2ZmZWUiDWZyZW5jaCBjb2ZmZWU;mv:[[45.193124399999995,5.7297364],[45.1848063,5.722198199999999]]"
                         target="_blank"><i class="fa fa-coffee"></i></a>, ou par message:</p>
-                <form method="POST" action="mail.php" target="_blank">
-                    <!--PHP-->
+
+                <form id="form_msg" name="form_msg" method="POST" action="mail.php" target="_blank">
+                    
                     <div class="JP-row-padding" style="margin:0 -16px 8px -16px">
                         <div class="JP-half">
-                            <input class="JP-input JP-border" type="text" placeholder="Nom" required name="Name">
+                            <input id="Name" class="JP-input JP-border" type="text" placeholder="Nom (Min 3carac. Max20)" name="Name"
+                                onblur="mev('',this.id)" />
                         </div>
                         <div class="JP-half">
-                            <input class="JP-input JP-border" type="text" placeholder="Email" required name="Email">
+                            <input id="Email" class="JP-input JP-border" type="text" placeholder="Email" name="Email"
+                                onblur="mev('',this.id)" />
+                        </div>
+                        <div class="JP-half" style="width: 100%;">
+                            <textarea id="Message" class="JP-input JP-border" type="text"
+                                placeholder="Message / merci de lire le &#9888; ci-dessous" name="Message"
+                                style="height: 100px; resize: none;" onblur="mev('',this.id)"></textarea>
+                        </div>
+                        <div class="JP-half">
+                            <input id="cEmail" class="JP-input JP-border" type="text" name="cEmail"
+                                placeholder="Confirmation de l'email" onblur="mev('',this.id)" />
+                        </div>
+                        <div style="margin-right: 8px;">
+                            <button id="envoi" class="boutons droite JP-section" type="button"
+                                style="margin-top: 0!important; border-radius: 19px;" onclick='envoyer()'>
+                                <i class="fa fa-paper-plane"></i> Envoi du message
+                            </button>
+                            <div id="mesgInfo" class="JP-half" style="width: 100%; margin-left: 8px;">
+                                Tous les champs sont obligatoires, d'avance merci.
+                            </div>
                         </div>
                     </div>
-                    <textarea class="JP-input JP-border" type="text"
-                        placeholder="Message / merci de lire le &#9888; ci-dessous" required name="Message"
-                        style="height: 100px; resize:none;"></textarea>
-                    <button id="envoi" class="boutons droite JP-section" type="submit" style="border-radius: 19px;">
-                        <i class="fa fa-paper-plane"></i> Envoi du message
-                    </button>
                 </form>
-                <p style="margin-top: 88px;">&#9888; L'envoi du message doit vous amener sur une page 4o5 Not
+                <p>&#9888; L'envoi du message doit vous amener sur une page 4o5 Not
                     Allowed;<br>cela signifie que l'hébergeur utilisé, ici githhub, reconnait le format
                     de la page mais ne le traite pas. Donc l'envoi n'a pas aboutit.<br>Si le cœur vous en dit, de quand
                     même vouloir le faire. je l'ai aussi héberge

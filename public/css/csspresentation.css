@@ -360,7 +360,7 @@ h3{
 /* corp */
 
 .JP-container{
-    background-color: #000;
+    background-color: #000; 
 }
 .JP-transparent,.w3-hover-none:hover{background-color:transparent!important}
 .JP-animate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
@@ -371,7 +371,7 @@ h3{
 .JP-image{max-width:100%;height:auto}
 .JP-animate-opacity{animation:opac 0.8s}
 .JP-display-topright{position:absolute;right:0;top:0}
-.JP-border{border:1px solid #ccc!important}
+.JP-border{border:1px solid #ccc}
 .JP-input{
     background-color: darkgrey;
     box-shadow: inset 5px 5px 10px grey, inset -5px 5px 10px white, inset 5px -5px 10px white, inset -5px -5px 10px white;
@@ -379,7 +379,7 @@ h3{
     border-radius: 20px;
     padding:8px;
     display:block;
-    border:none;
+    /*border:none;*/
     border-bottom:1px solid #ccc;
     width:100%;
 }
