@@ -525,5 +525,18 @@ footer h1
     background: url('../img/separateur.png') repeat-x top;
 }
 
+@media (max-width:830px){
+    #tweet {
+        width: 49%;
+        float: right;
+    }
+    #mes_photos {
+        float: left;
+    }
+    #mes_amis {
+        width: 50%;
+        margin: 0 25%;
+    }
+}
 
 /**/
