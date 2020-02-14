@@ -1,4 +1,4 @@
-// Modal Image Gallery
+// permet d'affifer les images mignatures en full scren
 function onClick(element) {
     document.getElementById("img01").src = element.src;
     document.getElementById("modal01").style.display = "block";
@@ -6,7 +6,7 @@ function onClick(element) {
     captionText.innerHTML = element.alt;
 }
 
-// Change style of navbar on scroll
+//Changer le style de la nav barre selon le défilement sur la page
 window.onscroll = function () { myFunction() };
 function myFunction() {
     var navbar = document.getElementById("Navbar");
@@ -17,7 +17,7 @@ function myFunction() {
     }
 }
 
-// Used to toggle the menu on small screens when clicking on the menu button
+// Utilisé pour basculer le menu des petits écrans dans un menut déroulant
 function toggleFunction() {
     var x = document.getElementById("Demo");
     if (x.className.indexOf("voir") == -1) {

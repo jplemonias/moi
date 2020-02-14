@@ -448,6 +448,7 @@ h3{
 
 .w3-text-rouge,.JP-hover-text-rouge:hover{color:rgb(255, 0, 0)!important}
 .w3-text-violet,.JP-hover-text-violet:hover{color:rgb(175, 76, 175)!important}
+.w3-text-turquoise,.JP-hover-text-turquoise:hover{color:#04c4b4!important}
 .w3-text-green,.JP-hover-text-green:hover{color:#4CAF50!important}
 .JP-text-white,.w3-hover-text-white:hover{color:#fff!important}
 .w3-text-black,.JP-hover-text-black:hover{color:#000!important}
@@ -486,4 +487,8 @@ h3{
 
 .instabtn:before {
     font-size: 25px;
+}
+
+#war_violet {
+    color: #d400ff;
 }

@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="public/css/hiveETpopimg.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="public/js/test2.js"></script>
     <script src="public/js/parallax.js"></script>
     <script language="javascript" src="public/js/verifform.js"></script>
     <script src="https://kit.fontawesome.com/d70a89f18c.js" crossorigin="anonymous"></script>
@@ -27,7 +26,7 @@
                 var pourcentageHauteur = Math.floor(ratioHauteur * 100); // Pourcentage de la hauteur
 
                 // Affichage de l'évolution du pourcentage de la hauteur dans la console (optionnel)
-                console.log("Pourcentage de la hauteur parcourue : " + pourcentageHauteur + "%");
+                //console.log("Pourcentage de la hauteur parcourue : " + pourcentageHauteur + "%");
 
                 return pourcentageHauteur;
             }
@@ -61,6 +60,7 @@
             else {
                 document.getElementById('mesgInfo').innerText = "O_o... le formulaire d'énvoi n'a pas l'air complet";
             }
+            // pour afficher les retour en plus du message d'info de complementarité
             //document.getElementById('mesgInfo').innerText += '\n' + '-' + b_nom + '-' + b_mail + '-' + b_msg;
         }
     </script>
@@ -68,7 +68,7 @@
 
 <body>
 
-    <!-- Navbar (sit on top) -->
+    <!-- Navbar ( Si on est en haut de page ) -->
     <div class="top">
         <div class="nav-bar" id="Navbar">
             <a class="objetBar boutons flotter-black cacher-medium cacher-large droite" href="javascript:void(0);"
@@ -85,7 +85,7 @@
             </a>
         </div>
 
-        <!-- Navbar on small screens -->
+        <!-- Navbar ( Si on a scrollé la page ) -->
         <div id="Demo" class="navmoving blanc cacher cacher-large cacher-medium">
             <a href="#about" class="objetBar boutons" onclick="toggleFunction()">MOI</a>
             <a href="#bgimg-2" class="objetBar boutons" onclick="toggleFunction()">INSTA</a>
@@ -94,7 +94,7 @@
         </div>
     </div>
 
-    <!-- First Parallax Image with Logo Text -->
+    <!-- Premier Parallax contenant le logo (Text) -->
     <div class="bgimg-1 JP-display-container" id="home">
         <div class="JP-display-middle" style="white-space:nowrap; top: 96%; left: 50%; transform: translate(-50%,-0%);">
             <span class="JP-center JP-padding-large noir JP-xlarge w3-wide JP-animate-opacity"
@@ -102,7 +102,7 @@
         </div>
     </div>
 
-    <!-- Container (About Section) -->
+    <!-- Contenu => à propot de "moi" -->
     <div class="JP-content JP-container JP-padding-64" id="about">
         <h3 class="JP-center">Quelques mots sur moi</h3>
         <p class="JP-center"><em>tout à commencé avec une Atari 26oo</em></p>
@@ -115,6 +115,7 @@
             mais plutôt parce que je
             souhaite un avenir où mon travail serait une de mes passions.
         </p>
+        <!-- Image contenu dans le premier contenu ( comprenons hors parallax ) -->
         <div class="JP-row">
             <div class="vignettes JP-col m6 JP-center JP-padding-large">
                 <p><br><b><i class="fa fa-user JP-margin-right"></i>Moi</b></p><br>
@@ -122,7 +123,7 @@
                     alt="Photo of Me" width="500" height="333" oncontextmenu="return false" onmousedown="return false">
             </div>
 
-            <!-- Hide this text on small devices -->
+            <!-- Deuxième text -->
             <div class="JP-col m6 JP-padding-large" style="margin-top: 15px;">
                 <h3 class="JP-center">Je sais que je ne sais rien</h3>
                 <p style="text-align:justify">Dans le but d'y parvenir, je vais vous partager via github mon
@@ -138,16 +139,21 @@
                     par cette page. Elle contient bien évidemment de l'html du css ce qui est la base pour avoir une
                     page statique viable et
                     un peut de javaScript pour le parallaxe par exemple.<br>Où comme <a href="grenoble.html"
-                        target="_blank" class="JP-hover-text-violet" style="text-decoration: none;"><span><</span>ici<span>></span></a>
+                        target="_blank" class="JP-hover-text-turquoise" style="text-decoration: none;"><span><</span>ici<span>></span></a>
                     pour le Responsive.
                 </p>
                 <p>Attention préparez vos mirettes, car j'espère bien vous éblouir <span
                         style='font-size:20px;'>&#128527;</span>.</p>
             </div>
         </div>
+
+        <!-- Deuxième text -->
         <p style="padding: 0 24px;">Pourquoi choisir un thème sombre..?<br>Pensons à notre &#127757;<br> car 1 pixel
             éteint c'est 0 consommation.<br><br></p>
         <p class="JP-large JP-center JP-padding-16">The geek in me in graphic :</p>
+
+        <!-- Début des barres de LvL -->
+        <!-- Barre une -->
         <p class="w3-wide" style="letter-spacing: 10px;"><i class="fa fa-laptop"></i>GeeKries...<i
                 class="fa fa-heart"></i></p>
         <div style="border-radius: 5px 15px 15px 5px;" class="JP-light-grey">
@@ -155,18 +161,21 @@
                 border-radius: 5px 15px 15px 5px;"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
                     class="fa fa-star"></i><i class="fa fa-star"></i><i class="fas fa-star-half-alt"></i></div>
         </div>
+        <!-- Barre deux -->
         <p class="w3-wide" style="letter-spacing: 10px;"><i class="fa fa-film"></i>Ciné/séries</p>
         <div style="border-radius: 5px 15px 15px 5px;" class="JP-light-grey">
             <div class="JP-container JP-padding-small JP-dark-grey JP-center" style="width:80%; padding: 4px 0px 4px 20%!important; 
                 border-radius: 5px 15px 15px 5px;"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
                     class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></div>
         </div>
+        <!-- Barre trois -->
         <p class="w3-wide" style="letter-spacing: 10px;"><i class="fa fa-gamepad"></i>Jeux vidéo</p>
         <div style="border-radius: 5px 15px 15px 5px;" class="JP-light-grey">
             <div class="JP-container JP-padding-small JP-dark-grey JP-center" style="width:75%; padding: 4px 0px 4px 25%!important; 
                 border-radius: 5px 15px 15px 5px;"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
                     class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></div>
         </div>
+        <!-- Barre quatre -->
         <p class="w3-wide" style="letter-spacing: 10px;"><i class="fa fa-code"></i>Web Design</p>
         <div style="border-radius: 5px 15px 15px 5px;" class="JP-light-grey JP-center">
             <div class="JP-container JP-padding-small JP-dark-grey JP-center" style="width:15%; 
@@ -175,7 +184,7 @@
             </div>
         </div>
     </div>
-
+    <!-- Div informative rapide -->
     <div class="JP-row JP-center JP-dark-grey JP-padding-16">
         <div class="JP-quarter JP-section">
             <span class="JP-xlarge">&#128512;</span><br>
@@ -195,20 +204,21 @@
         </div>
     </div>
 
-    <!-- Second Parallax Image with Portfolio Text -->
+    <!-- Second Parallax IcI insta -->
     <div id="bgimg-2" class="bgimg-2 JP-display-container">
         <div class="JP-display-middle">
             <span class="JP-xxlarge JP-text-white w3-wide" style="letter-spacing: 10px;">INSTAGRAM</span>
         </div>
     </div>
 
-    <!-- Container (Portfolio Section) -->
+    <!-- Contenu deux => Linsta -->
     <div class="JP-content JP-container JP-padding-64" id="portfolio">
         <h3 class="JP-center"><i class="fab fa-instagram"></i></h3>
         <p class="JP-center">Quelques photos tirées de mon insta<br>clique dessus pour plus d'infos</p><br>
 
-        <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+        <!-- Image contenu dans le deuxieme contenu ( comprenons hors parallax ) -->
         <div translate="no" style="--n-rows: 3;--n-cols: 6;">
+            <!-- IcI en nid d'abeilles -->
             <div id="hive" class="vignettes">
                 <div class="hex-cell"><img class="imgHive" onclick="onClick(this)" alt="Rue Saint-Laurent"
                         oncontextmenu="return false" onmousedown="return false"
@@ -241,52 +251,9 @@
             </div>
         </div>
 
-        <!--
-        <div class="JP-row-padding JP-center">
-            <div class="JP-col m3">
-                <img src="https://scontent-mrs2-2.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/69214340_437447796865230_7722286184549352147_n.jpg?_nc_ht=scontent-mrs2-2.cdninstagram.com&_nc_cat=106&_nc_ohc=XpyQaLyWG4cAX_-Gd86&oh=45866dfb03d8abc3fe9a1639cb91a6a2&oe=5ED8E85C"
-                    style="width:100%" onclick="onClick(this)" class="JP-hover-opacity" alt="Rue Saint-Laurent">
-            </div>
-            <div class="JP-col m3">
-                <img src="https://scontent-mrs2-2.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/69553316_937868303256991_5559877357789259839_n.jpg?_nc_ht=scontent-mrs2-2.cdninstagram.com&_nc_cat=107&_nc_ohc=LUQK8TCQOxUAX_N8_U3&oh=46da3f2e706fb4217e8f0b88c1cfbbe1&oe=5EC33E61"
-                    style="width:100%" onclick="onClick(this)" class="JP-hover-opacity" alt="MC²: Maison de la Culture">
-            </div>
-            <div class="JP-col m3">
-                <img src="https://scontent-mrs2-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/69099063_418104738815327_8913744291706338658_n.jpg?_nc_ht=scontent-mrs2-1.cdninstagram.com&_nc_cat=111&_nc_ohc=Ndq4ITrDXvAAX_02kp1&oh=c611a44a526b3542ae9e88e5468632c3&oe=5ED3A74D"
-                    style="width:100%" onclick="onClick(this)" class="JP-hover-opacity" alt="Fort de La Bastille">
-            </div>
-            <div class="JP-col m3">
-                <img src="https://scontent-mrs2-2.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/67943436_167300497687603_2377618402945118445_n.jpg?_nc_ht=scontent-mrs2-2.cdninstagram.com&_nc_cat=107&_nc_ohc=aG1vTobzy4cAX-pY6Hy&oh=5f4435db7976347c7d76af4029424025&oe=5ECB77BF"
-                    style="width:100%" onclick="onClick(this)" class="JP-hover-opacity" alt="Hummmmmm!!!">
-            </div>
-        </div>
-        <div class="JP-row-padding JP-center JP-section">
-            <div class="JP-col m3">
-                <img src="https://scontent-mrs2-2.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/66675879_157778465360017_3874226051628043580_n.jpg?_nc_ht=scontent-mrs2-2.cdninstagram.com&_nc_cat=101&_nc_ohc=mHn-FiyEKIYAX-e8JCu&oh=f5ce3b63ef06fac7af6cb96f6a360937&oe=5ED44429"
-                    style="width:100%" onclick="onClick(this)" class="JP-hover-opacity" alt="Rue Denis Papin">
-            </div>
-            <div class="JP-col m3">
-                <img src="https://scontent-mrs2-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/70946652_167929570925859_726448088344891296_n.jpg?_nc_ht=scontent-mrs2-1.cdninstagram.com&_nc_cat=103&_nc_ohc=Edi9Tbp1HIoAX8-My1n&oh=e0c798858255a5de9856f673b6dca4ce&oe=5ED1D866"
-                    style="width:100%" onclick="onClick(this)" class="JP-hover-opacity" alt="404 Gaming & Drinks">
-            </div>
-            <div class="JP-col m3">
-                <img src="https://scontent-mrs2-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/69645643_447042179502411_1109652311207328199_n.jpg?_nc_ht=scontent-mrs2-1.cdninstagram.com&_nc_cat=103&_nc_ohc=FzAizKPWn84AX-aL7Rf&oh=43e45572c60b24dc7565b80eabfd8fa0&oe=5ED798E9"
-                    style="width:100%" onclick="onClick(this)" class="JP-hover-opacity" alt="Qui es?">
-            </div>
-            <div class="JP-col m3">
-                <img src="https://scontent-mrs2-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/66106303_365149037720432_1075803235121459111_n.jpg?_nc_ht=scontent-mrs2-1.cdninstagram.com&_nc_cat=108&_nc_ohc=xqEtAYDcMJ0AX8abm9J&oh=26f5c53604dd5e5163984acfd0903038&oe=5ED8B6CF"
-                    style="width:100%" onclick="onClick(this)" class="JP-hover-opacity" alt="1.2..3... textes">
-            </div>
-        </div>
-    -->
-        <div class="JP-center">
-            <a href="https://www.instagram.com/psychoactif_38/" target="_blank"><button
-                    class="boutons JP-padding-large JP-light-grey" style="margin-top:64px;">Mon <i
-                        class="fab fa-instagram instabtn"></i></button></a></div>
-    </div>
-    <!-- Modal for full size images on click-->
+    <!-- Modal pour afficher les images en pleinne ecrant -->
     <div id="modal01" class="JP-modal noir" onclick="this.style.display='none'">
-        <span class="boutons JP-large noir JP-display-topright" title="Close Modal Image"><i
+        <span class="boutons JP-large noir JP-display-topright" title="Fermer l'info"><i
                 class="fa fa-remove"></i></span>
         <div class="JP-modal-content JP-animate-zoom JP-center JP-transparent JP-padding-64">
             <img id="img01" class="JP-image">
@@ -294,7 +261,14 @@
         </div>
     </div>
 
-    <!-- Third Parallax Image with Portfolio Text -->
+    <!-- Bouton => vers insta -->
+        <div class="JP-center">
+            <a href="https://www.instagram.com/psychoactif_38/" target="_blank">
+                <button class="boutons JP-padding-large JP-light-grey" style="margin-top:64px;">Mon <i class="fab fa-instagram instabtn"></i></button></a>
+        </div>
+    </div>
+
+    <!-- Troisieme Parallax -->
     <div id="bgimg-3" class="bgimg-3 JP-display-container">
         <div class="JP-display-middle">
             <span class="JP-xxlarge JP-text-white w3-wide"
@@ -302,16 +276,18 @@
         </div>
     </div>
 
-    <!-- Container (Contact Section) -->
+    <!-- Contenu trois => info contact et formulaire d'envoi -->
     <div class="JP-content JP-container JP-padding-64" id="contact" style="padding-bottom: 0px!important;">
         <h3 class="JP-center">ME CONTACTER</h3>
         <p class="JP-center"><em>J'attends vos retours</em></p>
 
+        <!-- Image contenu dans le troisieme contenu ( comprenons hors parallax ) -->
         <div class="JP-row JP-padding-32 JP-section">
             <div class="vignettes JP-col m4 JP-container">
                 <img src="public/img/frcoffe.jpg" class="JP-image JP-round" style="width:100%"
                     oncontextmenu="return false" onmousedown="return false">
             </div>
+            <!-- Info contact -->
             <div class="JP-col m8 JP-panel">
                 <div class="JP-large JP-margin-bottom">
                     <i class="fa fa-map-marker fa-fw JP-hover-text-black JP-xlarge JP-margin-right"></i> Grenoble,
@@ -325,6 +301,7 @@
                         href="https://www.google.com/search?q=french%20coffee&oq=frenche+coff&aqs=chrome.1.69i57j0l4.8053j0j4&sourceid=chrome&ie=UTF-8&sxsrf=ACYBGNQQhxaVlWhQUvy3bZXa_JM0d01PBg:1581332623728&npsic=0&rflfq=1&rlha=0&rllag=45188965,5725967,489&tbm=lcl&rldimm=3891499178132782458&lqi=Cg1mcmVuY2ggY29mZmVlWh4KDWZyZW5jaCBjb2ZmZWUiDWZyZW5jaCBjb2ZmZWU&ved=2ahUKEwjxj7yK68bnAhVoxoUKHUsRDHcQvS4wC3oECAsQHw&rldoc=1&tbs=lrf:!1m4!1u3!2m2!3m1!1e1!2m1!1e3!3sIAE,lf:1,lf_ui:3&rlst=f#rlfi=hd:;si:3891499178132782458,l,Cg1mcmVuY2ggY29mZmVlWh4KDWZyZW5jaCBjb2ZmZWUiDWZyZW5jaCBjb2ZmZWU;mv:[[45.193124399999995,5.7297364],[45.1848063,5.722198199999999]]"
                         target="_blank"><i class="fa fa-coffee"></i></a>, ou par message:</p>
 
+                <!-- Formulaire de contact -->
                 <form id="form_msg" name="form_msg" method="POST" action="mail.php" target="_blank">
                     
                     <div class="JP-row-padding" style="margin:0 -16px 8px -16px">
@@ -357,25 +334,29 @@
                                 style="margin-top: 0!important; border-radius: 19px;" onclick='envoyer()'>
                                 <i class="fa fa-paper-plane"></i> Envoi du message
                             </button>
+                            <!-- Texte informatif de validation pour envoie du message -->
                             <div id="mesgInfo" class="JP-half" style="width: 100%; margin-left: 8px;">
                                 Tous les champs sont obligatoires, d'avance merci.
                             </div>
                         </div>
                     </div>
                 </form>
-                <p>&#9888; L'envoi du message doit vous amener sur une page 4o5 Not
+                <!-- Texte sous le formulaire -->
+                <p><span id="war_violet">&#9888;</span> L'envoi du message doit vous amener sur une page 4o5 Not
                     Allowed;<br>cela signifie que l'hébergeur utilisé, ici githhub, reconnait le format
                     de la page mais ne le traite pas. Donc l'envoi n'a pas aboutit.<br>Si le cœur vous en dit, de quand
                     même vouloir le faire. je l'ai aussi hébergé
                     <a href="https://jpgrenoble.000webhostapp.com/index.html" target="_blank"
-                        class="JP-hover-text-violet" style="text-decoration: none;"><span><</span>ici<span>></span></a>
+                        class="JP-hover-text-turquoise" style="text-decoration: none;"><span><</span>ici<span>></span></a>
                     sur 000webhostapp ne moyennant aucune demande pécuniaire mais un petit "Powered By 000webhost" en
                     guise de footer <span id="smile">&#128527;</span>.<br>
                     Ou simplement en prenant mon mail plus haut ( quand il y sera ).
                 </p>
             </div>
-        </div><center>
-    <div class="terminal">
+        </div>
+        <!-- ASCII 4o4 -->
+        <center>
+            <div class="terminal">
         <a class="JP-hover-text-rouge" href="jeNexistePas.html" style="text-decoration: none; font-size: 10px;"><p class="prompt"><pre>
 ___   ___    ________    ___   ___  
 |\  \ |\  \  |\   __  \  |\  \ |\  \  
@@ -384,11 +365,12 @@ ___   ___    ________    ___   ___
         \|_____|\  \ \ \  \\\  \ \|_____|\  \  
                  \ \__\ \ \_______\       \ \__\  
                   \|__|  \|_______|        \|__|  </pre></p></a>
-    </div></center>
+        </div>
+    </center>
     </div>
   </div>
 
-    <!-- Footer -->
+    <!-- Footer => pas besoin d'explications... ;) -->
     <footer class="JP-center noir JP-padding-14 JP-opacity JP-hover-opacity-off">
         <a href="#home" class="boutons JP-light-grey" style="border-radius: 0 0 19px 19PX;"><i
                 class="fa fa-arrow-up JP-margin-right"></i>Haut de page</a>
@@ -409,6 +391,7 @@ ___   ___    ________    ___   ___
     </footer>
 
 </body>
+<!-- Barre de progression de scroll -->
 <div id="barre-1">
     <div class="progression" style="width: 0%;"></div>
 </div>
@@ -444,18 +427,20 @@ ___   ___    ________    ___   ___
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\|__|&nbsp;&nbsp;\|_______|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\|__|</p>
       <p class="prompt output new-output"></p>
   </div>
-</div>
 
 // En div en mode mieux... :D
-  <div class="terminal">
-      <p class="prompt"><pre> ___   ___    ________    ___   ___
+<div class="terminal">
+    <p class="prompt">
+        <pre>
+ ___   ___    ________    ___   ___
 |\  \ |\  \  |\   __  \  |\  \ |\  \
 \ \  \\_\  \ \ \  \|\  \ \ \  \\_\  \
  \ \______  \ \ \  \\\  \ \ \______  \
   \|_____|\  \ \ \  \\\  \ \|_____|\  \
          \ \__\ \ \_______\       \ \__\
-          \|__|  \|_______|        \|__|</pre></p>
-  </div>
+          \|__|  \|_______|        \|__|
+        </pre>
+    </p>
 </div>
 
 
