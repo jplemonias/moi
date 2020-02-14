@@ -79,7 +79,7 @@ body
 #bloc_page
 {
     width: 900px;
-    margin: auto auto auto 8px;
+    margin: auto;
 } 
 
 section {
@@ -500,7 +500,8 @@ footer h1
 #mes_amis a
 {
     text-decoration: none;
-    color: #760001;
+    color: inherit;
+    background-color: transparent;
 }
 
 
@@ -555,7 +556,7 @@ footer h1
         min-width: 230px;
         margin-top: 55px;
         float: none;
-        margin: 0 4.5em;
+        margin: 0 5.75em;
     }
     #mes_amis {
         width: 250px;
@@ -577,3 +578,6 @@ footer h1
     }
 /*#barre-1 .pourcentage {position:absolute; top:0; font-size:1.5em; line-height:1.5em; text-align:center; width:100%; color:#fff;}*/
 /**/
+
+.hover-text-violet:hover{color:rgb(175, 76, 175)!important}
+.hover-text-turquoise:hover{color:#04c4b4!important}
