@@ -12,6 +12,39 @@
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <script type="application/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <!--script ammenant la barre d'indication de niveau de scroll--> 
+    <script type="application/javascript">
+        (function () {
+            function calculPourcentageHauteur() {
+                var hauteurDocument = $(document).height(); // Hauteur du document complet
+                var hauteurFenetre = $(window).height(); // Hauteur de la fenêtre courante (viewport)
+                var position = $(window).scrollTop(); // Position haute au moment du scroll
+                var positionDernierEcran = hauteurDocument - hauteurFenetre; // Position haute du dernier écran visible
+                var ratioHauteur = position / positionDernierEcran; // Ratio de la hauteur
+                var pourcentageHauteur = Math.floor(ratioHauteur * 100); // Pourcentage de la hauteur
+
+                // Affichage de l'évolution du pourcentage de la hauteur dans la console (optionnel)
+                //console.log("Pourcentage de la hauteur parcourue : " + pourcentageHauteur + "%");
+
+                return pourcentageHauteur;
+            }
+
+            // Barre de défilement horizontale en fonction du scroll
+            function barreDefilement() {
+                var cible = $("#barre-1 .progression");
+                cible.css({
+                    "width": calculPourcentageHauteur() + "%"
+                });
+                $("#barre-1 .pourcentage").html(calculPourcentageHauteur() + "%");
+            }
+
+            // Chargement des fonctions lors du chargement et du scroll
+            $(window).on("load scroll", function () {
+                barreDefilement();
+            });
+        })(jQuery);
+    </script>
 </head>
 
 <!--[if IE 6 ]><body class="ie6 old_ie"><![endif]-->
@@ -38,8 +71,8 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
-        </header>
         <div id="separ"></div>
+        </header>
         <div id="banniere_image">
             <div id="banniere_description">
                 &nbsp;Grenoble
@@ -187,13 +220,11 @@
         <div id="separ3"></div>
         <footer>
             <div id="tweet">
-                <h1><span>< </span>div <span>>&nbsp;</span>Création<span>&nbsp;< </span>div <span>></span></h1>
-                <p>Le premier férvier</p>
-                <p>De l'an 2o2o</p>
+                <h1>Créé le: <p>Le premier férvier de l'an 2o2o</p></h1>
             </div>
             <div id="mes_photos">
                 <center>
-                    <h1><span>< </span>div <span>>&nbsp;</span>Photos<span>&nbsp;< </span>div <span>></span></h1>
+                    <h1>Photos de Grenoble by moi:</h1>
                     <p> <a href="https://www.instagram.com/p/B2a_Np_oj6z/"><img src="public/img/photo1.jpg"
                                 alt="Photographie"></a><a href="https://www.instagram.com/p/B2R2nM1IAHi/"><img
                                 src="public/img/photo2.jpg" alt="Photographie"></a><a
@@ -203,7 +234,7 @@
                 </center>
             </div>
             <div id="mes_amis">
-                <h1><span>< </span>div <span>>&nbsp;</span>Listes<span>&nbsp;< </span>div <span>></span></h1>
+                <h1>Liens:</h1>
                 <ul>
                     <p style="margin: 3px 0;">Utiles:</p>
                     <li><a href="https://www.grenoble.fr/" target="_blank">grenoble.fr</a></li>
@@ -227,8 +258,12 @@
             </div>
         </footer>
     </div>
-    <!--Oui je ne me suis pas encore penché sur le pied depage.-->
+
 </body>
+<!-- Barre de progression de scroll -->
+<div id="barre-1">
+    <div class="progression" style="width: 0%;"></div>
+</div>
 
 </html>
 <!--Psycho@ctiF-->
