@@ -546,14 +546,25 @@ footer h1
     #mes_photos {
         float: left;
         width: 220px;
+        margin: 0 0 0 4em;
     }
 }
 
-@media (max-width:475px){
+@media (max-width:500px){
+    #tweet {
+        min-width: 230px;
+        margin-top: 55px;
+        float: none;
+        margin: 0 4.5em;
+    }
     #mes_amis {
         width: 250px;
         float: none;
         margin: 0 4em;
+    }
+    #mes_photos {
+        float: none;
+        margin: 0 4.75em
     }
 }
 
