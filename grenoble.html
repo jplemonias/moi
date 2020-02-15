@@ -44,6 +44,20 @@
                 barreDefilement();
             });
         })(jQuery);
+        // Tabs
+function openCity(evt, cityName) {
+    var i;
+    var x = document.getElementsByClassName("city");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    var activebtn = document.getElementsByClassName("testbtn");
+    for (i = 0; i < x.length; i++) {
+      activebtn[i].className = activebtn[i].className.replace(" w3-dark-grey", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " w3-dark-grey";
+  }
     </script>
 </head>
 
@@ -176,45 +190,44 @@
                         </tr>
                     </tbody>
                 </table>
+                <p>Pour justifier cela je vais jouer avec l'élément celon la taille de pixel dont l'ecrant peut contenir en largeur</p>
+                <div>
+                    <div class="w3-bar">
+                      <button class="w3-bar-item w3-theme w3-button testbtn w3-dark-grey" onclick="openCity(event,'PC')">P.C.</button>
+                      <button class="w3-bar-item w3-theme w3-button testbtn" onclick="openCity(event,'tablette')">tab.</button>
+                      <button class="w3-bar-item w3-theme w3-button testbtn" onclick="openCity(event,'phone')">Phone</button>
+                      <button class="w3-bar-item w3-theme w3-button testbtn" onclick="openCity(event,'4o4')">4o4</button>
+                    </div>
+                    <div class="w3-border">
+                    <div id="PC" class="w3-container city w3-animate-opacity" style="height: 387px; display: block;" >
+                      <h2>P.C.</h2>
+                      <p>Ou un affichage supérieur à 1o24 px.</p>
+                      <p>.</p>
+                    </div>
+                    
+                    <div id="tablette" class="w3-container city w3-animate-opacity" style="height: 387px; display: none;">
+                      <h2>Tablette</h2>
+                      <p>Là disons infèrieur à 1o24 px ( mais supérieur à 830 px ).</p> 
+                      <p>.</p>
+                    </div>
+                    
+                    <div id="phone" class="w3-container city w3-animate-opacity" style="height: 387px; display: none;">
+                      <h2>Phone</h2>
+                      <p>Et enfin ici infèrieur à 830 px ( et notamment infèrieur à 380 px )</p> 
+                      <p>.</p>
+                    </div>
+                    
+                    <div id="4o4" class="w3-container city w3-animate-opacity" style="height: 387px; display: none;">
+                      <h2>Ma page 4o4</h2>
                 <p class="codepen" data-height="287" data-theme-id="38865" data-default-tab="result" data-user="PsychoActiF" data-slug-hash="VwLvwgO" style="height: 287px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="First404">
                     <span>See the Pen <a href="https://codepen.io/PsychoActiF/pen/VwLvwgO">
                     First404</a> by Psycho@ctiF (<a href="https://codepen.io/PsychoActiF">@PsychoActiF</a>)
                     on <a href="https://codepen.io">CodePen</a>.</span>
                   </p>
                   <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-                <p>Pour justifier cela je vais jouer avec l'élément si l'affichage est en dessous de 1o24 px et encore
-                    une
-                    fois pour 98o px.<br></p>
-                <ol>
-                    <li>l'aspect de l'entête:</li>
-                    <ul>
-                        <li>Supérieur à 1o24 px:</li>
-                        <p></p>
-                        <li>Entre 1o24px et 98o px:</li>
-                        <p></p>
-                        <li>infèrieur à 98o px:</li>
-                        <p></p>
-                    </ul>
-                    <li>l'aspect du corp</li>
-                    <ul>
-                        <li>Supérieur à 1o24 px:</li>
-                        <p></p>
-                        <li>Entre 1o24px et 98o px:</li>
-                        <p></p>
-                        <li>infèrieur à 98o px:</li>
-                        <p></p>
-                    </ul>
-                    <li>l'aspect du pied depage</li>
-                    <ul>
-                        <li>Supérieur à 1o24 px:</li>
-                        <p></p>
-                        <li>Entre 1o24px et 98o px:</li>
-                        <p></p>
-                        <li>infèrieur à 98o px:</li>
-                        <p></p>
-                    </ul>
-                </ol>
-
+                    </div>
+                </div>
+                </div>
             </article>
         </section>
         <div id="separ3"></div>
@@ -233,7 +246,7 @@
                                 src="public/img/photo4.jpg" alt="Photographie"></a></p>
                 </center>
             </div>
-            <div id="mes_amis">
+            <div id="Liens">
                 <h1>Liens:</h1>
                 <ul>
                     <p style="margin: 3px 0;">Utiles:</p>
