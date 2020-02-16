@@ -97,12 +97,21 @@ section h1, nav a
 
 @media all and (max-width: 1024px)
 {
-    article {
-    margin-left: 15px;
-}
     #separ1 {
         visibility:hidden;
     }
+    #nav
+    {
+        margin: 0;
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        float: right;
+    }
+}
+
+@media all and (max-width: 920px)
+{
     #bloc_page
     {
         width: auto;
@@ -113,39 +122,6 @@ section h1, nav a
         display: inline-block;
         text-align: right;
         float: right;
-    }
-}
-
-@media all and (max-width: 830px)
-{
-    #bloc_page
-    {
-        width: auto;
-    }
-    #nav
-    {
-        margin: 0;
-        display: inline-block;
-        text-align: center;
-        width: 100%;
-    }
-    #nav ul
-    {
-        list-style-type: none;
-    }
-    
-    #nav li
-    {
-        display: inline-block;
-        margin-right: 15px;
-    }
-    
-    #nav a
-    {
-        font-size: 1.3em;
-        color: #181818;
-        padding-bottom: 3px;
-        text-decoration: none;
     }
 }
 /* Header */
@@ -218,7 +194,7 @@ nav a:hover
     nav
     {
         width: auto;
-        text-align: left;
+        text-align: right;
     }
     
     nav li
@@ -289,68 +265,6 @@ nav a:hover
     border: 0;
 }
 
-@media all and (max-width: 1024px)
-{
-    #banniere_image
-    {
-        display: none;
-    }
-}
-
-@media all and (max-width: 830px)
-{
-    #banniere_image
-    {
-        display: flex;
-        margin-left: auto;
-        margin-right: auto;
-        width: 200px;
-        height: 200px;
-        border-radius: 100px;
-    }
-    #banniere_description
-    {
-        position: absolute;
-        bottom: 0;
-        border-radius: 15px 15px 100px 100px;
-        height: 33px;
-        padding-top: 15px;
-        padding-left: 4px;
-        background-color: rgb(24,24,24); /* Pour les anciens navigateurs */
-        background-color: rgba(24, 24, 24, 0);
-        color: rgba(255, 255, 255, 0);
-        font-size: 0.8em;
-        
-    }.bouton_rouge
-    {
-        display: inline-block;
-        height: 25px;
-        position: absolute;
-        right: 5px;
-        bottom: 5px;
-        background: url('../img/fond_degraderouge.png') repeat-x;
-        border: 1px solid #760001;
-        border-radius: 5px;
-        font-size: 1.2em;
-        text-align: center;
-        padding: 3px 8px 0px 8px;
-        color: white;
-        text-decoration: none;
-    }
-    
-    .bouton_rouge img
-    {
-        border: 0;
-    }
-    article ol ul {
-    list-style-type: upper-alpha;
-    padding-inline-start: 18px;
-    }
-    article ol ul p {
-        margin-top: 0px;
-    }
-}
-
 /* Corps */
 
 article, aside
@@ -417,33 +331,6 @@ aside img
     margin-right: 5px;
 }
 
-@media all and (max-width: 1024px)
-{
-    article, aside
-    {
-        width: auto;
-        display: block;
-        margin-bottom: 15px;
-    }
-    
-    #fleche_bulle
-    {
-        display: none;
-    }
-    
-    #photo_zozor img
-    {
-        width: 110px;
-        float: right;
-        margin-left: 15px;
-    }
-    
-    aside
-    {
-        width: 70%;
-        margin: 30px 15% 0 15%;
-    }
-}
 
 /* Footer */
 
@@ -530,49 +417,8 @@ footer h1
     background: url('../img/separateur.png') repeat-x top;
 }
 
-@media (max-width:830px){
-    #tweet {
-        min-width: 185px;
-        margin-top: 55px;
-        float: right;
-    }
-    #mes_photos {
-        float: left;
-    }
-    #Liens {
-        width: 50%;
-        margin: 0 25%;
-    }
-}
-
-@media (max-width:700px){
-    #mes_photos {
-        float: left;
-        width: 220px;
-        margin: 0 0 0 4em;
-    }
-}
-
-@media (max-width:500px){
-    #tweet {
-        min-width: 230px;
-        margin-top: 55px;
-        float: none;
-        margin: 0 5.75em;
-    }
-    #Liens {
-        width: 250px;
-        float: none;
-        margin: 0 4em;
-    }
-    #mes_photos {
-        float: none;
-        margin: 0 4.75em
-    }
-}
-
 /*ScrollBarre en pied de page*/
-#barre-1 {position:fixed; bottom:0; height:5px; width:100%; background:#222; border:2px solid #222;}
+#barre-1 {position:fixed; bottom:0; height:5px; width:100%; background:none; border:2px solid transparent;}
 #barre-1 .progression {
     background:linear-gradient(30deg,#d400ff,#04c4b4);
      height:100%;
@@ -644,3 +490,147 @@ footer h1
 .w3-container:after,.w3-container:before,.w3-panel:after,.w3-panel:before,.w3-row:after,.w3-row:before,.w3-row-padding:after,.w3-row-padding:before,
 .w3-cell-row:before,.w3-cell-row:after,.w3-clear:after,.w3-clear:before,.w3-bar:before,.w3-bar:after{content:"";display:table;clear:both}
 .w3-animate-opacity{animation:opac 0.8s}
+
+
+@media all and (max-width: 1024px)
+{
+    article, aside
+    {
+        width: auto;
+        display: block;
+        margin-bottom: 15px;
+    }
+    #banniere_image
+    {
+        margin: 15px 50px 25px 50px;
+    }
+    #photo_zozor img
+    {
+        width: 110px;
+        float: right;
+        margin-left: 15px;
+    }
+    
+    aside
+    {
+        width: 70%;
+        margin: 30px 15% 0 15%;
+    }
+    
+    li {
+        float: right;
+    }
+    #nav {
+        width: max-content;
+    }
+}
+
+
+@media all and (max-width: 690px){
+
+    ul{
+        float: right;
+    }
+    #nav li{
+    display: block!important;
+    }
+
+}
+
+
+@media (max-width:830px){
+    #tweet {
+        min-width: 185px;
+        margin-top: 55px;
+        float: right;
+    }
+    #mes_photos {
+        float: left;
+    }
+    #Liens {
+        width: 50%;
+        margin: 0 25%;
+    }
+}
+
+@media (max-width:700px){
+    
+    #banniere_image
+    {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+    }
+    #banniere_description
+    {
+        position: absolute;
+        bottom: 0;
+        border-radius: 15px 15px 100px 100px;
+        height: 33px;
+        padding-top: 15px;
+        padding-left: 4px;
+        background-color: rgb(24,24,24); /* Pour les anciens navigateurs */
+        background-color: rgba(24, 24, 24, 0);
+        color: rgba(255, 255, 255, 0);
+        font-size: 0.8em;
+        
+    }.bouton_rouge
+    {
+        display: inline-block;
+        height: 25px;
+        position: absolute;
+        right: 5px;
+        bottom: 5px;
+        background: url('../img/fond_degraderouge.png') repeat-x;
+        border: 1px solid #760001;
+        border-radius: 5px;
+        font-size: 1.2em;
+        text-align: center;
+        padding: 3px 8px 0px 8px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .bouton_rouge img
+    {
+        border: 0;
+    }
+    #mes_photos {
+        float: left;
+        width: 220px;
+        margin: 0 0 0 4em;
+    }
+    ul {
+        display: grid;
+    }
+}
+
+@media (max-width:500px){
+    #tweet {
+        min-width: 230px;
+        margin-top: 55px;
+        float: none;
+        margin: 0 5.75em;
+    }
+    #Liens {
+        width: 250px;
+        float: none;
+        margin: 0 4em;
+    }
+    #mes_photos {
+        float: none;
+        margin: 0 4.75em
+    }
+    #nav {
+        float: none!important;}
+    ul{display: block;
+        float: right!important;
+    }
+    #nav li{
+    display: block!important;
+    float: right;
+    }
+}
