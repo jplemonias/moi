@@ -452,6 +452,7 @@ h3{
 .w3-text-green,.JP-hover-text-green:hover{color:#4CAF50!important}
 .JP-text-white,.w3-hover-text-white:hover{color:#fff!important}
 .w3-text-black,.JP-hover-text-black:hover{color:#000!important}
+.JP-light-psycho,.w3-hover-light-grey:hover,.w3-light-gray,.w3-hover-light-gray:hover{color:#000!important;background: linear-gradient(135deg,#04c4b480,#d400ff80)!important}
 .JP-light-grey,.w3-hover-light-grey:hover,.w3-light-gray,.w3-hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
 .JP-dark-grey,.w3-hover-dark-grey:hover,.w3-dark-gray,.w3-hover-dark-gray:hover{color:#fff!important;background-color:#616161!important}
 .blanc,.flotter-black:hover{color:#000!important;background-color:#fff!important}
@@ -486,6 +487,17 @@ h3{
 /*#barre-1 .pourcentage {position:absolute; top:0; font-size:1.5em; line-height:1.5em; text-align:center; width:100%; color:#fff;}*/
 #barre-1 .progression2 {background: linear-gradient(0.25turn,#04c4b4,#d400ff); width:0%; height:100%; transition:width 0.3s;}
 #barre-1 .progression3 {background: linear-gradient(0.25turn,#04c4b4,#d400ff); width:0%; height:100%; transition:width 0.3s;}
+
+i.fab.fa-instagram.instabtn, i.fab.fa-instagram.w3-hover-opacity, i.fab.fa-linkedin.w3-hover-opacity, i.fab.fa-codepen.w3-hover-opacity
+{
+    background: linear-gradient(-45deg,#04c4b4,#d400ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+i.fas.fa-peace.D {
+    background: linear-gradient(135deg,#04c4b4,#d400ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;}
 
 .instabtn:before {
     font-size: 25px;
