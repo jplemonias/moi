@@ -40,9 +40,29 @@
                 $("#barre-1 .pourcentage").html(calculPourcentageHauteur() + "%");
             }
 
+            // Barre de défilement horizontale en fonction du scroll
+            function barreDefilement2() {
+                var cible = $("#barre-1 .progression2");
+                cible.css({
+                    "width": calculPourcentageHauteur() + "%"
+                });
+                $("#barre-1 .pourcentage").html(calculPourcentageHauteur() + "%");
+            }
+
+            // Barre de défilement horizontale en fonction du scroll
+            function barreDefilement3() {
+                var cible = $("#barre-1 .progression3");
+                cible.css({
+                    "width": calculPourcentageHauteur() + "%"
+                });
+                $("#barre-1 .pourcentage").html(calculPourcentageHauteur() + "%");
+            }
+            
             // Chargement des fonctions lors du chargement et du scroll
             $(window).on("load scroll", function () {
                 barreDefilement();
+                barreDefilement2();
+                barreDefilement3();
             });
         })(jQuery);
     </script>
@@ -391,8 +411,11 @@ ___   ___    ________    ___   ___
 
 </body>
 <!-- Barre de progression de scroll -->
+
 <div id="barre-1">
+    <div class="progression2" style="width: 0%;"></div>
     <div class="progression" style="width: 0%;"></div>
+    <div class="progression3" style="width: 0%;"></div>
 </div>
 
 </html>

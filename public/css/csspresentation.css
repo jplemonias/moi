@@ -481,9 +481,11 @@ h3{
 }
 
 /*ScrollBarre en pied de page*/
-#barre-1 {position:fixed; bottom:0; height:5px; width:100%; background:none; border:2px solid transparent;}
-#barre-1 .progression {background:#d400ff; width:0%; height:100%; transition:width 0.3s;}
+#barre-1 {position:fixed; bottom:0; height:5px; width:100%; background:#222; border:2px solid #000;}
+#barre-1 .progression {background:#04c4b4; width:0%; height:100%; transition:width 0.3s;}
 /*#barre-1 .pourcentage {position:absolute; top:0; font-size:1.5em; line-height:1.5em; text-align:center; width:100%; color:#fff;}*/
+#barre-1 .progression2 {background:#d400ff; width:0%; height:100%; transition:width 0.3s;}
+#barre-1 .progression3 {background:#d400ff; width:0%; height:100%; transition:width 0.3s;}
 
 .instabtn:before {
     font-size: 25px;
@@ -494,25 +496,21 @@ h3{
 }
 
 
-/* Let's get this party started */
+
 ::-webkit-scrollbar {
     width: 12px;
 }
  
-/* Track */
 ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px transparent; 
-    -webkit-border-radius: 10px;
+    background-color: #0000003a;
+    opacity: 0.5;
+    -webkit-box-shadow: inset 0 0 6px rgb(131, 131, 131); 
     border-radius: 10px;
 }
  
-/* Handle */
 ::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 10px;
+    background-color: #d400ff;
+    opacity: 0;
     border-radius: 10px;
-    background: rgba(255,0,0,0.8); 
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
-}
-::-webkit-scrollbar-thumb:window-inactive {
-	background: rgba(255,0,0,0.4); 
+    -webkit-box-shadow: inset 0 0 6px rgb(0, 0, 0); 
 }
