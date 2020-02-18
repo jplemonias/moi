@@ -189,7 +189,27 @@ h3{
     font-family: "Segoe UI",Arial,sans-serif;
     font-size:24px;
     font-weight: 400;
-    margin: 10px 0;}
+    margin: 10px 0;
+    background: -webkit-gradient(linear,left top,right bottom,from(#04c4b4),to(#d400ff));
+    background: linear-gradient(90deg,#04c4b4,#d400ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    -webkit-text-decoration-color: #04c4b4!important;
+    text-decoration-color: #04c4b4!important;
+}
+
+h3 .fab.fa-instagram{
+    background: -webkit-gradient(linear,left top,right bottom,from(#04c4b4),to(#d400ff));
+    background: linear-gradient (135deg,#04c4b4,#d400ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    -webkit-text-decoration-color: #04c4b4!important;
+    text-decoration-color: #04c4b4!important;
+}
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
   background-attachment: fixed;
@@ -452,12 +472,23 @@ h3{
 .w3-text-green,.JP-hover-text-green:hover{color:#4CAF50!important}
 .JP-text-white,.w3-hover-text-white:hover{color:#fff!important}
 .w3-text-black,.JP-hover-text-black:hover{color:#000!important}
+.JP-light-psycho:hover{color:#000!important;background: linear-gradient(135deg,#04c4b4,#d400ff)!important}
 .JP-light-psycho,.w3-hover-light-grey:hover,.w3-light-gray,.w3-hover-light-gray:hover{color:#000!important;background: linear-gradient(135deg,#04c4b480,#d400ff80)!important}
 .JP-light-grey,.w3-hover-light-grey:hover,.w3-light-gray,.w3-hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
 .JP-dark-grey,.w3-hover-dark-grey:hover,.w3-dark-gray,.w3-hover-dark-gray:hover{color:#fff!important;background-color:#616161!important}
 .blanc,.flotter-black:hover{color:#000!important;background-color:#fff!important}
 .rouge,.flotter_rouge:hover{color:#fff!important;background-color:#f44336!important}
 .noir,.flotter-black:hover{color:#fff!important;background-color:#000!important}
+.w3-text-degrad,.JP-hover-text-degrad:hover{
+    background: -webkit-gradient(linear,left top,right top,from(#d400ff),to(#04c4b4));
+    background: linear-gradient(90deg,#d400ff,#04c4b4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    -webkit-text-decoration-color: none!important;
+    text-decoration-color: none!important;
+}
 
 /* paralax */
 .JP-opacity-min{opacity:0.75}
@@ -488,6 +519,38 @@ h3{
 #barre-1 .progression2 {background: linear-gradient(0.25turn,#04c4b4,#d400ff); width:0%; height:100%; transition:width 0.3s;}
 #barre-1 .progression3 {background: linear-gradient(0.25turn,#04c4b4,#d400ff); width:0%; height:100%; transition:width 0.3s;}
 
+#btninsta{
+    box-shadow: 5px 5px 10px #383838, -5px 5px 10px #383838, 5px -5px 10px #383838, -5px -5px 10px #383838, inset 5px 5px 10px #383838, inset -5px 5px 10px #383838, inset 5px -5px 10px #383838, inset -5px -5px 10px #383838;
+    border: 1px solid #d400ff;
+    background: -webkit-gradient(linear,left top,right top,from(#04c4b4),to(#d400ff));
+    background: linear-gradient(90deg,#04c4b4,#d400ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    -webkit-text-decoration-color: #04c4b4!important;
+    text-decoration-color: #04c4b4!important;
+}
+#btninsta:hover{
+    box-shadow:
+    3px 3px 10px #d400ff83,
+    -3px 3px 10px #d400ff83,
+    3px -3px 10px #d400ff83,
+    -3px -3px 10px #d400ff83,
+    inset 3px 3px 10px #d400ff83,
+    inset -3px 3px 10px #d400ff83,
+    inset 3px -3px 10px #d400ff83,
+    inset -3px -3px 10px #d400ff83;
+    border: 1px solid #d400ff;
+    background: -webkit-gradient(linear,left top,right top,from(#d400ff),to(#04c4b4));
+    background: linear-gradient(90deg,#d400ff,#04c4b4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    -webkit-text-decoration-color: #d400ff!important;
+    text-decoration-color: #d400ff!important;
+}
 i.fab.fa-instagram.instabtn, i.fab.fa-instagram.w3-hover-opacity, i.fab.fa-linkedin.w3-hover-opacity, i.fab.fa-codepen.w3-hover-opacity
 {
     background: linear-gradient(-45deg,#04c4b4,#d400ff);
@@ -502,7 +565,37 @@ i.fas.fa-peace.D {
 .instabtn:before {
     font-size: 25px;
 }
+i.fab.fa-instagram.instabtn {
+    background: linear-gradient(-45deg,#04c4b480,#d400ff80);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
+}
+
+i.fab.fa-instagram.instabtn:hover, i.fab.fa-instagram.w3-hover-opacity:hover, i.fab.fa-linkedin.w3-hover-opacity:hover, i.fab.fa-codepen.w3-hover-opacity:hover
+{
+    background: linear-gradient(-45deg,#d400ff,#04c4b4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+i.fab.fa-instagram.instabtn, i.fab.fa-instagram.w3-hover-opacity, i.fab.fa-linkedin.w3-hover-opacity, i.fab.fa-codepen.w3-hover-opacity, .fa-map-marker, .fa-phone, .fa-envelope.fa-fw.JP-hover-text-black.JP-xlarge.JP-margin-right
+{
+    background: linear-gradient(-45deg,#04c4b4,#d400ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+i.fas.fa-peace.D {
+    background: linear-gradient(135deg,#04c4b4,#d400ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;}
+
+.instabtn:before {
+    font-size: 25px;
+}
+
+.boutons.JP-padding-large{
+    border-radius: 0 20px 20px 20px;
+}
 #war_violet {
     color: #d400ff;
 }
