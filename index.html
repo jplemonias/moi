@@ -139,7 +139,7 @@
         <div class="JP-row">
             <div class="JP-col m6 JP-center JP-padding-large">
                 <p><br><b><i class="fa fa-user JP-margin-right"></i>Moi</b></p><br>
-                <img src="../moi/public/img/moi.jpg" class="JP-round JP-image JP-opacity JP-hover-opacity-off"
+                <img src="../moi/public/img/moi.jpg" class="JP-round JP-image JP-opacitydegrad JP-hover-opacity-off"
                     alt="Photo of Me" width="500" height="333" oncontextmenu="return false" onmousedown="return false">
             </div>
 
@@ -322,7 +322,9 @@
                         de l'image il faut donc lui informer de l'état d'affichage que nous souhaitons en lui indiquant sa hauteur et sa largeur en pixel par un id.<br>
                         Dans l'html<br><span style="color: white;"><</span><span style="color: lightskyblue;">img</span><span style="color: orange;"> src</span><span style="color: lightskyblue;">=</span><span style="color: darkseagreen;">" "</span><span style="color: orange;"> id</span><span style="color: lightskyblue;">=</span><span style="color: darkseagreen;">''exTaille''</span><span style="color: white;">></span><br>
                         Et dans le css<br><span style="color: darkorange;">.exTaille</span> <span style="color: lightskyblue;">{</span><span style="color: darkseagreen;"> width:</span><span style="color: green;"> 100</span><span style="color: blue;">px</span><span style="color: lightskyblue;">;</span><span style="color: darkseagreen;"> height:</span><span style="color: green;"> 300</span><span style="color: blue;">px</span><span style="color: lightskyblue;"> }</span> 
-                        </span>
+                        </span><br>Nous pouvons rendre la page plus dynamique comme par exemple avec :hover qui se déclencherait au survole du pointeur<br>
+                        <span style="color: darkorange;">.exTaille:hover</span> <span style="color: lightskyblue;">{</span><span style="color: darkseagreen;"> opacity:</span><span style="color: green;"> 0.5</span><span style="color: lightskyblue;"> }</span>
+                        <br>ici lorsque nous passons la souris sur l'image elle deviendra opaque à moitié, l'opacité étant comprise entre 0 et 1.
                     </p>
                     <p><i style="float: right;" class="fab fa-js-square fa-fw JP-hover-text-black JP-xxxlarge JP-margin-right"></i><span id="tcode">  Le JavaScript</span><br>
                         Encours de redaction.<span id="txtgrisnoir">Le JavaScript, le JavaScript, le JavaScript, le JavaScript, le JavaScript, le JavaScript, le JavaScript,
