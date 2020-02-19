@@ -292,14 +292,14 @@
     <div id="bgimg-3" class="bgimg-3 JP-display-container">
         <div class="JP-display-middle">
             <span class="JP-xxlarge JP-text-white w3-wide"
-                style="letter-spacing: 10px;text-shadow: black 0.1em 0.1em 0.2em;">CONTACT</span>
+                style="letter-spacing: 10px;text-shadow: black 0.1em 0.1em 0.2em;"><span>></span>Hello world</span>
         </div>
     </div>
 
     <!-- Contenu trois => info contact et formulaire d'envoi -->
     <div class="JP-content JP-container JP-padding-64" id="contact" style="padding-bottom: 0px!important;">
-        <h3 class="JP-center">ME CONTACTER</h3>
-        <p class="JP-center"><em>J'attends vos retours</em></p>
+        <h3 class="JP-center">Que contient cette page ?</h3>
+        <p class="JP-center"><em>Quatres languages sont utilisés ici;<br>l'html, le css, le php et le JavaScript</em></p>
 
         <!-- Image contenu dans le troisieme contenu ( comprenons hors parallax ) -->
         <div class="JP-row JP-padding-32 JP-section">
@@ -308,72 +308,91 @@
                     oncontextmenu="return false" onmousedown="return false">
             </div>
             <!-- Info contact -->
-            <div class="JP-col m8 JP-panel">
-                <div class="JP-large JP-margin-bottom">
-                    <i class="fa fa-map-marker fa-fw JP-hover-text-black JP-xlarge JP-margin-right"></i> Grenoble, 
-                    France<br>
-                    <i class="fa fa-phone fa-fw JP-hover-text-black JP-xlarge JP-margin-right"></i> Phone: +33
-                    XXXXXXX33<br>
-                    <i class="fa fa-envelope fa-fw JP-hover-text-black JP-xlarge JP-margin-right"></i> Email:
-                    mail@mail.com<br>
-                </div>
-                <p>Toujours prêt à partager autour d'un <a
-                        href="https://www.google.com/search?q=french%20coffee&oq=frenche+coff&aqs=chrome.1.69i57j0l4.8053j0j4&sourceid=chrome&ie=UTF-8&sxsrf=ACYBGNQQhxaVlWhQUvy3bZXa_JM0d01PBg:1581332623728&npsic=0&rflfq=1&rlha=0&rllag=45188965,5725967,489&tbm=lcl&rldimm=3891499178132782458&lqi=Cg1mcmVuY2ggY29mZmVlWh4KDWZyZW5jaCBjb2ZmZWUiDWZyZW5jaCBjb2ZmZWU&ved=2ahUKEwjxj7yK68bnAhVoxoUKHUsRDHcQvS4wC3oECAsQHw&rldoc=1&tbs=lrf:!1m4!1u3!2m2!3m1!1e1!2m1!1e3!3sIAE,lf:1,lf_ui:3&rlst=f#rlfi=hd:;si:3891499178132782458,l,Cg1mcmVuY2ggY29mZmVlWh4KDWZyZW5jaCBjb2ZmZWUiDWZyZW5jaCBjb2ZmZWU;mv:[[45.193124399999995,5.7297364],[45.1848063,5.722198199999999]]"
-                        target="_blank"><i class="fa fa-coffee"></i></a>, ou par message:</p>
-
-                <!-- Formulaire de contact -->
-                <form id="form_msg" name="form_msg" method="POST" action="mail.php" target="_blank">
-                    
-                    <div class="JP-row-padding" style="margin:0 -16px 8px -16px">
-                        <div class="JP-half">
-                            <input id="Name" class="JP-input JP-border" type="text" placeholder="Nom (Min 3carac. Max20)" name="Name"
-                            maxlength="20" onblur="mev('',this.id)" />
-                        </div>
-                        <div class="JP-half">
-                            <input id="Email" class="JP-input JP-border" type="text" placeholder="Email" name="Email"
-                            onblur="mev('',this.id)" />
-                        </div>
-                        <div class="JP-half" style="width: 100%;">
-                            <!--
-                                <pre>
-                                Pourrait permertre un retour à la ligne dans le placeholder
-                            -->
-                                <textarea id="Message" class="JP-input JP-border" type="text"
-                                placeholder="Merci de lire le &#9888; ci-dessous / message (Min 3carac. Max5oo)" name="Message" maxlength="500"
-                                style="height: 100px; resize: none;" onblur="mev('',this.id)"></textarea>
-                            <!--
-                                </pre>
-                            -->
-                        </div>
-                        <div class="JP-half">
-                            <input id="cEmail" class="JP-input JP-border" type="text" name="cEmail"
-                                placeholder="Confirmation de l'email" onblur="mev('',this.id)" />
-                        </div>
-                        <div style="margin-right: 8px;">
-                            <button id="envoi" class="boutons droite JP-section" type="button"
-                                style="margin-top: 0!important; border-radius: 19px;" onclick='envoyer()'>
-                                <i class="fa fa-paper-plane"></i> Envoi du message
-                            </button>
-                            <!-- Texte informatif de validation pour envoie du message -->
-                            <div id="mesgInfo" class="JP-half" style="width: 100%; margin-left: 8px;">
-                                Tous les champs sont obligatoires, d'avance merci.
-                            </div>
-                        </div>
-                    </div>
-                </form>
-                <!-- Texte sous le formulaire -->
-                <p><span id="war_violet">&#9888;</span> L'envoi du message doit vous amener sur une page 4o5 Not
-                    Allowed;<br>cela signifie que l'hébergeur utilisé, ici githhub, reconnait le format
-                    de la page mais ne le traite pas. Donc l'envoi n'a pas aboutit.<br>Si le cœur vous en dit, de quand
-                    même vouloir le faire. je l'ai aussi hébergé
-                    <a href="https://jpgrenoble.000webhostapp.com/index.html" target="_blank"
-                        class="JP-hover-text-turquoise" style="text-decoration: none;"><span><</span>ici<span>></span></a>
-                    sur 000webhostapp ne moyennant aucune demande pécuniaire mais un petit "Powered By 000webhost" en
-                    guise de footer <span id="smile">&#128527;</span>.<br>
-                    Ou simplement en prenant mon mail plus haut ( quand il y sera ).
-                </p>
+            <div class="JP-col m8 JP-panel JP-large JP-margin-bottom">
+                    <p><i class="fab fa-html5 fa-fw JP-hover-text-black JP-xxlarge JP-margin-right"></i> L'html;<br>
+                    .
+                    </p>
+                    <p><i class="fab fa-css3-alt fa-fw JP-hover-text-black JP-xxlarge JP-margin-right"></i> Le css<br>
+                    .
+                    </p>
+                    <p><i class="fab fa-js-square fa-fw JP-hover-text-black JP-xxlarge JP-margin-right"></i> Le php<br>
+                    .
+                    </p>
+                    <p><i class="fab fa-php fa-fw JP-hover-text-black JP-xxlarge JP-margin-right"></i> Le JavaScript<br>
+                    .
+                    </p>
             </div>
         </div>
+    </div>
+  </div>
+
+  <div id="bgimg-4" class="bgimg-4 JP-display-container">
+    <div class="JP-display-middle">
+        <span class="JP-xxlarge JP-text-white w3-wide"
+            style="letter-spacing: 10px;text-shadow: black 0.1em 0.1em 0.2em;">CONTACT</span>
+    </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="JP-content JP-container JP-padding-64" id="contact" style="padding-bottom: 0px!important;">
+    <h3 class="JP-center">ME CONTACTER</h3>
+    <p class="JP-center"><em>J'attends vos retours</em></p>
+
+    <div class="JP-row JP-padding-32 JP-section">
+        <div class="vignettes JP-col m4 JP-container">
+            <img src="public/img/frcoffe.jpg" class="JP-image JP-round" style="width:100%"
+                oncontextmenu="return false" onmousedown="return false">
+        </div>
+        <div class="JP-col m8 JP-panel">
+            <div class="JP-large JP-margin-bottom">
+                <i class="fa fa-map-marker fa-fw JP-hover-text-black JP-xlarge JP-margin-right"></i> Grenoble,
+                France<br>
+                <i class="fa fa-phone fa-fw JP-hover-text-black JP-xlarge JP-margin-right"></i> Phone: +33
+                XXXXXXX33<br>
+                <i class="fa fa-envelope fa-fw JP-hover-text-black JP-xlarge JP-margin-right"></i> Email:
+                mail@mail.com<br>
+            </div>
+            <p>Toujours prêt à partager autour d'un <a
+                    href="https://www.google.com/search?q=french%20coffee&oq=frenche+coff&aqs=chrome.1.69i57j0l4.8053j0j4&sourceid=chrome&ie=UTF-8&sxsrf=ACYBGNQQhxaVlWhQUvy3bZXa_JM0d01PBg:1581332623728&npsic=0&rflfq=1&rlha=0&rllag=45188965,5725967,489&tbm=lcl&rldimm=3891499178132782458&lqi=Cg1mcmVuY2ggY29mZmVlWh4KDWZyZW5jaCBjb2ZmZWUiDWZyZW5jaCBjb2ZmZWU&ved=2ahUKEwjxj7yK68bnAhVoxoUKHUsRDHcQvS4wC3oECAsQHw&rldoc=1&tbs=lrf:!1m4!1u3!2m2!3m1!1e1!2m1!1e3!3sIAE,lf:1,lf_ui:3&rlst=f#rlfi=hd:;si:3891499178132782458,l,Cg1mcmVuY2ggY29mZmVlWh4KDWZyZW5jaCBjb2ZmZWUiDWZyZW5jaCBjb2ZmZWU;mv:[[45.193124399999995,5.7297364],[45.1848063,5.722198199999999]]"
+                    target="_blank"><i class="fa fa-coffee"></i></a>, ou par message:</p>
+            <form id="form_msg" name="form_msg" method="POST" action="mail.php" target="_blank">
+                <!--PHP-->
+                <div class="JP-row-padding" style="margin:0 -16px 8px -16px">
+                    <div class="JP-half">
+                        <input id="Name" class="JP-input JP-border" type="text" placeholder="Nom"  name="Name" onblur="mev('',this.id)">
+                    </div>
+                    <div class="JP-half">
+                        <input id="Email" class="JP-input JP-border" type="text" placeholder="Email"  name="Email" onblur="mev('',this.id)">
+                    </div>
+                    <div class="JP-half" style="width: 100%;">
+                <textarea id="Message" class="JP-input JP-border" type="text"
+                    placeholder="Message / merci de lire le &#9888; ci-dessous"  name="Message"
+                    style="height: 100px; resize: none;" onblur="mev('',this.id)"></textarea>
+            </div>
+                    <div class="JP-half">
+                        <input id="cEmail"class="JP-input JP-border" type="text" placeholder="Confirmation de l'email"  name="cEmail" onblur="mev('',this.id)">
+                    </div><div style="margin-right: 8px;">
+                <button id="envoi" class="boutons droite JP-section" type="button" style="margin-top: 0!important; border-radius: 19px;" onclick='envoyer()'>
+                    <i class="fa fa-paper-plane"></i> Envoi du message
+                </button>
+                <div id="mesgInfo" class="JP-half" style="width: 100%; margin-left: 8px;">
+                Tous les champs sont obligatoires
+                </div></div>
+                </div>
+            </form>
+            <p>&#9888; L'envoi du message doit vous amener sur une page 4o5 Not
+                Allowed;<br>cela signifie que l'hébergeur utilisé, ici githhub, reconnait le format
+                de la page mais ne le traite pas. Donc l'envoi n'a pas aboutit.<br>Si le cœur vous en dit, de quand
+                même vouloir le faire. je l'ai aussi héberge
+                <a href="https://jpgrenoble.000webhostapp.com/moi/index.html" target="_blank"
+                    class="JP-hover-text-violet" style="text-decoration: none;"><span><</span>ici<span>></span></a>
+                sur 000webhostapp ne moyennant aucune demande pécuniaire mais un petit "Powered By 000webhost" en
+                guise de footer <span id="smile">&#128527;</span>.<br>
+                Ou simplement en prenant mon mail plus haut ( quand il y sera ).
+            </p>
+        </div>
+        
+    </div>
         <!-- ASCII 4o4 -->
         <center>
             <div class="terminal">
@@ -387,9 +406,7 @@ ___   ___    ________    ___   ___
                   \|__|  \|_______|        \|__|  </pre></p></a>
         </div>
     </center>
-    </div>
-  </div>
-
+</div>
     <!-- Footer => pas besoin d'explications... ;) -->
     <footer class="JP-center noir JP-padding-14 JP-opacity JP-hover-opacity-off">
         <a href="#home" class="boutons JP-light-grey" style="border-radius: 0 0 19px 19PX;"><i

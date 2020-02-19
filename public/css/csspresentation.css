@@ -230,16 +230,16 @@ h3 .fab.fa-instagram{
   min-height: 400px;
 }
 
-.bgimg-4 {
-    background-image: url("../img/matrix.jpg");
-    min-height: 400px;
-  }
-
 /* Third image (Contact) */
 .bgimg-3 {
   background-image: url("../img/mariane.jpg");
-  min-height: 400px;
+  min-height: 300px;
 }
+
+.bgimg-4 {
+    background-image: url("../img/matrix.jpg");
+    min-height: 200px;
+  }
 
 .w3-wide {letter-spacing: 10px;}
 .JP-hover-opacity {cursor: pointer;}
@@ -405,6 +405,7 @@ h3 .fab.fa-instagram{
 }
 .JP-margin-bottom{margin-bottom:16px!important}
 .JP-xlarge{font-size:24px!important}
+.JP-xxlarge{font-size:36px!important}
 .JP-large{font-size:18px!important}
 .JP-section,.w3-code{margin-top:16px!important;margin-bottom:16px!important}
 .JP-padding-small{padding:4px 8px!important}
@@ -551,7 +552,7 @@ h3 .fab.fa-instagram{
     -webkit-text-decoration-color: #d400ff!important;
     text-decoration-color: #d400ff!important;
 }
-i.fab.fa-instagram.instabtn, i.fab.fa-instagram.w3-hover-opacity, i.fab.fa-linkedin.w3-hover-opacity, i.fab.fa-codepen.w3-hover-opacity
+i.fab.fa-instagram.instabtn, i.fab.fa-instagram.w3-hover-opacity, i.fab.fa-linkedin.w3-hover-opacity, i.fab.fa-codepen.w3-hover-opacity, .fa-html5, .fa-css3-alt, .fa-js-square, .fa-php
 {
     background: linear-gradient(-45deg,#04c4b4,#d400ff);
     -webkit-background-clip: text;
@@ -572,7 +573,7 @@ i.fab.fa-instagram.instabtn {
 
 }
 
-i.fab.fa-instagram.instabtn:hover, i.fab.fa-instagram.w3-hover-opacity:hover, i.fab.fa-linkedin.w3-hover-opacity:hover, i.fab.fa-codepen.w3-hover-opacity:hover
+i.fab.fa-instagram.instabtn:hover, i.fab.fa-instagram.w3-hover-opacity:hover, i.fab.fa-linkedin.w3-hover-opacity:hover, i.fab.fa-codepen.w3-hover-opacity:hover, .fa-html5:hover, .fa-css3-alt:hover, .fa-js-square:hover, .fa-php:hover
 {
     background: linear-gradient(-45deg,#d400ff,#04c4b4);
     -webkit-background-clip: text;
