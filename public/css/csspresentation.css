@@ -403,6 +403,9 @@ h3 .fab.fa-instagram{
     border-bottom:1px solid #ccc;
     width:100%;
 }
+.JP-justif {
+    text-align: justify;
+}
 .JP-margin-bottom{margin-bottom:16px!important}
 .JP-xlarge{font-size:24px!important}
 .JP-xxlarge{font-size:36px!important}
@@ -555,6 +558,11 @@ h3 .fab.fa-instagram{
     -webkit-text-decoration-color: #d400ff!important;
     text-decoration-color: #d400ff!important;
 }
+
+#tcode {
+    font-size: 25px;
+}
+
 i.fab.fa-instagram.instabtn, i.fab.fa-instagram.w3-hover-opacity, i.fab.fa-linkedin.w3-hover-opacity, i.fab.fa-codepen.w3-hover-opacity, .fa-html5, .fa-css3-alt, .fa-js-square, .fa-php,
 #tcode
 {

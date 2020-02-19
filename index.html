@@ -301,24 +301,26 @@
         <h3 class="JP-center">Que contient cette page ?</h3>
         <p class="JP-center"><em>Quatres languages sont utilisés ici;<br>l'html, le css, le php et le JavaScript</em></p>
 
+            <!-- Info contact -->
+            <div class="JP-col JP-panel JP-justif JP-margin-bottom">
         <!-- Image contenu dans le troisieme contenu ( comprenons hors parallax ) -->
         <div class="JP-row JP-padding-32 JP-section">
             <div class="vignettes JP-col m4 JP-container">
-                <p>Immage provisoire.
-                </p>
                 <img src="public/img/code.jpg" class="JP-image JP-round" style="width:100%"
                     oncontextmenu="return false" onmousedown="return false">
             </div>
-            <!-- Info contact -->
-            <div class="JP-col m8 JP-panel JP-large JP-margin-bottom">
                     <p><i style="float: right;" class="fab fa-html5 fa-fw JP-hover-text-black JP-xxxlarge JP-margin-right"></i><span id="tcode"> L'html</span><br>
-                        Encours de redaction.<span id="txtgrisnoir">L'html, l'html, l'html, l'html, l'html, l'html, l'html, l'html, l'html, l'html, l'html, l'html, l'html,
-                            l'html, l'html, l'html, l'html, l'html, l'html, l'html, l'html, l'html, l'html, l'html, l'html, l'html, l'html, l'html, l'html, l'html, l'html.
-                        </span>
+                        Pourquoi ces quatre langages ? Voyons ça un peut comme une rédaction interactive.
+                            Avant de la rédiger en forme vous allez faire un brouillon. Imaginez que celui ci soit l'html nous allons y écrire tout le contenu de la rédac.
+                            Les titres, sous titres, paragraphes, photos et caetera... Chaque éléments y est reconnu par des balises pour être ensuite interprété sous le bon état.
+                            Une image est déclarée comme ceci :<br><span style="color: white;"><</span><span style="color: lightskyblue;">img</span><span style="color: white;">></span><br>Il faut aussi référencer la route pour récuperer l'image et ensuite
+                            pouvoir l'afficher en incluant src="Le/Chemin/DeLimage.jpg" dans la balise.<br>Ce qui donne :<br><span style="color: white;"><</span><span style="color: lightskyblue;">img</span><span style="color: orange;"> src</span><span style="color: lightskyblue;">=</span><span style="color: darkseagreen;">"Le/Chemin/DeLimage.jpg"</span><span style="color: white;">></span><br>
                     </p>
                     <p><i style="float: right;" class="fab fa-css3-alt fa-fw JP-hover-text-black JP-xxxlarge JP-margin-right"></i><span id="tcode">  Le css</span><br>
-                        Encours de redaction.<span id="txtgrisnoir">Le css, le css, le css, le css, le css, le css, le css, le css, le css, le css, le css, le css, le css,
-                            le css, le css, le css, le css, le css, le css, le css, le css, le css, le css, le css, le css, le css, le css, le css, le css, le css, le css.
+                        Une fois la rédaction écrite, on l'a dit c'est un brouillon donc, cela ne ressemble pas à grand chose. Il faut le mètre en forme... Dans l'exemple de la balise
+                        de l'image il faut donc lui informer de l'état d'affichage que nous souhaitons en lui indiquant sa hauteur et sa largeur en pixel par exemple :<br>
+                        Dans l'html<br><span style="color: white;"><</span><span style="color: lightskyblue;">img</span><span style="color: orange;"> src</span><span style="color: lightskyblue;">=</span><span style="color: darkseagreen;">" "</span><span style="color: orange;"> id</span><span style="color: lightskyblue;">=</span><span style="color: darkseagreen;">''exTaille''</span><span style="color: white;">></span><br>
+                        Et dans le css<br><span style="color: darkorange;">.exTaille</span> <span style="color: lightskyblue;">{</span><span style="color: darkseagreen;"> width:</span><span style="color: green;"> 100</span><span style="color: blue;">px</span><span style="color: lightskyblue;">;</span><span style="color: darkseagreen;"> height:</span><span style="color: green;"> 300</span><span style="color: blue;">px</span><span style="color: lightskyblue;"> }</span> 
                         </span>
                     </p>
                     <p><i style="float: right;" class="fab fa-js-square fa-fw JP-hover-text-black JP-xxxlarge JP-margin-right"></i><span id="tcode">  Le JavaScript</span><br>
