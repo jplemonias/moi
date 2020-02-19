@@ -382,6 +382,7 @@ h3 .fab.fa-instagram{
 .JP-container{
     background-color: #000; 
 }
+
 .JP-transparent,.w3-hover-none:hover{background-color:transparent!important}
 .JP-animate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
 .JP-modal-content{margin:auto;background-color:#fff;position:relative;padding:0;outline:0;width:600px}
