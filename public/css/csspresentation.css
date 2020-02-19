@@ -620,3 +620,8 @@ i.fas.fa-peace.D {
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 6px rgb(0, 0, 0); 
 }
+
+
+.vignettes {
+    float: right;
+}
