@@ -639,3 +639,22 @@ i.fas.fa-peace.D {
 .vignettes {
     float: right;
 }
+#separ1 {
+    margin-bottom: 10px;
+    left: 0;
+    right: 0;
+    content: "";
+    height: 3px;
+    border-radius: 10px;
+    background: linear-gradient(90deg,#d400ff,#04c4b4,#04c4b4);
+}
+
+#separ2 {
+    margin-top: 11px;
+    left: 0;
+    right: 0;
+    content: "";
+    height: 3px;
+    border-radius: 10px;
+    background: linear-gradient(90deg,#008a7e,#04c4b4,#d400ff);
+}

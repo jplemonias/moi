@@ -310,14 +310,16 @@
                     oncontextmenu="return false" onmousedown="return false">
                 
             </div>
-                    <p><i style="float: right;" class="fab fa-html5 fa-fw JP-hover-text-black JP-xxxlarge JP-margin-right"></i><span id="tcode"> L'html</span><br>
+                    <p><i style="float: right;" class="fab fa-html5 fa-fw JP-hover-text-black JP-xxxlarge JP-margin-right"></i><span id="tcode"> L'html</span><div id="separ1"></div>
                         Pourquoi ces quatre langages ? Voyons ça un peut comme une rédaction interactive.
                             Avant de la rédiger en forme vous allez faire un brouillon. Imaginez que celui ci soit l'html nous allons y écrire tout le contenu de la rédac.
                             Les titres, sous titres, paragraphes, photos et caetera... Chaque éléments y est reconnu par des balises pour être ensuite interprété sous le bon état.
-                            Une image est déclarée comme ceci :<br><span style="color: white;"><</span><span style="color: lightskyblue;">img</span><span style="color: white;">></span><br>Il faut aussi référencer la route pour récuperer l'image et ensuite
-                            pouvoir l'afficher en incluant src="Le/Chemin/DeLimage.jpg" dans la balise.<br>Ce qui donne :<br><span style="color: white;"><</span><span style="color: lightskyblue;">img</span><span style="color: orange;"> src</span><span style="color: lightskyblue;">=</span><span style="color: darkseagreen;">"Le/Chemin/DeLimage.jpg"</span><span style="color: white;">></span><br>
+                            Une image est déclarée comme ceci :<br><span style="color: white;"><</span><span style="color: lightskyblue;">img</span><span style="color: white;">></span><br>
+                            Il faut aussi référencer la route pour récuperer l'image et ensuite pouvoir l'afficher en incluant src="Le/Chemin/DeLimage.jpg" dans la balise.<br>Ce qui donne :<br>
+                            <span style="color: white;"><</span><span style="color: lightskyblue;">img</span><span style="color: orange;"> src</span><span style="color: lightskyblue;">=</span>
+                            <span style="color: darkseagreen;">"Le/Chemin/DeLimage.jpg"</span><span style="color: white;">></span><br>
                     </p>
-                    <p><i style="float: right;" class="fab fa-css3-alt fa-fw JP-hover-text-black JP-xxxlarge JP-margin-right"></i><span id="tcode">  Le css</span><br>
+                    <p><i style="float: right;" class="fab fa-css3-alt fa-fw JP-hover-text-black JP-xxxlarge JP-margin-right"></i><span id="tcode">  Le css</span><div id="separ1"></div>
                         Une fois la rédaction écrite, on l'a dit c'est un brouillon donc, cela ne ressemble pas à grand chose. Il faut le mètre en forme... Dans l'exemple de la balise
                         de l'image il faut donc lui informer de l'état d'affichage que nous souhaitons en lui indiquant sa hauteur et sa largeur en pixel par un id.<br>
                         Dans l'html<br><span style="color: white;"><</span><span style="color: lightskyblue;">img</span><span style="color: orange;"> src</span><span style="color: lightskyblue;">=</span><span style="color: darkseagreen;">" "</span><span style="color: orange;"> id</span><span style="color: lightskyblue;">=</span><span style="color: darkseagreen;">''exTaille''</span><span style="color: white;">></span><br>
@@ -326,12 +328,22 @@
                         <span style="color: darkorange;">.exTaille:hover</span> <span style="color: lightskyblue;">{</span><span style="color: darkseagreen;"> opacity:</span><span style="color: green;"> 0.5</span><span style="color: lightskyblue;"> }</span>
                         <br>ici lorsque nous passons la souris sur l'image elle deviendra opaque à moitié, l'opacité étant comprise entre 0 et 1.
                     </p>
-                    <p><i style="float: right;" class="fab fa-js-square fa-fw JP-hover-text-black JP-xxxlarge JP-margin-right"></i><span id="tcode">  Le JavaScript</span><br>
-                        Encours de rédaction.<span id="txtgrisnoir">Le JavaScript, le JavaScript, le JavaScript, le JavaScript, le JavaScript, le JavaScript, le JavaScript,
-                            le JavaScript, le JavaScript, le JavaScript, le JavaScript, le JavaScript, le JavaScript, le JavaScript, le JavaScript, le JavaScript, le JavaScript.
+                    <p><i style="float: right;" class="fab fa-js-square fa-fw JP-hover-text-black JP-xxxlarge JP-margin-right"></i><span id="tcode">  Le JavaScript</span><div id="separ1"></div>
+                        Le JavaScript va permettre de rendre encore plus dynamique votre ''rédaction interactive'' en appelant des fonctions qui peuvent réaliser bien plus qu'un simple :hover.
+                        Par exemple sur cette page un des codes JavaScript consiste à informer l'utilisateur que le formulaire d'envoi de message est conforme ou non, bloquant l'envoie de celui-ci
+                        jusqu'à ce que le formulaire soit entièrement validé. La fonction ci dessous affiche le message "Formulaire incomplet" dans l'élément  ayant l'id MesInfo si les valeurs renvoyées
+                        sont fausses. Pour ce faire dans la balise du bouton validant, il faut rajouter <span style="color: darkorange;">onclick</span><span style="color: white;">=</span><span style="color: darkseagreen;">"<span style="color: lightskyblue;">envoyer</span>()"</span>, qui permettra d'appeler la fonction lui étant liée.<br>Le code nous intéressant est :<br>
+                        <span style="text-align: initial;"><span style="color: white;">
+                            <span style="color: blue;">function </span><span style="color: lightskyblue;">envoyer</span>() {<br>
+                                <span style="color: blue;">if</span> (LeNom <span style="color: blue;">==</span><span style="color: green;"> true</span> <span style="color: blue;">&&</span> LeMail <span style="color: blue;">==</span><span style="color: green;"> true</span> <span style="color: blue;">&&</span> LeMessage <span style="color: blue;">==</span> <span style="color: green;">true</span>) {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.<span style="color: lightskyblue;">getElementById</span> (<span style="color: darkseagreen;">'form_msg'</span>).<span style="color: lightskyblue;">submit</span>();<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                                <span style="color: blue;">else</span> {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.<span style="color: lightskyblue;">getElementById</span> (<span style="color: darkseagreen;">'MesgInfo'</span>)<span style="color: lightskyblue;">getElementById</span> (<span style="color: chartreuse;">.innerText </span><span style="color: blue;">=</span> <span style="color: darkseagreen;">"Formulaire incomplet"</span>;<br>
+                            }</span>
                         </span>
                     </p>
-                    <p><i style="float: right;" class="fab fa-php fa-fw JP-hover-text-black JP-xxxlarge JP-margin-right"></i><span id="tcode">  Le php</span><br>
+                    <p><i style="float: right;" class="fab fa-php fa-fw JP-hover-text-black JP-xxxlarge JP-margin-right"></i><span id="tcode">  Le php</span><div id="separ1"></div>
                         En cours de rédaction.<span id="txtgrisnoir">Le php, le php, le php, le php, le php, le php, le php, le php, le php, le php, le php, le php, le php,
                             le php, le php, le php, le php, le php, le php, le php, le php, le php, le php, le php, le php, le php, le php, le php, le php, le php, le php.
                         </span>
