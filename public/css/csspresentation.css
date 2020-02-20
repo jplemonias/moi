@@ -372,6 +372,7 @@ h3 .fab.fa-instagram{
 @media (min-width:993px){.JP-modal-content{width:900px}.cacher-large{display:none!important}.w3-sidebar.w3-collapse{display:block!important}}
 @media (max-width:600px){.JP-modal-content{margin:0 10px;width:auto!important}.JP-modal{padding-top:30px}
 .w3-dropdown-hover.w3-mobile .w3-dropdown-content,.w3-dropdown-click.w3-mobile .w3-dropdown-content{position:relative}
+#codePHP{visibility: hidden!important;}
 .cacher-small{display:none!important}.w3-mobile{display:block;width:100%!important}.objetBar.w3-mobile,.w3-dropdown-hover.w3-mobile,.w3-dropdown-click.w3-mobile{text-align:center}
 .w3-dropdown-hover.w3-mobile,.w3-dropdown-hover.w3-mobile .w3-btn,.w3-dropdown-hover.w3-mobile .boutons,.w3-dropdown-click.w3-mobile,.w3-dropdown-click.w3-mobile .w3-btn,.w3-dropdown-click.w3-mobile .boutons{width:100%}}
 .boutons:hover{color:#000!important;background-color:#ccc!important}
@@ -429,7 +430,7 @@ h3 .fab.fa-instagram{
 .w3-col.s1{width:8.33333%}.w3-col.s2{width:16.66666%}.w3-col.s3{width:24.99999%}.w3-col.s4{width:33.33333%}
 .w3-col.s5{width:41.66666%}.w3-col.s6{width:49.99999%}.w3-col.s7{width:58.33333%}.w3-col.s8{width:66.66666%}
 .w3-col.s9{width:74.99999%}.w3-col.s10{width:83.33333%}.w3-col.s11{width:91.66666%}.w3-col.s12{width:99.99999%}
-
+#codePHP{visibility: visible;}
 @media (min-width:601px){
     .w3-col.m1{width:8.33333%}
     .w3-col.m2{width:16.66666%}
