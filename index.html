@@ -310,7 +310,7 @@
                     oncontextmenu="return false" onmousedown="return false">
                 
             </div>
-                    <p><i style="float: right;" class="fab fa-html5 fa-fw JP-hover-text-black JP-xxxlarge JP-margin-right"></i><span id="tcode"> L'html</span><div id="separ1"></div>
+                    <p><i style="float: right;" class="fab fa-html5 fa-fw JP-hover-text-black JP-xxxlarge JP-margin-right"></i><span id="tcode"> L'html</span><div id="separ1" class="JP-col m8"></div>
                         Pourquoi ces quatre langages ? Voyons ça un peu comme une rédaction interactive.
                             Avant de la rédiger en forme vous allez faire un brouillon. Imaginez que celui-ci soit l'html, nous allons y écrire tout le contenu de la rédac.
                             Les titres, sous_titres, paragraphes, photos etc... Chaque élément y est reconnu par des balises pour être ensuite interprété sous le bon état.
@@ -319,7 +319,7 @@
                             <span style="color: white;"><</span><span style="color: lightskyblue;">img</span><span style="color: orange;"> src</span><span style="color: lightskyblue;">=</span>
                             <span style="color: darkseagreen;">"Le/Chemin/DeLimage.jpg"</span><span style="color: white;">></span><br>
                     </p>
-                    <p><i style="float: right;" class="fab fa-css3-alt fa-fw JP-hover-text-black JP-xxxlarge JP-margin-right"></i><span id="tcode">  Le css</span><div id="separ1"></div>
+                    <p><i style="float: right;" class="fab fa-css3-alt fa-fw JP-hover-text-black JP-xxxlarge JP-margin-right"></i><span id="tcode">  Le css</span><div id="separ1" class="JP-col m8"></div>
                         Une fois la rédaction écrite, on l'a dit c'est un brouillon donc, cela ne ressemble pas à grand chose. Il faut le mettre en forme... Dans l'exemple de la balise
                         de l'image il faut donc l'informer de l'état d'affichage que nous souhaitons, en lui indiquant sa hauteur et sa largeur en pixel par un id.<br>
                         Dans l'html<br><span style="color: white;"><</span><span style="color: lightskyblue;">img</span><span style="color: orange;"> src</span><span style="color: lightskyblue;">=</span><span style="color: darkseagreen;">" "</span><span style="color: orange;"> id</span><span style="color: lightskyblue;">=</span><span style="color: darkseagreen;">''exTaille''</span><span style="color: white;">></span><br>
@@ -346,8 +346,39 @@
                     <p><i style="float: right;" class="fab fa-php fa-fw JP-hover-text-black JP-xxxlarge JP-margin-right"></i><span id="tcode">  Le php</span><div id="separ1"></div>
                         Jusqu'ici nous n’agissons que sur la partie client c'est à dire, plus simplement, que tes informations traitées le sont que sur la machine de l'utilisateur.
                         Vous l'aurez peut être compris le php permet donc d'envoyer ou de recevoir des informations depuis, vers d'autres machines. Le php est utilisé ici pour pouvoir
-                        envoyer un message sur une adresse mail depuis un formulaire.<br>En cours de rédaction.<span id="txtgrisnoir"><span id="codePHP">Le php, le php, le php, le php, le php, le php, le php, le php, le php, le php, le php, le php, le php,
-                            le php, le php, le php, le php, le php, le php, le php, le php, le php, le php, le php, le php, le php, le php, le php, le php, le php, le php.</span>
+                        envoyer un message sur une adresse mail depuis un formulaire.<br>En cours de rédaction.
+                            <span id="codePHP"><br>
+                                <span style="color: lightskyblue;"><span><</span>?php <br>
+
+$Expediteur <span style="color: blue;">=</span> $_POST[<span style="color: darkseagreen;">'Name'</span>]; <span id="txtgrisnoir">//==> on récupérer le nom<br></span>
+$email <span style="color: blue;">=</span> $_POST[<span style="color: darkseagreen;">'Email'</span>]; <span id="txtgrisnoir">//======> on récupérer l'email<br></span>
+$message <span style="color: blue;">=</span> $_POST[<span style="color: darkseagreen;">'Message'</span>]; <span id="txtgrisnoir">//==> on récupérer le message<br><br></span>
+
+<span id="txtgrisnoir">// on édite le message que contiendras l'email</span><br>
+$msg <span style="color: blue;">=</span><span style="color: darkseagreen;"> "Vous avez reçu un message de:<span style="color: blue;">\t</span><span style="color: lightskyblue;">$Expediteur</span>.<span style="color: blue;">\n</span>"</span>;<br>
+$msg <span style="color: blue;">.=</span><span style="color: darkseagreen;"> "Le voici:<span style="color: blue;">\n</span>"</span>;<br>
+$msg <span style="color: blue;">.=</span><span style="color: darkseagreen;"> "<span style="color: blue;">\"</span><span style="color: lightskyblue;">$message</span><span style="color: blue;">\"</span>.<span style="color: blue;">\n</span>"</span>;<br>
+$msg <span style="color: blue;">.=</span> <span style="color: darkseagreen;">"Pour lui répondre:<span style="color: blue;">\n</span>"</span>;<br>
+$msg <span style="color: blue;">.=</span> <span style="color: darkseagreen;">"<span style="color: lightskyblue;">$email</span><span style="color: blue;">\n\n</span>"</span>;<br><br>
+
+$destinataire <span style="color: blue;">=</span><span style="color: darkseagreen;"> "TonMail@xxx.xxx"</span>; <span id="txtgrisnoir">//==> on cré l'email de resseption<br></span>
+$sujet <span style="color: blue;">=</span><span style="color: darkseagreen;"> "Titre du mail"</span>; <span id="txtgrisnoir">//======> on cré le sujet du mail<br><br></span>
+
+$mailheaders <span style="color: blue;">=</span><span style="color: darkseagreen;"> "From: <span style="color: lightskyblue;">$email $sujet</span> de <span style="color: lightskyblue;">$Expediteur </span><span style="color: blue;">\n</span>"</span>;<br>
+$mailheaders <span style="color: blue;">.=</span><span style="color: darkseagreen;"> "Reply-To: <span style="color: lightskyblue;">$email</span><span style="color: blue;">\n\n</span>"</span>;<br><br>
+
+<span style="color: gold;">mail</span> ($destinataire, $sujet, $msg, $mailheaders);<br><br>
+<span style="color: darkseagreen;">
+<span style="color: gold;">echo</span> "<span><</span>HTML><span><</span>HEAD>"<span style="color: lightskyblue;">;</span><br>
+<span style="color: gold;">echo</span> "<span><</span>TITLE>Formulaire envoyé !<span><</span>/TITLE><span><</span>/HEAD><span><</span>BODY>"<span style="color: lightskyblue;">;</span><br>
+<span style="color: gold;">echo</span> "<span><</span>H1 align=center>Merci, <span style="color: lightskyblue;">$Expediteur</span>.<span><</span>/H1>"<span style="color: lightskyblue;">;</span><br>
+<span style="color: gold;">echo</span> "<span><</span>P align=center>"<span style="color: lightskyblue;">;</span><br>
+<span style="color: gold;">echo</span> "Ton message à bien été transmit à: <span style="color: lightskyblue;">$destinataire</span>"<span style="color: lightskyblue;">;</span><br>
+<span style="color: gold;">echo</span> "<span><</span>br><span><</span>br>Il a reçu ceci:<span><</span>br><span><</span>br><span style="color: lightskyblue;">$sujet</span><span><</span>br><span><</span>br><span style="color: lightskyblue;">$msg</span><span><</span>/P>"<span style="color: lightskyblue;">;</span><br>
+<span style="color: gold;">echo</span> "<span><</span>/BODY><span><</span>/HTML>"<span style="color: lightskyblue;">;</span><br>
+</span>
+?>
+</span>
                         </span>
                     </p>
             </div>
