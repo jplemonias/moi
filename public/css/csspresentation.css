@@ -241,8 +241,6 @@ h3 .fab.fa-instagram{
     min-height: 200px;
   }
 
-.w3-wide {letter-spacing: 10px;}
-.JP-hover-opacity {cursor: pointer;}
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1600px) {
@@ -380,6 +378,8 @@ h3 .fab.fa-instagram{
 
 /* corp */
 
+.esptxt-large {letter-spacing: 10px;}
+.JP-hover-opacity {cursor: pointer;}
 .JP-container{
     background-color: #000; 
 }
