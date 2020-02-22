@@ -390,9 +390,8 @@
                             }</span>
                     </span>
                 </p>
-                <p><i style="float: right;"
-                        class="fab fa-php fa-fw JP-hover-text-black JP-xxxlarge JP-margin-right"></i><span id="tcode">
-                        Le php</span>
+                <p><i style="float: right;" class="fab fa-php fa-fw JP-hover-text-black JP-xxxlarge JP-margin-right"></i>
+                    <span id="tcode">Le php</span>
                     <div id="separ1"></div>
                     Jusqu'ici nous n’agissons que sur la partie client c'est à dire, plus simplement, que tes
                     informations traitées le sont que sur la machine de l'utilisateur.
@@ -402,35 +401,55 @@
                     <span id="codePHP">
                         <span style="color: lightskyblue;"><span><</span>?php <br>
 
-$Expediteur <span style="color: blue;">=</span> $_POST[<span style="color: darkseagreen;">'Name'</span>]; <span id="txtgrisnoir">//==> on récupérer le nom<br></span>
-$email <span style="color: blue;">=</span> $_POST[<span style="color: darkseagreen;">'Email'</span>]; <span id="txtgrisnoir">//======> on récupérer l'email<br></span>
-$message <span style="color: blue;">=</span> $_POST[<span style="color: darkseagreen;">'Message'</span>]; <span id="txtgrisnoir">//==> on récupérer le message<br><br></span>
+                        $Expediteur <span style="color: blue;">=</span> $_POST[<span style="color: darkseagreen;">'Name'</span>];
+                        <span id="txtgrisnoir">//==> on récupérer le nom<br></span>
+                        $email <span style="color: blue;">=</span> $_POST[<span style="color: darkseagreen;">'Email'</span>];
+                        <span id="txtgrisnoir">//======> on récupérer l'email<br></span>
+                        $message <span style="color: blue;">=</span> $_POST[<span style="color: darkseagreen;">'Message'</span>];
+                        <span id="txtgrisnoir">//==> on récupérer le message<br><br></span>
 
-<span id="txtgrisnoir">// on édite le message que contiendras l'email</span><br>
-$msg <span style="color: blue;">=</span><span style="color: darkseagreen;"> "Vous avez reçu un message de:<span style="color: blue;">\t</span><span style="color: lightskyblue;">$Expediteur</span>.<span style="color: blue;">\n</span>"</span>;<br>
-$msg <span style="color: blue;">.=</span><span style="color: darkseagreen;"> "Le voici:<span style="color: blue;">\n</span>"</span>;<br>
-$msg <span style="color: blue;">.=</span><span style="color: darkseagreen;"> "<span style="color: blue;">\"</span><span style="color: lightskyblue;">$message</span><span style="color: blue;">\"</span>.<span style="color: blue;">\n</span>"</span>;<br>
-$msg <span style="color: blue;">.=</span> <span style="color: darkseagreen;">"Pour lui répondre:<span style="color: blue;">\n</span>"</span>;<br>
-$msg <span style="color: blue;">.=</span> <span style="color: darkseagreen;">"<span style="color: lightskyblue;">$email</span><span style="color: blue;">\n\n</span>"</span>;<br><br>
+                        <span id="txtgrisnoir">// on édite le message que contiendras l'email</span><br>
+                        $msg <span style="color: blue;">=</span><span style="color: darkseagreen;"> "Vous avez reçu un message de:
+                        <span style="color: blue;">\t</span><span style="color: lightskyblue;">$Expediteur</span>.<span 
+                        style="color: blue;">\n</span>"</span>;<br>
+                        $msg <span style="color: blue;">.=</span><span style="color: darkseagreen;"> 
+                        "Le voici:<span style="color: blue;">\n</span>"</span>;<br>
+                        $msg <span style="color: blue;">.=</span><span style="color: darkseagreen;">
+                        "<span style="color: blue;">\"</span><span style="color: lightskyblue;">$message</span><span 
+                        style="color: blue;">\"</span>.<span style="color: blue;">\n</span>"</span>;<br>
+                        $msg <span style="color: blue;">.=</span> <span style="color: darkseagreen;">
+                        "Pour lui répondre:<span style="color: blue;">\n</span>"</span>;<br>
+                        $msg <span style="color: blue;">.=</span> <span style="color: darkseagreen;">"<span
+                        style="color: lightskyblue;">$email</span><span style="color: blue;">\n\n</span>"</span>;<br><br>
 
-$destinataire <span style="color: blue;">=</span><span style="color: darkseagreen;"> "TonMail@xxx.xxx"</span>; <span id="txtgrisnoir">//==> on cré l'email de réception<br></span>
-$sujet <span style="color: blue;">=</span><span style="color: darkseagreen;"> "Titre du mail"</span>; <span id="txtgrisnoir">//======> on cré le sujet du mail<br><br></span>
+                        $destinataire <span style="color: blue;">=</span><span style="color: darkseagreen;"> "TonMail@xxx.xxx"</span>;
+                        <span id="txtgrisnoir">//==> on cré l'email de réception<br></span>
+                        $sujet <span style="color: blue;">=</span><span style="color: darkseagreen;"> "Titre du mail"</span>;
+                        <span id="txtgrisnoir">//======> on cré le sujet du mail<br><br></span>
 
-$mailheaders <span style="color: blue;">=</span><span style="color: darkseagreen;"> "From: <span style="color: lightskyblue;">$email $sujet</span> de <span style="color: lightskyblue;">$Expediteur </span><span style="color: blue;">\n</span>"</span>;<br>
-$mailheaders <span style="color: blue;">.=</span><span style="color: darkseagreen;"> "Reply-To: <span style="color: lightskyblue;">$email</span><span style="color: blue;">\n\n</span>"</span>;<br><br>
+                        $mailheaders <span style="color: blue;">=</span><span style="color: darkseagreen;"> "From:
+                        <span style="color: lightskyblue;">$email $sujet</span> de <span style="color: lightskyblue;">$Expediteur
+                        </span><span style="color: blue;">\n</span>"</span>;<br>
+                        $mailheaders <span style="color: blue;">.=</span><span style="color: darkseagreen;"> "Reply-To:
+                        <span style="color: lightskyblue;">$email</span><span style="color: blue;">\n\n</span>"</span>;<br><br>
 
-<span style="color: gold;">mail</span> ($destinataire, $sujet, $msg, $mailheaders);<br><br>
-<span style="color: darkseagreen;">
-<span style="color: gold;">echo</span> "<span><</span>HTML><span><</span>HEAD>"<span style="color: lightskyblue;">;</span><br>
-<span style="color: gold;">echo</span> "<span><</span>TITLE>Formulaire envoyé !<span><</span>/TITLE><span><</span>/HEAD><span><</span>BODY>"<span style="color: lightskyblue;">;</span><br>
-<span style="color: gold;">echo</span> "<span><</span>H1 align=center>Merci, <span style="color: lightskyblue;">$Expediteur</span>.<span><</span>/H1>"<span style="color: lightskyblue;">;</span><br>
-<span style="color: gold;">echo</span> "<span><</span>P align=center>"<span style="color: lightskyblue;">;</span><br>
-<span style="color: gold;">echo</span> "Ton message à bien été transmit à: <span style="color: lightskyblue;">$destinataire</span>"<span style="color: lightskyblue;">;</span><br>
-<span style="color: gold;">echo</span> "<span><</span>br><span><</span>br>Il a reçu ceci:<span><</span>br><span><</span>br><span style="color: lightskyblue;">$sujet</span><span><</span>br><span><</span>br><span style="color: lightskyblue;">$msg</span><span><</span>/P>"<span style="color: lightskyblue;">;</span><br>
-<span style="color: gold;">echo</span> "<span><</span>/BODY><span><</span>/HTML>"<span style="color: lightskyblue;">;</span><br>
-</span>
-?>
-</span>
+                        <span style="color: gold;">mail</span> ($destinataire, $sujet, $msg, $mailheaders);<br><br>
+                        <span style="color: darkseagreen;">
+                        <span style="color: gold;">echo</span> "<span><</span>HTML><span><</span>HEAD>"<span style="color: lightskyblue;">;</span><br>
+                        <span style="color: gold;">echo</span> "<span><</span>TITLE>Formulaire envoyé
+                        !<span><</span>/TITLE><span><</span>/HEAD><span><</span>BODY>"<span style="color: lightskyblue;">;</span><br>
+                        <span style="color: gold;">echo</span> "<span><</span>H1 align=center>Merci, <span
+                        style="color: lightskyblue;">$Expediteur</span>.<span><</span>/H1>"<span style="color: lightskyblue;">;</span><br>
+                        <span style="color: gold;">echo</span> "<span><</span>P align=center>"<span style="color: lightskyblue;">;</span><br>
+                        <span style="color: gold;">echo</span> "Ton message à bien été transmit à: <span style="color: lightskyblue;">$destinataire</span>"<span
+                        style="color: lightskyblue;">;</span><br>
+                        <span style="color: gold;">echo</span> "<span><</span>br><span><</span>br>Il a reçu ceci:<span><</span>br><span><</span>br><span
+                        style="color: lightskyblue;">$sujet</span><span><</span>br><span><</span>br><span
+                        style="color: lightskyblue;">$msg</span><span><</span>/P>"<span style="color: lightskyblue;">;</span><br>
+                        <span style="color: gold;">echo</span> "<span><</span>/BODY><span><</span>/HTML>"<span style="color: lightskyblue;">;</span><br>
+                        </span>
+                        ?>
+                    </span>
                 </span>
                 </p>
             </div>
