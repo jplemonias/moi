@@ -15,7 +15,7 @@
     <script language="javascript" src="public/js/verifform.js"></script>
     <script src="https://kit.fontawesome.com/d70a89f18c.js" crossorigin="anonymous"></script>
     <script type="application/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-    <!--script ammenant la barre d'indication de niveau de scroll--> 
+    <!--script ammenant la barre d'indication de niveau de scroll-->
     <script type="application/javascript">
         (function () {
             function calculPourcentageHauteur() {
@@ -58,7 +58,7 @@
                 });
                 $("#barre-1 .pourcentage").html(calculPourcentageHauteur() + "%");
             }
-            
+
             // Chargement des fonctions lors du chargement et du scroll
             $(window).on("load scroll", function () {
                 barreDefilement();
@@ -67,7 +67,7 @@
             });
         })(jQuery);
     </script>
-    <!--script ammenant la validation des champs pour l'envoie de message--> 
+    <!--script ammenant la validation des champs pour l'envoie de message-->
     <script language="javascript" type="text/javascript">
         var b_nom = false;
         var b_mail = false;
@@ -155,12 +155,13 @@
                     modifier et d'en faire
                     un acquis.<br><br>Si en plus cela peut aider certains ou en motiver d'autres je serais ravis car je
                     pars du principe qu'une
-                    des richesses de la vie est le Savoir, et que pouvoir le partager est tout aussi important.<br><br>Je
+                    des richesses de la vie est le Savoir, et que pouvoir le partager est tout aussi
+                    important.<br><br>Je
                     vais donc commencer
                     par cette page. Elle contient bien évidemment de l'html, du css ce qui est la base pour avoir une
                     page statique viable, et
-                    un peu de javaScript pour le parallaxe par exemple.<br>Où comme <a href="grenoble.html"
-                        target="_blank" class="JP-hover-text-turquoise" style="text-decoration: none;"><span><</span>ici<span>></span></a>
+                    un peu de javaScript pour le parallaxe par exemple.<br>Où comme <a href="grenoble.html" target="_blank" 
+                    class="JP-hover-text-turquoise" style="text-decoration: none;"><span><</span>ici<span>></span></a>
                     pour le Responsive.
                 </p>
                 <p>Attention préparez vos mirettes, car j'espère bien vous éblouir <span
@@ -271,22 +272,22 @@
             </div>
         </div>
 
-    <!-- Modal pour afficher les images en pleinne ecrant -->
-    <div id="modal01" class="JP-modal noir" onclick="this.style.display='none'">
-        <span class="boutons JP-large noir JP-display-topright" title="Fermer l'info"><i
-                class="fa fa-remove"></i></span>
-        <div class="JP-modal-content JP-animate-zoom JP-center JP-transparent JP-padding-64">
-            <img id="img01" class="JP-image">
-            <p id="caption" class="JP-opacity JP-large"></p>
+        <!-- Modal pour afficher les images en pleinne ecrant -->
+        <div id="modal01" class="JP-modal noir" onclick="this.style.display='none'">
+            <span class="boutons JP-large noir JP-display-topright" title="Fermer l'info"><i
+                    class="fa fa-remove"></i></span>
+            <div class="JP-modal-content JP-animate-zoom JP-center JP-transparent JP-padding-64">
+                <img id="img01" class="JP-image">
+                <p id="caption" class="JP-opacity JP-large"></p>
+            </div>
         </div>
-    </div>
 
-    <!-- Bouton => vers insta -->
+        <!-- Bouton => vers insta -->
         <div class="JP-center">
             <a href="https://www.instagram.com/psychoactif_38/" target="_blank"><button id="btninsta"
                     class="boutons JP-padding-large testbg" style="margin-top:64px;">Mon <i
                         class="fab fa-instagram instabtn"></i></button></a></div>
-        </div>
+    </div>
     </div>
 
     <!-- Troisieme Parallax -->
@@ -302,54 +303,104 @@
         <h3 class="JP-center">Que contient cette page ?</h3>
         <p class="JP-center"><em>Quatre langages sont utilisés ici;<br>l'html, le css, le php et le JavaScript</em></p>
 
-            <!-- Info contact -->
-            <div class="JP-col JP-panel JP-justif JP-margin-bottom">
-        <!-- Image contenu dans le troisieme contenu ( comprenons hors parallax ) -->
-        <div class="JP-row JP-padding-32 JP-section">
-            <div class="vignettes JP-col m4 JP-container">
-                <img src="public/img/code.jpg" class="JP-image JP-round" style="width:100%"
-                    oncontextmenu="return false" onmousedown="return false">
-                
-            </div>
-                    <p><i style="float: right;" class="fab fa-html5 fa-fw JP-hover-text-black JP-xxxlarge JP-margin-right"></i><span id="tcode"> L'html</span><div id="separ1" class="JP-col m8"></div>
-                        Pourquoi ces quatre langages ? Voyons ça un peu comme une rédaction interactive.
-                            Avant de la rédiger en forme vous allez faire un brouillon. Imaginez que celui-ci soit l'html, nous allons y écrire tout le contenu de la rédac.
-                            Les titres, sous_titres, paragraphes, photos etc... Chaque élément y est reconnu par des balises pour être ensuite interprété sous le bon état.
-                            Une image est déclarée comme ceci :<br><span style="color: white;"><</span><span style="color: lightskyblue;">img</span><span style="color: white;">></span><br>
-                            Il faut aussi référencer la route pour récupérer l'image et ensuite pouvoir l'afficher en incluant src="Le/Chemin/DeLimage.jpg" dans la balise.<br>Ce qui donne :<br>
-                            <span style="color: white;"><</span><span style="color: lightskyblue;">img</span><span style="color: orange;"> src</span><span style="color: lightskyblue;">=</span>
-                            <span style="color: darkseagreen;">"Le/Chemin/DeLimage.jpg"</span><span style="color: white;">></span><br>
-                    </p>
-                    <p><div class="gradient-box"><i style="float: right;" class="fab fa-css3-alt fa-fw JP-hover-text-black JP-xxxlarge JP-margin-right"></i><span id="tcode">  Le css</span><div id="separ1" class="JP-col m8"></div></div>
-                        Une fois la rédaction écrite, on l'a dit c'est un brouillon donc, cela ne ressemble pas à grand chose. Il faut le mettre en forme... Dans l'exemple de la balise
-                        de l'image il faut donc l'informer de l'état d'affichage que nous souhaitons, en lui indiquant sa hauteur et sa largeur en pixel par un id.<br>
-                        Dans l'html<br><span style="color: white;"><</span><span style="color: lightskyblue;">img</span><span style="color: orange;"> src</span><span style="color: lightskyblue;">=</span><span style="color: darkseagreen;">" "</span><span style="color: orange;"> id</span><span style="color: lightskyblue;">=</span><span style="color: darkseagreen;">''exTaille''</span><span style="color: white;">></span><br>
-                        Et dans le css<br><span style="color: darkorange;">.exTaille</span> <span style="color: lightskyblue;">{</span><span style="color: darkseagreen;"> width:</span><span style="color: green;"> 100</span><span style="color: blue;">px</span><span style="color: lightskyblue;">;</span><span style="color: darkseagreen;"> height:</span><span style="color: green;"> 300</span><span style="color: blue;">px</span><span style="color: lightskyblue;"> }</span> 
-                        </span><br>Nous pouvons rendre la page plus dynamique comme par exemple avec :hover qui se déclencherait au survol du pointeur<br>
-                        <span style="color: darkorange;">.exTaille:hover</span> <span style="color: lightskyblue;">{</span><span style="color: darkseagreen;"> opacity:</span><span style="color: green;"> 0.5</span><span style="color: lightskyblue;"> }</span>
-                        <br>ici lorsque nous passons la souris sur l'image elle deviendra opaque à moitié, l'opacité étant comprise entre 0 et 1.
-                    </p>
-                    <p><i style="float: right;" class="fab fa-js-square fa-fw JP-hover-text-black JP-xxxlarge JP-margin-right"></i><span id="tcode">  Le JavaScript</span><div id="separ1"></div>
-                        Le JavaScript va permettre de rendre encore plus dynamique votre ''rédaction interactive'' en appelant des fonctions qui peuvent réaliser bien plus qu'un simple :hover.
-                        Par exemple sur cette page un des codes JavaScript consiste à informer l'utilisateur que le formulaire d'envoi de message est conforme ou non, bloquant l'envoi de celui-ci
-                        jusqu'à ce que le formulaire soit entièrement validé. La fonction ci-dessous affiche le message "Formulaire incomplet" dans l'élément  ayant l'id MesInfo si les valeurs renvoyées
-                        sont fausses. Pour ce faire, dans la balise du bouton validant, il faut rajouter <span style="color: darkorange;">onclick</span><span style="color: white;">=</span><span style="color: darkseagreen;">"<span style="color: lightskyblue;">envoyer</span>()"</span>, qui permettra d'appeler la fonction lui étant liée.<br>Le code nous intéressant est :<br>
-                        <span style="text-align: initial;"><span style="color: white;">
-                            <span style="color: blue;">function </span><span style="color: lightskyblue;">envoyer</span>() {<br>
-                                <span style="color: blue;">if</span> (LeNom <span style="color: blue;">==</span><span style="color: green;"> true</span> <span style="color: blue;">&&</span> LeMail <span style="color: blue;">==</span><span style="color: green;"> true</span> <span style="color: blue;">&&</span> LeMessage <span style="color: blue;">==</span> <span style="color: green;">true</span>) {<br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.<span style="color: lightskyblue;">getElementById</span> (<span style="color: darkseagreen;">'form_msg'</span>).<span style="color: lightskyblue;">submit</span>();<br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
-                                <span style="color: blue;">else</span> {<br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.<span style="color: rgb(170, 221, 253);">getElementById</span> (<span style="color: darkseagreen;">'MesgInfo'</span>)<span style="color: chartreuse;">.innerText </span><span style="color: blue;">=</span> <span style="color: darkseagreen;">"Formulaire incomplet"</span>;<br>
+        <!-- Info contact -->
+        <div class="JP-col JP-panel JP-justif JP-margin-bottom">
+            <!-- Image contenu dans le troisieme contenu ( comprenons hors parallax ) -->
+            <div class="JP-row JP-padding-32 JP-section">
+                <div class="vignettes JP-col m4 JP-container">
+                    <img src="public/img/code.jpg" class="JP-image JP-round" style="width:100%"
+                        oncontextmenu="return false" onmousedown="return false">
+
+                </div>
+                <p><i style="float: right;"
+                        class="fab fa-html5 fa-fw JP-hover-text-black JP-xxxlarge JP-margin-right"></i><span id="tcode">
+                        L'html</span>
+                    <div id="separ1" class="JP-col m8"></div>
+                    Pourquoi ces quatre langages ? Voyons ça un peu comme une rédaction interactive.
+                    Avant de la rédiger en forme vous allez faire un brouillon. Imaginez que celui-ci soit l'html, nous
+                    allons y écrire tout le contenu de la rédac.
+                    Les titres, sous_titres, paragraphes, photos etc... Chaque élément y est reconnu par des balises
+                    pour être ensuite interprété sous le bon état.
+                    Une image est déclarée comme ceci :<br>
+                    <span style="color: white;"><</span><span style="color: lightskyblue;">img</span><span 
+                    style="color: white;">></span><br>Il faut aussi référencer la route pour récupérer l'image et ensuite
+                    pouvoir l'afficher en incluant src="Le/Chemin/DeLimage.jpg" dans la balise.<br>Ce qui donne :<br>
+                    <span style="color: white;"><</span><span style="color: lightskyblue;">img</span><span
+                    style="color: orange;"> src</span><span style="color: lightskyblue;">=</span>
+                    <span style="color: darkseagreen;">"Le/Chemin/DeLimage.jpg"</span><spanstyle="color: white;">></span><br>
+                </p>
+                <p>
+                    <div class="gradient-box"><i style="float: right;"
+                            class="fab fa-css3-alt fa-fw JP-hover-text-black JP-xxxlarge JP-margin-right"></i><span
+                            id="tcode"> Le css</span>
+                        <div id="separ1" class="JP-col m8"></div>
+                    </div>
+                    Une fois la rédaction écrite, on l'a dit c'est un brouillon donc, cela ne ressemble pas à grand
+                    chose. Il faut le mettre en forme... Dans l'exemple de la balise
+                    de l'image il faut donc l'informer de l'état d'affichage que nous souhaitons, en lui indiquant sa
+                    hauteur et sa largeur en pixel par un id.<br>
+                    Dans l'html<br><span style="color: white;"><</span><span style="color: lightskyblue;">img</span>
+                    <span style="color: orange;">src</span><span style="color: lightskyblue;">=</span><span
+                    style="color: darkseagreen;">" "</span><span style="color: orange;"> id</span><span
+                    style="color: lightskyblue;">=</span><span
+                    style="color: darkseagreen;">''exTaille''</span><span style="color: white;">></span><br>
+                    Et dans le css<br><span style="color: darkorange;">.exTaille</span> <span
+                    style="color: lightskyblue;">{</span><span style="color: darkseagreen;">
+                    width:</span><span style="color: green;"> 100</span><span
+                    style="color: blue;">px</span><span style="color: lightskyblue;">;</span><span
+                    style="color: darkseagreen;"> height:</span><span style="color: green;"> 300</span><span
+                    style="color: blue;">px</span><span style="color: lightskyblue;"> }</span> 
+                    </span><br>Nous pouvons rendre la page plus dynamique comme par exemple avec :hover qui se
+                    déclencherait au survol du pointeur<br>
+                    <span style="color: darkorange;">.exTaille:hover</span> <span
+                    style="color: lightskyblue;">{</span><span style="color: darkseagreen;"> opacity:</span><span
+                    style="color: green;"> 0.5</span><span style="color: lightskyblue;"> }</span>
+                    <br>ici lorsque nous passons la souris sur l'image elle deviendra opaque à moitié, l'opacité étant
+                    comprise entre 0 et 1.
+                </p>
+                <p><i style="float: right;"
+                        class="fab fa-js-square fa-fw JP-hover-text-black JP-xxxlarge JP-margin-right"></i><span
+                        id="tcode"> Le JavaScript</span>
+                    <div id="separ1"></div>
+                    Le JavaScript va permettre de rendre encore plus dynamique votre ''rédaction interactive'' en
+                    appelant des fonctions qui peuvent réaliser bien plus qu'un simple :hover.
+                    Par exemple sur cette page un des codes JavaScript consiste à informer l'utilisateur que le
+                    formulaire d'envoi de message est conforme ou non, bloquant l'envoi de celui-ci
+                    jusqu'à ce que le formulaire soit entièrement validé. La fonction ci-dessous affiche le message
+                    "Formulaire incomplet" dans l'élément  ayant l'id MesInfo si les valeurs renvoyées
+                    sont fausses. Pour ce faire, dans la balise du bouton validant, il faut rajouter <span
+                    style="color: darkorange;">onclick</span><span style="color: white;">=</span><span
+                    style="color: darkseagreen;">"<span style="color: lightskyblue;">envoyer</span>()"</span>, qui
+                    permettra d'appeler la fonction lui étant liée.<br>Le code nous intéressant est :<br>
+                    <span style="text-align: initial;"><span style="color: white;"><span style="color: blue;">function
+                    </span><span style="color: lightskyblue;">envoyer</span>() {<br>
+                    <span style="color: blue;">if</span> (LeNom <span style="color: blue;">==</span><span
+                    style="color: green;"> true</span> <span style="color: blue;">&&</span> LeMail <span
+                    style="color: blue;">==</span><span style="color: green;"> true</span> <span
+                    style="color: blue;">&&</span> LeMessage <span style="color: blue;">==</span> <span
+                    style="color: green;">true</span>) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.<span
+                    style="color: lightskyblue;">getElementById</span> (<span
+                    style="color: darkseagreen;">'form_msg'</span>).<span
+                    style="color: lightskyblue;">submit</span>();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                    <span style="color: blue;">else</span> {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.<span
+                    style="color: rgb(170, 221, 253);">getElementById</span> (<span
+                    style="color: darkseagreen;">'MesgInfo'</span>)<span
+                    style="color: chartreuse;">.innerText </span><span style="color: blue;">=</span> <span
+                    style="color: darkseagreen;">"Formulaire incomplet"</span>;<br>
                             }</span>
-                        </span>
-                    </p>
-                    <p><i style="float: right;" class="fab fa-php fa-fw JP-hover-text-black JP-xxxlarge JP-margin-right"></i><span id="tcode">  Le php</span><div id="separ1"></div>
-                        Jusqu'ici nous n’agissons que sur la partie client c'est à dire, plus simplement, que tes informations traitées le sont que sur la machine de l'utilisateur.
-                        Vous l'aurez peut être compris le php permet donc d'envoyer ou de recevoir des informations depuis, vers d'autres machines. Le php est utilisé ici pour pouvoir
-                        envoyer un message sur une adresse mail depuis un formulaire.<br>
-                            <span id="codePHP">
-                                <span style="color: lightskyblue;"><span><</span>?php <br>
+                    </span>
+                </p>
+                <p><i style="float: right;"
+                        class="fab fa-php fa-fw JP-hover-text-black JP-xxxlarge JP-margin-right"></i><span id="tcode">
+                        Le php</span>
+                    <div id="separ1"></div>
+                    Jusqu'ici nous n’agissons que sur la partie client c'est à dire, plus simplement, que tes
+                    informations traitées le sont que sur la machine de l'utilisateur.
+                    Vous l'aurez peut être compris le php permet donc d'envoyer ou de recevoir des informations depuis,
+                    vers d'autres machines. Le php est utilisé ici pour pouvoir
+                    envoyer un message sur une adresse mail depuis un formulaire.<br>
+                    <span id="codePHP">
+                        <span style="color: lightskyblue;"><span><</span>?php <br>
 
 $Expediteur <span style="color: blue;">=</span> $_POST[<span style="color: darkseagreen;">'Name'</span>]; <span id="txtgrisnoir">//==> on récupérer le nom<br></span>
 $email <span style="color: blue;">=</span> $_POST[<span style="color: darkseagreen;">'Email'</span>]; <span id="txtgrisnoir">//======> on récupérer l'email<br></span>
@@ -380,94 +431,106 @@ $mailheaders <span style="color: blue;">.=</span><span style="color: darkseagree
 </span>
 ?>
 </span>
-                        </span>
-                    </p>
+                </span>
+                </p>
             </div>
         </div>
     </div>
-  </div>
-
-  <div id="bgimg-4" class="bgimg-4 JP-display-container">
-    <div class="JP-display-middle">
-        <span class="JP-xxlarge JP-text-white esptxt-large"
-            style="letter-spacing: 10px;text-shadow: black 0.1em 0.1em 0.2em;">CONTACT</span>
     </div>
-</div>
 
-<!-- Container (Contact Section) -->
-<div class="JP-content JP-container JP-padding-64" id="contact" style="padding-bottom: 0px!important;">
-    <h3 class="JP-center">ME CONTACTER</h3>
-    <p class="JP-center"><em>J'attends vos retours</em></p>
-
-    <div class="JP-row JP-padding-32 JP-section">
-        <div class=" JP-col m4 JP-container">
-            <img src="public/img/frcoffe.jpg" class="JP-image JP-round" style="width:100%"
-                oncontextmenu="return false" onmousedown="return false">
+    <div id="bgimg-4" class="bgimg-4 JP-display-container">
+        <div class="JP-display-middle">
+            <span class="JP-xxlarge JP-text-white esptxt-large"
+                style="letter-spacing: 10px;text-shadow: black 0.1em 0.1em 0.2em;">CONTACT</span>
         </div>
-        <div class="JP-col m8 JP-panel">
-            <div class="JP-large JP-margin-bottom">
-                <i class="fa fa-map-marker fa-fw JP-hover-text-black JP-xlarge JP-margin-right"></i> Grenoble,
-                France<br>
-                <i class="fa fa-phone fa-fw JP-hover-text-black JP-xlarge JP-margin-right"></i> Phone: +33
-                XXXXXXX33<br>
-                <i class="fa fa-envelope fa-fw JP-hover-text-black JP-xlarge JP-margin-right"></i> Email:
-                mail@mail.com<br>
+    </div>
+
+    <!-- Container (Contact Section) -->
+    <div class="JP-content JP-container JP-padding-64" id="contact" style="padding-bottom: 0px!important;">
+        <h3 class="JP-center">ME CONTACTER</h3>
+        <p class="JP-center"><em>J'attends vos retours</em></p>
+
+        <div class="JP-row JP-padding-32 JP-section">
+            <div class=" JP-col m4 JP-container">
+                <img src="public/img/frcoffe.jpg" class="JP-image JP-round" style="width:100%"
+                    oncontextmenu="return false" onmousedown="return false">
             </div>
-            <p>Toujours prêt à partager autour d'un <a
-                    href="https://www.google.com/search?q=french%20coffee&oq=frenche+coff&aqs=chrome.1.69i57j0l4.8053j0j4&sourceid=chrome&ie=UTF-8&sxsrf=ACYBGNQQhxaVlWhQUvy3bZXa_JM0d01PBg:1581332623728&npsic=0&rflfq=1&rlha=0&rllag=45188965,5725967,489&tbm=lcl&rldimm=3891499178132782458&lqi=Cg1mcmVuY2ggY29mZmVlWh4KDWZyZW5jaCBjb2ZmZWUiDWZyZW5jaCBjb2ZmZWU&ved=2ahUKEwjxj7yK68bnAhVoxoUKHUsRDHcQvS4wC3oECAsQHw&rldoc=1&tbs=lrf:!1m4!1u3!2m2!3m1!1e1!2m1!1e3!3sIAE,lf:1,lf_ui:3&rlst=f#rlfi=hd:;si:3891499178132782458,l,Cg1mcmVuY2ggY29mZmVlWh4KDWZyZW5jaCBjb2ZmZWUiDWZyZW5jaCBjb2ZmZWU;mv:[[45.193124399999995,5.7297364],[45.1848063,5.722198199999999]]"
-                    target="_blank"><i class="fa fa-coffee"></i></a>, ou par message:</p>
-            <form id="form_msg" name="form_msg" method="POST" action="mail.php" target="_blank">
-                <!--PHP-->
-                <div class="JP-row-padding" style="margin:0 -16px 8px -16px">
-                    <div class="JP-half">
-                        <input id="Name" class="JP-input JP-border" type="text" placeholder="Nom"  name="Name" onblur="mev('',this.id)">
-                    </div>
-                    <div class="JP-half">
-                        <input id="Email" class="JP-input JP-border" type="text" placeholder="Email"  name="Email" onblur="mev('',this.id)">
-                    </div>
-                    <div class="JP-half" style="width: 100%;">
-                <textarea id="Message" class="JP-input JP-border" type="text"
-                    placeholder="Message / merci de lire le &#9888; ci-dessous"  name="Message"
-                    style="height: 100px; resize: none;" onblur="mev('',this.id)"></textarea>
-            </div>
-                    <div class="JP-half">
-                        <input id="cEmail"class="JP-input JP-border" type="text" placeholder="Confirmation de l'email"  name="cEmail" onblur="mev('',this.id)">
-                    </div><div style="margin-right: 8px;">
-                <button id="envoi" class="boutons droite JP-section" type="button" style="margin-top: 0!important; border-radius: 19px;" onclick='envoyer()'>
-                    <i class="fa fa-paper-plane"></i> Envoi du message
-                </button>
-                <div id="mesgInfo" class="JP-half" style="width: 100%; margin-left: 8px;">
-                Tous les champs sont obligatoires
-                </div></div>
+            <div class="JP-col m8 JP-panel">
+                <div class="JP-large JP-margin-bottom">
+                    <i class="fa fa-map-marker fa-fw JP-hover-text-black JP-xlarge JP-margin-right"></i> Grenoble,
+                    France<br>
+                    <i class="fa fa-phone fa-fw JP-hover-text-black JP-xlarge JP-margin-right"></i> Phone: +33
+                    XXXXXXX33<br>
+                    <i class="fa fa-envelope fa-fw JP-hover-text-black JP-xlarge JP-margin-right"></i> Email:
+                    mail@mail.com<br>
                 </div>
-            </form>
-            <p><span style="color: rgb(170, 221, 253);">&#9888;</span> L'envoi du message doit vous amener sur une page 4o5 Not
-                Allowed;<br>cela signifie que l'hébergeur utilisé, ici githhub, reconnait le format
-                de la page mais ne le traite pas ( le format "PHP" reconnu par "MySQL" ). Donc l'envoi n'a pas aboutit.<br>Si vous souhaitez quand
-                même le faire; je l'ai aussi hébergé
-                <a href="https://jpgrenoble.000webhostapp.com/index.html" target="_blank"
-                    class="JP-hover-text-violet" style="text-decoration: none;"><span><</span>ici<span>></span></a>
-                sur 000webhostapp ne moyennant aucune demande pécuniaire, mais un petit "Powered By 000webhost" en
-                guise de footer <span id="smile">&#128527;</span>.<br>
-                Ou simplement en prenant mon mail plus haut ( lorsqu'il y sera ).
-            </p>
+                <p>Toujours prêt à partager autour d'un <a
+                        href="https://www.google.com/search?q=french%20coffee&oq=frenche+coff&aqs=chrome.1.69i57j0l4.8053j0j4&sourceid=chrome&ie=UTF-8&sxsrf=ACYBGNQQhxaVlWhQUvy3bZXa_JM0d01PBg:1581332623728&npsic=0&rflfq=1&rlha=0&rllag=45188965,5725967,489&tbm=lcl&rldimm=3891499178132782458&lqi=Cg1mcmVuY2ggY29mZmVlWh4KDWZyZW5jaCBjb2ZmZWUiDWZyZW5jaCBjb2ZmZWU&ved=2ahUKEwjxj7yK68bnAhVoxoUKHUsRDHcQvS4wC3oECAsQHw&rldoc=1&tbs=lrf:!1m4!1u3!2m2!3m1!1e1!2m1!1e3!3sIAE,lf:1,lf_ui:3&rlst=f#rlfi=hd:;si:3891499178132782458,l,Cg1mcmVuY2ggY29mZmVlWh4KDWZyZW5jaCBjb2ZmZWUiDWZyZW5jaCBjb2ZmZWU;mv:[[45.193124399999995,5.7297364],[45.1848063,5.722198199999999]]"
+                        target="_blank"><i class="fa fa-coffee"></i></a>, ou par message:</p>
+                <form id="form_msg" name="form_msg" method="POST" action="mail.php" target="_blank">
+                    <!--PHP-->
+                    <div class="JP-row-padding" style="margin:0 -16px 8px -16px">
+                        <div class="JP-half">
+                            <input id="Name" class="JP-input JP-border" type="text" placeholder="Nom" name="Name"
+                                onblur="mev('',this.id)">
+                        </div>
+                        <div class="JP-half">
+                            <input id="Email" class="JP-input JP-border" type="text" placeholder="Email" name="Email"
+                                onblur="mev('',this.id)">
+                        </div>
+                        <div class="JP-half" style="width: 100%;">
+                            <textarea id="Message" class="JP-input JP-border" type="text"
+                                placeholder="Message / merci de lire le &#9888; ci-dessous" name="Message"
+                                style="height: 100px; resize: none;" onblur="mev('',this.id)"></textarea>
+                        </div>
+                        <div class="JP-half">
+                            <input id="cEmail" class="JP-input JP-border" type="text"
+                                placeholder="Confirmation de l'email" name="cEmail" onblur="mev('',this.id)">
+                        </div>
+                        <div style="margin-right: 8px;">
+                            <button id="envoi" class="boutons droite JP-section" type="button"
+                                style="margin-top: 0!important; border-radius: 19px;" onclick='envoyer()'>
+                                <i class="fa fa-paper-plane"></i> Envoi du message
+                            </button>
+                            <div id="mesgInfo" class="JP-half" style="width: 100%; margin-left: 8px;">
+                                Tous les champs sont obligatoires
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <p><span style="color: rgb(170, 221, 253);">&#9888;</span> L'envoi du message doit vous amener sur une
+                    page 4o5 Not
+                    Allowed;<br>cela signifie que l'hébergeur utilisé, ici githhub, reconnait le format
+                    de la page mais ne le traite pas ( le format "PHP" reconnu par "MySQL" ). Donc l'envoi n'a pas
+                    aboutit.<br>Si vous souhaitez quand
+                    même le faire; je l'ai aussi hébergé
+                    <a href="https://jpgrenoble.000webhostapp.com/index.html" target="_blank"
+                        class="JP-hover-text-violet" style="text-decoration: none;"><span><</span>ici<span>></span></a>
+                    sur 000webhostapp ne moyennant aucune demande pécuniaire, mais un petit "Powered By 000webhost" en
+                    guise de footer <span id="smile">&#128527;</span>.<br>
+                    Ou simplement en prenant mon mail plus haut ( lorsqu'il y sera ).
+                </p>
+            </div>
+
         </div>
-        
-    </div>
         <!-- ASCII 4o4 -->
         <center>
             <div class="terminal">
-        <a class="JP-hover-text-rouge" href="jeNexistePas.html" style="text-decoration: none; font-size: 10px;"><p class="prompt"><pre>
+                <a class="JP-hover-text-rouge" href="jeNexistePas.html" style="text-decoration: none; font-size: 10px;">
+                    <p class="prompt">
+                        <pre>
 ___   ___    ________    ___   ___  
 |\  \ |\  \  |\   __  \  |\  \ |\  \  
   \ \  \\_\  \ \ \  \|\  \ \ \  \\_\  \  
      \ \______  \ \ \  \\\  \ \ \______  \  
         \|_____|\  \ \ \  \\\  \ \|_____|\  \  
                  \ \__\ \ \_______\       \ \__\  
-                  \|__|  \|_______|        \|__|  </pre></p></a>
-        </div>
-    </center>
-</div>
+                  \|__|  \|_______|        \|__|  </pre>
+                    </p>
+                </a>
+            </div>
+        </center>
+    </div>
     <!-- Footer => pas besoin d'explications... ;) -->
     <footer class="JP-center noir JP-padding-14 JP-opacity JP-hover-opacity-off">
         <a href="#home" class="boutons JP-light-grey" style="border-radius: 0 0 19px 19PX;"><i
@@ -483,7 +546,8 @@ ___   ___    ________    ___   ___
             <p><i style="margin-left: 16px; font-size: 22px; color: #000; float: left;" class="fas fa-peace"></i>Powered
                 by <a href="https://www.w3schools.com/" title="W3.CSS" target="_blank"
                     class="JP-hover-text-degrad">w3.css</a><i
-                    style="margin-right: 16px; font-size: 22px; color: #f1f1f1; float: right;" class="fas fa-peace D"></i>
+                    style="margin-right: 16px; font-size: 22px; color: #f1f1f1; float: right;"
+                    class="fas fa-peace D"></i>
             </p>
         </div>
     </footer>
