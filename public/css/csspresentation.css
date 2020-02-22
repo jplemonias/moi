@@ -522,7 +522,7 @@ h3 .fab.fa-instagram{
 
 /*ScrollBarre en pied de page*/
 #barre-1 {position:fixed; bottom:0; height:5px; width:100%; background:#222; border:2px solid #000;}
-#barre-1 .progression {background: linear-gradient(0.25turn,#04c4b4,#d400ff); width:0%; height:100%; transition:width 0.3s;}
+#barre-1 .progression {background: linear-gradient(0.25turn,#d400ff,#04c4b4); width:0%; height:100%; transition:width 0.3s;}
 /*#barre-1 .pourcentage {position:absolute; top:0; font-size:1.5em; line-height:1.5em; text-align:center; width:100%; color:#fff;}*/
 #barre-1 .progression2 {background: linear-gradient(0.25turn,#04c4b4,#d400ff); width:0%; height:100%; transition:width 0.3s;}
 #barre-1 .progression3 {background: linear-gradient(0.25turn,#04c4b4,#d400ff); width:0%; height:100%; transition:width 0.3s;}
