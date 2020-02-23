@@ -242,18 +242,17 @@ h3 .fab.fa-instagram{
     background-image: url("../img/matrix.jpg");
     min-height: 200px;
   }
+/*************** Changement d'aspet du parallax ****************/
 @media only screen and (max-device-width: 1024px) {
     .bgimg-1 {
       background-attachment: scroll;
-      min-height: 80%!important;
+      min-height: 500px;
     }
     .bgimg-2, .bgimg-3, .bgimg-4 {
       background-attachment: fixed;
       min-height: 300px;
     }
   }
-    
-/*************** Changement d'aspet du parallax ****************/
 /****************************************************************
 *      Suppression de l'effet pour tablettes et mobiles         *
 
@@ -264,9 +263,7 @@ h3 .fab.fa-instagram{
   }
 }
 ****************************************************************/
-/****************************************************************
-*                                                               *
-****************************************************************/
+
 .top {
     position:fixed;
     width:100%;
@@ -485,6 +482,9 @@ h3 .fab.fa-instagram{
 .animate-top{position:relative;animation:animatetop 0.4s}
 
 
+/****************************************************************
+*                                                               *
+****************************************************************/
 
 @media (max-width:992px) and (min-width:601px){.cacher-medium{display:none!important}}
 @media (min-width:993px){.JP-modal-content{width:900px}.cacher-large{display:none!important}.w3-sidebar.w3-collapse{display:block!important}}
