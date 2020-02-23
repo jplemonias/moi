@@ -210,94 +210,147 @@ h3 .fab.fa-instagram{
     -webkit-text-decoration-color: #04c4b4!important;
     text-decoration-color: #04c4b4!important;
 }
-/* Create a Parallax Effect */
+/****************************************************************
+*                         Le parallax                           *
+****************************************************************/
+/****************************************************************
+*                     Création de l'effet                       *
+****************************************************************/
 .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-/* First image (Logo. Full height) */
+/********** Premierer Image ( Logo. hauteur entière ) **********/
 .bgimg-1 {
   background-image: url("../img/dv.jpg");
   min-height: 100%;
 }
-
-/* Second image (Portfolio) */
+/*************** Seconde image ( IcI instagram ) ***************/
 .bgimg-2 {
   background-image: url("../img/pala.jpg");
   min-height: 400px;
 }
-
-/* Third image (Contact) */
+/************* Troisième image ( IcI Hello world ) *************/
 .bgimg-3 {
   background-image: url("../img/mariane.jpg");
   min-height: 300px;
 }
-
+/*************** Quatrième image ( IcI contact ) ***************/
 .bgimg-4 {
     background-image: url("../img/matrix.jpg");
     min-height: 200px;
   }
+/*************** Changement d'aspet du parallax ****************/
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1 {
+      background-attachment: scroll;
+      min-height: 80%;
+    }
+  }
+/****************************************************************
+*      Suppression de l'effet pour tablettes et mobiles         *
 
-
-/* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1600px) {
   .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
     background-attachment: scroll;
-    min-height: 400px;
+    min-height: 80%;
   }
 }
-
-
-/* Navbar */
-
-.top {position:fixed;width:100%;z-index:1}
-
-.top{top:0}
-
-.nav-bar .w3-dropdown-hover,.nav-bar .w3-dropdown-click{position:static;float:left}
-
-.nav-bar .boutons{white-space:normal}
-
-.nav-bar:before,.nav-bar:after{content:"";display:table;clear:both}
-
+****************************************************************/
+/****************************************************************
+*                                                               *
+****************************************************************/
+.top {
+    position:fixed;
+    width:100%;
+    z-index:1;
+    top:0;
+}
+.nav-bar .w3-dropdown-hover,.nav-bar .w3-dropdown-click {
+    position:static;
+    float:left;
+}
+.nav-bar .boutons{
+    white-space:normal;
+}
+.nav-bar:before,.nav-bar:after {
+    content:"";
+    display:table;
+    clear:both;
+}
 .nav-bar{
     color: white;
     width:100%;
     overflow:hidden;
     text-shadow: black 0.1em 0.1em 0.2em;
 }
-
-.JP-center .nav-bar{display:inline-block;width:auto}
-
+.JP-center .nav-bar{
+    display:inline-block;
+    width:auto;
+}
 .nav-bar .objetBar{
     padding:8px 16px;
     float:left;
     width:auto;
     border:none;
     display:block;
-    outline:0}
+    outline:0;
+}
+.nav-bar-block .objetBar{
+    width:100%;
+    display:block;
+    padding:8px 16px;
+    text-align:left;
+    border:none;
+    white-space:normal;
+    float:none;
+    outline:0;
+}
 
-.nav-bar-block .objetBar{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0}
+.objetBar.w3-mobile,.w3-dropdown-hover.w3-mobile,.w3-dropdown-click.w3-mobile {
+    text-align:center;
+}
 
-.objetBar.w3-mobile,.w3-dropdown-hover.w3-mobile,.w3-dropdown-click.w3-mobile{text-align:center}
+.w3-block {
+    display:block;
+    width:100%;
+}
 
-.w3-block{display:block;width:100%}
+.navmoving .w3-dropdown-hover,.navmoving .w3-dropdown-click {
+    width:100%;
+}
 
-.navmoving .w3-dropdown-hover,.navmoving .w3-dropdown-click{width:100%}
+.navmoving .w3-dropdown-hover .w3-dropdown-content,
+.navmoving .w3-dropdown-click .w3-dropdown-content{
+    min-width:100%;
+}
 
-.navmoving .w3-dropdown-hover .w3-dropdown-content,.navmoving .w3-dropdown-click .w3-dropdown-content{min-width:100%}
+.navmoving .w3-dropdown-hover .boutons,.navmoving .w3-dropdown-click .boutons{
+    width:100%;
+    text-align:left;
+    padding:8px 16px;
+}
 
-.navmoving .w3-dropdown-hover .boutons,.navmoving .w3-dropdown-click .boutons{width:100%;text-align:left;padding:8px 16px}
-.nav-bar.card.animate-top.blanc{
+.nav-bar.card.animate-top.blanc {
     text-shadow:none;
 }
-.navmoving .objetBar{
-    width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0}
 
-.navmoving.JP-center .objetBar{text-align:center}
+.navmoving .objetBar {
+    width:100%;
+    display:block;
+    padding:8px 16px;
+    text-align:left;
+    border:none;
+    white-space:normal;
+    float:none;
+    outline:0;
+}
+
+.navmoving.JP-center .objetBar {
+    text-align:center;
+}
 
 .w3-block{display:block;width:100%}
 
@@ -305,37 +358,88 @@ h3 .fab.fa-instagram{
 
 /* NAVBar Si descendu sur la page */
 
-.navmoving .objetBar{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0}
+/****************************************************************
+*    navmoving == etat de la nav barsi on à scrollé la page     *
+****************************************************************/
+.navmoving .objetBar {
+    width:100%;
+    display:block;
+    padding:8px 16px;
+    text-align:left;
+    border:none;
+    white-space:normal;
+    float:none;
+    outline:0;
+}
 
-.w3-block{display:block;width:100%}
+.navmoving .w3-dropdown-hover,.navmoving .w3-dropdown-click {
+    width:100%;
+}
 
-.navmoving .w3-dropdown-hover,.navmoving .w3-dropdown-click{width:100%}
+.navmoving .w3-dropdown-hover .w3-dropdown-content,
+.navmoving .w3-dropdown-click .w3-dropdown-content {
+    min-width:100%;
+}
 
-.navmoving .w3-dropdown-hover .w3-dropdown-content,.navmoving .w3-dropdown-click .w3-dropdown-content{min-width:100%}
+.navmoving .w3-dropdown-hover .boutons,
+.navmoving .w3-dropdown-click .boutons {
+    width:100%;
+    text-align:left;
+    padding:8px 16px;
+}
 
-.navmoving .w3-dropdown-hover .boutons,.navmoving .w3-dropdown-click .boutons{width:100%;text-align:left;padding:8px 16px}
-
-.JP-center{text-align:center!important}
-
-
-.droite{float:right!important}
-.cacher{display:none!important}.w3-show-block,.voir{display:block!important}.w3-show-inline-block{display:inline-block!important}
+.JP-center {
+    text-align:center!important;
+}
 
 
+.droite {
+    float:right!important;
+}
+.cacher {
+    display:none!important;
+}
 
+.w3-show-block,.voir {
+    display:block!important;
+}
 
+.w3-show-inline-block {
+    display:inline-block!important;
+}
+
+.w3-block {
+    display:block;
+    width:100%;
+}
 
 #envoi {
     border: solid 1px grey;
     background-color: white;
-    box-shadow:inset -5px -5px 5px grey, inset 5px 5px 5px white, inset -5px 5px 5px white, inset 5px -5px 5px white!important}
-#envoi:hover{color:rgb(255, 255, 255)!important; background-color: darkgrey!important; 
-    box-shadow: inset 5px 5px 5px grey, inset -5px -5px 5px white, inset -5px 5px 15px white, inset 5px -5px 5px white!important}
+    box-shadow:inset -5px -5px 5px grey, inset 5px 5px 5px white, inset -5px 5px 5px white, inset 5px -5px 5px white!important;
+}
+#envoi:hover {
+    color:rgb(255, 255, 255)!important;
+    background-color: darkgrey!important; 
+    box-shadow: 
+    inset 5px 5px 5px grey,
+    inset -5px -5px 5px white,
+    inset -5px 5px 15px white,
+    inset 5px -5px 5px white!important;
+}
 
+.w3-dropdown-hover:hover > .boutons:first-child,
+.w3-dropdown-click:hover > .boutons:first-child {
+    background-color:#ccc;
+    color:#000;
+}
 
-
-.w3-dropdown-hover:hover > .boutons:first-child,.w3-dropdown-click:hover > .boutons:first-child{background-color:#ccc;color:#000}
-.navmoving .w3-dropdown-hover .boutons,.navmoving .w3-dropdown-click .boutons{width:100%;text-align:left;padding:8px 16px}
+.navmoving .w3-dropdown-hover .boutons,
+.navmoving .w3-dropdown-click .boutons {
+    width:100%;
+    text-align:left;
+    padding:8px 16px;
+}
 
 .boutons{
     border:none;
@@ -350,13 +454,24 @@ h3 .fab.fa-instagram{
     cursor:pointer;
     white-space:nowrap
 }
-.w3-btn,.boutons{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}   
-.w3-disabled,.w3-btn:disabled,.boutons:disabled{cursor:not-allowed;opacity:0.3}.w3-disabled *,:disabled *{pointer-events:none}
 
+.w3-btn,.boutons {
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
 
+.w3-disabled,.w3-btn:disabled,.boutons:disabled {
+    cursor:not-allowed;
+    opacity:0.3;
+}
 
-
-
+.w3-disabled *,:disabled *{
+    pointer-events:none;
+}
 
 
 
@@ -545,9 +660,9 @@ box-shadow: inset -5px 5px 10px #bbbbbb, inset -5px -5px 10px black;
 /*ScrollBarre en pied de page*/
 #barre-1 {position:fixed; bottom:0; height:5px; width:100%; background:#222; border:2px solid #000;}
 #barre-1 .progression {background: linear-gradient(0.25turn,#d400ff,#04c4b4); width:0%; height:100%; transition:width 0.3s;}
-/*#barre-1 .pourcentage {position:absolute; top:0; font-size:1.5em; line-height:1.5em; text-align:center; width:100%; color:#fff;}*/
 #barre-1 .progression2 {background: linear-gradient(0.25turn,#04c4b4,#d400ff); width:0%; height:100%; transition:width 0.3s;}
 #barre-1 .progression3 {background: linear-gradient(0.25turn,#04c4b4,#d400ff); width:0%; height:100%; transition:width 0.3s;}
+/*#barre-1 .pourcentage {position:absolute; top:0; font-size:1.5em; line-height:1.5em; text-align:center; width:100%; color:#fff;}*/
 
 #btninsta{
     box-shadow: 5px 5px 10px #383838, -5px 5px 10px #383838, 5px -5px 10px #383838, -5px -5px 10px #383838, inset 5px 5px 10px #383838, inset -5px 5px 10px #383838, inset 5px -5px 10px #383838, inset -5px -5px 10px #383838;
@@ -586,9 +701,9 @@ box-shadow: inset -5px 5px 10px #bbbbbb, inset -5px -5px 10px black;
     font-size: 25px;
 }
 
-i.fab.fa-instagram.instabtn, i.fab.fa-instagram.w3-hover-opacity, i.fab.fa-linkedin.w3-hover-opacity, i.fab.fa-codepen.w3-hover-opacity, .fa-html5, .fa-css3-alt, .fa-js-square, .fa-php,
-#tcode
-{
+i.fab.fa-instagram.instabtn, i.fab.fa-instagram.w3-hover-opacity,
+i.fab.fa-linkedin.w3-hover-opacity, i.fab.fa-codepen.w3-hover-opacity,
+.fa-html5, .fa-css3-alt, .fa-js-square, .fa-php, #tcode {
     background: linear-gradient(-45deg,#04c4b4,#d400ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -608,19 +723,23 @@ i.fab.fa-instagram.instabtn {
 
 }
 
-i.fab.fa-instagram.instabtn:hover, i.fab.fa-instagram.w3-hover-opacity:hover, i.fab.fa-linkedin.w3-hover-opacity:hover, i.fab.fa-codepen.w3-hover-opacity:hover, .fa-html5:hover, .fa-css3-alt:hover, .fa-js-square:hover, .fa-php:hover,
-#tcode
-{
+i.fab.fa-instagram.instabtn:hover, i.fab.fa-instagram.w3-hover-opacity:hover,
+i.fab.fa-linkedin.w3-hover-opacity:hover, i.fab.fa-codepen.w3-hover-opacity:hover,
+.fa-html5:hover, .fa-css3-alt:hover, .fa-js-square:hover, .fa-php:hover, #tcode {
     background: linear-gradient(-45deg,#d400ff,#04c4b4);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-i.fab.fa-instagram.instabtn, i.fab.fa-instagram.w3-hover-opacity, i.fab.fa-linkedin.w3-hover-opacity, i.fab.fa-codepen.w3-hover-opacity, .fa-map-marker, .fa-phone, .fa-envelope.fa-fw.JP-hover-text-black.JP-xlarge.JP-margin-right
-{
+
+i.fab.fa-instagram.instabtn, i.fab.fa-instagram.w3-hover-opacity,
+i.fab.fa-linkedin.w3-hover-opacity, i.fab.fa-codepen.w3-hover-opacity,
+.fa-envelope.fa-fw.JP-hover-text-black.JP-xlarge.JP-margin-right,
+.fa-map-marker, .fa-phone {
     background: linear-gradient(-45deg,#04c4b4,#d400ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 i.fas.fa-peace.D {
     background: linear-gradient(135deg,#04c4b4,#d400ff);
     -webkit-background-clip: text;
@@ -630,14 +749,13 @@ i.fas.fa-peace.D {
     font-size: 25px;
 }
 
-.boutons.JP-padding-large{
+.boutons.JP-padding-large {
     border-radius: 0 20px 20px 20px;
 }
+
 #war_violet {
     color: #d400ff;
 }
-
-
 
 ::-webkit-scrollbar {
     width: 12px;

@@ -32,7 +32,7 @@
                 return pourcentageHauteur;
             }
 
-            // Barre de défilement horizontale en fonction du scroll
+            // Barre 1 de défilement horizontale en fonction du scroll
             function barreDefilement() {
                 var cible = $("#barre-1 .progression");
                 cible.css({
@@ -41,7 +41,7 @@
                 $("#barre-1 .pourcentage").html(calculPourcentageHauteur() + "%");
             }
 
-            // Barre de défilement horizontale en fonction du scroll
+            // Barre 2 de défilement horizontale en fonction du scroll
             function barreDefilement2() {
                 var cible = $("#barre-1 .progression2");
                 cible.css({
@@ -50,7 +50,7 @@
                 $("#barre-1 .pourcentage").html(calculPourcentageHauteur() + "%");
             }
 
-            // Barre de défilement horizontale en fonction du scroll
+            // Barre 3 de défilement horizontale en fonction du scroll 
             function barreDefilement3() {
                 var cible = $("#barre-1 .progression3");
                 cible.css({
@@ -84,13 +84,6 @@
             // pour afficher les retour en plus du message d'info de complementarité
             //document.getElementById('mesgInfo').innerText += '\n' + '-' + b_nom + '-' + b_mail + '-' + b_msg;
         }
-    </script>
-    <script>
-        function changeTitle() {
-    alert(window.parent.document.title);
-    window.parent.document.title = 'O_o..!'; // on change l'attribut <title>
-    alert(window.parent.document.title);
-}
     </script>
 </head>
 
