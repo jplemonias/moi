@@ -246,13 +246,17 @@ h3 .fab.fa-instagram{
 }
 /****************************************************************
 *      Suppression de l'effet pour tablettes et mobiles         *
-****************************************************************
+****************************************************************/
 @media only screen and (max-device-width: 1024px) {
-  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+  .bgimg-1 {
     background-attachment: scroll;
-    min-height: 80%;
+    min-height: 75%;
   }
-}/
+  .bgimg-2, .bgimg-3, .bgimg-4 {
+    background-attachment: scroll;
+    min-height: 30%;
+  }
+}
 /****************************************************************
 *                Changement d'aspet du parallax                 *
 *                je ne sais pas pk sur mobil le                 *
