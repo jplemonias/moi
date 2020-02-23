@@ -242,7 +242,7 @@ h3 .fab.fa-instagram{
     background-image: url("../img/matrix.jpg");
     min-height: 200px;
   }
-/*************** Changement d'aspet du parallax ****************/
+/*************** Changement d'aspet du parallax ***************
 @media only screen and (max-device-width: 1024px) {
     .bgimg-1 {
       background-attachment: scroll;
@@ -252,7 +252,7 @@ h3 .fab.fa-instagram{
       background-attachment: fixed;
       height: 300px;
     }
-  }
+  }*/
 /****************************************************************
 *      Suppression de l'effet pour tablettes et mobiles         *
 
