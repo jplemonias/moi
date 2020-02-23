@@ -246,7 +246,11 @@ h3 .fab.fa-instagram{
 @media only screen and (max-device-width: 1024px) {
     .bgimg-1 {
       background-attachment: scroll;
-      min-height: 80%;
+      height: 80%!important;
+    }
+    .bgimg-2, .bgimg-3, .bgimg-4 {
+      background-attachment: fixed;
+      height: 300px;
     }
   }
 /****************************************************************
