@@ -168,7 +168,7 @@ textarea{
     font:inherit;
 }
 
-/**************************************************/
+/***************************************************************/
 
 a{
     color:inherit
@@ -190,7 +190,8 @@ h3{
     font-size:24px;
     font-weight: 400;
     margin: 10px 0;
-    background: -webkit-gradient(linear,left top,right bottom,from(#04c4b4),to(#d400ff));
+    background: -webkit-gradient(linear,left top,right bottom,
+    from(#04c4b4),to(#d400ff));
     background: linear-gradient(90deg,#04c4b4,#d400ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -201,7 +202,8 @@ h3{
 }
 
 h3 .fab.fa-instagram{
-    background: -webkit-gradient(linear,left top,right bottom,from(#04c4b4),to(#d400ff));
+    background: -webkit-gradient(linear,left top,right bottom,
+    from(#04c4b4),to(#d400ff));
     background: linear-gradient (135deg,#04c4b4,#d400ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -241,8 +243,22 @@ h3 .fab.fa-instagram{
 .bgimg-4 {
     background-image: url("../img/matrix.jpg");
     min-height: 200px;
+}
+/****************************************************************
+*      Suppression de l'effet pour tablettes et mobiles         *
+****************************************************************
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+    background-attachment: scroll;
+    min-height: 80%;
   }
-/*************** Changement d'aspet du parallax ****************/
+}/
+/****************************************************************
+*                Changement d'aspet du parallax                 *
+*                je ne sais pas pk sur mobil le                 *
+*                parallax deconne au canhgement                 *
+*                    de direction de scroll                     *
+*****************************************************************
 @media only screen and (max-device-width: 1024px) {
     .bgimg-1 {
       background-attachment: scroll;
@@ -252,15 +268,6 @@ h3 .fab.fa-instagram{
       background-attachment: fixed;
       min-height: 300px;
     }
-  }
-/****************************************************************
-*      Suppression de l'effet pour tablettes et mobiles         *
-
-@media only screen and (max-device-width: 1600px) {
-  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
-    background-attachment: scroll;
-    min-height: 80%;
-  }
 }
 ****************************************************************/
 
@@ -361,7 +368,7 @@ h3 .fab.fa-instagram{
 /* NAVBar Si descendu sur la page */
 
 /****************************************************************
-*    navmoving == etat de la nav barsi on à scrollé la page     *
+*    navmoving == état de la nav bar si on à scrollé la page    *
 ****************************************************************/
 .navmoving .objetBar {
     width:100%;
