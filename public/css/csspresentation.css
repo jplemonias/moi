@@ -1,143 +1,146 @@
-html{
+html {
     -ms-text-size-adjust:100%;
     -webkit-text-size-adjust:100%;
     box-sizing:border-box;
 }
 
-*,*:before,*:after{
+*,*:before,*:after {
     box-sizing:inherit;
 }
 
-body{
+body {
     background-color: black;
     margin:0;
 }
 
-article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{
+article,aside,details,figcaption,figure,
+footer,header,main,menu,nav,section {
     display:block;
 }
 
-summary{
+summary {
     display:list-item;
 }
 
-audio,canvas,progress,video{
+audio,canvas,progress,video {
     display:inline-block;
 }
 
-progress{
+progress {
     vertical-align:baseline;
 }
 
-audio:not([controls]){
+audio:not([controls]) {
     display:none;
     height:0;
 }
 
-[hidden],template{
+[hidden],template {
     display:none;
 }
 
-a{
+a {
     background-color:transparent;
 }
 
-a:active,a:hover{
+a:active,a:hover {
     outline-width:0;
 }
 
-abbr[title]{
+abbr[title] {
     border-bottom:none;
     text-decoration:underline;
     text-decoration:underline dotted;
 }
 
-b,strong{
+b,strong {
     font-weight:bolder;
 }
 
-dfn{
+dfn {
     font-style:italic;
 }
 
-mark{
+mark {
     background:#ff0;color:#000;
 }
 
-small{
+small {
     font-size:80%;
 }
 
-sub,sup{
+sub,sup {
     font-size:75%;
     line-height:0;
     position:relative;
     vertical-align:baseline;
 }
 
-sub{
+sub {
     bottom:-0.25em;
 }
 
-sup{
+sup {
     top:-0.5em;
 }
 
-figure{
+figure {
     margin:1em 40px;
 }
 
-img{
+img {
     border-style:none;
 }
 
-code,kbd,pre,samp{
+code,kbd,pre,samp {
     font-family:monospace,monospace;
     font-size:1em;
 }
 
-hr{
+hr {
     box-sizing:content-box;
     height:0;overflow:visible;
 }
 
-button,input,select,textarea,optgroup{
+button,input,select,textarea,optgroup {
     font:inherit;
     margin:0;
 }
 
-optgroup{
+optgroup {
     font-weight:bold;
 }
 
-button,input{
+button,input {
     overflow:visible;
 }
 
-button,select{
+button,select {
     text-transform:none;
 }
 
-button,[type=button],[type=reset],[type=submit]{
+button,[type=button],[type=reset],[type=submit] {
     -webkit-appearance:button;
 }
 
-button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{
+button::-moz-focus-inner,[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner {
     border-style:none;
     padding:0;
 }
 
-button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{
+button:-moz-focusring,[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,[type=submit]:-moz-focusring {
     outline:1px dotted ButtonText;
 }
 
-fieldset{
+fieldset {
     border:1px solid #c0c0c0;
     margin:0 2px;
     padding:.35em .625em .75em;
 }
 
-legend{
+legend {
     color:inherit;
     display:table;
     max-width:100%;
@@ -145,16 +148,20 @@ legend{
     white-space:normal;
 }
 
-textarea{
+textarea {
     overflow:auto;
 }
 
-[type=checkbox],[type=radio]{
+[type=checkbox],[type=radio] {
     padding:0;
 }
 
-[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}
-[type=search]{
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+    height:auto
+}
+
+[type=search] {
     -webkit-appearance:textfield;
     outline-offset:-2px;
 }
@@ -170,7 +177,7 @@ textarea{
 
 /***************************************************************/
 
-a{
+a {
     color:inherit
 }
 
@@ -185,7 +192,8 @@ body, html {
   font-size: 15px;
   line-height: 1.5;
 }
-h3{
+
+h3 {
     font-family: "Segoe UI",Arial,sans-serif;
     font-size:24px;
     font-weight: 400;
@@ -201,7 +209,7 @@ h3{
     text-decoration-color: #04c4b4!important;
 }
 
-h3 .fab.fa-instagram{
+h3 .fab.fa-instagram {
     background: -webkit-gradient(linear,left top,right bottom,
     from(#04c4b4),to(#d400ff));
     background: linear-gradient (135deg,#04c4b4,#d400ff);
@@ -285,7 +293,7 @@ h3 .fab.fa-instagram{
     position:static;
     float:left;
 }
-.nav-bar .boutons{
+.nav-bar .boutons {
     white-space:normal;
 }
 .nav-bar:before,.nav-bar:after {
@@ -293,7 +301,7 @@ h3 .fab.fa-instagram{
     display:table;
     clear:both;
 }
-.nav-bar{
+.nav-bar {
     color: white;
     width:100%;
     overflow:hidden;
@@ -322,7 +330,8 @@ h3 .fab.fa-instagram{
     outline:0;
 }
 
-.objetBar.w3-mobile,.w3-dropdown-hover.w3-mobile,.w3-dropdown-click.w3-mobile {
+.objetBar.w3-mobile,.w3-dropdown-hover.w3-mobile,
+.w3-dropdown-click.w3-mobile {
     text-align:center;
 }
 
@@ -365,12 +374,15 @@ h3 .fab.fa-instagram{
     text-align:center;
 }
 
-.w3-block{display:block;width:100%}
+.w3-block {
+    display:block;
+    width:100%;
+}
 
-.objetBar.w3-mobile,.w3-dropdown-hover.w3-mobile,.w3-dropdown-click.w3-mobile{text-align:center}
-
-/* NAVBar Si descendu sur la page */
-
+.objetBar.w3-mobile,.w3-dropdown-hover.w3-mobile,
+.w3-dropdown-click.w3-mobile {
+    text-align:center;
+}
 /****************************************************************
 *    navmoving == état de la nav bar si on à scrollé la page    *
 ****************************************************************/
@@ -429,7 +441,10 @@ h3 .fab.fa-instagram{
 #envoi {
     border: solid 1px grey;
     background-color: white;
-    box-shadow:inset -5px -5px 5px grey, inset 5px 5px 5px white, inset -5px 5px 5px white, inset 5px -5px 5px white!important;
+    box-shadow:inset -5px -5px 5px grey,
+    inset 5px 5px 5px white,
+    inset -5px 5px 5px white,
+    inset 5px -5px 5px white!important;
 }
 #envoi:hover {
     color:rgb(255, 255, 255)!important;
@@ -488,25 +503,39 @@ h3 .fab.fa-instagram{
 
 
 
-.card,.w3-card-2{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}
+.card,.w3-card-2 {
+    box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),
+    0 2px 10px 0 rgba(0,0,0,0.12);
+}
 
-.animate-top{position:relative;animation:animatetop 0.4s}
+.animate-top {
+    position:relative;
+    animation:animatetop 0.4s;
+}
 
-
-/****************************************************************
-*                                                               *
-****************************************************************/
-
-@media (max-width:992px) and (min-width:601px){.cacher-medium{display:none!important}}
-@media (min-width:993px){.JP-modal-content{width:900px}.cacher-large{display:none!important}.w3-sidebar.w3-collapse{display:block!important}}
-@media (max-width:600px){.JP-modal-content{margin:0 10px;width:auto!important}.JP-modal{padding-top:30px}
-.w3-dropdown-hover.w3-mobile .w3-dropdown-content,.w3-dropdown-click.w3-mobile .w3-dropdown-content{position:relative}
-#codePHP{display:none!important;}
-.cacher-small{display:none!important}.w3-mobile{display:block;width:100%!important}.objetBar.w3-mobile,.w3-dropdown-hover.w3-mobile,.w3-dropdown-click.w3-mobile{text-align:center}
-.w3-dropdown-hover.w3-mobile,.w3-dropdown-hover.w3-mobile .w3-btn,.w3-dropdown-hover.w3-mobile .boutons,.w3-dropdown-click.w3-mobile,.w3-dropdown-click.w3-mobile .w3-btn,.w3-dropdown-click.w3-mobile .boutons{width:100%}}
 .boutons:hover{color:#000!important;background-color:#ccc!important}
-/** fin nav barre **/
+/****************************************************************
+*       separateur comme hr mais en div pour stilisation        *
+****************************************************************/
+#separ1 {
+    margin-bottom: 10px;
+    left: 0;
+    right: 0;
+    content: "";
+    height: 3px;
+    border-radius: 10px;
+    background: linear-gradient(90deg,#d400ff,#04c4b4,#04c4b4);
+}
 
+#separ2 {
+    margin-top: 11px;
+    left: 0;
+    right: 0;
+    content: "";
+    height: 3px;
+    border-radius: 10px;
+    background: linear-gradient(90deg,#008a7e,#04c4b4,#d400ff);
+}
 /* corp */
 
 .esptxt-large {letter-spacing: 10px;}
@@ -580,9 +609,20 @@ box-shadow: inset -5px 5px 10px #bbbbbb, inset -5px -5px 10px black;
 
 .JP-col{padding:0 8px}
 .JP-col,.JP-half,.w3-third,.w3-twothird,.w3-threequarter,.JP-quarter{float:left;width:100%}
-.w3-col.s1{width:8.33333%}.w3-col.s2{width:16.66666%}.w3-col.s3{width:24.99999%}.w3-col.s4{width:33.33333%}
-.w3-col.s5{width:41.66666%}.w3-col.s6{width:49.99999%}.w3-col.s7{width:58.33333%}.w3-col.s8{width:66.66666%}
-.w3-col.s9{width:74.99999%}.w3-col.s10{width:83.33333%}.w3-col.s11{width:91.66666%}.w3-col.s12{width:99.99999%}
+
+.w3-col.s1{width:8.33333%}
+.w3-col.s2{width:16.66666%}
+.w3-col.s3{width:24.99999%}
+.w3-col.s4{width:33.33333%}
+.w3-col.s5{width:41.66666%}
+.w3-col.s6{width:49.99999%}
+.w3-col.s7{width:58.33333%}
+.w3-col.s8{width:66.66666%}
+.w3-col.s9{width:74.99999%}
+.w3-col.s10{width:83.33333%}
+.w3-col.s11{width:91.66666%}
+.w3-col.s12{width:99.99999%}
+
 @media (min-width:601px){
     .w3-col.m1{width:8.33333%}
     .w3-col.m2{width:16.66666%}
@@ -597,6 +637,7 @@ box-shadow: inset -5px 5px 10px #bbbbbb, inset -5px -5px 10px black;
     .w3-col.m11{width:91.66666%}
     .w3-col.m12{width:99.99999%}
 }
+
 @media (min-width:993px){
     .w3-col.l1{width:8.33333%}
     .w3-col.l2{width:16.66666%}
@@ -657,20 +698,25 @@ box-shadow: inset -5px 5px 10px #bbbbbb, inset -5px -5px 10px black;
 .JP-display-container:hover .w3-display-hover{display:block}.JP-display-container:hover span.w3-display-hover{display:inline-block}.w3-display-hover{display:none}
 .JP-round,.w3-round-medium{border-radius:15px}
 .JP-xxlarge{font-size:36px!important}
-
-/*couleur du surlignement pour WebKit
-(utilisé par Chrome et Safari, par exemple)*/
+/****************************************************************
+*              couleur du surlignement pour WebKit              *
+*          (utilisé par Chrome et Safari, par exemple)          *
+****************************************************************/
 ::selection {
     color: #fff;
     background: rgb(212, 0, 255);
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-shadow: -1px 0 black, 0 1px black, 
+    1px 0 black, 0 -1px black;
 }
-/*couleur du surlignement pour Gecko 
-(utilisé par Mozilla Firefox, par exemple)*/
+/****************************************************************
+*              couleur du surlignement pour Gecko               *
+*          (utilisé par Mozilla Firefox, par exemple)           *
+****************************************************************/
 ::-moz-selection {
     color: #fff;
     background: rgb(212, 0, 255);
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-shadow: -1px 0 black, 0 1px black,
+    1px 0 black, 0 -1px black;
 }
 
 /*ScrollBarre en pied de page*/
@@ -681,9 +727,17 @@ box-shadow: inset -5px 5px 10px #bbbbbb, inset -5px -5px 10px black;
 /*#barre-1 .pourcentage {position:absolute; top:0; font-size:1.5em; line-height:1.5em; text-align:center; width:100%; color:#fff;}*/
 
 #btninsta{
-    box-shadow: 5px 5px 10px #383838, -5px 5px 10px #383838, 5px -5px 10px #383838, -5px -5px 10px #383838, inset 5px 5px 10px #383838, inset -5px 5px 10px #383838, inset 5px -5px 10px #383838, inset -5px -5px 10px #383838;
+    box-shadow: 5px 5px 10px #383838,
+    -5px 5px 10px #383838,
+    5px -5px 10px #383838,
+    -5px -5px 10px #383838,
+    inset 5px 5px 10px #383838,
+    inset -5px 5px 10px #383838,
+    inset 5px -5px 10px #383838,
+    inset -5px -5px 10px #383838;
     border: 1px solid #d400ff;
-    background: -webkit-gradient(linear,left top,right top,from(#04c4b4),to(#d400ff));
+    background: -webkit-gradient(linear,left top,right top,
+    from(#04c4b4),to(#d400ff));
     background: linear-gradient(90deg,#04c4b4,#d400ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -692,6 +746,7 @@ box-shadow: inset -5px 5px 10px #bbbbbb, inset -5px -5px 10px black;
     -webkit-text-decoration-color: #04c4b4!important;
     text-decoration-color: #04c4b4!important;
 }
+
 #btninsta:hover{
     box-shadow:
     3px 3px 10px #d400ff83,
@@ -703,7 +758,8 @@ box-shadow: inset -5px 5px 10px #bbbbbb, inset -5px -5px 10px black;
     inset 3px -3px 10px #d400ff83,
     inset -3px -3px 10px #d400ff83;
     border: 1px solid #d400ff;
-    background: -webkit-gradient(linear,left top,right top,from(#d400ff),to(#04c4b4));
+    background: -webkit-gradient(linear,left top,right top,
+    from(#d400ff),to(#04c4b4));
     background: linear-gradient(90deg,#d400ff,#04c4b4);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -795,22 +851,55 @@ i.fas.fa-peace.D {
 .vignettes {
     float: right;
 }
-#separ1 {
-    margin-bottom: 10px;
-    left: 0;
-    right: 0;
-    content: "";
-    height: 3px;
-    border-radius: 10px;
-    background: linear-gradient(90deg,#d400ff,#04c4b4,#04c4b4);
+/****************************************************************
+*                                                               *
+****************************************************************/
+@media (max-width:992px) and (min-width:601px) {
+    .cacher-medium{display:none!important;
+    }
 }
 
-#separ2 {
-    margin-top: 11px;
-    left: 0;
-    right: 0;
-    content: "";
-    height: 3px;
-    border-radius: 10px;
-    background: linear-gradient(90deg,#008a7e,#04c4b4,#d400ff);
+@media (min-width:993px) {
+    .JP-modal-content {
+        width:900px;
+    }
+    .cacher-large {
+        display:none!important;
+    }
+    .w3-sidebar.w3-collapse {
+        display:block!important;
+    }
+}
+
+@media (max-width:600px) {
+    .JP-modal-content {
+        margin:0 10px;
+        width:auto!important;
+    }
+    .JP-modal {
+        padding-top:30px;
+    }
+    .w3-dropdown-hover.w3-mobile .w3-dropdown-content,
+    .w3-dropdown-click.w3-mobile .w3-dropdown-content {
+    position:relative;
+    }
+    #codePHP {
+        display:none!important;
+    }
+    .cacher-small {
+        display:none!important;
+    }
+    .w3-mobile {
+        display:block;
+        width:100%!important;
+    }
+    .objetBar.w3-mobile,.w3-dropdown-hover.w3-mobile,
+    .w3-dropdown-click.w3-mobile {
+        text-align:center;
+    }
+    .w3-dropdown-hover.w3-mobile,.w3-dropdown-hover.w3-mobile .w3-btn,
+    .w3-dropdown-hover.w3-mobile .boutons,.w3-dropdown-click.w3-mobile,
+    .w3-dropdown-click.w3-mobile .w3-btn,.w3-dropdown-click.w3-mobile .boutons {
+        width:100%;
+    }
 }
