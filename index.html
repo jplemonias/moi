@@ -503,7 +503,7 @@
                                 style="height: 100px; resize: none;" onblur="mev('',this.id)"></textarea>
                         </div>
                         <div class="JP-half">
-                            <input id="cEmail" class="JP-input JP-border" type="text"
+                            <input id="cEmail" class="JP-input JP-border" type="text" onclick="document.getElementById('Email').disabled=false"
                                 placeholder="Confirmation de l'email" name="cEmail" onblur="mev('',this.id)">
                         </div>
                         <div style="margin-right: 8px;">
@@ -517,7 +517,7 @@
                         </div>
                     </div>
                 </form>
-                <p style="font-size: 12px;"><span style=" color: rgb(170, 221, 253);">&#9888;</span> L'envoi du message doit vous amener sur une
+                <p style="font-size: 12px; text-align: justify;"><span style=" color: #d400ff;">&#9888;</span> L'envoi du message doit vous amener sur une
                     page 4o5 Not
                     Allowed;<br>cela signifie que l'hébergeur utilisé, ici githhub, reconnait le format
                     de la page mais ne le traite pas ( le format "PHP" reconnu par "MySQL" ). Donc l'envoi n'a pas
