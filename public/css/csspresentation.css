@@ -872,7 +872,20 @@ i.fas.fa-peace.D {
     border-radius: 6px;
     padding: 0 3px;
     margin: 30px auto;
+    animation-name: bgmouv;
+    animation-duration: 0.5s;
 }
+#cadre:hover{
+    animation-iteration-count: infinite;
+    }
+  
+  @keyframes bgmouv {
+    0%   {background-image:linear-gradient(135deg,#000000,#04c4b4,#d400ff,#000000)}
+    25%  {background-image:linear-gradient(135deg,#000000,#000000,#04c4b4,#d400ff)}
+    50%  {background-image:linear-gradient(135deg,#d400ff,#000000,#000000,#04c4b4)}
+    75%  {background-image:linear-gradient(135deg,#04c4b4,#d400ff,#000000,#000000)}
+    100% {background-image:linear-gradient(135deg,#000000,#04c4b4,#d400ff,#000000)}
+  }
 
 #inCadre {
     background-color: black;
