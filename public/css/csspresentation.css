@@ -871,14 +871,12 @@ i.fas.fa-peace.D {
     width: max-content;
     border-radius: 6px;
     padding: 0 3px;
-    padding-top: 3px!important;
-    padding-bottom: 3px!important;
     margin: 30px auto;
 }
 
 #inCadre {
     background-color: black;
-    padding: 2px 9px 3px;
+    padding: 13px 9px 14px;
     border-radius: 3px;
 }
 /****************************************************************
