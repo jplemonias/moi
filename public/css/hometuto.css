@@ -36,7 +36,12 @@ legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}t
 }
 @media (max-width: 993px){
 #mySidenav {
-    height: calc(100% - 155px);
+    height: calc(100% - 157px);
+    display: block!important;
+}}
+@media (max-width: 769px){
+#mySidenav {
+    display: none!important;
 }}
 footer{margin-top: 129px;}
 html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
