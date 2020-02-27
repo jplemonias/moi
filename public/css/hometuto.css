@@ -34,6 +34,10 @@ legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}t
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+@media (max-width: 993px){
+#mySidenav {
+    height: calc(100% - 157px);
+}}
 footer{margin-top: 129px;}
 html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
 h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}.w3-serif{font-family:serif}
