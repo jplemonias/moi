@@ -195,7 +195,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-white,.w3-hover-white:hover{color:#000!important;background-color:#fff!important}
 
 
-.gris{color:#000!important;background-color:rgb(75, 75, 75)!important}
+.gris{color:rgb(150, 150, 150)!important;background-color:rgb(75, 75, 75)!important}
 .trans{background-color: transparent;color: white;}
 .degrad1,.hover-degrad2:hover{background: linear-gradient(-45deg,#d400ff,#04c4b4);}
 .degrad2,.hover-degrad1:hover{background: linear-gradient(-45deg,#04c4b4,#d400ff);}
