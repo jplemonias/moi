@@ -171,15 +171,22 @@
         }
 
         #main {
-            padding: 16px
+            padding: 16px;
+            border-radius: 0 0 0 30px;
         }
 
         #pub {
-            background: linear-gradient(135deg,#04c4b425,#d400ff25);
+    background: linear-gradient(135deg,#04c4b470,#d400ff70);
             border-radius: 15px;
-            background-color: black;
+            background-color: white;
             color: darkgray;
             height: 90px
+        }
+
+        #pubin {
+            height: 80px;
+            margin:5px auto;
+            display: block;
         }
 
         #mainLeaderboard {
@@ -1124,10 +1131,16 @@
         .darktheme .sqlnumbercolor {
             color:
         }
+
         .w3-button {
             margin: 5px 5px 13px 0;
             font-size: 16px;
         }
+
+        #cartehover {
+            border-radius: 0 0 30px 30px;
+        }
+
         @media only screen and (max-device-width: 480px) {
 
             .w3-code,
@@ -1158,6 +1171,9 @@
             #pub {
                 height: 60px
             }
+            #pubin {
+            height: 50px;
+        }
             #mainLeaderboard {
                 height: 60px
             }
@@ -1332,8 +1348,9 @@
         }
 
         #footer {
+            margin-top: 25px;
             padding: 32px;
-            border-top: 1px solid #f1f1f1;
+            border-radius: 20px 20px 0 0;
         }
 /*
         #footer hr:first-child {
@@ -2001,10 +2018,11 @@
     </nav>
     </div>
     <div class='w3-main w3-light-grey' id='belowtopnav' style='margin-left:220px;'>
-        <div class='w3-row gris'>
+        <div id="cartehover" class='w3-row gris'>
             <div class='w3-col l10 m12' id='main'>
                 <div id='pub' style='overflow:hidden;'>
                     <!-- Emplacenrt pour redirection-->
+                <img id='pubin'src="../../public/img/W3.pnG">
                 </div>
                 <h1>HTML<span class="color_h1"> Tutorial</span></h1>
                 <div class="w3-clear nextprev">
@@ -2018,7 +2036,7 @@
                     <p>Vous le verez l'HTML est relativement  simple en soit.</p>
                 </div>
 
-                <hr>
+                <div id="separ2"></div>
                 <h2>Example.</h2>
                 <p>Ce didacticiel sur l'HTML contient des exemples de codes comme celui-ci, afin de faciliter la compréhension.</p>
                 <p>Avec l'éditeur en ligne, codepen, vous pouvez éditer le HTML et ainsi pouvoir voir le résultat.</p>
@@ -2034,38 +2052,41 @@
                 </div>
                 <p><strong>En cliquant sur le bouton &quot;Résultat&quot; tu pouras voir le resultat.</strong></p>
                 <p><a href="/moi/tutos_v1/O_o">O_o...!</a></p>
-                <hr>
-
+                <div id="separ2"></div>
                 <div class="w3-clear nextprev">
                     <a class="w3-left w3-btn degrad1 hover-degrad1" href="/moi/tutos_v1/index.html">&#10094; Home</a>
                     <a class="w3-right w3-btn degrad2 hover-degrad2" href="/moi/tutos_v1/O_o">Next &#10095;</a>
                 </div>
             </div>
         </div>
-        <div id="footer" class="footer w3-container w3-white">
-            <hr>
+        <div classe='degrad1'>
+        <div id="footer" class="footer footerdegrad w3-container .w3-padding-32">
+            <div id="separ2"></div>
             <div class="w3-row-padding w3-center w3-small" style="margin:0 -16px">
                 <div class="w3-col l3 m3 s12">
-                    <a class="w3-button w3-light-grey w3-block" href="javascript:void(0);"
-                        onclick="displayError();return false"
-                        style="white-space:nowrap;text-decoration:none;margin-top:1px;margin-bottom:1px">REPORT
-                        ERROR</a>
+                    <a class="w3-button degrad1 hover-degrad1 w3-block" href="/moi/tutos_v1/index.html"
+                        style="white-space:nowrap;text-decoration:none;margin-top:1px;margin-bottom:1px">ACCUEIL</a>
                 </div>
                 <div class="w3-col l3 m3 s12">
-                    <a class="w3-button w3-light-grey w3-block" href="javascript:void(0);" target="_blank"
-                        onclick="printPage();return false;"
-                        style="text-decoration:none;margin-top:1px;margin-bottom:1px">PRINT PAGE</a>
+                    <a class="w3-button degrad2 hover-degrad2 w3-block" href="/moi/tutos_v1/O_o" target="_blank"
+                        style="text-decoration:none;margin-top:1px;margin-bottom:1px">LE CSS</a>
                 </div>
                 <div class="w3-col l3 m3 s12">
-                    <a class="w3-button w3-light-grey w3-block" href="/forum/default.asp" target="_blank"
-                        style="text-decoration:none;margin-top:1px;margin-bottom:1px">FORUM</a>
+                    <a class="w3-button degrad1 hover-degrad1 w3-block" href="/moi/tutos_v1/O_o" target="_blank"
+                        style="text-decoration:none;margin-top:1px;margin-bottom:1px">LE JAVASCRIPT</a>
                 </div>
                 <div class="w3-col l3 m3 s12">
-                    <a class="w3-button w3-light-grey w3-block" href="/about/default.asp" target="_top"
-                        style="text-decoration:none;margin-top:1px;margin-bottom:1px">ABOUT</a>
+                    <a class="w3-button degrad2 hover-degrad2 w3-block" href="/moi/tutos_v1/O_o" target="blank"
+                        style="text-decoration:none;margin-top:1px;margin-bottom:1px">LE SQL/PHP</a>
                 </div>
             </div>
-            <hr>
+            <div id="separ2"></div>
+            
+            <div id='pub' style='overflow:hidden;'>
+                <!-- Emplacenrt pour redirection-->
+                <img id='pubin' src="../../public/img/W3.pnG">
+            </div>
+                <!--
             <div class="w3-light-grey w3-padding w3-margin-bottom" id="err_form" style="display:none;position:relative">
                 <span onclick="this.parentElement.style.display='none'"
                     class="w3-button w3-display-topright w3-large">&times;</span>
@@ -2077,7 +2098,6 @@
                 <p>help@w3schools.com</p>
                 <br>
 
-                <!--
 <h2>Your Suggestion:</h2>
 <form>
 <div class="w3-section">      
@@ -2177,17 +2197,17 @@
                     </div>
                 </div>
 -->
-            </div>
-
-            <hr>
+            <div id="separ2"></div>
             <div class="w3-center w3-small w3-opacity">
                 <p class="w3-medium">
                     Le site Psycholesbonstutos est ici pour l'apprentissage de langages de programmation de developement web.
                     Sans auccune préthention, j'aierais vous partager mon savoir dans ce domaine principalement sur l'HTML, le CSS,
-                    le PHP et le JavaScript, affin de vous guider dans leurs apprentissage.<br>En utilisant ce site, vous acceptez que mon
-                    four soit en panne et que je ne puisse vous offrir de cookies.<br><br>Merci, Pe@cE.<br><br></p>
+                    le PHP et le JavaScript, affin de vous guider dans leurs apprentissage.<br><br>En utilisant ce site, vous acceptez que mon
+                    four soit en panne et que je ne puisse vous offrir de cookies.<br><br>Merci, Pe@cE.</p>
             </div>
-            <br><br>
+            </div>
+            </div>
+
         </div>
 
     </div>
