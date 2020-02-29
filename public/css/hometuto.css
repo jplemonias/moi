@@ -38,7 +38,7 @@ legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}t
     #mySidenav {
         height: calc(100% - 157px);
     }
-    .topnav, #main {
+    .topnav {
         margin-top: 100px!important;
     }
 }
