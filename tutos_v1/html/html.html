@@ -1290,8 +1290,21 @@
             }
         }
 
+        .w3-sidebar {
+            z-index: 3;
+            width: 230px;
+            margin-bottom: -155px;
+        }
+
+        .w3-sidebar .w3-bar-block .w3-bar-item {
+            padding: 0 16px;
+            font-size: 16px;
+        }
+
+
         /*NYTT:*/
         #main {
+            margin-top: 68px;
             padding: 16px 32px 32px 32px;
             border-right: 1px solid #f1f1f1;
         }
@@ -1955,8 +1968,18 @@
                         </div>
                     <br class="hidesm">
                 </nav>
+    <nav class="w3-sidebar w3-collapse gris w3-card-2" id="mySidenav">
+        <div class="w3-bar-block">
+            <div class="w3-container">
+                <h4 class="w3-margin-top">Tutos</h4>
+            </div>
+            <a class="w3-bar-item w3-button margnone" href="/moi/tutos_v1/html/html.html">l'HTML</a>
+            <a class="w3-bar-item w3-button margnone" href="/tutos_v1/tutoscss.html">le CSS</a>
+            <a class="w3-bar-item w3-button margnone" href="/tutos_v1/tutosphp.html">le php</a>
+            <a class="w3-bar-item w3-button margnone" href="/tutos_v1/tutosjs.html">le JavaScript</a>
+        </div>
+    </nav>
     </div>
-
     <div class='w3-main w3-light-grey' id='belowtopnav' style='margin-left:220px;'>
         <div class='w3-row w3-white'>
             <div class='w3-col l10 m12' id='main'>
@@ -2006,22 +2029,6 @@
             </div>
         </div>
         <div id="footer" class="footer w3-container w3-white">
-
-            <hr>
-
-            <div style="overflow:auto">
-                <div class="bottomad">
-                    <!-- BottomMediumRectangle -->
-                    <!--<pre>bottom_medium_rectangle, all: [970,250][300,250][336,280]</pre>-->
-                    <div id="snhb-bottom_medium_rectangle-0" style="padding:0 10px 10px 0;float:left;width:auto;"></div>
-                    <!-- adspace bmr -->
-                    <!-- RightBottomMediumRectangle -->
-                    <!--<pre>right_bottom_medium_rectangle, desktop: [300,250][336,280]</pre>-->
-                    <div id="snhb-right_bottom_medium_rectangle-0" style="padding:0 10px 10px 0;float:left;width:auto;">
-                    </div>
-                </div>
-            </div>
-
             <hr>
             <div class="w3-row-padding w3-center w3-small" style="margin:0 -16px">
                 <div class="w3-col l3 m3 s12">
