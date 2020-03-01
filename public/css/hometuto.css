@@ -24,7 +24,11 @@ legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}t
 [type=search]::-webkit-search-decoration{-webkit-appearance:none}
 ::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
 /* End extract */
-
+@font-face
+{
+    font-family: HP;
+    src: url(../../public/polices/HP.ttf);
+}
 .tcode {
     background: linear-gradient(-45deg,#04c4b4,#d400ff);
     -webkit-background-clip: text;
