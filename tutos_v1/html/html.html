@@ -50,7 +50,12 @@
             position: absolute;
             top: 17px;
         }
-
+        @media screen and (max-width: 768px){
+.w3-bar-block .w3-bar-item {
+    text-align: center !important;
+    padding: 2px 0;
+}
+}
         .w3schools-logo:hover{
             background: linear-gradient(-45deg,#04c4b4,#d400ff);
             -webkit-background-clip: text;
@@ -929,7 +934,7 @@
         .darktheme .w3-code {
             background-color: rgb(40, 44, 52);
             color: white;
-            border-left-color: rgb(40, 44, 52)
+            /*border-left-color: rgb(40, 44, 52) !important*/
         }
 
         .darktheme .w3-example pre {
@@ -1580,17 +1585,17 @@
                 <a class="w3-bar-item w3-button barex hover-degrad1 w3-padding-16 borderRnone"
                     href="javascript:void(0)" onclick="w3_open_nav('JavaScript')" id="navbtn_JavaScript">JavaScript <i
                         class='fab fa-js-square'></i><i class='fab fa-js-square' style="display:none"></i></a>
-                <!--<div class="w3-right">
-                    <a class="w3-bar-item w3-button hover-degrad2 w3-padding-16 w3-right" href="javascript:void(0)"
-                        onclick="open_search(this)" title='Search W3Schools'><i class='fa'>&#xe802;</i></a>
-                    <a class="w3-bar-item w3-button hover-degrad2 w3-padding-16 w3-right" href="javascript:void(0)"
-                        onclick="open_translate(this)" title='Translate W3Schools'><i class='fa'>&#xe801;</i></a>
-                    <a class="w3-bar-item w3-button hover-degrad2 w3-padding-16 w3-right" href="javascript:void(0)"
-                        onclick="changecodetheme(this)" title='Toggle Dark Code'><i class='fa'>&#xe80b;</i></a>
-                </div>-->
+                        <div class="w3-right"><!--
+                            <a class="w3-bar-item w3-button hover-degrad2 w3-padding-16 w3-right" href="javascript:void(0)"
+                                onclick="open_search(this)" title='Search W3Schools'><i class='fa'>&#xe802;</i></a>
+                            <a class="w3-bar-item w3-button hover-degrad2 w3-padding-16 w3-right" href="javascript:void(0)"
+                                onclick="open_translate(this)" title='Translate W3Schools'><i class='fa'>&#xe801;</i></a>-->
+                            <a class="w3-bar-item w3-button hover-degrad2 w3-padding-16 w3-right" href="javascript:void(0)"
+                                onclick="changecodetheme(this)" title='daltonien'><i class="far fa-eye"></i></a>
+                        </div>
             </div>
             <div id='myAccordion' class="w3-card-2 w3-light-grey w3-center w3-hide-large" style="display:none;cursor:default">
-                <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-xlarge w3-right">&times;</a><br>
+                <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-xlarge w3-right"><i class="far fa-times-circle"></i></a><br>
                 <div class="w3-container w3-padding-32">
                     <a class="w3-button w3-block w3-large w3-wide" onclick="open_xs_menu('HTML');"
                         href="javascript:void(0);">HTML <i class='fab fa-html5'></i></a>
@@ -1612,7 +1617,7 @@
 
             <nav id="nav_HTML" class="w3-light-grey w3-card-2 w3-hide-small navex">
                 <span onclick="w3_close_nav('HTML')"
-                    class="w3-button padding-button-close w3-xlarge w3-display-topright barex">&times;</span><br>
+                    class="w3-button padding-button-close w3-xlarge w3-display-topright barex"><i class="far fa-times-circle"></i></span><br>
                 <div class="w3-row-padding w3-bar-block">
                     <div class="w3-col l3 m6">
                         <h3 class="w3-margin-top vert">Débutant</h3>
@@ -1678,7 +1683,7 @@
         
             <nav id="nav_CSS" class="w3-light-grey w3-card-2 w3-hide-small navex">
                 <span onclick="w3_close_nav('CSS')"
-                    class="w3-button padding-button-close w3-xlarge w3-display-topright barex">&times;</span><br>
+                    class="w3-button padding-button-close w3-xlarge w3-display-topright barex"><i class="far fa-times-circle"></i></span><br>
                 <div class="w3-row-padding w3-bar-block">
                     <div class="w3-col l3 m6">
                         <h3 class="w3-margin-top vert">Débutant</h3>
@@ -1741,7 +1746,7 @@
         
             <nav id="nav_PHP" class="w3-light-grey w3-card-2 w3-hide-small navex">
                 <span onclick="w3_close_nav('PHP')"
-                    class="w3-button padding-button-close w3-xlarge w3-display-topright barex">&times;</span><br>
+                    class="w3-button padding-button-close w3-xlarge w3-display-topright barex"><i class="far fa-times-circle"></i></span><br>
                 <div class="w3-row-padding w3-bar-block">
                         <div class="w3-col l3 m6">
                             <h3 class="w3-margin-top vert">Débutant</h3>
@@ -1804,7 +1809,7 @@
         
             <nav id="nav_JavaScript" class="w3-light-grey w3-card-2 w3-hide-small navex">
                 <span onclick="w3_close_nav('JavaScript')"
-                    class="w3-button padding-button-close w3-xlarge w3-display-topright barex">&times;</span><br>
+                    class="w3-button padding-button-close w3-xlarge w3-display-topright barex"><i class="far fa-times-circle"></i></span><br>
                 <div class="w3-row-padding w3-bar-block">
                         <div class="w3-col l3 m6">
                             <h3 class="w3-margin-top vert">Débutant</h3>
@@ -1908,7 +1913,7 @@
                         on <a href="https://codepen.io">CodePen</a>.</span>
                     </p>
                       <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-                    <a class="w3-btn w3-button degrad1 hover-degrad1" href="https://codepen.io/PsychoActiF/full/YzXZRBP" target="_blank">Résultat &raquo;</a>
+                    <a class="w3-btn w3-button degrad1 hover-degrad1" href="https://codepen.io/PsychoActiF/full/YzXZRBP" target="_blank">Résultat <i class="far fa-share-square"></i></a>
                 </div>
                 <p><strong>En cliquant sur le bouton &quot;Résultat&quot; tu pouras voir le resultat.</strong></p>
                 <p><a href="/moi/tutos_v1/O_o">On y GO_o..?</a></p>
@@ -1949,7 +1954,7 @@
                 <!--
             <div class="w3-light-grey w3-padding w3-margin-bottom" id="err_form" style="display:none;position:relative">
                 <span onclick="this.parentElement.style.display='none'"
-                    class="w3-button w3-display-topright w3-large">&times;</span>
+                    class="w3-button w3-display-topright w3-large"><i class="far fa-times-circle"></i></span>
 
                 <h2>Report Error</h2>
 
@@ -1981,7 +1986,7 @@
             </div>
             <div class="w3-container w3-light-grey w3-padding" id="err_sent" style="display:none;position:relative">
                 <span onclick="this.parentElement.style.display='none'"
-                    class="w3-button w3-display-topright">&times;</span>
+                    class="w3-button w3-display-topright"><i class="far fa-times-circle"></i></span>
                 <h2>Thank You For Helping Us!</h2>
                 <p>Your message has been sent to W3Schools.</p>
             </div>
@@ -2068,9 +2073,10 @@
                         style="text-decoration:none">w3</a> |
                     <a href="https://jplemonias.github.io/moi/" target="_top" class="w3-hover-text-green"
                         style="text-decoration:none">Moi</a><br><br>Merci, Pe@cE.</p>
+                        <a title="Pe@cE" class="peace"><i class="fas fa-peace"></i></a>
             </div>
-            </div>
-            </div>
+        </div>
+        </div>
 
         </div>
 
@@ -2249,6 +2255,27 @@
                 return elmnt.currentStyle[style];
             }
         }
+        function changecodetheme() {
+            var cc = document.body.className;
+            if (cc.indexOf("darktheme") > -1) {
+                document.body.className = cc.replace("darktheme", "");
+                localStorage.setItem("preferredmode", "light");
+            } else {
+                document.body.className += " darktheme";
+                localStorage.setItem("preferredmode", "dark");
+            }
+        }
+    </script>
+    <script src="/lib/w3codecolor.js"></script>
+    <script>
+        w3CodeColor();
+        (
+            function setThemeMode() {
+                var x = localStorage.getItem("preferredmode");
+                if (x == "dark") {
+                    document.body.className += " darktheme";
+                }
+            })();
     </script>
 </body>
 
