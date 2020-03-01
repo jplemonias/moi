@@ -55,11 +55,26 @@ background: linear-gradient(135deg,#04c4b444,#d400ff44);
 .bordernone{
     border: none!important;
 }
+.borderRnone:hover{
+    border-radius: 0!important;
+}
 .margnone{
     margin: 0!important;
 }
 .padding-button-close{
     padding: 8px 16px!important;
+}
+.bordDgris {
+    box-shadow: none;
+}
+.bordDgris:hover{
+    margin-left: 15px!important;
+    border-radius: 5px 0 0 5px;
+    box-shadow: inset -40px 0px 20px 0px rgba(75, 75, 75, 0.699);
+}
+
+.w3schools-logo:hover .tcode {
+    background:none!important;
 }
 html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
 h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}.w3-serif{font-family:serif}
