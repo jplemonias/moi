@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../../public/css/hometuto.css">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Source Code Pro' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/d70a89f18c.js" crossorigin="anonymous"></script>
 
     <style>
         a:hover,
@@ -114,6 +115,10 @@
         i.fa-caret-down,
         i.fa-caret-up {
             width: 10px
+        }
+        i.fa-js-square,i.fa-html5,i.fa-css3-alt,
+        i.fa-php{
+            font-size: 21px!important;
         }
 
         #sidenav h2 {
@@ -1501,7 +1506,7 @@
             }
         }
         @media screen and (max-width:600px) {
-            
+
             #w3-exerciseform {
                 margin-left: -32px;
                 margin-right: -32px;
@@ -1722,17 +1727,17 @@
                 <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 hidesm borderRnone" href="javascript:void(0)"
                     onclick="w3_open()"><i class='fa'>&#xf0c9;</i></a>
                 <a class="w3-bar-item w3-button barex hover-degrad1 w3-padding-16 borderRnone" href="javascript:void(0)"
-                    onclick="w3_open_nav('HTML')" id="navbtn_HTML">HTML <i class='fa fa-caret-down'></i><i
-                        class='fa fa-caret-up' style="display:none"></i></a>
+                    onclick="w3_open_nav('HTML')" id="navbtn_HTML">HTML <i class='fab fa-html5'></i><i
+                        class='fab fa-html5' style="display:none"></i></a>
                 <a class="w3-bar-item w3-button barex hover-degrad1 w3-padding-16 borderRnone" href="javascript:void(0)"
-                    onclick="w3_open_nav('CSS')" id="navbtn_CSS">CSS <i class='fa fa-caret-down'></i><i
-                        class='fa fa-caret-up' style="display:none"></i></a>
+                    onclick="w3_open_nav('CSS')" id="navbtn_CSS">CSS <i class='fab fa-css3-alt'></i><i
+                        class='fab fa-css3-alt' style="display:none"></i></a>
                 <a class="w3-bar-item w3-button barex hover-degrad1 w3-padding-16 borderRnone" href="javascript:void(0)"
-                    onclick="w3_open_nav('PHP')" id="navbtn_PHP">PHP <i class='fa fa-caret-down'></i><i
-                        class='fa fa-caret-up' style="display:none"></i></a>
+                    onclick="w3_open_nav('PHP')" id="navbtn_PHP">PHP <i class='fab fa-php'></i><i
+                        class='fab fa-php' style="display:none"></i></a>
                 <a class="w3-bar-item w3-button barex hover-degrad1 w3-padding-16 borderRnone"
                     href="javascript:void(0)" onclick="w3_open_nav('JavaScript')" id="navbtn_JavaScript">JavaScript <i
-                        class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a>
+                        class='fab fa-js-square'></i><i class='fab fa-js-square' style="display:none"></i></a>
                 <!--<div class="w3-right">
                     <a class="w3-bar-item w3-button hover-degrad2 w3-padding-16 w3-right" href="javascript:void(0)"
                         onclick="open_search(this)" title='Search W3Schools'><i class='fa'>&#xe802;</i></a>
@@ -1749,16 +1754,16 @@
                 <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-xlarge w3-right">&times;</a><br>
                 <div class="w3-container w3-padding-32">
                     <a class="w3-button w3-block w3-large w3-wide" onclick="open_xs_menu('HTML');"
-                        href="javascript:void(0);">HTML <i class='fa fa-caret-down'></i></a>
+                        href="javascript:void(0);">HTML <i class='fab fa-html5'></i></a>
                     <div id="sectionxs_HTML" class="w3-white w3-show"></div>
                     <a class="w3-button w3-block w3-large w3-wide" onclick="open_xs_menu('CSS')"
-                        href="javascript:void(0);">CSS <i class='fa fa-caret-down'></i></a>
+                        href="javascript:void(0);">CSS <i class='fab fa-css3-alt'></i></a>
                     <div id="sectionxs_CSS" class="w3-white w3-show"></div>
                     <a class="w3-button w3-block w3-large w3-wide" onclick="open_xs_menu('PHP')"
-                        href="javascript:void(0);">PHP <i class='fa fa-caret-down'></i></a>
+                        href="javascript:void(0);">PHP <i class='fab fa-php'></i></a>
                     <div id="sectionxs_PHP" class="w3-white w3-show"></div>
                     <a class="w3-button w3-block w3-large w3-wide" onclick="open_xs_menu('JavaScript')"
-                        href="javascript:void(0);">JavaScript <i class='fa fa-caret-down'></i></a>
+                        href="javascript:void(0);">JavaScript <i class='fab fa-js-square'></i></a>
                     <div id="sectionxs_JavaScript" class="w3-white w3-show"></div>
                 </div>
             </div>
@@ -2219,7 +2224,11 @@
                     Le site Psycholesbonstutos est ici pour l'apprentissage de langages de programmation de developement web.
                     Sans auccune préthention, j'aierais vous partager mon savoir dans ce domaine principalement sur l'HTML, le CSS,
                     le PHP et le JavaScript, affin de vous guider dans leurs apprentissage.<br><br>En utilisant ce site, vous acceptez que mon
-                    four soit en panne et que je ne puisse vous offrir de cookies.<br><br>Merci, Pe@cE.</p>
+                    four soit en panne et que je ne puisse vous offrir de cookies.<br><br>
+                    <a href="https://www.w3schools.com/" target="_blank" class="w3-hover-text-green"
+                        style="text-decoration:none">w3</a> |
+                    <a href="https://jplemonias.github.io/moi/" target="_top" class="w3-hover-text-green"
+                        style="text-decoration:none">Moi</a><br><br>Merci, Pe@cE.</p>
             </div>
             </div>
             </div>
