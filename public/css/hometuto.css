@@ -72,7 +72,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-hoverable tbody tr:hover,.w3-ul.w3-hoverable li:hover{background-color:#ccc}.w3-centered tr th,.w3-centered tr td{text-align:center}
 .w3-table td,.w3-table th,.w3-table-all td,.w3-table-all th{padding:8px 8px;display:table-cell;text-align:left;vertical-align:top}
 .w3-table th:first-child,.w3-table td:first-child,.w3-table-all th:first-child,.w3-table-all td:first-child{padding-left:16px}
-.w3-btn,.w3-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+.w3-btn,.w3-button{border-radius: 5px;border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
 .w3-btn:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}
 .w3-btn,.w3-button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}   
 .w3-disabled,.w3-btn:disabled,.w3-button:disabled{cursor:not-allowed;opacity:0.3}.w3-disabled *,:disabled *{pointer-events:none}
@@ -222,8 +222,8 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 
 .gris{color:rgb(150, 150, 150)!important;background-color:rgb(75, 75, 75)!important}
 .trans{background-color: transparent;color: white;}
-.degrad1,.hover-degrad2:hover{border-radius: 5px; color: #000!important; background: linear-gradient(-45deg,#d400ff,#04c4b4);}
-.degrad2,.hover-degrad1:hover{border-radius: 5px; color: #000!important; background: linear-gradient(-45deg,#04c4b4,#d400ff);}
+.degrad1,.hover-degrad2:hover{ color: #000!important; background: linear-gradient(-45deg,#d400ff,#04c4b4);}
+.degrad2,.hover-degrad1:hover{ color: #000!important; background: linear-gradient(-45deg,#04c4b4,#d400ff);}
 
 .carteD {
     background: linear-gradient(135deg,#04c4b444,#d400ff44);
