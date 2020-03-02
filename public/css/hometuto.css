@@ -261,6 +261,8 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .trans{background-color: transparent;color: white;}
 .degrad1,.hover-degrad2:hover{ color: #000!important; background: linear-gradient(-45deg,#d400ff,#04c4b4);}
 .degrad2,.hover-degrad1:hover{ color: #000!important; background: linear-gradient(-45deg,#04c4b4,#d400ff);}
+
+
 .degrad3{
     border-radius: 0 0 0 10px; color: lightslategrey!important; background: linear-gradient(-45deg,#04c4b4,#d400ff); background: transparent;}
 .carteD {
