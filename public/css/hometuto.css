@@ -265,7 +265,12 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .degrad1,.hover-degrad2:hover{ color: #000!important; background: linear-gradient(-45deg,#d400ff,#04c4b4);}
 .degrad2,.hover-degrad1:hover{ color: #000!important; background: linear-gradient(-45deg,#04c4b4,#d400ff);}
 
-
+.ombre_blanche_exte:hover{
+    box-shadow: 2px 0px 10px 0 rgba(255, 255, 255, 0.2), -1px 2px 20px 0 rgba(255, 255, 255, 0.2);
+}
+.ombre_noir_exte:hover {
+    box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)
+}
 .degrad3{
     border-radius: 0 0 0 10px; color: lightslategrey!important; background: linear-gradient(-45deg,#04c4b4,#d400ff); background: transparent;}
 .carteD {
