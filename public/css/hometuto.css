@@ -73,7 +73,7 @@ background: linear-gradient(135deg,#04c4b444,#d400ff44);
     margin: 0!important;
 }
 .padding-button-close{
-    padding: 8px 16px!important;
+    padding: 10px 16px!important;
 }
 .bordDgris {
     box-shadow: none;
@@ -90,7 +90,11 @@ background: linear-gradient(135deg,#04c4b444,#d400ff44);
 
 #barre-1 {position:fixed; bottom:0; height:5px; width:100%; background:#222; border:2px solid #000;}
 #barre-1 .progression {background: linear-gradient(0.25turn,#d400ff,#04c4b4); width:0%; height:100%; transition:width 0.3s;}
-
+.degradnoir {
+    background: linear-gradient(135deg,#04c4b444,#d400ff44);
+    background-color: black!important;
+    color: lightgray;
+}
 html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
 h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}.w3-serif{font-family:serif}
 h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}.w3-wide{letter-spacing:4px}
@@ -257,7 +261,8 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .trans{background-color: transparent;color: white;}
 .degrad1,.hover-degrad2:hover{ color: #000!important; background: linear-gradient(-45deg,#d400ff,#04c4b4);}
 .degrad2,.hover-degrad1:hover{ color: #000!important; background: linear-gradient(-45deg,#04c4b4,#d400ff);}
-
+.degrad3{
+    border-radius: 0 0 0 10px; color: lightslategrey!important; background: linear-gradient(-45deg,#04c4b4,#d400ff); background: transparent;}
 .carteD {
     background: linear-gradient(135deg,#04c4b444,#d400ff44);
     border-radius: 0 0 0 40px;
@@ -311,6 +316,13 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
     height: 3px;
     border-radius: 10px;
     background: linear-gradient(90deg,#008a7e,#04c4b4,#d400ff);
+}
+
+.JP-hover-text-degrad:hover{
+    background: -webkit-gradient(linear,left top,right top,from(#d400ff),to(#04c4b4));
+    background: linear-gradient(90deg,#d400ff,#04c4b4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .footerdegrad {
