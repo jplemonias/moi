@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="fr">
 
 <head>
     <title>HTML intronisation</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Keywords"
-        content="HTML,CSS,JavaScript,SQL,PHP,jQuery,XML,DOM,Bootstrap,Python,Java,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips">
+        content="HTML,CSS,JavaScript,SQL,PHP,Web development,tutorials,programming,training,learning,primer,lessons,examples,source code,colors,demos,tips">
     <meta name="Description"
-        content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, Python, Bootstrap, Java and XML.">
+        content="Tutoriels d'aide a l'apprentissage de construction Web faciles à comprendre comprenant de nombreux exemples d'utilisation HTML, CSS, JavaScript, SQL, PHP.">
         <link rel="icon" type="image/x-icon" href="../../public/img/ptitspoid.png">
     <link rel="stylesheet" href="../../public/css/hometuto.css">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Source Code Pro' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/d70a89f18c.js" crossorigin="anonymous"></script>
+    <script type="application/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
 
     <style>
         a:hover,
@@ -55,6 +56,16 @@
     text-align: center !important;
     padding: 2px 0;
 }
+}
+
+@media screen and (min-width: 768px){
+#sidenav {
+    display: none!important;
+}
+}
+
+.w3-bar a:focus {
+    border-radius: 0!important;
 }
         .w3schools-logo:hover{
             background: linear-gradient(-45deg,#04c4b4,#d400ff);
@@ -1559,6 +1570,36 @@
 
 
     </style>
+    <script type="application/javascript">
+        (function () {
+            function calculPourcentageHauteur() {
+                var hauteurDocument = $(document).height(); // Hauteur du document complet
+                var hauteurFenetre = $(window).height(); // Hauteur de la fenêtre courante (viewport)
+                var position = $(window).scrollTop(); // Position haute au moment du scroll
+                var positionDernierEcran = hauteurDocument - hauteurFenetre; // Position haute du dernier écran visible
+                var ratioHauteur = position / positionDernierEcran; // Ratio de la hauteur
+                var pourcentageHauteur = Math.floor(ratioHauteur * 100); // Pourcentage de la hauteur
+
+                // Affichage de l'évolution du pourcentage de la hauteur dans la console (optionnel)
+                //console.log("Pourcentage de la hauteur parcourue : " + pourcentageHauteur + "%");
+
+                return pourcentageHauteur;
+            }
+
+            // Barre 1 de défilement horizontale en fonction du scroll
+            function barreDefilement() {
+                var cible = $("#barre-1 .progression");
+                cible.css({
+                    "width": calculPourcentageHauteur() + "%"
+                });
+                $("#barre-1 .pourcentage").html(calculPourcentageHauteur() + "%");
+            }
+            // Chargement des fonctions lors du chargement et du scroll
+            $(window).on("load scroll", function () {
+                barreDefilement();
+            });
+        })(jQuery);
+    </script>
 </head>
 
 <body>
@@ -1619,18 +1660,18 @@
             <div class='w3-sidebar2 w3-collapse' id='sidenav' style="display: none;">
                 <div id='leftmenuinner'>
                     <div id='myAccordion' class="w3-card-2 w3-light-grey w3-center w3-hide-large" style="cursor:default; height: 100%;">
-                        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-xlarge w3-right"><i class="far fa-times-circle"></i></a><br>
+                        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-xlarge w3-right padding-button-closeq"><i class="far fa-times-circle"></i></a><br>
                         <div class="w3-container w3-padding-32">
-                            <a class="w3-button w3-block w3-large w3-wide" onclick="open_xxs_menu('HTML');"
+                            <a class="w3-button w3-block w3-large w3-wide padnone" onclick="open_xxs_menu('HTML');"
                                 href="javascript:void(0);">HTML <i class='fab fa-html5'></i></a>
                             <div id="sectionxxs_HTML" class="w3-white w3-show"></div>
-                            <a class="w3-button w3-block w3-large w3-wide" onclick="open_xxs_menu('CSS')"
+                            <a class="w3-button w3-block w3-large w3-wide padnone" onclick="open_xxs_menu('CSS')"
                                 href="javascript:void(0);">CSS <i class='fab fa-css3-alt'></i></a>
                             <div id="sectionxxs_CSS" class="w3-white w3-show"></div>
-                            <a class="w3-button w3-block w3-large w3-wide" onclick="open_xxs_menu('PHP')"
+                            <a class="w3-button w3-block w3-large w3-wide padnone" onclick="open_xxs_menu('PHP')"
                                 href="javascript:void(0);">PHP <i class='fab fa-php'></i></a>
                             <div id="sectionxxs_PHP" class="w3-white w3-show"></div>
-                            <a class="w3-button w3-block w3-large w3-wide" onclick="open_xxs_menu('JavaScript')"
+                            <a class="w3-button w3-block w3-large w3-wide padnone" onclick="open_xxs_menu('JavaScript')"
                                 href="javascript:void(0);">JavaScript <i class='fab fa-js-square'></i></a>
                             <div id="sectionxxs_JavaScript" class="w3-white w3-show"></div>
                         </div>
@@ -2105,6 +2146,9 @@
 
         </div>
 
+    </div>
+    <div id="barre-1">
+        <div class="progression" style="width: 0%;"></div>
     </div>
     <script src="/lib/w3schools_footer.js"></script>
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>

@@ -87,6 +87,10 @@ background: linear-gradient(135deg,#04c4b444,#d400ff44);
 .w3schools-logo:hover .tcode {
     background:none!important;
 }
+
+#barre-1 {position:fixed; bottom:0; height:5px; width:100%; background:#222; border:2px solid #000;}
+#barre-1 .progression {background: linear-gradient(0.25turn,#d400ff,#04c4b4); width:0%; height:100%; transition:width 0.3s;}
+
 html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
 h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}.w3-serif{font-family:serif}
 h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}.w3-wide{letter-spacing:4px}
