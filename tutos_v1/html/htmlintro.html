@@ -1398,6 +1398,12 @@
             margin-left: -32px;
             margin-right: -32px;
         }
+        
+        .jp-example {
+            padding: 8px 20px;
+            margin: 24px 0px 24px -16px;
+            border-radius: 0 15px 15px 0;
+        }
 
         .w3-example {
             padding: 8px 20px;
@@ -1502,6 +1508,7 @@
             font-size: 105%;
         }
 
+        .jp-example p,
         .w3-example p,
         .w3-panel p {
             margin-top: 1em;
@@ -1556,6 +1563,10 @@
                 font-size: 25px;
             }
 
+            .jp-example {
+                padding: 8px 16px;
+                margin: -24px 24px;
+            }
             .w3-example {
                 padding: 8px 16px;
                 margin: 24px -24px;
@@ -1981,10 +1992,8 @@
                 </div>
 
                 <div id="separ2"></div>
-                <h2>Exemple:</h2>
-                <p>Ce didacticiel sur l'HTML contient des exemples de codes comme celui-ci, afin de faciliter la compréhension.</p>
-                <p>Avec l'éditeur en ligne, codepen, vous pouvez éditer le HTML et ainsi pouvoir voir le résultat.</p>
-                <div class="w3-example jp-card-ex">
+                <h2>Un exmple d'HTML:</h2>
+                <div class="jp-example jp-card-exG">
                     <h3>Exemple 1</h3>
                     <p class="codepen" data-height="300" data-theme-id="38865" data-default-tab="html" data-user="PsychoActiF" data-slug-hash="YzXZRBP" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Exemple 1">
                         <span>See the Pen <a href="https://codepen.io/PsychoActiF/pen/YzXZRBP">
@@ -1994,8 +2003,25 @@
                       <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
                     <a class="w3-btn w3-button degrad1 hover-degrad1" href="https://codepen.io/PsychoActiF/full/YzXZRBP" target="_blank">Résultat <i class="far fa-share-square"></i></a>
                 </div>
-                <p><strong>En cliquant sur le bouton &quot;Résultat&quot; tu pouras voir le resultat.</strong></p>
-                <p><a href="/moi/tutos_v1/O_o">On y GO_o..?</a></p>
+                <ul>
+                <p><strong>Explmication de l'exemple</strong></p>
+                <li>La balise &lt;! DOCTYPE html&gt; définit ce document comme HTML5</li>
+                <li>L'élément &lt;html&gt; est l'élément racine d'une page HTML</li>
+                    <li>L'élément &lt;head&gt; contient des méta-informations sur le document</li>
+                    <li>L'élément &lt;title&gt; spécifie le titre principal du document</li>
+                    <li>L'élément &lt;body&gt; contient le contenu de la page visible</li>
+                    <li>L'élément &lt;h1&gt; définit un grand titre</li>
+                    <li>L'élément &lt;p&gt; définit un paragraphe</li>
+                </ul>
+                <div id="separ2"></div>
+                <h2>Les balises HTML</h2>
+                <p>Elles déffinisent le type d'élément entourés de crochets:</p>
+
+                &lt;NomDeLaBalise&gt; le contenu ici &lt;/NomDeLaBalise&gt;
+                <p>Les balises HTML sont généralement fournies par paire, une balise ouvrante &lt;p&gt; et une fermante &lt;/p&gt;.<br>
+                La balise de fin est écrite comme la balise de début, avec un slash inséré avant son nom de balise.</p>
+
+
                 <div id="separ2"></div>
                 <div class="w3-clear nextprev">
                     <a class="w3-left w3-btn degrad1 hover-degrad1" href=""><i class="fas fa-reply"></i> Précédente</a>
