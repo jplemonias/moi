@@ -1334,7 +1334,12 @@
         .phonebr {
             display: none;
         }
-
+        
+        .w3-sidebar2 {
+            height: calc(100% - 120px);
+            position: fixed!important;
+            overflow: auto;
+        }
         @media screen and (max-width: 475px) {
             .phonebr {
                 display: initial;
@@ -1611,11 +1616,31 @@
                     <div id="sectionxs_JavaScript" class="w3-white w3-show"></div>
                 </div>
             </div>
-        
+            <div class='w3-sidebar2 w3-collapse' id='sidenav' style="display: none;">
+                <div id='leftmenuinner'>
+                    <div id='myAccordion' class="w3-card-2 w3-light-grey w3-center w3-hide-large" style="cursor:default; height: 100%;">
+                        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-xlarge w3-right"><i class="far fa-times-circle"></i></a><br>
+                        <div class="w3-container w3-padding-32">
+                            <a class="w3-button w3-block w3-large w3-wide" onclick="open_xxs_menu('HTML');"
+                                href="javascript:void(0);">HTML <i class='fab fa-html5'></i></a>
+                            <div id="sectionxxs_HTML" class="w3-white w3-show"></div>
+                            <a class="w3-button w3-block w3-large w3-wide" onclick="open_xxs_menu('CSS')"
+                                href="javascript:void(0);">CSS <i class='fab fa-css3-alt'></i></a>
+                            <div id="sectionxxs_CSS" class="w3-white w3-show"></div>
+                            <a class="w3-button w3-block w3-large w3-wide" onclick="open_xxs_menu('PHP')"
+                                href="javascript:void(0);">PHP <i class='fab fa-php'></i></a>
+                            <div id="sectionxxs_PHP" class="w3-white w3-show"></div>
+                            <a class="w3-button w3-block w3-large w3-wide" onclick="open_xxs_menu('JavaScript')"
+                                href="javascript:void(0);">JavaScript <i class='fab fa-js-square'></i></a>
+                            <div id="sectionxxs_JavaScript" class="w3-white w3-show"></div>
+                        </div>
+                    </div>
+                </div>
+              </div>
             <!--add padding-button-close pour les boutons close des menus déroulants-->
             <!--add paddnone pour supprimer les pad dans le menu déroulant-->
 
-            <nav id="nav_HTML" class="w3-light-grey w3-card-2 w3-hide-small navex">
+            <nav id="nav_HTML" class="w3-light-grey w3-card-2 w3-hide-small navex" ">
                 <span onclick="w3_close_nav('HTML')"
                     class="w3-button padding-button-close w3-xlarge w3-display-topright barex"><i class="far fa-times-circle"></i></span><br>
                 <div class="w3-row-padding w3-bar-block">
@@ -2088,16 +2113,34 @@
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
 <![endif]-->
     <script>
+        function w3_close2() {
+            document.getElementById("myAccordion").style.display = "none";
+        }
+        function w3_open2() {
+            var y = document.getElementById("myAccordion");
+            if (y.style.display === 'none') {
+                y.style.display = 'block';
+            } else {
+                y.style.display = 'none';
+            }
+        }
         function w3_open() {
-            var x = document.getElementById("myAccordion");
-            if (x.style.display === 'none') {
+            var x = document.getElementById("sidenav");
+            if (x.style.display === 'none' ) {
                 x.style.display = 'block';
             } else {
                 x.style.display = 'none';
             }
         }
         function w3_close() {
-            document.getElementById("myAccordion").style.display = "none";
+            document.getElementById("sidenav").style.display = "none";
+        }
+        function open_xxs_menu(x) {
+            if (document.getElementById("sectionxxs_" + x).innerHTML == "") {
+                document.getElementById("sectionxxs_" + x).innerHTML = document.getElementById("nav_" + x).innerHTML;
+            } else {
+                document.getElementById("sectionxxs_" + x).innerHTML = "";
+            }
         }
         function open_xs_menu(x) {
             if (document.getElementById("sectionxs_" + x).innerHTML == "") {
