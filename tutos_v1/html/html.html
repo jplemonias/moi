@@ -158,9 +158,7 @@
         }
 
         #sidenav a:hover,
-        #sidenav a:focus {
-            color: #000000;
-            background-color: #cccccc;
+        #sidenav a:focus {color: #000!important; background: linear-gradient(-45deg,#d400ff,#04c4b4);
         }
 
         #sidenav a.active {
@@ -1543,11 +1541,29 @@
             #sectionxxs_JavaScript .w3-row-padding.w3-bar-block .w3-col.l3.m6 {
                 width: 100%!important;
             }
+            #sectionxxs_HTML,
+            #sectionxxs_CSS,
+            #sectionxxs_PHP,
+            #sectionxxs_JavaScript  {
+                color: lightgrey!important;
+                background: linear-gradient(-45deg,#d400ff44,#04c4b444);
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+            }
             #sectionxxs_HTML .w3-row-padding.w3-bar-block .w3-col.l3.m6 p,
             #sectionxxs_CSS .w3-row-padding.w3-bar-block .w3-col.l3.m6 p,
             #sectionxxs_PHP .w3-row-padding.w3-bar-block .w3-col.l3.m6 p,
             #sectionxxs_JavaScript .w3-row-padding.w3-bar-block .w3-col.l3.m6 p {
-                width: 100%!important;
+                display: none;
+            }
+            #sectionxxs_HTML .w3-row-padding.w3-bar-block .w3-col.l3.m6 a:hover,
+            #sectionxxs_CSS .w3-row-padding.w3-bar-block .w3-col.l3.m6 a:hover,
+            #sectionxxs_PHP .w3-row-padding.w3-bar-block .w3-col.l3.m6 a:hover,
+            #sectionxxs_JavaScript .w3-row-padding.w3-bar-block .w3-col.l3.m6 a:hover {
+                background: -webkit-gradient(linear,left top,right top,from(#04c4b4),to(#d400ff));
+                background: linear-gradient(90deg,#04c4b4,#d400ff);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
             }
         }
 
@@ -1706,20 +1722,20 @@
                     style="cursor:default;">
                     <div class="w3-container " style="padding: 5px 10px 32px 10px; margin-bottom: 32px;">
                     <a href="javascript:void(0)" onclick="w3_close()"
-                        class="w3-button w3-xlarge w3-right padding-button-close"><i
+                        class="w3-button degrad3 margnegtopr hover-degrad2 w3-xlarge w3-right padding-button-close"><i
                             class="far fa-times-circle"></i></a><br>
-                        <a class="w3-button w3-block w3-large w3-wide padnone" onclick="open_xxs_menu('HTML');"
+                        <a class="w3-button hover-degrad2 w3-block w3-large w3-wide padnone" onclick="open_xxs_menu('HTML');"
                             href="javascript:void(0);">HTML <i class='fab fa-html5'></i></a>
-                        <div id="sectionxxs_HTML" class="w3-white w3-show"></div>
-                        <a class="w3-button w3-block w3-large w3-wide padnone" onclick="open_xxs_menu('CSS')"
+                        <div id="sectionxxs_HTML" class=" w3-show"></div>
+                        <a class="w3-button hover-degrad2 w3-block w3-large w3-wide padnone" onclick="open_xxs_menu('CSS')"
                             href="javascript:void(0);">CSS <i class='fab fa-css3-alt'></i></a>
-                        <div id="sectionxxs_CSS" class="w3-white w3-show"></div>
-                        <a class="w3-button w3-block w3-large w3-wide padnone" onclick="open_xxs_menu('PHP')"
+                        <div id="sectionxxs_CSS" class=" w3-show"></div>
+                        <a class="w3-button hover-degrad2 w3-block w3-large w3-wide padnone" onclick="open_xxs_menu('PHP')"
                             href="javascript:void(0);">PHP <i class='fab fa-php'></i></a>
-                        <div id="sectionxxs_PHP" class="w3-white w3-show"></div>
-                        <a class="w3-button w3-block w3-large w3-wide padnone" onclick="open_xxs_menu('JavaScript')"
+                        <div id="sectionxxs_PHP" class=" w3-show"></div>
+                        <a class="w3-button hover-degrad2 w3-block w3-large w3-wide padnone" onclick="open_xxs_menu('JavaScript')"
                             href="javascript:void(0);">JavaScript <i class='fab fa-js-square'></i></a>
-                        <div id="sectionxxs_JavaScript" class="w3-white w3-show"></div>
+                        <div id="sectionxxs_JavaScript" class=" w3-show"></div>
                     </div>
                 </div>
             </div>
