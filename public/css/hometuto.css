@@ -348,6 +348,65 @@ background: linear-gradient(135deg,#04c4b444,#d400ff44);
 background-color: #000!important;
 }
 
+#exhtml{
+    width:99%;
+    padding:15px;
+    margin:15px 0;
+    border:1px solid #04c4b4;
+    border-radius: 0 30px 30px 0;
+    background: linear-gradient(135deg,#04c4b444,#d400ff44);
+    background-color: #000!important;
+}
+#exhead{
+    width:96%;
+    padding:15px 0 15px 30px;
+    margin:15px 0 15px -15px;
+    border:1px solid #04c4b4;
+    border-left: none;
+    border-radius: 0 20px 20px 0;
+    background: linear-gradient(135deg,#d400ff44,#04c4b444);
+    background-color: rgb(0, 0, 0)!important;
+}
+#exbody{
+    width:96%;
+    padding:15px 0 15px 30px;
+    margin:15px 0 15px -15px;
+    border:1px solid #d400ff;
+    border-left: none;
+    border-radius: 0 20px 20px 0;
+    background: linear-gradient(135deg,#d400ff44,#04c4b444);
+    background-color: rgb(0, 0, 0)!important;
+}
+#exdiv{
+    width:96%;
+    padding: 15px 0 15px 45px;
+    margin:20px 0 20px -30px;
+    border:1px solid #d400ff;
+    border-left: none;
+    border-radius: 0 10px 10px 0;
+    background: linear-gradient(135deg,#04c4b444,#d400ff44);
+    background-color: rgb(0, 0, 0)!important;
+}
+#extitle{
+    width:96%;
+    padding: 15px 0 15px 45px;
+    margin:20px 0 20px -30px;
+    border:1px solid #04c4b4;
+    border-left: none;
+    border-radius: 0 10px 10px 0;
+    background: linear-gradient(135deg,#04c4b444,#d400ff44);
+    background-color: #000!important;
+}
+#exh, #exp{
+    width:96%;
+    padding: 5px 0 5px 60px;
+    margin:20px 0 20px -45px;
+    border:1px solid #d400ff;
+    border-left: none;
+    border-radius: 0 5px 5px 0;
+    background: linear-gradient(135deg,#d400ff44,#04c4b444);
+    background-color: #000!important;
+}
 .w3-black,.w3-hover-black:hover{color:#fff!important;background-color:#000!important}
 .w3-grey,.w3-hover-grey:hover,.w3-gray,.w3-hover-gray:hover{color:#000!important;background-color:#9e9e9e!important}
 .w3-light-grey,.w3-hover-light-grey:hover,.w3-light-gray,.w3-hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
