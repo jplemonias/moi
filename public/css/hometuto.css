@@ -417,6 +417,10 @@ background-color: #000!important;
     background: linear-gradient(135deg,#d400ff44,#04c4b444);
     background-color: #000!important;
 }
+
+td,a:hover {
+    text-decoration: none;
+}
 @media (max-width:500px){
     #exhead, #exbody, #extitle, #exdiv, #exh, #exp{
         width: 99%;
