@@ -158,7 +158,9 @@
         }
 
         #sidenav a:hover,
-        #sidenav a:focus {color: #000!important; background: linear-gradient(-45deg,#d400ff,#04c4b4);
+        #sidenav a:focus {
+            color: #000000;
+            background-color: #cccccc;
         }
 
         #sidenav a.active {
@@ -277,7 +279,6 @@
         #nav_CSS,
         #nav_PHP,
         #nav_JavaScript {
-            border-radius: 0px 0px 40px 40px;
             display: none;
             padding-bottom: 40px;
             position: absolute;
@@ -605,6 +606,7 @@
                 position: relative;
                 width: auto;
                 padding-top: 0;
+                /*background-color: #f1f1f1;*/
             }
 
             #leftmenuinnerinner {
@@ -620,9 +622,10 @@
                 min-height: 60px
             }
         }
-
         @media screen and (max-width:600px) {
-
+            #exhead,#exbody,#exdiv, #extitle, #exh, #exp {
+                width: 100%!important;
+            }
             .w3-example,
             .w3-note,
             #w3-exerciseform {
@@ -733,6 +736,7 @@
             color: #ff9999;
             background-color: transparent;
         }
+
         .darktheme .w3-example.w3-light-grey {
             background-color: rgb(40, 44, 52) !important;
             color: white;
@@ -1411,6 +1415,12 @@
             margin-right: -32px;
         }
 
+        .jp-example {
+            padding: 8px 20px;
+            margin: 24px 0px 24px -16px;
+            border-radius: 0 15px 15px 0;
+        }
+
         .w3-example {
             padding: 8px 20px;
             margin: 24px -16px 24px 0px;
@@ -1433,6 +1443,11 @@
             color: black;
         }
 
+        .w3-panel2 {
+            margin-left: 32px !important;
+            margin-right: -16px !important;
+            border-radius: 20px 0 0 20px;
+        }
 
         h1 {
             font-size: 42px;
@@ -1509,6 +1524,7 @@
             font-size: 105%;
         }
 
+        .jp-example p,
         .w3-example p,
         .w3-panel p {
             margin-top: 1em;
@@ -1534,7 +1550,7 @@
             border-bottom-right-radius: 15px;
         }
 
-            #nav_HTML .w3-row-padding.w3-bar-block .w3-col.l3.m6 a,
+        #nav_HTML .w3-row-padding.w3-bar-block .w3-col.l3.m6 a,
             #nav_CSS .w3-row-padding.w3-bar-block .w3-col.l3.m6 a,
             #nav_PHP .w3-row-padding.w3-bar-block .w3-col.l3.m6 a,
             #nav_JavaScript .w3-row-padding.w3-bar-block .w3-col.l3.m6 a {
@@ -1584,9 +1600,8 @@
                 -webkit-text-fill-color: transparent;
                 margin-left: 10px;
             }
-        
         @media screen and (min-width: 769px) {
-            
+
             #myAccordion,
             .hidesm {
                 display: none !important;
@@ -1621,6 +1636,11 @@
 
             h2 {
                 font-size: 25px;
+            }
+
+            .jp-example {
+                padding: 8px 16px;
+                margin: -24px 24px;
             }
 
             .w3-example {
