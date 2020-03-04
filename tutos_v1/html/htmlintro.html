@@ -623,9 +623,10 @@
                 min-height: 60px
             }
         }
-
         @media screen and (max-width:600px) {
-
+            #exhead,#exbody,#exdiv, #extitle, #exh, #exp {
+                width: 100%!important;
+            }
             .w3-example,
             .w3-note,
             #w3-exerciseform {
@@ -1546,6 +1547,56 @@
             margin-right: -20px;
         }
 
+        #nav_HTML .w3-row-padding.w3-bar-block .w3-col.l3.m6 a,
+            #nav_CSS .w3-row-padding.w3-bar-block .w3-col.l3.m6 a,
+            #nav_PHP .w3-row-padding.w3-bar-block .w3-col.l3.m6 a,
+            #nav_JavaScript .w3-row-padding.w3-bar-block .w3-col.l3.m6 a {
+                width: fit-content;
+            }
+        @media screen and (max-width: 769px) {
+            
+            #sectionxxs_HTML .w3-row-padding.w3-bar-block .w3-col.l3.m6,
+            #sectionxxs_CSS .w3-row-padding.w3-bar-block .w3-col.l3.m6,
+            #sectionxxs_PHP .w3-row-padding.w3-bar-block .w3-col.l3.m6,
+            #sectionxxs_JavaScript .w3-row-padding.w3-bar-block .w3-col.l3.m6 {
+                width: 100%!important;
+            }
+            #sectionxxs_HTML,
+            #sectionxxs_CSS,
+            #sectionxxs_PHP,
+            #sectionxxs_JavaScript  {
+                color: lightgrey!important;
+                background: linear-gradient(-45deg,#d400ff44,#04c4b444);
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+            }
+            #sectionxxs_HTML .w3-row-padding.w3-bar-block .w3-col.l3.m6 p,
+            #sectionxxs_CSS .w3-row-padding.w3-bar-block .w3-col.l3.m6 p,
+            #sectionxxs_PHP .w3-row-padding.w3-bar-block .w3-col.l3.m6 p,
+            #sectionxxs_JavaScript .w3-row-padding.w3-bar-block .w3-col.l3.m6 p {
+                display: none;
+            }
+            #sectionxxs_HTML .w3-row-padding.w3-bar-block .w3-col.l3.m6 a:hover,
+            #sectionxxs_CSS .w3-row-padding.w3-bar-block .w3-col.l3.m6 a:hover,
+            #sectionxxs_PHP .w3-row-padding.w3-bar-block .w3-col.l3.m6 a:hover,
+            #sectionxxs_JavaScript .w3-row-padding.w3-bar-block .w3-col.l3.m6 a:hover {
+                background: -webkit-gradient(linear,left top,right top,from(#04c4b4),to(#d400ff));
+                background: linear-gradient(90deg,#04c4b4,#d400ff);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+
+            #nav_HTML .w3-row-padding.w3-bar-block .w3-col.l3.m6 a:hover,
+            #nav_CSS .w3-row-padding.w3-bar-block .w3-col.l3.m6 a:hover,
+            #nav_PHP .w3-row-padding.w3-bar-block .w3-col.l3.m6 a:hover,
+            #nav_JavaScript .w3-row-padding.w3-bar-block .w3-col.l3.m6 a:hover {
+                background: -webkit-gradient(linear,left top,right top,from(#04c4b4),to(#d400ff));
+                background: linear-gradient(90deg,#04c4b4,#d400ff);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                margin-left: 10px;
+            }
         @media screen and (min-width: 769px) {
 
             #myAccordion,
@@ -1726,45 +1777,45 @@
         <!--add padding-button-close pour les boutons close des menus déroulants-->
         <!--add paddnone pour supprimer les pad dans le menu déroulant-->
 
-        <nav id="nav_HTML" class="degradnoir w3-card-2 w3-hide-small navex" ">
+        <nav id="nav_HTML" class="degradnoir w3-card-2 w3-hide-small navex">
+            <div class="w3-row-padding w3-bar-block">
                 <span onclick=" w3_close_nav('HTML')"
             class="w3-button padding-button-close w3-xlarge w3-display-topright barex"><i
                 class="far fa-times-circle"></i></span><br>
-            <div class="w3-row-padding w3-bar-block">
                 <div class="w3-col l3 m6">
                     <h3 class="w3-margin-top vert">Débutant</h3>
-                    <a class="w3-bar-item w3-button" href="/moi/tutos_v1/html/html.html">Intronisation</a>
-                    <a class="w3-bar-item w3-button" href="/moi/tutos_v1/html/htmlintro.html">Introduction</a>
-                    <a class="w3-bar-item w3-button" href="/moi/tutos_v1/O_o">apprendre l'html</a>
-                    <a class="w3-bar-item w3-button" href="/moi/tutos_v1/O_o">apprendre l'html</a>
-                    <a class="w3-bar-item w3-button" href="/moi/tutos_v1/O_o">apprendre l'html</a>
-                    <a class="w3-bar-item w3-button" href="/moi/tutos_v1/O_o">apprendre l'html</a>
-                    <a class="w3-bar-item w3-button" href="/moi/tutos_v1/O_o">apprendre l'html</a>
-                    <a class="w3-bar-item w3-button" href='/moi/tutos_v1/O_o'>apprendre l'html</a>
-                    <a class="w3-bar-item w3-button" href='/moi/tutos_v1/O_o'>apprendre l'html</a>
-                    <a class="w3-bar-item w3-button" href="/moi/tutos_v1/O_o">apprendre l'html</a>
-                    <a class="w3-bar-item w3-button" href="/moi/tutos_v1/O_o">apprendre l'html</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/html/html.html">Intronisation</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/html/htmlintro.html">Introduction</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre l'html</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre l'html</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre l'html</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre l'html</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre l'html</a>
+                    <a class="w3-bar-item w3-button padnone" href='/moi/tutos_v1/O_o'>apprendre l'html</a>
+                    <a class="w3-bar-item w3-button padnone" href='/moi/tutos_v1/O_o'>apprendre l'html</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre l'html</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre l'html</a>
                     <div class="w3-hide-large w3-hide-small">
                         <h3 class="w3-margin-top">Exercices</h3>
-                        <a class="w3-bar-item w3-button" href="/moi/tutos_v1/O_o">l'html Ex1 </a>
-                        <a class="w3-bar-item w3-button" href='/moi/tutos_v1/O_o'>l'html Ex2 </a>
-                        <a class="w3-bar-item w3-button" href="/moi/tutos_v1/O_o">l'html Ex3 </a>
-                        <a class="w3-bar-item w3-button" href='/moi/tutos_v1/O_o'>l'html Ex4 </a>
-                        <a class="w3-bar-item w3-button" href='/moi/tutos_v1/O_o'>l'html Ex5 </a>
-                        <a class="w3-bar-item w3-button" href="/moi/tutos_v1/O_o">l'html Ex6 </a>
-                        <a class="w3-bar-item w3-button" href='/moi/tutos_v1/O_o'>l'html Ex7 </a>
-                        <a class="w3-bar-item w3-button" href='/moi/tutos_v1/O_o'>l'html Ex8 </a>
+                        <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">l'html Ex1 </a>
+                        <a class="w3-bar-item w3-button padnone" href='/moi/tutos_v1/O_o'>l'html Ex2 </a>
+                        <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">l'html Ex3 </a>
+                        <a class="w3-bar-item w3-button padnone" href='/moi/tutos_v1/O_o'>l'html Ex4 </a>
+                        <a class="w3-bar-item w3-button padnone" href='/moi/tutos_v1/O_o'>l'html Ex5 </a>
+                        <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">l'html Ex6 </a>
+                        <a class="w3-bar-item w3-button padnone" href='/moi/tutos_v1/O_o'>l'html Ex7 </a>
+                        <a class="w3-bar-item w3-button padnone" href='/moi/tutos_v1/O_o'>l'html Ex8 </a>
                     </div>
                 </div>
                 <div class="w3-col l3 m6">
                     <h3 class="w3-margin-top orange">Intermédiaire</h3>
-                    <a class="w3-bar-item w3-button" href="/moi/tutos_v1/O_o">apprendre l'html</a>
-                    <a class="w3-bar-item w3-button" href="/moi/tutos_v1/O_o">apprendre l'html</a>
-                    <a class="w3-bar-item w3-button" href="/moi/tutos_v1/O_o">apprendre l'html</a>
-                    <a class="w3-bar-item w3-button" href="/moi/tutos_v1/O_o">apprendre l'html</a>
-                    <a class="w3-bar-item w3-button" href="/moi/tutos_v1/O_o">apprendre l'html</a>
-                    <a class="w3-bar-item w3-button" href="/moi/tutos_v1/O_o">apprendre l'html</a>
-                    <a class="w3-bar-item w3-button" href="/moi/tutos_v1/O_o">apprendre l'html</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre l'html</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre l'html</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre l'html</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre l'html</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre l'html</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre l'html</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre l'html</a>
                     <p style="margin: 9px 0;">&nbsp;</p>
                     <p style="margin: 9px 0;">&nbsp;</p>
                     <p style="margin: 9px 0;">&nbsp;</p>
@@ -1772,62 +1823,62 @@
                 </div>
                 <div class="w3-col l3 m6">
                     <h3 class="w3-margin-top rouge">Maitrisé</h3>
-                    <a class="w3-bar-item w3-button" href="/moi/tutos_v1/O_o">apprendre l'html</a>
-                    <a class="w3-bar-item w3-button" href="/moi/tutos_v1/O_o">apprendre l'html</a>
-                    <a class="w3-bar-item w3-button" href='/moi/tutos_v1/O_o'>apprendre l'html</a>
-                    <a class="w3-bar-item w3-button" href='/moi/tutos_v1/O_o'>apprendre l'html</a>
-                    <a class="w3-bar-item w3-button" href='/moi/tutos_v1/O_o'>apprendre l'html</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre l'html</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre l'html</a>
+                    <a class="w3-bar-item w3-button padnone" href='/moi/tutos_v1/O_o'>apprendre l'html</a>
+                    <a class="w3-bar-item w3-button padnone" href='/moi/tutos_v1/O_o'>apprendre l'html</a>
+                    <a class="w3-bar-item w3-button padnone" href='/moi/tutos_v1/O_o'>apprendre l'html</a>
                 </div>
                 <div class="w3-col l3 m6 w3-hide-medium">
                     <h3 class="w3-margin-top">Exercices</h3>
-                    <a class="w3-bar-item w3-button" href="/moi/tutos_v1/O_o">l'html Ex1 </a>
-                    <a class="w3-bar-item w3-button" href='/moi/tutos_v1/O_o'>l'html Ex2 </a>
-                    <a class="w3-bar-item w3-button" href="/moi/tutos_v1/O_o">l'html Ex3 </a>
-                    <a class="w3-bar-item w3-button" href='/moi/tutos_v1/O_o'>l'html Ex4 </a>
-                    <a class="w3-bar-item w3-button" href='/moi/tutos_v1/O_o'>l'html Ex5 </a>
-                    <a class="w3-bar-item w3-button" href="/moi/tutos_v1/O_o">l'html Ex6 </a>
-                    <a class="w3-bar-item w3-button" href='/moi/tutos_v1/O_o'>l'html Ex7 </a>
-                    <a class="w3-bar-item w3-button" href='/moi/tutos_v1/O_o'>l'html Ex8 </a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">l'html Ex1 </a>
+                    <a class="w3-bar-item w3-button padnone" href='/moi/tutos_v1/O_o'>l'html Ex2 </a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">l'html Ex3 </a>
+                    <a class="w3-bar-item w3-button padnone" href='/moi/tutos_v1/O_o'>l'html Ex4 </a>
+                    <a class="w3-bar-item w3-button padnone" href='/moi/tutos_v1/O_o'>l'html Ex5 </a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">l'html Ex6 </a>
+                    <a class="w3-bar-item w3-button padnone" href='/moi/tutos_v1/O_o'>l'html Ex7 </a>
+                    <a class="w3-bar-item w3-button padnone" href='/moi/tutos_v1/O_o'>l'html Ex8 </a>
                 </div>
                 <br class="hidesm">
         </nav>
 
         <nav id="nav_CSS" class="degradnoir w3-card-2 w3-hide-small navex">
+            <div class="w3-row-padding w3-bar-block">
             <span onclick="w3_close_nav('CSS')"
                 class="w3-button padding-button-close w3-xlarge w3-display-topright barex"><i
                     class="far fa-times-circle"></i></span><br>
-            <div class="w3-row-padding w3-bar-block">
                 <div class="w3-col l3 m6">
                     <h3 class="w3-margin-top vert">Débutant</h3>
-                    <a class="w3-bar-item w3-button" href="/moi/tutos_v1/O_o">apprendre le CSS</a>
-                    <a class="w3-bar-item w3-button" href="/moi/tutos_v1/O_o">apprendre le CSS</a>
-                    <a class="w3-bar-item w3-button" href="/moi/tutos_v1/O_o">apprendre le CSS</a>
-                    <a class="w3-bar-item w3-button" href="/moi/tutos_v1/O_o">apprendre le CSS</a>
-                    <a class="w3-bar-item w3-button" href="/moi/tutos_v1/O_o">apprendre le CSS</a>
-                    <a class="w3-bar-item w3-button" href="/moi/tutos_v1/O_o">apprendre le CSS</a>
-                    <a class="w3-bar-item w3-button" href="/moi/tutos_v1/O_o">apprendre le CSS</a>
-                    <a class="w3-bar-item w3-button" href='/moi/tutos_v1/O_o'>apprendre le CSS</a>
-                    <a class="w3-bar-item w3-button" href='/moi/tutos_v1/O_o'>apprendre le CSS</a>
-                    <a class="w3-bar-item w3-button" href="/moi/tutos_v1/O_o">apprendre le CSS</a>
-                    <a class="w3-bar-item w3-button" href="/moi/tutos_v1/O_o">apprendre le CSS</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre le CSS</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre le CSS</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre le CSS</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre le CSS</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre le CSS</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre le CSS</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre le CSS</a>
+                    <a class="w3-bar-item w3-button padnone" href='/moi/tutos_v1/O_o'>apprendre le CSS</a>
+                    <a class="w3-bar-item w3-button padnone" href='/moi/tutos_v1/O_o'>apprendre le CSS</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre le CSS</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre le CSS</a>
                     <div class="w3-hide-large w3-hide-small">
                         <h3 class="w3-margin-top rouge">Maitrisé</h3>
-                        <a class="w3-bar-item w3-button" href="/moi/tutos_v1/O_o">apprendre le CSS</a>
-                        <a class="w3-bar-item w3-button" href="/moi/tutos_v1/O_o">apprendre le CSS</a>
-                        <a class="w3-bar-item w3-button" href='/moi/tutos_v1/O_o'>apprendre le CSS</a>
-                        <a class="w3-bar-item w3-button" href='/moi/tutos_v1/O_o'>apprendre le CSS</a>
-                        <a class="w3-bar-item w3-button" href='/moi/tutos_v1/O_o'>apprendre le CSS</a>
+                        <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre le CSS</a>
+                        <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre le CSS</a>
+                        <a class="w3-bar-item w3-button padnone" href='/moi/tutos_v1/O_o'>apprendre le CSS</a>
+                        <a class="w3-bar-item w3-button padnone" href='/moi/tutos_v1/O_o'>apprendre le CSS</a>
+                        <a class="w3-bar-item w3-button padnone" href='/moi/tutos_v1/O_o'>apprendre le CSS</a>
                     </div>
                 </div>
                 <div class="w3-col l3 m6">
                     <h3 class="w3-margin-top orange">Intermédiaire</h3>
-                    <a class="w3-bar-item w3-button" href="/moi/tutos_v1/O_o">apprendre le CSS</a>
-                    <a class="w3-bar-item w3-button" href="/moi/tutos_v1/O_o">apprendre le CSS</a>
-                    <a class="w3-bar-item w3-button" href="/moi/tutos_v1/O_o">apprendre le CSS</a>
-                    <a class="w3-bar-item w3-button" href="/moi/tutos_v1/O_o">apprendre le CSS</a>
-                    <a class="w3-bar-item w3-button" href="/moi/tutos_v1/O_o">apprendre le CSS</a>
-                    <a class="w3-bar-item w3-button" href="/moi/tutos_v1/O_o">apprendre le CSS</a>
-                    <a class="w3-bar-item w3-button" href="/moi/tutos_v1/O_o">apprendre le CSS</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre le CSS</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre le CSS</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre le CSS</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre le CSS</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre le CSS</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre le CSS</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre le CSS</a>
                     <p style="margin: 9px 0;">&nbsp;</p>
                     <p style="margin: 9px 0;">&nbsp;</p>
                     <p style="margin: 9px 0;">&nbsp;</p>
@@ -1835,32 +1886,32 @@
                 </div>
                 <div class="w3-col l3 m6 w3-hide-medium">
                     <h3 class="w3-margin-top rouge">Maitrisé</h3>
-                    <a class="w3-bar-item w3-button" href="/moi/tutos_v1/O_o">apprendre le CSS</a>
-                    <a class="w3-bar-item w3-button" href="/moi/tutos_v1/O_o">apprendre le CSS</a>
-                    <a class="w3-bar-item w3-button" href='/moi/tutos_v1/O_o'>apprendre le CSS</a>
-                    <a class="w3-bar-item w3-button" href='/moi/tutos_v1/O_o'>apprendre le CSS</a>
-                    <a class="w3-bar-item w3-button" href='/moi/tutos_v1/O_o'>apprendre le CSS</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre le CSS</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre le CSS</a>
+                    <a class="w3-bar-item w3-button padnone" href='/moi/tutos_v1/O_o'>apprendre le CSS</a>
+                    <a class="w3-bar-item w3-button padnone" href='/moi/tutos_v1/O_o'>apprendre le CSS</a>
+                    <a class="w3-bar-item w3-button padnone" href='/moi/tutos_v1/O_o'>apprendre le CSS</a>
                 </div>
                 <div class="w3-col l3 m6"">
                         <h3 class=" w3-margin-top">Exercices</h3>
-                    <a class="w3-bar-item w3-button" href="/moi/tutos_v1/O_o">Le CSS Ex1 </a>
-                    <a class="w3-bar-item w3-button" href='/moi/tutos_v1/O_o'>Le CSS Ex2 </a>
-                    <a class="w3-bar-item w3-button" href="/moi/tutos_v1/O_o">Le CSS Ex3 </a>
-                    <a class="w3-bar-item w3-button" href='/moi/tutos_v1/O_o'>Le CSS Ex4 </a>
-                    <a class="w3-bar-item w3-button" href='/moi/tutos_v1/O_o'>Le CSS Ex5 </a>
-                    <a class="w3-bar-item w3-button" href="/moi/tutos_v1/O_o">Le CSS Ex6 </a>
-                    <a class="w3-bar-item w3-button" href='/moi/tutos_v1/O_o'>Le CSS Ex7 </a>
-                    <a class="w3-bar-item w3-button" href='/moi/tutos_v1/O_o'>Le CSS Ex8 </a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">Le CSS Ex1 </a>
+                    <a class="w3-bar-item w3-button padnone" href='/moi/tutos_v1/O_o'>Le CSS Ex2 </a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">Le CSS Ex3 </a>
+                    <a class="w3-bar-item w3-button padnone" href='/moi/tutos_v1/O_o'>Le CSS Ex4 </a>
+                    <a class="w3-bar-item w3-button padnone" href='/moi/tutos_v1/O_o'>Le CSS Ex5 </a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">Le CSS Ex6 </a>
+                    <a class="w3-bar-item w3-button padnone" href='/moi/tutos_v1/O_o'>Le CSS Ex7 </a>
+                    <a class="w3-bar-item w3-button padnone" href='/moi/tutos_v1/O_o'>Le CSS Ex8 </a>
                 </div>
             </div>
             <br class="hidesm">
         </nav>
 
         <nav id="nav_PHP" class="degradnoir w3-card-2 w3-hide-small navex">
+            <div class="w3-row-padding w3-bar-block">
             <span onclick="w3_close_nav('PHP')"
                 class="w3-button padding-button-close w3-xlarge w3-display-topright barex"><i
                     class="far fa-times-circle"></i></span><br>
-            <div class="w3-row-padding w3-bar-block">
                 <div class="w3-col l3 m6">
                     <h3 class="w3-margin-top vert">Débutant</h3>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre le PHP/SQL</a>
@@ -1921,10 +1972,10 @@
         </nav>
 
         <nav id="nav_JavaScript" class="degradnoir w3-card-2 w3-hide-small navex">
+            <div class="w3-row-padding w3-bar-block">
             <span onclick="w3_close_nav('JavaScript')"
                 class="w3-button padding-button-close w3-xlarge w3-display-topright barex"><i
                     class="far fa-times-circle"></i></span><br>
-            <div class="w3-row-padding w3-bar-block">
                 <div class="w3-col l3 m6">
                     <h3 class="w3-margin-top vert">Débutant</h3>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre le JavaScript</a>

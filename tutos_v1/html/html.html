@@ -277,6 +277,7 @@
         #nav_CSS,
         #nav_PHP,
         #nav_JavaScript {
+            border-radius: 0px 0px 40px 40px;
             display: none;
             padding-bottom: 40px;
             position: absolute;
@@ -1533,6 +1534,12 @@
             border-bottom-right-radius: 15px;
         }
 
+            #nav_HTML .w3-row-padding.w3-bar-block .w3-col.l3.m6 a,
+            #nav_CSS .w3-row-padding.w3-bar-block .w3-col.l3.m6 a,
+            #nav_PHP .w3-row-padding.w3-bar-block .w3-col.l3.m6 a,
+            #nav_JavaScript .w3-row-padding.w3-bar-block .w3-col.l3.m6 a {
+                width: fit-content;
+            }
         @media screen and (max-width: 769px) {
             
             #sectionxxs_HTML .w3-row-padding.w3-bar-block .w3-col.l3.m6,
@@ -1567,6 +1574,16 @@
             }
         }
 
+            #nav_HTML .w3-row-padding.w3-bar-block .w3-col.l3.m6 a:hover,
+            #nav_CSS .w3-row-padding.w3-bar-block .w3-col.l3.m6 a:hover,
+            #nav_PHP .w3-row-padding.w3-bar-block .w3-col.l3.m6 a:hover,
+            #nav_JavaScript .w3-row-padding.w3-bar-block .w3-col.l3.m6 a:hover {
+                background: -webkit-gradient(linear,left top,right top,from(#04c4b4),to(#d400ff));
+                background: linear-gradient(90deg,#04c4b4,#d400ff);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                margin-left: 10px;
+            }
         
         @media screen and (min-width: 769px) {
             
@@ -1743,11 +1760,11 @@
         <!--add padding-button-close pour les boutons close des menus déroulants-->
         <!--add paddnone pour supprimer les pad dans le menu déroulant-->
 
-        <nav id="nav_HTML" class="degradnoir w3-card-2 w3-hide-small navex" ">
-                <span onclick=" w3_close_nav('HTML')"
-            class="w3-button padding-button-close w3-xlarge w3-display-topright barex"><i
-                class="far fa-times-circle"></i></span><br>
+        <nav id="nav_HTML" class="degradnoir w3-card-2 w3-hide-small navex">
             <div class="w3-row-padding w3-bar-block">
+                <span onclick=" w3_close_nav('HTML')"
+            class="padding-button-close degrad3 hover-degrad2 w3-xlarge w3-display-topright barex"><i
+                class="far fa-times-circle"></i></span><br>
                 <div class="w3-col l3 m6">
                     <h3 class="w3-margin-top vert">Débutant</h3>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/html/html.html">Intronisation</a>
@@ -1810,10 +1827,10 @@
         </nav>
 
         <nav id="nav_CSS" class="degradnoir w3-card-2 w3-hide-small navex">
-            <span onclick="w3_close_nav('CSS')"
-                class="w3-button padding-button-close w3-xlarge w3-display-topright barex"><i
-                    class="far fa-times-circle"></i></span><br>
             <div class="w3-row-padding w3-bar-block">
+            <span onclick="w3_close_nav('CSS')"
+                class="padding-button-close degrad3 hover-degrad2 w3-xlarge w3-display-topright barex"><i
+                    class="far fa-times-circle"></i></span><br>
                 <div class="w3-col l3 m6">
                     <h3 class="w3-margin-top vert">Débutant</h3>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre le CSS</a>
@@ -1874,10 +1891,10 @@
         </nav>
 
         <nav id="nav_PHP" class="degradnoir w3-card-2 w3-hide-small navex">
-            <span onclick="w3_close_nav('PHP')"
-                class="w3-button padding-button-close w3-xlarge w3-display-topright barex"><i
-                    class="far fa-times-circle"></i></span><br>
             <div class="w3-row-padding w3-bar-block">
+            <span onclick="w3_close_nav('PHP')"
+                class="padding-button-close degrad3 hover-degrad2 w3-xlarge w3-display-topright barex"><i
+                    class="far fa-times-circle"></i></span><br>
                 <div class="w3-col l3 m6">
                     <h3 class="w3-margin-top vert">Débutant</h3>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre le PHP/SQL</a>
@@ -1938,10 +1955,10 @@
         </nav>
 
         <nav id="nav_JavaScript" class="degradnoir w3-card-2 w3-hide-small navex">
-            <span onclick="w3_close_nav('JavaScript')"
-                class="w3-button padding-button-close w3-xlarge w3-display-topright barex"><i
-                    class="far fa-times-circle"></i></span><br>
             <div class="w3-row-padding w3-bar-block">
+            <span onclick="w3_close_nav('JavaScript')"
+                class="padding-button-close degrad3 hover-degrad2 w3-xlarge w3-display-topright barex"><i
+                    class="far fa-times-circle"></i></span><br>
                 <div class="w3-col l3 m6">
                     <h3 class="w3-margin-top vert">Débutant</h3>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre le JavaScript</a>
