@@ -104,7 +104,18 @@ background: linear-gradient(135deg,#04c4b444,#d400ff44);
 }
 
 .jp-example.jp-card-exG h3{
+    padding: 0px!important;
+    list-style: none!important;
+}
+@media only screen and (min-device-width: 480px) {
+#ulexemple{
+    padding: 0px!important;
+    list-style: none!important;
+}
+}
+.jp-example h3{
     font-family: HP;
+    font-size: 36px;
 }
 html,body{font-family:'Noto Sans TC',sans-serif, "Verdana",sans-serif;font-size:15px;letter-spacing: 1px;line-height:1.5}html{overflow-x:hidden}
 h1{font-family:'Permanent Marker', fontawesome!important;font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}.w3-serif{font-family:serif}
