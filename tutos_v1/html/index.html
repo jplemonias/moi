@@ -2,7 +2,7 @@
 <html lang="fr">
 
 <head>
-    <title>HTML intronisation</title>
+    <title>HTML introduction</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Keywords"
@@ -158,7 +158,9 @@
         }
 
         #sidenav a:hover,
-        #sidenav a:focus {color: #000!important; background: linear-gradient(-45deg,#04c4b4,#d400ff);
+        #sidenav a:focus {
+            color: #000000;
+            background-color: #cccccc;
         }
 
         #sidenav a.active {
@@ -595,7 +597,7 @@
 
             #sidenav a {
                 padding: 3px 2px 3px 24px;
-                font-size: 16px;
+                font-size: 17px
             }
 
             #leftmenuinner {
@@ -605,6 +607,7 @@
                 position: relative;
                 width: auto;
                 padding-top: 0;
+                /*background-color: #f1f1f1;*/
             }
 
             #leftmenuinnerinner {
@@ -620,9 +623,10 @@
                 min-height: 60px
             }
         }
-
         @media screen and (max-width:600px) {
-
+            #exhead,#exbody,#exdiv, #extitle, #exh, #exp {
+                width: 100%!important;
+            }
             .w3-example,
             .w3-note,
             #w3-exerciseform {
@@ -733,6 +737,7 @@
             color: #ff9999;
             background-color: transparent;
         }
+
         .darktheme .w3-example.w3-light-grey {
             background-color: rgb(40, 44, 52) !important;
             color: white;
@@ -1411,6 +1416,12 @@
             margin-right: -32px;
         }
 
+        .jp-example {
+            padding: 8px 20px;
+            margin: 24px 0px 24px -16px;
+            border-radius: 0 15px 15px 0;
+        }
+
         .w3-example {
             padding: 8px 20px;
             margin: 24px -16px 24px 0px;
@@ -1433,6 +1444,16 @@
             color: black;
         }
 
+        .w3-panel2 {
+            margin-top: 24px;
+            margin-bottom: 24px;
+            margin-left: 32px ;
+            margin-right: -16px ;
+            padding: 16px 32px;
+            border-radius: 20px 0 0 20px;
+            background: linear-gradient(135deg, #d400ff, #04c4b4);
+            color: black;
+        }
 
         h1 {
             font-size: 42px;
@@ -1509,6 +1530,7 @@
             font-size: 105%;
         }
 
+        .jp-example p,
         .w3-example p,
         .w3-panel p {
             margin-top: 1em;
@@ -1546,7 +1568,7 @@
             #sectionxxs_JavaScript .w3-row-padding.w3-bar-block .w3-col.l3.m6 a {
                 width: max-content!important;
             }
-        @media screen and (max-width: 769px) {
+        @media screen and (max-width: 769px) {max-content
             
             #sectionxxs_HTML .w3-row-padding.w3-bar-block .w3-col.l3.m6,
             #sectionxxs_CSS .w3-row-padding.w3-bar-block .w3-col.l3.m6,
@@ -1563,15 +1585,6 @@
                 border-bottom-left-radius: 20px;
                 border-bottom-right-radius: 20px;
             }
-            
-            #sectionxxs_HTML a,
-            #sectionxxs_CSS a,
-            #sectionxxs_PHP a,
-            #sectionxxs_JavaScript a  {
-                width: fit-content;
-                margin: 5px auto;
-                padding: 2px 0 1px 0!important;
-            }
             #sectionxxs_HTML .w3-row-padding.w3-bar-block .w3-col.l3.m6 p,
             #sectionxxs_CSS .w3-row-padding.w3-bar-block .w3-col.l3.m6 p,
             #sectionxxs_PHP .w3-row-padding.w3-bar-block .w3-col.l3.m6 p,
@@ -1586,8 +1599,6 @@
                 background: linear-gradient(90deg,#04c4b4,#d400ff);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
-                padding: 0 0 0 0!important;
-                font-size: 18px;
             }
         }
 
@@ -1601,10 +1612,8 @@
                 -webkit-text-fill-color: transparent;
                 margin-left: 10px;
             }
-        
-
         @media screen and (min-width: 769px) {
-            
+
             #myAccordion,
             .hidesm {
                 display: none !important;
@@ -1639,6 +1648,11 @@
 
             h2 {
                 font-size: 25px;
+            }
+
+            .jp-example {
+                padding: 8px 16px;
+                margin: -24px 24px;
             }
 
             .w3-example {
@@ -1785,8 +1799,7 @@
                 class="far fa-times-circle"></i></span><br>
                 <div class="w3-col l3 m6">
                     <h3 class="w3-margin-top vert">Débutant</h3>
-                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/html/index.html">Intronisation</a>
-                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/html/htmlintro.html">Introduction</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/html/index.html">Introduction</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/html/editer.html">Editer de l'html</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/html/basic.html">Balises de baaaase</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/html/elements.html">l'élément</a>
@@ -1794,6 +1807,7 @@
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre l'html</a>
                     <a class="w3-bar-item w3-button padnone" href='/moi/tutos_v1/O_o'>apprendre l'html</a>
                     <a class="w3-bar-item w3-button padnone" href='/moi/tutos_v1/O_o'>apprendre l'html</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre l'html</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre l'html</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre l'html</a>
                 </div>
@@ -2000,7 +2014,6 @@
             </div>
             <br class="hidesm">
         </nav>
-
         <nav class="w3-sidebar w3-collapse gris w3-card-2" id="mySidenav">
             <div class="w3-bar-block">
                 <div class="w3-container">
@@ -2021,26 +2034,41 @@
                     <!-- Emplacenrt pour redirection-->
                     <img id='pubin' src="../../public/img/W3.png">
                 </div>
-                <h1><span class="txtdegrad1">HTML</span> intronisation</h1>
+                <h1><span class="txtdegrad1">HTML</span> introduction</h1>
                 <div class="w3-clear nextprev">
                     <a class="w3-left w3-btn degrad1 hover-degrad1" href="/moi/tutos_v1/index.html"><i
-                            class="fas fa-reply"></i> Home</a>
-                    <a class="w3-right w3-btn degrad2 hover-degrad2" href="/moi/tutos_v1/html/htmlintro.html">Suivant <i
+                            class="fas fa-reply"></i> Accueil</a>
+                    <a class="w3-right w3-btn degrad2 hover-degrad2" href="/moi/tutos_v1/html/editer.html">Suivant <i
                             class="fas fa-reply reply2"></i></a>
                 </div>
 
                 <div class="w3-panel w3-info intro">
-                    <p>l'HTML est le langage de balisage standard pour les pages Web.</p>
-                    <p>Avec l'HTML, vous pouvez créer votre propre site Web.</p>
-                    <p>Vous le verez l'HTML est relativement simple en soit.</p>
+                    <h2>Qu'est-ce que l' HTML?</h2>
+                    <p>l'<strong>HTML</strong> est le langage de <strong>balisage standard</strong> pour créer des <i>pages Web</i>.<br>
+                        Avec, vous pouvez créer votre propre site Web.<br>
+                        Vous le verez ce langage est relativement simple en soit.</p>
+                </div>
+                <div class="w3-panel2 w3-info intro">
+                    <ul>
+                        <li>HTML signifie <strong>H</strong>yper <strong>T</strong>ext <strong>M</strong>arkup
+                            <strong>L</strong>anguage</li>
+                        <li>Il décrit <i>la structure</i> d'une page Web</li>
+                        <li>Composé d'une série d'<i>élément</i>s indiquant au navigateur comment afficher le contenu
+                        </li>
+                        <li>Les éléments sont représentés par des <i>balises</i></li>
+                        <li>Ces balises étiquettent des éléments de contenu tels qu'un en-tête, un paragraphe, un tableau, etc.</li>
+                        <li>Les navigateurs n'affichent pas les balises, mais les utilisent pour restituer le
+                            contenu de la page</li>
+                    </ul>
                 </div>
 
                 <div id="separ2"></div>
-                <h2>Exemple:</h2>
+                <h2>Les Exemples:</h2>
                 <p>Ce didacticiel sur l'HTML contient des exemples de codes comme celui-ci, afin de faciliter la
                     compréhension.</p>
                 <p>Avec l'éditeur en ligne, codepen, vous pouvez éditer le HTML et ainsi pouvoir voir le résultat.</p>
-                <div class="w3-example jp-card-ex">
+                <h2>Un exemple d'HTML:</h2>
+                <div class="jp-example jp-card-exG">
                     <h3>Exemple 1</h3>
                     <p class="codepen" data-height="300" data-theme-id="38865" data-default-tab="html"
                         data-user="PsychoActiF" data-slug-hash="YzXZRBP"
@@ -2051,16 +2079,116 @@
                             on <a href="https://codepen.io">CodePen</a>.</span>
                     </p>
                     <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                    <p style="font-size: 12px;">En cliquant sur le bouton &quot;<strong>Résultat</strong>&quot; tu pouras voir le resultat.</p>
                     <a class="w3-btn w3-button degrad1 hover-degrad1" href="https://codepen.io/PsychoActiF/full/YzXZRBP"
                         target="_blank">Résultat <i class="far fa-share-square"></i></a>
                 </div>
-                <p><strong>En cliquant sur le bouton &quot;Résultat&quot; tu pouras voir le resultat.</strong></p>
-                <p><a href="/moi/tutos_v1/html/htmlintro.html">On y GO_o..?</a></p>
+                <ul>
+                    <p><strong>Explmication de l'exemple</strong></p>
+                    <li>&lt;! DOCTYPE html&gt; définit ce document comme HTML5</li>
+                    <li>&lt;html&gt; est l'élément racine d'une page HTML</li>
+                    <li>&lt;head&gt; contient des méta-informations sur le document</li>
+                    <li>&lt;title&gt; spécifie le titre principal du document</li>
+                    <li>&lt;body&gt; contient le contenu de la page visible</li>
+                    <li>&lt;h1&gt; définit un grand titre</li>
+                    <li>&lt;p&gt; définit un paragraphe</li>
+                </ul>
                 <div id="separ2"></div>
+                <h2>La <span class="txtdegrad1">structure</span> d'un HTML</h2>
+                <p>Elle est déffinie par des élément entourés de <span Title="En anglais: angle brackets"
+                        style="cursor: help;">crochets:</span></p>
+                <p><strong>Les balises</strong>, elles sont généralement fournies par paire, une balise <o>ouvrante</i> <strong>&lt;</strong>p<strong>&gt;</strong> et une <i>fermante</i>
+                    <strong>&lt;/</strong>p<strong>&gt;</strong>.<br>
+                    La balise de fin est écrite comme la balise de début, avec un slash inséré avant son nom de balise.
+                </p>
+                <p><strong>Le but</strong> d'un <i>doccuments HTML</i> est d'<strong>être lut</strong> par un<span Title="En anglais: web browsers" style="cursor: help;">
+                    <i>navigateur web</i>.</span><br>
+                    Imagé cela pourait donner un peut ça:
+                <div id="exhtml">&lt;! DOCTYPE&gt;<br>&lt;html&gt;
+                    <div id="exhead">&lt;head&gt;
+                        <div id="extitle">&lt;title&gt;Titre de  la page&lt;/title&gt;</div>
+                    &lt;/head&gt;</div>
+                    <div id="exbody">&lt;body&gt;
+                    <div id="exdiv">&lt;div&gt;
+                    <div id="exh">&lt;h1&gt;Un titre&lt;/h1&gt;</div>
+                    <div id="exp">&lt;p&gt;Un paragraphe.&lt;/p&gt;</div>
+                    <div id="exp">&lt;p&gt;Un autre paragraphe.&lt;/p&gt;</div>
+                    &lt;/div&gt;
+                    </div>
+                    &lt;/body&gt;
+                    </div>
+                    &lt;/html&gt;
+                    </div>
+
+                    <p>La déclaration &lt;! DOCTYPE&gt; représente le type de document a décoder afin d'aider les navigateurs à afficher
+                        correctement les pages Web.<br><br>Elle doit apparaître en haut de la page avant tout balisage HTML et qu'une seule fois,
+                        declarable en majuscules ou en minuscules.<br><br>La déclaration &lt;! DOCTYPE&gt; pour HTML5 est:<br>&lt;!DOCTYPE html&gt;</p>
+
+                <div id="separ2"></div>
+                <h2><span class="txtdegrad1">Historique</span> :</h2>
+                <table class="w3-table-all notranslate">
+                    <tbody><tr>
+                      <th>Années</th>
+                      <th>Versions</th>
+                    </tr>
+                    <tr>
+                      <td>1989</td>
+                      <td>Tim Berners-Lee invente le www</td>
+                    </tr>
+                    <tr>
+                      <td>1991</td>
+                      <td>Tim Berners-Lee invente l'HTML</td>
+                    </tr>
+                    <tr>
+                      <td>1993</td>
+                      <td>Dave Raggett rédige HTML+</td>
+                    </tr>
+                    <tr>
+                      <td>1995</td>
+                      <td>Un groupe de travail HTML défini l'HTML 2.0</td>
+                    </tr>
+                    <tr>
+                      <td>1997</td>
+                      <td>Recommandation de W3C: HTML 3.2</td>
+                    </tr>
+                    <tr>
+                      <td>1999</td>
+                      <td>Recommandation de W3C: HTML 4.01</td>
+                    </tr>
+                    <tr>
+                      <td>2ooo</td>
+                      <td>Recommandation de W3C: XHTML 1.0</td>
+                    </tr>
+                    <tr>
+                      <td>2oo8</td>
+                      <td>WHATWG HTML5 premier projet public</td>
+                    </tr>
+                    <tr>
+                      <td>2o12</td>
+                      <td><a style="text-decoration-color:#04c4b4;" href="http://whatwg.org/html/" target="_blank" class="JP-hover-text-degrad2">WHATWG HTML5 standardisé</a></td>
+                    </tr>
+                    <tr>
+                      <td>2o14</td>
+                      <td><a style="text-decoration-color:#04c4b4;" href="http://www.w3.org/TR/html5/" target="_blank" class="JP-hover-text-degrad2">Recommandation de W3C: HTML5</a></td>
+                    </tr>
+                    <tr>
+                      <td>2o16</td>
+                      <td>W3C Candidate Recommendation: HTML 5.1</td>
+                    </tr>
+                    <tr>
+                      <td>2o17</td>
+                      <td><a style="text-decoration-color:#04c4b4;" href="http://www.w3.org/TR/html51/" target="_blank" class="JP-hover-text-degrad2">Recommandation de W3C: HTML5.1 2nd Edition</a></td>
+                    </tr>
+                    <tr>
+                      <td>2o17</td>
+                      <td><a style="text-decoration-color:#04c4b4;" href="http://www.w3.org/TR/html52/" target="_blank" class="JP-hover-text-degrad2">Recommandation de W3C: HTML5.2</a></td>
+                    </tr>
+                  </tbody></table>
+                  <div id="separ2"></div>
                 <div class="w3-clear nextprev">
                     <a class="w3-left w3-btn degrad1 hover-degrad1" href="/moi/tutos_v1/index.html"><i
-                            class="fas fa-reply"></i> Home</a>
-                    <a class="w3-right w3-btn degrad2 hover-degrad2" href="/moi/tutos_v1/html/htmlintro.html">Suivant <i
+                            class="fas fa-reply"></i> Accueil</a>
+                    <a class="w3-right w3-btn degrad2 hover-degrad2" href="/moi/tutos_v1/html/editer.html">Suivant <i
                             class="fas fa-reply reply2"></i></a>
                 </div>
             </div>
