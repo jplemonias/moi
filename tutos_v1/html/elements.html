@@ -2,7 +2,7 @@
 <html lang="fr">
 
 <head>
-    <title>balisages basique</title>
+    <title>HTML intronisation</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Keywords"
@@ -158,9 +158,7 @@
         }
 
         #sidenav a:hover,
-        #sidenav a:focus {
-            color: #000000;
-            background-color: #cccccc;
+        #sidenav a:focus {color: #000!important; background: linear-gradient(-45deg,#04c4b4,#d400ff);
         }
 
         #sidenav a.active {
@@ -597,7 +595,7 @@
 
             #sidenav a {
                 padding: 3px 2px 3px 24px;
-                font-size: 17px
+                font-size: 16px;
             }
 
             #leftmenuinner {
@@ -607,7 +605,6 @@
                 position: relative;
                 width: auto;
                 padding-top: 0;
-                /*background-color: #f1f1f1;*/
             }
 
             #leftmenuinnerinner {
@@ -623,10 +620,9 @@
                 min-height: 60px
             }
         }
+
         @media screen and (max-width:600px) {
-            #exhead,#exbody,#exdiv, #extitle, #exh, #exp {
-                width: 100%!important;
-            }
+
             .w3-example,
             .w3-note,
             #w3-exerciseform {
@@ -737,7 +733,6 @@
             color: #ff9999;
             background-color: transparent;
         }
-
         .darktheme .w3-example.w3-light-grey {
             background-color: rgb(40, 44, 52) !important;
             color: white;
@@ -1416,12 +1411,6 @@
             margin-right: -32px;
         }
 
-        .jp-example {
-            padding: 8px 20px;
-            margin: 24px 0px 24px -16px;
-            border-radius: 0 15px 15px 0;
-        }
-
         .w3-example {
             padding: 8px 20px;
             margin: 24px -16px 24px 0px;
@@ -1525,7 +1514,6 @@
             font-size: 105%;
         }
 
-        .jp-example p,
         .w3-example p,
         .w3-panel p {
             margin-top: 1em;
@@ -1563,7 +1551,7 @@
             #sectionxxs_JavaScript .w3-row-padding.w3-bar-block .w3-col.l3.m6 a {
                 width: max-content!important;
             }
-        @media screen and (max-width: 769px) {max-content
+        @media screen and (max-width: 769px) {
             
             #sectionxxs_HTML .w3-row-padding.w3-bar-block .w3-col.l3.m6,
             #sectionxxs_CSS .w3-row-padding.w3-bar-block .w3-col.l3.m6,
@@ -1580,6 +1568,15 @@
                 border-bottom-left-radius: 20px;
                 border-bottom-right-radius: 20px;
             }
+            
+            #sectionxxs_HTML a,
+            #sectionxxs_CSS a,
+            #sectionxxs_PHP a,
+            #sectionxxs_JavaScript a  {
+                width: fit-content;
+                margin: 5px auto;
+                padding: 2px 0 1px 0!important;
+            }
             #sectionxxs_HTML .w3-row-padding.w3-bar-block .w3-col.l3.m6 p,
             #sectionxxs_CSS .w3-row-padding.w3-bar-block .w3-col.l3.m6 p,
             #sectionxxs_PHP .w3-row-padding.w3-bar-block .w3-col.l3.m6 p,
@@ -1594,6 +1591,8 @@
                 background: linear-gradient(90deg,#04c4b4,#d400ff);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
+                padding: 0 0 0 0!important;
+                font-size: 18px;
             }
         }
 
@@ -1607,8 +1606,10 @@
                 -webkit-text-fill-color: transparent;
                 margin-left: 10px;
             }
-        @media screen and (min-width: 769px) {
+        
 
+        @media screen and (min-width: 769px) {
+            
             #myAccordion,
             .hidesm {
                 display: none !important;
@@ -1643,11 +1644,6 @@
 
             h2 {
                 font-size: 25px;
-            }
-
-            .jp-example {
-                padding: 8px 16px;
-                margin: -24px 24px;
             }
 
             .w3-example {
@@ -2009,6 +2005,7 @@
             </div>
             <br class="hidesm">
         </nav>
+
         <nav class="w3-sidebar w3-collapse gris w3-card-2" id="mySidenav">
             <div class="w3-bar-block">
                 <div class="w3-container">
@@ -2029,104 +2026,67 @@
                     <!-- Emplacenrt pour redirection-->
                     <img id='pubin' src="../../public/img/W3.png">
                 </div>
-                <h1>Exemples de <span class="txtdegrad1">balisages basique</span></h1>
+                <h1>Les <span class="txtdegrad1">éléments</span> HTML</h1>
                 <div class="w3-clear nextprev">
-                    <a class="w3-left w3-btn degrad1 hover-degrad1" href="/moi/tutos_v1/html/editer.html"><i
+                    <a class="w3-left w3-btn degrad1 hover-degrad1" href="/moi/tutos_v1/html/basic.html"><i
                             class="fas fa-reply"></i> Précédent</a>
                     <a class="w3-right w3-btn degrad2 hover-degrad2" href="/moi/tutos_v1/O_o">Suivant <i
                             class="fas fa-reply reply2"></i></a>
                 </div>
 
+                <div class="w3-panel w3-info intro">
+                    <p>Nous lavons vue un element HTML se compose généralement de balises dites ouvrantes de début et fermante de fin,<br>
+                        le contenu étant inséré entre les deux:<br>&lt;NomDeBalise&gt; contenu &lt;/NomDeBalise&gt;</p>
+                        <div class="degrad-Vertical">
+                            <div class="w3-code2 sqlHigh notranslate w3-card-2">
+                                &lt;p&gt; Mon premier paragraphe. &lt;/p&gt;
+                            </div>
+                        </div>
+                </div>
                 <div class="w3-panel w3-panel2 w3-info intro">
-                    <p>Ne vous inquiétez pas si dans les exemples des balises certaines ne vous reviennent pas.<br>
-                        Vous les découvrirez dans les prochains chapitres.<br><br>Mais normaleement à ce stade pas grand chose doit vous parler.<br>
-                        D'où votre visite ici... <span style="font-size: 12px;">( et je vous en remerci )</span></p>
+                    <p>Les éléments sans contenu sont appelés éléments vides.<br>Les éléments vides n'ont pas de balise de fin, comme l'élément 
+                        &lt;br&gt; (qui indique un saut de ligne)</p>
+                        <div class="degrad-Vertical">
+                            <div class="w3-code3 sqlHigh notranslate w3-card-2">
+                                &lt;p&gt; Saut de &lt;br&gt; ligne. &lt;/p&gt;
+                            </div>
+                        </div>
+                        <p>En HTML un saut de lingne équivaut à <strong>un espace</strong>.</p>
                 </div>
 
                 <div id="separ2"></div>
-                <h2>La base des bases</h2>
-                <p>
-                    Toues les pages HTML doivent commencer par une déclaration indiquant sa nature.<br>
-                    Comme précédement dit, pour l'HTML5: &lt;! DOCTYPE html&gt;.</p>
-                <p>
-                    Le document HTML lui-même commence par une balise ouvrante &lt;html&gt; et une fermante &lt;/html&gt;.</p>
-                <p>
-                    La partie visible par l'utilisateur se situe entre &lt;body&gt; et &lt;/body&gt;.</p>
-                    <div id="separ2"></div>
-                <h2>Les en-têtes</h2>
-                <p>Elles sont définis avec les balises allant de  &lt;h1&gt; à &lt;h6&gt;.<br>
-                &lt;h1&gt; etant de plus grande importance pour le document et<br>&lt;h6&gt; définit une rubrique de moindre importance.</p>
-                <div class="degrad-Vertical">
-                    <div class="w3-code sqlHigh notranslate w3-card-2">
-                        &lt;h1&gt;Important&lt;/h1&gt;<br>
-                        &lt;h6&gt;Importance minime&lt;/h6&gt;
-                    </div>
-                </div>
-                <h2>Les paragraphes</h2>
-                <p>sont définis avec la balise &lt;p&gt;</p>
-                <div class="degrad-Vertical">
-                    <div class="w3-code sqlHigh notranslate w3-card-2">
-                        &lt;p&gt;Un premier paragraphe.&lt;p&gt;<br>
-                        &lt;p&gt;Un second avec plus de blabla.&lt;p&gt;
-                    </div>
-                </div>
-                <h2>Les liens</h2>
-                <p>sont définis avec la balise &lt;a&gt;<br>Il faut en plus renseigner la destination par un attribut href.<br>
-                Les attributs sont utilisés pour fournir des informations supplémentaires sur les éléments HTML.</p>
-                <div class="degrad-Vertical">
-                    <div class="w3-code sqlHigh notranslate w3-card-2">
-                        &lt;a href&#61;&#34;&#34;&gt;Le texte renveras sur le lien.&lt;/a&gt;
-                    </div>
-                </div>
-                <h2>Les images</h2>
-                <p>sont définis avec la balise &lt;img&gt;<br>Il faut à cette balise ajouter les atributs:<br>
-                src soit le chemin du fichier source,<br>alt indiquant un texte alternatif et<br>title pouvant afficher un texte au survol<br>
-                des atriduts comme, par exemple, la largeur et la hauteur peuvent y être ajouter.</p>
-                <div class="degrad-Vertical">
-                    <div class="w3-code sqlHigh notranslate w3-card-2">
-                        &lt;img src&#61;&#34;&#34; alt&#61;&#34;&#34; title&#61;&#34;&#34; width&#61;&#34;&#34; height&#61;&#34;&#34;&gt;
-                    </div>
-                </div>
-                <p>Etant un conteneur en soit le balisage d'une image ne nécessite pasforcément de balise fermante.</p>
-                <h2>Les boutons</h2>
-                <p>sont définis avec la balise &lt;button&gt;</p>
-                <div class="degrad-Vertical">
-                    <div class="w3-code sqlHigh notranslate w3-card-2">
-                        &lt;button&gt;Sera un bouton&lt;/button&gt;
-                    </div>
-                </div>
-                <h2>Les listes</h2>
-                <p>sont définis avec la balise &lt;ul&gt; (liste non ordonnée à puces) ou<br>
-                &lt;ol&gt;(liste ordonnée numérotée), suivie par les balises &lt;li&gt; (éléments de liste):</p>
-                <div class="degrad-Vertical">
-                    <div class="w3-code sqlHigh notranslate w3-card-2">
-                            &lt;lu&gt;<br>
-                            &nbsp;&nbsp;&nbsp;&lt;li&gt;Entrée&lt;/li&gt;<br>
-                            &nbsp;&nbsp;&nbsp;&lt;li&gt;Plat&lt;/li&gt;<br>
-                            &nbsp;&nbsp;&nbsp;&lt;li&gt;dessert&lt;/li&gt;<br>
-                            &lt;/lu&gt;<br><br>
-                            &lt;ol&gt;<br>
-                            &nbsp;&nbsp;&nbsp;&lt;li&gt;Entrée&lt;/li&gt;<br>
-                            &nbsp;&nbsp;&nbsp;&lt;li&gt;Plat&lt;/li&gt;<br>
-                            &nbsp;&nbsp;&nbsp;&lt;li&gt;dessert&lt;/li&gt;<br>
-                            &lt;/ol&gt;
-                    </div>
-                </div>
-
-                <div class="jp-example jp-card-exG">
-                    <h3>En résumé:</h3>
-                    <p class="codepen" data-height="224" data-theme-id="38865" data-default-tab="html" data-user="PsychoActiF" data-slug-hash="wvaroor" style="height: 224px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Balisage de base">
-                        <span>See the Pen <a href="https://codepen.io/PsychoActiF/pen/wvaroor">
-                        Balisage de base</a> by Psycho@ctiF (<a href="https://codepen.io/PsychoActiF">@PsychoActiF</a>)
+                <h2>l'imbriquation d'éléments:</h2>
+                <p>Les éléments HTML peuvent être imbriqués<br>(les éléments peuvent contenir des éléments O_o...).<br><br>
+                    Tous les documents HTML sont constitués d'éléments HTML imbriqués.<br> L'élément &lt;html&gt; définit la totalitée du document.<br>
+                    Entre son balisage de fdébut et de fin se trouve l'élément &lt;body&gt;.<br>Ce derrnier définit le corps du document (visible par l'utilisateur).<br>
+                    À l'intérieur se trouve d'autres éléments.</p>
+                <div class="w3-example jp-card-ex">
+                    <h3>Déjà vu</h3>
+                    <p class="codepen" data-height="324" data-theme-id="38865" data-default-tab="html" data-user="PsychoActiF" data-slug-hash="YzXZRBP" style="height: 324px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Exemple 1">
+                        <span>See the Pen <a href="https://codepen.io/PsychoActiF/pen/YzXZRBP">
+                        Exemple 1</a> by Psycho@ctiF (<a href="https://codepen.io/PsychoActiF">@PsychoActiF</a>)
                         on <a href="https://codepen.io">CodePen</a>.</span>
                       </p>
                       <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-                    <a class="w3-btn w3-button degrad1 hover-degrad1" href="https://codepen.io/PsychoActiF/full/wvaroor"
+                    <a class="w3-btn w3-button degrad1 hover-degrad1" href="https://codepen.io/PsychoActiF/full/YzXZRBP"
                         target="_blank">Résultat <i class="far fa-share-square"></i></a>
                 </div>
-                  <div id="separ2"></div>
+                <p>La balise de fermeture est considérée comme facultative.</p>
+                <div class="degrad-Vertical">
+                    <div class="w3-code sqlHigh notranslate w3-card-2">
+                        &lt;html&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&lt;body&gt;<br><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Paragraphe 1<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Paragraphe 2<br><br>
+                        &nbsp;&nbsp;&nbsp;&lt;/body&gt;<br>
+                        &lt;/html&gt;
+                    </div>
+                </div>
+                <p>Ne comptez jamais sur cette métode car cela peut produire des résultats inattendus et / ou des erreurs.</p>
+                <div id="separ2"></div>
                 <div class="w3-clear nextprev">
-                    <a class="w3-left w3-btn degrad1 hover-degrad1" href="/moi/tutos_v1/html/editer.html"><i class="fas fa-reply"></i> Précédent</a>
+                    <a class="w3-left w3-btn degrad1 hover-degrad1" href="/moi/tutos_v1/html/htmlintro.html"><i
+                            class="fas fa-reply"></i> Précédent</a>
                     <a class="w3-right w3-btn degrad2 hover-degrad2" href="/moi/tutos_v1/O_o">Suivant <i
                             class="fas fa-reply reply2"></i></a>
                 </div>

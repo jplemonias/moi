@@ -204,11 +204,17 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-row-padding {padding:0 8px!important}
 .w3-container,.w3-panel{padding:0.01em 16px}.w3-panel{margin-top:16px;margin-bottom:16px}
 .degrad-Vertical {
-    border-radius: 6px 0 0 6px;
+    border-radius: 6px 6px;
     background: linear-gradient(180deg,#04c4b4,#d400ff);
 }
 .w3-code,.w3-codespan{font-family:Consolas,"courier new";font-size:16px}
+
 .w3-code{border-radius: 6px 0 0 6px;width:auto;background-color:#fff;color: #000;padding:8px 12px;margin-left:4px;word-wrap:break-word}
+.w3-code3{border-radius: 6px 0 0 6px;width:auto;padding:8px 12px;margin-left:4px;margin-right: -32px;word-wrap:break-word;
+    background: linear-gradient(135deg,#04c4b444,#d400ff44);background-color:#fff;color: rgb(0, 0, 0);}
+.w3-code2{border-radius: 0 6px 6px 0;width:auto;padding:8px 12px;margin-right:4px;margin-left: -16px;word-wrap:break-word;
+    background: linear-gradient(135deg,#04c4b444,#d400ff44);background-color:#fff;color: rgb(0, 0, 0);}
+
 .w3-codespan{color:crimson;background-color:#f1f1f1;padding-left:4px;padding-right:4px;font-size:110%}
 .w3-card,.w3-card-2{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}
 .jp-card{box-shadow:0 2px 5px 0 rgba(255, 255, 255, 0.16),0 2px 10px 0 rgba(255, 255, 255, 0.12)}
