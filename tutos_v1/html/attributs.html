@@ -1445,7 +1445,7 @@
             margin-bottom: 24px;
             margin-left: 32px !important;
             margin-right: -16px !important;
-            padding: 16px 32px;
+    padding: 16px 32px 16px 16px;
             border-radius: 20px 0 0 20px;
             background: linear-gradient(135deg, #d400ff, #04c4b4);
             color: black;
@@ -1648,9 +1648,6 @@
         }
 
         @media only screen and (max-device-width: 480px) {
-            .w3-code2 {
-                margin-left: -32px;
-            }
             #main {
                 padding: 24px
             }
@@ -2111,6 +2108,13 @@
                     </div>
                     <div class=" w3-panel2 w3-info intro">
                     <p>Cette valeur est nottament utile dans les liens.<br>Elle peut faciliter la navigation pour l'utilisater.</p>
+                    <div class="degrad-Vertical">
+                    <div class="w3-code2 sqlHigh notranslate w3-card-2">
+                        &lt;p title&#61;&#34;<strong>Titre I</strong>&#34;&gt;&lt;/p&gt;<br>
+                        &lt;p title&#61;&#34;<strong>Titre II</strong>&#34;&gt;&lt;/p&gt;
+                    </div>
+                    </div>
+                    <p>Ou comme vous pouvez le voir au dessus,<br>apporter un titrage différént à des parégraphes.</p>
                     </div>
                     <h2>Attribuer un <span class="txtdegrad1">référencement </span><span style="font-size: 15px;">href</span></h2>
                     
@@ -2121,7 +2125,7 @@
                                 &lt;a <strong>href&#61;&#34;Le/Renvoit/SurPage.html&#34;</strong>&gt;&lt;/a&gt;
                             </div>
                         </div>
-                        <h2>Attribuer une <span class="txtdegrad1">hauteur</span> / <span class="txtdegrad1">largeur</span></h2>
+                        <h2>Attribuer une <span class="txtdegrad1">hauteur</span> / <span class="txtdegrad2">largeur</span></h2>
                         
                         <p>height / width<br>La taille des élément peuvent y être référencé<br>
                             Comme des attribut de style.</p>
@@ -2131,29 +2135,42 @@
                                     &lt;a href&#61;&#34;..&#34; <strong>style&#61;&#34;color: black&#34;</strong>&gt;&lt;/a&gt;
                                 </div>
                             </div>
-                <div class="jp-example jp-card-ex">
-                    <h3>Déjà vu</h3>
-                    <p class="codepen" data-height="324" data-theme-id="38865" data-default-tab="html" data-user="PsychoActiF" data-slug-hash="YzXZRBP" style="height: 333px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Exemple 1">
-                        <span>Voir le code <a href="https://codepen.io/PsychoActiF/pen/YzXZRBP">
-                        Exemple 1</a> de Psycho@ctiF (<a href="https://codepen.io/PsychoActiF">@PsychoActiF</a>)
-                        on <a href="https://codepen.io">CodePen</a>.</span>
-                      </p>
-                      <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-                    <a class="w3-btn w3-button degrad1 hover-degrad1" href="https://codepen.io/PsychoActiF/full/YzXZRBP"
-                        target="_blank">Résultat <i class="far fa-share-square"></i></a>
-                </div>
-                <p>La balise de fermeture est <i>considérée comme </i><strong>facultative</strong>.</p>
-                <div class="degrad-Vertical">
-                    <div class="w3-code sqlHigh notranslate w3-card-2">
-                        &lt;html&gt;<br>
-                        &nbsp;&nbsp;&nbsp;&lt;body&gt;<br><br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Paragraphe 1<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Paragraphe 2<br><br>
-                        &nbsp;&nbsp;&nbsp;&lt;/body&gt;<br>
-                        &lt;/html&gt;
-                    </div>
-                </div>
-                <p>Ne comptez <strong>jamais</strong> sur cette métode car cela peut produire <i>des résultats inattendus</i> et / ou <i>des erreurs</i>.</p>
+                            <div class=" w3-panel w3-info intro">
+                            <p class="margnone" style="float:right;">Mais ce-ci est plus une histoire de style &#128526;
+                                <a href="/moi/tutos_v1/O_o" class="w3-button degrad2 hover-degrad2">Tutos CSS</a>.</p>
+                            </div>
+                            <h2>Attribuer une <span class="txtdegrad1">langue</span> un <span class="txtdegrad2">dialecte</span></h2>
+                            
+                            <p>lang<br>Il est important de le faire dans la balise html,<br>
+                                nottament pour les applications d'accessibilité et les moteurs de recherche.</p>
+                                <html lang="fr=FR">
+                                <div class="degrad-Vertical">
+                                    <div class="w3-code sqlHigh notranslate w3-card-2">
+                                        &lt;html <strong>lang&#61;&#34;fr&#45;FR&#34;</strong>&gt;<br>
+                                        &lt;/html&gt;
+                                    </div>
+                                </div>
+                                <p>Les deux premières lettres spécifient la langue (en).<br>S'il y a un dialecte, ajoutez deux lettres supplémentaires (EN).</p>
+                                <div class="jp-example jp-card-ex">
+                                    <h3>Sugjestion d'utilisation</h3>
+                                    <p>Prennez l'abitude de declarer vos attribut en minuscules.<br>Car les doccuments de type XHTML l'exige quant à eux.<br><br>
+                                    En HTML:5 il n'est pas n'aissecaire de certir de guillemets mais<br>encore une fois il est recommendé de s'y tenir de le faire</p>
+                                    <div class="degrad-Vertical">
+                                    <div class="w3-code2 sqlHigh notranslate w3-card-2">
+                                        &lt;p title&#61;&#34;<strong>Titre I</strong>&#34;&gt;&lt;/p&gt;<br>
+                                        &lt;p title&#61;&#34;<strong>Titre II</strong>&#34;&gt;&lt;/p&gt;
+                                    </div>
+                                    </div>
+                                    <p>guillemets ou apostrophe?<br>Dans certaines situations, lorsque la valeur d'attribut elle-même contient des guillemets, il est nécessaire d'utiliser des apostrophes</p>
+                                    <div class="degrad-Vertical" style="margin-bottom: 15px;">
+                                    <div class="w3-code2 sqlHigh notranslate w3-card-2">
+                                        &lt;p title&#61;<strong>&apos;</strong> Un exemple normal <strong>&apos;</strong>&gt;&lt;/p&gt;<br>
+                                        &lt;p title&#61;<strong>&#34;</strong> Un exemple normal <strong>&#34;</strong>&gt;&lt;/p&gt;<br>
+                                        &lt;p title&#61;<strong>&apos;</strong> Un <strong>&#34;</strong>avec<strong>&#34;</strong> importance <strong>&apos;</strong>&gt;&lt;/p&gt;
+                                    </div>
+                                    </div>
+                                </div>
+                            
                 <div id="separ2"></div>
                 <div class="w3-clear nextprev">
                     <a class="w3-left w3-btn degrad1 hover-degrad1" href="/moi/tutos_v1/html/basic.html"><i
