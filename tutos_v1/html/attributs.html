@@ -2076,10 +2076,61 @@
                 </div>
 
                 <div id="separ2"></div>
-                <h2>L'attribut <span class="txtdegrad1">src</span></h2>
+                <h2>Attribuer un <span class="txtdegrad1">chemin </span><span style="font-size: 15px;">src</span></h2>
                 
                 <p>Le navigateur doit savoir où reccuperer une image pour l'afficher<br>
                     C'est pourquoi il faut nécéssairement ajouter un attribut src à la balise ouvrante d'une image.</p>
+                    <div class="degrad-Vertical">
+                        <div class="w3-code sqlHigh notranslate w3-card-2">
+                            &lt;img <strong>src&#61;&#34;Le/Chemin/DeLimage.pnj&#34;</strong>&gt;
+                        </div>
+                    </div>
+                    <h2>Attribuer un <span class="txtdegrad1">text alternatif </span><span style="font-size: 15px;">alt</span></h2>
+                    
+                    <p>Il est recommendé d'ajouter l'attribut alt a une image.<br>
+                        ce sera le texte affiché en cas d'erreur de renvoit ver celle-ci.
+                    </p>
+                    <div class="degrad-Vertical">
+                        <div class="w3-code sqlHigh notranslate w3-card-2">
+                            &lt;img src&#61;&#34;..&#34;<strong> alt&#61;&#34;Un dessin&#34;</strong>&gt;
+                        </div>
+                    </div>
+                    <div class=" w3-panel w3-info intro">
+                    <p>La valeur peut être lue par les lecteurs d'écran.<br>Par exemple une personne malvoyante peut «entendre» la déscription dans l'attribut.</p>
+                    </div>
+                    <h2>Attribuer un <span class="txtdegrad1">titre </span><span style="font-size: 15px;">title</span></h2>
+                    
+                    <p>Il est aussi recommendé de l'ajouter à une image.<br>
+                        <span style="font-size: 12px;">Ansi qu'à d'autres types d'élémens</span><br>
+                        Ce texte sera affiché si l'utilisateur pointe l'élément titré.
+                    </p>
+                    <div class="degrad-Vertical">
+                        <div class="w3-code sqlHigh notranslate w3-card-2">
+                            &lt;img src&#61;&#34;..&#34; alt&#61;&#34;..&#34;<strong> title&#61;&#34;Mon dessin&#34;</strong>&gt;
+                        </div>
+                    </div>
+                    <div class=" w3-panel2 w3-info intro">
+                    <p>Cette valeur est nottament utile dans les liens.<br>Elle peut faciliter la navigation pour l'utilisater.</p>
+                    </div>
+                    <h2>Attribuer un <span class="txtdegrad1">référencement </span><span style="font-size: 15px;">href</span></h2>
+                    
+                    <p>L'utilité d'un lien en soit est de pouvoir faire un revoit vers une autre page web par exemple<br>
+                        Comme pour une image il faut indiquer au navigateur où renvoyer l'utilisateur.</p>
+                        <div class="degrad-Vertical">
+                            <div class="w3-code sqlHigh notranslate w3-card-2">
+                                &lt;a <strong>href&#61;&#34;Le/Renvoit/SurPage.html&#34;</strong>&gt;&lt;/a&gt;
+                            </div>
+                        </div>
+                        <h2>Attribuer une <span class="txtdegrad1">hauteur</span> / <span class="txtdegrad1">largeur</span></h2>
+                        
+                        <p>height / width<br>La taille des élément peuvent y être référencé<br>
+                            Comme des attribut de style.</p>
+                            <div class="degrad-Vertical">
+                                <div class="w3-code sqlHigh notranslate w3-card-2">
+                                    &lt;img <strong>height&#61;&#34;100px&#34; width&#61;&#34;100px&#34;</strong>&gt;<br>
+                                    &lt;a href&#61;&#34;..&#34; <strong>style&#61;&#34;color: black&#34;</strong>&gt;&lt;/a&gt;
+                                </div>
+                            </div>
                 <div class="jp-example jp-card-ex">
                     <h3>Déjà vu</h3>
                     <p class="codepen" data-height="324" data-theme-id="38865" data-default-tab="html" data-user="PsychoActiF" data-slug-hash="YzXZRBP" style="height: 333px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Exemple 1">
