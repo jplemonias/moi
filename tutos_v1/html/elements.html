@@ -158,7 +158,9 @@
         }
 
         #sidenav a:hover,
-        #sidenav a:focus {color: #000!important; background: linear-gradient(-45deg,#04c4b4,#d400ff);
+        #sidenav a:focus {
+            color: #000 !important;
+            background: linear-gradient(-45deg, #04c4b4, #d400ff);
         }
 
         #sidenav a.active {
@@ -733,6 +735,7 @@
             color: #ff9999;
             background-color: transparent;
         }
+
         .darktheme .w3-example.w3-light-grey {
             background-color: rgb(40, 44, 52) !important;
             color: white;
@@ -1183,10 +1186,11 @@
         }
 
         @media only screen and (max-device-width: 480px) {
-            .w3-panel{
+            .w3-panel {
                 margin-left: -24px;
                 padding: 8px 32px;
             }
+
             .w3-code,
             .w3-codespan,
             #w3-exerciseform .exerciseprecontainer {
@@ -1194,7 +1198,7 @@
             }
 
             .w3-code {
-                margin-right: -26px!important;
+                margin-right: -26px !important;
                 font-size: 14px;
             }
 
@@ -1413,11 +1417,13 @@
             margin-left: -32px;
             margin-right: -32px;
         }
+
         .jp-example {
             padding: 8px 20px;
             margin: 24px -16px 24px 0px;
             border-radius: 15px 0 0 15px;
         }
+
         .w3-example {
             padding: 8px 20px;
             margin: 24px -16px 24px 0px;
@@ -1553,77 +1559,82 @@
             border-bottom-right-radius: 15px;
         }
 
-            #nav_HTML .w3-row-padding.w3-bar-block .w3-col.l3.m6 a,
-            #nav_CSS .w3-row-padding.w3-bar-block .w3-col.l3.m6 a,
-            #nav_PHP .w3-row-padding.w3-bar-block .w3-col.l3.m6 a,
-            #nav_JavaScript .w3-row-padding.w3-bar-block .w3-col.l3.m6 a {
-                width: max-content!important;
-            }
-            #sectionxxs_HTML .w3-row-padding.w3-bar-block .w3-col.l3.m6 a,
-            #sectionxxs_CSS .w3-row-padding.w3-bar-block .w3-col.l3.m6 a,
-            #sectionxxs_PHP .w3-row-padding.w3-bar-block .w3-col.l3.m6 a,
-            #sectionxxs_JavaScript .w3-row-padding.w3-bar-block .w3-col.l3.m6 a {
-                width: max-content!important;
-            }
+        #nav_HTML .w3-row-padding.w3-bar-block .w3-col.l3.m6 a,
+        #nav_CSS .w3-row-padding.w3-bar-block .w3-col.l3.m6 a,
+        #nav_PHP .w3-row-padding.w3-bar-block .w3-col.l3.m6 a,
+        #nav_JavaScript .w3-row-padding.w3-bar-block .w3-col.l3.m6 a {
+            width: max-content !important;
+        }
+
+        #sectionxxs_HTML .w3-row-padding.w3-bar-block .w3-col.l3.m6 a,
+        #sectionxxs_CSS .w3-row-padding.w3-bar-block .w3-col.l3.m6 a,
+        #sectionxxs_PHP .w3-row-padding.w3-bar-block .w3-col.l3.m6 a,
+        #sectionxxs_JavaScript .w3-row-padding.w3-bar-block .w3-col.l3.m6 a {
+            width: max-content !important;
+        }
+
         @media screen and (max-width: 769px) {
-            
+
             #sectionxxs_HTML .w3-row-padding.w3-bar-block .w3-col.l3.m6,
             #sectionxxs_CSS .w3-row-padding.w3-bar-block .w3-col.l3.m6,
             #sectionxxs_PHP .w3-row-padding.w3-bar-block .w3-col.l3.m6,
             #sectionxxs_JavaScript .w3-row-padding.w3-bar-block .w3-col.l3.m6 {
-                width: 100%!important;
+                width: 100% !important;
             }
+
             #sectionxxs_HTML,
             #sectionxxs_CSS,
             #sectionxxs_PHP,
-            #sectionxxs_JavaScript  {
-                color: lightgrey!important;
-                background: linear-gradient(-45deg,#d400ff44,#04c4b444);
+            #sectionxxs_JavaScript {
+                color: lightgrey !important;
+                background: linear-gradient(-45deg, #d400ff44, #04c4b444);
                 border-bottom-left-radius: 20px;
                 border-bottom-right-radius: 20px;
             }
-            
+
             #sectionxxs_HTML a,
             #sectionxxs_CSS a,
             #sectionxxs_PHP a,
-            #sectionxxs_JavaScript a  {
+            #sectionxxs_JavaScript a {
                 width: fit-content;
                 margin: 5px auto;
-                padding: 2px 0 1px 0!important;
+                padding: 2px 0 1px 0 !important;
             }
+
             #sectionxxs_HTML .w3-row-padding.w3-bar-block .w3-col.l3.m6 p,
             #sectionxxs_CSS .w3-row-padding.w3-bar-block .w3-col.l3.m6 p,
             #sectionxxs_PHP .w3-row-padding.w3-bar-block .w3-col.l3.m6 p,
             #sectionxxs_JavaScript .w3-row-padding.w3-bar-block .w3-col.l3.m6 p {
                 display: none;
             }
+
             #sectionxxs_HTML .w3-row-padding.w3-bar-block .w3-col.l3.m6 a:hover,
             #sectionxxs_CSS .w3-row-padding.w3-bar-block .w3-col.l3.m6 a:hover,
             #sectionxxs_PHP .w3-row-padding.w3-bar-block .w3-col.l3.m6 a:hover,
             #sectionxxs_JavaScript .w3-row-padding.w3-bar-block .w3-col.l3.m6 a:hover {
-                background: -webkit-gradient(linear,left top,right top,from(#04c4b4),to(#d400ff));
-                background: linear-gradient(90deg,#04c4b4,#d400ff);
+                background: -webkit-gradient(linear, left top, right top, from(#04c4b4), to(#d400ff));
+                background: linear-gradient(90deg, #04c4b4, #d400ff);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
-                padding: 0 0 0 0!important;
+                padding: 0 0 0 0 !important;
                 font-size: 18px;
             }
         }
 
-            #nav_HTML .w3-row-padding.w3-bar-block .w3-col.l3.m6 a:hover,
-            #nav_CSS .w3-row-padding.w3-bar-block .w3-col.l3.m6 a:hover,
-            #nav_PHP .w3-row-padding.w3-bar-block .w3-col.l3.m6 a:hover,
-            #nav_JavaScript .w3-row-padding.w3-bar-block .w3-col.l3.m6 a:hover {
-                background: -webkit-gradient(linear,left top,right top,from(#04c4b4),to(#d400ff));
-                background: linear-gradient(90deg,#04c4b4,#d400ff);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                margin-left: 10px;
-            }
-        
+        #nav_HTML .w3-row-padding.w3-bar-block .w3-col.l3.m6 a:hover,
+        #nav_CSS .w3-row-padding.w3-bar-block .w3-col.l3.m6 a:hover,
+        #nav_PHP .w3-row-padding.w3-bar-block .w3-col.l3.m6 a:hover,
+        #nav_JavaScript .w3-row-padding.w3-bar-block .w3-col.l3.m6 a:hover {
+            background: -webkit-gradient(linear, left top, right top, from(#04c4b4), to(#d400ff));
+            background: linear-gradient(90deg, #04c4b4, #d400ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-left: 10px;
+        }
+
 
         @media screen and (min-width: 769px) {
-            
+
             #myAccordion,
             .hidesm {
                 display: none !important;
@@ -1651,6 +1662,7 @@
             .w3-code2 {
                 margin-left: -32px;
             }
+
             #main {
                 padding: 24px
             }
@@ -1666,10 +1678,12 @@
             .jp-example {
                 padding: 8px 16px;
             }
-            #ulexemple{
-                padding: 0px!important;
-                list-style: none!important;
+
+            #ulexemple {
+                padding: 0px !important;
+                list-style: none !important;
             }
+
             .w3-example {
                 padding: 8px 16px;
                 margin: 24px -24px;
@@ -1679,10 +1693,12 @@
                 padding: 8px 16px 16px 16px;
                 margin: 24px -24px;
             }
+
             .w3-panel2 {
                 margin-right: -24px !important;
                 margin-left: 1px;
             }
+
             .w3-panel,
             .w3-info {
                 margin-left: -24px;
@@ -1764,8 +1780,7 @@
                     onclick="changecodetheme(this)" title='daltonien'><i class="far fa-eye"></i></a>
             </div>
         </div>
-        <div id='myAccordion' class="w3-card-2 degradnoir w3-center w3-hide-large"
-            style="display:none;cursor:default">
+        <div id='myAccordion' class="w3-card-2 degradnoir w3-center w3-hide-large" style="display:none;cursor:default">
             <a href="javascript:void(0)" onclick="w3_close()"
                 class="w3-button padding-button-close w3-xlarge w3-right"><i class="far fa-times-circle"></i></a><br>
             <div class="w3-container w3-padding-32">
@@ -1785,23 +1800,25 @@
         </div>
         <div class='w3-sidebar2 w3-collapse' id='sidenav' style="display: none;">
             <div id='leftmenuinner'>
-                <div id='myAccordion' class="w3-card-2 degradnoir w3-center w3-hide-large"
-                    style="cursor:default;">
+                <div id='myAccordion' class="w3-card-2 degradnoir w3-center w3-hide-large" style="cursor:default;">
                     <div class="w3-container " style="padding: 5px 10px 32px 10px; margin-bottom: 32px;">
-                    <a href="javascript:void(0)" onclick="w3_close()"
-                        class="w3-button degrad3 margnegtopr hover-degrad2 w3-xlarge w3-right padding-button-close"><i
-                            class="far fa-times-circle"></i></a><br>
-                        <a class="w3-button hover-degrad2 w3-block w3-large w3-wide padnone" onclick="open_xxs_menu('HTML');"
-                            href="javascript:void(0);">HTML <i class='fab fa-html5'></i></a>
+                        <a href="javascript:void(0)" onclick="w3_close()"
+                            class="w3-button degrad3 margnegtopr hover-degrad2 w3-xlarge w3-right padding-button-close"><i
+                                class="far fa-times-circle"></i></a><br>
+                        <a class="w3-button hover-degrad2 w3-block w3-large w3-wide padnone"
+                            onclick="open_xxs_menu('HTML');" href="javascript:void(0);">HTML <i
+                                class='fab fa-html5'></i></a>
                         <div id="sectionxxs_HTML" class=" w3-show"></div>
-                        <a class="w3-button hover-degrad2 w3-block w3-large w3-wide padnone" onclick="open_xxs_menu('CSS')"
-                            href="javascript:void(0);">CSS <i class='fab fa-css3-alt'></i></a>
+                        <a class="w3-button hover-degrad2 w3-block w3-large w3-wide padnone"
+                            onclick="open_xxs_menu('CSS')" href="javascript:void(0);">CSS <i
+                                class='fab fa-css3-alt'></i></a>
                         <div id="sectionxxs_CSS" class=" w3-show"></div>
-                        <a class="w3-button hover-degrad2 w3-block w3-large w3-wide padnone" onclick="open_xxs_menu('PHP')"
-                            href="javascript:void(0);">PHP <i class='fab fa-php'></i></a>
+                        <a class="w3-button hover-degrad2 w3-block w3-large w3-wide padnone"
+                            onclick="open_xxs_menu('PHP')" href="javascript:void(0);">PHP <i class='fab fa-php'></i></a>
                         <div id="sectionxxs_PHP" class=" w3-show"></div>
-                        <a class="w3-button hover-degrad2 w3-block w3-large w3-wide padnone" onclick="open_xxs_menu('JavaScript')"
-                            href="javascript:void(0);">JavaScript <i class='fab fa-js-square'></i></a>
+                        <a class="w3-button hover-degrad2 w3-block w3-large w3-wide padnone"
+                            onclick="open_xxs_menu('JavaScript')" href="javascript:void(0);">JavaScript <i
+                                class='fab fa-js-square'></i></a>
                         <div id="sectionxxs_JavaScript" class=" w3-show"></div>
                     </div>
                 </div>
@@ -1813,8 +1830,8 @@
         <nav id="nav_HTML" class="degradnoir w3-card-2 w3-hide-small navex">
             <div class="w3-row-padding w3-bar-block">
                 <span onclick=" w3_close_nav('HTML')"
-            class="padding-button-close degrad3 hover-degrad2 w3-xlarge w3-display-topright barex"><i
-                class="far fa-times-circle"></i></span><br>
+                    class="padding-button-close degrad3 hover-degrad2 w3-xlarge w3-display-topright barex"><i
+                        class="far fa-times-circle"></i></span><br>
                 <div class="w3-col l3 m6">
                     <h3 class="w3-margin-top vert">Débutant</h3>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/html/index.html">Introduction</a>
@@ -1867,9 +1884,9 @@
 
         <nav id="nav_CSS" class="degradnoir w3-card-2 w3-hide-small navex">
             <div class="w3-row-padding w3-bar-block">
-            <span onclick="w3_close_nav('CSS')"
-                class="padding-button-close degrad3 hover-degrad2 w3-xlarge w3-display-topright barex"><i
-                    class="far fa-times-circle"></i></span><br>
+                <span onclick="w3_close_nav('CSS')"
+                    class="padding-button-close degrad3 hover-degrad2 w3-xlarge w3-display-topright barex"><i
+                        class="far fa-times-circle"></i></span><br>
                 <div class="w3-col l3 m6">
                     <h3 class="w3-margin-top vert">Débutant</h3>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre le CSS</a>
@@ -1923,9 +1940,9 @@
 
         <nav id="nav_PHP" class="degradnoir w3-card-2 w3-hide-small navex">
             <div class="w3-row-padding w3-bar-block">
-            <span onclick="w3_close_nav('PHP')"
-                class="padding-button-close degrad3 hover-degrad2 w3-xlarge w3-display-topright barex"><i
-                    class="far fa-times-circle"></i></span><br>
+                <span onclick="w3_close_nav('PHP')"
+                    class="padding-button-close degrad3 hover-degrad2 w3-xlarge w3-display-topright barex"><i
+                        class="far fa-times-circle"></i></span><br>
                 <div class="w3-col l3 m6">
                     <h3 class="w3-margin-top vert">Débutant</h3>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre le PHP/SQL</a>
@@ -1979,9 +1996,9 @@
 
         <nav id="nav_JavaScript" class="degradnoir w3-card-2 w3-hide-small navex">
             <div class="w3-row-padding w3-bar-block">
-            <span onclick="w3_close_nav('JavaScript')"
-                class="padding-button-close degrad3 hover-degrad2 w3-xlarge w3-display-topright barex"><i
-                    class="far fa-times-circle"></i></span><br>
+                <span onclick="w3_close_nav('JavaScript')"
+                    class="padding-button-close degrad3 hover-degrad2 w3-xlarge w3-display-topright barex"><i
+                        class="far fa-times-circle"></i></span><br>
                 <div class="w3-col l3 m6">
                     <h3 class="w3-margin-top vert">Débutant</h3>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre le JavaScript</a>
@@ -2059,28 +2076,33 @@
                 <div class="w3-clear nextprev">
                     <a id="btninsta" class=" boutons JP-padding-large testbg" href="/moi/tutos_v1/html/basic.html">
                         <i class="fas fa-reply"></i> Précédent</a>
-                    <a id="btnneonD" class="w3-right boutons JP-padding-large testbg" href="/moi/tutos_v1/html/attributs.html">
-                       suivant <i class="fas fa-reply reply2"></i></a>
+                    <a id="btnneonD" class="w3-right boutons JP-padding-large testbg"
+                        href="/moi/tutos_v1/html/attributs.html">
+                        suivant <i class="fas fa-reply reply2"></i></a>
                 </div>
 
                 <div class="w3-panel w3-info intro">
-                    <p>Nous l'avons vue un <strong>element</strong> HTML se compose généralement de balises dites <i>ouvrantes</i> de début et <i>fermantes</i> de fin,<br>
-                        le contenu étant inséré entre les deux:<br><strong>&lt;</strong>NomDeBalise<strong>&gt;</strong> contenu <strong>&lt;/</strong>NomDeBalise<strong>&gt;</strong></p>
-                        <div class="degrad-Vertical">
-                            <div class="w3-code2 sqlHigh notranslate w3-card-2">
-                                <strong>&lt;p&gt;</strong> Mon premier paragraphe. <strong>&lt;/p&gt;</strong>
-                            </div>
+                    <p>Nous l'avons vue un <strong>element</strong> HTML se compose généralement de balises dites
+                        <i>ouvrantes</i> de début et <i>fermantes</i> de fin,<br>
+                        le contenu étant inséré entre les deux:<br><strong>&lt;</strong>NomDeBalise<strong>&gt;</strong>
+                        contenu <strong>&lt;/</strong>NomDeBalise<strong>&gt;</strong></p>
+                    <div class="degrad-Vertical">
+                        <div class="w3-code2 sqlHigh notranslate w3-card-2">
+                            <strong>&lt;p&gt;</strong> Mon premier paragraphe. <strong>&lt;/p&gt;</strong>
                         </div>
+                    </div>
                 </div>
                 <div class=" w3-panel2 w3-info intro">
-                    <p>Les <i>éléments <strong>sans</strong> contenu</i> sont appelés <i>éléments <strong>vides</strong></i>.<br>Les éléments vides n'ont pas de balise de fin, comme l'élément 
+                    <p>Les <i>éléments <strong>sans</strong> contenu</i> sont appelés <i>éléments
+                            <strong>vides</strong></i>.<br>Les éléments vides n'ont pas de balise de fin, comme
+                        l'élément
                         <strong>&lt;br&gt;</strong> (qui indique un saut de ligne)</p>
-                        <div class="degrad-Vertical">
-                            <div class="w3-code3 sqlHigh notranslate w3-card-2">
-                                &lt;p&gt; Saut de <strong>&lt;br&gt;</strong> ligne. &lt;/p&gt;
-                            </div>
+                    <div class="degrad-Vertical">
+                        <div class="w3-code3 sqlHigh notranslate w3-card-2">
+                            &lt;p&gt; Saut de <strong>&lt;br&gt;</strong> ligne. &lt;/p&gt;
                         </div>
-                        <p>En HTML un saut de lingne équivaut à <strong>un espace</strong>.</p>
+                    </div>
+                    <p>En HTML un saut de lingne équivaut à <strong>un espace</strong>.</p>
                 </div>
 
                 <div id="separ2"></div>
@@ -2088,23 +2110,33 @@
                 <p>
                     <strong>&lt;html&gt;</strong> l'élément <strong>racine</strong> de la <i>page web</i><br>
                     <strong>&lt;head&gt;</strong> contient des <i>méta-informations</i> sur le document<br>
-                    <span style="font-size: 12px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Les <strong>méta-informations</strong> sont invisible à l'utilisateur</span><br>
+                    <span
+                        style="font-size: 12px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Les
+                        <strong>méta-informations</strong> sont invisible à l'utilisateur</span><br>
                     <strong>&lt;body&gt;</strong> contient <i>le contenu</i> de la page <strong>visible</strong><br>
-                    <span style="font-size: 12px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mais pas toujours tel que les <i>scripts</i> par exemple</span><br>
-                    </p>
+                    <span
+                        style="font-size: 12px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mais
+                        pas toujours tel que les <i>scripts</i> par exemple</span><br>
+                </p>
                 <h2>l'<span class="txtdegrad1">imbriquation</span> d'éléments:</h2>
-                <p>Les éléments HTML peuvent être <strong>imbriqués</strong><br>(les éléments peuvent contenir des éléments O_o...)<br><br>
-                    Tous les documents HTML sont constitués d'éléments HTML imbriqués.<br> L'élément <i>&lt;html&gt;</i> définit la <strong>totalitée</strong> du document.<br>
-                    Entre son balisage de début et de fin se trouve l'élément <i>&lt;body&gt;</i>.<br>Ce derrnier définit le corps du document (<strong>visible</strong> par l'utilisateur).<br>
+                <p>Les éléments HTML peuvent être <strong>imbriqués</strong><br>(les éléments peuvent contenir des
+                    éléments O_o...)<br><br>
+                    Tous les documents HTML sont constitués d'éléments HTML imbriqués.<br> L'élément <i>&lt;html&gt;</i>
+                    définit la <strong>totalitée</strong> du document.<br>
+                    Entre son balisage de début et de fin se trouve l'élément <i>&lt;body&gt;</i>.<br>Ce derrnier
+                    définit le corps du document (<strong>visible</strong> par l'utilisateur).<br>
                     À l'intérieur se trouve d'autres éléments.</p>
                 <div class="jp-example jp-card-ex">
                     <h3>Déjà vu</h3>
-                    <p class="codepen" data-height="324" data-theme-id="38865" data-default-tab="html" data-user="PsychoActiF" data-slug-hash="YzXZRBP" style="height: 333px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Exemple 1">
+                    <p class="codepen" data-height="324" data-theme-id="38865" data-default-tab="html"
+                        data-user="PsychoActiF" data-slug-hash="YzXZRBP"
+                        style="height: 333px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+                        data-pen-title="Exemple 1">
                         <span>Voir le code <a href="https://codepen.io/PsychoActiF/pen/YzXZRBP">
-                        Exemple 1</a> de Psycho@ctiF (<a href="https://codepen.io/PsychoActiF">@PsychoActiF</a>)
-                        on <a href="https://codepen.io">CodePen</a>.</span>
-                      </p>
-                      <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                                Exemple 1</a> de Psycho@ctiF (<a href="https://codepen.io/PsychoActiF">@PsychoActiF</a>)
+                            on <a href="https://codepen.io">CodePen</a>.</span>
+                    </p>
+                    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
                     <a class="w3-btn w3-button degrad1 hover-degrad1" href="https://codepen.io/PsychoActiF/full/YzXZRBP"
                         target="_blank">Résultat <i class="far fa-share-square"></i></a>
                 </div>
@@ -2119,12 +2151,14 @@
                         &lt;/html&gt;
                     </div>
                 </div>
-                <p>Ne comptez <strong>jamais</strong> sur cette métode car cela peut produire <i>des résultats inattendus</i> et / ou <i>des erreurs</i>.</p>
+                <p>Ne comptez <strong>jamais</strong> sur cette métode car cela peut produire <i>des résultats
+                        inattendus</i> et / ou <i>des erreurs</i>.</p>
                 <div id="separ1"></div>
                 <div class="w3-clear nextprev">
                     <a id="btninsta" class=" boutons JP-padding-large testbg" href="/moi/tutos_v1/html/basic.html">
                         <i class="fas fa-reply"></i> Précédent</a>
-                    <a id="btnneonD" class="w3-right boutons JP-padding-large testbg" href="/moi/tutos_v1/html/attributs.html">
+                    <a id="btnneonD" class="w3-right boutons JP-padding-large testbg"
+                        href="/moi/tutos_v1/html/attributs.html">
                         suivant <i class="fas fa-reply reply2"></i></a>
                 </div>
             </div>
@@ -2132,8 +2166,8 @@
         <div style="padding: 0 24px;">
             <div id="separ3"></div>
             <div id='pub' style='overflow:hidden;'>
-            <!-- Emplacenrt pour redirection-->
-            <img id='pubin' src="../../public/img/W3.png">
+                <!-- Emplacenrt pour redirection-->
+                <img id='pubin' src="../../public/img/W3.png">
             </div>
             <div id="separ3"></div>
         </div>
@@ -2272,18 +2306,21 @@
                 <div id="separ2"></div>
                 <div class="w3-center w3-small w3-opacity">
                     <p class="w3-medium">
-                        Le site Psycholesbonstutos est ici pour l'apprentissage de langages de programmation de développement
+                        Le site Psycholesbonstutos est ici pour l'apprentissage de langages de programmation de
+                        développement
                         web.
-                        Sans aucune prétention, j'aimerais vous partager mon savoir dans ce domaine principalement sur l'HTML,
+                        Sans aucune prétention, j'aimerais vous partager mon savoir dans ce domaine principalement sur
+                        l'HTML,
                         le CSS,
-                        le PHP et le JavaScript, afin de vous guider dans leurs apprentissage.<br><br>En utilisant ce site, vous
+                        le PHP et le JavaScript, afin de vous guider dans leurs apprentissage.<br><br>En utilisant ce
+                        site, vous
                         acceptez que mon
                         four soit en panne et que je ne puisse vous offrir de cookies.<br><br>
                         <a href="https://www.w3schools.com/" target="_blank" class="JP-hover-text-degrad2"
                             style="text-decoration:none">w3</a> |
                         <a href="https://jplemonias.github.io/moi/" target="_top" class="JP-hover-text-degrad"
                             style="text-decoration:none">Moi</a><br><br>Merci, Pe@cE.</p>
-                            <i class="fas fa-peace"></i>
+                    <i class="fas fa-peace"></i>
                 </div>
             </div>
         </div>
