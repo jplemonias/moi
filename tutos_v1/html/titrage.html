@@ -2,7 +2,7 @@
 <html lang="fr-FR">
 
 <head>
-    <title>Les attributs</title>
+    <title>Le titrage</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Keywords"
@@ -1418,11 +1418,6 @@
             margin: 24px -16px 24px 0px;
             border-radius: 15px 0 0 15px;
         }
-        .jp-example2 {
-            padding: 8px 20px;
-            margin: 24px 0px 24px -16px;
-            border-radius: 0 15px 15px 0;
-        }
         .w3-example {
             padding: 8px 20px;
             margin: 24px -16px 24px 0px;
@@ -1433,7 +1428,22 @@
         .w3-warning {
             border-left: none;
         }
-
+        .jp-onglet_g_faf {
+    margin-left: -32px;
+    margin-right: -16px;
+    padding: 16px 32px;
+    border-radius: 0 20px 20px 0;
+    background: linear-gradient(135deg, #04c4b4, #d400ff);
+    color: black;
+}
+        .jp-onglet_d_faf {
+    margin-left: 6px !important;
+    padding: 16px 32px;
+    border-radius: 20px 0 0 20px;
+    background: linear-gradient(135deg, #d400ff, #04c4b4);
+    color: black;
+}
+        }
         .w3-panel {
             margin-top: 24px;
             margin-bottom: 24px;
@@ -1444,13 +1454,12 @@
             background: linear-gradient(135deg, #04c4b4, #d400ff);
             color: black;
         }
-
         .w3-panel2 {
             margin-top: 24px;
             margin-bottom: 24px;
             margin-left: 32px !important;
             margin-right: -16px !important;
-    padding: 16px 32px 16px 16px;
+            padding: 16px 32px;
             border-radius: 20px 0 0 20px;
             background: linear-gradient(135deg, #d400ff, #04c4b4);
             color: black;
@@ -1653,6 +1662,9 @@
         }
 
         @media only screen and (max-device-width: 480px) {
+            .w3-code2 {
+                margin-left: -32px;
+            }
             #main {
                 padding: 24px
             }
@@ -1664,7 +1676,15 @@
             h2 {
                 font-size: 25px;
             }
-
+            .jp-onglet_d_faf {
+                margin-right: -40px!important;
+            }
+            .jp-onglet_g_faf {
+                margin-left: -40px!important;
+            }
+            .jp-example {
+                padding: 8px 16px;
+            }
             #ulexemple{
                 padding: 0px!important;
                 list-style: none!important;
@@ -1821,6 +1841,7 @@
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/html/basic.html">Balises de baaaase</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/html/elements.html">L'élément</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/html/attributs.html">Les attributs</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/html/titrage.html">Le titrage</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre l'html</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre l'html</a>
                     <a class="w3-bar-item w3-button padnone" href='/moi/tutos_v1/O_o'>apprendre l'html</a>
@@ -2052,142 +2073,72 @@
                     <!-- Emplacenrt pour redirection-->
                     <img id='pubin' src="../../public/img/W3.png">
                 </div>
-                <h1>Les <span class="txtdegrad1">attributs</span></h1>
+                <h1>Le <span class="txtdegrad1">titrage</span></h1>
                 <div class="w3-clear nextprev">
-                    <a class="w3-left w3-btn degrad1 hover-degrad1" href="/moi/tutos_v1/html/elements.html"><i
+                    <a class="w3-left w3-btn degrad1 hover-degrad1" href="/moi/tutos_v1/html/attributs.html"><i
                             class="fas fa-reply"></i> Précédent</a>
-                    <a class="w3-right w3-btn degrad2 hover-degrad2" href="/moi/tutos_v1/html/titrage.html">Suivant <i
+                    <a class="w3-right w3-btn degrad2 hover-degrad2" href="/moi/tutos_v1/O_o">Suivant <i
                             class="fas fa-reply reply2"></i></a>
                 </div>
 
-                <div class=" w3-panel2 w3-info intro">
-                    <p>Les attributs fournissent des informations supplémentaires sur les éléments.
-                        Toujours spécifiés dans la balise ouvrante<br>
-                        Tous les éléments peuvent avoir des attributs<br>
-                        ils se présentent généralement sous cette forme: </p>
-                        <div class="degrad-Vertical">
-                            <div class="w3-code3 sqlHigh notranslate w3-card-2">
-                                NomDeLattridut<strong>&#61;&#34;</strong>SaValeur<strong>&#34;</strong>
-                            </div>
+                <div class="w3-row-padding">
+                    <div class="w3-half">
+                        <div class="jp-onglet_g_faf w3-info intro">
+                            <p class="codepen" data-height="404" data-theme-id="38865" data-default-tab="html" data-user="PsychoActiF" data-slug-hash="VwLMJwp" style="height: 404px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Titrage">
+                                <span>See the Pen <a href="https://codepen.io/PsychoActiF/pen/VwLMJwp">
+                                Titrage</a> by Psycho@ctiF (<a href="https://codepen.io/PsychoActiF">@PsychoActiF</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
                         </div>
-                        <p style="font-size: 12px;">Parfois même nécessaire comme pour une image.<br>
-                            Pour comprendre certaines obligation de renseignement d'attribut voir &#34;L'attribut src&#34; si-dessous.<br></p>
+                    </div>
+
+                    <div class="w3-half">
+                        <div class=" jp-onglet_d_faf w3-info intro">
+                            <p class="codepen" data-height="404" data-theme-id="38865" data-default-tab="result" data-user="PsychoActiF" data-slug-hash="VwLMJwp" style="height: 404px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Titrage">
+                                <span>See the Pen <a href="https://codepen.io/PsychoActiF/pen/VwLMJwp">
+                                Titrage</a> by Psycho@ctiF (<a href="https://codepen.io/PsychoActiF">@PsychoActiF</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                              </p>
+                              <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+                    </div>
                 </div>
 
                 <div id="separ2"></div>
-                <h2>Attribuer un <span class="txtdegrad1">chemin </span><span style="font-size: 15px;">src</span></h2>
-                
-                <p>Le navigateur doit savoir où reccuperer une image pour l'afficher<br>
-                    C'est pourquoi il faut nécéssairement ajouter un attribut src à la balise ouvrante d'une image.</p>
-                    <div class="degrad-Vertical">
-                        <div class="w3-code sqlHigh notranslate w3-card-2">
-                            &lt;img <strong>src&#61;&#34;Le/Chemin/DeLimage.pnj&#34;</strong>&gt;
-                        </div>
-                    </div>
-                    <h2>Attribuer un <span class="txtdegrad1">text alternatif </span><span style="font-size: 15px;">alt</span></h2>
-                    
-                    <p>Il est recommendé d'ajouter l'attribut alt a une image.<br>
-                        ce sera le texte affiché en cas d'erreur de renvoit ver celle-ci.
-                    </p>
-                    <div class="degrad-Vertical">
-                        <div class="w3-code sqlHigh notranslate w3-card-2">
-                            &lt;img src&#61;&#34;..&#34;<strong> alt&#61;&#34;Un dessin&#34;</strong>&gt;
-                        </div>
-                    </div>
-                    <div class=" w3-panel w3-info intro">
-                    <p>La valeur peut être lue par les lecteurs d'écran.<br>Par exemple une personne malvoyante peut «entendre» la déscription dans l'attribut.</p>
-                    </div>
-                    <h2>Attribuer un <span class="txtdegrad1">titre </span><span style="font-size: 15px;">title</span></h2>
-                    
-                    <p>Il est aussi recommendé de l'ajouter à une image.<br>
-                        <span style="font-size: 12px;">Ansi qu'à d'autres types d'élémens</span><br>
-                        Ce texte sera affiché si l'utilisateur pointe l'élément titré.
-                    </p>
-                    <div class="degrad-Vertical">
-                        <div class="w3-code sqlHigh notranslate w3-card-2">
-                            &lt;img src&#61;&#34;..&#34; alt&#61;&#34;..&#34;<strong> title&#61;&#34;Mon dessin&#34;</strong>&gt;
-                        </div>
-                    </div>
-                    <div class=" w3-panel2 w3-info intro">
-                    <p>Cette valeur est nottament utile dans les liens.<br>Elle peut faciliter la navigation pour l'utilisater.</p>
-                    <div class="degrad-Vertical">
-                    <div class="w3-code2 sqlHigh notranslate w3-card-2">
-                        &lt;p title&#61;&#34;<strong>Titre I</strong>&#34;&gt;&lt;/p&gt;<br>
-                        &lt;p title&#61;&#34;<strong>Titre II</strong>&#34;&gt;&lt;/p&gt;
-                    </div>
-                    </div>
-                    <p>Ou comme vous pouvez le voir au dessus,<br>apporter un titrage différént à des parégraphes.</p>
-                    </div>
-                    <h2>Attribuer un <span class="txtdegrad1">référencement </span><span style="font-size: 15px;">href</span></h2>
-                    
-                    <p>L'utilité d'un lien en soit est de pouvoir faire un revoit vers une autre page web par exemple<br>
-                        Comme pour une image il faut indiquer au navigateur où renvoyer l'utilisateur.</p>
-                        <div class="degrad-Vertical">
-                            <div class="w3-code sqlHigh notranslate w3-card-2">
-                                &lt;a <strong>href&#61;&#34;Le/Renvoit/SurPage.html&#34;</strong>&gt;&lt;/a&gt;
-                            </div>
-                        </div>
-                        <h2>Attribuer une <span class="txtdegrad1">hauteur</span> / <span class="txtdegrad2">largeur</span></h2>
-                        
-                        <p>height / width<br>La taille des élément peuvent y être référencé<br>
-                            Comme des attribut de style.</p>
-                            <div class="degrad-Vertical">
-                                <div class="w3-code sqlHigh notranslate w3-card-2">
-                                    &lt;img <strong>height&#61;&#34;100px&#34; width&#61;&#34;100px&#34;</strong>&gt;<br>
-                                    &lt;a href&#61;&#34;..&#34; <strong>style&#61;&#34;color: black&#34;</strong>&gt;&lt;/a&gt;
-                                </div>
-                            </div>
-                            <div class=" w3-panel w3-info intro" style="padding: 5px 10px 0px 24px;">
-                            <p class="margnone" style="float:right;">Mais ce-ci est plus une histoire de style &#128526;
-                                <a href="/moi/tutos_v1/O_o" class="w3-button degrad2 hover-degrad2">Tutos CSS</a>.</p>
-                            </div>
-                            <h2>Attribuer une <span class="txtdegrad1">langue</span> un <span class="txtdegrad2">dialecte</span></h2>
-                            
-                            <p>lang<br>Il est important de le faire dans la balise html,<br>
-                                nottament pour les applications d'accessibilité et les moteurs de recherche.</p>
-                                <html lang="fr=FR">
-                                <div class="degrad-Vertical">
-                                    <div class="w3-code sqlHigh notranslate w3-card-2">
-                                        &lt;html <strong>lang&#61;&#34;fr&#45;FR&#34;</strong>&gt;<br>
-                                        &lt;/html&gt;
-                                    </div>
-                                </div>
-                                <p>Les deux premières lettres spécifient la langue (en).<br>S'il y a un dialecte, ajoutez deux lettres supplémentaires (EN).</p>
-                                <div class="jp-example jp-card-ex">
-                                    <h3>Suggestions d'utilisation</h3>
-                                    <p>Prennez l'abitude de declarer vos attribut en minuscules.<br>Car les doccuments de type XHTML l'exige quant à eux.<br><br>
-                                    En HTML:5 il n'est pas nécessaire de certir de guillemets mais<br>encore une fois il est recommendé de s'y tenir de le faire</p>
-                                    <div class="degrad-Vertical" style="margin-left: -4px;">
-                                    <div class="w3-code2 sqlHigh notranslate w3-card-2">
-                                        &lt;p title&#61;&#34;<strong>Titre I</strong>&#34;&gt;&lt;/p&gt;<br>
-                                        &lt;p title&#61;&#34;<strong>Titre II</strong>&#34;&gt;&lt;/p&gt;
-                                    </div>
-                                    </div>
-                                    <p>guillemets ou apostrophe?<br>Dans certaines situations, lorsque la valeur d'attribut elle-même contient des guillemets, il est nécessaire d'utiliser des apostrophes</p>
-                                    <div class="degrad-Vertical" style="margin-bottom: 15px;margin-left: -4px;">
-                                    <div class="w3-code2 sqlHigh notranslate w3-card-2">
-                                        &lt;p title&#61;<strong>&apos;</strong> Un exemple normal <strong>&apos;</strong>&gt;&lt;/p&gt;<br>
-                                        &lt;p title&#61;<strong>&#34;</strong> Un exemple normal <strong>&#34;</strong>&gt;&lt;/p&gt;<br>
-                                        &lt;p title&#61;<strong>&apos;</strong> Un <strong>&#34;</strong>avec<strong>&#34;</strong> importance <strong>&apos;</strong>&gt;&lt;/p&gt;
-                                    </div>
-                                    </div>
-                                </div>
-                            
-                <div class="jp-example2 jp-card-exG">
-                    <h3>Resumons</h3>
-                    <p>Nimporte quel élement HTML peut avoir des attributs<br>
-                        L'attribut src indique le chemin d'accés à une image<br>
-                        L'attribut alt fournit du texte pour les lecteurs d'écran<br>
-                        L'attribut title fournit des informations supplémentaires en info-bulle<br>
-                        L'attribut href fournit des informations d'adresse pour les liens<br>
-                        Les attributs width et height déffinissent taille de l'élement<br>
-                        Mieux vaut toujours écrir en minuscules le noms des attributs</p>
+                <h2>l'imbriquation d'éléments:</h2>
+                <p>Les éléments HTML peuvent être <strong>imbriqués</strong><br>(les éléments peuvent contenir des éléments O_o...).<br><br>
+                    Tous les documents HTML sont constitués d'éléments HTML imbriqués.<br> L'élément <i>&lt;html&gt;</i> définit la <strong>totalitée</strong> du document.<br>
+                    Entre son balisage de début et de fin se trouve l'élément <i>&lt;body&gt;</i>.<br>Ce derrnier définit le corps du document (<strong>visible</strong> par l'utilisateur).<br>
+                    À l'intérieur se trouve d'autres éléments.</p>
+                <div class="jp-example jp-card-ex">
+                    <h3>Déjà vu</h3>
+                    <p class="codepen" data-height="324" data-theme-id="38865" data-default-tab="html" data-user="PsychoActiF" data-slug-hash="YzXZRBP" style="height: 333px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Exemple 1">
+                        <span>Voir le code <a href="https://codepen.io/PsychoActiF/pen/YzXZRBP">
+                        Exemple 1</a> de Psycho@ctiF (<a href="https://codepen.io/PsychoActiF">@PsychoActiF</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                      </p>
+                      <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                    <a class="w3-btn w3-button degrad1 hover-degrad1" href="https://codepen.io/PsychoActiF/full/YzXZRBP"
+                        target="_blank">Résultat <i class="far fa-share-square"></i></a>
                 </div>
+                <p>La balise de fermeture est <i>considérée comme </i><strong>facultative</strong>.</p>
+                <div class="degrad-Vertical">
+                    <div class="w3-code sqlHigh notranslate w3-card-2">
+                        &lt;html&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&lt;body&gt;<br><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Paragraphe 1<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Paragraphe 2<br><br>
+                        &nbsp;&nbsp;&nbsp;&lt;/body&gt;<br>
+                        &lt;/html&gt;
+                    </div>
+                </div>
+                <p>Ne comptez <strong>jamais</strong> sur cette métode car cela peut produire <i>des résultats inattendus</i> et / ou <i>des erreurs</i>.</p>
                 <div id="separ2"></div>
                 <div class="w3-clear nextprev">
-                    <a class="w3-left w3-btn degrad1 hover-degrad1" href="/moi/tutos_v1/html/elements.html"><i
+                    <a class="w3-left w3-btn degrad1 hover-degrad1" href="/moi/tutos_v1/html/attributs.html"><i
                             class="fas fa-reply"></i> Précédent</a>
-                    <a class="w3-right w3-btn degrad2 hover-degrad2" href="/moi/tutos_v1/html/titrage.html">Suivant <i
+                    <a class="w3-right w3-btn degrad2 hover-degrad2" href="/moi/tutos_v1/O_o">Suivant <i
                             class="fas fa-reply reply2"></i></a>
                 </div>
             </div>
