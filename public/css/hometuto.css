@@ -225,10 +225,13 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 }
 .w3-code,.w3-codespan{font-family:Consolas,"courier new";font-size:16px}
 
-.w3-code{border-radius: 6px 0 0 6px;width:auto;background-color:#fff;color: #000;padding:8px 12px;margin-left:4px;word-wrap:break-word}
+.w3-code{border-radius: 6px 0 0 6px;width:auto;padding:8px 12px;margin-left:4px;word-wrap:break-word;
+    background: linear-gradient(135deg,#04c4b444,#d400ff44);background-color:#fff;color: rgb(0, 0, 0);}
+
 .w3-code3{border-radius: 6px 0 0 6px;width:auto;padding:8px 12px;margin-left:4px;margin-right: -32px;word-wrap:break-word;
     background: linear-gradient(135deg,#04c4b444,#d400ff44);background-color:#fff;color: rgb(0, 0, 0);}
-.w3-code2{border-radius: 0 6px 6px 0;width:auto;padding:8px 12px;margin-right:4px;margin-left: -16px;word-wrap:break-word;
+
+    .w3-code2{border-radius: 0 6px 6px 0;width:auto;padding:8px 12px;margin-right:4px;margin-left: -16px;word-wrap:break-word;
     background: linear-gradient(135deg,#04c4b444,#d400ff44);background-color:#fff;color: rgb(0, 0, 0);}
 
 .w3-codespan{color:crimson;background-color:#f1f1f1;padding-left:4px;padding-right:4px;font-size:110%}
