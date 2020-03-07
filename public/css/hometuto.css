@@ -739,5 +739,5 @@ td,a:hover {
     text-decoration: underline;
     -webkit-text-decoration: underline;
     -moz-text-decoration: underline;
-    border-bottom: 1px solid darkgray;
+    border-bottom: 1px solid decoratindarkgray;
 }
