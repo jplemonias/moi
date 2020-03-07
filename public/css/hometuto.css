@@ -725,5 +725,19 @@ td,a:hover {
 
 
 /*exemple css selecteurs */
-.soul1t {text-decoration: solid}
-.soul2t {text-decoration:double}
+.soul1t {
+    text-decoration: underline;
+    -webkit-text-decoration: underline;
+    -moz-text-decoration: underline;}
+.soul2t {
+    text-decoration: underline;
+    -webkit-text-decoration: underline;
+    -moz-text-decoration: underline;
+    border-bottom: 1px solid #000;
+}
+.soul3t {
+    text-decoration: underline;
+    -webkit-text-decoration: underline;
+    -moz-text-decoration: underline;
+    border-bottom: 1px solid darkgray;
+}
