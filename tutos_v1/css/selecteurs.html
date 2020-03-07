@@ -2,7 +2,7 @@
 <html lang="fr-FR">
 
 <head>
-    <title>CSS introduction</title>
+    <title>Les sélecteurs</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Keywords"
@@ -2098,24 +2098,27 @@
                 </div>
 
                 <div id="separ2"></div>
-                <h2>le CSS ou le super hero de l'HTML</h2>
-                <p>En effet l'HTML n'a JAMAIS été destiné à contenir des balises pour formater une page Web!<br><br>
-                    Il a été concut pour décrire le contenu d'une page Web<br><br>
-                    
-                    Lorsque des balises comme &lt;font&gt; et des attributs de couleur ont été ajoutés à la spécification de l'HTML 3.2,<br>
-                    cela a commencé à être le cauchemar pour les développeurs Web.<br><br>
-                    Le développement de gros sites Web, où des polices et des informations de couleur étaient ajoutées à chaque page, rendaient le dévelopement long et couteux.<br><br>
-                    Pour résoudre ce problème, le Consortium World Wide Web (W3C) a créé le CSS<br>
-                    qui a permis de supprimer la mise en forme du style de la page HTML!</p>
-                    <h2>La syntax du CSS</h2>
-                    <p>pour pouvoir deffinir un style à un élément il nous faut deux choses:<br>
-                        Un selecteur et un bloc de déclaration.<br><br>
-                        Le sélecteur pointe vers l'élément HTML que vous souhaitez styliser.</p>
+                <h2>Sélectionner un élément</h2>
+                <p>sélectionne les éléments en fonction du nom de l'élément.<br>
+                    Par exemple ici l'élément * , comprenez sélecteur universel, soit TOUS les types d'élément<br>
+                    va donc déffinir la police d'écritire de touuuuuuus les élément comme étant<br><br>grise d'une taille de 18 pixels et les textes seront en justifié.</p>
                     <div class="degrad-Vertical">
                         <div class="w3-code sqlHigh notranslate w3-card-2">
-                            <strong>h1 </strong>&#123;color&#58;grey&#59;size&#58;33px&#59;&#125;
+                            &#42; &#123;<br>&nbsp;&nbsp;&nbsp;color&#58;grey&#59;<br>&nbsp;&nbsp;&nbsp;size&#58;18px&#59;<br>&nbsp;&nbsp;&nbsp;text-align&#58;justify<br>&#125;
                         </div>
                     </div>
+                    <div class=" w3-panel w3-info intro" style="padding: 5px 10px 0px 32px;">
+                        <p class="margnone" style="float:right;">NB: la derrnière déclaration n'a pas de point point-virgule,<br>ne loubliez pas si vous rajoutez des déclarations par la suite &#128526;.</p>
+                    </div>
+                    <h2>Sélectionner un identifiant</h2>
+                    <p>L'id d'un élément étant unique dans une page,<br>le sélecteur est utilisé pour ne modifier q'un seul élément!<br>
+                    En placant un hash devant la valeur saisie en id<br>on peut alors modifier l'aspect de cet élement.<br><br>
+                    <span style="font-size: 13px;">Sous réserve qu'un élément dans l'html ai comme valeur d'id intro sa police sera alors noir.</span></p>
+                        <div class="degrad-Vertical">
+                            <div class="w3-code sqlHigh notranslate w3-card-2">
+                                &#35;intro &#123;color&#58;black&#125;
+                            </div>
+                        </div>
                     <p>Chaque déclaration comprend un nom de propriété suivit de deux points puis la valeur attribuée.</p>
                     <div class="degrad-Vertical">
                         <div class="w3-code sqlHigh notranslate w3-card-2">
