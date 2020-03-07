@@ -52,17 +52,19 @@ legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}t
 }
 
     .fas.fa-peace{
+        margin-top: 18px;
         font-size: 33px;
         background: linear-gradient(135deg,#04c4b4,#d400ff);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 
-footer{margin-top: 129px;
-border-radius: 30px 30px 0 0;
-color: #fff!important;
-background-color: #000000!important;
-background: linear-gradient(135deg,#04c4b444,#d400ff44);
+#footer{
+    padding: 20px 16px 16px 16px;
+    border-radius: 30px 30px 0 0;
+    color: #fff!important;
+    background-color: #000000!important;
+    background: linear-gradient(135deg,#04c4b444,#d400ff44);
 }
 .padnone{
     padding: 0!important;
@@ -233,7 +235,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-code3{border-radius: 6px 0 0 6px;width:auto;padding:8px 12px;margin-left:4px;margin-right: -32px;word-wrap:break-word;
     background: linear-gradient(135deg,#04c4b444,#d400ff44);background-color:#fff;color: rgb(0, 0, 0);}
 
-    .w3-code2{border-radius: 0 6px 6px 0;width:auto;padding:8px 12px;margin-right:4px;margin-left: -16px;word-wrap:break-word;
+    .w3-code2{border-radius: 0 6px 6px 0;width:auto;padding:8px 12px 8px 20px;margin-right:4px;margin-left: -16px;word-wrap:break-word;
     background: linear-gradient(135deg,#04c4b444,#d400ff44);background-color:#fff;color: rgb(0, 0, 0);}
 
 .w3-codespan{color:crimson;background-color:#f1f1f1;padding-left:4px;padding-right:4px;font-size:110%}
@@ -558,7 +560,13 @@ td,a:hover {
     -webkit-text-decoration-color: #04c4b4!important;
     text-decoration-color: #04c4b4!important;
 }
+.btnneonDfoot {
+    border-radius: 20px 20px 0 20px!important;
+}
 
+.btninstafoot {
+    border-radius: 20px 20px 20px 0!important;
+}
 #btninsta:hover{
     border-radius: 0 20px 20px 20px;
     box-shadow: 3px 3px 10px #d400ff83,
