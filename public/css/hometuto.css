@@ -722,3 +722,8 @@ td,a:hover {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+
+/*exemple css selecteurs */
+.soul1t {text-decoration: solid}
+.soul2t {text-decoration:double}

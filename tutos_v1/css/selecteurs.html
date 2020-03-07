@@ -2122,30 +2122,35 @@
                         <h2>Avec <span class="txtdegrad1">la classe</span> <span style="font-size: 22px;">&#128526;</span></h2>
                         <p>Identique a la selection de l'id, mais pour récuppérer une classe<br>
                             il faut placer un point à la place du hash.<br><br>
-                            <span style="font-size: 13px;">Tous les éléments aillant comme valeur de classe exmpl seront en italique.</span></p>
+                            <span style="font-size: 13px;">Tous les éléments aillant comme valeur de classe ital seront en italique.</span></p>
                             <div class="degrad-Vertical">
                                 <div class="w3-code sqlHigh notranslate w3-card-2">
-                                    .exmpl &#123;font&#45;style&#58;italic&#125;
+                                    .iatl &#123;font&#45;style&#58;italic&#125;
                                 </div>
                             </div>
+                            <h2>Sélection <span class="txtdegrad1">spécifique</span></h2>
                     <p>Vous pouvez sélectionner que seuls des éléments spécifiques doivent être affectés par une classe.<br><br>
-                        <span style="font-size: 13px;">Le cas présent les en-tetes h2 ayant la classe exmple seront souligné dedeux trais,<br>tandisque les autres éléments ayant la même classe ne seront pas affécté.</span></p>
+                        <span style="font-size: 13px;">Le cas présent les en-tetes h2 ayant la classe soul seront souligné de deux trais,<br>tandisque les autres éléments ayant la même classe ne seront pas affécté.</span></p>
                         <div class="degrad-Vertical">
                             <div class="w3-code sqlHigh notranslate w3-card-2">
-                                h2.exmpl &#123;text&#45;decoration&#45;style&#58;double&#125;
+                                h1.soul &#123;text&#45;decoration&#45;style&#58;double&#125;
                             </div>
                         </div>
-                        
                     <div class="jp-example2 jp-card-exG">
                         <h3>Exemple</h3>
                         <div class="degrad-Vertical">
                             <div class="w3-code sqlHigh notranslate w3-card-2">
-                                &#42; &#123;<br>&nbsp;&nbsp;&nbsp;color&#58;grey&#59;<br>&nbsp;&nbsp;&nbsp;size&#58;18px&#59;<br>&nbsp;&nbsp;&nbsp;text-align&#58;justify<br>&#125;
+                                css/<br>
+                                .soul &#123;text&#45;decoration&#45;style&#58;solid&#125;<br>
+                                h1.soul &#123;text&#45;decoration&#45;style&#58;double&#125;<br><br>
+                                html/<br>
+                                &lt;h1 class&#61;&#34;soul&#34;&gt;<span class="soul2t">maison</span>&lt;/h1&gt;<br>
+                                &lt;h2 class&#61;&#34;soul&#34;&gt;<span class="soul1t">appartements</span>&lt;/h2&gt;<br>
+                                &lt;h3 class&#61;&#34;soul&#34;&gt;<span class="soul1t">studio</span>&lt;/h3&gt;<br>
                             </div>
                         </div>
-                        <p>Ici le selecteur &#42; cible TOUS les éléments<br><br>
-                            Nous définissons donc la police d'écritire grise<br>
-                            sa taille sera de 18 pixels et les textes seront en justifié.</p>
+                        <p>
+                            <span class="soul1t">ici seul maison sera souligné de deux trais continu</span>.</p>
                     </div>
                     <div id="separ1"></div>
                     <div class="w3-clear nextprev">
