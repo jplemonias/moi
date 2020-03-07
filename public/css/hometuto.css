@@ -730,14 +730,7 @@ td,a:hover {
     -webkit-text-decoration: underline;
     -moz-text-decoration: underline;}
 .soul2t {
-    text-decoration: underline;
-    -webkit-text-decoration: underline;
-    -moz-text-decoration: underline;
-    border-bottom: 1px solid #000;
-}
-.soul3t {
-    text-decoration: underline;
-    -webkit-text-decoration: underline;
-    -moz-text-decoration: underline;
-    border-bottom: 1px solid decoratindarkgray;
+    text-decoration: double underline;
+    -webkit-text-decoration: double underline;
+    -moz-text-decoration: double underline;
 }
