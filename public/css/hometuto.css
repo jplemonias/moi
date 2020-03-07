@@ -82,13 +82,31 @@ legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}t
 .padding-button-close{
     padding: 10px 16px!important;
 }
-.bordDgris {
+.w3-button:hover{
+    color:#000!important;
+    background-color:#ccc!important;}
+
+#bt-nav_g {
+    width: 100%;
+    display: block;
+    padding: 0 16px;
+    text-align: left;
+    border: none;
+    white-space: normal;
+    float: none;
+    outline: 0;
+    margin: 0!important;
+    text-decoration:none;
     box-shadow: none;
 }
-.bordDgris:hover{
+
+#bt-nav_g:hover{
+    color:#000!important;
+    background-color:#ccc!important;
+    width: calc(100% - 15px)!important;
     margin-left: 15px!important;
     border-radius: 5px 0 0 5px;
-    box-shadow: inset -40px 0px 20px 0px rgba(75, 75, 75, 0.699);
+    box-shadow: inset -28px 0px 20px 0px rgba(75, 75, 75, 0.699);
 }
 
 .w3schools-logo:hover .tcode {
@@ -97,7 +115,7 @@ legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}t
 #leftmenuinner::-webkit-scrollbar {
     display: none;
 }
-#barre-1 {position:fixed; bottom:0; height:5px; width:100%; background:#222; border:2px solid #000;}
+#barre-1 {z-index: 666; position:fixed; bottom:0; height:5px; width:100%; background:#222; border:2px solid #000;}
 #barre-1 .progression {background: linear-gradient(0.25turn,#d400ff,#04c4b4); width:0%; height:100%; transition:width 0.3s;}
 .degradnoir {
     background: linear-gradient(135deg,#04c4b444,#d400ff44);
@@ -278,7 +296,6 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-padding-32{padding-top:32px!important;padding-bottom:32px!important}.w3-padding-48{padding-top:48px!important;padding-bottom:48px!important}
 .w3-padding-64{padding-top:64px!important;padding-bottom:64px!important}
 .w3-left{float:left!important}.w3-right{float:right!important}
-.w3-button:hover{color:#000!important;background-color:#ccc!important}
 .w3-transparent,.w3-hover-none:hover{background-color:transparent!important}
 .w3-hover-none:hover{box-shadow:none!important}
 /* Colors */
@@ -538,6 +555,44 @@ td,a:hover {
 .w3-border-dark-grey,.w3-hover-border-dark-grey:hover,.w3-border-dark-gray,.w3-hover-border-dark-gray:hover{border-color:#616161!important}
 .w3-border-pale-red,.w3-hover-border-pale-red:hover{border-color:#ffe7e7!important}.w3-border-pale-green,.w3-hover-border-pale-green:hover{border-color:#e7ffe7!important}
 .w3-border-pale-yellow,.w3-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.w3-border-pale-blue,.w3-hover-border-pale-blue:hover{border-color:#e7ffff!important}
+
+#pub a {
+    text-decoration: none;
+}
+
+#pub:hover .psycho-logo{
+    background: linear-gradient(-45deg, #04c4b4, #d400ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#pub:hover .psycho-logo .dotcom.tcode{
+    background: transparent;
+}
+
+.psycho-logo2 {
+    text-decoration: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 25px;
+    letter-spacing: 3px;
+    color: #555555;
+}
+.psycho-logo {
+    height: 100%;
+    font-family: 'Permanent Marker', fontawesome;
+    text-decoration: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 37px;
+    letter-spacing: 3px;
+    color: #555555;
+    margin-top: 6px;
+    display: block;
+}
+
 
 #btninsta{
     border-radius: 0 20px 20px 20px;
