@@ -2,7 +2,7 @@
 <html lang="fr-FR">
 
 <head>
-    <title>Commenter un CSS</title>
+    <title>mettree de la couleur</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Keywords"
@@ -1549,10 +1549,8 @@
             margin-bottom: 1em;
         }
 
-        .w3-code{
+        .w3-code {
             margin-right: -16px;
-        }
-        .w3-code,.w3-code4 {
             font-size: 15px;
         }
 
@@ -2074,49 +2072,59 @@
                     </a>
                 </div>
 
-                <h1>Les <span class="txtdegrad1">commentaires</span> CSS</h1>
+                <h1>Les <span class="txtdegrad1">couleurs</span></h1>
                 <div id="separ1"></div>
                 <div class="w3-clear nextprev">
-                    <a id="btninsta" class=" boutons JP-padding-large testbg" href="/moi/tutos_v1/css/selecteurs.html">
+                    <a id="btninsta" class=" boutons JP-padding-large testbg" href="/moi/tutos_v1/css/liercss.html">
                         <i class="fas fa-reply"></i> Précédent</a>
                     <a id="btnneonD" class="w3-right boutons JP-padding-large testbg"
                         href="/moi/tutos_v1/O_o">
                         suivant <i class="fas fa-reply reply2"></i></a>
                 </div>
-                <h2>Comment <span class="txtdegrad1">commenter</span> ?</h2>
-                <p>
-                    Un commentaire CSS commence par slash suivit du signe multiplicateur<br>
-                    à l'inverse  sa fermeture se fait par le signe multiplicateur suivit d'un slash:</p>
-                <div class="degrad-Vertical">
-                    <div class="w3-code sqlHigh notranslate w3-card-2">
-                        <strong>&#47;&#42;</strong> Un commentaire CSS <strong>&#42;&#47;</strong>
-                    </div>
+
+                <div class="w3-panel w3-info intro">
+                    <p>On peut déclarer une couleur par son nom de couleur prédéfinis<br>
+                        Ou de valeurs RVB, HEX, HSL, RGBA, HSLA.<br>
+                        Le CSS / l'HTML prennent en charge: <br>140 noms de couleurs standard consultables <a href="/moi/tutos_v1/O_o">&lt;IcI&gt;</a></p>
                 </div>
-                <p>Les commentaires sont utilisés pour expliquer le code.<br>
-                    Cela est très utile pour des modifications futures,<br>
-                    ou pour aider en cas d'écriture du code par plusieurs développeurs.<br><br>
-                    Ils sont ignorés par les navigateurs, il est donc intéressant si l'on veut,<br>
-                    par exemple, ne pas utiliser un style à un élément mais le garder dans un coin.<br><br></p>
-                    <h2>Son <span class="txtdegrad1">utilisaton</span></h2>
-                    <span style="font-size: 13px;">Il peut s'écrire n'importe où dans le CSS.</span></p>
+
+                <div id="separ2"></div>
+                <h2>Dans un <span class="txtdegrad1">arrière-plan</span></h2>
+                <p>Avec l'attribut background-color vous pouvez definir une couleur d'arrière-plan.</p>
                     <div class="degrad-Vertical">
                         <div class="w3-code sqlHigh notranslate w3-card-2">
-                            <strong>&#47;&#42;Exemples de commentaires&#42;&#47;</strong><br>&#42; &#123;<br><strong>&#47;&#42;Isolons la taille de la police&#42;&#47;</strong><br>&nbsp;&nbsp;&nbsp;color&#58;grey&#59;<br>&nbsp;<strong>&#47;&#42;size&#58;18px&#59;&#42;&#47;</strong><br>&nbsp;&nbsp;&nbsp;text-align&#58;justify<br>&#125;
+                            body &#123;<br>&nbsp;&nbsp;&nbsp;background-color&#58;lightgray<br>&#125;<br><br>
+                            h1 &#123;<br>&nbsp;&nbsp;&nbsp;background-color&#58;black<br>&#125;<br><br>
+                            p &#123;<br>&nbsp;&nbsp;&nbsp;background-color&#58;white<br>&#125;
                         </div>
                     </div>
-                    <p style="font-size: 13px;">Et peut contenir plusieurs lignes.</p>
-                        <div class="degrad-Vertical">
-                            <div class="w3-code sqlHigh notranslate w3-card-2">
-                                &#47;&#42; <strong>Comme vous<br>pouver le<br>voir ici </strong>&#42;&#47;
-                            </div>
+                    <h2>Colorer la <span class="txtdegrad1">police</span></h2>
+                    <p>L'attribut color vous pouvez definir une couleur à la police d'écriture.</p>
+                    <div class="degrad-Vertical">
+                        <div class="w3-code sqlHigh notranslate w3-card-2">
+                            h1 &#123;<br>&nbsp;&nbsp;&nbsp;color&#58;lightgray<br>&#125;<br><br>
+                            p &#123;<br>&nbsp;&nbsp;&nbsp;color&#58;red<br>&#125;
                         </div>
+                    </div>
+                    <h2>Colorer des <span class="txtdegrad1">bordures</span></h2>
+                    <p>L'attribut border permet de definir une couleur à des bordures.</p>
+                    <div class="degrad-Vertical">
+                        <div class="w3-code sqlHigh notranslate w3-card-2">
+                            &#35;violet &#123;<br>&nbsp;&nbsp;&nbsp;border&#58;5px solid purple<br>&#125;
+                        </div>
+                    </div>
+                    <a class="w3-btn w3-button degrad1 hover-degrad1" href="https://codepen.io/PsychoActiF/full/gOpXNov"
+                        target="_blank">Résultat <i class="far fa-share-square"></i></a>
+                    <div class=" w3-panel w3-info intro" style="padding: 5px 10px 5px 32px;">
+                        <p class="margnone" style="float:right;">NB: la derrnière déclaration n'a pas de point-virgule,<br>ne l'oubliez pas si vous rajoutez des déclarations par la suite.</p>
+                    </div>
                     
                     <div id="separ1"></div>
                     <div class="w3-clear nextprev">
-                        <a id="btninsta" class=" boutons JP-padding-large testbg" href="/moi/tutos_v1/css/selecteurs.html">
+                        <a id="btninsta" class=" boutons JP-padding-large testbg" href="/moi/tutos_v1/css/commenter.html">
                             <i class="fas fa-reply"></i> Précédent</a>
                         <a id="btnneonD" class="w3-right boutons JP-padding-large testbg"
-                            href="/moi/tutos_v1/css/O_o.html">
+                            href="/moi/tutos_v1/O_o">
                             suivant <i class="fas fa-reply reply2"></i></a>
                     </div>
             </div>
@@ -2282,7 +2290,7 @@
                         <a href="https://jplemonias.github.io/moi/" target="_top" class="JP-hover-text-degrad"
                             style="text-decoration:none">Moi</a><br><br>Merci, Pe@cE.</p>
                             <div class="w3-clear nextprev">
-                                <a id="btninsta" class="w3-left boutons JP-padding-large btninstafoot" href="/moi/tutos_v1/css/selecteurs.html">
+                                <a id="btninsta" class="w3-left boutons JP-padding-large btninstafoot" href="/moi/tutos_v1/css/commenter.html">
                                     <i class="fas fa-reply"></i></a>
                                 <i class="fas fa-peace"></i>
                                 <a id="btnneonD" class="w3-right boutons JP-padding-large btnneonDfoot" href="/moi/tutos_v1/O_o">
