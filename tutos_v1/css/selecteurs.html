@@ -2106,13 +2106,13 @@
                 <h2>Sélectionner <span class="txtdegrad1">un élément</span></h2>
                 <p>sélectionne les éléments en fonction du nom de l'élément.<br>
                     Par exemple ici l'élément * , comprenez sélecteur universel, soit TOUS les types d'élément<br>
-                    va donc définir la police d'écriture de touuuuuuus les éléments comme étant<br><br>grise, d'une taille de 18 pixels, et dont les textes seront en justifié.</p>
+                    va donc définir la police d'écriture de touuuuuuus les éléments comme étant:<br><br>grise, d'une taille de 18 pixels, et dont les textes seront en justifié.</p>
                     <div class="degrad-Vertical">
                         <div class="w3-code sqlHigh notranslate w3-card-2">
                             &#42; &#123;<br>&nbsp;&nbsp;&nbsp;color&#58;grey&#59;<br>&nbsp;&nbsp;&nbsp;size&#58;18px&#59;<br>&nbsp;&nbsp;&nbsp;text-align&#58;justify<br>&#125;
                         </div>
                     </div>
-                    <div class=" w3-panel w3-info intro" style="padding: 5px 10px 0px 32px;">
+                    <div class=" w3-panel w3-info intro" style="padding: 5px 10px 5px 32px;">
                         <p class="margnone" style="float:right;">NB: la derrnière déclaration n'a pas de point-virgule,<br>ne l'oubliez pas si vous rajoutez des déclarations par la suite.</p>
                     </div>
                     <h2>Sélectionner <span class="txtdegrad1">un identifiant</span></h2>
@@ -2134,21 +2134,14 @@
                                 </div>
                             </div>
                             <h2>Sélection <span class="txtdegrad1">spécifique</span></h2>
-                    <p>Vous pouvez sélectionner que seuls des éléments spécifiques doivent être affectés par une classe.<br><br>
+                    <p>Vous pouvez sélectionner qu'un seuls des éléments spécifique affecté par une classe commune à d'autres.<br><br>
                         <span style="font-size: 13px;">Le cas présent les en-tetes h2 ayant la classe soul seront souligné de deux trais,<br>
                             tandisque les autres éléments ayant la même classe ne seront pas affécté.</span></p>
                         <div class="degrad-Vertical">
                             <div class="w3-code sqlHigh notranslate w3-card-2">
-                                h1.soul &#123;text&#45;decoration&#45;style&#58;double&#125;
-                            </div>
-                        </div>
-                    <div class="jp-example2 jp-card-exG">
-                        <h3>Exemple</h3>
-                        <div class="degrad-Vertical">
-                            <div class="w3-code sqlHigh notranslate w3-card-2">
                                 css/<br>
                                 .soul &#123;text&#45;decoration&#45;style&#58;underline&#125;<br>
-                                h1.soul &#123;text&#45;decoration&#45;style&#58;double underline&#125;<br><br>
+                                h1.soul &#123;text&#45;decoration&#58;double underline&#125;<br><br>
                                 html/<br>
                                 &lt;h1 class&#61;&#34;soul&#34;&gt;<span class="soul2t">maison</span>&lt;/h1&gt;<br>
                                 &lt;h2 class&#61;&#34;soul&#34;&gt;<span class="soul1t">appartements</span>&lt;/h2&gt;<br>
@@ -2157,7 +2150,26 @@
                         </div>
                         <p>
                             ici seul <span class="soul2t">maison</span> sera souligné de deux trais continu.</p>
+                    <h2>Sélection de <span class="txtdegrad1">regroupement</span></h2>
+            <p>cela permet de regrouper des styles comuns à des éléments diférents<br>
+                concrètement l'exemple ci dessus pourait être écrit ainci:<p>
+                    <div class="degrad-Vertical">
+                        <div class="w3-code sqlHigh notranslate w3-card-2">
+                            h1 &#123;<strong>text&#45;decoration&#58;underline</strong>&#125;<br>
+                            h2 &#123;<strong>text&#45;decoration&#58;underline</strong>&#125;<br>
+                            h3 &#123;<strong>text&#45;decoration&#58;underline</strong>&#59;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;color&#58;blue&#125;<br><br>
+                            <strong>h1&#44;h2&#44;h3</strong> &#123;text&#45;decoration&#58;underline&#125;<br>
+                            h3 &#123;color&#58;blue&#125;<br>
+                        </div>
                     </div>
+                    <div class="jp-example jp-card-ex">
+                        <h3><stan style="font-size: 20px;">&#40;づ￣ &sup3;￣)づ</stan> resumons</h3>
+                        <p></p>
+                        <a class="w3-btn w3-button degrad1 hover-degrad1" href="https://codepen.io/PsychoActiF/full/YzXZRBP"
+                            target="_blank">Résultat <i class="far fa-share-square"></i></a>
+                    </div>
+                    
                     <div id="separ1"></div>
                     <div class="w3-clear nextprev">
                         <a id="btninsta" class=" boutons JP-padding-large testbg" href="/moi/tutos_v1/css/index.html">
