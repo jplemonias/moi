@@ -1549,8 +1549,7 @@
             margin-bottom: 1em;
         }
 
-        .w3-code {
-            margin-right: -16px;
+        .w3-code,.w3-code4 {
             font-size: 15px;
         }
 
@@ -2141,12 +2140,53 @@
                                     &lt;p <strong>style&#61;&#34;color:grey&#34;</strong>&gt;<br>
                                 </div>
                             </div>
+                                    <h2>Derrnier <span class="txtdegrad1">lut</span> premier <span class="txtdegrad1">utilisé</span></h2>
+                                    <p>Si certaines propriétés ont été définies pour le même sélecteur dans différentes feuilles de style,<br>
+                                    la valeur affichée ce sera celle la dernière feuille de style lue.</p>
+
+                                    <div class="w3-row-padding">
+                                        <div class="w3-half">
+                                            <div class="jp-onglet_g_faf  intro">
+                                                <div class="degrad-Vertical">
+                                                    <div class="w3-code sqlHigh notranslate w3-card-2">
+                                                        &lt;!DOCTYPE html&gt;<br>
+                                                        &lt;html lang&#61;&#34;fr&#45;FR&#34;&gt;<br>
+                                                        &nbsp;&nbsp;&nbsp;&lt;head&gt;<br>
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;link&gt;<br>
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&lt;style&gt;</strong><br>
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&lt;/style&gt;</strong><br>
+                                                        &nbsp;&nbsp;&nbsp;&lt;/head&gt;<br><br>
+                                                        &nbsp;&nbsp;&nbsp;&lt;body&gt;.../
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <div class="w3-half">
+                                            <div class=" jp-onglet_d_faf w3- intro">
+                                                <div class="degrad-Vertical">
+                                                    <div class="w3-code4 sqlHigh notranslate w3-card-2">
+                                                        &lt;!DOCTYPE html&gt;<br>
+                                                        &lt;html lang&#61;&#34;fr&#45;FR&#34;&gt;<br>
+                                                        &nbsp;&nbsp;&nbsp;&lt;head&gt;<br>
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;style&gt;<br>
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/style&gt;<br>
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&lt;link&gt;</strong><br>
+                                                        &nbsp;&nbsp;&nbsp;&lt;/head&gt;<br><br>
+                                                        &nbsp;&nbsp;&nbsp;&lt;body&gt;.../
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                     <div class="jp-example jp-card-ex">
                         <h3>On peut styliser en:</h3>
                         <ul>
                             <li>important une feuille de style externe</li>
                             <li>entre des balise de style dans l'en-tête de l'HTML</li>
                             <li>Inline soit en ligne en ciblant que l'élémément à modifier</li>
+                            <li>l'élément de style utilisé en cas de mutltiples déclarations est le dernier lut par le navigateur web</li>
                             </ul>
                     </div>
                     
