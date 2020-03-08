@@ -2083,42 +2083,62 @@
                 </div>
 
                 <div class="w3-panel2 w3-info intro">
-                    <p>La page suivante l'est elle.</p>
+                    <p>
+                        Pour qu'un navigateur web puisse formater un document html comme on le souhaiterait,<br>il faut lui lier un référencement, comme pour le élément img ou a en html.</p>
                 </div>
                 <div class="w3-panel w3-info intro">
+                    <p>il y a trois façon de le faire</p>
                     <ol>
-                        <li><strong>1</strong><br>
-                            <span style="font-size: 13px;">.</span></li>
-                        <li><strong>2</strong><br>
-                            <span style="font-size: 13px;">.</span></li>
-                        <li><strong>3</strong><br>
-                            <span style="font-size: 13px;">.</span></i>
+                        <li><strong>En externe.</strong><br>
+                            <span style="font-size: 13px;">par une feuille de style référencée dans le head de l'HTML</span></li>
+                        <li><strong>En interne à l'HTML</strong><br>
+                            <span style="font-size: 13px;">en déclarant les styles dans le head du HTML</span></li>
+                        <li><strong>En interne des éléments</strong><br>
+                            <span style="font-size: 13px;">Le éléments peuvent contenir une déclaration de style ne interne.</span></i>
                         </li>
                     </ol>
                 </div>
 
                 <div id="separ2"></div>
-                <h2>Par <span class="txtdegrad1">un</span></h2>
-                <p>.</p>
+                <h2>Les feuilees des style <span class="txtdegrad1">externes</span></h2>
+                <p>Avec une seul feuille de style externe, vous pouvez attribuer l'apparence entière d'un site.<br>
+                    <span style="font-size: 13px;">En la liant dans l'enntête de l'HTML comme ceci:</span></p>
+                <div class="degrad-Vertical">
+                    <div class="w3-code sqlHigh notranslate w3-card-2">
+                        &lt;!DOCTYPE html&gt;<br>
+                        &lt;html lang&#61;&#34;fr&#45;FR&#34;&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&lt;head&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&lt;link href&#61;&#34;Le/Chemin/DuDoc.CSS&#34;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rel&#61;&#34;stylesheet&#34; type&#61;&#34;text/css&#34;&gt;</strong><br>
+                        &nbsp;&nbsp;&nbsp;&lt;/head&gt;<br><br>
+                        &nbsp;&nbsp;&nbsp;&lt;body&gt;.../
+                    </div>
+                </div>
+                    <h2>Styliser en <span class="txtdegrad1">interne</span></h2>
+                    <p>En déclarant les styles dans l’en-tête du document HTTML,<br>
+                        il est possible d'attribuer des styles ponctuels à un site web,<br>
+                    <span style="font-size: 13px;">ou considérez cette balise comme une feuille de style, à part entière,<br>si il n' y a pas de balise liant à une feuille externe.</span></p>
                     <div class="degrad-Vertical">
                         <div class="w3-code sqlHigh notranslate w3-card-2">
-                            <strong>&#35;</strong>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang&#61;&#34;fr&#45;FR&#34;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&lt;head&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;link&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&lt;style&gt;</strong><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&lt;/style&gt;</strong><br>
+                            &nbsp;&nbsp;&nbsp;&lt;/head&gt;<br><br>
+                            &nbsp;&nbsp;&nbsp;&lt;body&gt;.../
                         </div>
                     </div>
-                    <h2>Par <span class="txtdegrad1">deux</span></h2>
-                    <p>.<br><br>
-                    <span style="font-size: 13px;">.</span></p>
-                        <div class="degrad-Vertical">
-                            <div class="w3-code sqlHigh notranslate w3-card-2">
-                                <strong>&#35;</strong>
-                            </div>
-                        </div>
-                        <h2>Par <span class="txtdegrad1">3</span></h2>
+                        <h2>Stiliser un <span class="txtdegrad1">élément</span></h2>
                         <p>.<br><br>
                         <span style="font-size: 13px;">.</span></p>
                             <div class="degrad-Vertical">
                                 <div class="w3-code sqlHigh notranslate w3-card-2">
-                                    <strong>&#35;</strong>
+                                    &lt;p <strong>style&#61;&#34;color:grey&#34;</strong>&gt;<br>
                                 </div>
                             </div>
                             <div class=" w3-panel w3-info intro" style="padding: 5px 10px 5px 32px;">
@@ -2135,10 +2155,6 @@
                             <li><strong>3</strong><br>
                                 <span style="font-size: 13px;">.</span></li>
                             </ul>
-                        <a class="w3-btn w3-button degrad1 hover-degrad1" href="#"
-                            target="_blank">Résultat <i class="far fa-share-square"></i></a>
-                            <a class="w3-btn w3-button degrad1 hover-degrad1" href="#"
-                                target="_blank">CSS <i class="far fa-share-square"></i></a>
                     </div>
                     
                     <div id="separ1"></div>
