@@ -2,7 +2,7 @@
 <html lang="fr-FR">
 
 <head>
-    <title>Le titrage</title>
+    <title>Les sélecteurs</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Keywords"
@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../../public/css/hometuto.css">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Source Code Pro' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d70a89f18c.js" crossorigin="anonymous"></script>
     <script type="application/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
 
@@ -159,8 +160,8 @@
 
         #sidenav a:hover,
         #sidenav a:focus {
-            color: #000 !important;
-            background: linear-gradient(-45deg, #04c4b4, #d400ff);
+            color: #000000;
+            background-color: #cccccc;
         }
 
         #sidenav a.active {
@@ -597,7 +598,7 @@
 
             #sidenav a {
                 padding: 3px 2px 3px 24px;
-                font-size: 16px;
+                font-size: 17px
             }
 
             #leftmenuinner {
@@ -607,6 +608,7 @@
                 position: relative;
                 width: auto;
                 padding-top: 0;
+                /*background-color: #f1f1f1;*/
             }
 
             #leftmenuinnerinner {
@@ -624,6 +626,15 @@
         }
 
         @media screen and (max-width:600px) {
+
+            #exhead,
+            #exbody,
+            #exdiv,
+            #extitle,
+            #exh,
+            #exp {
+                width: 100% !important;
+            }
 
             .w3-example,
             .w3-note,
@@ -668,7 +679,7 @@
             font-size: 2em;
         }
 
-        .fa-home:before {
+        .fa-home-:before {
             content: '\e800';
         }
 
@@ -1186,10 +1197,6 @@
         }
 
         @media only screen and (max-device-width: 480px) {
-            .w3-panel {
-                margin-left: -24px;
-                padding: 8px 32px;
-            }
 
             .w3-code,
             .w3-codespan,
@@ -1397,7 +1404,8 @@
         }
 
         #footer {
-            /*padding: 32px;
+            /*margin-top: 25px;
+            padding: 32px;
             border-radius: 20px 20px 0 0;*/
         }
 
@@ -1417,8 +1425,8 @@
 
         .jp-example {
             padding: 8px 20px;
-            margin: 24px -16px 24px 0px;
-            border-radius: 15px 0 0 15px;
+            margin: 24px 0px 24px -16px;
+            border-radius: 0 15px 15px 0;
         }
 
         .jp-example2 {
@@ -1426,7 +1434,6 @@
             margin: 24px 0px 24px -16px;
             border-radius: 0 15px 15px 0;
         }
-
         .w3-example {
             padding: 8px 20px;
             margin: 24px -16px 24px 0px;
@@ -1438,39 +1445,22 @@
             border-left: none;
         }
 
-        .jp-onglet_g_faf {
-            margin-left: -32px;
-            margin-right: -10px;
-            padding: 16px 32px;
-            border-radius: 0 20px 20px 0;
-            background: linear-gradient(135deg, #04c4b4, #d400ff);
-            color: black;
-        }
-
-        .jp-onglet_d_faf {
-            margin-left: 6px !important;
-            padding: 16px 32px;
-            border-radius: 20px 0 0 20px;
-            background: linear-gradient(135deg, #d400ff, #04c4b4);
-            color: black;
-        }
-
         .w3-panel {
             margin-top: 24px;
             margin-bottom: 24px;
             margin-left: -32px;
             margin-right: 32px;
             padding: 16px 32px;
-            border-radius: 0 20px 20px 0;
             background: linear-gradient(135deg, #04c4b4, #d400ff);
+            border-radius: 0 20px 20px 0;
             color: black;
         }
 
         .w3-panel2 {
             margin-top: 24px;
             margin-bottom: 24px;
-            margin-left: 32px !important;
-            margin-right: -16px !important;
+            margin-left: 32px;
+            margin-right: -16px;
             padding: 16px 32px;
             border-radius: 20px 0 0 20px;
             background: linear-gradient(135deg, #d400ff, #04c4b4);
@@ -1636,8 +1626,6 @@
                 background: linear-gradient(90deg, #04c4b4, #d400ff);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
-                padding: 0 0 0 0 !important;
-                font-size: 18px;
             }
         }
 
@@ -1651,7 +1639,6 @@
             -webkit-text-fill-color: transparent;
             margin-left: 10px;
         }
-
 
         @media screen and (min-width: 769px) {
 
@@ -1678,11 +1665,8 @@
             }
         }
 
-        @media only screen and (max-device-width: 480px) {
-            .w3-code2 {
-                margin-left: -32px;
-            }
 
+        @media only screen and (max-device-width: 480px) {
             #main {
                 padding: 24px
             }
@@ -1693,14 +1677,6 @@
 
             h2 {
                 font-size: 25px;
-            }
-
-            .jp-onglet_d_faf {
-                margin-right: -40px !important;
-            }
-
-            .jp-onglet_g_faf {
-                margin-left: -40px !important;
             }
 
             .jp-example {
@@ -1722,15 +1698,10 @@
                 margin: 24px -24px;
             }
 
-            .w3-panel2 {
-                margin-right: -24px !important;
-                margin-left: 1px;
-            }
-
             .w3-panel,
             .w3-info {
                 margin-left: -24px;
-                margin-right: 1px;
+                margin-right: -24px;
             }
 
         }
@@ -1868,10 +1839,9 @@
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/html/elements.html">L'élément</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/html/attributs.html">Les attributs</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/html/titrage.html">Le titrage</a>
-                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre l'html</a>
-                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre l'html</a>
                     <a class="w3-bar-item w3-button padnone" href='/moi/tutos_v1/O_o'>apprendre l'html</a>
                     <a class="w3-bar-item w3-button padnone" href='/moi/tutos_v1/O_o'>apprendre l'html</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre l'html</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre l'html</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre l'html</a>
                 </div>
@@ -2078,7 +2048,6 @@
             </div>
             <br class="hidesm">
         </nav>
-
         <nav class="w3-sidebar w3-collapse gris w3-card-2" id="mySidenav">
             <div class="w3-bar-block">
                 <div class="w3-container">
@@ -2103,123 +2072,152 @@
                     </a>
                 </div>
 
-                <h1>Le <span class="txtdegrad1">titrage</span></h1>
+                <h1>Les <span class="txtdegrad1">sélecteurs</span></h1>
                 <div id="separ1"></div>
                 <div class="w3-clear nextprev">
-                    <a id="btninsta" class=" boutons JP-padding-large testbg" href="/moi/tutos_v1/html/attributs.html">
+                    <a id="btninsta" class=" boutons JP-padding-large testbg" href="/moi/tutos_v1/css/selecteurs.html">
                         <i class="fas fa-reply"></i> Précédent</a>
-                    <a id="btnneonD" class="w3-right boutons JP-padding-large testbg" href="/moi/tutos_v1/O_o">
+                    <a id="btnneonD" class="w3-right boutons JP-padding-large testbg"
+                        href="/moi/tutos_v1/0_o">
                         suivant <i class="fas fa-reply reply2"></i></a>
                 </div>
 
-                <div class="w3-row-padding">
-                    <div class="w3-half">
-                        <div class="jp-onglet_g_faf w3-info intro">
-                            <p class="codepen" data-height="404" data-theme-id="38865" data-default-tab="html"
-                                data-user="PsychoActiF" data-slug-hash="VwLMJwp"
-                                style="height: 404px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
-                                data-pen-title="Titrage">
-                                <span>See the Pen <a href="https://codepen.io/PsychoActiF/pen/VwLMJwp">
-                                        Titrage</a> by Psycho@ctiF (<a
-                                        href="https://codepen.io/PsychoActiF">@PsychoActiF</a>)
-                                    on <a href="https://codepen.io">CodePen</a>.</span>
-                            </p>
-                            <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-                        </div>
-                    </div>
-
-                    <div class="w3-half">
-                        <div class=" jp-onglet_d_faf w3-info intro">
-                            <p class="codepen" data-height="404" data-theme-id="38865" data-default-tab="result"
-                                data-user="PsychoActiF" data-slug-hash="VwLMJwp"
-                                style="height: 404px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
-                                data-pen-title="Titrage">
-                                <span>See the Pen <a href="https://codepen.io/PsychoActiF/pen/VwLMJwp">
-                                        Titrage</a> by Psycho@ctiF (<a
-                                        href="https://codepen.io/PsychoActiF">@PsychoActiF</a>)
-                                    on <a href="https://codepen.io">CodePen</a>.</span>
-                            </p>
-                            <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-                        </div>
-                    </div>
+                <div class="w3-panel2 w3-info intro">
+                    <p>Ils sont utilisés pour sélectionner les éléments HTML que vous souhaitez styliser.<br>
+                    Ils peuvent êtres représentés en cinq catégories.</p>
+                </div>
+                <div class="w3-panel w3-info intro">
+                    <ol>
+                        <li>Les sélecteurs <strong>simples</strong><br>
+                            <span style="font-size: 13px;">sélectionner des éléments en fonction du nom, de l'id, de la classe</span></li>
+                        <li>Les sélecteurs <strong>combinateurs</strong><br>
+                            <span style="font-size: 13px;">sélectionner des éléments en fonction d'une relation spécifique entre eux</span></li>
+                        <li>Les sélecteurs de <strong>pseudo-classe</strong><br>
+                            <span style="font-size: 13px;">éléments de sélection basés sur un certain état</span></i>
+                        </li>
+                        <li>Les sélecteurs de <strong>pseudo-éléments</strong><br>
+                            <span style="font-size: 13px;">sélectionner et styliser une partie d'un élément</span></li>
+                        <li>Les sélecteurs <strong>d'attributs</strong><br>
+                            <span style="font-size: 13px;">sélectionner des éléments en fonction d'un attribut ou d'une valeur d'attribut</span></li>
+                    </ol>
                 </div>
 
                 <div id="separ2"></div>
-                <h2>l'<span class="txtdegrad1">importance</span> des titres</h2>
-                <p>Les moteurs de recherche utilisent les titres pour indexer la structure et le contenu de vos pages
-                    Web.<br>
-                    <span style="font-size: 12px;">au risque d'être redondant...<br><br></span>
-                    Elles sont définiess avec les balises allant de &lt;h1&gt; à &lt;h6&gt;.<br>
-                    &lt;h1&gt; étant de plus grande importance pour le document<br>et<br>&lt;h6&gt; définit une rubrique de
-                    moindre importance.</p>
-                <div class="degrad-Vertical">
-                    <div class="w3-code sqlHigh notranslate w3-card-2">
-                        &lt;h1&gt;Important&lt;/h1&gt;<br>
-                        &lt;h6&gt;Importance minime&lt;/h6&gt;
+                <h2>Sélectionner <span class="txtdegrad1">un élément</span></h2>
+                <p>sélectionne les éléments en fonction du nom de l'élément.<br>
+                    Par exemple ici l'élément * , comprenez sélecteur universel, soit TOUS les types d'élément<br>
+                    va donc définir la police d'écriture de touuuuuuus les éléments comme étant:<br><br>grise, d'une taille de 18 pixels, et dont les textes seront en justifié.</p>
+                    <div class="degrad-Vertical">
+                        <div class="w3-code sqlHigh notranslate w3-card-2">
+                            &#42; &#123;<br>&nbsp;&nbsp;&nbsp;color&#58;grey&#59;<br>&nbsp;&nbsp;&nbsp;size&#58;18px&#59;<br>&nbsp;&nbsp;&nbsp;text-align&#58;justify<br>&#125;
+                        </div>
                     </div>
-                </div>
-                <p>Les navigateurs ajoutent automatiquement une marge en haut et en bas d'un titre.<br>
-                    Il est important d'utiliser des en-têtes afin d'afficher une structure clair pour les
-                    utilisateurs.<br>
-                    Les en-têtes &lt;h1&gt; doivent être utilisées pour les en-têtes principales,<br>suivis des en-têtes
-                    &lt;h2&gt;, puis des &lt;h3&gt; moins importantes, etc..</p>
-                <h2>la<span class="txtdegrad1"> taille </span> des titres</h2>
-                <p>Chaque en-tête HTML a une taille par défaut.<br>Cependant, vous pouvez spécifier la taille de
-                    n'importe quelle en-tête avec l'attribut de style CSS, font-size.</p>
+                    <div class=" w3-panel w3-info intro" style="padding: 5px 10px 5px 32px;">
+                        <p class="margnone" style="float:right;">NB: la derrnière déclaration n'a pas de point-virgule,<br>ne l'oubliez pas si vous rajoutez des déclarations par la suite.</p>
+                    </div>
+                    <h2>Sélectionner <span class="txtdegrad1">un identifiant</span></h2>
+                    <p>L'id d'un élément étant unique dans une page,<br>le sélecteur est utilisé pour ne modifier qu'un seul élément!<br>
+                    En plaçant un hash devant la valeur saisie en id<br>on peut alors modifier l'aspect de cet élement.<br><br>
+                    <span style="font-size: 13px;">Sous réserve qu'un élément dans l'html ait comme valeur d'id intro, sa police sera alors noir.</span></p>
+                        <div class="degrad-Vertical">
+                            <div class="w3-code sqlHigh notranslate w3-card-2">
+                                <strong>&#35;</strong>intro &#123;color&#58;black&#125;
+                            </div>
+                        </div>
+                        <h2>Avec <span class="txtdegrad1">la classe</span> <span style="font-size: 22px;">&#128526;</span></h2>
+                        <p>Identique à la selection de l'id, mais pour récupérer une classe<br>
+                            il faut placer un point à la place du hash.<br><br>
+                            <span style="font-size: 13px;">Tous les éléments aylant comme valeur de classe soul seront souligné.</span></p>
+                            <div class="degrad-Vertical">
+                                <div class="w3-code sqlHigh notranslate w3-card-2">
+                                    <strong>.</strong>soul &#123;text&#45;decoration&#45;style&#58;underline&#125;
+                                </div>
+                            </div>
+                            <h2>Sélection <span class="txtdegrad1">spécifique</span></h2>
+                    <p>Vous pouvez sélectionner qu'un seuls des éléments spécifique affecté par une classe commune à d'autres.<br><br>
+                        <span style="font-size: 13px;">Le cas présent les en-tetes h2 ayant la classe soul seront souligné de deux trais,<br>
+                            tandisque les autres éléments ayant la même classe ne seront pas affécté.</span></p>
+                        <div class="degrad-Vertical">
+                            <div class="w3-code sqlHigh notranslate w3-card-2">
+                                css/<br>
+                                .soul &#123;text&#45;decoration&#45;style&#58;underline&#125;<br>
+                                <strong>h1.soul</strong> &#123;text&#45;decoration&#58;double underline&#125;<br><br>
+                                html/<br>
+                                &lt;h1 class&#61;&#34;soul&#34;&gt;maison&lt;/h1&gt;<br>
+                                &lt;h2 class&#61;&#34;soul&#34;&gt;appartements&lt;/h2&gt;<br>
+                                &lt;h3 class&#61;&#34;soul&#34;&gt;studio&lt;/h3&gt;<br>
+                            </div>
+                        </div>
+                        <p>
+                            ici seul <span class="soul2t">maison</span> sera souligné de deux trais continu <br>tandis qu'<span class="soul1t">appartements</span> et <span class="soul1t">studio</span> d'un seul.</p>
+                    <h2>Sélection de <span class="txtdegrad1">regroupement</span></h2>
+            <p>cela permet de regrouper des styles comuns à des éléments diférents<br>
+                concrètement l'exemple ci dessus pourait être écrit ainci:<p>
+                    <div class="degrad-Vertical">
+                        <div class="w3-code sqlHigh notranslate w3-card-2">
+                            h1 &#123;<strong>text&#45;decoration&#58;underline</strong>&#125;<br>
+                            h2 &#123;<strong>text&#45;decoration&#58;underline</strong>&#125;<br>
+                            h3 &#123;<strong>text&#45;decoration&#58;underline</strong>&#59;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;color&#58;purple&#125;<br><br>
+                            <strong>h1&#44;h2&#44;h3</strong> &#123;text&#45;decoration&#58;underline&#125;<br>
+                            h3 &#123;color&#58;purple&#125;<br>
+                        </div>
+                    </div>
+                    <h2>Sélection d'<span class="txtdegrad1">attributs</span></h2>
+            <p>Vous pouvez sélectionner par un attribut donné dans un balisage.<br>
+                <span style="font-size: 13px;">comme par exemple un titre commun,<br></p>
+                    <div class="degrad-Vertical">
+                        <div class="w3-code sqlHigh notranslate w3-card-2">
+                            <strong>&#91;</strong> title&#61;&#34;fin&#34; <strong>&#93;</strong> &#123;<br>&nbsp;&nbsp;&nbsp;&nbsp;color&#58;black<br>&#125;
+                        </div>
+                    </div>
+                    <h2>Sélection d'un <span class="txtdegrad1">pseudo-élément</span></h2>
+            <p>En sélectionant un pseudo-élément il est posible de  ne modiffier que certaines parie de l'élément ciblé.<br><br>
+                <span style="font-size: 13px;">le pseudo-élément ci-dessous permet de ne changer l'asspect que de la première ligne des paragraphes.<br></p>
+                    <div class="degrad-Vertical">
+                        <div class="w3-code sqlHigh notranslate w3-card-2">
+                            p <strong>&#58;&#58;first&#45;line</strong> &#123;font&#58;22px&#125;
+                        </div>
+                    </div>
+                    <h2>Sélection d'un <span class="txtdegrad1">pseudo-classe</span></h2>
+            <p>Cela permet de modiffier un élément ciblé sous la condition de la psedo-classe.<br>La pseudo-classe hover paermet de modifier le style au passage de la souris sur un élément<br><br>
+                <span style="font-size: 13px;">pour exemple les titres h1, h2 et h3 aurront une bordure noir sur le coté gauche.<br></p>
+                    <div class="degrad-Vertical">
+                        <div class="w3-code sqlHigh notranslate w3-card-2">
+                            h1<strong>&#58;hover</strong>&#44;h2<strong>&#58;hover</strong>&#44;h3<strong>&#58;hover</strong>&#123;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;border&#45;left&#58; solid black<br>&#125;
+                        </div>
+                    </div>
 
-                <h2>les<span class="txtdegrad1"> règles </span>horizontales</h2>
-                <p>La balise &lt;hr&gt; définit une coupure thématique dans une page HTML et<br>est le plus souvent
-                    affichée comme un trait horizontal.<br>
-                    Il marque une séparation, définit une modification.</p>
-                <div class="jp-example jp-card-ex">
-                    <h3>Exemple</h3>
-                    <p class="codepen" data-height="422" data-theme-id="38865" data-default-tab="html,result"
-                        data-user="PsychoActiF" data-slug-hash="PoqJrVX"
-                        style="height: 422px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
-                        data-pen-title="separateurs">
-                        <span>See the Pen <a href="https://codepen.io/PsychoActiF/pen/PoqJrVX">
-                                separateurs</a> by Psycho@ctiF (<a
-                                href="https://codepen.io/PsychoActiF">@PsychoActiF</a>)
-                            on <a href="https://codepen.io">CodePen</a>.</span>
-                    </p>
-                    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-                    <a class="w3-btn w3-button degrad1 hover-degrad1" href="https://codepen.io/PsychoActiF/full/YzXZRBP"
-                        target="_blank">Résultat <i class="far fa-share-square"></i></a>
-                </div>
-                <h2>Titrer le <span class="txtdegrad1">document</span></h2>
-                <p>Dans l'élément contenant les méta-données, il faut placer des balises &lt;title&gt;<br>
-                    Saisissez le titre a donner à votre page web.<br>
-                    <span style="font-size: 12px;">Comme l'exemple ci-dessous.</span></p>
-                <div class="degrad-Vertical">
-                    <div class="w3-code sqlHigh notranslate w3-card-2">
-                        &lt;!DOCTYPE html&gt;<br>
-                        &lt;html lang&#61;&#34;fr&#45;FR&#34;&gt;<br>
-                        &nbsp;&nbsp;&nbsp;&lt;head&gt;<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Mon Premier HTML&lt;/title&gt;<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;mata charset&#61;&#34;UTF&#45;8&#34;&gt;<br>
-                        &nbsp;&nbsp;&nbsp;&lt;/head&gt;<br><br>
-                        &nbsp;&nbsp;&nbsp;&lt;body&gt;.../
+                    <div class="jp-example jp-card-ex">
+                        <h3><stan style="font-size: 20px;">&#40;づ￣ &sup3;￣)づ</stan> resumons</h3>Une sélection:
+                        <ul>
+                            <li><strong>simples</strong><br>
+                                <span style="font-size: 13px;">permet de sélectionner en fonction d'un nom, d'un id d'une classe</span></li>
+                            <li><strong>combinatoire</strong><br>
+                                <span style="font-size: 13px;">permet de sélectionner des éléments afin de leur attribuer des styles comuns</span></li>
+                            <li>d'<strong>attributs</strong><br>
+                                <span style="font-size: 13px;">sélectionne des éléments en fonction d'un attribut ou d'une valeur d'attribut</span></li>
+                            <li>de <strong>pseudo-éléments</strong><br>
+                                <span style="font-size: 13px;">change l'asspect de parties précises d'un élément</span></li>
+                            <li>de <strong>pseudo-classe</strong><br>
+                                <span style="font-size: 13px;">permet de sélectionner certaine condition pour styliser comme souhaité l'élément lié</span></i>
+                            </li>
+                            </ul>
+                        <a class="w3-btn w3-button degrad1 hover-degrad1" href="https://codepen.io/PsychoActiF/full/XWbzPdM"
+                            target="_blank">Résultat <i class="far fa-share-square"></i></a>
+                            <a class="w3-btn w3-button degrad1 hover-degrad1" href="https://codepen.io/PsychoActiF/pen/XWbzPdM.css"
+                                target="_blank">CSS <i class="far fa-share-square"></i></a>
                     </div>
-                </div>
-                <p>Le nom de votre document sera notamment dans l'onglet de votre navigateur web.<br>
-                Sans oublier son utilité pour le moteur de recherche<br>
-                <span style="font-size: 12px;">D'autres méta-données sont aussi utiles à l'indexation des documents HTML.<br>
-                </span></p>
-                <div class="jp-example2 jp-card-exG">
-                    <h3>Resumons</h3>
-                    <p>Le titrage est important pour un bon référencement<br>
-                    Il facilite la lecture pour l'utilisateur<br>
-                    Ce qui définit l'importance d'une en-tête est l'article de la balise, pas son style.<br>
-                    Des règles horizontales matérialisent des changements de sujet<br>
-                    Un titrage du document est faisable voir même recommandé.</p>
-                </div>
-                <div id="separ1"></div>
-                <div class="w3-clear nextprev">
-                    <a id="btninsta" class=" boutons JP-padding-large testbg"
-                        href="/moi/tutos_v1/html/attributs.html"><i class="fas fa-reply"></i> Précédent</a>
-                    <a id="btnneonD" class="w3-right boutons JP-padding-large testbg" href="/moi/tutos_v1/O_o">suivant
-                        <i class="fas fa-reply reply2"></i></a>
-                </div>
+                    
+                    <div id="separ1"></div>
+                    <div class="w3-clear nextprev">
+                        <a id="btninsta" class=" boutons JP-padding-large testbg" href="/moi/tutos_v1/css/selecteurs.html">
+                            <i class="fas fa-reply"></i> Précédent</a>
+                        <a id="btnneonD" class="w3-right boutons JP-padding-large testbg"
+                            href="/moi/tutos_v1/css/O_o">
+                            suivant <i class="fas fa-reply reply2"></i></a>
+                    </div>
             </div>
         </div>
         <div id="separ3" style='margin-right: 45px;margin-left: 45px;'></div>
@@ -2236,12 +2234,12 @@
                 <div id="separ2"></div>
                 <div class="w3-row-padding w3-center w3-small" style="margin:0 -16px">
                     <div class="w3-col l3 m3 s12">
-                        <a class="w3-button degrad1 hover-degrad1 w3-block" href="/moi/tutos_v1/index.html"
-                            style="white-space:nowrap;text-decoration:none;margin-top:1px;margin-bottom:1px">ACCUEIL</a>
+                        <a class="w3-button degrad1 hover-degrad1 w3-block" href="/moi/tutos_v1/html/index.html"
+                            style="white-space:nowrap;text-decoration:none;margin-top:1px;margin-bottom:1px">HTML</a>
                     </div>
                     <div class="w3-col l3 m3 s12">
-                        <a class="w3-button degrad2 hover-degrad2 w3-block" href="/moi/tutos_v1/css/index.html"
-                            style="text-decoration:none;margin-top:1px;margin-bottom:1px">CSS</a>
+                        <a class="w3-button degrad2 hover-degrad2 w3-block" href="/moi/tutos_v1/index.html"
+                            style="text-decoration:none;margin-top:1px;margin-bottom:1px">ACCUEIL</a>
                     </div>
                     <div class="w3-col l3 m3 s12">
                         <a class="w3-button degrad1 hover-degrad1 w3-block" href="/moi/tutos_v1/O_o" target="_blank"
@@ -2252,6 +2250,7 @@
                             style="text-decoration:none;margin-top:1px;margin-bottom:1px">PHP/SQL</a>
                     </div>
                 </div>
+
                 
                 <!--
             <div class="degradnoir w3-padding w3-margin-bottom" id="err_form" style="display:none;position:relative">
@@ -2382,10 +2381,10 @@
                         <a href="https://jplemonias.github.io/moi/" target="_top" class="JP-hover-text-degrad"
                             style="text-decoration:none">Moi</a><br><br>Merci, Pe@cE.</p>
                             <div class="w3-clear nextprev">
-                                <a id="btninsta" class="w3-left boutons JP-padding-large btninstafoot" href="/moi/tutos_v1/html/attributs.html">
+                                <a id="btninsta" class="w3-left boutons JP-padding-large btninstafoot" href="/moi/tutos_v1/css/selecteurs.html">
                                     <i class="fas fa-reply"></i></a>
                                 <i class="fas fa-peace"></i>
-                                <a id="btnneonD" class="w3-right boutons JP-padding-large btnneonDfoot" href="/moi/tutos_v1/O_o">
+                                <a id="btnneonD" class="w3-right boutons JP-padding-large btnneonDfoot" href="/moi/tutos_v1/0_o">
                                     <i class="fas fa-reply reply2"></i></a>
                             </div>
                 </div>
