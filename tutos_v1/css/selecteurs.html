@@ -2121,16 +2121,16 @@
                     <span style="font-size: 13px;">Sous réserve qu'un élément dans l'html ait comme valeur d'id intro, sa police sera alors noir.</span></p>
                         <div class="degrad-Vertical">
                             <div class="w3-code sqlHigh notranslate w3-card-2">
-                                &#35;intro &#123;color&#58;black&#125;
+                                <strong>&#35;</strong>intro &#123;color&#58;black&#125;
                             </div>
                         </div>
                         <h2>Avec <span class="txtdegrad1">la classe</span> <span style="font-size: 22px;">&#128526;</span></h2>
                         <p>Identique à la selection de l'id, mais pour récupérer une classe<br>
                             il faut placer un point à la place du hash.<br><br>
-                            <span style="font-size: 13px;">Tous les éléments aylant comme valeur de classe ital seront en italique.</span></p>
+                            <span style="font-size: 13px;">Tous les éléments aylant comme valeur de classe soul seront souligné.</span></p>
                             <div class="degrad-Vertical">
                                 <div class="w3-code sqlHigh notranslate w3-card-2">
-                                    .ital &#123;font&#45;style&#58;italic&#125;
+                                    <strong>.</strong>soul &#123;text&#45;decoration&#45;style&#58;underline&#125;
                                 </div>
                             </div>
                             <h2>Sélection <span class="txtdegrad1">spécifique</span></h2>
@@ -2141,15 +2141,15 @@
                             <div class="w3-code sqlHigh notranslate w3-card-2">
                                 css/<br>
                                 .soul &#123;text&#45;decoration&#45;style&#58;underline&#125;<br>
-                                h1.soul &#123;text&#45;decoration&#58;double underline&#125;<br><br>
+                                <strong>h1.soul</strong> &#123;text&#45;decoration&#58;double underline&#125;<br><br>
                                 html/<br>
-                                &lt;h1 class&#61;&#34;soul&#34;&gt;<span class="soul2t">maison</span>&lt;/h1&gt;<br>
-                                &lt;h2 class&#61;&#34;soul&#34;&gt;<span class="soul1t">appartements</span>&lt;/h2&gt;<br>
-                                &lt;h3 class&#61;&#34;soul&#34;&gt;<span class="soul1t">studio</span>&lt;/h3&gt;<br>
+                                &lt;h1 class&#61;&#34;soul&#34;&gt;maison&lt;/h1&gt;<br>
+                                &lt;h2 class&#61;&#34;soul&#34;&gt;appartements&lt;/h2&gt;<br>
+                                &lt;h3 class&#61;&#34;soul&#34;&gt;studio&lt;/h3&gt;<br>
                             </div>
                         </div>
                         <p>
-                            ici seul <span class="soul2t">maison</span> sera souligné de deux trais continu.</p>
+                            ici seul <span class="soul2t">maison</span> sera souligné de deux trais continu <br>tandis qu'<span class="soul1t">appartements</span> et <span class="soul1t">studio</span> d'un seul.</p>
                     <h2>Sélection de <span class="txtdegrad1">regroupement</span></h2>
             <p>cela permet de regrouper des styles comuns à des éléments diférents<br>
                 concrètement l'exemple ci dessus pourait être écrit ainci:<p>
@@ -2158,16 +2158,56 @@
                             h1 &#123;<strong>text&#45;decoration&#58;underline</strong>&#125;<br>
                             h2 &#123;<strong>text&#45;decoration&#58;underline</strong>&#125;<br>
                             h3 &#123;<strong>text&#45;decoration&#58;underline</strong>&#59;<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;color&#58;blue&#125;<br><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;color&#58;purple&#125;<br><br>
                             <strong>h1&#44;h2&#44;h3</strong> &#123;text&#45;decoration&#58;underline&#125;<br>
-                            h3 &#123;color&#58;blue&#125;<br>
+                            h3 &#123;color&#58;purple&#125;<br>
                         </div>
                     </div>
+                    <h2>Sélection d'<span class="txtdegrad1">attributs</span></h2>
+            <p>Vous pouvez sélectionner par un attribut donné dans un balisage.<br>
+                <span style="font-size: 13px;">comme par exemple un titre commun,<br></p>
+                    <div class="degrad-Vertical">
+                        <div class="w3-code sqlHigh notranslate w3-card-2">
+                            <strong>&#91;</strong> title&#61;&#34;fin&#34; <strong>&#93;</strong> &#123;<br>&nbsp;&nbsp;&nbsp;&nbsp;color&#58;black<br>&#125;
+                        </div>
+                    </div>
+                    <h2>Sélection d'un <span class="txtdegrad1">pseudo-élément</span></h2>
+            <p>En sélectionant un pseudo-élément il est posible de  ne modiffier que certaines parie de l'élément ciblé.<br><br>
+                <span style="font-size: 13px;">le pseudo-élément ci-dessous permet de ne changer l'asspect que de la première ligne des paragraphes.<br></p>
+                    <div class="degrad-Vertical">
+                        <div class="w3-code sqlHigh notranslate w3-card-2">
+                            p <strong>&#58;&#58;first&#45;line</strong> &#123;font&#58;22px&#125;
+                        </div>
+                    </div>
+                    <h2>Sélection d'un <span class="txtdegrad1">pseudo-classe</span></h2>
+            <p>Cela permet de modiffier un élément ciblé sous la condition de la psedo-classe.<br>La pseudo-classe hover paermet de modifier le style au passage de la souris sur un élément<br><br>
+                <span style="font-size: 13px;">pour exemple les titres h1, h2 et h3 aurront une bordure noir sur le coté gauche.<br></p>
+                    <div class="degrad-Vertical">
+                        <div class="w3-code sqlHigh notranslate w3-card-2">
+                            h1<strong>&#58;hover</strong>&#44;h2<strong>&#58;hover</strong>&#44;h3<strong>&#58;hover</strong>&#123;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;border&#45;left&#58; solid black<br>&#125;
+                        </div>
+                    </div>
+
                     <div class="jp-example jp-card-ex">
                         <h3><stan style="font-size: 20px;">&#40;づ￣ &sup3;￣)づ</stan> resumons</h3>
-                        <p></p>
-                        <a class="w3-btn w3-button degrad1 hover-degrad1" href="https://codepen.io/PsychoActiF/full/YzXZRBP"
+                        <ul>Une sélection:
+                            <li><strong>simples</strong><br>
+                                <span style="font-size: 13px;">permet de sélectionner en fonction d'un nom, d'un id d'une classe</span></li>
+                            <li><strong>combinatoire</strong><br>
+                                <span style="font-size: 13px;">permet de sélectionner des éléments afin de leur attribuer des styles comuns</span></li>
+                            <li>Les sélecteurs <strong>d'attributs</strong><br>
+                                <span style="font-size: 13px;">sélectionner des éléments en fonction d'un attribut ou d'une valeur d'attribut</span></li>
+                            <li>Les sélecteurs de <strong>pseudo-classe</strong><br>
+                                <span style="font-size: 13px;">éléments de sélection basés sur un certain état</span></i>
+                            </li>
+                            <li>Les sélecteurs de <strong>pseudo-éléments</strong><br>
+                                <span style="font-size: 13px;">permet de sélectionner certaine condition pour styliser comme souhaité l'élément lié</span></li>
+                            </ul>
+                        <a class="w3-btn w3-button degrad1 hover-degrad1" href="https://codepen.io/PsychoActiF/full/XWbzPdM"
                             target="_blank">Résultat <i class="far fa-share-square"></i></a>
+                            <a class="w3-btn w3-button degrad1 hover-degrad1" href="https://codepen.io/PsychoActiF/pen/XWbzPdM.css"
+                                target="_blank">CSS <i class="far fa-share-square"></i></a>
                     </div>
                     
                     <div id="separ1"></div>
