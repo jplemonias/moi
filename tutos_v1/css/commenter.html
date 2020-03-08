@@ -2,7 +2,7 @@
 <html lang="fr-FR">
 
 <head>
-    <title>HTML introduction</title>
+    <title>Les sélecteurs</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Keywords"
@@ -18,9 +18,6 @@
     <script type="application/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
 
     <style>
-        a {
-            text-decoration: none;
-        }
         a:hover,
         a:active {
             color: #4CAF50
@@ -1432,6 +1429,11 @@
             border-radius: 0 15px 15px 0;
         }
 
+        .jp-example2 {
+            padding: 8px 20px;
+            margin: 24px 0px 24px -16px;
+            border-radius: 0 15px 15px 0;
+        }
         .w3-example {
             padding: 8px 20px;
             margin: 24px -16px 24px 0px;
@@ -1547,8 +1549,10 @@
             margin-bottom: 1em;
         }
 
-        .w3-code {
+        .w3-code{
             margin-right: -16px;
+        }
+        .w3-code,.w3-code4 {
             font-size: 15px;
         }
 
@@ -1889,7 +1893,7 @@
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/css/index.html">Introduction</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/css/liercss.html">lier un CSS</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/css/selecteurs.html">Les sélecteurs</a>
-                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/css/commenter.html">Connenter un CSS</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre le CSS</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre le CSS</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre le CSS</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">apprendre le CSS</a>
@@ -2070,192 +2074,131 @@
                     </a>
                 </div>
 
-                <h1><span class="txtdegrad1">HTML</span> introduction</h1>
+                <h1>Lier une <span class="txtdegrad1">feuille de style</span></h1>
                 <div id="separ1"></div>
                 <div class="w3-clear nextprev">
-                    <a id="btninsta" class=" boutons JP-padding-large testbg" href="/moi/tutos_v1/index.html">
-                        <i class="fas fa-home"></i> Accueil</a>
+                    <a id="btninsta" class=" boutons JP-padding-large testbg" href="/moi/tutos_v1/css/index.html">
+                        <i class="fas fa-reply"></i> Précédent</a>
                     <a id="btnneonD" class="w3-right boutons JP-padding-large testbg"
-                        href="/moi/tutos_v1/html/editer.html">
+                        href="/moi/tutos_v1/css/selecteurs.html">
                         suivant <i class="fas fa-reply reply2"></i></a>
                 </div>
 
                 <div class="w3-panel2 w3-info intro">
-                    <h2>Qu'est-ce que l' HTML?</h2>
-                    <p>l'<strong>HTML</strong> est le langage de <strong>balisage standard</strong> pour créer des
-                        <i>pages Web</i>.<br>
-                        Avec, vous pouvez créer votre propre site Web.<br>
-                        Vous le verrez, ce langage est relativement simple en soi.</p>
+                    <p>
+                        Pour qu'un navigateur web puisse formater un document html comme on le souhaiterait,<br>il faut lui lier un référencement, comme pour le élément img ou a en html.</p>
                 </div>
                 <div class="w3-panel w3-info intro">
-                    <ul>
-                        <li>HTML signifie <strong>H</strong>yper <strong>T</strong>ext <strong>M</strong>arkup
-                            <strong>L</strong>anguage</li>
-                        <li>Il décrit <i>la structure</i> d'une page Web</li>
-                        <li>Composé d'une série d'<i>éléments</i> indiquant au navigateur comment afficher le contenu
+                    <p>il y a trois façon de le faire</p>
+                    <ol>
+                        <li><strong>En externe.</strong><br>
+                            <span style="font-size: 13px;">par une feuille de style référencée dans le head de l'HTML</span></li>
+                        <li><strong>En interne à l'HTML</strong><br>
+                            <span style="font-size: 13px;">en déclarant les styles dans le head du HTML</span></li>
+                        <li><strong>En interne des éléments</strong><br>
+                            <span style="font-size: 13px;">Le éléments peuvent contenir une déclaration de style ne interne.</span></i>
                         </li>
-                        <li>Les éléments sont représentés par des <i>balises</i></li>
-                        <li>Ces balises étiquettent des éléments de contenu tels qu'un en-tête, un paragraphe, un
-                            tableau, etc.</li>
-                        <li>Les navigateurs n'affichent pas les balises, mais les utilisent pour restituer le
-                            contenu de la page</li>
-                    </ul>
+                    </ol>
                 </div>
 
                 <div id="separ2"></div>
-                <h2>Les Exemples:</h2>
-                <p>Ces tutos sur l'HTML contiennentt des exemples de codes comme celui-ci, afin de faciliter la
-                    compréhension.</p>
-                <p>Avec l'éditeur en ligne, codepen, vous pouvez éditer le HTML et ainsi pouvoir voir le résultat.</p>
-                <h2>Un exemple d'HTML:</h2>
-                <div class="jp-example jp-card-exG">
-                    <h3>Exemple 1</h3>
-                    <p class="codepen" data-height="300" data-theme-id="38865" data-default-tab="html"
-                        data-user="PsychoActiF" data-slug-hash="YzXZRBP"
-                        style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
-                        data-pen-title="Exemple 1">
-                        <span>See the Pen <a href="https://codepen.io/PsychoActiF/pen/YzXZRBP">
-                                Exemple 1</a> by Psycho@ctiF (<a href="https://codepen.io/PsychoActiF">@PsychoActiF</a>)
-                            on <a href="https://codepen.io">CodePen</a>.</span>
-                    </p>
-                    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-                    <p style="font-size: 12px;">En cliquant sur le bouton &quot;<strong>Résultat</strong>&quot; tu
-                        pourras voir le resultat.</p>
-                    <a class="w3-btn w3-button degrad1 hover-degrad1" href="https://codepen.io/PsychoActiF/full/YzXZRBP"
-                        target="_blank">Résultat <i class="far fa-share-square"></i></a>
+                <h2>Les feuilles des style <span class="txtdegrad1">externes</span></h2>
+                <p>Avec une seul feuille de style externe, vous pouvez attribuer l'apparence entière d'un site.<br>
+                    <span style="font-size: 13px;">En la liant dans l'enntête de l'HTML comme ceci:</span></p>
+                <div class="degrad-Vertical">
+                    <div class="w3-code sqlHigh notranslate w3-card-2">
+                        &lt;!DOCTYPE html&gt;<br>
+                        &lt;html lang&#61;&#34;fr&#45;FR&#34;&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&lt;head&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&lt;link href&#61;&#34;Le/Chemin/DuDoc.CSS&#34;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rel&#61;&#34;stylesheet&#34; type&#61;&#34;text/css&#34;&gt;</strong><br>
+                        &nbsp;&nbsp;&nbsp;&lt;/head&gt;<br><br>
+                        &nbsp;&nbsp;&nbsp;&lt;body&gt;.../
+                    </div>
                 </div>
-                <ul id="ulexemple">
-                    <p><strong>Explication de l'exemple</strong></p>
-                    <li><strong>&lt;! DOCTYPE html&gt;</strong> définit ce document comme <i>HTML5</i></li>
-                    <li><strong>&lt;html&gt;</strong> est l'élément <i>racine</i> d'une page HTML</li>
-                    <li><strong>&lt;head&gt;</strong> contient des <i>méta-informations</i> sur le document</li>
-                    <li style="font-size: 12px;">
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Les
-                        <strong>méta-informations</strong> sont invisible à l'utilisateur</li>
-                    <li><strong>&lt;title&gt;</strong> spécifie <i>le titre <strong>principal</strong></i> du document
-                    </li>
-                    <li><strong>&lt;body&gt;</strong> contient <i>le contenu</i> de la page <strong>visible</strong>
-                    </li>
-                    <li><strong>&lt;h1&gt;</strong> définit un <i>grand titre</i></li>
-                    <li><strong>&lt;p&gt;</strong> définit un <i>paragraphe</i></li>
-                </ul>
-                <div id="separ2"></div>
-                <h2>La <span class="txtdegrad1">structure</span> d'un HTML</h2>
-                <p>Elle est définie par des éléments entourés de <span Title="En anglais: angle brackets"
-                        style="cursor: help;">crochets:</span></p>
-                <p><strong>Les balises</strong>: elles sont généralement fournies par paire, une balise <i>ouvrante</i>
-                        <strong>&lt;</strong>p<strong>&gt;</strong> et une <i>fermante</i>
-                        <strong>&lt;/</strong>p<strong>&gt;</strong>.<br>
-                        La balise de fin est écrite comme la balise de début, avec un slash inséré avant son nom de
-                        balise.
-                </p>
-                <p><strong>Le but</strong> d'un <i>doccument HTML</i> est d'<strong>être lut</strong> par un<span
-                        Title="En anglais: web browsers" style="cursor: help;">
-                        <i>navigateur web</i>.</span><br>
-                    <span style="font-size: 12px;">Imagé cela pourait donner quelquechose comme ceci:</span>
-                    <div id="exhtml">&lt;! DOCTYPE&gt;<br>&lt;html&gt;
-                        <div id="exhead">&lt;head&gt;
-                            <div id="extitle">&lt;title&gt;Titre de la page&lt;/title&gt;</div>
-                            &lt;/head&gt;</div>
-                        <div id="exbody">&lt;body&gt;
-                            <div id="exdiv">&lt;div&gt;
-                                <div id="exh">&lt;h1&gt;Un titre&lt;/h1&gt;</div>
-                                <div id="exp">&lt;p&gt;Un paragraphe.&lt;/p&gt;</div>
-                                <div id="exp">&lt;p&gt;Un autre paragraphe.&lt;/p&gt;</div>
-                                &lt;/div&gt;
-                            </div>
-                            &lt;/body&gt;
-                        </div>
-                        &lt;/html&gt;
-                    </div>
-                    <div class="w3-panel w3-info intro">
-                        <p>La déclaration &lt;! DOCTYPE&gt; représente le type de document a décoder afin d'aider les
-                            navigateurs à afficher
-                            correctement les pages Web.<br><br>Elle doit apparaître en haut de la page avant tout
-                            balisage HTML, une seule fois,
-                            déclarable en majuscules ou en minuscules.<br><br>La déclaration &lt;! DOCTYPE&gt; pour
-                            HTML5 est:</p>
-                        <div class="degrad-Vertical">
-                            <div class="w3-code2 sqlHigh notranslate w3-card-2">
-                                &lt;!DOCTYPE <strong>html</strong>&gt;
-                            </div>
+                    <h2>Styliser en <span class="txtdegrad1">interne</span></h2>
+                    <p>En déclarant les styles dans l’en-tête du document HTTML,<br>
+                        il est possible d'attribuer des styles ponctuels à un site web,<br>
+                    <span style="font-size: 13px;">ou considérez cette balise comme une feuille de style, à part entière,<br>si il n' y a pas de balise liant à une feuille externe.</span></p>
+                    <div class="degrad-Vertical">
+                        <div class="w3-code sqlHigh notranslate w3-card-2">
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang&#61;&#34;fr&#45;FR&#34;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&lt;head&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;link&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&lt;style&gt;</strong><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&lt;/style&gt;</strong><br>
+                            &nbsp;&nbsp;&nbsp;&lt;/head&gt;<br><br>
+                            &nbsp;&nbsp;&nbsp;&lt;body&gt;.../
                         </div>
                     </div>
-                    <div id="separ2"></div>
-                    <h2><span class="txtdegrad1">Historique</span> :</h2>
-                    <table class="w3-table-all notranslate">
-                        <tbody>
-                            <tr>
-                                <th>Années</th>
-                                <th>Versions</th>
-                            </tr>
-                            <tr>
-                                <td>1989</td>
-                                <td>Tim Berners-Lee invente le www</td>
-                            </tr>
-                            <tr>
-                                <td>1991</td>
-                                <td>Tim Berners-Lee invente l'HTML</td>
-                            </tr>
-                            <tr>
-                                <td>1993</td>
-                                <td>Dave Raggett rédige HTML+</td>
-                            </tr>
-                            <tr>
-                                <td>1995</td>
-                                <td>Un groupe de travail HTML défini l'HTML 2.0</td>
-                            </tr>
-                            <tr>
-                                <td>1997</td>
-                                <td>Recommandation de W3C: HTML 3.2</td>
-                            </tr>
-                            <tr>
-                                <td>1999</td>
-                                <td>Recommandation de W3C: HTML 4.01</td>
-                            </tr>
-                            <tr>
-                                <td>2ooo</td>
-                                <td>Recommandation de W3C: XHTML 1.0</td>
-                            </tr>
-                            <tr>
-                                <td>2oo8</td>
-                                <td>WHATWG HTML5 premier projet public</td>
-                            </tr>
-                            <tr>
-                                <td>2o12</td>
-                                <td><a style="text-decoration-color:#04c4b4;" href="http://whatwg.org/html/"
-                                        target="_blank" class="JP-hover-text-degrad2">WHATWG HTML5 standardisé</a></td>
-                            </tr>
-                            <tr>
-                                <td>2o14</td>
-                                <td><a style="text-decoration-color:#04c4b4;" href="http://www.w3.org/TR/html5/"
-                                        target="_blank" class="JP-hover-text-degrad2">Recommandation de W3C: HTML5</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>2o16</td>
-                                <td>W3C Candidate à Recommander: HTML 5.1</td>
-                            </tr>
-                            <tr>
-                                <td>2o17</td>
-                                <td><a style="text-decoration-color:#04c4b4;" href="http://www.w3.org/TR/html51/"
-                                        target="_blank" class="JP-hover-text-degrad2">Recommandation de W3C: HTML5.1 2nd
-                                        Edition</a></td>
-                            </tr>
-                            <tr>
-                                <td>2o17</td>
-                                <td><a style="text-decoration-color:#04c4b4;" href="http://www.w3.org/TR/html52/"
-                                        target="_blank" class="JP-hover-text-degrad2">Recommandation de W3C: HTML5.2</a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                        <h2>Styliser un <span class="txtdegrad1">élément</span></h2>
+                        <p>C'est très utile pour ne changer qu'un élément d'un document lié à une feuille de style.<br>
+                        <span style="font-size: 13px;">Attribuer un style inline (en englais) ce fait de cette manière:</span></p>
+                            <div class="degrad-Vertical">
+                                <div class="w3-code sqlHigh notranslate w3-card-2">
+                                    &lt;p <strong>style&#61;&#34;color:grey&#34;</strong>&gt;<br>
+                                </div>
+                            </div>
+                                    <h2>Derrnier <span class="txtdegrad1">lut</span> premier <span class="txtdegrad1">utilisé</span></h2>
+                                    <p>Si certaines propriétés ont été définies pour le même sélecteur dans différentes feuilles de style,<br>
+                                    la valeur affichée ce sera celle la dernière feuille de style lue.</p>
+
+                                    <div class="w3-row-padding">
+                                        <div class="w3-half">
+                                            <div class="jp-onglet_g_faf  intro">
+                                                <div class="degrad-Vertical">
+                                                    <div class="w3-code sqlHigh notranslate w3-card-2" style="margin-right: 0px !important;">
+                                                        &lt;!DOCTYPE html&gt;<br>
+                                                        &lt;html lang&#61;&#34;fr&#45;FR&#34;&gt;<br>
+                                                        &nbsp;&nbsp;&nbsp;&lt;head&gt;<br>
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;link&gt;<br>
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&lt;style&gt;</strong><br>
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&lt;/style&gt;</strong><br>
+                                                        &nbsp;&nbsp;&nbsp;&lt;/head&gt;<br><br>
+                                                        &nbsp;&nbsp;&nbsp;&lt;body&gt;.../
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <div class="w3-half">
+                                            <div class=" jp-onglet_d_faf w3- intro">
+                                                <div class="degrad-Vertical">
+                                                    <div class="w3-code4 sqlHigh notranslate w3-card-2">
+                                                        &lt;!DOCTYPE html&gt;<br>
+                                                        &lt;html lang&#61;&#34;fr&#45;FR&#34;&gt;<br>
+                                                        &nbsp;&nbsp;&nbsp;&lt;head&gt;<br>
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;style&gt;<br>
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/style&gt;<br>
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&lt;link&gt;</strong><br>
+                                                        &nbsp;&nbsp;&nbsp;&lt;/head&gt;<br><br>
+                                                        &nbsp;&nbsp;&nbsp;&lt;body&gt;.../
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                    <div class="jp-example jp-card-ex">
+                        <h3>On peut styliser en:</h3>
+                        <ul>
+                            <li>important une feuille de style externe</li>
+                            <li>entre des balise de style dans l'en-tête de l'HTML</li>
+                            <li>Inline soit en ligne en ciblant que l'élémément à modifier</li>
+                            <li>l'élément de style utilisé en cas de mutltiples déclarations est le dernier lut par le navigateur web</li>
+                            </ul>
+                    </div>
+                    
                     <div id="separ1"></div>
                     <div class="w3-clear nextprev">
-                        <a id="btninsta" class=" boutons JP-padding-large testbg" href="/moi/tutos_v1/index.html">
-                            <i class="fas fa-home"></i> Accueil</a>
+                        <a id="btninsta" class=" boutons JP-padding-large testbg" href="/moi/tutos_v1/css/index.html">
+                            <i class="fas fa-reply"></i> Précédent</a>
                         <a id="btnneonD" class="w3-right boutons JP-padding-large testbg"
-                            href="/moi/tutos_v1/html/editer.html">
+                            href="/moi/tutos_v1/css/selecteurs.html">
                             suivant <i class="fas fa-reply reply2"></i></a>
                     </div>
             </div>
@@ -2274,12 +2217,12 @@
                 <div id="separ2"></div>
                 <div class="w3-row-padding w3-center w3-small" style="margin:0 -16px">
                     <div class="w3-col l3 m3 s12">
-                        <a class="w3-button degrad1 hover-degrad1 w3-block" href="/moi/tutos_v1/index.html"
-                            style="white-space:nowrap;text-decoration:none;margin-top:1px;margin-bottom:1px">ACCUEIL</a>
+                        <a class="w3-button degrad1 hover-degrad1 w3-block" href="/moi/tutos_v1/html/index.html"
+                            style="white-space:nowrap;text-decoration:none;margin-top:1px;margin-bottom:1px">HTML</a>
                     </div>
                     <div class="w3-col l3 m3 s12">
-                        <a class="w3-button degrad2 hover-degrad2 w3-block" href="/moi/tutos_v1/css/index.html"
-                            style="text-decoration:none;margin-top:1px;margin-bottom:1px">CSS</a>
+                        <a class="w3-button degrad2 hover-degrad2 w3-block" href="/moi/tutos_v1/index.html"
+                            style="text-decoration:none;margin-top:1px;margin-bottom:1px">ACCUEIL</a>
                     </div>
                     <div class="w3-col l3 m3 s12">
                         <a class="w3-button degrad1 hover-degrad1 w3-block" href="/moi/tutos_v1/O_o" target="_blank"
@@ -2421,10 +2364,10 @@
                         <a href="https://jplemonias.github.io/moi/" target="_top" class="JP-hover-text-degrad"
                             style="text-decoration:none">Moi</a><br><br>Merci, Pe@cE.</p>
                             <div class="w3-clear nextprev">
-                                <a id="btninsta" class="w3-left boutons JP-padding-large btninstafoot" href="/moi/tutos_v1/index.html">
-                                    <i class="fas fa-home"></i></a>
+                                <a id="btninsta" class="w3-left boutons JP-padding-large btninstafoot" href="/moi/tutos_v1/css/index.html">
+                                    <i class="fas fa-reply"></i></a>
                                 <i class="fas fa-peace"></i>
-                                <a id="btnneonD" class="w3-right boutons JP-padding-large btnneonDfoot" href="/moi/tutos_v1/html/editer.html">
+                                <a id="btnneonD" class="w3-right boutons JP-padding-large btnneonDfoot" href="/moi/tutos_v1/css/selecteurs.html">
                                     <i class="fas fa-reply reply2"></i></a>
                             </div>
                 </div>
