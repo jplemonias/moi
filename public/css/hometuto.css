@@ -154,7 +154,6 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-table-all tr:nth-child(odd){
     background: linear-gradient(135deg,#04c4b444,#d400ff44);
     background-color: black!important;}
-
 .w3-table-all tr:nth-child(even){
     background: linear-gradient(135deg,#d400ff44,#04c4b444);
     background-color: black!important;}
