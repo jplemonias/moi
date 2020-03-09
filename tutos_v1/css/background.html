@@ -2091,8 +2091,8 @@
                         <li>background-<strong>color</strong><br>
                         <li>background-<strong>image</strong><br>
                         <li>background-<strong>repeat</strong><br>
-                        <li>background-<strong>position</strong><br>
                         <li>background-<strong>attachment</strong><br>
+                        <li>background-<strong>position</strong><br>
                     </ul>
                 </div>
 
@@ -2125,6 +2125,16 @@
                                 &nbsp;&nbsp;&nbsp;background-repeat&#58; repeat-x<br>&#125;
                             </div>
                         </div>
+                            <h2>background-<span class="txtdegrad1">attachment</span></h2>
+                            <p>En cours de rédaction</p>
+                            <div class="degrad-Vertical">
+                                <div class="w3-code sqlHigh notranslate w3-card-2">
+                                    body &#123;<br>&nbsp;&nbsp;&nbsp;background-image&#58; url&#40;&#34;..&#34;&#41;&#59;<br>
+                                    &nbsp;&nbsp;&nbsp;background-repeat&#58; no-repeat&#59;<br>
+                                    &nbsp;&nbsp;&nbsp;background-position&#58; center top&#59;<br>
+                                    &nbsp;&nbsp;&nbsp;background-attachment&#58; fixed<br>&#125;
+                                </div>
+                            </div>
                         <h2>background-<span class="txtdegrad1">position</span></h2>
                         <p>Vous pouvez attribuer un positionnement à un image.<br><br>
                             <span style="font-size: 13px;">Dnas le cas présent l'image ne sera pas répétée,<br>
@@ -2136,18 +2146,10 @@
                                     &nbsp;&nbsp;&nbsp;background-position&#58; center top<br>&#125;
                                 </div>
                             </div>
-                            <h2>background-<span class="txtdegrad1">attachment</span></h2>
-                            <p>En cours de rédaction</p>
-                            <div class="degrad-Vertical">
-                                <div class="w3-code sqlHigh notranslate w3-card-2">
-                                    body &#123;<br>&nbsp;&nbsp;&nbsp;background-image&#58; url&#40;&#34;..&#34;&#41;&#59;<br>
-                                    &nbsp;&nbsp;&nbsp;background-repeat&#58; no-repeat&#59;<br>
-                                    &nbsp;&nbsp;&nbsp;background-position&#58; center top&#59;<br>
-                                    &nbsp;&nbsp;&nbsp;background-attachment&#58; fixed<br>&#125;
-                                </div>
-                            </div>
                             <h2>Soyont <span class="txtdegrad1">sténographe</span></h2>
-                            <p>En cours de rédaction</p>
+                            <p>L'on peut aussi décrire le background en raccourcie en respectant cet ordre :<br>
+                                la couleur - L'image - la répétition - le positionnement - l'attachement<br><br>
+                                <span style="font-size: 13px;">peut importe s'il manque une valeur du moment que l'ordre est respecté</span></p>
                             <div class="degrad-Vertical">
                                 <div class="w3-code sqlHigh notranslate w3-card-2">
                                     body &#123;<br>&nbsp;&nbsp;&nbsp;background&#58; lightgray url&#40;&#34;..&#34;&#41; no-repeat center top fixed<br>&#125;
@@ -2158,20 +2160,23 @@
                         <h3>Resumons</h3>Un background suivit de:
                         <ul style="list-style: none;">
                             <li><strong>-colort</strong><br>
-                                <span style="font-size: 13px;">permet de mettre une couleur en arrière plan</span></li><br>
+                                <span style="font-size: 13px;">permet de mettre une couleur en arrière plan</span>
+                            </li><br>
                             <li><strong>-image</strong><br>
-                                <span style="font-size: 13px;">permet de mettre une image en arrière plan</span></li><br>
+                                <span style="font-size: 13px;">permet de mettre une image en arrière plan</span>
+                            </li><br>
                             <li><strong>-repeat</strong><br>
-                                <span style="font-size: 13px;">permet de d"attribuer un mode de répétition</span></li><br>
+                                <span style="font-size: 13px;">permet de d"attribuer un mode de répétition</span>
+                            </li><br>
+                            <li><strong>-attachment</strong><br>
+                                <span style="font-size: 13px;">permet de définir comment l'arrière plan réagirat en fonction des interaction</span>
+                            </li><br>
                             <li><strong>-position</strong><br>
                                 <span style="font-size: 13px;">Permet de positionner l'arrière-plan</span></li><br>
-                            <li><strong>-attachment</strong><br>
-                                <span style="font-size: 13px;">permet de définir comment l'arrière plan réagirat en fonction des interaction</span></i>
-                            </li><br>
                             <li><strong>...rien</strong><br>
-                                <span style="font-size: 13px;">En cours de rédaction</span></i>
+                                <span style="font-size: 13px;">permet de déffinir tous BG en les déclarant dans un certain ordre</span>
                             </li>
-                            </ul>
+                        </ul>
                     </div>
                     
                     <div id="separ1"></div>
