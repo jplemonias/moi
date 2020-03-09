@@ -1893,7 +1893,7 @@
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/css/selecteurs.html">Les sélecteurs</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/css/commenter.html">Connenter un CSS</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/css/couleurs.html">Mettre en couleur</a>
-                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">le CSS</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/css/background.html">Les arrière-plans</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">le CSS</a>
                     <a class="w3-bar-item w3-button padnone" href='/moi/tutos_v1/O_o'>le CSS</a>
                     <a class="w3-bar-item w3-button padnone" href='/moi/tutos_v1/O_o'>le CSS</a>
@@ -2072,150 +2072,114 @@
                     </a>
                 </div>
 
-                <h1>Les <span class="txtdegrad1">sélecteurs</span></h1>
+                <h1>Les <span class="txtdegrad1">background</span></h1>
                 <div id="separ1"></div>
                 <div class="w3-clear nextprev">
-                    <a id="btninsta" class=" boutons JP-padding-large testbg" href="/moi/tutos_v1/css/liercss.html">
+                    <a id="btninsta" class=" boutons JP-padding-large testbg" href="/moi/tutos_v1/css/commenter.html">
                         <i class="fas fa-reply"></i> Précédent</a>
                     <a id="btnneonD" class="w3-right boutons JP-padding-large testbg"
-                        href="/moi/tutos_v1/css/commenter.html">
+                        href="/moi/tutos_v1/O_o">
                         suivant <i class="fas fa-reply reply2"></i></a>
                 </div>
 
                 <div class="w3-panel w3-info intro">
-                    <p>Ils sont utilisés pour sélectionner les éléments HTML que vous souhaitez styliser.<br>
-                    Ils peuvent êtres représentés en cinq catégories.</p>
+                    <p>les propriétés background sont utilisées pour définir l'arrière-plan des éléments.<br>
+                        Ici, vous allez découvrirez les propriétés d'arrière-plan suivantes:</p>
                 </div>
                 <div class="w3-panel2 w3-info intro">
-                    <ol>
-                        <li>Les sélecteurs <strong>simples</strong><br>
-                            <span style="font-size: 13px;">sélectionner des éléments en fonction du nom, de l'id, de la classe</span></li>
-                        <li>Les sélecteurs <strong>combinateurs</strong><br>
-                            <span style="font-size: 13px;">sélectionner des éléments en fonction d'une relation spécifique entre eux</span></li>
-                        <li>Les sélecteurs de <strong>pseudo-classe</strong><br>
-                            <span style="font-size: 13px;">éléments de sélection basés sur un certain état</span></i>
-                        </li>
-                        <li>Les sélecteurs de <strong>pseudo-éléments</strong><br>
-                            <span style="font-size: 13px;">sélectionner et styliser une partie d'un élément</span></li>
-                        <li>Les sélecteurs <strong>d'attributs</strong><br>
-                            <span style="font-size: 13px;">sélectionner des éléments en fonction d'un attribut ou d'une valeur d'attribut</span></li>
-                    </ol>
+                    <ul>
+                        <li>background-<strong>color</strong><br>
+                        <li>background-<strong>image</strong><br>
+                        <li>background-<strong>repeat</strong><br>
+                        <li>background-<strong>position</strong><br>
+                        <li>background-<strong>attachment</strong><br>
+                    </ul>
                 </div>
 
                 <div id="separ2"></div>
-                <h2>Sélectionner <span class="txtdegrad1">un élément</span></h2>
-                <p>sélectionne les éléments en fonction du nom de l'élément.<br>
-                    Par exemple ici l'élément * , comprenez sélecteur universel, soit TOUS les types d'élément<br>
-                    va donc définir la police d'écriture de touuuuuuus les éléments comme étant:<br><br>grise, d'une taille de 18 pixels, et dont les textes seront en justifié.</p>
+                <h2>background-<span class="txtdegrad1">color</span></h2>
+                <p>la propriétée background-color permet d'ajouter une couleur en arrière-plan d'un élément.</p>
+                <div class="degrad-Vertical">
+                    <div class="w3-code sqlHigh notranslate w3-card-2">
+                        body &#123;<br>&nbsp;&nbsp;&nbsp;background-color&#58;lightgray<br>&#125;
+                    </div>
+                </div>
+                    <h2>background-<span class="txtdegrad1">image</span></h2>
+                    <p>Background-color quant à elle permet d'ajouter une image en lui liant le chemin de l'image.<br><br>
+                    <span style="font-size: 13px;">Par défaut, l'image est répétée horizontalement et vericalement<br>autant de fois que nésséssaire pour couvrir tout l'élément.</span></p>
                     <div class="degrad-Vertical">
                         <div class="w3-code sqlHigh notranslate w3-card-2">
-                            &#42; &#123;<br>&nbsp;&nbsp;&nbsp;color&#58;grey&#59;<br>&nbsp;&nbsp;&nbsp;size&#58;18px&#59;<br>&nbsp;&nbsp;&nbsp;text-align&#58;justify<br>&#125;
+                            body &#123;<br>&nbsp;&nbsp;&nbsp;background-image url&#40;&#34;Le/chemin/deLimage.pnj&#34;&#41;<br>&#125;
                         </div>
                     </div>
                     <div class=" w3-panel w3-info intro" style="padding: 5px 10px 5px 32px;">
-                        <p class="margnone" style="float:right;">NB: la derrnière déclaration n'a pas de point-virgule,<br>ne l'oubliez pas si vous rajoutez des déclarations par la suite.</p>
+                        <p class="margnone" style="float:right;">NB: Attention au choix de l'image et de la police dans le cas d'un background-image.</p>
                     </div>
-                    <h2>Sélectionner <span class="txtdegrad1">un identifiant</span></h2>
-                    <p>L'id d'un élément étant unique dans une page,<br>le sélecteur est utilisé pour ne modifier qu'un seul élément!<br>
-                    En plaçant un hash devant la valeur saisie en id<br>on peut alors modifier l'aspect de cet élement.<br><br>
-                    <span style="font-size: 13px;">Sous réserve qu'un élément dans l'html ait comme valeur d'id intro, sa police sera alors noir.</span></p>
+                    <h2>background-<span class="txtdegrad1">repeat</span></h2>
+                    <p>Avec cette propriétée vous pouvez décider de la direction de la répétition ou de l'enlever par exemple.<br><br>
+                        <span style="font-size: 13px;">l'image ici serra répétée qu'horizontalement,<br>
+                            remplacez par repeat-y pour une répétition verticalet et<br>no-repeat pour n'avoir aucune répétition.</span></p>
                         <div class="degrad-Vertical">
                             <div class="w3-code sqlHigh notranslate w3-card-2">
-                                <strong>&#35;</strong>intro &#123;color&#58;black&#125;
+                                body &#123;<br>&nbsp;&nbsp;&nbsp;background-image&#58; url&#40;&#34;..&#34;&#41;&#59;<br>
+                                &nbsp;&nbsp;&nbsp;background-repeat&#58; repeat-x<br>&#125;
                             </div>
                         </div>
-                        <h2>Avec <span class="txtdegrad1">la classe</span> <span style="font-size: 22px;">&#128526;</span></h2>
-                        <p>Identique à la selection de l'id, mais pour récupérer une classe<br>
-                            il faut placer un point à la place du hash.<br><br>
-                            <span style="font-size: 13px;">Tous les éléments aylant comme valeur de classe soul seront souligné.</span></p>
+                        <h2>background-<span class="txtdegrad1">position</span></h2>
+                        <p>Vous pouvez attribuer un positionnement à un image.<br><br>
+                            <span style="font-size: 13px;">Dnas le cas présent l'image ne sera pas répétée,<br>
+                                et placée en haut au centre de son élément.</span></p>
                             <div class="degrad-Vertical">
                                 <div class="w3-code sqlHigh notranslate w3-card-2">
-                                    <strong>.</strong>soul &#123;text&#45;decoration&#45;style&#58;underline&#125;
+                                    body &#123;<br>&nbsp;&nbsp;&nbsp;background-image&#58; url&#40;&#34;..&#34;&#41;&#59;<br>
+                                    &nbsp;&nbsp;&nbsp;background-repeat&#58; no-repeat&#59;<br>
+                                    &nbsp;&nbsp;&nbsp;background-position&#58; center top<br>&#125;
                                 </div>
                             </div>
-                            <h2>Sélection <span class="txtdegrad1">spécifique</span></h2>
-                    <p>Vous pouvez sélectionner qu'un seuls des éléments spécifique affecté par une classe commune à d'autres.<br><br>
-                        <span style="font-size: 13px;">Le cas présent les en-tetes h1 ayant la classe soul seront souligné de deux trais,<br>
-                            tandisque les autres éléments ayant la même classe ne seront pas affécté.</span></p>
-                        <div class="degrad-Vertical">
-                            <div class="w3-code sqlHigh notranslate w3-card-2">
-                                css/<br>
-                                .soul &#123;text&#45;decoration&#45;style&#58;underline&#125;<br>
-                                <strong>h1.soul</strong> &#123;text&#45;decoration&#58;double underline&#125;<br><br>
-                                html/<br>
-                                &lt;h1 class&#61;&#34;soul&#34;&gt;maison&lt;/h1&gt;<br>
-                                &lt;h2 class&#61;&#34;soul&#34;&gt;appartements&lt;/h2&gt;<br>
-                                &lt;h3 class&#61;&#34;soul&#34;&gt;studio&lt;/h3&gt;<br>
+                            <h2>background-<span class="txtdegrad1">attachment</span></h2>
+                            <p>En cours de rédaction</p>
+                            <div class="degrad-Vertical">
+                                <div class="w3-code sqlHigh notranslate w3-card-2">
+                                    body &#123;<br>&nbsp;&nbsp;&nbsp;background-image&#58; url&#40;&#34;..&#34;&#41;&#59;<br>
+                                    &nbsp;&nbsp;&nbsp;background-repeat&#58; no-repeat&#59;<br>
+                                    &nbsp;&nbsp;&nbsp;background-position&#58; center top&#59;<br>
+                                    &nbsp;&nbsp;&nbsp;background-attachment&#58; fixed<br>&#125;
+                                </div>
                             </div>
-                        </div>
-                        <p>
-                            ici seul <span class="soul2t">maison</span> sera souligné de deux trais continu <br>tandis qu'<span class="soul1t">appartements</span> et <span class="soul1t">studio</span> d'un seul.</p>
-                    <h2>Sélection de <span class="txtdegrad1">regroupement</span></h2>
-            <p>cela permet de regrouper des styles comuns à des éléments diférents<br>
-                concrètement l'exemple ci dessus pourait être écrit ainci:<p>
-                    <div class="degrad-Vertical">
-                        <div class="w3-code sqlHigh notranslate w3-card-2">
-                            h1 &#123;<strong>text&#45;decoration&#58;underline</strong>&#125;<br>
-                            h2 &#123;<strong>text&#45;decoration&#58;underline</strong>&#125;<br>
-                            h3 &#123;<strong>text&#45;decoration&#58;underline</strong>&#59;<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;color&#58;purple&#125;<br><br>
-                            <strong>h1&#44;h2&#44;h3</strong> &#123;text&#45;decoration&#58;underline&#125;<br>
-                            h3 &#123;color&#58;purple&#125;<br>
-                        </div>
-                    </div>
-                    <h2>Sélection d'<span class="txtdegrad1">attributs</span></h2>
-            <p>Vous pouvez sélectionner par un attribut donné dans un balisage.<br>
-                <span style="font-size: 13px;">comme par exemple un titre commun,<br></p>
-                    <div class="degrad-Vertical">
-                        <div class="w3-code sqlHigh notranslate w3-card-2">
-                            <strong>&#91;</strong> title&#61;&#34;fin&#34; <strong>&#93;</strong> &#123;<br>&nbsp;&nbsp;&nbsp;&nbsp;color&#58;black<br>&#125;
-                        </div>
-                    </div>
-                    <h2>Sélection d'un <span class="txtdegrad1">pseudo-élément</span></h2>
-            <p>En sélectionant un pseudo-élément il est posible de  ne modiffier que certaines parie de l'élément ciblé.<br><br>
-                <span style="font-size: 13px;">le pseudo-élément ci-dessous permet de ne changer l'asspect que de la première ligne des paragraphes.<br></p>
-                    <div class="degrad-Vertical">
-                        <div class="w3-code sqlHigh notranslate w3-card-2">
-                            p <strong>&#58;&#58;first&#45;line</strong> &#123;font&#58;22px&#125;
-                        </div>
-                    </div>
-                    <h2>Sélection d'un <span class="txtdegrad1">pseudo-classe</span></h2>
-            <p>Cela permet de modiffier un élément ciblé sous la condition de la psedo-classe.<br>La pseudo-classe hover paermet de modifier le style au passage de la souris sur un élément<br><br>
-                <span style="font-size: 13px;">pour exemple les titres h1, h2 et h3 aurront une bordure noir sur le coté gauche.<br></p>
-                    <div class="degrad-Vertical">
-                        <div class="w3-code sqlHigh notranslate w3-card-2">
-                            h1<strong>&#58;hover</strong>&#44;h2<strong>&#58;hover</strong>&#44;h3<strong>&#58;hover</strong>&#123;<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;border&#45;left&#58; solid black<br>&#125;
-                        </div>
-                    </div>
+                            <h2>Soyont <span class="txtdegrad1">sténographe</span></h2>
+                            <p>En cours de rédaction</p>
+                            <div class="degrad-Vertical">
+                                <div class="w3-code sqlHigh notranslate w3-card-2">
+                                    body &#123;<br>&nbsp;&nbsp;&nbsp;background&#58; lightgray url&#40;&#34;..&#34;&#41; no-repeat center top fixed<br>&#125;
+                                </div>
+                            </div>
 
                     <div class="jp-example jp-card-ex">
-                        <h3><stan style="font-size: 20px;">&#40;づ￣ &sup3;￣)づ</stan> resumons</h3>Une sélection:
-                        <ul>
-                            <li><strong>simples</strong><br>
-                                <span style="font-size: 13px;">permet de sélectionner en fonction d'un nom, d'un id d'une classe</span></li>
-                            <li><strong>combinatoire</strong><br>
-                                <span style="font-size: 13px;">permet de sélectionner des éléments afin de leur attribuer des styles comuns</span></li>
-                            <li>d'<strong>attributs</strong><br>
-                                <span style="font-size: 13px;">sélectionne des éléments en fonction d'un attribut ou d'une valeur d'attribut</span></li>
-                            <li>de <strong>pseudo-éléments</strong><br>
-                                <span style="font-size: 13px;">change l'asspect de parties précises d'un élément</span></li>
-                            <li>de <strong>pseudo-classe</strong><br>
-                                <span style="font-size: 13px;">permet de sélectionner certaine condition pour styliser comme souhaité l'élément lié</span></i>
+                        <h3>Resumons</h3>Un background suivit de:
+                        <ul style="list-style: none;">
+                            <li><strong>-colort</strong><br>
+                                <span style="font-size: 13px;">permet de mettre une couleur en arrière plan</span></li><br>
+                            <li><strong>-image</strong><br>
+                                <span style="font-size: 13px;">permet de mettre une image en arrière plan</span></li><br>
+                            <li><strong>-repeat</strong><br>
+                                <span style="font-size: 13px;">permet de d"attribuer un mode de répétition</span></li><br>
+                            <li><strong>-position</strong><br>
+                                <span style="font-size: 13px;">Permet de positionner l'arrière-plan</span></li><br>
+                            <li><strong>-attachment</strong><br>
+                                <span style="font-size: 13px;">permet de définir comment l'arrière plan réagirat en fonction des interaction</span></i>
+                            </li><br>
+                            <li><strong>...rien</strong><br>
+                                <span style="font-size: 13px;">En cours de rédaction</span></i>
                             </li>
                             </ul>
-                        <a class="w3-btn w3-button degrad1 hover-degrad1" href="https://codepen.io/PsychoActiF/full/XWbzPdM"
-                            target="_blank">Résultat <i class="far fa-share-square"></i></a>
-                            <a class="w3-btn w3-button degrad1 hover-degrad1" href="https://codepen.io/PsychoActiF/pen/XWbzPdM.css"
-                                target="_blank">CSS <i class="far fa-share-square"></i></a>
                     </div>
                     
                     <div id="separ1"></div>
                     <div class="w3-clear nextprev">
-                        <a id="btninsta" class=" boutons JP-padding-large testbg" href="/moi/tutos_v1/css/liercss.html">
+                        <a id="btninsta" class=" boutons JP-padding-large testbg" href="/moi/tutos_v1/css/commenter.html">
                             <i class="fas fa-reply"></i> Précédent</a>
                         <a id="btnneonD" class="w3-right boutons JP-padding-large testbg"
-                            href="/moi/tutos_v1/css/commenter.html">
+                            href="/moi/tutos_v1/O_o">
                             suivant <i class="fas fa-reply reply2"></i></a>
                     </div>
             </div>
@@ -2381,10 +2345,10 @@
                         <a href="https://jplemonias.github.io/moi/" target="_top" class="JP-hover-text-degrad"
                             style="text-decoration:none">Moi</a><br><br>Merci, Pe@cE.</p>
                             <div class="w3-clear nextprev">
-                                <a id="btninsta" class="w3-left boutons JP-padding-large btninstafoot" href="/moi/tutos_v1/css/liercss.html">
+                                <a id="btninsta" class="w3-left boutons JP-padding-large btninstafoot" href="/moi/tutos_v1/css/commenter.html">
                                     <i class="fas fa-reply"></i></a>
                                 <i class="fas fa-peace"></i>
-                                <a id="btnneonD" class="w3-right boutons JP-padding-large btnneonDfoot" href="/moi/tutos_v1/css/commenter.html">
+                                <a id="btnneonD" class="w3-right boutons JP-padding-large btnneonDfoot" href="/moi/tutos_v1/O_o">
                                     <i class="fas fa-reply reply2"></i></a>
                             </div>
                 </div>
