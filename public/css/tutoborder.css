@@ -1,0 +1,47 @@
+p.border1 {
+    border-style: solid
+}
+
+p.border2 {
+    border-style: dashed 
+}
+
+p.border3 {
+    border-style: dotted 
+}
+
+p.border4 {
+    border-style: double 
+}
+
+p.border5 {
+    border-style: outset 
+}
+
+p.border6 {
+    border-style: inset
+}
+
+p.border7 {
+    border-style: ridge
+}
+
+p.border8 {
+    border-style: groove
+}
+
+p.border9 {
+    border-style: none
+}
+
+p.border10 {
+    border-style: hidden
+}
+
+p.border11 {
+    border-style: double dotted solid dashed
+}
+
+.margprp {
+    padding-left: 10px;
+}

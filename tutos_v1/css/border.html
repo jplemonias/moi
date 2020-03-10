@@ -2,7 +2,7 @@
 <html lang="fr-FR">
 
 <head>
-    <title>mettree de la couleur</title>
+    <title>border</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Keywords"
@@ -11,6 +11,7 @@
         content="Tutoriels d'aide a l'apprentissage de construction Web faciles à comprendre comprenant de nombreux exemples d'utilisation HTML, CSS, JavaScript, SQL, PHP.">
     <link rel="icon" type="image/x-icon" href="../../public/img/ptitspoid.png">
     <link rel="stylesheet" href="../../public/css/hometuto.css">
+    <link rel="stylesheet" href="../../public/css/tutoborder.css">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Source Code Pro' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
@@ -18,18 +19,6 @@
     <script type="application/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
 
     <style>
-        a {
-            text-decoration: none;
-        }
-
-        #main a:hover,
-        #main a:active {
-    background: -webkit-gradient(linear,left top,right top,from(#04645c),to(#66007a));
-    background: linear-gradient(90deg,#04645c,#66007a);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-        }
-        
         a:hover,
         a:active {
             color: #4CAF50
@@ -1904,9 +1893,9 @@
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/css/liercss.html">lier un CSS</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/css/selecteurs.html">Les sélecteurs</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/css/commenter.html">Connenter un CSS</a>
-                    <a class="w3-bar-item w3-button padnone jp-selected" href="/moi/tutos_v1/css/couleurs.html">Mettre en couleur</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/css/couleurs.html">Mettre en couleur</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/css/background.html">Les arrière-plans</a>
-                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/css/border.html">Les brodures</a>
+                    <a class="w3-bar-item w3-button padnone jp-selected" href="/moi/tutos_v1/css/border.html">Les brodures</a>
                     <a class="w3-bar-item w3-button padnone" href='/moi/tutos_v1/O_o'>le CSS</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/autre/lescouleurs.html">140 couleurs</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">le CSS</a>
@@ -2084,57 +2073,109 @@
                     </a>
                 </div>
 
-                <h1>Les <span class="txtdegrad1">couleurs</span></h1>
+                <h1>Les <span class="txtdegrad1">bordures</span></h1>
                 <div id="separ1"></div>
                 <div class="w3-clear nextprev">
-                    <a id="btninsta" class=" boutons JP-padding-large testbg" href="/moi/tutos_v1/css/commenter.html">
+                    <a id="btninsta" class=" boutons JP-padding-large testbg" href="/moi/tutos_v1/css/background.html">
                         <i class="fas fa-reply"></i> Précédent</a>
                     <a id="btnneonD" class="w3-right boutons JP-padding-large testbg"
-                        href="/moi/tutos_v1/css/background.html">
+                        href="/moi/tutos_v1/O_o">
                         suivant <i class="fas fa-reply reply2"></i></a>
                 </div>
 
+                <div class="w3-panel2 w3-info intro">
+                    <p>Les propriétés border vont permetres d'ajouter à un élémen une bordure,<br>
+                    et de lui attribuer un le style, un largeur et une couleur.</p>
+                </div>
                 <div class="w3-panel w3-info intro">
-                    <p>On peut déclarer une couleur par son nom de couleur prédéfinis<br>
-                        Ou de valeurs RVB, HEX, HSL, RGBA, HSLA.<br>
-                        Le CSS / l'HTML prennent en charge: <br>140 noms de couleurs standard consultables <a href="/moi/tutos_v1/autre/lescouleurs.html">&lt;IcI&gt;</a></p>
+                    <ul>
+                        <li>border-<strong>style</strong><br>
+                        <li>border-<strong>width</strong><br>
+                        <li>border-<strong>color</strong><br>
+                    </ul>
                 </div>
 
                 <div id="separ2"></div>
-                <h2>Dans un <span class="txtdegrad1">arrière-plan</span></h2>
-                <p>Avec l'attribut background-color vous pouvez definir une couleur d'arrière-plan.</p>
-                    <div class="degrad-Vertical">
-                        <div class="w3-code sqlHigh notranslate w3-card-2">
-                            body &#123;<br>&nbsp;&nbsp;&nbsp;background-color&#58;lightgray<br>&#125;<br><br>
-                            h1 &#123;<br>&nbsp;&nbsp;&nbsp;background-color&#58;black<br>&#125;<br><br>
-                            p &#123;<br>&nbsp;&nbsp;&nbsp;background-color&#58;white<br>&#125;
-                        </div>
+                <h2>border-<span class="txtdegrad1">style</span></h2>
+                <p>La propriété border-style spécifie le type de bordure à afficher.Un dixaine de vleurs sont autorisées sont à retenir:<br></p>
+                <p class="margprp border1">solid &#8594; Définit une bordure plaine</p>
+                <p class="margprp border2">dashed &#8594; Définit une bordure en tiré</p>
+                <p class="margprp border3">dotted &#8594; Définit une bordure en pointillé</p>
+                <p class="margprp border4">double &#8594; Définit une bordure double</p>
+                <p>Pour les bordures 3D l'effet dépend de la valeur de la couleur de la bordure.</p>
+                <p class="margprp border5">outset &#8594; Définit une bordure de départ 3D.</p>
+                <p class="margprp border6">inset &#8594; Définit une bordure d'encart 3D.</p>
+                <p class="margprp border7">ridge &#8594; Définit une bordure striée 3D.</p>
+                <p class="margprp border8">groove &#8594; Définit une bordure rainurée 3D.</p>
+                <p class="margprp border9">none &#8594; Définit aucune bordures</p>
+                <p class="margprp border10">hidden &#8594; Définit une bordure cachée</p>
+                <p>Cette propriétée peut avoir de une à quatre valeurs l'ordre étant</p>
+                <ol>
+                    <li>la bordure supérieure,</li>
+                    <li>la bordure droite,</li>
+                    <li>la bordure inférieure,</li>
+                    <li>et la bordure gauche.</li>
+                </ol>
+                <p class="margprp border11"><br>(ᴖ◡ᴖ)<br><br></p>
+
+                <div class="degrad-Vertical">
+                    <div class="w3-code sqlHigh notranslate w3-card-2">
+                        &#35;bordure &#123;<br>&nbsp;&nbsp;&nbsp;border-style&#58; double dotted solid dashed<br>&#125;
                     </div>
-                    <h2>Colorer la <span class="txtdegrad1">police</span></h2>
-                    <p>L'attribut color vous pouvez definir une couleur à la police d'écriture.</p>
-                    <div class="degrad-Vertical">
-                        <div class="w3-code sqlHigh notranslate w3-card-2">
-                            h1 &#123;<br>&nbsp;&nbsp;&nbsp;color&#58;lightgray<br>&#125;<br><br>
-                            p &#123;<br>&nbsp;&nbsp;&nbsp;color&#58;red<br>&#125;
+                </div>
+                <div class=" w3-panel w3-info intro" style="padding: 5px 10px 5px 32px;">
+                    <a class="w3-btn w3-button degrad1 hover-degrad1" href="https://codepen.io/PsychoActiF/pen/KKpZrEY.css"
+                        target="_blank" style="float:right;"">CSS <i class="far fa-share-square"></i></a>
+                </div>
+                    <h2>border-<span class="txtdegrad1">width</span></h2>
+                    <p>On peut leur définir une largeur spécifique,<br>en px, pt, cm, em, etc... ou,<br>
+                        en utilisant l'une des trois valeurs prédéfinies:<br>
+                        thin / fines,<br>medium / moyennes,<br>ou thick / épaisses.</p>
+                        <div class="degrad-Vertical">
+                            <div class="w3-code sqlHigh notranslate w3-card-2">
+                                &#35;bordure &#123;<br>&nbsp;&nbsp;&nbsp;border-style&#58; solid&#59;<br>&nbsp;&nbsp;&nbsp;border-width&#58; 5px<br>&#125;
+                            </div>
                         </div>
+                    <div class=" w3-panel w3-info intro" style="padding: 5px 10px 5px 32px;">
+                        <a class="w3-btn w3-button degrad1 hover-degrad1" href="https://codepen.io/PsychoActiF/pen/abOEPwW.css"
+                            target="_blank" style="float:right;"">CSS <i class="far fa-share-square"></i></a>
                     </div>
-                    <h2>Colorer des <span class="txtdegrad1">bordures</span></h2>
-                    <p>L'attribut border permet de definir une couleur à des bordures.</p>
-                    <div class="degrad-Vertical">
-                        <div class="w3-code sqlHigh notranslate w3-card-2">
-                            &#35;violet &#123;<br>&nbsp;&nbsp;&nbsp;border&#58;5px solid purple<br>&#125;
+                    <h2>border-<span class="txtdegrad1">color</span></h2>
+                    <p>En cours de rédaction.</p>
+                        <div class="degrad-Vertical">
+                            <div class="w3-code sqlHigh notranslate w3-card-2">
+                                &#35;bordure &#123;<br>
+                                &nbsp;&nbsp;&nbsp;border-style&#58; solid&#59;<br>
+                                &nbsp;&nbsp;&nbsp;border-width&#58; 5px&#59;<br>
+                                &nbsp;&nbsp;&nbsp;border-color&#58; purple<br>&#125;
+                            </div>
                         </div>
+                        <div class=" w3-panel w3-info intro" style="padding: 5px 10px 5px 32px;">
+                            <a class="w3-btn w3-button degrad1 hover-degrad1" href="https://codepen.io/PsychoActiF/pen/XXXXXXX.css"
+                                target="_blank" style="float:right;"">CSS <i class="far fa-share-square"></i></a>
+                        </div>
+
+                    <div class="jp-example jp-card-ex">
+                        <h3>Resumons</h3>Un border suivit de:
+                        <ul style="list-style: none;">
+                            <li><strong>-style</strong><br>
+                                <span style="font-size: 13px;">permet de déffinir l'aspect une bordure</span>
+                            </li><br>
+                            <li><strong>-width</strong><br>
+                                <span style="font-size: 13px;">permet de mettre en forme une bordure</span>
+                            </li><br>
+                            <li><strong>-color</strong><br>
+                                <span style="font-size: 13px;">permet de mettre une couleur à une bordure</span>
+                            </li><br>
+                        </ul>
                     </div>
-                    <a class="w3-btn w3-button degrad1 hover-degrad1" href="https://codepen.io/PsychoActiF/full/gOpXNov"
-                        target="_blank">Résultat <i class="far fa-share-square"></i></a>
-                        
                     
                     <div id="separ1"></div>
                     <div class="w3-clear nextprev">
-                        <a id="btninsta" class=" boutons JP-padding-large testbg" href="/moi/tutos_v1/css/commenter.html">
+                        <a id="btninsta" class=" boutons JP-padding-large testbg" href="/moi/tutos_v1/css/background.html">
                             <i class="fas fa-reply"></i> Précédent</a>
                         <a id="btnneonD" class="w3-right boutons JP-padding-large testbg"
-                            href="/moi/tutos_v1/css/background.html">
+                            href="/moi/tutos_v1/O_o">
                             suivant <i class="fas fa-reply reply2"></i></a>
                     </div>
             </div>
@@ -2300,10 +2341,10 @@
                         <a href="https://jplemonias.github.io/moi/" target="_top" class="JP-hover-text-degrad"
                             style="text-decoration:none">Moi</a><br><br>Merci, Pe@cE.</p>
                             <div class="w3-clear nextprev">
-                                <a id="btninsta" class="w3-left boutons JP-padding-large btninstafoot" href="/moi/tutos_v1/css/commenter.html">
+                                <a id="btninsta" class="w3-left boutons JP-padding-large btninstafoot" href="/moi/tutos_v1/css/background.html">
                                     <i class="fas fa-reply"></i></a>
                                 <i class="fas fa-peace"></i>
-                                <a id="btnneonD" class="w3-right boutons JP-padding-large btnneonDfoot" href="/moi/tutos_v1/css/background.html"></a>
+                                <a id="btnneonD" class="w3-right boutons JP-padding-large btnneonDfoot" href="/moi/tutos_v1/O_o">
                                     <i class="fas fa-reply reply2"></i></a>
                             </div>
                 </div>
