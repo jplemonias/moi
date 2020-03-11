@@ -2,7 +2,7 @@
 <html lang="fr-FR">
 
 <head>
-    <title>Lier CSS</title>
+    <title>les modèles de boite</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Keywords"
@@ -11,6 +11,7 @@
         content="Tutoriels d'aide a l'apprentissage de construction Web faciles à comprendre comprenant de nombreux exemples d'utilisation HTML, CSS, JavaScript, SQL, PHP.">
     <link rel="icon" type="image/x-icon" href="../../public/img/ptitspoid.png">
     <link rel="stylesheet" href="../../public/css/hometuto.css">
+    <link rel="stylesheet" href="../../public/css/tutoborder.css">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Source Code Pro' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
@@ -1549,10 +1550,8 @@
             margin-bottom: 1em;
         }
 
-        .w3-code{
+        .w3-code {
             margin-right: -16px;
-        }
-        .w3-code,.w3-code4 {
             font-size: 15px;
         }
 
@@ -1891,10 +1890,10 @@
                 <div class="w3-col l3 m6">
                     <h3 class="w3-margin-top vert">Débutant</h3>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/css/index.html">Introduction</a>
-                    <a class="w3-bar-item w3-button padnone jp-selected" href="/moi/tutos_v1/css/liercss.html">lier un CSS</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/css/liercss.html">lier un CSS</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/css/selecteurs.html">Les sélecteurs</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/css/commenter.html">Connenter un CSS</a>
-                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/css/boites.html">Les modèles de boîte</a>
+                    <a class="w3-bar-item w3-button padnone jp-selected" href="/moi/tutos_v1/css/boites.html">Les modèles de boîte</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/css/couleurs.html">Mettre en couleur</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/css/background.html">Les arrière-plans</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/css/border.html">Les brodures</a>
@@ -2074,131 +2073,41 @@
                     </a>
                 </div>
 
-                <h1>Lier une <span class="txtdegrad1">feuille de style</span></h1>
+                <h1>Les <span class="txtdegrad1">modèles de boite</span></h1>
                 <div id="separ1"></div>
                 <div class="w3-clear nextprev">
-                    <a id="btninsta" class=" boutons JP-padding-large testbg" href="/moi/tutos_v1/css/index.html">
+                    <a id="btninsta" class=" boutons JP-padding-large testbg" href="/moi/tutos_v1/css/background.html">
                         <i class="fas fa-reply"></i> Précédent</a>
                     <a id="btnneonD" class="w3-right boutons JP-padding-large testbg"
-                        href="/moi/tutos_v1/css/selecteurs.html">
+                        href="/moi/tutos_v1/O_o">
                         suivant <i class="fas fa-reply reply2"></i></a>
                 </div>
 
-                <div class="w3-panel2 w3-info intro">
-                    <p>
-                        Pour qu'un navigateur web puisse formater un document html comme on le souhaiterait,<br>il faut lui lier un référencement, comme pour le élément img ou a en html.</p>
-                </div>
                 <div class="w3-panel w3-info intro">
-                    <p>il y a trois façon de le faire</p>
-                    <ol>
-                        <li><strong>En externe.</strong><br>
-                            <span style="font-size: 13px;">par une feuille de style référencée dans le head de l'HTML</span></li>
-                        <li><strong>En interne à l'HTML</strong><br>
-                            <span style="font-size: 13px;">en déclarant les styles dans le head du HTML</span></li>
-                        <li><strong>En interne des éléments</strong><br>
-                            <span style="font-size: 13px;">Le éléments peuvent contenir une déclaration de style ne interne.</span></i>
-                        </li>
-                    </ol>
+                    <p>Tous les éléments HTML peuvent être considérés comme des boites.<br>
+                        En CSS, le terme modèle de boîte est utilisé pour parler de conception et de mise en page.</p>
+                </div>
+                <div class="w3-panel2 w3-info intro">
+                    <p>Le modèle de boîte CSS est représentativement une boîte qui enveloppe chaque élément HTML. 
+                    Représenté ainci:<br>les marges exterieurs, les bordures, le marges internes et le contenu.
+                    </p>
                 </div>
 
                 <div id="separ2"></div>
-                <h2>Les feuilles des style <span class="txtdegrad1">externes</span></h2>
-                <p>Avec une seul feuille de style externe, vous pouvez attribuer l'apparence entière d'un site.<br>
-                    <span style="font-size: 13px;">En la liant dans l'enntête de l'HTML comme ceci:</span></p>
-                <div class="degrad-Vertical">
-                    <div class="w3-code sqlHigh notranslate w3-card-2">
-                        &lt;!DOCTYPE html&gt;<br>
-                        &lt;html lang&#61;&#34;fr&#45;FR&#34;&gt;<br>
-                        &nbsp;&nbsp;&nbsp;&lt;head&gt;<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&lt;link href&#61;&#34;Le/Chemin/DuDoc.CSS&#34;<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rel&#61;&#34;stylesheet&#34; type&#61;&#34;text/css&#34;&gt;</strong><br>
-                        &nbsp;&nbsp;&nbsp;&lt;/head&gt;<br><br>
-                        &nbsp;&nbsp;&nbsp;&lt;body&gt;.../
-                    </div>
-                </div>
-                    <h2>Styliser en <span class="txtdegrad1">interne</span></h2>
-                    <p>En déclarant les styles dans l’en-tête du document HTTML,<br>
-                        il est possible d'attribuer des styles ponctuels à un site web,<br>
-                    <span style="font-size: 13px;">ou considérez cette balise comme une feuille de style, à part entière,<br>si il n' y a pas de balise liant à une feuille externe.</span></p>
-                    <div class="degrad-Vertical">
-                        <div class="w3-code sqlHigh notranslate w3-card-2">
-                            &lt;!DOCTYPE html&gt;<br>
-                            &lt;html lang&#61;&#34;fr&#45;FR&#34;&gt;<br>
-                            &nbsp;&nbsp;&nbsp;&lt;head&gt;<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;link&gt;<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&lt;style&gt;</strong><br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&lt;/style&gt;</strong><br>
-                            &nbsp;&nbsp;&nbsp;&lt;/head&gt;<br><br>
-                            &nbsp;&nbsp;&nbsp;&lt;body&gt;.../
-                        </div>
-                    </div>
-                        <h2>Styliser un <span class="txtdegrad1">élément</span></h2>
-                        <p>C'est très utile pour ne changer qu'un élément d'un document lié à une feuille de style.<br>
-                        <span style="font-size: 13px;">Attribuer un style inline (en englais) ce fait de cette manière:</span></p>
-                            <div class="degrad-Vertical">
-                                <div class="w3-code sqlHigh notranslate w3-card-2">
-                                    &lt;p <strong>style&#61;&#34;color:grey&#34;</strong>&gt;<br>
-                                </div>
-                            </div>
-                                    <h2>Derrnier <span class="txtdegrad1">lut</span> premier <span class="txtdegrad1">utilisé</span></h2>
-                                    <p>Si certaines propriétés ont été définies pour le même sélecteur dans différentes feuilles de style,<br>
-                                    la valeur affichée ce sera celle la dernière feuille de style lue.</p>
-
-                                    <div class="w3-row-padding">
-                                        <div class="w3-half">
-                                            <div class="jp-onglet_g_faf  intro">
-                                                <div class="degrad-Vertical">
-                                                    <div class="w3-code sqlHigh notranslate w3-card-2" style="margin-right: 0px !important;">
-                                                        &lt;!DOCTYPE html&gt;<br>
-                                                        &lt;html lang&#61;&#34;fr&#45;FR&#34;&gt;<br>
-                                                        &nbsp;&nbsp;&nbsp;&lt;head&gt;<br>
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;link&gt;<br>
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&lt;style&gt;</strong><br>
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&lt;/style&gt;</strong><br>
-                                                        &nbsp;&nbsp;&nbsp;&lt;/head&gt;<br><br>
-                                                        &nbsp;&nbsp;&nbsp;&lt;body&gt;.../
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                    
-                                        <div class="w3-half">
-                                            <div class=" jp-onglet_d_faf w3- intro">
-                                                <div class="degrad-Vertical">
-                                                    <div class="w3-code4 sqlHigh notranslate w3-card-2">
-                                                        &lt;!DOCTYPE html&gt;<br>
-                                                        &lt;html lang&#61;&#34;fr&#45;FR&#34;&gt;<br>
-                                                        &nbsp;&nbsp;&nbsp;&lt;head&gt;<br>
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;style&gt;<br>
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/style&gt;<br>
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&lt;link&gt;</strong><br>
-                                                        &nbsp;&nbsp;&nbsp;&lt;/head&gt;<br><br>
-                                                        &nbsp;&nbsp;&nbsp;&lt;body&gt;.../
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
+                <h2>En cours de <span class="txtdegrad1">rédaction</span></h2>
+                <p>En cours derédaction<br></p>
+                
                     <div class="jp-example jp-card-ex">
-                        <h3>On peut styliser en:</h3>
-                        <ul>
-                            <li>important une feuille de style externe</li>
-                            <li>entre des balise de style dans l'en-tête de l'HTML</li>
-                            <li>Inline soit en ligne en ciblant que l'élémément à modifier</li>
-                            <li>l'élément de style utilisé en cas de mutltiples déclarations est le dernier lut par le navigateur web</li>
-                            </ul>
+                        <h3>En cours derédaction</h3>
+                        <p>En cours deredaction</p>
                     </div>
                     
                     <div id="separ1"></div>
                     <div class="w3-clear nextprev">
-                        <a id="btninsta" class=" boutons JP-padding-large testbg" href="/moi/tutos_v1/css/index.html">
+                        <a id="btninsta" class=" boutons JP-padding-large testbg" href="/moi/tutos_v1/css/background.html">
                             <i class="fas fa-reply"></i> Précédent</a>
                         <a id="btnneonD" class="w3-right boutons JP-padding-large testbg"
-                            href="/moi/tutos_v1/css/selecteurs.html">
+                            href="/moi/tutos_v1/O_o">
                             suivant <i class="fas fa-reply reply2"></i></a>
                     </div>
             </div>
@@ -2364,10 +2273,10 @@
                         <a href="https://jplemonias.github.io/moi/" target="_top" class="JP-hover-text-degrad"
                             style="text-decoration:none">Moi</a><br><br>Merci, Pe@cE.</p>
                             <div class="w3-clear nextprev">
-                                <a id="btninsta" class="w3-left boutons JP-padding-large btninstafoot" href="/moi/tutos_v1/css/index.html">
+                                <a id="btninsta" class="w3-left boutons JP-padding-large btninstafoot" href="/moi/tutos_v1/css/background.html">
                                     <i class="fas fa-reply"></i></a>
                                 <i class="fas fa-peace"></i>
-                                <a id="btnneonD" class="w3-right boutons JP-padding-large btnneonDfoot" href="/moi/tutos_v1/css/selecteurs.html">
+                                <a id="btnneonD" class="w3-right boutons JP-padding-large btnneonDfoot" href="/moi/tutos_v1/O_o">
                                     <i class="fas fa-reply reply2"></i></a>
                             </div>
                 </div>
