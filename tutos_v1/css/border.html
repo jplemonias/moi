@@ -2131,6 +2131,7 @@
                     <p>On peut leur définir une largeur spécifique,<br>en px, pt, cm, em, etc... ou,<br>
                         en utilisant l'une des trois valeurs prédéfinies:<br>
                         thin / fines,<br>medium / moyennes,<br>ou thick / épaisses.</p>
+                        <p style="font-size: 13px;">Nécessite un style de bordure</p>
                         <div class="degrad-Vertical">
                             <div class="w3-code sqlHigh notranslate w3-card-2">
                                 &#35;bordure &#123;<br>&nbsp;&nbsp;&nbsp;border-style&#58; solid&#59;<br>&nbsp;&nbsp;&nbsp;border-width&#58; 5px<br>&#125;
@@ -2146,12 +2147,13 @@
                         Si acunne couleur de bordure n'est définie, elle hérite de la couleur de son l'élément.<br><br>
                         La couleur peut être définie par:</p>
                     <ul>
-                        <li>son nom - comme "rouge"</li>
-                        <li>une valeur HEX - comme "# ff0000"</li>
-                        <li>une valeur RVB - comme "rgb (255,0,0)"</li>
-                        <li>une valeur HSL -  comme "hsl (0, 100%, 50%)"</li>
+                        <li>son nom - comme "purple"</li>
+                        <li>une valeur HEX - comme "# 800080"</li>
+                        <li>une valeur RVB - comme "rgb(128,0,128)"</li>
+                        <li>une valeur HSL -  comme "hsl(300, 100%, 25%)"</li>
                         <li>la valeur transparent.</li>
                     </ul>
+                    <p style="font-size: 13px;">Nécessite un style de bordure</p>
                         <div class="degrad-Vertical">
                             <div class="w3-code sqlHigh notranslate w3-card-2">
                                 &#35;bordure &#123;<br>
@@ -2160,14 +2162,82 @@
                                 &nbsp;&nbsp;&nbsp;border-color&#58; purple<br>&#125;
                             </div>
                         </div>
-                        <p>Même principe d'attribution de raccourci.</p>
+                        <p>Même principe d'attribution d'ordre.</p>
                         <div class=" w3-panel w3-info intro" style="padding: 5px 10px 5px 32px;">
                             <a class="w3-btn w3-button degrad1 hover-degrad1" href="https://codepen.io/PsychoActiF/pen/QWbQbXO.css"
                                 target="_blank" style="float:right;"">CSS <i class="far fa-share-square"></i></a>
                         </div>
+                        <h2>border-<span class="txtdegrad1">radius</span></h2>
+                        <p>L'on peut utiliser un radial pour déffinir des bords arrondis.<br>
+                            Il faut attribuer comme pour la largeur une valeur en px, pt, cm, em, etc...</p>
+                            <p style="font-size: 13px;">Nécessite un style de bordure</p>
+                            <div class="degrad-Vertical">
+                                <div class="w3-code sqlHigh notranslate w3-card-2">
+                                    &#35;bordure &#123;<br>
+                                    &nbsp;&nbsp;&nbsp;border-style&#58; solid&#59;<br>
+                                    &nbsp;&nbsp;&nbsp;border-width&#58; 5px&#59;<br>
+                                    &nbsp;&nbsp;&nbsp;border-color&#58; purple&#59;<br>
+                                    &nbsp;&nbsp;&nbsp;border-radius&#58; 5px<br>&#125;
+                                </div>
+                            </div>
+                            <p>Elles sont aussi attribuables dans une ordre précis.</p>
+                            <ol>
+                                <li>l'angle supérieure gauche,</li>
+                                <li>l'angle supérieure droit,</li>
+                                <li>l'angle unfèrieur droit,</li>
+                                <li>et l'angle infèrieur gauche.</li>
+                            </ol>
+                            <div class=" w3-panel w3-info intro" style="padding: 5px 10px 5px 32px;">
+                                <a class="w3-btn w3-button degrad1 hover-degrad1" href="https://codepen.io/PsychoActiF/pen/PoqQPKK.css"
+                                    target="_blank" style="float:right;"">CSS <i class="far fa-share-square"></i></a>
+                            </div>
+                            <h2>Attribuable par <span class="txtdegrad1">position</span></h2>
+                            <p>vous pouvez attribuer un possitionnement de bordure<br>
+                            pour lui donner un style.</p>
+                                <ul>Avec:
+                                    <li>border-top</li>
+                                    <li>border-right</li>
+                                    <li>border-bottom</li>
+                                    <li>border-left</li>
+                                </ul>
+                                <p style="font-size: 13px;">Ici le même résultat est obtenu:</p>
+                                <div class="degrad-Vertical">
+                                    <div class="w3-code sqlHigh notranslate w3-card-2">
+                                        &#35;bordure &#123;<br>
+                                        &nbsp;&nbsp;&nbsp;border-top&#58; double&#59;<br>
+                                        &nbsp;&nbsp;&nbsp;border-right&#58; dotted&#59;<br>
+                                        &nbsp;&nbsp;&nbsp;border-bottom&#58; solid&#59;<br>
+                                        &nbsp;&nbsp;&nbsp;border-left&#58; dashed<br>&#125;<br><br>
+                                        &#35;bordure &#123;<br>
+                                        &nbsp;&nbsp;&nbsp;border-style&#58; double dotted solid dashed<br>&#125;
+                                    </div>
+                                </div>
+                                <p>Les deux modes de saisie étant aussi utilisable </p>
+                                    <ul>individuelement
+                                        <li>border-top-style</li>
+                                        <li>border-top-width</li>
+                                        <li>border-top-color</li><br>
+                                        raccourcit
+                                        <li>border-top</li>
+                                    </ul>
+                                    <div class="degrad-Vertical">
+                                        <div class="w3-code sqlHigh notranslate w3-card-2">
+                                            &#35;bordure &#123;<br>
+                                            &nbsp;&nbsp;&nbsp;border-bottom-style&#58; solid&#59;<br>
+                                            &nbsp;&nbsp;&nbsp;border-bottom-width&#58; 6px&#59;<br>
+                                            &nbsp;&nbsp;&nbsp;border-bottom-color&#58; turquoise<br>&#125;<br><br>
+                                            &#35;bordure &#123;<br>
+                                            &nbsp;&nbsp;&nbsp;border-bottom&#58; solid 6px turquoise<br>&#125;
+                                        </div>
+                                    </div>
+                                <div class=" w3-panel w3-info intro" style="padding: 5px 10px 5px 32px;">
+                                    <a class="w3-btn w3-button degrad1 hover-degrad1" href="https://codepen.io/PsychoActiF/pen/zYGRrxr.css"
+                                        target="_blank" style="float:right;"">CSS <i class="far fa-share-square"></i></a>
+                                </div>
+    
 
                     <div class="jp-example jp-card-ex">
-                        <h3>Resumons</h3>Un border suivit de:
+                        <h3><stan style="font-size: 20px;">(∩｀-´)⊃━☆ﾟ.*･｡ﾟ</stan>Resumons</h3>Un border suivit de:
                         <ul style="list-style: none;">
                             <li><strong>-style</strong><br>
                                 <span style="font-size: 13px;">permet de déffinir l'aspect une bordure</span>
@@ -2178,6 +2248,13 @@
                             <li><strong>-color</strong><br>
                                 <span style="font-size: 13px;">permet de mettre une couleur à une bordure</span>
                             </li><br>
+                            <li><strong>-radius</strong><br>
+                                <span style="font-size: 13px;">permet d'arrondir les angles</span>
+                            </li><br>
+                            <li><strong>-top -right -bottom -left</strong><br>
+                                <span style="font-size: 13px;">perment de cibler la bordure a styliser<br>
+                                pouvant eux même être suivit des attribut de style</span>
+                            </li>
                         </ul>
                     </div>
                     
