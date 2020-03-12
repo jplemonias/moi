@@ -567,6 +567,7 @@ td,a:hover {
 
 
 @media (max-width: 444px){
+    .w3schools-logo,
     .w3-container.top a {
         font-size: 20px!important;
     }
