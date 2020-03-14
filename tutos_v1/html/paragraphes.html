@@ -1703,7 +1703,7 @@
             }
 
             .w3-code2 {
-                margin-left: -12px;
+                margin-left: -24px;
             }
 
             .w3-panel2 {
@@ -2128,7 +2128,7 @@
                 <div class="degrad-Vertical">
                     <div class="w3-code sqlHigh notranslate w3-card-2">
                         &lt;p&gt; Une phrase au dessus.<strong>&lt;br&gt;</strong><br>
-                        D'une autre.&lt;p&gt;
+                        D'une autre.&lt;/p&gt;
                     </div>
                 </div>
                 <p>Aussi; une serie d'espace n'en affichera qu'un.
@@ -2136,7 +2136,7 @@
                 <div class="degrad-Vertical">
                     <div class="w3-code sqlHigh notranslate w3-card-2">
                         HTML/<br>
-                        &lt;p&gt;<strong>ICI &nbsp;&nbsp;&nbsp;&nbsp;5</strong> espaces&lt;p&gt;<br><br>
+                        &lt;p&gt;<strong>ICI &nbsp;&nbsp;&nbsp;&nbsp;5</strong> espaces&lt;/p&gt;<br><br>
                         Affiché/<br>
                         ICI 5 espaces
                     </div>
@@ -2148,30 +2148,40 @@
                         <strong>&lt;pre&gt;</strong><br>
                         Il existe 10 sortes de personnes<br><br>
                         Celles qui regardent leur vie<br><br>
-                        Et celles qui la vivent.<br><strong>&lt;pre&gt;</strong>
+                        Et celles qui la vivent.<br><strong>&lt;/pre&gt;</strong>
                     </div>
                 </div>
                 
                 <h2>Afficher <span class="txtdegrad1">certains</span> caractères</h2>
 
-                <p>.
+                <p>Il y a également des caractères qui ne s'afficherons pas si vous les saisissez tel quel.<br>
+                    Par exemple le supèrieur à étant interprété comme l'ouverture d'une balise ne sera pas visible.<br><br>
+                    Pour palier cela il existe des Unicode permetant d'interpréter un code en caractère.<br><br>
+                    En UTF-8 l'unicode pour un superieur à est &amp;lt;<br>
+                    pour rendre affichable ce dernier il faut écrire &amp;amp;lt;<br>
+                    le &amp;amp; appelant l'esperluette (ou esperluète) renvoyant bien l'affichage &amp;lt;<br>
+                    mais surtout là pour casser l'interprétation du code brut de &amp;lt; par les navigateurs
                 </p>
                 <div class="degrad-Vertical">
                     <div class="w3-code sqlHigh notranslate w3-card-2">
-                        &lt;p&gt; Une phrase au dessus.<strong>&lt;br&gt;</strong><br>
-                        D'une autre.&lt;p&gt;
+                        &lt;p&gt;Esseyez ceci&lt;/p&gt;<br><br>
+                        &amp;lt;p&gt;Puis ceci&amp;lt;/p&gt;<br><br>
+                        &lt;p&gt;&amp;amp;lt;&lt;/p&gt;<br>
+                    </div>
+                </div>
+                <p>Cela devrait donner:
+                </p>
+                <div class="degrad-Vertical">
+                    <div class="w3-code2 sqlHigh notranslate w3-card-2" style="padding-left: 32px;">
+                        <p class="margnone" >Esseyez ceci</p><br>
+                            &lt;p>Puis ceci&lt;/p><br><br>
+                            <p class="margnone">&amp;lt;</p>
                     </div>
                 </div>
 
                 <div class="jp-example2 jp-card-exG">
-                    <h3>Resumons</h3>
-                    <p>Nimporte quel élement HTML peut avoir des attributs<br>
-                        L'attribut src indique le chemin d'accés à une image<br>
-                        L'attribut alt fournit du texte pour les lecteurs d'écran<br>
-                        L'attribut title fournit des informations supplémentaires en info-bulle<br>
-                        L'attribut href fournit des informations d'adresse pour les liens<br>
-                        Les attributs width et height définissent la taille de l'élement<br>
-                        Mieux vaut toujours écrire en minuscules le nom des attributs</p>
+                    <h3>En cours de redaction</h3>
+                    <p>En cours de rédaction</p>
                 </div>
                 <div id="separ1"></div>
                 <div class="w3-clear nextprev">
