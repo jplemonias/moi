@@ -2,7 +2,7 @@
 <html lang="fr-FR">
 
 <head>
-    <title>L'élément</title>
+    <title>Les paragraphes</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Keywords"
@@ -1196,9 +1196,12 @@
             #w3-exerciseform .exerciseprecontainer {
                 font-family: 'Source Code Pro', Menlo, Consolas, monospace;
             }
-
+            
+            .w3-panel2.w3-info.intro .w3-code2.sqlHigh.notranslate.w3-card-2 {
+                margin-left: -15px;
+            }
             .w3-code {
-                margin-right: -26px !important;
+                margin-right: -24px !important;
                 font-size: 14px;
             }
 
@@ -1421,6 +1424,12 @@
             border-radius: 15px 0 0 15px;
         }
 
+        .jp-example2 {
+            padding: 8px 20px;
+            margin: 24px 0px 24px -16px;
+            border-radius: 0 15px 15px 0;
+        }
+
         .w3-example {
             padding: 8px 20px;
             margin: 24px -16px 24px 0px;
@@ -1448,7 +1457,7 @@
             margin-bottom: 24px;
             margin-left: 32px !important;
             margin-right: -16px !important;
-            padding: 16px 32px;
+            padding: 16px 32px 16px 16px;
             border-radius: 20px 0 0 20px;
             background: linear-gradient(135deg, #d400ff, #04c4b4);
             color: black;
@@ -1537,7 +1546,7 @@
         }
 
         .w3-code {
-            margin-right: -24px;
+            margin-right: -16px;
             font-size: 15px;
         }
 
@@ -1656,11 +1665,6 @@
         }
 
         @media only screen and (max-device-width: 480px) {
-
-            .w3-code2 {
-                margin-left: -32px;
-            }
-
             #main {
                 padding: 24px
             }
@@ -1673,6 +1677,11 @@
                 font-size: 25px;
             }
 
+            #ulexemple {
+                padding: 0px !important;
+                list-style: none !important;
+            }
+
             .jp-example {
                 padding: 8px 16px;
                 margin: 24px -24px 24px 0px;
@@ -1681,11 +1690,6 @@
             .jp-example2 {
                 padding: 8px 16px;
                 margin: 24px 0px 24px -24px;
-            }
-
-            #ulexemple {
-                padding: 0px !important;
-                list-style: none !important;
             }
 
             .w3-example {
@@ -1698,9 +1702,14 @@
                 margin: 24px -24px;
             }
 
+            .w3-code2 {
+                margin-left: -12px;
+            }
+
             .w3-panel2 {
-                margin-right: -24px !important;
-                margin-left: 1px!important;
+                margin-left: 0px !important;
+                margin-right: -24px!important;
+                padding-right: 33px;
             }
 
             .w3-panel,
@@ -1841,10 +1850,10 @@
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/html/index.html">Introduction</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/html/editer.html">Editer de l'html</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/html/basic.html">Balises de baaaase</a>
-                    <a class="w3-bar-item w3-button padnone jp-selected" href="/moi/tutos_v1/html/elements.html">L'élément</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/html/elements.html">L'élément</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/html/attributs.html">Les attributs</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/html/titrage.html">Le titrage</a>
-                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">l'html</a>
+                    <a class="w3-bar-item w3-button padnone jp-selected" href="/moi/tutos_v1/html/paragraphes.html">Les paragraphes</a>
                     <a class="w3-bar-item w3-button padnone" href='/moi/tutos_v1/O_o'>l'html</a>
                     <a class="w3-bar-item w3-button padnone" href='/moi/tutos_v1/O_o'>l'html</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">l'html</a>
@@ -2078,95 +2087,98 @@
                     </a>
                 </div>
 
-                <h1>Les <span class="txtdegrad1">éléments</span> HTML</h1>
+                <h1>Les <span class="txtdegrad1">paragraphes</span></h1>
                 <div id="separ1"></div>
                 <div class="w3-clear nextprev">
-                    <a id="btninsta" class=" boutons JP-padding-large testbg" href="/moi/tutos_v1/html/basic.html">
+                    <a id="btninsta" class=" boutons JP-padding-large testbg" href="/moi/tutos_v1/html/titrage.html">
                         <i class="fas fa-reply"></i> Précédent</a>
                     <a id="btnneonD" class="w3-right boutons JP-padding-large testbg"
-                        href="/moi/tutos_v1/html/attributs.html">
+                        href="/moi/tutos_v1/html/O_o">
                         suivant <i class="fas fa-reply reply2"></i></a>
                 </div>
 
-                <div class="w3-panel w3-info intro">
-                    <p>Nous l'avons vu, un <strong>élément</strong> HTML se compose généralement de balises dites
-                        <i>ouvrantes</i> de début et <i>fermantes</i> de fin,<br>
-                        le contenu étant inséré entre les deux:<br><strong>&lt;</strong>NomDeBalise<strong>&gt;</strong>
-                        contenu <strong>&lt;/</strong>NomDeBalise<strong>&gt;</strong></p>
+                <div class="w3-panel2 w3-info intro">
+                    <p>Si vous avez suivit les premières pages sur l'HTML vous savez<br>
+                    qu'un paragraphece déclare ainci:</p>
                     <div class="degrad-Vertical">
-                        <div class="w3-code2 sqlHigh notranslate w3-card-2">
-                            <strong>&lt;p&gt;</strong> Mon premier paragraphe. <strong>&lt;/p&gt;</strong>
+                        <div class="w3-code3 sqlHigh notranslate w3-card-2">
+                            <strong>&lt;p&gt;</strong>Un paragraphe.<strong>&lt;/p&gt;</strong>
                         </div>
                     </div>
                 </div>
-                <div class=" w3-panel2 w3-info intro">
-                    <p>Les <i>éléments <strong>sans</strong> contenu</i> sont appelés <i>éléments
-                            <strong>vides</strong></i>.<br>Les éléments vides n'ont pas de balise de fin, comme
-                        l'élément
-                        <strong>&lt;br&gt;</strong> (qui indique un saut de ligne)</p>
+                <div class="w3-panel w3-info intro">
+                    <p>Et souvenez vous aussi,<br>qu'il est possible de ne pas déclarer de balise fermante</p>
                     <div class="degrad-Vertical">
                         <div class="w3-code3 sqlHigh notranslate w3-card-2">
-                            &lt;p&gt; Saut de <strong>&lt;br&gt;</strong> ligne. &lt;/p&gt;
+                            <strong>&lt;p&gt;</strong>Un premier paragraphe.<br>
+                            <strong>&lt;p&gt;</strong>Un second paragraphe.
                         </div>
                     </div>
-                    <p>En HTML un saut de lingne équivaut à <strong>un espace</strong>.</p>
+                    <p>MAIS que cela n'est pas recommendé.</p>
                 </div>
 
                 <div id="separ2"></div>
-                <h2><span class="txtdegrad1">3 principaux</span> éléments</h2>
-                <p>
-                    <strong>&lt;html&gt;</strong> l'élément <strong>racine</strong> de la <i>page web</i><br>
-                    <strong>&lt;head&gt;</strong> contient des <i>méta-informations</i> sur le document<br>
-                    <span
-                        style="font-size: 12px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Les
-                        <strong>méta-informations</strong> sont invisibles à l'utilisateur</span><br>
-                    <strong>&lt;body&gt;</strong> contient <i>le contenu</i> de la page <strong>visible</strong><br>
-                    <span
-                        style="font-size: 12px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mais
-                        pas toujours, tel que les <i>scripts</i> par exemple</span><br>
+                <h2>Savoir bien <span class="txtdegrad1">rédiger</span></h2>
+
+                <p>Pour que l'affichage par le navigateur il faut savoir comment il le fera en fonction de la rédaction.<br><br>
+                    Tout comme avec un logiciel de traitement de texte un retour à la ligne est Maj + entrée, non pas juste entrée.<br>
+                    En HTML un retour à la ligne est, nous l'avons vu, l'élément vide &lt;br&gt;.<br><br>
+                    <span style="font-size: 13px;">Rapel: un retour a la ligne en HTML = un espace<br>pratique pour la mise en page du code</span>
                 </p>
-                <h2>l'<span class="txtdegrad1">imbriquation</span> d'éléments:</h2>
-                <p>Les éléments HTML peuvent être <strong>imbriqués</strong><br>(les éléments peuvent contenir des
-                    éléments O_o...)<br><br>
-                    Tous les documents HTML sont constitués d'éléments HTML imbriqués.<br> L'élément <i>&lt;html&gt;</i>
-                    définit la <strong>totalité</strong> du document.<br>
-                    Entre son balisage de début et de fin se trouve l'élément <i>&lt;body&gt;</i>.<br>Ce derrnier
-                    définit le corps du document (<strong>visible</strong> par l'utilisateur).<br>
-                    À l'intérieur se trouvent d'autres éléments.</p>
-                <div class="jp-example jp-card-ex">
-                    <h3>Déjà vu</h3>
-                    <p class="codepen" data-height="324" data-theme-id="38865" data-default-tab="html"
-                        data-user="PsychoActiF" data-slug-hash="YzXZRBP"
-                        style="height: 333px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
-                        data-pen-title="Exemple 1">
-                        <span>Voir le code <a href="https://codepen.io/PsychoActiF/pen/YzXZRBP">
-                                Exemple 1</a> de Psycho@ctiF (<a href="https://codepen.io/PsychoActiF">@PsychoActiF</a>)
-                            on <a href="https://codepen.io">CodePen</a>.</span>
-                    </p>
-                    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-                    <a class="w3-btn w3-button degrad1 hover-degrad1" href="https://codepen.io/PsychoActiF/full/YzXZRBP"
-                        target="_blank">Résultat <i class="far fa-share-square"></i></a>
-                </div>
-                <p>La balise de fermeture est <i>considérée comme </i><strong>facultative</strong>.</p>
                 <div class="degrad-Vertical">
                     <div class="w3-code sqlHigh notranslate w3-card-2">
-                        &lt;html&gt;<br>
-                        &nbsp;&nbsp;&nbsp;&lt;body&gt;<br><br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Paragraphe 1<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Paragraphe 2<br><br>
-                        &nbsp;&nbsp;&nbsp;&lt;/body&gt;<br>
-                        &lt;/html&gt;
+                        &lt;p&gt; Une phrase au dessus.<strong>&lt;br&gt;</strong><br>
+                        D'une autre.&lt;p&gt;
                     </div>
                 </div>
-                <p>Ne comptez <strong>jamais</strong> sur cette méthode car cela peut produire <i>des résultats
-                        inattendus</i> et / ou <i>des erreurs</i>.</p>
+                <p>Aussi; une serie d'espace n'en affichera qu'un.
+                </p>
+                <div class="degrad-Vertical">
+                    <div class="w3-code sqlHigh notranslate w3-card-2">
+                        HTML/<br>
+                        &lt;p&gt;<strong>ICI &nbsp;&nbsp;&nbsp;&nbsp;5</strong> espaces&lt;p&gt;<br><br>
+                        Affiché/<br>
+                        ICI 5 espaces
+                    </div>
+                </div>
+                <p>Il est possible be déffinir un dcodage direct de ces caractères avec l'élément &lt;pre&gt;.
+                </p>
+                <div class="degrad-Vertical">
+                    <div class="w3-code sqlHigh notranslate w3-card-2">
+                        <strong>&lt;pre&gt;</strong><br>
+                        Il existe 10 sortes de personnes<br><br>
+                        Celles qui regardent leur vie<br><br>
+                        Et celles qui la vivent.<br><strong>&lt;pre&gt;</strong>
+                    </div>
+                </div>
+                
+                <h2>Afficher <span class="txtdegrad1">certains</span> caractères</h2>
+
+                <p>.
+                </p>
+                <div class="degrad-Vertical">
+                    <div class="w3-code sqlHigh notranslate w3-card-2">
+                        &lt;p&gt; Une phrase au dessus.<strong>&lt;br&gt;</strong><br>
+                        D'une autre.&lt;p&gt;
+                    </div>
+                </div>
+
+                <div class="jp-example2 jp-card-exG">
+                    <h3>Resumons</h3>
+                    <p>Nimporte quel élement HTML peut avoir des attributs<br>
+                        L'attribut src indique le chemin d'accés à une image<br>
+                        L'attribut alt fournit du texte pour les lecteurs d'écran<br>
+                        L'attribut title fournit des informations supplémentaires en info-bulle<br>
+                        L'attribut href fournit des informations d'adresse pour les liens<br>
+                        Les attributs width et height définissent la taille de l'élement<br>
+                        Mieux vaut toujours écrire en minuscules le nom des attributs</p>
+                </div>
                 <div id="separ1"></div>
                 <div class="w3-clear nextprev">
-                    <a id="btninsta" class=" boutons JP-padding-large testbg" href="/moi/tutos_v1/html/basic.html">
+                    <a id="btninsta" class=" boutons JP-padding-large testbg" href="/moi/tutos_v1/html/titrage.html">
                         <i class="fas fa-reply"></i> Précédent</a>
                     <a id="btnneonD" class="w3-right boutons JP-padding-large testbg"
-                        href="/moi/tutos_v1/html/attributs.html">
-                        suivant <i class="fas fa-reply reply2"></i></a>
+                        href="/moi/tutos_v1/html/O_o">suivant <i class="fas fa-reply reply2"></i></a>
                 </div>
             </div>
         </div>
@@ -2178,8 +2190,8 @@
             <span class=' psycho-logo2  tcode2' style="font-family:'HP','Segoe UI',Arial,sans-serif">DEVELOPPONS ENSEMBLE</span>
                     </span>
                 </a></div>
-                <div id="separ3" style='margin-right: 45px;margin-left: 45px;'></div>
-        <div classe='degrad1'>
+                <div id="separ2" style='margin-right: 45px;margin-left: 45px;'></div>
+        <div classe='degrad3'>
             <div id="footer" class="footer footerdegrad w3-container .w3-padding-32">
                 <div id="separ2"></div>
                 <div class="w3-row-padding w3-center w3-small" style="margin:0 -16px">
@@ -2330,10 +2342,10 @@
                         <a href="https://jplemonias.github.io/moi/" target="_top" class="JP-hover-text-degrad"
                             style="text-decoration:none">Moi</a><br><br>Merci, Pe@cE.</p>
                             <div class="w3-clear nextprev">
-                                <a id="btninsta" class="w3-left boutons JP-padding-large btninstafoot" href="/moi/tutos_v1/html/basic.html">
+                                <a id="btninsta" class="w3-left boutons JP-padding-large btninstafoot" href="/moi/tutos_v1/html/titrage.html">
                                     <i class="fas fa-reply"></i></a>
                                 <i class="fas fa-peace"></i>
-                                <a id="btnneonD" class="w3-right boutons JP-padding-large btnneonDfoot" href="/moi/tutos_v1/html/attributs.html">
+                                <a id="btnneonD" class="w3-right boutons JP-padding-large btnneonDfoot" href="/moi/tutos_v1/html/O_o">
                                     <i class="fas fa-reply reply2"></i></a>
                             </div>
                 </div>
