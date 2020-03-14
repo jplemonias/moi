@@ -2,7 +2,7 @@
 <html lang="fr-FR">
 
 <head>
-    <title>Les attributs</title>
+    <title>Commenter un HTML</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Keywords"
@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../../public/css/hometuto.css">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Source Code Pro' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d70a89f18c.js" crossorigin="anonymous"></script>
     <script type="application/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
 
@@ -159,8 +160,8 @@
 
         #sidenav a:hover,
         #sidenav a:focus {
-            color: #000 !important;
-            background: linear-gradient(-45deg, #04c4b4, #d400ff);
+            color: #000000;
+            background-color: #cccccc;
         }
 
         #sidenav a.active {
@@ -597,7 +598,7 @@
 
             #sidenav a {
                 padding: 3px 2px 3px 24px;
-                font-size: 16px;
+                font-size: 17px
             }
 
             #leftmenuinner {
@@ -607,6 +608,7 @@
                 position: relative;
                 width: auto;
                 padding-top: 0;
+                /*background-color: #f1f1f1;*/
             }
 
             #leftmenuinnerinner {
@@ -624,6 +626,15 @@
         }
 
         @media screen and (max-width:600px) {
+
+            #exhead,
+            #exbody,
+            #exdiv,
+            #extitle,
+            #exh,
+            #exp {
+                width: 100% !important;
+            }
 
             .w3-example,
             .w3-note,
@@ -668,7 +679,7 @@
             font-size: 2em;
         }
 
-        .fa-home:before {
+        .fa-home-:before {
             content: '\e800';
         }
 
@@ -1186,20 +1197,13 @@
         }
 
         @media only screen and (max-device-width: 480px) {
-            .w3-panel {
-                margin-left: -24px;
-                padding: 8px 32px;
-            }
 
             .w3-code,
             .w3-codespan,
             #w3-exerciseform .exerciseprecontainer {
                 font-family: 'Source Code Pro', Menlo, Consolas, monospace;
             }
-            
-            .w3-panel2.w3-info.intro .w3-code2.sqlHigh.notranslate.w3-card-2 {
-                margin-left: -15px;
-            }
+
             .w3-code {
                 margin-right: -24px !important;
                 font-size: 14px;
@@ -1400,7 +1404,8 @@
         }
 
         #footer {
-            /*padding: 32px;
+            /*margin-top: 25px;
+            padding: 32px;
             border-radius: 20px 20px 0 0;*/
         }
 
@@ -1420,8 +1425,8 @@
 
         .jp-example {
             padding: 8px 20px;
-            margin: 24px -16px 24px 0px;
-            border-radius: 15px 0 0 15px;
+            margin: 24px 0px 24px -16px;
+            border-radius: 0 15px 15px 0;
         }
 
         .jp-example2 {
@@ -1429,7 +1434,6 @@
             margin: 24px 0px 24px -16px;
             border-radius: 0 15px 15px 0;
         }
-
         .w3-example {
             padding: 8px 20px;
             margin: 24px -16px 24px 0px;
@@ -1447,17 +1451,17 @@
             margin-left: -32px;
             margin-right: 32px;
             padding: 16px 32px;
-            border-radius: 0 20px 20px 0;
             background: linear-gradient(135deg, #04c4b4, #d400ff);
+            border-radius: 0 20px 20px 0;
             color: black;
         }
 
         .w3-panel2 {
             margin-top: 24px;
             margin-bottom: 24px;
-            margin-left: 32px !important;
-            margin-right: -16px !important;
-            padding: 16px 32px 16px 16px;
+            margin-left: 32px;
+            margin-right: -16px;
+            padding: 16px 32px;
             border-radius: 20px 0 0 20px;
             background: linear-gradient(135deg, #d400ff, #04c4b4);
             color: black;
@@ -1545,8 +1549,10 @@
             margin-bottom: 1em;
         }
 
-        .w3-code {
+        .w3-code{
             margin-right: -16px;
+        }
+        .w3-code,.w3-code4 {
             font-size: 15px;
         }
 
@@ -1622,8 +1628,6 @@
                 background: linear-gradient(90deg, #04c4b4, #d400ff);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
-                padding: 0 0 0 0 !important;
-                font-size: 18px;
             }
         }
 
@@ -1637,7 +1641,6 @@
             -webkit-text-fill-color: transparent;
             margin-left: 10px;
         }
-
 
         @media screen and (min-width: 769px) {
 
@@ -1664,6 +1667,7 @@
             }
         }
 
+
         @media only screen and (max-device-width: 480px) {
             #main {
                 padding: 24px
@@ -1677,11 +1681,6 @@
                 font-size: 25px;
             }
 
-            #ulexemple {
-                padding: 0px !important;
-                list-style: none !important;
-            }
-
             .jp-example {
                 padding: 8px 16px;
                 margin: 24px -24px 24px 0px;
@@ -1690,6 +1689,11 @@
             .jp-example2 {
                 padding: 8px 16px;
                 margin: 24px 0px 24px -24px;
+            }
+
+            #ulexemple {
+                padding: 0px !important;
+                list-style: none !important;
             }
 
             .w3-example {
@@ -1701,15 +1705,10 @@
                 padding: 8px 16px 16px 16px;
                 margin: 24px -24px;
             }
-
-            .w3-code2 {
-                margin-left: -12px;
-            }
-
+            
             .w3-panel2 {
-                margin-left: 0px !important;
-                margin-right: -24px!important;
-                padding-right: 33px;
+                margin-right: -24px !important;
+                margin-left: 1px!important;
             }
 
             .w3-panel,
@@ -1849,10 +1848,10 @@
                     <h3 class="w3-margin-top vert">Débutant</h3>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/html/index.html">Introduction</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/html/editer.html">Editer de l'html</a>
-                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/html/commenter.html">Connenter un HTML</a>
+                    <a class="w3-bar-item w3-button padnone jp-selected" href="/moi/tutos_v1/html/commenter.html">Connenter un html</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/html/basic.html">Balises de baaaase</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/html/elements.html">L'élément</a>
-                    <a class="w3-bar-item w3-button padnone  jp-selected" href="/moi/tutos_v1/html/attributs.html">Les attributs</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/html/attributs.html">Les attributs</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/html/titrage.html">Le titrage</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/html/paragraphes.html">Les paragraphes</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/html/formatage.html">Mettre en forme</a>
@@ -2062,7 +2061,6 @@
             </div>
             <br class="hidesm">
         </nav>
-
         <nav class="w3-sidebar w3-collapse gris w3-card-2" id="mySidenav">
             <div class="w3-bar-block">
                 <div class="w3-container">
@@ -2087,161 +2085,46 @@
                     </a>
                 </div>
 
-                <h1>Les <span class="txtdegrad1">attributs</span></h1>
+                <h1>Les <span class="txtdegrad1">commentaires</span> HTML</h1>
                 <div id="separ1"></div>
                 <div class="w3-clear nextprev">
-                    <a id="btninsta" class=" boutons JP-padding-large testbg" href="/moi/tutos_v1/html/elements.html">
+                    <a id="btninsta" class=" boutons JP-padding-large testbg" href="/moi/tutos_v1/css/selecteurs.html">
                         <i class="fas fa-reply"></i> Précédent</a>
                     <a id="btnneonD" class="w3-right boutons JP-padding-large testbg"
-                        href="/moi/tutos_v1/html/titrage.html">
+                        href="/moi/tutos_v1/css/boites.html">
                         suivant <i class="fas fa-reply reply2"></i></a>
                 </div>
-
-                <div class=" w3-panel2 w3-info intro">
-                    <p>Les attributs fournissent des informations supplémentaires sur les éléments.
-                        Toujours spécifiés dans la balise ouvrante<br>
-                        Tous les éléments peuvent avoir des attributs<br>
-                        ils se présentent généralement sous cette forme: </p>
+                <p>Les commentaires sont utilisés pour expliquer le code.<br>
+                    Cela est très utile pour des modifications futures,<br>
+                    ou pour aider en cas d'écriture du code par plusieurs développeurs.<br><br>
+                    Ils sont ignorés par les navigateurs, il est donc intéressant si l'on veut,<br>
+                    par exemple, ne pas utiliser un style à un élément mais le garder dans un coin.<br><br></p>
+                <h2>Comment <span class="txtdegrad1">commenter</span> ?</h2>
+                <p>
+                    Un commentaire HTML est concidérable à une balise vide<br>
+                    car il est une balise en-soi, contenu entre le signe superieur à et infferieur à<br>
+                    aux quel s'ajoutent au début un pont d'exclamation suivit de deux tirets et à la fin,juste deux tirets.</p>
+                <div class="degrad-Vertical">
+                    <div class="w3-code sqlHigh notranslate w3-card-2">
+                        <b>&lt;!--</b> Un commentaire HTML <b>--&gt;</b>
+                    </div>
+                </div>
+                    <h2>Son <span class="txtdegrad1">utilisaton</span></h2>
+                    <span style="font-size: 13px;">Il peut s'écrire n'importe où dans l'HTML.<br>Et peut contenir plusieurs lignes.</span></p>
                     <div class="degrad-Vertical">
-                        <div class="w3-code3 sqlHigh notranslate w3-card-2">
-                            NomDeLattridut<strong>&#61;&#34;</strong>SaValeur<strong>&#34;</strong>
+                        <div class="w3-code sqlHigh notranslate w3-card-2">
+                            <b>&lt;!--Comme vous<br>pouver le<br>voir ici--&gt;</b>
                         </div>
                     </div>
-                    <p style="font-size: 12px;">Parfois même nécessaire comme pour une image.<br>
-                        Pour comprendre certaines obligations de renseignement d'attribut voir &#34;L'attribut src&#34;
-                        ci-dessous.<br></p>
-                </div>
-
-                <div id="separ2"></div>
-                <h2>Attribuer un <span class="txtdegrad1">chemin </span><span style="font-size: 15px;">src</span></h2>
-
-                <p>Le navigateur doit savoir où récupérer une image pour l'afficher<br>
-                    C'est pourquoi il faut nécéssairement ajouter un attribut src à la balise ouvrante d'une image.</p>
-                <div class="degrad-Vertical">
-                    <div class="w3-code sqlHigh notranslate w3-card-2">
-                        &lt;img <strong>src&#61;&#34;Le/Chemin/DeLimage.pnj&#34;</strong>&gt;
+                    
+                    <div id="separ1"></div>
+                    <div class="w3-clear nextprev">
+                        <a id="btninsta" class=" boutons JP-padding-large testbg" href="/moi/tutos_v1/css/selecteurs.html">
+                            <i class="fas fa-reply"></i> Précédent</a>
+                        <a id="btnneonD" class="w3-right boutons JP-padding-large testbg"
+                            href="/moi/tutos_v1/css/boites.html">
+                            suivant <i class="fas fa-reply reply2"></i></a>
                     </div>
-                </div>
-                <h2>Attribuer un <span class="txtdegrad1">text alternatif </span><span
-                        style="font-size: 15px;">alt</span></h2>
-
-                <p>Il est recommandé d'ajouter l'attribut alt à une image.<br>
-                    ce sera le texte affiché en cas d'erreur de renvoit vers celle-ci.
-                </p>
-                <div class="degrad-Vertical">
-                    <div class="w3-code sqlHigh notranslate w3-card-2">
-                        &lt;img src&#61;&#34;..&#34;<strong> alt&#61;&#34;Un dessin&#34;</strong>&gt;
-                    </div>
-                </div>
-                <div class=" w3-panel w3-info intro">
-                    <p>La valeur peut être lue par les lecteurs d'écran.<br>Par exemple une personne malvoyante peut
-                        «entendre» la description dans l'attribut.</p>
-                </div>
-                <h2>Attribuer un <span class="txtdegrad1">titre </span><span style="font-size: 15px;">title</span></h2>
-
-                <p>Il est aussi recommandé de l'ajouter à une image.<br>
-                    <span style="font-size: 12px;">Ainsi qu'à d'autres types d'éléments</span><br>
-                    Ce texte sera affiché si l'utilisateur pointe l'élément titré.
-                </p>
-                <div class="degrad-Vertical">
-                    <div class="w3-code sqlHigh notranslate w3-card-2">
-                        &lt;img src&#61;&#34;..&#34; alt&#61;&#34;..&#34;<strong> title&#61;&#34;Mon
-                            dessin&#34;</strong>&gt;
-                    </div>
-                </div>
-                <span style="font-size: 12px;">Le texte apparaîtra sous la forme d'info-bulle</span>
-                <div class=" w3-panel2 w3-info intro">
-                    <p>Cette valeur est notamment utile dans les liens.<br>Elle peut faciliter la navigation pour
-                        l'utilisateur,</p>
-                    <div class="degrad-Vertical">
-                        <div class="w3-code2 sqlHigh notranslate w3-card-2">
-                            &lt;p title&#61;&#34;<strong>Titre I</strong>&#34;&gt;&lt;/p&gt;<br>
-                            &lt;p title&#61;&#34;<strong>Titre II</strong>&#34;&gt;&lt;/p&gt;
-                        </div>
-                    </div>
-                    <p>ou, comme vous pouvez le voir au-dessus,<br>apporter un titrage différent à des paragraphes.</p>
-                </div>
-                <h2>Attribuer un <span class="txtdegrad1">référencement </span><span
-                        style="font-size: 15px;">href</span></h2>
-
-                <p>L'utilité d'un lien en soi est de pouvoir faire un revoit vers une autre page web, par exemple.<br>
-                    Comme pour une image, il faut indiquer au navigateur où renvoyer l'utilisateur.</p>
-                <div class="degrad-Vertical">
-                    <div class="w3-code sqlHigh notranslate w3-card-2">
-                        &lt;a <strong>href&#61;&#34;Le/Renvoit/SurPage.html&#34;</strong>&gt;&lt;/a&gt;
-                    </div>
-                </div>
-                <h2>Attribuer une <span class="txtdegrad1">hauteur</span> / <span class="txtdegrad2">largeur</span></h2>
-
-                <p>height / width<br>La taille des éléments peut y être référencée,<br>
-                    comme des attributs de style.</p>
-                <div class="degrad-Vertical">
-                    <div class="w3-code sqlHigh notranslate w3-card-2">
-                        &lt;img <strong>height&#61;&#34;100px&#34; width&#61;&#34;100px&#34;</strong>&gt;<br>
-                        &lt;a href&#61;&#34;..&#34; <strong>style&#61;&#34;color: black&#34;</strong>&gt;&lt;/a&gt;
-                    </div>
-                </div>
-                <div class=" w3-panel w3-info intro" style="padding: 5px 10px 0px 32px;">
-                    <p class="margnone" style="float:right;">Mais ce ci est plus une histoire de style &#128526;
-                        <a href="/moi/tutos_v1/O_o" class="w3-button degrad2 hover-degrad2">Tutos CSS</a>.</p>
-                </div>
-                <h2>Attribuer une <span class="txtdegrad1">langue</span> / un <span class="txtdegrad2">dialecte</span>
-                </h2>
-
-                <p>lang<br>Il est important de le faire dans la balise html,<br>
-                    notamment pour les applications d'accessibilité et les moteurs de recherche.</p>
-                <html lang="fr=FR">
-                <div class="degrad-Vertical">
-                    <div class="w3-code sqlHigh notranslate w3-card-2">
-                        &lt;html <strong>lang&#61;&#34;fr&#45;FR&#34;</strong>&gt;<br>
-                        &lt;/html&gt;
-                    </div>
-                </div>
-                <p>Les deux premières lettres spécifient la langue (en).<br>S'il y a un dialecte, ajoutez deux lettres
-                    supplémentaires (EN).</p>
-                <div class="jp-example jp-card-ex">
-                    <h3>Suggestions d'utilisation</h3>
-                    <p>Prennez l'habitude de déclarer vos attributs en minuscules.<br>Car les documents de type XHTML
-                        l'exigent quant à eux.<br><br>
-                        En HTML:5 il n'est pas nécessaire de sertir de guillemets, mais encore une fois, <br>il est
-                        recommandé de s'y tenir de le faire</p>
-                    <div class="degrad-Vertical" style="margin-left: -4px;">
-                        <div class="w3-code2 sqlHigh notranslate w3-card-2">
-                            &lt;p title&#61;&#34;<strong>Titre I</strong>&#34;&gt;&lt;/p&gt;<br>
-                            &lt;p title&#61;&#34;<strong>Titre II</strong>&#34;&gt;&lt;/p&gt;
-                        </div>
-                    </div>
-                    <p>guillemets ou apostrophe?<br>Dans certaines situations, lorsque la valeur d'attribut elle-même
-                        contient des guillemets, il est nécessaire d'utiliser des apostrophes</p>
-                    <div class="degrad-Vertical" style="margin-bottom: 15px;margin-left: -4px;">
-                        <div class="w3-code2 sqlHigh notranslate w3-card-2">
-                            &lt;p title&#61;<strong>&apos;</strong> Un exemple normal
-                            <strong>&apos;</strong>&gt;&lt;/p&gt;<br>
-                            &lt;p title&#61;<strong>&#34;</strong> Un exemple normal
-                            <strong>&#34;</strong>&gt;&lt;/p&gt;<br>
-                            &lt;p title&#61;<strong>&apos;</strong> Un <strong>&#34;</strong>avec<strong>&#34;</strong>
-                            importance <strong>&apos;</strong>&gt;&lt;/p&gt;
-                        </div>
-                    </div>
-                </div>
-
-                <div class="jp-example2 jp-card-exG">
-                    <h3>Resumons</h3>
-                    <p>Nimporte quel élement HTML peut avoir des attributs<br>
-                        L'attribut src indique le chemin d'accés à une image<br>
-                        L'attribut alt fournit du texte pour les lecteurs d'écran<br>
-                        L'attribut title fournit des informations supplémentaires en info-bulle<br>
-                        L'attribut href fournit des informations d'adresse pour les liens<br>
-                        Les attributs width et height définissent la taille de l'élement<br>
-                        Mieux vaut toujours écrire en minuscules le nom des attributs</p>
-                </div>
-                <div id="separ1"></div>
-                <div class="w3-clear nextprev">
-                    <a id="btninsta" class=" boutons JP-padding-large testbg" href="/moi/tutos_v1/html/elements.html">
-                        <i class="fas fa-reply"></i> Précédent</a>
-                    <a id="btnneonD" class="w3-right boutons JP-padding-large testbg"
-                        href="/moi/tutos_v1/html/titrage.html">suivant <i class="fas fa-reply reply2"></i></a>
-                </div>
             </div>
         </div>
         <div id="separ3" style='margin-right: 45px;margin-left: 45px;'></div>
@@ -2252,18 +2135,18 @@
             <span class=' psycho-logo2  tcode2' style="font-family:'HP','Segoe UI',Arial,sans-serif">DEVELOPPONS ENSEMBLE</span>
                     </span>
                 </a></div>
-                <div id="separ2" style='margin-right: 45px;margin-left: 45px;'></div>
-        <div classe='degrad3'>
+                <div id="separ3" style='margin-right: 45px;margin-left: 45px;'></div>
+        <div classe='degrad1'>
             <div id="footer" class="footer footerdegrad w3-container .w3-padding-32">
                 <div id="separ2"></div>
                 <div class="w3-row-padding w3-center w3-small" style="margin:0 -16px">
                     <div class="w3-col l3 m3 s12">
-                        <a class="w3-button degrad1 hover-degrad1 w3-block" href="/moi/tutos_v1/index.html"
-                            style="white-space:nowrap;text-decoration:none;margin-top:1px;margin-bottom:1px">ACCUEIL</a>
+                        <a class="w3-button degrad1 hover-degrad1 w3-block" href="/moi/tutos_v1/html/index.html"
+                            style="white-space:nowrap;text-decoration:none;margin-top:1px;margin-bottom:1px">HTML</a>
                     </div>
                     <div class="w3-col l3 m3 s12">
-                        <a class="w3-button degrad2 hover-degrad2 w3-block" href="/moi/tutos_v1/css/index.html"
-                            style="text-decoration:none;margin-top:1px;margin-bottom:1px">CSS</a>
+                        <a class="w3-button degrad2 hover-degrad2 w3-block" href="/moi/tutos_v1/index.html"
+                            style="text-decoration:none;margin-top:1px;margin-bottom:1px">ACCUEIL</a>
                     </div>
                     <div class="w3-col l3 m3 s12">
                         <a class="w3-button degrad1 hover-degrad1 w3-block" href="/moi/tutos_v1/O_o" target="_blank"
@@ -2274,6 +2157,7 @@
                             style="text-decoration:none;margin-top:1px;margin-bottom:1px">PHP/SQL</a>
                     </div>
                 </div>
+
                 
                 <!--
             <div class="degradnoir w3-padding w3-margin-bottom" id="err_form" style="display:none;position:relative">
@@ -2404,10 +2288,10 @@
                         <a href="https://jplemonias.github.io/moi/" target="_top" class="JP-hover-text-degrad"
                             style="text-decoration:none">Moi</a><br><br>Merci, Pe@cE.</p>
                             <div class="w3-clear nextprev">
-                                <a id="btninsta" class="w3-left boutons JP-padding-large btninstafoot" href="/moi/tutos_v1/html/elements.html">
+                                <a id="btninsta" class="w3-left boutons JP-padding-large btninstafoot" href="/moi/tutos_v1/css/selecteurs.html">
                                     <i class="fas fa-reply"></i></a>
                                 <i class="fas fa-peace"></i>
-                                <a id="btnneonD" class="w3-right boutons JP-padding-large btnneonDfoot" href="/moi/tutos_v1/html/titrage.html">
+                                <a id="btnneonD" class="w3-right boutons JP-padding-large btnneonDfoot" href="/moi/tutos_v1/css/boites.html">
                                     <i class="fas fa-reply reply2"></i></a>
                             </div>
                 </div>
