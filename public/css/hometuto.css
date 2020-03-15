@@ -744,3 +744,10 @@ td,a:hover {
     -webkit-text-decoration: double underline;
     -moz-text-decoration: double underline;
 }
+
+
+.fas.fa-toolbox{
+    background: linear-gradient(-45deg, #04c4b4, #d400ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
