@@ -2421,7 +2421,7 @@ ul {
                         &nbsp;&nbsp;&nbsp;padding&#58; 20px 30px 10px 5px<br>&#125;
                     </div>
                 </div>
-                <p>Dans ces deux exepmles, les marges sont inversées par leurs valeurs,<br>
+                <p>Dans ces deux exemples, les marges sont inversées par leurs valeurs,<br>
                     l'ordre de déclaration étant le même.
                 </p>
                 <h2><span class="txtdegrad1">Apairer </span>les déclarations</h2>
@@ -2461,7 +2461,33 @@ ul {
                         &nbsp;&nbsp;&nbsp;padding&#58; 20px 30px 10px 5px<br>&#125;
                     </div>
                 </div>
-                <p class="codepen" data-height="419" data-theme-id="38865" data-default-tab="result" data-user="PsychoActiF" data-slug-hash="gOpzYZV" style="height: 419px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="padding">
+                <h2>Le padding <span class="txtdegrad1">si</span></h2>
+                <p>une largeur est déffinie<br>Alors Il s'ajouterra aux dimmention déffinies
+                </p>
+                <div class="degrad-Vertical">
+                    <div class="w3-code sqlHigh notranslate w3-card-2">
+                        .pad6 &#123;<br>
+                        &nbsp;&nbsp;&nbsp;padding&#58; 20px 30px 10px 5px&#59;<br>
+                        &nbsp;&nbsp;&nbsp;width&#58; 350px<br>&#125;
+                    </div>
+                </div>
+                <p>Pour que le padding soit compris dans les valeurs de taille attribuées<br>
+                    il faut rajouter box-sizing: border-box pour indiquer au padding qu'il doit<br>
+                    s'inclure à ces dimmentions plustot que de s'y ajouter. 
+                </p>
+                <div class="degrad-Vertical">
+                    <div class="w3-code sqlHigh notranslate w3-card-2">
+                        .pad6 &#123;<br>
+                        &nbsp;&nbsp;&nbsp;padding&#58; 20px 30px 10px 5px&#59;<br>
+                        &nbsp;&nbsp;&nbsp;box-sizing&#58; border-box&#59;<br>
+                        &nbsp;&nbsp;&nbsp;width&#58; 350px<br>&#125;
+                    </div>
+                </div>
+                <p>Rappel: <span style="font-size: 13px;">la largeur déffinissant la zone de contenu de l'élément.<br>
+                    Elle est la partie à l'intérieur du padding, de la bordure et du margin d'un élément<br></span>Voir &gt;les modèles de boîte&lt;.</p>
+
+
+                <p class="codepen" data-height="603" data-theme-id="38865" data-default-tab="result" data-user="PsychoActiF" data-slug-hash="gOpzYZV" style="height: 603px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="padding">
                     <span>See the Pen <a href="https://codepen.io/PsychoActiF/pen/gOpzYZV">
                     padding</a> by Psycho@ctiF (<a href="https://codepen.io/PsychoActiF">@PsychoActiF</a>)
                     on <a href="https://codepen.io">CodePen</a>.</span>
