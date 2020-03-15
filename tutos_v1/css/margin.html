@@ -2445,7 +2445,7 @@ ul {
                 <div class="degrad-Vertical">
                     <div class="w3-code sqlHigh notranslate w3-card-2">
                         .mar2 &#123;<br>
-                        &nbsp;&nbsp;&nbsp;margin&#58; 10px<br>&#125;
+                        &nbsp;&nbsp;&nbsp;margin&#58; 20px<br>&#125;
                     </div>
                 </div>
                 <p>Maintenant le margin serra de 10 pixels en haut et en bas<br>
@@ -2454,7 +2454,7 @@ ul {
                 <div class="degrad-Vertical">
                     <div class="w3-code sqlHigh notranslate w3-card-2">
                         .mar3 &#123;<br>
-                        &nbsp;&nbsp;&nbsp;margin&#58; 10px 30xp<br>&#125;
+                        &nbsp;&nbsp;&nbsp;margin&#58; 20px 30xp<br>&#125;
                     </div>
                 </div>
                 <p>Ici le margin de 10 pixels n'est plus qu'en bas remplacé par 20 en haut,<br>
@@ -2464,7 +2464,7 @@ ul {
                 <div class="degrad-Vertical">
                     <div class="w3-code sqlHigh notranslate w3-card-2">
                         .mar4 &#123;<br>
-                        &nbsp;&nbsp;&nbsp;margin&#58; 20px 30xp 10px<br>&#125;
+                        &nbsp;&nbsp;&nbsp;margin&#58; 10px 30xp 20px<br>&#125;
                     </div>
                 </div>
                 <p>En ajoutant donc cette derrnière déclaration nous avons bien 4 marges internes diférentes.
@@ -2472,9 +2472,35 @@ ul {
                 <div class="degrad-Vertical">
                     <div class="w3-code sqlHigh notranslate w3-card-2">
                         .mar5 &#123;<br>
-                        &nbsp;&nbsp;&nbsp;margin&#58; 20px 30px 10px 5px<br>&#125;
+                        &nbsp;&nbsp;&nbsp;margin&#58; 10px 30px 20px 40px<br>&#125;
                     </div>
                 </div>
+                <h2>Le margin <span class="txtdegrad1">si</span></h2>
+                <p>une largeur est déffinie<br>Alors Il s'ajouterra aux dimmention déffinies
+                </p>
+                <div class="degrad-Vertical">
+                    <div class="w3-code sqlHigh notranslate w3-card-2">
+                        .mar6 &#123;<br>
+                        &nbsp;&nbsp;&nbsp;margin&#58; 10px 30px 20px 40px&#59;<br>
+                        &nbsp;&nbsp;&nbsp;width&#58; 350px<br>&#125;
+                    </div>
+                </div>
+                <p>Pour que le margin soit compris dans les valeurs de taille attribuées<br>
+                    il faut rajouter box-sizing: border-box pour indiquer au margin qu'il doit<br>
+                    s'inclure à ces dimmentions plustot que de s'y ajouter. 
+                </p>
+                <div class="degrad-Vertical">
+                    <div class="w3-code sqlHigh notranslate w3-card-2">
+                        .mar7 &#123;<br>
+                        &nbsp;&nbsp;&nbsp;margin&#58; 10px 30px 20px 40px&#59;<br>
+                        &nbsp;&nbsp;&nbsp;box-sizing&#58; border-box&#59;<br>
+                        &nbsp;&nbsp;&nbsp;width&#58; 350px<br>&#125;
+                    </div>
+                </div>
+                <p>Rappel: <span style="font-size: 13px;">la largeur déffinissant la zone de contenu de l'élément.<br>
+                    Elle est la partie à l'intérieur du margin, de la bordure et du margin d'un élément<br></span>Voir <a href="/moi/tutos_v1/css/boites.html">&gt;les modèles de boîte&lt;</a>.</p>
+
+
                 <p class="codepen" data-height="387" data-theme-id="38865" data-default-tab="result" data-user="PsychoActiF" data-slug-hash="BaNxBbN" style="height: 387px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="margin">
                     <span>See the Pen <a href="https://codepen.io/PsychoActiF/pen/BaNxBbN">
                     margin</a> by Psycho@ctiF (<a href="https://codepen.io/PsychoActiF">@PsychoActiF</a>)
