@@ -2419,7 +2419,7 @@ ul {
                 </p>
                 <div class="degrad-Vertical">
                     <div class="w3-code sqlHigh notranslate w3-card-2">
-                        .pad1 &#123;<br>
+                        #pad1 &#123;<br>
                         &nbsp;&nbsp;&nbsp;padding-top&#58; 10px&#59;<br>
                         &nbsp;&nbsp;&nbsp;padding-right&#58; 5px&#59;<br>
                         &nbsp;&nbsp;&nbsp;padding-bottom&#58; 20px&#59;<br>
@@ -2430,20 +2430,43 @@ ul {
                 </p>
                 <div class="degrad-Vertical">
                     <div class="w3-code sqlHigh notranslate w3-card-2">
-                        .pad5 &#123;<br>
+                        #pad5 &#123;<br>
                         &nbsp;&nbsp;&nbsp;padding&#58; 20px 30px 10px 5px<br>&#125;
                     </div>
                 </div>
-                <p>Dans ces deux exemples, les marges sont inversées par leurs valeurs,<br>
+                <p>Dans ces deux premiers exemples, les marges sont inversées par leurs valeurs,<br>
                     l'ordre de déclaration étant le même.
                 </p>
+                    <p>Ici une marge de 25 pixels à gauche lesautres à zéro.
+                    </p>
+                    <div class="degrad-Vertical">
+                        <div class="w3-code sqlHigh notranslate w3-card-2">
+                            #pad8 &#123;<br>
+                            &nbsp;&nbsp;&nbsp;padding&#58; 0 0 0 25px<br>&#125;
+                        </div>
+                    </div>
+                    <h2>La valeur <span class="txtdegrad1">inherit</span>,</h2>
+                    <p>permet d'affecter la même valeur d'attribut auquel l'héritage est lié<br>Dans cet exemple les marges de l'élément ayant l'id #pad9 seront héritées de l'élément parent &lt;div&gt;.<br>
+                        <span style="font-size: 13px;">A condition que l'élément #pad9 soit bien imbriqué dans une &lt;div&gt; dans l'HTML,<br>
+                        au même titre que pour l'élément ayant l'id #pad10 héritera d'une marge en haut égale à celle de son parent.</span>
+                    </p>
+                    <div class="degrad-Vertical">
+                        <div class="w3-code sqlHigh notranslate w3-card-2">
+                            div &#123;<br>
+                            &nbsp;&nbsp;&nbsp;padding&#58; 5px 2px 5px 25px<br>&#125;<br><br>
+                            #pad9 &#123;<br>
+                            &nbsp;&nbsp;&nbsp;padding&#58; inherit<br>&#125;<br><br>
+                            #pad10 &#123;<br>
+                            &nbsp;&nbsp;&nbsp;padding-top&#58; inherit<br>&#125;
+                        </div>
+                    </div>
                 <h2><span class="txtdegrad1">Apairer </span>les déclarations</h2>
                 <p>Un même margin est attribuable en ne saisisant qu'une valeur.<br>
                     Un margin de 10 pixels serra attribué aux quatres cotés
                 </p>
                 <div class="degrad-Vertical">
                     <div class="w3-code sqlHigh notranslate w3-card-2">
-                        .pad2 &#123;<br>
+                        #pad2 &#123;<br>
                         &nbsp;&nbsp;&nbsp;padding&#58; 10px<br>&#125;
                     </div>
                 </div>
@@ -2452,7 +2475,7 @@ ul {
                 </p>
                 <div class="degrad-Vertical">
                     <div class="w3-code sqlHigh notranslate w3-card-2">
-                        .pad3 &#123;<br>
+                        #pad3 &#123;<br>
                         &nbsp;&nbsp;&nbsp;padding&#58; 10px 30px<br>&#125;
                     </div>
                 </div>
@@ -2462,7 +2485,7 @@ ul {
                 </p>
                 <div class="degrad-Vertical">
                     <div class="w3-code sqlHigh notranslate w3-card-2">
-                        .pad4 &#123;<br>
+                        #pad4 &#123;<br>
                         &nbsp;&nbsp;&nbsp;padding&#58; 20px 30px 10px<br>&#125;
                     </div>
                 </div>
@@ -2470,7 +2493,7 @@ ul {
                 </p>
                 <div class="degrad-Vertical">
                     <div class="w3-code sqlHigh notranslate w3-card-2">
-                        .pad5 &#123;<br>
+                        #pad5 &#123;<br>
                         &nbsp;&nbsp;&nbsp;padding&#58; 20px 30px 10px 5px<br>&#125;
                     </div>
                 </div>
@@ -2479,7 +2502,7 @@ ul {
                 </p>
                 <div class="degrad-Vertical">
                     <div class="w3-code sqlHigh notranslate w3-card-2">
-                        .pad6 &#123;<br>
+                        #pad6 &#123;<br>
                         &nbsp;&nbsp;&nbsp;padding&#58; 20px 30px 10px 5px&#59;<br>
                         &nbsp;&nbsp;&nbsp;width&#58; 350px<br>&#125;
                     </div>
@@ -2490,7 +2513,7 @@ ul {
                 </p>
                 <div class="degrad-Vertical">
                     <div class="w3-code sqlHigh notranslate w3-card-2">
-                        .pad7 &#123;<br>
+                        #pad7 &#123;<br>
                         &nbsp;&nbsp;&nbsp;padding&#58; 20px 30px 10px 5px&#59;<br>
                         &nbsp;&nbsp;&nbsp;box-sizing&#58; border-box&#59;<br>
                         &nbsp;&nbsp;&nbsp;width&#58; 350px<br>&#125;
@@ -2498,32 +2521,14 @@ ul {
                 </div>
                 <p>Rappel: <span style="font-size: 13px;">la largeur déffinissant la zone de contenu de l'élément.<br>
                     Elle est la partie à l'intérieur du padding, de la bordure et du margin d'un élément<br></span>Voir <a href="/moi/tutos_v1/css/boites.html">&gt;les modèles de boîte&lt;</a>.</p>
-                    <p>En cours de redaction.
-                    </p>
-                    <div class="degrad-Vertical">
-                        <div class="w3-code sqlHigh notranslate w3-card-2">
-                            .pad8 &#123;<br>
-                            &nbsp;&nbsp;&nbsp;padding&#58; 5px 0 5px 25px<br>&#125;
-                        </div>
-                    </div>
-                    <p>En cours de redaction. 
-                    </p>
-                    <div class="degrad-Vertical">
-                        <div class="w3-code sqlHigh notranslate w3-card-2">
-                            div &#123;<br>
-                            &nbsp;&nbsp;&nbsp;padding&#58; 5px 0 5px 25px<br>&#125;<br><br>
-                            .pad9 &#123;<br>
-                            &nbsp;&nbsp;&nbsp;padding&#58; inherit<br>&#125;
-                        </div>
-                    </div>
 
 
-                <p class="codepen" data-height="603" data-theme-id="38865" data-default-tab="result" data-user="PsychoActiF" data-slug-hash="gOpzYZV" style="height: 603px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="padding">
-                    <span>See the Pen <a href="https://codepen.io/PsychoActiF/pen/gOpzYZV">
-                    padding</a> by Psycho@ctiF (<a href="https://codepen.io/PsychoActiF">@PsychoActiF</a>)
-                    on <a href="https://codepen.io">CodePen</a>.</span>
-                  </p>
-                  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                    <p class="codepen" data-height="697" data-theme-id="38865" data-default-tab="result" data-user="PsychoActiF" data-slug-hash="gOpzYZV" style="height: 697px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="padding">
+                        <span>See the Pen <a href="https://codepen.io/PsychoActiF/pen/gOpzYZV">
+                        padding</a> by Psycho@ctiF (<a href="https://codepen.io/PsychoActiF">@PsychoActiF</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                      </p>
+                      <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
                     <div class="jp-example2 jp-card-ex">
                         <h3>En cours de redaction</h3>
