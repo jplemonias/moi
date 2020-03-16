@@ -86,7 +86,7 @@ legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}t
     color:#000!important;
     background-color:#ccc!important;}
 
-#bt-nav_g {
+.bt-nav_g {
     width: 100%;
     display: block;
     padding: 0 16px;
@@ -100,13 +100,17 @@ legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}t
     box-shadow: none;
 }
 
-#bt-nav_g:hover{
+.bt-nav_g:hover{
     color:#000!important;
     background-color:#ccc!important;
     width: calc(100% - 15px)!important;
     margin-left: 15px!important;
     border-radius: 5px 0 0 5px;
     box-shadow: inset -28px 0px 20px 0px rgba(75, 75, 75, 0.699);
+}
+
+.bt-nav_g.jp-selected:hover{
+    box-shadow: -2px -3px 20px 0px rgba(202, 202, 202, 0.699);
 }
 
 .w3schools-logo:hover .tcode {
