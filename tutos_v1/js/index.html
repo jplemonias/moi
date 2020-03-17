@@ -1740,13 +1740,16 @@
         })(jQuery);
 
         function hw() {
-            document.getElementById("ex1").innerHTML = "hello, world<br>&nbsp;";
+            document.getElementById("ex1").innerHTML = "hello, world<br>&nbsp";
         }
-        function hw() {
-            document.getElementById("ex1").innerHTML = "hello, world<br>&nbsp;";
+        function reset() {
+            document.getElementById('ex2').src="../../public/img/250.png";
         }
-        function hw() {
-            document.getElementById("ex1").innerHTML = "hello, world<br>&nbsp;";
+        function rick() {
+            document.getElementById('ex2').src="../../public/img/rick.png";
+        }
+        function morty() {
+            document.getElementById('ex2').src="../../public/img/morty.png";
         }
     </script>
 </head>
@@ -2147,13 +2150,14 @@
                     <i class="fas fa-home"></i> Teste I</a>
                 <div id="separ1"></div>
                 <h2>Etape 1: ouvrir TextEdit <span style="font-size: 18px;">(MAC)</span></h2>
-                <p>Ouvrir le Finder> Applications> TextEdit<br>Modifiez également certaines préférences pour que
-                    l'application enregistre correctement les fichiers.<br>
-                    Dans Préférences> Format> choisissez "Texte brut"<br><br>
-                    Ensuite, sous "Ouvrir et enregistrer", cochez la case qui indique "Afficher les fichiers HTML sous
-                    forme de code HTML au lieu de texte formaté".<br><br>
-                    Ouvrez ensuite un nouveau document pour placer le code.</p>
-                <div id="separ2"></div>
+                <img id="ex2" src="../../public/img/250.png">
+                <a id="btninsta" class=" boutons JP-padding-large testbg" onclick="rick()">
+                    <i class="fas fa-home"></i> Rick</a>
+                <a id="btninsta" class=" boutons JP-padding-large testbg" onclick="morty()">
+                    <i class="fas fa-home"></i> Morty</a>
+                <a id="btninsta" class=" boutons JP-padding-large testbg" onclick="reset()">
+                    <i class="fas fa-home"></i> Reset</a>
+                <div id="separ1"></div>
                 <h2>Étape 2: écrire de l'HTML</h2>
                 <p>Recopiez ce code sur le Bloc-notes.<br>
                     <span style="font-size: 12px;">Recopiez... c'est pour votre aprentissage que je dis ça ;)</span></p>
