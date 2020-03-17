@@ -29,6 +29,14 @@ legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}t
     font-family: HP;
     src: url(../../public/polices/HP.ttf);
 }
+@font-face {
+    font-family: GS;
+    src: url(../../public/polices/rick_and_morty_get_schwifty.ttf);
+}
+@font-face {
+    font-family: RM;
+    src: url(../../public/polices/rick_and_morty_marker.ttf);
+}
 
 .tcode {
     background: linear-gradient(-45deg,#04c4b4,#d400ff);
