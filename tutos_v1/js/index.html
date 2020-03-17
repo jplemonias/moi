@@ -1708,6 +1708,59 @@
             }
 
         }
+        
+.btnrm {
+    border: 1px solid #0faec4;
+    box-shadow: 5px 5px 10px #383838,
+    -5px 5px 10px #383838,
+    5px -5px 10px #383838,
+    -5px -5px 10px #383838,
+    inset 5px 5px 10px #383838,
+    inset -5px 5px 10px #383838,
+    inset 5px -5px 10px #383838,
+    inset -5px -5px 10px #383838;
+    background: -webkit-gradient(linear,left top,right top,
+    from(#0faec4),to(#a0e09f));
+    background: linear-gradient(90deg,#0faec4,#a0e09f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    -webkit-text-decoration-color: #0faec4!important;
+    text-decoration-color: #0faec4!important;
+}
+#btn1s3{
+    border: 1px solid #0faec4;
+    border-radius: 20px 0 0 0;
+}
+#btn2s3{
+    border: 1px solid #0faec4;
+    border-radius: 0 20px 0 0;
+}
+#btn3s3{
+    border: 1px solid #0faec4;
+    border-radius: 0 0 20px 20px;
+}
+#btn1s3:hover, #btn2s3:hover, #btn3s3:hover{
+    box-shadow: 3px 3px 10px #0faec483,
+    -3px 3px 10px #0faec483,
+    3px -3px 10px #0faec483,
+    -3px -3px 10px #0faec483,
+    inset 3px 3px 10px #0faec483,
+    inset -3px 3px 10px #0faec483,
+    inset 3px -3px 10px #0faec483,
+    inset -3px -3px 10px #0faec483;
+    border: 1px solid #a0e09f;
+    background: -webkit-gradient(linear,left top,right top,
+    from(#a0e09f),to(#0faec4));
+    background: linear-gradient(90deg,#a0e09f,#0faec4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    -webkit-text-decoration-color: #a0e09f!important;
+    text-decoration-color: #a0e09f!important;
+}
     </style>
     <script type="application/javascript">
         (function () {
@@ -2152,13 +2205,13 @@
                 <h2>teste 2:<span style="font-size: 18px;">(image)</span></h2>
                 <div style="width: max-content">
                 <img id="ex2" src="../../public/img/250.png" style="display: block; margin: auto;">
-                <a id="btninsta" class=" boutons JP-padding-large testbg" onclick="rick()" style="font-family: GS;
+                <a id="btn1s3" class="btnrm boutons JP-padding-large testbg" onclick="rick()" style="font-family: GS;
                 font-size:20px; margin-right: 11px;margin-top: 11px;">
                     Rick <i class="far fa-hand-point-left"></i></a>
-                <a id="btninsta" class=" boutons JP-padding-large testbg" onclick="morty()" style="font-family: GS;
+                <a id="btn2s3" class="btnrm boutons JP-padding-large testbg" onclick="morty()" style="font-family: GS;
                 font-size:20px;margin-top: 11px">
                     <i class="far fa-hand-point-right"></i> Morty</a>
-                <a id="btninsta" class=" boutons JP-padding-large testbg" onclick="reset()" style="font-family:GS;
+                <a id="btn3s3" class="btnrm boutons JP-padding-large testbg" onclick="reset()" style="font-family:GS;
                 font-size:20px; display: block; margin-top: 11px;">
                     <i class="fas fa-home"></i> Reset</a>
                 </div>
