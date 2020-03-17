@@ -111,7 +111,10 @@ legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}t
 }
 
 .bt-nav_g.jp-selected:hover{
-    box-shadow: -2px -3px 20px 0px rgba(202, 202, 202, 0.699);
+    background: #ccc!important;
+    box-shadow: -5px 0px 20px 0px rgba(202, 202, 202, 0.699),
+    inset -28px 0px 20px 0px rgba(75, 75, 75, 0.699);
+    -webkit-text-fill-color: #000!important;
 }
 
 .w3schools-logo:hover .tcode {
