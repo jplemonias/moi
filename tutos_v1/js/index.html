@@ -1785,6 +1785,22 @@
     border: 1px solid #0faec4;
     border-radius: 0 0 20px 20px;
 }
+#btn1d3{
+    border: 1px solid #0faec4;
+    border-radius: 20px 0 0 20px;
+}
+#btn2d3{
+    border: 1px solid #0faec4;
+    border-radius: 0;
+}
+#btn3d3{
+    border: 1px solid #0faec4;
+    border-radius: 0 20px 20px 0;
+}
+#btn4{
+    border: 1px solid #0faec4;
+    border-radius: 20px 20px 20px 20px;
+}
 #btntest{
     border-radius: 0 20px 20px 0!important;
 }
@@ -1808,6 +1824,17 @@
     -webkit-text-decoration-color: #a0e09f!important;
     text-decoration-color: #a0e09f!important;
 }
+.titragRetM {
+    font-family: 'GS';
+    font-size: 25px;
+    text-align: center;
+    color: #0faec4;
+    text-shadow: -1px -1px 0em #a0e09f,
+    1px -1px 0em #a0e09f, 1px 1px 0em #a0e09f,
+    -1px -1px 0.5em #a0e09f, 1px -1px 0.5em #a0e09f,
+    1px 1px 0.5em #a0e09f;
+    margin-bottom: 2px;
+    }
 
 #titragRetM {
     font-family: 'GS';
@@ -1862,6 +1889,19 @@
         }
         function morty() {
             document.getElementById('ex2').src="../../public/img/morty.png";
+        }
+        function vis() {
+            document.getElementById('ex3').style.display = "block";
+        }
+        function chang() {
+            document.getElementById('ex3').classList.add("titragRetM");
+        }
+        function inv() {
+            document.getElementById('ex3').style.display = "none";
+        }
+        function orig() {
+            document.getElementById('ex3').style.display = "block";
+            document.getElementById('ex3').classList.remove("titragRetM");
         }
     </script>
 </head>
@@ -2280,6 +2320,23 @@
                 <a id="btn3s3" class="btnrm boutons JP-padding-large testbg" onclick="reset()" style="font-family:GS;
                 font-size:20px; display: block; margin-top: 11px;">
                     <i class="fas fa-redo" style="display: inline-flex;"></i> Reset</a>
+                </div>
+                <h2>Modiffier afficher supprimer</h2>
+                <p>Dans l'exemple suivant il est normal que l'espace bouge,<br>car l'élément est suprimé et non caché.</p>
+                <div style="width: max-content">
+                    <p id="ex3">Get schwifty</p>
+                <a id="btn1d3" class="btnrm boutons JP-padding-large testbg" onclick="vis()" style="
+                font-size:20px; margin-right: 11px;margin-top: 11px;">
+                    <i class="far fa-eye" style="display: inline-flex;"></i></a>
+                <a id="btn2d3" class="btnrm boutons JP-padding-large testbg" onclick="chang()" style="
+                font-size:20px;margin-right: 11px;margin-top: 11px">
+                    <i class="fas fa-sync-alt" style="display: inline-flex;"></i></a>
+                <a id="btn3d3" class="btnrm boutons JP-padding-large testbg" onclick="inv()" style="
+                font-size:20px; margin-top: 11px;">
+                    <i class="fas fa-eye-slash" style="display: inline-flex;"></i></a>
+                <a id="btn4" class="btnrm boutons JP-padding-large testbg" onclick="orig()" style="
+                display: block; margin-top: 11px;">
+                        Style d'origine</a>
                 </div>
                 <div id="separ1"></div>
                 <h2>...</h2>
