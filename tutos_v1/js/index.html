@@ -1773,6 +1773,47 @@
     -webkit-text-decoration-color: #0faec4!important;
     text-decoration-color: #0faec4!important;
 }
+
+.btntest {
+    box-shadow: 5px 5px 10px #383838,
+    -5px 5px 10px #383838,
+    5px -5px 10px #383838,
+    -5px -5px 10px #383838,
+    inset 5px 5px 10px #383838,
+    inset -5px 5px 10px #383838,
+    inset 5px -5px 10px #383838,
+    inset -5px -5px 10px #383838;
+    border: 1px solid #d400ff;
+    background: -webkit-gradient(linear,left top,right top,
+    from(#04c4b4),to(#d400ff));
+    background: linear-gradient(90deg,#04c4b4,#d400ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    -webkit-text-decoration-color: #04c4b4!important;
+    text-decoration-color: #04c4b4!important;
+}
+.btntest:hover {
+    box-shadow: 3px 3px 10px #d400ff83,
+    -3px 3px 10px #d400ff83,
+    3px -3px 10px #d400ff83,
+    -3px -3px 10px #d400ff83,
+    inset 3px 3px 10px #d400ff83,
+    inset -3px 3px 10px #d400ff83,
+    inset 3px -3px 10px #d400ff83,
+    inset -3px -3px 10px #d400ff83;
+    border: 1px solid #d400ff;
+    background: -webkit-gradient(linear,left top,right top,
+    from(#d400ff),to(#04c4b4));
+    background: linear-gradient(90deg,#d400ff,#04c4b4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    -webkit-text-decoration-color: #d400ff!important;
+    text-decoration-color: #d400ff!important;
+}
 #btn1s3{
     border: 1px solid #0faec4;
     border-radius: 20px 0 0 0;
@@ -1786,19 +1827,19 @@
     border-radius: 0 0 20px 20px;
 }
 #btn1d3{
-    border: 1px solid #0faec4;
+    border: 1px solid #d400ff;
     border-radius: 20px 0 0 20px;
 }
 #btn2d3{
-    border: 1px solid #0faec4;
+    border: 1px solid #d400ff;
     border-radius: 0;
 }
 #btn3d3{
-    border: 1px solid #0faec4;
+    border: 1px solid #d400ff;
     border-radius: 0 20px 20px 0;
 }
 #btn4{
-    border: 1px solid #0faec4;
+    border: 1px solid #d400ff;
     border-radius: 20px 20px 20px 20px;
 }
 #btntest{
@@ -2344,16 +2385,16 @@
                 <p>Dans l'exemple suivant il est normal que l'espace bouge,<br>car l'élément est suprimé et non caché.</p>
                 <div style="width: max-content">
                     <p id="ex3" class="margingetS">Get schwifty</p>
-                <a id="btn1d3" class="btnrm boutons JP-padding-large testbg" onclick="vis()" style="
+                <a id="btn1d3" class="btntest boutons JP-padding-large testbg" onclick="vis()" style="
                 font-size:20px; margin-right: 11px;margin-top: 11px;">
                     <i class="far fa-eye" style="display: inline-flex;"></i></a>
-                <a id="btn2d3" class="btnrm boutons JP-padding-large testbg" onclick="chang()" style="
+                <a id="btn2d3" class="btntest boutons JP-padding-large testbg" onclick="chang()" style="
                 font-size:20px;margin-right: 11px;margin-top: 11px">
                     <i class="fas fa-sync-alt" style="display: inline-flex;"></i></a>
-                <a id="btn3d3" class="btnrm boutons JP-padding-large testbg" onclick="inv()" style="
+                <a id="btn3d3" class="btntest boutons JP-padding-large testbg" onclick="inv()" style="
                 font-size:20px; margin-top: 11px;">
                     <i class="fas fa-eye-slash" style="display: inline-flex;"></i></a>
-                <a id="btn4" class="btnrm boutons JP-padding-large testbg" onclick="orig()" style="
+                <a id="btn4" class="btntest boutons JP-padding-large testbg" onclick="orig()" style="
                 display: block; margin-top: 11px;">
                         Style d'origine</a>
                 </div>
