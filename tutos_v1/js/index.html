@@ -1828,6 +1828,9 @@
     margin: 24px;
     text-align: center
 }
+.margspe {
+    margin-top: 68px
+}
 .titragRetM {
     font-family: 'GS';
     font-size: 25px;
@@ -1896,6 +1899,7 @@
         }
         function vis() {
             document.getElementById('ex3').style.display = "block";
+            document.getElementById('margspe').classList.remove("margspe");
         }
         function chang() {
             document.getElementById('ex3').classList.remove("margingetS");
@@ -1903,9 +1907,9 @@
         }
         function inv() {
             document.getElementById('ex3').style.display = "none";
+            document.getElementById('margspe').classList.add("margspe");
         }
         function orig() {
-            document.getElementById('ex3').style.display = "block";
             document.getElementById('ex3').classList.remove("titragRetM");
             document.getElementById('ex3').classList.add("margingetS");
         }
@@ -2312,6 +2316,11 @@
                 <p id="ex1">Bonjour, le monde<br>&nbsp;</p>
                 <a id="btntest" class="btntest boutons JP-padding-large testbg" onclick="hw()">
                     <i class='fab fa-js-square' style="display: inline-flex;"></i> Teste I</a>
+                    <div class="degrad-Vertical">
+                        <div class="w3-code sqlHigh notranslate w3-card-2">
+                            onclick="<b>document.getElementById("ex1").innerHTML = "hello, world";</b>"
+                        </div>
+                    </div>
                 <h2><span style="font-size: 18px;">(image)</span></h2>
                 <p>Comme vous pouvez le constater il est possible de faire la même chose avec une image.</p>
                 <div style="width: max-content">
@@ -2326,6 +2335,11 @@
                 <a id="btn3s3" class="btnrm boutons JP-padding-large testbg" onclick="reset()" style="font-family:GS;
                 font-size:20px; display: block; margin-top: 11px;">
                     <i class="fas fa-redo" style="display: inline-flex;"></i> Reset</a>
+                </div>
+                <div class="degrad-Vertical">
+                    <div class="w3-code sqlHigh notranslate w3-card-2">
+                        onclick="<b>document.getElementById('ex2').src="/img/VotreImage.png";</b>"
+                    </div>
                 </div>
                 <h2>Modiffier afficher supprimer</h2>
                 <p>Dans l'exemple suivant il est normal que l'espace bouge,<br>car l'élément est suprimé et non caché.</p>
@@ -2344,12 +2358,26 @@
                 display: block; margin-top: 11px;">
                         Style d'origine</a>
                 </div>
+                <div id="margspe" class="degrad-Vertical">
+                    <div class="w3-code sqlHigh notranslate w3-card-2">
+                        onclick="<b>document.getElementById('ex3').style.display = "none";</b>"
+                    </div>
+                </div>
                 <div id="separ1"></div>
-                <h2>...</h2>
-                <p>...</p>
+                <h2>Pratique = Compréhension</h2>
+                <p>Il n'y a qu'en pratiquant que vous pourez correctement assimiler le fomctionnement, simple, du JavaScript.</p>
                 <div class="jp-example jp-card-ex">
-                    <h3>...</h3>
-                    <p>...</p>
+                    <h3>0_o</h3>
+                    <p>Vous verrez que cette première page d'intro au JavaScript en montre déjà beaucoup:</p>
+                    <ul>
+                        <li>onclick="_"</li>
+                        <li>document.getElementById('_');</li>
+                        <li>.innerHTML = "_"</li>
+                        <li>.src = "_"</li>
+                        <li>.style.display = "_"</li>
+                    </ul>
+                    <p>Et..? ¯\_(ツ)_/¯<br>
+                    n'allons pas trop vite en besogne...</p>
                 </div>
                 <div id="separ1"></div>
                 <div class="w3-clear nextprev">
