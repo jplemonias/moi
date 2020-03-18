@@ -1824,6 +1824,10 @@
     -webkit-text-decoration-color: #a0e09f!important;
     text-decoration-color: #a0e09f!important;
 }
+.margingetS {
+    margin: 24px;
+    text-align: center
+}
 .titragRetM {
     font-family: 'GS';
     font-size: 25px;
@@ -1833,7 +1837,7 @@
     1px -1px 0em #a0e09f, 1px 1px 0em #a0e09f,
     -1px -1px 0.5em #a0e09f, 1px -1px 0.5em #a0e09f,
     1px 1px 0.5em #a0e09f;
-    margin-bottom: 2px;
+    margin-bottom: 3px;
     }
 
 #titragRetM {
@@ -1894,6 +1898,7 @@
             document.getElementById('ex3').style.display = "block";
         }
         function chang() {
+            document.getElementById('ex3').classList.remove("margingetS");
             document.getElementById('ex3').classList.add("titragRetM");
         }
         function inv() {
@@ -1902,6 +1907,7 @@
         function orig() {
             document.getElementById('ex3').style.display = "block";
             document.getElementById('ex3').classList.remove("titragRetM");
+            document.getElementById('ex3').classList.add("margingetS");
         }
     </script>
 </head>
@@ -2324,7 +2330,7 @@
                 <h2>Modiffier afficher supprimer</h2>
                 <p>Dans l'exemple suivant il est normal que l'espace bouge,<br>car l'élément est suprimé et non caché.</p>
                 <div style="width: max-content">
-                    <p id="ex3">Get schwifty</p>
+                    <p id="ex3" class="margingetS">Get schwifty</p>
                 <a id="btn1d3" class="btnrm boutons JP-padding-large testbg" onclick="vis()" style="
                 font-size:20px; margin-right: 11px;margin-top: 11px;">
                     <i class="far fa-eye" style="display: inline-flex;"></i></a>
