@@ -135,7 +135,7 @@
         i.fa-caret-up {
             width: 10px
         }
-
+        i.fa-java,
         i.fa-js-square,
         i.fa-html5,
         i.fa-css3-alt,
@@ -1741,6 +1741,9 @@
     border: 1px solid #0faec4;
     border-radius: 0 0 20px 20px;
 }
+.btntest{
+    border-radius: 0 20px 20px 0!important;
+}
 #btn1s3:hover, #btn2s3:hover, #btn3s3:hover{
     box-shadow: 3px 3px 10px #0faec483,
     -3px 3px 10px #0faec483,
@@ -2176,33 +2179,39 @@
 
                 <div class="w3-panel2 w3-info intro">
                     <h2>Qu'est-ce que le JavaScript?</h2>
-                    <p>l'<strong>HTML</strong> est le langage de <strong>balisage standard</strong> <br>pour créer des
-                        <i>pages Web</i>.</p>
-                        Avec, vous pouvez créer votre propre site Web.<br>
-                        Vous le verrez, ce langage est relativement simple en soi.
+                    <p>
+                        C'est un langage permanent de rentre vos pages interactives, dynamique<br><br>
+                        Les pages Web ne sont pas le seul endroit où JavaScript est utilisé.<br>
+                        De nombreux programmes tel que Node.js et certaines bases de données,<br>
+                        comme MongoDB et CouchDB, utilisent également JavaScript comme langage de programmation.</p>
                 </div>
                 <div class="w3-panel w3-info intro">
-                    <ul>
-                        <li>HTML signifie <strong>H</strong>yper <strong>T</strong>ext <strong>M</strong>arkup
-                            <strong>L</strong>anguage</li>
-                        <li>Il décrit <i>la structure</i> d'une page Web</li>
-                        <li>Composé d'une série d'<i>éléments</i> indiquant au navigateur comment afficher le contenu
-                        </li>
-                        <li>Les éléments sont représentés par des <i>balises</i></li>
-                        <li>Ces balises étiquettent des éléments de contenu tels qu'un en-tête, un paragraphe, un
-                            tableau, etc.</li>
-                        <li>Les navigateurs n'affichent pas les balises, mais les utilisent pour restituer le
-                            contenu de la page</li>
-                    </ul>
+                    <h2>Pourquoi étudier JavaScript?</h2>
+                    <p>
+                        Car il est l'un des 4 langages que tout développeur Web doit connaitre:</p>
+                        <ol>
+                            <li>HTML pour définir le contenu des pages Web</li>
+                            <li>CSS pour spécifier la mise en page des pages Web</li>
+                            <li>JavaScript pour programmer le comportement des pages Web</li>
+                            <li><del>SQL/PHP La communication avec les bases de données</del></li>
+                        </ol>
+                </div>
+                <div class="w3-panel2 w3-info intro">
+                    <p>
+                        Le JavaScript <i class="fab fa-js-square"></i> et le Java <i class="fab fa-java"></i> sont des langages complètement différents, à la fois dans le concept et le design.
+                    </p>
                 </div>
 
                 <div id="separ2"></div>
-                <h2>test 1:<span style="font-size: 18px;">(texte)</span></h2>
-                <p id="ex1">&nbsp;<br>&nbsp;</p>
-                <a id="btninsta" class=" boutons JP-padding-large testbg" onclick="hw()">
+                <h2>Remplacer du contenu<span style="font-size: 18px;"><br>(texte)</span></h2>
+                <p>Avec le JavaScript vous pouvez décider de changer le contenu d'un Elément par example.<br><br>
+                    Ici suite à l'appuit sur le bouton "Teste I"<br>
+                    le text "Bonjour, le monde" devrait renvoyer sa vertion englaise.</p>
+                <p id="ex1">Bonjour, le monde<br>&nbsp;</p>
+                <a id="btninsta" class="btntest boutons JP-padding-large testbg" onclick="hw()">
                     <i class='fab fa-js-square'></i> Teste I</a>
-                <div id="separ1"></div>
-                <h2>teste 2:<span style="font-size: 18px;">(image)</span></h2>
+                <h2><span style="font-size: 18px;">(image)</span></h2>
+                <p>Comme vous pouvez le constater il est possible de faire la même chose avec une image.</p>
                 <div style="width: max-content">
                 <img id="ex2" src="../../public/img/250.png" style="display: block; margin: auto;">
                 <a id="btn1s3" class="btnrm boutons JP-padding-large testbg" onclick="rick()" style="font-family: GS;
