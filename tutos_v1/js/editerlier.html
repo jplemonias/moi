@@ -2,7 +2,7 @@
 <html lang="fr-FR">
 
 <head>
-    <title>Lier CSS</title>
+    <title>Editer lier du JavaScript</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Keywords"
@@ -136,7 +136,7 @@
         i.fa-caret-up {
             width: 10px
         }
-
+        i.fa-java,
         i.fa-js-square,
         i.fa-html5,
         i.fa-css3-alt,
@@ -160,8 +160,8 @@
 
         #sidenav a:hover,
         #sidenav a:focus {
-            color: #000000;
-            background-color: #cccccc;
+            color: #000 !important;
+            background: linear-gradient(-45deg, #04c4b4, #d400ff);
         }
 
         #sidenav a.active {
@@ -597,7 +597,7 @@
 
             #sidenav a {
                 padding: 3px 2px 3px 24px;
-                font-size: 17px
+                font-size: 16px;
             }
 
             #leftmenuinner {
@@ -607,7 +607,6 @@
                 position: relative;
                 width: auto;
                 padding-top: 0;
-                /*background-color: #f1f1f1;*/
             }
 
             #leftmenuinnerinner {
@@ -625,15 +624,6 @@
         }
 
         @media screen and (max-width:600px) {
-
-            #exhead,
-            #exbody,
-            #exdiv,
-            #extitle,
-            #exh,
-            #exp {
-                width: 100% !important;
-            }
 
             .w3-example,
             .w3-note,
@@ -677,11 +667,15 @@
         .fa-2x {
             font-size: 2em;
         }
-
-        .fa-home-:before {
+/*
+        .fa-home:before {
             content: '\e800';
         }
-
+*/
+        #btntest .fa-js-square:before {
+            content: '\f3b9';
+            display: block;
+        }
         .fa-menu:before {
             content: '\f0c9';
         }
@@ -1193,8 +1187,8 @@
 
         #cartehover {
             box-shadow: inset -6px -10px 20px 0px rgba(255, 255, 255, 0.16),
-            4px -4px 20px 0px rgba(255, 255, 255, 0.16);
-            background: linear-gradient(135deg,#d400ff44,#04c4b444);
+                4px -4px 20px 0px rgba(255, 255, 255, 0.16);
+            background: linear-gradient(135deg, #d400ff44, #04c4b444);
             background-color: black;
             border-radius: 0 0 30px 30px;
         }
@@ -1208,7 +1202,7 @@
             }
 
             .w3-code {
-                margin-right: -24px !important;
+                margin-right: -26px !important;
                 font-size: 14px;
             }
 
@@ -1384,7 +1378,7 @@
         }
 
         .w3-sidebar {
-            background: linear-gradient(135deg,#d400ff44,#04c4b444);
+            background: linear-gradient(135deg, #d400ff44, #04c4b444);
             background-color: black;
             color: rgb(150, 150, 150);
             box-shadow: inset -14px 0px 20px 0px rgba(255, 255, 255, 0.16);
@@ -1431,15 +1425,10 @@
 
         .jp-example {
             padding: 8px 20px;
-            margin: 24px 0px 24px -16px;
-            border-radius: 0 15px 15px 0;
+            margin: 24px -16px 24px 0px;
+            border-radius: 15px 0 0 15px;
         }
 
-        .jp-example2 {
-            padding: 8px 20px;
-            margin: 24px 0px 24px -16px;
-            border-radius: 0 15px 15px 0;
-        }
         .w3-example {
             padding: 8px 20px;
             margin: 24px -16px 24px 0px;
@@ -1462,16 +1451,6 @@
             color: black;
         }
 
-        .w3-panel2 {
-            margin-top: 24px;
-            margin-bottom: 24px;
-            margin-left: 32px;
-            margin-right: -16px;
-            padding: 16px 32px;
-            border-radius: 20px 0 0 20px;
-            background: linear-gradient(135deg, #d400ff, #04c4b4);
-            color: black;
-        }
 
         h1 {
             font-size: 42px;
@@ -1555,10 +1534,8 @@
             margin-bottom: 1em;
         }
 
-        .w3-code{
+        .w3-code {
             margin-right: -16px;
-        }
-        .w3-code,.w3-code4 {
             font-size: 15px;
         }
 
@@ -1634,6 +1611,8 @@
                 background: linear-gradient(90deg, #04c4b4, #d400ff);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
+                padding: 0 0 0 0 !important;
+                font-size: 18px;
             }
         }
 
@@ -1646,6 +1625,17 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             margin-left: 10px;
+        }
+
+        .w3-panel2 {
+            margin-top: 24px;
+            margin-bottom: 24px;
+            margin-left: 32px;
+            margin-right: -16px;
+            padding: 16px 32px;
+            border-radius: 20px 0 0 20px;
+            background: linear-gradient(135deg, #d400ff, #04c4b4);
+            color: black;
         }
 
         @media screen and (min-width: 769px) {
@@ -1672,7 +1662,6 @@
                 margin-right: -32px;
             }
         }
-
 
         @media only screen and (max-device-width: 480px) {
             #main {
@@ -1711,10 +1700,10 @@
                 padding: 8px 16px 16px 16px;
                 margin: 24px -24px;
             }
-            
+
             .w3-panel2 {
                 margin-right: -24px !important;
-                margin-left: 1px!important;
+                margin-left: 1px !important;
             }
 
             .w3-panel,
@@ -1724,6 +1713,188 @@
             }
 
         }
+        #btntest {
+    box-shadow: 5px 5px 10px #383838,
+    -5px 5px 10px #383838,
+    5px -5px 10px #383838,
+    -5px -5px 10px #383838,
+    inset 5px 5px 10px #383838,
+    inset -5px 5px 10px #383838,
+    inset 5px -5px 10px #383838,
+    inset -5px -5px 10px #383838;
+    border: 1px solid #d400ff;
+    background: -webkit-gradient(linear,left top,right top,
+    from(#04c4b4),to(#d400ff));
+    background: linear-gradient(90deg,#04c4b4,#d400ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    -webkit-text-decoration-color: #04c4b4!important;
+    text-decoration-color: #04c4b4!important;
+}
+#btntest:hover {
+    box-shadow: 3px 3px 10px #d400ff83,
+    -3px 3px 10px #d400ff83,
+    3px -3px 10px #d400ff83,
+    -3px -3px 10px #d400ff83,
+    inset 3px 3px 10px #d400ff83,
+    inset -3px 3px 10px #d400ff83,
+    inset 3px -3px 10px #d400ff83,
+    inset -3px -3px 10px #d400ff83;
+    border: 1px solid #d400ff;
+    background: -webkit-gradient(linear,left top,right top,
+    from(#d400ff),to(#04c4b4));
+    background: linear-gradient(90deg,#d400ff,#04c4b4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    -webkit-text-decoration-color: #d400ff!important;
+    text-decoration-color: #d400ff!important;
+}
+.btnrm {
+    border: 1px solid #0faec4;
+    box-shadow: 5px 5px 10px #383838,
+    -5px 5px 10px #383838,
+    5px -5px 10px #383838,
+    -5px -5px 10px #383838,
+    inset 5px 5px 10px #383838,
+    inset -5px 5px 10px #383838,
+    inset 5px -5px 10px #383838,
+    inset -5px -5px 10px #383838;
+    background: -webkit-gradient(linear,left top,right top,
+    from(#0faec4),to(#a0e09f));
+    background: linear-gradient(90deg,#0faec4,#a0e09f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    -webkit-text-decoration-color: #0faec4!important;
+    text-decoration-color: #0faec4!important;
+}
+
+.btntest {
+    box-shadow: 5px 5px 10px #383838,
+    -5px 5px 10px #383838,
+    5px -5px 10px #383838,
+    -5px -5px 10px #383838,
+    inset 5px 5px 10px #383838,
+    inset -5px 5px 10px #383838,
+    inset 5px -5px 10px #383838,
+    inset -5px -5px 10px #383838;
+    border: 1px solid #d400ff;
+    background: -webkit-gradient(linear,left top,right top,
+    from(#04c4b4),to(#d400ff));
+    background: linear-gradient(90deg,#04c4b4,#d400ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    -webkit-text-decoration-color: #04c4b4!important;
+    text-decoration-color: #04c4b4!important;
+}
+.btntest:hover {
+    box-shadow: 3px 3px 10px #d400ff83,
+    -3px 3px 10px #d400ff83,
+    3px -3px 10px #d400ff83,
+    -3px -3px 10px #d400ff83,
+    inset 3px 3px 10px #d400ff83,
+    inset -3px 3px 10px #d400ff83,
+    inset 3px -3px 10px #d400ff83,
+    inset -3px -3px 10px #d400ff83;
+    border: 1px solid #d400ff;
+    background: -webkit-gradient(linear,left top,right top,
+    from(#d400ff),to(#04c4b4));
+    background: linear-gradient(90deg,#d400ff,#04c4b4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    -webkit-text-decoration-color: #d400ff!important;
+    text-decoration-color: #d400ff!important;
+}
+#btn1s3{
+    border: 1px solid #0faec4;
+    border-radius: 20px 0 0 0;
+}
+#btn2s3{
+    border: 1px solid #0faec4;
+    border-radius: 0 20px 0 0;
+}
+#btn3s3{
+    border: 1px solid #0faec4;
+    border-radius: 0 0 20px 20px;
+}
+#btn1d3{
+    border: 1px solid #d400ff;
+    border-radius: 20px 0 0 20px;
+}
+#btn2d3{
+    border: 1px solid #d400ff;
+    border-radius: 0;
+}
+#btn3d3{
+    border: 1px solid #d400ff;
+    border-radius: 0 20px 20px 0;
+}
+#btn4{
+    border: 1px solid #d400ff;
+    border-radius: 20px 20px 20px 20px;
+}
+#btntest{
+    border-radius: 0 20px 20px 0!important;
+}
+#btn1s3:hover, #btn2s3:hover, #btn3s3:hover{
+    box-shadow: 3px 3px 10px #0faec483,
+    -3px 3px 10px #0faec483,
+    3px -3px 10px #0faec483,
+    -3px -3px 10px #0faec483,
+    inset 3px 3px 10px #0faec483,
+    inset -3px 3px 10px #0faec483,
+    inset 3px -3px 10px #0faec483,
+    inset -3px -3px 10px #0faec483;
+    border: 1px solid #a0e09f;
+    background: -webkit-gradient(linear,left top,right top,
+    from(#a0e09f),to(#0faec4));
+    background: linear-gradient(90deg,#a0e09f,#0faec4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    -webkit-text-decoration-color: #a0e09f!important;
+    text-decoration-color: #a0e09f!important;
+}
+.margingetS {
+    margin: 24px;
+    text-align: center
+}
+.margspe {
+    margin-top: 68px
+}
+.titragRetM {
+    font-family: 'GS';
+    font-size: 25px;
+    text-align: center;
+    color: #0faec4;
+    text-shadow: -1px -1px 0em #a0e09f,
+    1px -1px 0em #a0e09f, 1px 1px 0em #a0e09f,
+    -1px -1px 0.5em #a0e09f, 1px -1px 0.5em #a0e09f,
+    1px 1px 0.5em #a0e09f;
+    margin-bottom: 3px;
+    }
+
+#titragRetM {
+    font-family: 'GS';
+    font-size: 25px;
+    text-align: center;
+    color: #0faec4;
+    text-shadow: -1px -1px 0em #a0e09f,
+    1px -1px 0em #a0e09f, 1px 1px 0em #a0e09f,
+    -1px -1px 0.5em #a0e09f, 1px -1px 0.5em #a0e09f,
+    1px 1px 0.5em #a0e09f;
+    margin-bottom: 2px;
+    }
     </style>
     <script type="application/javascript">
         (function () {
@@ -1853,14 +2024,18 @@
                 <div class="w3-col l3 m6">
                     <h3 class="w3-margin-top vert">Débutant</h3>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/html/index.html">Introduction</a>
-                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/html/editer.html">Editer de l'html</a>
-                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/html/commenter.html">Connenter un HTML</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/html/editer.html">Editer de
+                        l'html</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/html/commenter.html">Connenter un
+                        HTML</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/html/basic.html">Balises de baaaase</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/html/elements.html">L'élément</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/html/attributs.html">Les attributs</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/html/titrage.html">Le titrage</a>
-                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/html/paragraphes.html">Les paragraphes</a>
-                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/html/formatage.html">Mettre en forme</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/html/paragraphes.html">Les
+                        paragraphes</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/html/formatage.html">Mettre en
+                        forme</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">l'html</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">l'html</a>
                 </div>
@@ -1888,8 +2063,10 @@
                 </div>
                 <div class="w3-col l3 m6">
                     <h3 class="w3-margin-top" style="color: #fff;"><i class="fas fa-toolbox"></i> Caisse à out's</h3>
-                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/autre/lescouleurs.html">140 couleurs</a>
-                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/autre/refelements.html">Eléments HTML</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/autre/lescouleurs.html">140
+                        couleurs</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/autre/refelements.html">Eléments
+                        HTML</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">Outil_3 </a>
                     <a class="w3-bar-item w3-button padnone" href='/moi/tutos_v1/O_o'>Outil_4 </a>
                     <a class="w3-bar-item w3-button padnone" href='/moi/tutos_v1/O_o'>Outil_5 </a>
@@ -1908,14 +2085,18 @@
                 <div class="w3-col l3 m6">
                     <h3 class="w3-margin-top vert">Débutant</h3>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/css/index.html">Introduction</a>
-                    <a class="w3-bar-item w3-button padnone jp-selected" href="/moi/tutos_v1/css/liercss.html">lier un CSS</a>
-                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/css/commenter.html">Connenter un CSS</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/css/liercss.html">lier un CSS</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/css/commenter.html">Connenter un
+                        CSS</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/css/selecteurs.html">Les sélecteurs</a>
-                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/css/boites.html">Les modèles de boîte</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/css/boites.html">Les modèles de
+                        boîte</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/css/padding.html">Le padding</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/css/margin.html">Le margin</a>
-                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/css/couleurs.html">Mettre en couleur</a>
-                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/css/background.html">Les arrière-plans</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/css/couleurs.html">Mettre en
+                        couleur</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/css/background.html">Les
+                        arrière-plans</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/css/border.html">Les brodures</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">le CSS</a>
                 </div>
@@ -1943,8 +2124,10 @@
                 </div>
                 <div class="w3-col l3 m6">
                     <h3 class="w3-margin-top" style="color: #fff;"><i class="fas fa-toolbox"></i> Caisse à out's</h3>
-                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/autre/lescouleurs.html">140 couleurs</a>
-                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/autre/refelements.html">Eléments HTML</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/autre/lescouleurs.html">140
+                        couleurs</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/autre/refelements.html">Eléments
+                        HTML</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">Outil_3 </a>
                     <a class="w3-bar-item w3-button padnone" href='/moi/tutos_v1/O_o'>Outil_4 </a>
                     <a class="w3-bar-item w3-button padnone" href='/moi/tutos_v1/O_o'>Outil_5 </a>
@@ -1999,8 +2182,10 @@
                 </div>
                 <div class="w3-col l3 m6">
                     <h3 class="w3-margin-top" style="color: #fff;"><i class="fas fa-toolbox"></i> Caisse à out's</h3>
-                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/autre/lescouleurs.html">140 couleurs</a>
-                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/autre/refelements.html">Eléments HTML</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/autre/lescouleurs.html">140
+                        couleurs</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/autre/refelements.html">Eléments
+                        HTML</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">Outil_3 </a>
                     <a class="w3-bar-item w3-button padnone" href='/moi/tutos_v1/O_o'>Outil_4 </a>
                     <a class="w3-bar-item w3-button padnone" href='/moi/tutos_v1/O_o'>Outil_5 </a>
@@ -2020,7 +2205,7 @@
                 <div class="w3-col l3 m6">
                     <h3 class="w3-margin-top vert">Débutant</h3>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/js/index.html">Introduction</a>
-                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">le JavaScript</a>
+                    <a class="w3-bar-item w3-button padnone jp-selected" href="/moi/tutos_v1/js/editerlier.html">Où le rédiger</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">le JavaScript</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">le JavaScript</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">le JavaScript</a>
@@ -2055,8 +2240,10 @@
                 </div>
                 <div class="w3-col l3 m6">
                     <h3 class="w3-margin-top" style="color: #fff;"><i class="fas fa-toolbox"></i> Caisse à out's</h3>
-                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/autre/lescouleurs.html">140 couleurs</a>
-                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/autre/refelements.html">Eléments HTML</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/autre/lescouleurs.html">140
+                        couleurs</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/autre/refelements.html">Eléments
+                        HTML</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">Outil_3 </a>
                     <a class="w3-bar-item w3-button padnone" href='/moi/tutos_v1/O_o'>Outil_4 </a>
                     <a class="w3-bar-item w3-button padnone" href='/moi/tutos_v1/O_o'>Outil_5 </a>
@@ -2090,165 +2277,134 @@
             <div class='w3-col l10 m12' id='main'>
                 <div id='pub' style='overflow:hidden;'>
                     <a href='/moi/tutos_v1/'>
-                    <!-- Emplacenrt pour redirection-->
-                    <span class='psycho-logo'>Psycho <span class='dotcom tcode'>les bons</span> Tutos</aspan><br>
-                    <span class=' psycho-logo2  tcode2' style="font-family:'HP','Segoe UI',Arial,sans-serif">DEVELOPPONS ENSEMBLE</span>
+                        <!-- Emplacenrt pour redirection-->
+                        <span class='psycho-logo'>Psycho <span class='dotcom tcode'>les bons</span> Tutos</aspan><br>
+                            <span class=' psycho-logo2  tcode2'
+                                style="font-family:'HP','Segoe UI',Arial,sans-serif">DEVELOPPONS ENSEMBLE</span>
                     </a>
                 </div>
 
-                <h1>Lier une <span class="txtdegrad1">feuille de style</span></h1>
+                <h1>integrer du <span class="txtdegrad1">JavaScript</span></h1>
                 <div id="separ1"></div>
                 <div class="w3-clear nextprev">
-                    <a id="btninsta" class=" boutons JP-padding-large testbg" href="/moi/tutos_v1/css/index.html">
-                        <i class="fas fa-reply"></i> Précédent</a>
+                    <a id="btninsta" class=" boutons JP-padding-large testbg" href="/moi/tutos_v1/js/index.html">
+                        <i class="fas fa-home"></i> Accueil</a>
                     <a id="btnneonD" class="w3-right boutons JP-padding-large testbg"
-                        href="/moi/tutos_v1/css/commenter.html">
+                        href="/moi/tutos_v1/js/O_o">
                         suivant <i class="fas fa-reply reply2"></i></a>
                 </div>
 
-                <div class="w3-panel2 w3-info intro">
-                    <p>
-                        Pour qu'un navigateur web puisse formater un document html comme on le souhaiterait,<br>il faut lui lier un référencement, comme pour le élément img ou a en html.</p>
-                </div>
                 <div class="w3-panel w3-info intro">
-                    <p>il y a trois façon de le faire</p>
+                    <p>Comme pour le CSS, il y a trois façon de le faire</p>
                     <ol>
                         <li><strong>En externe.</strong><br>
-                            <span style="font-size: 13px;">par une feuille de style référencée dans le head de l'HTML</span></li>
+                            <span style="font-size: 13px;">en référencant dans le head de l'HTML un script externe.</span></li>
                         <li><strong>En interne à l'HTML</strong><br>
-                            <span style="font-size: 13px;">en déclarant les styles dans le head du HTML</span></li>
+                            <span style="font-size: 13px;">en balisant les scripts dans l'HTML</span></li>
                         <li><strong>En interne des éléments</strong><br>
-                            <span style="font-size: 13px;">Le éléments peuvent contenir une déclaration de style en interne.</span></i>
+                            <span style="font-size: 13px;">Le éléments peuvent contenir de courts scripts</span></i>
                         </li>
                     </ol>
                 </div>
 
                 <div id="separ2"></div>
-                <h2>Les feuilles des style <span class="txtdegrad1">externes</span></h2>
-                <p>Avec une seul feuille de style externe, vous pouvez attribuer l'apparence entière d'un site.<br>
-                    <span style="font-size: 13px;">En la liant dans l'enntête de l'HTML comme ceci:</span></p>
-                <div class="degrad-Vertical">
-                    <div class="w3-code sqlHigh notranslate w3-card-2">
-                        &lt;!DOCTYPE html&gt;<br>
-                        &lt;html lang&#61;&#34;fr&#45;FR&#34;&gt;<br>
-                        &nbsp;&nbsp;&nbsp;&lt;head&gt;<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&lt;link href&#61;&#34;Le/Chemin/DuDoc.CSS&#34;<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rel&#61;&#34;stylesheet&#34; type&#61;&#34;text/css&#34;&gt;</b><br>
-                        &nbsp;&nbsp;&nbsp;&lt;/head&gt;<br><br>
-                        &nbsp;&nbsp;&nbsp;&lt;body&gt;.../
-                    </div>
-                </div>
-                    <h2>Styliser en <span class="txtdegrad1">interne</span></h2>
-                    <p>En déclarant les styles dans l’en-tête du document HTTML,<br>
-                        il est possible d'attribuer des styles ponctuels à un site web,<br>
-                    <span style="font-size: 13px;">ou considérez cette balise comme une feuille de style, à part entière,<br>si il n' y a pas de balise liant à une feuille externe.</span></p>
+                <h2>script <span  class="txtdegrad1">externe</span></h2>
+                <p>___</p>
                     <div class="degrad-Vertical">
                         <div class="w3-code sqlHigh notranslate w3-card-2">
                             &lt;!DOCTYPE html&gt;<br>
                             &lt;html lang&#61;&#34;fr&#45;FR&#34;&gt;<br>
                             &nbsp;&nbsp;&nbsp;&lt;head&gt;<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;link&gt;<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&lt;style&gt;</strong><br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&lt;/style&gt;</strong><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&lt;script src&#61;&#34;Le/Chemin/DuDoc.JS&#34;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/script&gt;</b><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&lt;script src&#61;&#34;www.Lurl.Du/Doc.JS&#34;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/script&gt;</b><br>
                             &nbsp;&nbsp;&nbsp;&lt;/head&gt;<br><br>
                             &nbsp;&nbsp;&nbsp;&lt;body&gt;.../
                         </div>
                     </div>
-                        <h2>Styliser un <span class="txtdegrad1">élément</span></h2>
-                        <p>C'est très utile pour ne changer qu'un élément d'un document lié à une feuille de style.<br>
-                        <span style="font-size: 13px;">Attribuer un style inline (en englais) ce fait de cette manière:</span></p>
-                            <div class="degrad-Vertical">
-                                <div class="w3-code sqlHigh notranslate w3-card-2">
-                                    &lt;p <strong>style&#61;&#34;color:grey&#34;</strong>&gt;<br>
+                    <h2>En <span  class="txtdegrad1">interne</span></h2>
+                    <p>___</p>
+                    <div class="w3-row-padding">
+                        <div class="w3-half">
+                            <div class="jp-onglet_g_faf  intro">
+                                <div class="degrad-Vertical">
+                                    <div class="w3-code sqlHigh notranslate w3-card-2" style="margin-right: 0px !important;">
+                                        &lt;!DOCTYPE html&gt;<br>
+                                        &lt;html lang&#61;&#34;fr&#45;FR&#34;&gt;<br>
+                                        &nbsp;&nbsp;&nbsp;&lt;head&gt;<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&lt;script&gt;</b><br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Les fonctions IcI<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&lt;/script&gt;</b><br>
+                                        &nbsp;&nbsp;&nbsp;&lt;/head&gt;<br><br>
+                                        &nbsp;&nbsp;&nbsp;&lt;body&gt;.../
+                                    </div>
                                 </div>
                             </div>
-                                    <h2>Derrnier <span class="txtdegrad1">lut</span> premier <span class="txtdegrad1">utilisé</span></h2>
-                                    <p>Si certaines propriétés ont été définies pour le même sélecteur dans différentes feuilles de style,<br>
-                                    la valeur affichée ce sera celle la dernière feuille de style lue.</p>
-
-                                    <div class="w3-row-padding">
-                                        <div class="w3-half">
-                                            <div class="jp-onglet_g_faf  intro">
-                                                <div class="degrad-Vertical">
-                                                    <div class="w3-code sqlHigh notranslate w3-card-2" style="margin-right: 0px !important;">
-                                                        &lt;!DOCTYPE html&gt;<br>
-                                                        &lt;html lang&#61;&#34;fr&#45;FR&#34;&gt;<br>
-                                                        &nbsp;&nbsp;&nbsp;&lt;head&gt;<br>
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;link&gt;<br>
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&lt;style&gt;</strong><br>
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&lt;/style&gt;</strong><br>
-                                                        &nbsp;&nbsp;&nbsp;&lt;/head&gt;<br><br>
-                                                        &nbsp;&nbsp;&nbsp;&lt;body&gt;.../
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                    
-                                        <div class="w3-half">
-                                            <div class=" jp-onglet_d_faf w3- intro">
-                                                <div class="degrad-Vertical">
-                                                    <div class="w3-code4 sqlHigh notranslate w3-card-2">
-                                                        &lt;!DOCTYPE html&gt;<br>
-                                                        &lt;html lang&#61;&#34;fr&#45;FR&#34;&gt;<br>
-                                                        &nbsp;&nbsp;&nbsp;&lt;head&gt;<br>
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;style&gt;<br>
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/style&gt;<br>
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>&lt;link&gt;</strong><br>
-                                                        &nbsp;&nbsp;&nbsp;&lt;/head&gt;<br><br>
-                                                        &nbsp;&nbsp;&nbsp;&lt;body&gt;.../
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                        </div>
+    
+                        <div class="w3-half">
+                            <div class=" jp-onglet_d_faf w3- intro">
+                                <div class="degrad-Vertical">
+                                    <div class="w3-code4 sqlHigh notranslate w3-card-2">
+                                        .../<br>
+                                        &nbsp;&nbsp;&nbsp;&lt;/head&gt;<br><br>
+                                        &nbsp;&nbsp;&nbsp;&lt;body&gt;<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&lt;script&gt;</b><br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Les fonctions IcI<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&lt;/script&gt;</b><br>
+                                        &nbsp;&nbsp;&nbsp;&lt;/body&gt;<br>&nbsp;
                                     </div>
-
-                    <div class="jp-example2 jp-card-ex">
-                        <h3>On peut styliser en:</h3>
-                        <ul>
-                            <li>important une feuille de style externe</li>
-                            <li>entre des balise de style dans l'en-tête de l'HTML</li>
-                            <li>Inline soit en ligne en ciblant que l'élémément à modifier</li>
-                            <li>l'élément de style utilisé en cas de mutltiples déclarations est le dernier lut par le navigateur web</li>
-                            </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    
-                    <div id="separ1"></div>
-                    <div class="w3-clear nextprev">
-                        <a id="btninsta" class=" boutons JP-padding-large testbg" href="/moi/tutos_v1/css/index.html">
-                            <i class="fas fa-reply"></i> Précédent</a>
-                        <a id="btnneonD" class="w3-right boutons JP-padding-large testbg"
-                            href="/moi/tutos_v1/css/commenter.html">
-                            suivant <i class="fas fa-reply reply2"></i></a>
+                    <h2>A un <span  class="txtdegrad1">élement</span></h2>
+                    <p>___</p>
+                    <div class="degrad-Vertical">
+                        <div class="w3-code sqlHigh notranslate w3-card-2">
+                            &lt;button onclick= "<b>document.getElementById('ex3').style.display = "none";</b>"&gt;
+                        </div>
                     </div>
+                <div class="jp-example jp-card-ex">
+                    <h3>0_o</h3>
+                    <p>___</p>
+                </div>
+                <div id="separ1"></div>
+                <div class="w3-clear nextprev">
+                    <a id="btninsta" class=" boutons JP-padding-large testbg" href="/moi/tutos_v1/js/index.html">
+                        <i class="fas fa-home"></i> Accueil</a>
+                    <a id="btnneonD" class="w3-right boutons JP-padding-large testbg"
+                        href="/moi/tutos_v1/js/O_o">
+                        suivant <i class="fas fa-reply reply2"></i></a>
+                </div>
             </div>
         </div>
         <div id="separ3" style='margin-right: 45px;margin-left: 45px;'></div>
-                <div id='pub' style='overflow:hidden; margin: 0 25px;'><a href='/moi/tutos_v1/'>
-                    <!-- Emplacenrt pour redirection-->
-                    <span class='psycho-logo'>Psycho <span class='dotcom tcode'>les bons</span>
-            Tutos</aspan><br>
-            <span class=' psycho-logo2  tcode2' style="font-family:'HP','Segoe UI',Arial,sans-serif">DEVELOPPONS ENSEMBLE</span>
-                    </span>
-                </a></div>
-                <div id="separ3" style='margin-right: 45px;margin-left: 45px;'></div>
+        <div id='pub' style='overflow:hidden; margin: 0 25px;'><a href='/moi/tutos_v1/'>
+                <!-- Emplacenrt pour redirection-->
+                <span class='psycho-logo'>Psycho <span class='dotcom tcode'>les bons</span>
+                    Tutos</aspan><br>
+                    <span class=' psycho-logo2  tcode2' style="font-family:'HP','Segoe UI',Arial,sans-serif">DEVELOPPONS
+                        ENSEMBLE</span>
+                </span>
+            </a></div>
+        <div id="separ3" style='margin-right: 45px;margin-left: 45px;'></div>
         <div classe='degrad1'>
             <div id="footer" class="footer footerdegrad w3-container .w3-padding-32">
                 <div id="separ2"></div>
                 <div class="w3-row-padding w3-center w3-small" style="margin:0 -16px">
                     <div class="w3-col l3 m3 s12">
                         <a class="w3-button degrad1 hover-degrad1 w3-block" href="/moi/tutos_v1/html/index.html"
-                            style="white-space:nowrap;text-decoration:none;margin-top:1px;margin-bottom:1px">HTML</a>
+                            style="text-decoration:none;margin-top:1px;margin-bottom:1px">HTML</a>
                     </div>
                     <div class="w3-col l3 m3 s12">
-                        <a class="w3-button degrad2 hover-degrad2 w3-block" href="/moi/tutos_v1/index.html"
-                            style="text-decoration:none;margin-top:1px;margin-bottom:1px">ACCUEIL</a>
+                        <a class="w3-button degrad2 hover-degrad2 w3-block" href="/moi/tutos_v1/css/index.html"
+                            style="text-decoration:none;margin-top:1px;margin-bottom:1px">CSS</a>
                     </div>
                     <div class="w3-col l3 m3 s12">
-                        <a class="w3-button degrad1 hover-degrad1 w3-block" href="/moi/tutos_v1/js/index.html"
-                            style="text-decoration:none;margin-top:1px;margin-bottom:1px">JavaScript</a>
+                        <a class="w3-button degrad1 hover-degrad1 w3-block" href="/moi/tutos_v1/index.html"
+                            style="white-space:nowrap;text-decoration:none;margin-top:1px;margin-bottom:1px">ACCUEIL</a>
                     </div>
                     <div class="w3-col l3 m3 s12">
                         <a class="w3-button degrad2 hover-degrad2 w3-block" href="/moi/tutos_v1/O_o" target="blank"
@@ -2256,7 +2412,6 @@
                     </div>
                 </div>
 
-                
                 <!--
             <div class="degradnoir w3-padding w3-margin-bottom" id="err_form" style="display:none;position:relative">
                 <span onclick="this.parentElement.style.display='none'"
@@ -2385,13 +2540,15 @@
                             style="text-decoration:none">w3</a> |
                         <a href="https://jplemonias.github.io/moi/" target="_top" class="JP-hover-text-degrad"
                             style="text-decoration:none">Moi</a><br><br>Merci, Pe@cE.</p>
-                            <div class="w3-clear nextprev">
-                                <a id="btninsta" class="w3-left boutons JP-padding-large btninstafoot" href="/moi/tutos_v1/css/index.html">
-                                    <i class="fas fa-reply"></i></a>
-                                <i class="fas fa-peace"></i>
-                                <a id="btnneonD" class="w3-right boutons JP-padding-large btnneonDfoot" href="/moi/tutos_v1/css/commenter.html">
-                                    <i class="fas fa-reply reply2"></i></a>
-                            </div>
+                    <div class="w3-clear nextprev">
+                        <a id="btninsta" class="w3-left boutons JP-padding-large btninstafoot"
+                            href="/moi/tutos_v1/html/js/index.html">
+                            <i class="fas fa-home"></i></a>
+                        <i class="fas fa-peace"></i>
+                        <a id="btnneonD" class="w3-right boutons JP-padding-large btnneonDfoot"
+                            href="/moi/tutos_v1/js/O_o">
+                            <i class="fas fa-reply reply2"></i></a>
+                    </div>
                 </div>
             </div>
         </div>

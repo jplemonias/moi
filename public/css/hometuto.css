@@ -267,7 +267,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
     border-radius: 6px 6px;
     background: linear-gradient(180deg,#04c4b4,#d400ff);
 }
-.w3-code,.w3-code2,.w3-code4,.w3-codespan{font-family:Consolas,"courier new";font-size:16px}
+.w3-code,.w3-code2,.w3-code4,.w3-codespan{font-family:Consolas,"courier new";font-size:15px}
 
 .w3-code{border-radius: 6px 0 0 6px;width:auto;padding:8px 12px;margin-left:4px;word-wrap:break-word;
     background: linear-gradient(135deg,#04c4b444,#d400ff44);background-color:#fff;color: rgb(0, 0, 0);}
