@@ -2,7 +2,7 @@
 <html lang="fr-FR">
 
 <head>
-    <title>Rédiger du JavaScript</title>
+    <title>Les variables</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Keywords"
@@ -2207,13 +2207,13 @@
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/js/index.html">Introduction</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/js/lierjs.html">Lier du JavaScript</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/js/commenter.html">Commenter</a>
-                    <a class="w3-bar-item w3-button padnone jp-selected" href="/moi/tutos_v1/js/rediger.html">Rédiger</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/js/rediger.html">Rédiger</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/js/syntaxe.html">Syntaxe</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/js/sortie.html">Sorties</a>
-                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/js/variables.html">Les variables</a>
-                    <a class="w3-bar-item w3-button padnone" href='/moi/tutos_v1/O_o'>le JavaScript</a>
-                    <a class="w3-bar-item w3-button padnone" href='/moi/tutos_v1/O_o'>le JavaScript</a>
+                    <a class="w3-bar-item w3-button padnone jp-selected" href="/moi/tutos_v1/js/variables.html">Les variables</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">le JavaScript</a>
+                    <a class="w3-bar-item w3-button padnone" href='/moi/tutos_v1/O_o'>le JavaScript</a>
+                    <a class="w3-bar-item w3-button padnone" href='/moi/tutos_v1/O_o'>le JavaScript</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">le JavaScript</a>
                 </div>
                 <div class="w3-col l3 m6">
@@ -2284,100 +2284,115 @@
                     </a>
                 </div>
 
-                <h1>Rédiger du <span class="txtdegrad1">JavaScript</span></h1>
+                <h1>Les <span class="txtdegrad1">variables</span> en JavaScript</h1>
                 <div id="separ1"></div>
                 <div class="w3-clear nextprev">
-                    <a id="btninsta" class=" boutons JP-padding-large testbg" href="/moi/tutos_v1/js/commenter.html">
+                    <a id="btninsta" class=" boutons JP-padding-large testbg" href="/moi/tutos_v1/js/rediger.html">
                         <i class="fas fa-reply"></i> Accueil</a>
                     <a id="btnneonD" class="w3-right boutons JP-padding-large testbg"
-                        href="/moi/tutos_v1/js/syntaxe.html">
+                        href="/moi/tutos_v1/js/O_o">
                         suivant <i class="fas fa-reply reply2"></i></a>
                 </div>
-                <div class="w3-panel w3-info intro">
-                    <h2>Un script JavaScrip est un programme</h2>
-                    <p>
-                        Le JavaScript est, ici, une liste d'instructions à exécuter par un navigateur web,<br>
-                        soit la déffinition même d'un programme informatique.
-                    </p>
+                <div class="w3-panel2 w3-info intro">
+                    <p>Toutes les variables JavaScript doivent être identifiées avec des noms uniques.
+                        Ces noms uniques sont appelés identifiants.
+                        Les identifiants peuvent être des noms courts (comme a et b) ou des noms plus objectifs (nom, pnom, coutTotal).
+                        Il est de coutune de marquer les motspar une majuscule.
+                        Les règles générales de construction des noms de variables (identifiants uniques) sont les suivantes:</p>
                 </div>
-
+                <div class="w3-panel w3-info intro">
+                    <ul>
+                        <li>Les noms doivent commencer par une lettre.</li>
+                        <li>Ils peuvent contenir des lettres, des chiffres, underscores et des signes dollar.</li>
+                        <li>Ils peuvent également commencer par $ et l'underscores.</li>
+                        <li>Les noms sont sensibles à l'écriture en minuscule ou majuscule (x et y sont des variables différentes)</li>
+                        <li>Les mots réservés (comme les mots clés JavaScript) ne peuvent pas être utilisés comme noms</li>
+                    </ul>
+                </div>
 
                 <div id="separ2"></div>
-                <h2>Les <span  class="txtdegrad1">déclarations</span> en JavaScript</h2>
-                <p>Elles sont composées de valeurs, d'opérateurs, d'expressions, mots clés et de commentaires.<br><br>
-                    Cette déclarations  indique au navigateur d'écrire «hello, world» à l'intérieur d'un élément ayant l'id = "ex1"</p>
+                <h2><span  class="txtdegrad1">___</span></h2>
+                <p>___</p>
                     <div class="degrad-Vertical">
                         <div class="w3-code sqlHigh notranslate w3-card-2">
-                            document.getElementById("ex1").innerHTML = "hello, world";
+                            var a = 5<b>;</b><br>
+                            var b = 2<b>;</b><br>
+                            var c = a*b<b>;</b>
                         </div>
                     </div>
-                <div class="w3-panel w3-info intro">
-                    <p>La plupart des programmes JavaScript contiennent de nombreuses déclrations JavaScript.<br>
-                        Elles sont exécutées une par une dans leur ordre d'écrites.</p>
+                    <div class="degrad-Vertical">
+                        <div class="w3-code sqlHigh notranslate w3-card-2">
+                            var cout1 = 5;<br>
+                            var cout2 = 2;<br>
+                            var total = cout1 + cout2;
+                        </div>
+                    </div>
+                <h2><span  class="txtdegrad1">___</span></h2>
+                <p>___</p>
+                <div class="degrad-Vertical">
+                    <div class="w3-code sqlHigh notranslate w3-card-2">
+                        var a = a + 5;
+                    </div>
                 </div>
-                <h2>Le <span  class="txtdegrad1">Point-virgule</span>;</h2>
-                <p>Les points-virgules séparent les instructions JavaScript.</p>
+                <p>Renvoit NaN</p>
+                <div class="degrad-Vertical">
+                    <div class="w3-code sqlHigh notranslate w3-card-2">
+                        a = 15;<br>
+                        var a = a + 5;
+                    </div>
+                </div>
+                <p>Renvoit 20</p>
+                <div class="degrad-Vertical">
+                    <div class="w3-code sqlHigh notranslate w3-card-2">
+                        var a = a + 5;<br>
+                        a = 15;
+                    </div>
+                </div>
+                <p>Renvoit 15</p>
+                <h2><span  class="txtdegrad1">___</span></h2>
+                <p>___</p>
                     <div class="degrad-Vertical">
                         <div class="w3-code sqlHigh notranslate w3-card-2">
-                            let c, a, b<b>;</b><br>
-                            a = 5<b>;</b><br>
-                            b = 2<b>;</b><br>
-                            c = a*b<b>;</b>
+                            var iiidfx;
                         </div>
                     </div>
-                <p>Rendant ainsi possible une déclaration sans saut de ligne.</p>
+                <div class="degrad-Vertical">
+                    <div class="w3-code sqlHigh notranslate w3-card-2">
+                        iiidfx = "Voodoo";
+                    </div>
+                </div>
+                <div class="degrad-Vertical">
+                    <div class="w3-code sqlHigh notranslate w3-card-2">
+                        var iiidfx = "Voodoo";
+                    </div>
+                </div>
+                <h2><span  class="txtdegrad1">___</span></h2>
+                <p>___</p>
                     <div class="degrad-Vertical">
                         <div class="w3-code sqlHigh notranslate w3-card-2">
-                            let c, a, b<b>;</b> a = 5<b>;</b> b = 2<b>;</b> c = a*b<b>;</b>
+                            var nbr = 1.618034;<br>
+                            var peace = "R. I. P.";<br>
+                            var quiCa = 'S. Hawking';<br><br>
+                            document.getElementById("test").innerHTML =<br>
+                            "&amp;nbsp;" + nbr + "&lt;br&gt;&amp;nbsp;" + peace + "&lt;br&gt;" + quiCa;
                         </div>
                     </div>
-                    <h2>L'<span  class="txtdegrad1">espace</span></h2>
-                    <p>Vous pouvez ajouter un espace blanc à votre script pour le rendre plus lisible.
-                        Les deux lignes dans les deux exemples suivants se vallent</p>
-                        <div class="degrad-Vertical">
-                            <div class="w3-code sqlHigh notranslate w3-card-2">
-                                let pseudo = "Psycho@ctiF";<br>
-                                let c = a + b;
-                            </div>
-                        </div>
-                        <div class="degrad-Vertical">
-                            <div class="w3-code sqlHigh notranslate w3-card-2">
-                                let pseudo="Psycho@ctiF";<br>
-                                let c=a+b;
-                            </div>
-                        </div>
-                    <p>Mais sont plus facilement lisible dans le premier cas.</p>
-                    <h2><span  class="txtdegrad1">Longueur</span> de ligne et<br><span  class="txtdegrad1">sauts</span> de ligne</h2>
-                    <p>Pour une meilleure lisibilité, les programmeurs aiment souvent éviter les lignes de code de plus de 80 caractères.<br><br>
-                        Si une instruction JavaScript ne tient pas sur une seule ligne, le meilleur endroit pour la casser est après un opérateur.</p>
-                        <div class="degrad-Vertical">
-                            <div class="w3-code sqlHigh notranslate w3-card-2">
-                                document.getElementById("ex1").innerHTML =<br>"hello, world";
-                            </div>
-                        </div>
-                        <h2>Les <span  class="txtdegrad1">blocs de code</span></h2>
-                        <p>Les déclarations peuvent être regroupées dans des blocs de code,
-                            Le but des blocs de code est de définir des instructions à exécuter ensemble.<br><br>
-                            Un regroupement de déclatations en blocs est une fonction en JavaScript,<br>
-                            Le regroupement ce fait entre crochets {...}.</p>
-                            <div class="degrad-Vertical">
-                                <div class="w3-code sqlHigh notranslate w3-card-2">
-                                    function sonNom() <b>{</b><br>
-                                        document.getElementById("ex1").innerHTML = "hello, world";<br>
-                                        document.getElementById('ex2').src="/monImage.png";<br>
-                                        <b>}</b>
-                                </div>
-                            </div>
+                <div class="degrad-Vertical">
+                    <div class="w3-code sqlHigh notranslate w3-card-2">
+                        &nbsp;1.618034<br>&nbsp;R. I. P.<br>S. Hawking
+                    </div>
+                </div>
+                    
                 <div class="jp-example jp-card-ex">
                     <h3>___</h3>
                     <p>___</p>
                 </div>
                 <div id="separ1"></div>
                 <div class="w3-clear nextprev">
-                    <a id="btninsta" class=" boutons JP-padding-large testbg" href="/moi/tutos_v1/js/commenter.html">
+                    <a id="btninsta" class=" boutons JP-padding-large testbg" href="/moi/tutos_v1/js/rediger.html">
                         <i class="fas fa-reply"></i> Accueil</a>
                     <a id="btnneonD" class="w3-right boutons JP-padding-large testbg"
-                        href="/moi/tutos_v1/js/syntaxe.html">
+                        href="/moi/tutos_v1/js/O_o">
                         suivant <i class="fas fa-reply reply2"></i></a>
                 </div>
             </div>
@@ -2544,11 +2559,11 @@
                             style="text-decoration:none">Moi</a><br><br>Merci, Pe@cE.</p>
                     <div class="w3-clear nextprev">
                         <a id="btninsta" class="w3-left boutons JP-padding-large btninstafoot"
-                            href="/moi/tutos_v1/html/js/commenter.html">
+                            href="/moi/tutos_v1/html/js/rediger.html">
                             <i class="fas fa-reply"></i></a>
                         <i class="fas fa-peace"></i>
                         <a id="btnneonD" class="w3-right boutons JP-padding-large btnneonDfoot"
-                            href="/moi/tutos_v1/js/syntaxe.html">
+                            href="/moi/tutos_v1/js/O_o">
                             <i class="fas fa-reply reply2"></i></a>
                     </div>
                 </div>
