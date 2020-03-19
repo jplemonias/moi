@@ -2284,7 +2284,7 @@
                     </a>
                 </div>
 
-                <h1>integrer du <span class="txtdegrad1">JavaScript</span></h1>
+                <h1>Rédiger du <span class="txtdegrad1">JavaScript</span></h1>
                 <div id="separ1"></div>
                 <div class="w3-clear nextprev">
                     <a id="btninsta" class=" boutons JP-padding-large testbg" href="/moi/tutos_v1/js/commenter.html">
@@ -2293,85 +2293,81 @@
                         href="/moi/tutos_v1/js/O_o">
                         suivant <i class="fas fa-reply reply2"></i></a>
                 </div>
-
                 <div class="w3-panel w3-info intro">
-                    <p>Comme pour le CSS, il y a trois façon de le faire</p>
-                    <ol>
-                        <li><strong>En externe.</strong><br>
-                            <span style="font-size: 13px;">en référencant dans le head de l'HTML un script externe.</span></li>
-                        <li><strong>En interne à l'HTML</strong><br>
-                            <span style="font-size: 13px;">en balisant les scripts dans l'HTML</span></li>
-                        <li><strong>En interne des éléments</strong><br>
-                            <span style="font-size: 13px;">Le éléments peuvent contenir de courts scripts</span></i>
-                        </li>
-                    </ol>
+                    <h2>Un script JavaScrip est un programme</h2>
+                    <p>
+                        Le JavaScript est, ici, une liste d'instructions à exécuter par un navigateur web,<br>
+                        soit la déffinition même d'un programme informatique.
+                    </p>
                 </div>
 
+
                 <div id="separ2"></div>
-                <h2>script <span  class="txtdegrad1">externe</span></h2>
-                <p>Si vous êtes à l'apprentissage du JavaScript pas besoin de vous préciser comment le rédiger.<br>
-                En revanche comment l'intégré à un HTML diffère légèrement d'une feuille de style.<br><br>
-                Pour les fichiers externes ils sont liable dans l'en-tête via leur chemin ou leur URL.<br>
-                L'extension d'un ficher JavaScript est: .js</p>
+                <h2>Les <span  class="txtdegrad1">déclarations</span> en JavaScript</h2>
+                <p>Elles sont composées de valeurs, d'opérateurs, d'expressions, mots clés et de commentaires.<br><br>
+                    Cette déclarations  indique au navigateur d'écrire «hello, world» à l'intérieur d'un élément ayant l'id = "ex1"</p>
                     <div class="degrad-Vertical">
                         <div class="w3-code sqlHigh notranslate w3-card-2">
-                            &lt;!DOCTYPE html&gt;<br>
-                            &lt;html lang&#61;&#34;fr&#45;FR&#34;&gt;<br>
-                            &nbsp;&nbsp;&nbsp;&lt;head&gt;<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&lt;script src&#61;&#34;Le/Chemin/DuDoc.JS&#34;&gt;<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/script&gt;</b><br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&lt;script src&#61;&#34;www.Lurl.Du/Doc.JS&#34;&gt;<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/script&gt;</b><br>
-                            &nbsp;&nbsp;&nbsp;&lt;/head&gt;<br><br>
-                            &nbsp;&nbsp;&nbsp;&lt;body&gt;.../
+                            document.getElementById("ex1").innerHTML = "hello, world";
                         </div>
                     </div>
-                    <h2>En <span  class="txtdegrad1">interne</span></h2>
-                    <p>Il est possible de rédiger les fonction dans l'HTML, comme pour le CSS,<br>
-                        à une chose prêt, il est possible de le faire dans les balises du body.
-                    </p>
-                    <div class="w3-row-padding">
-                        <div class="w3-half">
-                            <div class="jp-onglet_g_faf  intro">
-                                <div class="degrad-Vertical">
-                                    <div class="w3-code sqlHigh notranslate w3-card-2" style="margin-right: 0px !important;">
-                                        &lt;!DOCTYPE html&gt;<br>
-                                        &lt;html lang&#61;&#34;fr&#45;FR&#34;&gt;<br>
-                                        &nbsp;&nbsp;&nbsp;&lt;head&gt;<br>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&lt;script&gt;</b><br>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Les fonctions IcI<br>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&lt;/script&gt;</b><br>
-                                        &nbsp;&nbsp;&nbsp;&lt;/head&gt;<br><br>
-                                        &nbsp;&nbsp;&nbsp;&lt;body&gt;.../
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="w3-half">
-                            <div class=" jp-onglet_d_faf w3- intro">
-                                <div class="degrad-Vertical">
-                                    <div class="w3-code4 sqlHigh notranslate w3-card-2">
-                                        .../<br>
-                                        &nbsp;&nbsp;&nbsp;&lt;/head&gt;<br><br>
-                                        &nbsp;&nbsp;&nbsp;&lt;body&gt;<br>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&lt;script&gt;</b><br>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Les fonctions IcI<br>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&lt;/script&gt;</b><br>
-                                        &nbsp;&nbsp;&nbsp;&lt;/body&gt;<br>&nbsp;
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <h2>A un <span  class="txtdegrad1">élement</span></h2>
-                    <p>Jamais deux sans trois...<br>
-                    vous pouvez également placer la fonction dans l'élément.</p>
+                <div class="w3-panel w3-info intro">
+                    <p>La plupart des programmes JavaScript contiennent de nombreuses déclrations JavaScript.<br>
+                        Elles sont exécutées une par une dans leur ordre d'écrites.</p>
+                </div>
+                <h2>Le <span  class="txtdegrad1">Point-virgule</span>;</h2>
+                <p>Les points-virgules séparent les instructions JavaScript.</p>
                     <div class="degrad-Vertical">
                         <div class="w3-code sqlHigh notranslate w3-card-2">
-                            &lt;button onclick= "<b>document.getElementById('ex3').style.display = "none";</b>"&gt;
+                            let c, a, b<b>;</b><br>
+                            a = 5<b>;</b><br>
+                            b = 2<b>;</b><br>
+                            c = a*b<b>;</b>
                         </div>
                     </div>
+                <p>Rendant ainsi possible une déclaration sans saut de ligne.</p>
+                    <div class="degrad-Vertical">
+                        <div class="w3-code sqlHigh notranslate w3-card-2">
+                            let c, a, b<b>;</b> a = 5<b>;</b> b = 2<b>;</b> c = a*b<b>;</b>
+                        </div>
+                    </div>
+                    <h2>L'<span  class="txtdegrad1">espace</span></h2>
+                    <p>Vous pouvez ajouter un espace blanc à votre script pour le rendre plus lisible.
+                        Les deux lignes dans les deux exemples suivants se vallent</p>
+                        <div class="degrad-Vertical">
+                            <div class="w3-code sqlHigh notranslate w3-card-2">
+                                let pseudo = "Psycho@ctiF";<br>
+                                let c = a + b;
+                            </div>
+                        </div>
+                        <div class="degrad-Vertical">
+                            <div class="w3-code sqlHigh notranslate w3-card-2">
+                                let pseudo="Psycho@ctiF";<br>
+                                let c=a+b;
+                            </div>
+                        </div>
+                    <p>Mais sont plus facilement lisible dans le premier cas.</p>
+                    <h2><span  class="txtdegrad1">Longueur</span> de ligne et<br><span  class="txtdegrad1">sauts</span> de ligne</h2>
+                    <p>Pour une meilleure lisibilité, les programmeurs aiment souvent éviter les lignes de code de plus de 80 caractères.<br><br>
+                        Si une instruction JavaScript ne tient pas sur une seule ligne, le meilleur endroit pour la casser est après un opérateur.</p>
+                        <div class="degrad-Vertical">
+                            <div class="w3-code sqlHigh notranslate w3-card-2">
+                                document.getElementById("ex1").innerHTML =<br>"hello, world";
+                            </div>
+                        </div>
+                        <h2>Les <span  class="txtdegrad1">blocs de code</span></h2>
+                        <p>Les déclarations peuvent être regroupées dans des blocs de code,
+                            Le but des blocs de code est de définir des instructions à exécuter ensemble.<br><br>
+                            Un regroupement de déclatations en blocs est une fonction en JavaScript,<br>
+                            Le regroupement ce fait entre crochets {...}.</p>
+                            <div class="degrad-Vertical">
+                                <div class="w3-code sqlHigh notranslate w3-card-2">
+                                    function sonNom() <b>{</b><br>
+                                        document.getElementById("ex1").innerHTML = "hello, world";<br>
+                                        document.getElementById('ex2').src="/monImage.png";<br>
+                                        <b>}</b>
+                                </div>
+                            </div>
                 <div class="jp-example jp-card-ex">
                     <h3>On peut lier Un JavaScript:</h3>
                     <ul>
