@@ -2315,71 +2315,86 @@
                 <p>___</p>
                     <div class="degrad-Vertical">
                         <div class="w3-code sqlHigh notranslate w3-card-2">
-                            var a = 5<b>;</b><br>
-                            var b = 2<b>;</b><br>
-                            var c = a*b<b>;</b>
+                            var a = <b>5</b>;<br>
+                            var b = <b>2</b>;
                         </div>
                     </div>
                     <div class="degrad-Vertical">
                         <div class="w3-code sqlHigh notranslate w3-card-2">
-                            var cout1 = 5;<br>
-                            var cout2 = 2;<br>
-                            var total = cout1 + cout2;
-                        </div>
-                    </div>
-                <h2><span  class="txtdegrad1">___</span></h2>
-                <p>___</p>
-                <div class="degrad-Vertical">
-                    <div class="w3-code sqlHigh notranslate w3-card-2">
-                        var a = a + 5;
-                    </div>
-                </div>
-                <p>Renvoit NaN</p>
-                <div class="degrad-Vertical">
-                    <div class="w3-code sqlHigh notranslate w3-card-2">
-                        a = 15;<br>
-                        var a = a + 5;
-                    </div>
-                </div>
-                <p>Renvoit 20</p>
-                <div class="degrad-Vertical">
-                    <div class="w3-code sqlHigh notranslate w3-card-2">
-                        var a = a + 5;<br>
-                        a = 15;
-                    </div>
-                </div>
-                <p>Renvoit 15</p>
-                <h2><span  class="txtdegrad1">___</span></h2>
-                <p>___</p>
-                    <div class="degrad-Vertical">
-                        <div class="w3-code sqlHigh notranslate w3-card-2">
-                            var iiidfx;
+                            c = a <b>+</b> b;<br>
+                            d = a <b>-</b> b;<br>
+                            e = a <b>*</b> b;<br>
+                            f = a <b>/</b> b;<br>
+                            g = a <b>%</b> b;
                         </div>
                     </div>
                 <div class="degrad-Vertical">
                     <div class="w3-code sqlHigh notranslate w3-card-2">
-                        iiidfx = "Voodoo";
+                        h = a <b>**</b> b;<br>
+                        i = b <b>**</b> a;
                     </div>
                 </div>
                 <div class="degrad-Vertical">
                     <div class="w3-code sqlHigh notranslate w3-card-2">
-                        var iiidfx = "Voodoo";
+                        j = a <b>++</b>;<br>
+                        k = a <b>--</b>;<br>
+                        l = <b>++</b> b;<br>
+                        m = <b>--</b> b;
                     </div>
                 </div>
-                <h2><span  class="txtdegrad1">___</span></h2>
-                <p>___</p>
-                    <div class="degrad-Vertical">
-                        <div class="w3-code sqlHigh notranslate w3-card-2">
-                            var nbr = 1.618034;<br>
-                            var peace = "R. I. P.";<br>
-                            var quiCa = 'S. Hawking';<br><br>
-                            document.getElementById("test").innerHTML =<br>
-                            "&amp;nbsp;" + nbr + "&lt;br&gt;&amp;nbsp;" + peace + "&lt;br&gt;" + quiCa;
-                        </div>
-                    </div>
                 <div class="degrad-Vertical">
                     <div class="w3-code sqlHigh notranslate w3-card-2">
-                        &nbsp;1.618034<br>&nbsp;R. I. P.<br>S. Hawking
+                        document.getElementById("demo").innerHTML =<br>c + " " + d + " " + e + " " + f + " " + g + "&lt;br&gt;"<br>
+                        + h + " " + i + " " + j + " " + k + " " + l + " " + m;
+                    </div>
+                </div>
+                <div class="degrad-Vertical">
+                    <div class="w3-code sqlHigh notranslate w3-card-2">
+                        c = a+=b;<br>
+                        d = a+=2;<br>
+                        e = a+=a;
+                    </div>
+                </div>
+                <div class="degrad-Vertical">
+                    <div class="w3-code sqlHigh notranslate w3-card-2">
+                        f = a-=b;<br>
+                        g = a-=2;<br>
+                        h = a-=a;
+                    </div>
+                </div>
+                <div class="degrad-Vertical">
+                    <div class="w3-code sqlHigh notranslate w3-card-2">
+                        i = a*=b;<br>
+                        j = a*=2;<br>
+                        k = a*=a;
+                    </div>
+                </div>
+                <div class="degrad-Vertical">
+                    <div class="w3-code sqlHigh notranslate w3-card-2">
+                        l = a/=b;<br>
+                        m = a/=2;<br>
+                        n = a/=a;
+                    </div>
+                </div>
+                <div class="degrad-Vertical">
+                    <div class="w3-code sqlHigh notranslate w3-card-2">
+                        o = a%=b;<br>
+                        p = a%=2;<br>
+                        q = a%=a;
+                    </div>
+                </div>
+                <div class="degrad-Vertical">
+                    <div class="w3-code sqlHigh notranslate w3-card-2">
+                        r = a**=b;<br>
+                        s = a**=2;<br>
+                        t = a**=a;
+                    </div>
+                </div>
+                <div class="degrad-Vertical">
+                    <div class="w3-code sqlHigh notranslate w3-card-2">
+                        document.getElementById("demo").innerHTML =<br> a + " " + b + "&lt;br&gt;" + c + " " + d + " " + e + "&lt;br&gt;"<br>
+                        + f + " " + g + " " + h + "&lt;br&gt;" + i + " " + j + " " + k + "&lt;br&gt;"<br> + l + " " + m + " " + n + "&lt;br&gt;"
+                         + o + " " + p + " " + q + "&lt;br&gt;"<br>+ r + " " + s + " " + t;
                     </div>
                 </div>
                     
