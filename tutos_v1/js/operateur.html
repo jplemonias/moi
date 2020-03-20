@@ -2,7 +2,7 @@
 <html lang="fr-FR">
 
 <head>
-    <title>Commenter un JavaScript</title>
+    <title>Les opérateurs</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Keywords"
@@ -1429,11 +1429,6 @@
             border-radius: 15px 0 0 15px;
         }
 
-        .jp-example2 {
-            padding: 8px 20px;
-            margin: 24px 0px 24px -16px;
-            border-radius: 0 15px 15px 0;
-        }
         .w3-example {
             padding: 8px 20px;
             margin: 24px -16px 24px 0px;
@@ -2211,14 +2206,14 @@
                     <h3 class="w3-margin-top vert">Débutant</h3>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/js/index.html">Introduction</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/js/lierjs.html">Lier du JavaScript</a>
-                    <a class="w3-bar-item w3-button padnone jp-selected" href="/moi/tutos_v1/js/commenter.html">Rédiger</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/js/commenter.html">Commenter</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/js/rediger.html">Rédiger</a>
-                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/js/rediger.html">Syntaxe</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/js/syntaxe.html">Syntaxe</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/js/sortie.html">Sorties</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/js/variables.html">Les variables</a>
-                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/js/opérateurshtml">Les opérateurs</a>
+                    <a class="w3-bar-item w3-button padnone jp-selected" href="/moi/tutos_v1/js/opérateurshtml">Les opérateurs</a>
                     <a class="w3-bar-item w3-button padnone" href='/moi/tutos_v1/O_o'>le JavaScript</a>
-                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">le JavaScript</a>
+                    <a class="w3-bar-item w3-button padnone" href='/moi/tutos_v1/O_o'>le JavaScript</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">le JavaScript</a>
                 </div>
                 <div class="w3-col l3 m6">
@@ -2289,75 +2284,115 @@
                     </a>
                 </div>
 
-                <h1>Commenter du <span class="txtdegrad1">JavaScript</span></h1>
+                <h1>Les <span class="txtdegrad1">opérateurs</span></h1>
                 <div id="separ1"></div>
                 <div class="w3-clear nextprev">
-                    <a id="btninsta" class=" boutons JP-padding-large testbg" href="/moi/tutos_v1/js/lierjs.html">
+                    <a id="btninsta" class=" boutons JP-padding-large testbg" href="/moi/tutos_v1/js/variables.html">
                         <i class="fas fa-reply"></i> Précédent</a>
                     <a id="btnneonD" class="w3-right boutons JP-padding-large testbg"
-                        href="/moi/tutos_v1/js/rediger.html">
+                        href="/moi/tutos_v1/js/O_o">
                         suivant <i class="fas fa-reply reply2"></i></a>
                 </div>
-
-                <h2>Comment <span class="txtdegrad1">commenter</span> ?</h2>
-                <p>La même chose est faisable en js qu'en css</p>
-                <div class="degrad-Vertical">
-                    <div class="w3-code sqlHigh notranslate w3-card-2">
-                        <b>&#47;&#42;</b> Un commentaire JS <b>&#42;&#47;</b>
-                    </div>
+                <div class="w3-panel2 w3-info intro">
+                    <p>Toutes les variables JavaScript doivent être identifiées avec des noms uniques.
+                        Ces noms uniques sont appelés identifiants.
+                        Les identifiants peuvent être des noms courts (comme a et b) ou des noms plus objectifs (nom, pnom, coutTotal).
+                        Il est de coutune de marquer les motspar une majuscule.
+                        Les règles générales de construction des noms de variables (identifiants uniques) sont les suivantes:</p>
                 </div>
-                <p>Il est surtout utile pour commenter sur plusieurs lignes.</p>
-                <div class="degrad-Vertical">
-                    <div class="w3-code sqlHigh notranslate w3-card-2">
-                        &#47;&#42; <b>Comme vous<br>pouver le<br>voir ici </b>&#42;&#47;
-                    </div>
-                </div>
-                <h2>Slash <span class="txtdegrad1">slash</span></h2>
-                <p>Cette méthode pour commenté est trés interéssente<br>
-                les &#47;&#47; indiquent que tout ce qui est aprés, sur la même ligne, serra du commentaire</p>
-                <div class="degrad-Vertical">
-                    <div class="w3-code sqlHigh notranslate w3-card-2">
-                        <b>&#47;&#47;</b> Un commentaire JS
-                    </div>
-                </div>
-                <p>Pratique donc...<br>Pour titrer une fonction par exemple</p>
-                <div class="degrad-Vertical">
-                    <div class="w3-code sqlHigh notranslate w3-card-2">
-                        <b>&#47;&#47; Change paragraphe FR > EN</b><br>
-                        document.getElementById("_").innerHTML = "_";
-                    </div>
-                </div>
-                <p>Ou pour expliquer / détailler quelque choe</p>
-                <div class="degrad-Vertical">
-                    <div class="w3-code sqlHigh notranslate w3-card-2">
-                        var c; <b> &#47;&#47; </b>c<b> serra donc égale à 10 car</b><br>
-                        a = 5; <b> &#47;&#47; La valeur déclaré de </b>a<b> est 5</b><br>
-                        b = 2; <b> &#47;&#47; La valeur déclaré de </b>b<b> est 2</b><br>
-                        c = a*b; <b>&#47;&#47; & </b>c<b> étant </b>a<b> mutiplié par </b>b
-                    </div>
-                </div>
-
-                <div class="jp-example2 jp-card-ex">
-                    <h3><stan style="font-size: 20px;">(∩｀-´)⊃━☆ﾟ.*･｡ﾟ</stan>bonus</h3>En JavaScript l'opérateur:
-                    <ul style="list-style: none;">
-                        <li>&#61; <span style="font-size: 13px;">est une affectation</span><br>
-                            &#61; <strong>&#8800;</strong> &#61;
-                        </li><br>
-                        <li>&#61;&#61; <span style="font-size: 13px;">est une comparaison d'égalité faible</span><br>
-                            &#61; <strong>&#8776;</strong> &#61;&#61;
-                        </li><br>
-                        <li>&#61;&#61;&#61; <span style="font-size: 13px;">est une comparaison strict</span><br>
-                            &#61; <strong>&#61;</strong> &#61;&#61;&#61;
-                        </li>
+                <div class="w3-panel w3-info intro">
+                    <ul>
+                        <li>Les noms doivent commencer par une lettre.</li>
+                        <li>Ils peuvent contenir des lettres, des chiffres, underscores et des signes dollar.</li>
+                        <li>Ils peuvent également commencer par $ et l'underscores.</li>
+                        <li>Les noms sont sensibles à l'écriture en minuscule ou majuscule (x et y sont des variables différentes)</li>
+                        <li>Les mots réservés (comme les mots clés JavaScript) ne peuvent pas être utilisés comme noms</li>
                     </ul>
                 </div>
-                
+
+                <div id="separ2"></div>
+                <h2><span  class="txtdegrad1">___</span></h2>
+                <p>___</p>
+                    <div class="degrad-Vertical">
+                        <div class="w3-code sqlHigh notranslate w3-card-2">
+                            var a = 5<b>;</b><br>
+                            var b = 2<b>;</b><br>
+                            var c = a*b<b>;</b>
+                        </div>
+                    </div>
+                    <div class="degrad-Vertical">
+                        <div class="w3-code sqlHigh notranslate w3-card-2">
+                            var cout1 = 5;<br>
+                            var cout2 = 2;<br>
+                            var total = cout1 + cout2;
+                        </div>
+                    </div>
+                <h2><span  class="txtdegrad1">___</span></h2>
+                <p>___</p>
+                <div class="degrad-Vertical">
+                    <div class="w3-code sqlHigh notranslate w3-card-2">
+                        var a = a + 5;
+                    </div>
+                </div>
+                <p>Renvoit NaN</p>
+                <div class="degrad-Vertical">
+                    <div class="w3-code sqlHigh notranslate w3-card-2">
+                        a = 15;<br>
+                        var a = a + 5;
+                    </div>
+                </div>
+                <p>Renvoit 20</p>
+                <div class="degrad-Vertical">
+                    <div class="w3-code sqlHigh notranslate w3-card-2">
+                        var a = a + 5;<br>
+                        a = 15;
+                    </div>
+                </div>
+                <p>Renvoit 15</p>
+                <h2><span  class="txtdegrad1">___</span></h2>
+                <p>___</p>
+                    <div class="degrad-Vertical">
+                        <div class="w3-code sqlHigh notranslate w3-card-2">
+                            var iiidfx;
+                        </div>
+                    </div>
+                <div class="degrad-Vertical">
+                    <div class="w3-code sqlHigh notranslate w3-card-2">
+                        iiidfx = "Voodoo";
+                    </div>
+                </div>
+                <div class="degrad-Vertical">
+                    <div class="w3-code sqlHigh notranslate w3-card-2">
+                        var iiidfx = "Voodoo";
+                    </div>
+                </div>
+                <h2><span  class="txtdegrad1">___</span></h2>
+                <p>___</p>
+                    <div class="degrad-Vertical">
+                        <div class="w3-code sqlHigh notranslate w3-card-2">
+                            var nbr = 1.618034;<br>
+                            var peace = "R. I. P.";<br>
+                            var quiCa = 'S. Hawking';<br><br>
+                            document.getElementById("test").innerHTML =<br>
+                            "&amp;nbsp;" + nbr + "&lt;br&gt;&amp;nbsp;" + peace + "&lt;br&gt;" + quiCa;
+                        </div>
+                    </div>
+                <div class="degrad-Vertical">
+                    <div class="w3-code sqlHigh notranslate w3-card-2">
+                        &nbsp;1.618034<br>&nbsp;R. I. P.<br>S. Hawking
+                    </div>
+                </div>
+                    
+                <div class="jp-example jp-card-ex">
+                    <h3>___</h3>
+                    <p>___</p>
+                </div>
                 <div id="separ1"></div>
                 <div class="w3-clear nextprev">
-                    <a id="btninsta" class=" boutons JP-padding-large testbg" href="/moi/tutos_v1/js/lierjs.html">
-                        <i class="fas fa-reply"></i>  Précédent</a>
+                    <a id="btninsta" class=" boutons JP-padding-large testbg" href="/moi/tutos_v1/js/variables.html">
+                        <i class="fas fa-reply"></i> Précédent</a>
                     <a id="btnneonD" class="w3-right boutons JP-padding-large testbg"
-                        href="/moi/tutos_v1/js/rediger.html">
+                        href="/moi/tutos_v1/js/O_o">
                         suivant <i class="fas fa-reply reply2"></i></a>
                 </div>
             </div>
@@ -2524,11 +2559,11 @@
                             style="text-decoration:none">Moi</a><br><br>Merci, Pe@cE.</p>
                     <div class="w3-clear nextprev">
                         <a id="btninsta" class="w3-left boutons JP-padding-large btninstafoot"
-                            href="/moi/tutos_v1/html/js/lierjs.html">
+                            href="/moi/tutos_v1/html/js/sortie.html">
                             <i class="fas fa-reply"></i></a>
                         <i class="fas fa-peace"></i>
                         <a id="btnneonD" class="w3-right boutons JP-padding-large btnneonDfoot"
-                            href="/moi/tutos_v1/js/rediger.html">
+                            href="/moi/tutos_v1/js/O_o">
                             <i class="fas fa-reply reply2"></i></a>
                     </div>
                 </div>
