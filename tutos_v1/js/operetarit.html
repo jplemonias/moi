@@ -2293,101 +2293,102 @@
                         href="/moi/tutos_v1/js/O_o">
                         suivant <i class="fas fa-reply reply2"></i></a>
                 </div>
-                <div class="w3-panel2 w3-info intro">
-                    <p>Toutes les variables JavaScript doivent être identifiées avec des noms uniques.
-                        Ces noms uniques sont appelés identifiants.
-                        Les identifiants peuvent être des noms courts (comme a et b) ou des noms plus objectifs (nom, pnom, coutTotal).
-                        Il est de coutune de marquer les motspar une majuscule.
-                        Les règles générales de construction des noms de variables (identifiants uniques) sont les suivantes:</p>
-                </div>
                 <div class="w3-panel w3-info intro">
-                    <ul>
-                        <li>Les noms doivent commencer par une lettre.</li>
-                        <li>Ils peuvent contenir des lettres, des chiffres, underscores et des signes dollar.</li>
-                        <li>Ils peuvent également commencer par $ et l'underscores.</li>
-                        <li>Les noms sont sensibles à l'écriture en minuscule ou majuscule (x et y sont des variables différentes)</li>
-                        <li>Les mots réservés (comme les mots clés JavaScript) ne peuvent pas être utilisés comme noms</li>
-                    </ul>
-                </div>
-
-                <div id="separ2"></div>
-                <h2><span  class="txtdegrad1">___</span></h2>
-                <p>___</p>
+                    <p>Ils sont utilisés sur les nombres, pour effectuer les calculs arithmétiques<br>
+                    L'opérateur égal attribut ici 5 à a et 2 à b</p>
                     <div class="degrad-Vertical">
-                        <div class="w3-code sqlHigh notranslate w3-card-2">
+                        <div class="w3-code3 sqlHigh notranslate w3-card-2">
                             var a = <b>5</b>;<br>
                             var b = <b>2</b>;
                         </div>
                     </div>
-                    <div class="degrad-Vertical">
-                        <div class="w3-code sqlHigh notranslate w3-card-2">
-                            c = a <b>+</b> b;<br>
-                            d = a <b>-</b> b;<br>
-                            e = a <b>*</b> b;<br>
-                            f = a <b>/</b> b;<br>
-                            g = a <b>%</b> b;
-                        </div>
-                    </div>
+                </div>
+                <div class="w3-panel2 w3-info intro">
+                    <ol style="list-style: none;padding-inline-start: 10px">
+                        <li>c = a <b>+</b> b; // l'addition.</li>
+                        <li>d = a <b>-</b> b; // la soustractrion.</li>
+                        <li>e = a <b>*</b> b; // la multiplication.</li>
+                        <li>f = a <b>/</b> b; // la division.</li>
+                        <li>g = a <b>%</b> b; // le reste de la division.</li>
+                    </ol>
+                </div>
+
+                
+                <h2>L'<span  class="txtdegrad1">exposant</span></h2>
+                <p>deux signes multiplicateurs indique d'interpréter la valeur suivante comme un exposant</p>
                 <div class="degrad-Vertical">
                     <div class="w3-code sqlHigh notranslate w3-card-2">
-                        h = a <b>**</b> b;<br>
-                        i = b <b>**</b> a;
+                        h = a <b>**</b> b; // 5<sup>2</sup><br>
+                        i = b <b>**</b> a; // 2<sup>5</sup>
                     </div>
                 </div>
+                <h2>L'<span  class="txtdegrad1">incrémentation</span><br>la <span  class="txtdegrad1">décrémentation</span></h2>
+                <p>est le fait de pouvoir augmenter ou diminuer une valeur de 1</p>
                 <div class="degrad-Vertical">
                     <div class="w3-code sqlHigh notranslate w3-card-2">
-                        j = a <b>++</b>;<br>
-                        k = a <b>--</b>;<br>
-                        l = <b>++</b> b;<br>
-                        m = <b>--</b> b;
+                        j = a <b>++</b>; // +1<br>
+                        k = a <b>--</b>; // -1<br>
+                        l = <b>++</b> b; // +1<br>
+                        m = <b>--</b> b; // -1
                     </div>
                 </div>
+
+                <p class="codepen" data-height="435" data-theme-id="38865" data-default-tab="result" data-user="PsychoActiF" data-slug-hash="YzXOKYQ" style="height: 435px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Opérateurs 1">
+                    <span>See the Pen <a href="https://codepen.io/PsychoActiF/pen/YzXOKYQ">
+                    Opérateurs 1</a> by Psycho@ctiF (<a href="https://codepen.io/PsychoActiF">@PsychoActiF</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+                  </p>
+                  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
                 <div class="degrad-Vertical">
                     <div class="w3-code sqlHigh notranslate w3-card-2">
                         document.getElementById("demo").innerHTML =<br>c + " " + d + " " + e + " " + f + " " + g + "&lt;br&gt;"<br>
                         + h + " " + i + " " + j + " " + k + " " + l + " " + m;
                     </div>
                 </div>
+                <h2><span  class="txtdegrad1">___</span></h2>
+                <p>___</p>
                 <div class="degrad-Vertical">
                     <div class="w3-code sqlHigh notranslate w3-card-2">
-                        c = a+=b;<br>
-                        d = a+=2;<br>
-                        e = a+=a;
+                        var a = 5;<br>
+                        var b = 2;<br>
+                        a += b; // a = a + b<br>
+                        a += 2; // a = a + 2<br>
+                        a += a; // a = a + a
+                    </div>
+                </div>
+                <p>
+                    Ecrit ainci a révéra 18.
+                </p>
+                <div class="degrad-Vertical">
+                    <div class="w3-code sqlHigh notranslate w3-card-2">
+                        c = a-=b;<br>
+                        c = a-=2;<br>
+                        c = a-=a;
+                    </div>
+                </div>
+                Ici a comme c renveront la meme valeur et je pense que vous pouvez mettre nimportequoi à a et b mais... X - X = 0 ^^
+                <div class="degrad-Vertical">
+                    <div class="w3-code sqlHigh notranslate w3-card-2">
+                        var a = 5;<br>
+                        var b = 2;<br>
+                        a*=b; // a = a * b<br>
+                        a*=2; // a = a * 2<br>
+                        a*=a; // a = a * a
                     </div>
                 </div>
                 <div class="degrad-Vertical">
                     <div class="w3-code sqlHigh notranslate w3-card-2">
-                        f = a-=b;<br>
-                        g = a-=2;<br>
-                        h = a-=a;
+                        a/=b; &nbsp;&nbsp;&nbsp;&nbsp;a%=b;<br>
+                        a/=2; &nbsp;&nbsp;&nbsp;&nbsp;a%=2;<br>
+                        a/=a; &nbsp;&nbsp;&nbsp;&nbsp;a%=a;
                     </div>
                 </div>
                 <div class="degrad-Vertical">
                     <div class="w3-code sqlHigh notranslate w3-card-2">
-                        i = a*=b;<br>
-                        j = a*=2;<br>
-                        k = a*=a;
-                    </div>
-                </div>
-                <div class="degrad-Vertical">
-                    <div class="w3-code sqlHigh notranslate w3-card-2">
-                        l = a/=b;<br>
-                        m = a/=2;<br>
-                        n = a/=a;
-                    </div>
-                </div>
-                <div class="degrad-Vertical">
-                    <div class="w3-code sqlHigh notranslate w3-card-2">
-                        o = a%=b;<br>
-                        p = a%=2;<br>
-                        q = a%=a;
-                    </div>
-                </div>
-                <div class="degrad-Vertical">
-                    <div class="w3-code sqlHigh notranslate w3-card-2">
-                        r = a**=b;<br>
-                        s = a**=2;<br>
-                        t = a**=a;
+                        a**=b; // a = a ** b<br>
+                        a**=2; // a = a ** 2<br>
+                        a**=a; // a = a ** a
                     </div>
                 </div>
                 <div class="degrad-Vertical">
@@ -2395,6 +2396,29 @@
                         document.getElementById("demo").innerHTML =<br> a + " " + b + "&lt;br&gt;" + c + " " + d + " " + e + "&lt;br&gt;"<br>
                         + f + " " + g + " " + h + "&lt;br&gt;" + i + " " + j + " " + k + "&lt;br&gt;"<br> + l + " " + m + " " + n + "&lt;br&gt;"
                          + o + " " + p + " " + q + "&lt;br&gt;"<br>+ r + " " + s + " " + t;
+                    </div>
+                </div>
+                <h2><span  class="txtdegrad1">___</span></h2>
+                <p>___</p>
+                <div class="degrad-Vertical">
+                    <div class="w3-code sqlHigh notranslate w3-card-2">
+                        var txt1 = "corona";<br>
+                        var txt2 = "virus";<br>
+                        var txt3 = txt1 + " " + txt2;
+                    </div>
+                </div>
+                <div class="degrad-Vertical">
+                    <div class="w3-code sqlHigh notranslate w3-card-2">
+                        var txt1 = "corona";<br>
+                        var txt1 += " virus";
+                    </div>
+                </div>
+                <div class="degrad-Vertical">
+                    <div class="w3-code sqlHigh notranslate w3-card-2">
+                        var a = 5 + 5;<br>
+                        var b = "5" + 2;<br>
+                        var c = "cOucOu " + 5 + 5;<br>
+                        var d = "voula " + (5 + 5);
                     </div>
                 </div>
                     
