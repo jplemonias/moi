@@ -7,22 +7,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
 <style>
 body,h1 {font-family: "Raleway", sans-serif}
 body, html {height: 100%}
+
 .bgimg {
   background-image: url(/moi/public/img/visagefemme.png);
   min-height: 100%;
   background-position: center;
   background-size: cover;
-}
-
-.animbas{
-    position:relative;animation:animbas 1s
-}
-@keyframes animbas{
-    from{bottom:-300px;opacity:0}
-    to{bottom:0;opacity:1}
 }
 
 .titrag {
@@ -39,12 +33,33 @@ body, html {height: 100%}
     -1px -1px 0.5em #04c4b4, 1px -1px 0.5em #04c4b4,
     1px 1px 0.5em #04c4b4;
     }
+
+.animhaut {
+    position:relative;animation:animhaut 0.4s
+}
+    
+@keyframes animhaut{
+    from{top:-300px;opacity:0}
+    to{top:0;opacity:1}
+}
+
+.animbas {
+    position:relative;animation:animbas 1s
+}
+
+@keyframes animbas{
+    from{bottom:-300px;opacity:0}
+    to{bottom:0;opacity:1}
+}
+
 @media all and  (max-width:420px) {
+
     .psycho-logo{
         font-size: 39px;
         letter-spacing: 1px;
         padding: 0;
     }
+
     #pub {
         padding: 25px 0 0 5px!important;
     }
@@ -62,7 +77,7 @@ body, html {height: 100%}
         </a>
     </div>
   <div class="w3-display-middle">
-    <h1 class="w3-jumbo w3-animate-top titrag">COMING SOON*</h1>
+    <h1 class="w3-jumbo animhaut titrag">COMING SOON*</h1>
     <hr class="w3-border-grey" style="margin:auto;width:60%">
     <h2 class="w3-xlarge w3-center animbas titrag2">*BIENTÔT DISPONIBLE</h2>
   </div>
