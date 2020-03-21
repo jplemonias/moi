@@ -2295,13 +2295,14 @@
                 </div>
                 <div class="w3-panel w3-info intro">
                     <p>Ils sont utilisés sur les nombres, pour effectuer les calculs arithmétiques<br>
-                    L'opérateur égal attribut ici 5 à a et 2 à b</p>
+                    ici l'opérateur égal attribut donc 5 à a et 2 à b.</p>
                     <div class="degrad-Vertical">
                         <div class="w3-code3 sqlHigh notranslate w3-card-2">
                             var a = <b>5</b>;<br>
                             var b = <b>2</b>;
                         </div>
                     </div>
+                    <p>Mais a n'égal pas 5.</p>
                 </div>
                 <div class="w3-panel2 w3-info intro">
                     <ol style="list-style: none;padding-inline-start: 10px">
@@ -2342,12 +2343,17 @@
 
                 <div class="degrad-Vertical">
                     <div class="w3-code sqlHigh notranslate w3-card-2">
-                        document.getElementById("demo").innerHTML =<br>c + " " + d + " " + e + " " + f + " " + g + "&lt;br&gt;"<br>
+                        document.getElementById("ex1").innerHTML =<br>c + " " + d + " " + e + " " + f + " " + g + "&lt;br&gt;"<br>
                         + h + " " + i + " " + j + " " + k + " " + l + " " + m;
                     </div>
                 </div>
-                <h2><span  class="txtdegrad1">___</span></h2>
-                <p>___</p>
+                <h2>L'opérateur <span  class="txtdegrad1">d'affectation</span></h2>
+                <p>Ils permetent ajoute, soustrait, divise, etc, une valeur à une variable<br>
+                souvenez vous la dernière valeur lue est celle gardée<br>
+                donc la variable a renvera sa derrnière attribution<br><br>
+                a vaut 5 on lui attribut ensuite b donc a = 7<br>
+                puis on lui ajoute 2  et enfin on l'ajoute à elle même<br>
+                a vaut maitenant 18.</p>
                 <div class="degrad-Vertical">
                     <div class="w3-code sqlHigh notranslate w3-card-2">
                         var a = 5;<br>
@@ -2358,48 +2364,25 @@
                     </div>
                 </div>
                 <p>
-                    Ecrit ainci a révéra 18.
+                    La même chose est faisable avec les opérateur vus plus haut.
                 </p>
                 <div class="degrad-Vertical">
                     <div class="w3-code sqlHigh notranslate w3-card-2">
-                        c = a-=b;<br>
-                        c = a-=2;<br>
-                        c = a-=a;
+                        -= +=<br>
+                        /= *=<br>
+                        %= **=
                     </div>
                 </div>
-                Ici a comme c renveront la meme valeur et je pense que vous pouvez mettre nimportequoi à a et b mais... X - X = 0 ^^
-                <div class="degrad-Vertical">
-                    <div class="w3-code sqlHigh notranslate w3-card-2">
-                        var a = 5;<br>
-                        var b = 2;<br>
-                        a*=b; // a = a * b<br>
-                        a*=2; // a = a * 2<br>
-                        a*=a; // a = a * a
-                    </div>
-                </div>
-                <div class="degrad-Vertical">
-                    <div class="w3-code sqlHigh notranslate w3-card-2">
-                        a/=b; &nbsp;&nbsp;&nbsp;&nbsp;a%=b;<br>
-                        a/=2; &nbsp;&nbsp;&nbsp;&nbsp;a%=2;<br>
-                        a/=a; &nbsp;&nbsp;&nbsp;&nbsp;a%=a;
-                    </div>
-                </div>
-                <div class="degrad-Vertical">
-                    <div class="w3-code sqlHigh notranslate w3-card-2">
-                        a**=b; // a = a ** b<br>
-                        a**=2; // a = a ** 2<br>
-                        a**=a; // a = a ** a
-                    </div>
-                </div>
-                <div class="degrad-Vertical">
-                    <div class="w3-code sqlHigh notranslate w3-card-2">
-                        document.getElementById("demo").innerHTML =<br> a + " " + b + "&lt;br&gt;" + c + " " + d + " " + e + "&lt;br&gt;"<br>
-                        + f + " " + g + " " + h + "&lt;br&gt;" + i + " " + j + " " + k + "&lt;br&gt;"<br> + l + " " + m + " " + n + "&lt;br&gt;"
-                         + o + " " + p + " " + q + "&lt;br&gt;"<br>+ r + " " + s + " " + t;
-                    </div>
-                </div>
-                <h2><span  class="txtdegrad1">___</span></h2>
-                <p>___</p>
+
+                <p class="codepen" data-height="732" data-theme-id="38865" data-default-tab="result" data-user="PsychoActiF" data-slug-hash="XWbPWxz" style="height: 732px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="opérateur d'affectation">
+                    <span>See the Pen <a href="https://codepen.io/PsychoActiF/pen/XWbPWxz">
+                    opérateur d'affectation</a> by Psycho@ctiF (<a href="https://codepen.io/PsychoActiF">@PsychoActiF</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+                  </p>
+                  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+                <h2>Ajouter des <span  class="txtdegrad1">chaînes</span> de caractaires</h2>
+                <p>l'opérateur + peut être utilisé pour concaténer des chaines de caractaires.</p>
                 <div class="degrad-Vertical">
                     <div class="w3-code sqlHigh notranslate w3-card-2">
                         var txt1 = "corona";<br>
@@ -2407,20 +2390,30 @@
                         var txt3 = txt1 + " " + txt2;
                     </div>
                 </div>
+                <p>l'opérateur d'affectation fonctionne aussi avec les chaînes.</p>
                 <div class="degrad-Vertical">
                     <div class="w3-code sqlHigh notranslate w3-card-2">
                         var txt1 = "corona";<br>
-                        var txt1 += " virus";
+                        var txt1 += " ";<br>
+                        var txt1 += "virus";
                     </div>
                 </div>
+                <p>Nottez qu'une chaine de caractaires déffinira la suite de la même maniaire</p>
                 <div class="degrad-Vertical">
                     <div class="w3-code sqlHigh notranslate w3-card-2">
-                        var a = 5 + 5;<br>
+                        var a = 5 + 2;<br>
                         var b = "5" + 2;<br>
-                        var c = "cOucOu " + 5 + 5;<br>
-                        var d = "voula " + (5 + 5);
+                        var c = "cOucOu " + 5 + 2;<br>
+                        var d = "voula " + (5 + 2);
                     </div>
                 </div>
+
+                <p class="codepen" data-height="506" data-theme-id="38865" data-default-tab="result" data-user="PsychoActiF" data-slug-hash="eYNLmzM" style="height: 506px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="add chaînes">
+                    <span>See the Pen <a href="https://codepen.io/PsychoActiF/pen/eYNLmzM">
+                    add chaînes</a> by Psycho@ctiF (<a href="https://codepen.io/PsychoActiF">@PsychoActiF</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+                  </p>
+                  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
                     
                 <div class="jp-example jp-card-ex">
                     <h3>___</h3>
