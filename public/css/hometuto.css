@@ -743,7 +743,8 @@ td,a:hover {
     padding: 12px 24px!important;
 }
 .fas.fa-reply,
-.fas.fa-home{
+.fas.fa-home,
+.fab.fa-instagram {
     background: linear-gradient(-45deg,#04c4b4,#d400ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
