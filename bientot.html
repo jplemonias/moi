@@ -10,83 +10,110 @@
 <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
 
 <style>
-body,h1,h2 {font-family: "Permanent Marker", "Raleway", sans-serif}
-body, html {height: 100%}
-
-.bgimg {
-  background-image: url(/moi/public/img/visagefemme.png);
-  min-height: 100%;
-  background-position: center;
-  background-size: cover;
-}
-
-.titrag {
-    color: #04c4b4;
-    text-shadow: -1px -1px 0em #04c4b4,
-    1px -1px 0em #04c4b4, 1px 1px 0em #04c4b4,
-    -1px -1px 0.5em #d400ff, 1px -1px 0.5em #d400ff,
-    1px 1px 0.5em #d400ff;
-    }
-.titrag2 {
-    color: #d400ff;
-    text-shadow:
-    -1px -1px 0.5em #04c4b4, 1px -1px 0.5em #04c4b4,
-    1px 1px 0.5em #04c4b4;
+    body,
+    h1,
+    h2 {
+        font-family: "Permanent Marker", "Raleway", sans-serif
     }
 
-.animhaut {
-    position:relative;animation:animhaut 0.4s
-}
-    
-@keyframes animhaut{
-    from{top:-300px;opacity:0}
-    to{top:0;opacity:1}
-}
-
-.animbas {
-    position:relative;animation:animbas 1s
-}
-
-@keyframes animbas{
-    from{bottom:-300px;opacity:0}
-    to{bottom:0;opacity:1}
-}
-
-@media all and  (max-width:420px) {
-
-    .psycho-logo{
-        font-size: 31px!important;
-        letter-spacing: 1px!important;
-        padding: 0;
+    body,
+    html {
+        height: 100%
     }
 
-    #pub {
-        padding: 25px 0 0 5px!important;
+    .bgimg {
+        background-image: url(/moi/public/img/visagefemme.png);
+        min-height: 100%;
+        background-position: center;
+        background-size: cover;
     }
-}
+
+    .titrag {
+        color: #04c4b4;
+        text-shadow: -1px -1px 0em #04c4b4,
+            1px -1px 0em #04c4b4, 1px 1px 0em #04c4b4,
+            -1px -1px 0.5em #d400ff, 1px -1px 0.5em #d400ff,
+            1px 1px 0.5em #d400ff;
+    }
+
+    .titrag2 {
+        color: #d400ff;
+        text-shadow:
+            -1px -1px 0.5em #04c4b4, 1px -1px 0.5em #04c4b4,
+            1px 1px 0.5em #04c4b4;
+    }
+
+    .animhaut {
+        position: relative;
+        animation: animhaut 0.4s
+    }
+
+    @keyframes animhaut {
+        from {
+            top: -300px;
+            opacity: 0
+        }
+
+        to {
+            top: 0;
+            opacity: 1
+        }
+    }
+
+    .animbas {
+        position: relative;
+        animation: animbas 1s
+    }
+
+    @keyframes animbas {
+        from {
+            bottom: -300px;
+            opacity: 0
+        }
+
+        to {
+            bottom: 0;
+            opacity: 1
+        }
+    }
+
+    @media all and (max-width:420px) {
+
+        .psycho-logo {
+            font-size: 31px !important;
+            letter-spacing: 1px !important;
+            padding: 0;
+        }
+
+        #pub {
+            padding: 25px 0 0 5px !important;
+        }
+    }
 </style>
+
 <body>
 
-<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-    <div id='pub' style='overflow:hidden;width: max-content;padding: 25px 0 0 25px;'>
-        <a href='/moi/tutos_v1/'style="clear: both;">
-            <!-- Emplacenrt pour redirection-->
-            <span class='psycho-logo'>Psycho <span class='dotcom tcode'>les bons</span> Tutos</aspan><br>
-                <span class=' psycho-logo2  tcode2'
-                    style="font-family:'HP','Segoe UI',Arial,sans-serif;float: right;">DEVELOPPONS ENSEMBLE</span>
-        </a>
+    <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+        <div id='pub' style='overflow:hidden;width: max-content;padding: 25px 0 0 25px;'>
+            <a href='/moi/tutos_v1/' style="clear: both;">
+                <!-- Emplacenrt pour redirection-->
+                <span class='psycho-logo'>Psycho <span class='dotcom tcode'>les bons</span> Tutos</aspan><br>
+                    <span class=' psycho-logo2  tcode2'
+                        style="font-family:'HP','Segoe UI',Arial,sans-serif;float: right;">DEVELOPPONS ENSEMBLE</span>
+            </a>
+        </div>
+        <div class="w3-display-middle">
+            <h1 class="w3-jumbo w3-center animhaut titrag">COMING SOON*</h1>
+            <hr class="w3-border-grey" style="margin:auto;width:60%">
+            <h2 class="w3-xlarge w3-center animbas titrag2">*BIENTÔT DISPONIBLE</h2>
+        </div>
+        <div>
+            <a id="btnneonD" class="w3-right boutons JP-padding-large testbg" href="javascript:history.go(-1)">
+                <i class="fas fa-reply"></i> Retour</a>
+        </div>
+
     </div>
-  <div class="w3-display-middle">
-    <h1 class="w3-jumbo w3-center animhaut titrag">COMING SOON*</h1>
-    <hr class="w3-border-grey" style="margin:auto;width:60%">
-    <h2 class="w3-xlarge w3-center animbas titrag2">*BIENTÔT DISPONIBLE</h2>
-  </div>
-  <a id="btnneonD" class="w3-right boutons JP-padding-large testbg"
-      href="javascript:history.go(-1)">
-      <i class="fas fa-reply"></i> Retour</a>
-
-
-</div>
 
 </body>
+
 </html>
