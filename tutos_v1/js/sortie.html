@@ -2284,7 +2284,7 @@
                     </a>
                 </div>
 
-                <h1>Les <span class="txtdegrad1">sorties</span></h1>
+                <h1>Les méthodes <span class="txtdegrad1">sorties</span></h1>
                 <div id="separ1"></div>
                 <div class="w3-clear nextprev">
                     <a id="btninsta" class=" boutons JP-padding-large testbg" href="/moi/tutos_v1/js/syntaxe.html">
@@ -2292,45 +2292,50 @@
                     <a id="btnneonD" class="w3-right boutons JP-padding-large testbg"
                         href="/moi/tutos_v1/js/variables.html">
                         suivant <i class="fas fa-reply reply2"></i></a>
-                </div>
-                <div class="w3-panel w3-info intro">
-                    <p>___</p>
-                </div>
-
-
-                <div id="separ2"></div>
+                        
                 <h2><span  class="txtdegrad1">innerHTML</span></h2>
-                <p>___</p>
+                <p>La propriété innerHTML indique, interne à l'HTML.<br>
+                    Pour accéder à un élément où le script doit agir,<br>
+                    on peut utiliser la méthode document.getElementById (id).</p>
                     <div class="degrad-Vertical">
                         <div class="w3-code sqlHigh notranslate w3-card-2">
-                            document.getElementById("demo").innerHTML = 5 + 6;
+                            document.getElementById("ex").innerHTML = "bonjour";
                         </div>
                     </div>
                 <h2><span  class="txtdegrad1">document.write()</span></h2>
-                <p>___</p>
+                <p>À des fins de test, il est pratique d'utiliser document.write ():</p>
                     <div class="degrad-Vertical">
                         <div class="w3-code sqlHigh notranslate w3-card-2">
-                            document.write(5 + 6);
+                            document.write("bonjour");
                         </div>
                     </div>
+                    <p>N'appelez jamais la méthode document.write par un onclick, par exemple,<br>
+                        une fois le chargement du document terminé.<br>
+                        Il écrasera tout le document<br>
+                        Elle ne doit être utilisée que pour les tests.</p>
                 <h2><span  class="txtdegrad1">window.alert()</span></h2>
-                <p>___</p>
+                <p>Elle permet d'afficher des données dans des boîtes d'alerte</p>
                     <div class="degrad-Vertical">
                         <div class="w3-code sqlHigh notranslate w3-card-2">
-                            window.alert(5 + 6);
+                            window.alert("bonjour");
                         </div>
                     </div>
-                <h2><span  class="txtdegrad1">innerHTML</span></h2>
-                <p>___</p>
+                <h2><span  class="txtdegrad1">console.log()</span></h2>
+                <p>la méthode console.log () affiche les données à des fins de débogage,<br>accéssible dans les outils de dévellopement</p>
                 <div class="degrad-Vertical">
                     <div class="w3-code sqlHigh notranslate w3-card-2">
-                        console.log(5 + 6);
+                        console.log(5 + 2);
                     </div>
                 </div>
                     
                 <div class="jp-example jp-card-ex">
-                    <h3>___</h3>
-                    <p>___</p>
+                    <h3>En 4</h3>
+                    <ul>
+                        <li>innerHTML<br>écrit les données dans l'HTML<br>&nbsp;</li>
+                        <li>document.write()<br>Pour des testes<br>&nbsp;</li>
+                        <li>window.alert()<br>affiche les données dans des boîtes d'alerte<br>&nbsp;</li>
+                        <li>console.log()<br>affiche les données dans une console<br>&nbsp;</li>
+                    </ul>
                 </div>
                 <div id="separ1"></div>
                 <div class="w3-clear nextprev">
