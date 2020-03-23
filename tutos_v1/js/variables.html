@@ -2294,10 +2294,11 @@
                         suivant <i class="fas fa-reply reply2"></i></a>
                 </div>
                 <div class="w3-panel2 w3-info intro">
-                    <p>Toutes les variables JavaScript doivent être identifiées avec des noms uniques.<br>
+                    <p>Les variables sont des conteneurs pour stocker des valeurs de données.<br><br>
+                        Toutes les variables JavaScript doivent être identifiées avec des noms uniques.<br>
                         Ces noms uniques sont appelés identifiants.<br>
                         Les identifiants peuvent être des noms courts (comme a et b) ou des noms plus objectifs (nom, pnom, coutTotal).<br>
-                        Il est de coutune de marquer les motspar une majuscule.<br>
+                        Il est de coutune de marquer les mots par une majuscule.<br><br>
                         Les règles générales de construction des noms de variables (identifiants uniques) sont les suivantes:</p>
                 </div>
                 <div class="w3-panel w3-info intro">
@@ -2311,8 +2312,40 @@
                 </div>
 
                 <div id="separ2"></div>
-                <h2><span  class="txtdegrad1">___</span></h2>
-                <p>___</p>
+                <h2><span  class="txtdegrad1">Déclaration </span>de variables</h2>
+                <p>La création d'une variable en JavaScript s'appelle "déclarer" une variable.</p>
+                <div class="degrad-Vertical">
+                    <div class="w3-code sqlHigh notranslate w3-card-2">
+                        var a;
+                    </div>
+                </div>
+                <div class="degrad-Vertical">
+                    <div class="w3-code sqlHigh notranslate w3-card-2">
+                        var a = a + 5;
+                    </div>
+                </div>
+                <p>Renvoit NaN car a n'est pas défini</p>
+                <div class="degrad-Vertical">
+                    <div class="w3-code sqlHigh notranslate w3-card-2">
+                        var a = 15;<br>
+                        a = a + 5;
+                    </div>
+                </div>
+                <p>Renvoit 20 car l'on a ajouté 5 a la valeur que contenait a</p>
+                <div class="degrad-Vertical">
+                    <div class="w3-code sqlHigh notranslate w3-card-2">
+                        var a = 15;<br>
+                        a = a + 5;<br>
+                        a = 15;
+                    </div>
+                </div>
+                <p>IcI a vaut 15, car c'est la dernière valeur attribuée</p>
+                <h2>Affecter une <span class="txtdegrad1">valeur</span></h2>
+                <p>
+Nous l'avons vu en JavaScript, le signe égal (=) est un opérateur "d'affectation",<br>
+pas un opérateur "égal à". L'opérateur "égal à" s'écrit ainsi == en JavaScript.<br>
+C'est différent de l'algèbre, ce qui suit n'a pas de sens en algèbrique;<br><br>
+ici a et cout1 contiendront 2 tandisque b et cout2 contiendront 2</p>
                     <div class="degrad-Vertical">
                         <div class="w3-code sqlHigh notranslate w3-card-2">
                             var a = 5<b>;</b><br>
@@ -2320,6 +2353,7 @@
                             var c = a*b<b>;</b>
                         </div>
                     </div>
+                    <p>Et c contiendra donc 10</p>
                     <div class="degrad-Vertical">
                         <div class="w3-code sqlHigh notranslate w3-card-2">
                             var cout1 = 5;<br>
@@ -2327,28 +2361,7 @@
                             var total = cout1 + cout2;
                         </div>
                     </div>
-                <h2><span  class="txtdegrad1">___</span></h2>
-                <p>___</p>
-                <div class="degrad-Vertical">
-                    <div class="w3-code sqlHigh notranslate w3-card-2">
-                        var a = a + 5;
-                    </div>
-                </div>
-                <p>Renvoit NaN</p>
-                <div class="degrad-Vertical">
-                    <div class="w3-code sqlHigh notranslate w3-card-2">
-                        a = 15;<br>
-                        var a = a + 5;
-                    </div>
-                </div>
-                <p>Renvoit 20</p>
-                <div class="degrad-Vertical">
-                    <div class="w3-code sqlHigh notranslate w3-card-2">
-                        var a = a + 5;<br>
-                        a = 15;
-                    </div>
-                </div>
-                <p>Renvoit 15</p>
+                    <p>Là total contiendra 7</p>
                 <h2><span  class="txtdegrad1">___</span></h2>
                 <p>___</p>
                     <div class="degrad-Vertical">
