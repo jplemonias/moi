@@ -2128,18 +2128,18 @@
                 <h2>Sélectionner <span class="txtdegrad1">un élément</span></h2>
                 <p>sélectionne les éléments en fonction du nom de l'élément.<br>
                     Par exemple ici l'élément * , comprenez sélecteur universel, soit TOUS les types d'élément<br>
-                    va donc définir la police d'écriture de touuuuuuus les éléments comme étant:<br><bre, d'une taille de 18 pixels, et dont les textes seront en justifié.</p>
+                    va donc définir la police d'écriture de touuuuuuus les éléments comme étant:<br>d'une taille de 18 pixels, et dont les textes seront en justifié.</p>
                     <div class="degrad-Vertical">
                         <div class="w3-code sqlHigh notranslate w3-card-2">
                             &#42; &#123;<br>&nbsp;&nbsp;&nbsp;color&#58;grey&#59;<br>&nbsp;&nbsp;&nbsp;size&#58;18px&#59;<br>&nbsp;&nbsp;&nbsp;text-align&#58;justify<br>&#125;
                         </div>
                     </div>
                     <div class=" w3-panel w3-info intro" style="padding: 5px 10px 5px 32px;">
-                        <p class="margnone" style="float:right;">NB: la derrnière déclaration n'a pas de point-virgule,<br>ne l'oubliez pas si vous rajoutez des déclarations par la suite.</p>
+                        <p class="margnone" style="float:right;">NB: la dernière  déclaration n'a pas de point-virgule,<br>ne l'oubliez pas si vous rajoutez des déclarations par la suite.</p>
                     </div>
                     <h2>Sélectionner <span class="txtdegrad1">un identifiant</span></h2>
                     <p>L'id d'un élément étant unique dans une page,<br>le sélecteur est utilisé pour ne modifier qu'un seul élément!<br>
-                    En plaçant un hash devant la valeur saisie en id<br>on peut alors modifier l'aspect de cet élement.<br><br>
+                    En plaçant un hash devant la valeur saisie en id<br>on peut alors modifier l'aspect de cet élément.<br><br>
                     <span style="font-size: 13px;">Sous réserve qu'un élément dans l'html ait comme valeur d'id intro, sa police sera alors noir.</span></p>
                         <div class="degrad-Vertical">
                             <div class="w3-code sqlHigh notranslate w3-card-2">
@@ -2147,9 +2147,9 @@
                             </div>
                         </div>
                         <h2>Avec <span class="txtdegrad1">la classe</span> <span style="font-size: 22px;">&#128526;</span></h2>
-                        <p>Identique à la selection de l'id, mais pour récupérer une classe<br>
+                        <p>Identique à la sélection de l'id, mais pour récupérer une classe<br>
                             il faut placer un point à la place du hash.<br><br>
-                            <span style="font-size: 13px;">Tous les éléments aylant comme valeur de classe soul seront souligné.</span></p>
+                            <span style="font-size: 13px;">Tous les éléments ayant comme valeur de classe soul seront souligné.</span></p>
                             <div class="degrad-Vertical">
                                 <div class="w3-code sqlHigh notranslate w3-card-2">
                                     <strong>.</strong>soul &#123;text&#45;decoration&#45;style&#58;underline&#125;
@@ -2157,8 +2157,8 @@
                             </div>
                             <h2>Sélection <span class="txtdegrad1">spécifique</span></h2>
                     <p>Vous pouvez sélectionner qu'un seuls des éléments spécifique affecté par une classe commune à d'autres.<br><br>
-                        <span style="font-size: 13px;">Le cas présent les en-tetes h1 ayant la classe soul seront souligné de deux trais,<br>
-                            tandisque les autres éléments ayant la même classe ne seront pas affécté.</span></p>
+                        <span style="font-size: 13px;">Le cas présent les en-têtes h1 ayant la classe soul seront souligné de deux trais,<br>
+                            tandis que les autres éléments ayant la même classe ne seront pas affecté.</span></p>
                         <div class="degrad-Vertical">
                             <div class="w3-code sqlHigh notranslate w3-card-2">
                                 css/<br>
@@ -2173,8 +2173,8 @@
                         <p>
                             ici seul <span class="soul2t">maison</span> sera souligné de deux trais continu <br>tandis qu'<span class="soul1t">appartements</span> et <span class="soul1t">studio</span> d'un seul.</p>
                     <h2>Sélection de <span class="txtdegrad1">regroupement</span></h2>
-            <p>cela permet de regrouper des styles comuns à des éléments diférents<br>
-                concrètement l'exemple ci dessus pourait être écrit ainci:<p>
+            <p>cela permet de regrouper des styles communs  à des éléments différents<br>
+                concrètement l'exemple ci dessus pourrait être écrit ainsi:<p>
                     <div class="degrad-Vertical">
                         <div class="w3-code sqlHigh notranslate w3-card-2">
                             h1 &#123;<strong>text&#45;decoration&#58;underline</strong>&#125;<br>
@@ -2194,16 +2194,16 @@
                         </div>
                     </div>
                     <h2>Sélection d'un <span class="txtdegrad1">pseudo-élément</span></h2>
-            <p>En sélectionant un pseudo-élément il est posible de  ne modiffier que certaines parie de l'élément ciblé.<br><br>
-                <span style="font-size: 13px;">le pseudo-élément ci-dessous permet de ne changer l'asspect que de la première ligne des paragraphes.<br></p>
+            <p>En sélectionnant un pseudo-élément il est possible de ne modifier que certaines parie de l'élément ciblé.<br><br>
+                <span style="font-size: 13px;">le pseudo-élément ci-dessous permet de ne changer l'aspect que de la première ligne des paragraphes.<br></p>
                     <div class="degrad-Vertical">
                         <div class="w3-code sqlHigh notranslate w3-card-2">
                             p <strong>&#58;&#58;first&#45;line</strong> &#123;font&#58;22px&#125;
                         </div>
                     </div>
                     <h2>Sélection d'un <span class="txtdegrad1">pseudo-classe</span></h2>
-            <p>Cela permet de modiffier un élément ciblé sous la condition de la psedo-classe.<br>La pseudo-classe hover paermet de modifier le style au passage de la souris sur un élément<br><br>
-                <span style="font-size: 13px;">pour exemple les titres h1, h2 et h3 aurront une bordure noir sur le coté gauche.<br></p>
+            <p>Cela permet de modifier un élément ciblé sous la condition de la pseudo-classe.<br>La pseudo-classe hover permet de modifier le style au passage de la souris sur un élément<br><br>
+                <span style="font-size: 13px;">pour exemple les titres h1, h2 et h3 auront une bordure noir sur le coté gauche.<br></p>
                     <div class="degrad-Vertical">
                         <div class="w3-code sqlHigh notranslate w3-card-2">
                             h1<strong>&#58;hover</strong>&#44;h2<strong>&#58;hover</strong>&#44;h3<strong>&#58;hover</strong>&#123;<br>
@@ -2217,11 +2217,11 @@
                             <li><strong>simples</strong><br>
                                 <span style="font-size: 13px;">permet de sélectionner en fonction d'un nom, d'un id d'une classe</span></li>
                             <li><strong>combinatoire</strong><br>
-                                <span style="font-size: 13px;">permet de sélectionner des éléments afin de leur attribuer des styles comuns</span></li>
+                                <span style="font-size: 13px;">permet de sélectionner des éléments afin de leur attribuer des styles communs</span></li>
                             <li>d'<strong>attributs</strong><br>
                                 <span style="font-size: 13px;">sélectionne des éléments en fonction d'un attribut ou d'une valeur d'attribut</span></li>
                             <li>de <strong>pseudo-éléments</strong><br>
-                                <span style="font-size: 13px;">change l'asspect de parties précises d'un élément</span></li>
+                                <span style="font-size: 13px;">change l'aspect de parties précises d'un élément</span></li>
                             <li>de <strong>pseudo-classe</strong><br>
                                 <span style="font-size: 13px;">permet de sélectionner certaine condition pour styliser comme souhaité l'élément lié</span></i>
                             </li>
