@@ -2341,11 +2341,10 @@
                 </div>
                 <p>IcI a vaut 15, car c'est la dernière valeur attribuée</p>
                 <h2>Affecter une <span class="txtdegrad1">valeur</span></h2>
-                <p>
-Nous l'avons vu en JavaScript, le signe égal (=) est un opérateur "d'affectation",<br>
-pas un opérateur "égal à". L'opérateur "égal à" s'écrit ainsi == en JavaScript.<br>
-C'est différent de l'algèbre, ce qui suit n'a pas de sens en algèbrique;<br><br>
-ici a et cout1 contiendront 2 tandisque b et cout2 contiendront 2</p>
+                <p>Nous l'avons vu en JavaScript, le signe égal (=) est un opérateur "d'affectation",<br>
+                pas un opérateur "égal à". L'opérateur "égal à" s'écrit ainsi == en JavaScript.<br>
+                C'est différent de l'algèbre, ce qui suit n'a pas de sens en algèbrique;<br><br>
+                ici a et cout1 contiendront 2 tandisque b et cout2 contiendront 2</p>
                     <div class="degrad-Vertical">
                         <div class="w3-code sqlHigh notranslate w3-card-2">
                             var a = 5<b>;</b><br>
@@ -2362,43 +2361,55 @@ ici a et cout1 contiendront 2 tandisque b et cout2 contiendront 2</p>
                         </div>
                     </div>
                     <p>Là total contiendra 7</p>
-                <h2><span  class="txtdegrad1">___</span></h2>
-                <p>___</p>
+                <h2>Affecter une <span  class="txtdegrad1">chaîne</span> de caractaires</h2>
+                <p>Il est tout a fait possible de contenir une chaîne de caractaires<br>
+                cette fois-ci le conteneur serat IIIdfx</p>
                     <div class="degrad-Vertical">
                         <div class="w3-code sqlHigh notranslate w3-card-2">
                             var iiidfx;
                         </div>
                     </div>
+                    <p>On peut lui attribuer par la suite son contnu</p>
                 <div class="degrad-Vertical">
                     <div class="w3-code sqlHigh notranslate w3-card-2">
                         iiidfx = "Voodoo";
                     </div>
                 </div>
+                <p>Ou le déffinir dirrectement ainsi:</p>
                 <div class="degrad-Vertical">
                     <div class="w3-code sqlHigh notranslate w3-card-2">
                         var iiidfx = "Voodoo";
                     </div>
                 </div>
-                <h2><span  class="txtdegrad1">___</span></h2>
-                <p>___</p>
+                <h2><span  class="txtdegrad1">Résumé</span></h2>
+                <p>Si vous REcopiez ce code dans une balise &lt;script&gt;</p>
                     <div class="degrad-Vertical">
                         <div class="w3-code sqlHigh notranslate w3-card-2">
                             var nbr = 1.618034;<br>
                             var peace = "R. I. P.";<br>
+                            var a = 2018;<br>
                             var quiCa = 'S. Hawking';<br><br>
-                            document.getElementById("test").innerHTML =<br>
-                            "&amp;nbsp;" + nbr + "&lt;br&gt;&amp;nbsp;" + peace + "&lt;br&gt;" + quiCa;
+                            document.getElementById("ex").innerHTML =<br>
+                            "&amp;nbsp;" + nbr + "&lt;br&gt;&amp;nbsp;" + peace + "&lt;br&gt;"<br>+ "&amp;nbsp;&amp;nbsp;&amp;nbsp;" + a + "&lt;br&gt;" + quiCa;
                         </div>
                     </div>
+                    <p>Le rendu sera:</p>
                 <div class="degrad-Vertical">
                     <div class="w3-code sqlHigh notranslate w3-card-2">
-                        &nbsp;1.618034<br>&nbsp;R. I. P.<br>S. Hawking
+                        &nbsp;1.618034<br>&nbsp;R. I. P.<br>&nbsp;&nbsp;2018<br>
+                        S. Hawking
                     </div>
                 </div>
                     
                 <div class="jp-example jp-card-ex">
-                    <h3>___</h3>
-                    <p>___</p>
+                    <h3>Detaillons</h3>
+                    <p>On va écrire dans l'HTML<br>
+                        Dans l'élément ex, grace à document.getElementById("_")<br>
+                        Les variables contenues dans nbr, peace, a et quiCa.<br>
+                        nbr contient un nomre décimal, et a un nomre entier.<br>
+                        Les chaînes de caractaires dans peace et quiCa<br>
+                        sont bien interprétées soit entre guillemets ou apostrophes
+                    </p>
                 </div>
                 <div id="separ1"></div>
                 <div class="w3-clear nextprev">
