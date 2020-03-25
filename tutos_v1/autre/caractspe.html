@@ -2,7 +2,7 @@
 <html lang="fr-FR">
 
 <head>
-    <title>Référencement des éléments HTML</title>
+    <title>Les caractères spéciaux et entités</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Keywords"
@@ -1716,11 +1716,21 @@
         }
         ul li {
             border-bottom: 1px dotted rgba(169, 169, 169, 0.555);
+            clear: both;
             }
 
         li {
             margin-bottom: 15px;
             padding-bottom: 5px;
+        }
+
+        li p {
+            margin: 0;
+            text-align: center;
+        }
+
+        li b {
+            float: right;
         }
 
         li:first-line {
@@ -1734,12 +1744,12 @@
         }
 
         ol :first-child {
-            list-style: "#" inside;
+            list-style: none;
         }
 
         ul li:first-child,
         ul li {
-            list-style: circle 
+            list-style: circle;
         }
 
         u {
@@ -2104,8 +2114,8 @@
                     <h4 class="w3-margin-top"><i class="fas fa-toolbox"></i> Caisse à out's</h4>
                 </div>
                 <a class="bt-nav_g" href="/moi/tutos_v1/autre/lescouleurs.html">140 couleurs</a>
-                <a class="bt-nav_g jp-selected" href="/moi/tutos_v1/autre/refelements.html">Ref éléments HTML</a>
-                <a class="bt-nav_g" href="/moi/tutos_v1/autre/caractspe.html">Codes caractères spé.</a>
+                <a class="bt-nav_g" href="/moi/tutos_v1/autre/refelements.html">Ref éléments HTML</a>
+                <a class="bt-nav_g jp-selected" href="/moi/tutos_v1/autre/caractspe.html">Codes caractères spé.</a>
             </div>
         </nav>
     </div>
@@ -2121,247 +2131,314 @@
                     </a>
                 </div>
 
-                <h1><span class="txtdegrad1">Référencement</span> des éléments HTML</h1>
+                <h1>Caractères <span class="txtdegrad1">spéciaux et entités</span> HTML</h1>
                     <div id="separ2"></div>
                     <a id="btninsta" class=" boutons JP-padding-large testbg" href="/moi/tutos_v1/index.html">
                         <i class="fas fa-home"></i> Accueil</a>
                         <a id="btnneonD" class="w3-right boutons JP-padding-large testbg"
                             href="javascript:history.go(-1)">
                             <i class="fas fa-reply"></i> Retour</a>
-                    <h2>Par ordre<span class="txtdegrad1"> &alpha;-b-x</span> :</h2>
-                    <ol start="0">
+                    <h2><span class="txtdegrad1">Ex</span>plication</h2><ol start="0">
+                    <ol>
                         <li>
-                            <a href=""></a>
+                            <div style="width:100%;border-bottom: solid 1px #d400ff;border-left: solid 3px #04c4b4;border-radius: 0 0 0 8px;margin-left: 5px;padding-left: 5px;"><h2><span class="txtdegrad1">Type de caractère</span></h2></div>
                             <ul>
-                                <li>&lt;&#33;&#45;&#45;&nbsp;&nbsp;&#45;&#45;&gt;<br>Défini un commentaire</li>
-                                <li>&lt;&#33;doctype&gt;<br>Défini le type de document</li>
+                                <li>code texte<b>code numérique</b><p>Affichage du rendu</p>
+                                    définition<br><span class="txtdegrad1">compatibilité</span></li>
                             </ul>
                         </li>
+                        <p>Si vous recherchez un caractères en particulier pour trouver son code texte ou numérique,<br>
+                            faites Ctrl&#43;f,collez le ou tapez son appellation</p>
+                    </ol><div id="separ1"></div>
+                    <ol>
                         <li>
+                            <div style="width:100%;border-bottom: solid 1px #d400ff;border-left: solid 3px #04c4b4;border-radius: 0 0 0 8px;margin-left: 5px;padding-left: 5px;"><h2>Le p'tit nouveau de l'<span class="txtdegrad1">HTML 5</span></h2></div>
                             <ul>
-                                <li>&lt;a&gt;<br>Défini un hyper-lien</li>
-                                <li>&lt;abbr&gt;<br>Défini une abréviation ou un acronyme</li>
-                                <li>&lt;acronym&gt;<br>Défini un acronyme<br>
-                                    <span class="txtdegrad1">Non pris en charge en HTML5. Utilisez plutôt &lt;abbr&gt; à la place.</span></li>
-                                <li>&lt;address&gt;<br>Définit les coordonnées de l'auteur / propriétaire d'un document</li>
-                                <li>&lt;applet&gt;<br>Définit une applet intégrée<br>
-                                    <span class="txtdegrad1">on pris en charge en HTML5, uilisez &lt;embed&gt; ou &lt;object&gt; à la place.</span></li>
-                                <li>&lt;area&gt;<br>Définit une zone à l'intérieur d'une image</li>
-                                <li>&lt;article&gt;<br>Définit un article</li>
-                                <li>&lt;aside&gt;<br>Définit un contenu en dehors de contenu de la page<br></li>
-                                <li>&lt;audio&gt;<br>Définit un contenu sonore<br></li>
+                                <li>&amp;vellip; <b>&amp;#8942;</b><p>&vellip;</p>Points de suspension verticaux<br><span class="txtdegrad1">HTML 5</span></li>
                             </ul>
                         </li>
+                    </ol>
+                    <div id="separ1"></div>
+                    <ol>
                         <li>
+                            <div style="width:100%;border-bottom: solid 1px #d400ff;border-left: solid 3px #04c4b4;border-radius: 0 0 0 8px;margin-left: 5px;padding-left: 5px;"><h2><span class="txtdegrad1">Caractères généraux</span></h2></div>
                             <ul>
-                                <li>&lt;b&gt;<br>Défini le texte en gras</li>
-                                <li>&lt;base&gt;<br>Spécifie <u>l'URL / la cible</u> de base pour toutes les URL relatives dans un document</li>
-                                <li>&lt;basefont&gt;<br>Spécifie une couleur, une taille et une police par défaut pour tout le texte d'un document<br>
-                                    <span class="txtdegrad1">Non pris en charge en HTML5. Utilisez plutôt le CSS.</span></li>
-                                <li>&lt;bdi&gt;<br>Isole une partie du texte qui pourrait être formatée dans une direction différente Ex: l'arabe <bdi style="font-size: x-large;">العربية</bdi></li>
-                                <li>&lt;bdo&gt;<br>Changer la direction actuelle du texte</li>
-                                <li>&lt;big&gt;<br>Définit un texte en gros<br>
-                                    <span class="txtdegrad1">Non pris en charge en HTML5. Utilisez plutôt le CSS.</span></li>
-                                <li>&lt;blockquote&gt;<br>Définit une section citée d'une autre source</li>
-                                <li>&lt;body&gt;<br>Définit le corps du document</li>
-                                <li>&lt;br&gt;<br>Définit un saut de ligne unique</li>
-                                <li>&lt;button&gt;<br>Définit un bouton cliquable</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <ul>
-                                <li>&lt;canvas&gt;<br>Utilisé pour dessiner des graphiques, à la volée, via des scripts (généralement JavaScript)</li>
-                                <li>&lt;caption&gt;<br>DéfDéfinit une légende de tableini</li>
-                                <li>&lt;center&gt;<br>Définit le texte centré<br>
-                                    <span class="txtdegrad1">Non pris en charge en HTML5. Utilisez plutôt le CSS.</span></li>
-                                <li>&lt;cite&gt;<br>Définit le titre d'une œuvre</li>
-                                <li>&lt;code&gt;<br>Définit un morceau de code informatique</li>
-                                <li>&lt;col&gt;<br>Spécifie les propriétés de colonne pour chaque colonne d'un élément &lt;colgroup&gt;</li>
-                                <li>&lt;colgroup&gt;<br>Spécifie un groupe d'une ou plusieurs colonnes dans un tableau pour le formatage</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <ul>
-                                <li>&lt;data&gt;<br>Associe le contenu donné à une traduction lisible par une machine</li>
-                                <li>&lt;datalist&gt;<br>Spécifie une liste d'options prédéfinies pour les contrôles d'entrée</li>
-                                <li>&lt;dd&gt;<br>Définit une description / valeur d'un terme dans une liste de description</li>
-                                <li>&lt;del&gt;<br>Définit le texte qui a été supprimé d'un document</li>
-                                <li>&lt;details&gt;<br>Définit des détails supplémentaires que l'utilisateur peut afficher ou masquer</li>
-                                <li>&lt;dfn&gt;<br>Représente l'instance de définition d'un terme</li>
-                                <li>&lt;dialog&gt;<br>Définit une boîte de dialogue ou une fenêtre</li>
-                                <li>&lt;dir&gt;<br>Définit une liste de répertoires<br>
-                                    <span class="txtdegrad1">Non pris en charge en HTML5. Utilisez &lt;ul&gt; à la place.</span></li>
-                                    </li>
-                                <li>&lt;div&gt;<br>Définit une section dans un document</li>
-                                <li>&lt;dl&gt;<br>Définit une liste de description</li>
-                                <li>&lt;dt&gt;<br>Définit un terme / nom dans une liste de description</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <ul>
-                                <li>&lt;em&gt;<br>Définit le texte souligné</li>
-                                <li>&lt;embed&gt;<br>Définit un conteneur pour une application externe (non HTML)</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <ul>
-                                <li>&lt;fieldset&gt;<br>Regroupe les éléments liés dans un formulaire</li>
-                                <li>&lt;figcaption&gt;<br>Définit une légende pour un élément &lt;figure&gt;</li>
-                                <li>&lt;figure&gt;<br>Spécifie le contenu autonome</li>
-                                <li>&lt;font&gt;<br>Définit la police, la couleur et la taille du texte<br>
-                                    <span class="txtdegrad1">Non pris en charge en HTML5. Utilisez plutôt le CSS.</span></li>
-                                <li>&lt;footer&gt;<br>Définit un pied de page pour un document ou une section</li>
-                                <li>&lt;form&gt;<br>Définit un formulaire HTML pour l'entrée utilisateur</li>
-                                <li>&lt;frame&gt;<br>Définit une fenêtre (un cadre) dans un jeu de cadres<br>
-                                    <span class="txtdegrad1">Non pris en charge en HTML5.</span></li>
-                                <li>&lt;frameset&gt;<br>Définit un ensemble de cadres<br>
-                                    <span class="txtdegrad1">Non pris en charge en HTML5.</span></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <ul>
-                                <li></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <ul>
-                                <li>&lt;h1&gt; à &lt;h6&gt;<br>Définit les en-têtes HTML</li>
-                                <li>&lt;head&gt;<br>Définit les informations sur le document</li>
-                                <li>&lt;header&gt;<br>Définit un en-tête pour un document ou une section</li>
-                                <li>&lt;hr&gt;<br>Définit un changement thématique dans le contenu</li>
-                                <li>&lt;html&gt;<br>Définit la racine d'un document HTML</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <ul>
-                                <li>&lt;i&gt;<br>Définit une partie du texte dans une voix ou une humeur alternative</li>
-                                <li>&lt;iframe&gt;<br>Définit un cadre en ligne</li>
-                                <li>&lt;img&gt;<br>Définit une image</li>
-                                <li>&lt;input&gt;<br>Définit un contrôle d'entrée</li>
-                                <li>&lt;ins&gt;<br>Définit un texte qui a été inséré dans un document</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <ul>
-                                <li></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <ul>
-                                <li>&lt;kbd&gt;<br>Définit la saisie au clavier</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <ul>
-                                <li>&lt;label&gt;<br>Définit une étiquette pour un élément &lt;input&gt;</li>
-                                <li>&lt;legend&gt;<br>Définit une légende pour un élément &lt;fieldset&gt;</li>
-                                <li>&lt;li&gt;<br>Définit un élément de liste</li>
-                                <li>&lt;link&gt;<br>Définit la relation entre un document et une ressource externe<br>(le plus utilisé pour créer un lien vers des feuilles de style)</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <ul>
-                                <li>&lt;main&gt;<br>Spécifie le contenu principal d'un document</li>
-                                <li>&lt;map&gt;<br>Définit une image-map côté client</li>
-                                <li>&lt;mark&gt;<br>Définit le texte marqué / surligné</li>
-                                <li>&lt;meta&gt;<br>Définit les métadonnées d'un document HTML</li>
-                                <li>&lt;meter&gt;<br>Définit une mesure scalaire dans une plage connue (une jauge)</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <ul>
-                                <li>&lt;nav&gt;<br>Définit les liens de navigation</li>
-                                <li>&lt;noframes&gt;<br>Définit un autre contenu pour les utilisateurs qui ne prennent pas en charge les cadres<br>
-                                    <span class="txtdegrad1">Non pris en charge en HTML5.</span></li>
-                                <li>&lt;noscript&gt;<br>Définit un autre contenu pour les utilisateurs qui ne prennent pas en charge les scripts côté client</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <ul>
-                                <li>&lt;object&gt;<br>Définit un objet incorporé</li>
-                                <li>&lt;ol&gt;<br>Définit une liste ordonnée</li>
-                                <li>&lt;optgroup&gt;<br>Définit un groupe d'options associées dans une liste déroulante</li>
-                                <li>&lt;option&gt;<br>Définit une option dans une liste déroulante</li>
-                                <li>&lt;output&gt;<br>Définit le résultat d'un calcul</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <ul>
-                                <li>&lt;p&gt;<br>Définit un paragraphe</li>
-                                <li>&lt;param&gt;<br>Définit un paramètre pour un objet</li>
-                                <li>&lt;picture&gt;<br>Définit un conteneur pour plusieurs ressources d'image</li>
-                                <li>&lt;pre&gt;<br>Définit le texte préformaté</li>
-                                <li>&lt;progress&gt;<br>Représente la progression d'une tâche</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <ul>
-                                <li>&lt;q&gt;<br>Définit un court devis</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <ul>
-                                <li>&lt;rp&gt;<br>Définit les éléments à afficher dans les navigateurs qui ne prennent pas en charge les annotations ruby</li>
-                                <li>&lt;rt&gt;<br>Définit une explication / prononciation des caractères (pour la typographie est-asiatique)</li>
-                                <li>&lt;ruby&gt;<br>Définit une annotation rubis (pour la typographie est-asiatique)</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <ul>
-                                <li>&lt;s&gt;<br>Définit un texte qui n'est plus correct</li>
-                                <li>&lt;samp&gt;<br>Définit un exemple de sortie d'un programme informatique</li>
-                                <li>&lt;script&gt;<br>Définit un script côté client</li>
-                                <li>&lt;section&gt;<br>Définit une section dans un document</li>
-                                <li>&lt;select&gt;<br>Définit une liste déroulante</li>
-                                <li>&lt;small&gt;<br>Définit un texte plus petit</li>
-                                <li>&lt;source&gt;<br>Définit plusieurs ressources multimédias pour les éléments multimédias &lt;video&gt; et &lt;audio&gt;)</li>
-                                <li>&lt;span&gt;<br>Définit une section dans un document</li>
-                                <li>&lt;strike&gt;<br>Définit le texte barré<br>
-                                    <span class="txtdegrad1">Non pris en charge en HTML5. Utilisez &lt;del&gt; ou &lt;s&gt; à la place.</span></li>
-                                <li>&lt;strong&gt;<br>Définit un texte important</li>
-                                <li>&lt;style&gt;<br>Définit les informations de style pour un document</li>
-                                <li>&lt;sub&gt;<br>Définit le texte en indice</li>
-                                <li>&lt;summary&gt;<br>Définit un en-tête visible pour un élément &lt;details&gt;</li>
-                                <li>&lt;sup&gt;<br>Définit le texte en exposant</li>
-                                <li>&lt;svg&gt;<br>Définit un conteneur pour les graphiques SVG</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <ul>
-                                <li>&lt;table&gt;<br>Définit une table</li>
-                                <li>&lt;tbody&gt;<br>Regroupe le contenu du corps dans un tableau</li>
-                                <li>&lt;td&gt;<br>Définit une cellule dans un tableau</li>
-                                <li>&lt;template&gt;<br>Définit un modèle</li>
-                                <li>&lt;textarea&gt;<br>Définit un contrôle d'entrée multiligne (zone de texte)</li>
-                                <li>&lt;tfood&gt;<br>Regroupe le contenu du pied de page dans un tableau</li>
-                                <li>&lt;th&gt;<br>Définit une cellule d'en-tête dans un tableau</li>
-                                <li>&lt;thead&gt;<br>Regroupe le contenu de l'en-tête dans une table</li>
-                                <li>&lt;time&gt;<br>Définit une date / heure</li>
-                                <li>&lt;title&gt;<br>Définit un titre pour le document</li>
-                                <li>&lt;tr&gt;<br>Définit une ligne dans une table</li>
-                                <li>&lt;track&gt;<br>Définit les pistes de texte pour les éléments multimédias (&lt;video&gt; et &lt;audio&gt;)</li>
-                                <li>&lt;tt&gt;<br>Définit le texte du télétype<br>
-                                    <span class="txtdegrad1">Non pris en charge en HTML5. Utilisez plutôt le CSS.</span></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <ul>
-                                <li>&lt;u&gt;<br>Définit le texte qui doit être stylistiquement différent du texte normal</li>
-                                <li>&lt;ul&gt;<br>Définit une liste non ordonnée</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <ul>
-                                <li>&lt;var&gt;<br>Définit une variable</li>
-                                <li>&lt;video&gt;<br>Définit une vidéo ou un film</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <ul>
-                                <li>&lt;wbr&gt;<br>Définit un saut de ligne possible</li>
+                                <li>&amp;nbsp; <b>&amp;#160;</b><p>&nbsp;</p>espace insécable<br>
+                                    <span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;shy; <b>&amp;#173;</b><p>&shy;</p>tiret de césure optionnelle<br>
+                                    (permet au navigateur de couper le mot
+                                    au bon endroit si besoin de passer à la ligne)</li>
+                                <li>&amp;lrm; <b>&amp;#8206;</b><p>&lrm;</p>marque gauche-à-droite<br>
+                                    <span class="txtdegrad1">pas Win98</span></li>
+                                <li>&amp;rlm; <b>&amp;#8207;</b><p>&rlm;</p>marque droite-à-gauche<br>
+                                    <span class="txtdegrad1">pas Win98</span></li>
+                                <li>&amp;quot; <b>&amp;#34;</b><p>&quot;</p>guillemet anglais, guillemet droit (quote)<br>
+                                    <span class="txtdegrad1">XML, NS1</span></li>
+                                <li>&amp;laquo; <b>&amp;#171;</b><p>&laquo;</p>guillemet français ouvrant<br>
+                                    <span class="txtdegrad1">NS3</span></li>
+                                <li>&amp;raquo; <b>&amp;#187;</b><p>&raquo;</p>guillemet français fermant<br><span class="txtdegrad1">NS3</span></li>
+                                <li>&amp;lsaquo; <b>&amp;#8249;</b><p>&lsaquo;</p>guillemet français simple ouvrant</li>
+                                <li>&amp;rsaquo; <b>&amp;#8250;</b><p>&rsaquo;</p>guillemet français simple fermant</li>
+                                <li>&amp;ldquo; <b>&amp;#8220;</b><p>&ldquo;</p>guillemet double ouvrant, guillemet-apostrophe double culbuté</li>
+                                <li>&amp;rdquo; <b>&amp;#8221;</b><p>&rdquo;</p>guillemet double fermant, guillemet-apostrophe double</li>
+                                <li>&amp;bdquo; <b>&amp;#8222;</b><p>&bdquo;</p>guillemet double fermant bas, guillemet-virgule double inférieur</li>
+                                <li>&amp;apos; <b>&amp;#39;</b><p>&apos;</p>guillemet simple droit<br><span class="txtdegrad1">XML</span></li>
+                                <li>&amp;lsquo; <b>&amp;#8216;</b><p>&lsquo;</p>guillemet simple ouvrant, guillemet-apostrophe culbuté</li>
+                                <li>&amp;rsquo; <b>&amp;#8217;</b><p>&rsquo;</p>guillemet simple fermant, guillemet-apostrophe</li>
+                                <li>&amp;sbquo; <b>&amp;#8218;</b><p>&sbquo;</p>guillemet simple fermant bas, guillemet-virgule inférieur</li>
+                                <li>&amp;hellip; <b>&amp;#8230;</b><p>&hellip;</p>points de suspension</li>
+                                <li>! <b>&amp;#33;</b><p>!</p>point d’exclamation</li>
+                                <li>&amp;iexcl; <b>&amp;#161;</b><p>&iexcl;</p>point d’exclamation inversé<br><span class="txtdegrad1">NS3</span></li>
+                                <li>? <b>&amp;#63;</b><p>?</p>point d’interrogation</li>
+                                <li>&amp;iquest; <b>&amp;#191;</b><p>&iquest;</p>point d’interrogation inversé<br><span class="txtdegrad1">NS3</span></li>
+                                <li>( <b>&amp;#___;</b><p>(</p>parenthèse ouvrante</li>
+                                <li>) <b>&amp;#___;</b><p>)</p>parenthèse fermante</li>
+                                <li>[ <b>&amp;#___;</b><p>[</p>crochet ouvrant</li>
+                                <li>] <b>&amp;#___;</b><p>]</p>crochet fermant</li>
+                                <li>{ <b>&amp;#___;</b><p>{</p>accolade ouvrante</li>
+                                <li>} <b>&amp;#___;</b><p>}</p>accolade fermante</li>
+                                <li>&amp;uml; <b>&amp;#___;</b><p>&uml;</p>tréma<br><span class="txtdegrad1">NS3</span></li>
+                                <li>&amp;acute; <b>&amp;#___;</b><p>&acute;</p>accent aigu<br><span class="txtdegrad1">NS3</span></li>
+                                <li>` <b>&amp;#___;</b><p>`</p>accent grave</li>
+                                <li>^ <b>&amp;#___;</b><p>^</p>accent circonflexe</li>
+                                <li>&amp;circ; <b>&amp;#___;</b><p>&circ;</p>accent circonflexe</li>
+                                <li>~ <b>&amp;#___;</b><p>~</p>tilde</li>
+                                <li>&amp;tilde; <b>&amp;#___;</b><p>&tilde;</p>petit tilde</li>
+                                <li>&amp;cedil; <b>&amp;#___;</b><p>&cedil;</p>cédille<br><span class="txtdegrad1">NS3</span></li>
+                                <li># <b>&amp;#___;</b><p>#</p>dièse</li>
+                                <li>* <b>&amp;#___;</b><p>*</p>étoile</li>
+                                <li>, <b>&amp;#___;</b><p>,</p>virgule</li>
+                                <li>. <b>&amp;#___;</b><p>.</p>point</li>
+                                <li>: <b>&amp;#___;</b><p>:</p>deux-points</li>
+                                <li>; <b>&amp;#___;</b><p>;</p>point-virgule</li>
+                                <li>&amp;middot; <b>&amp;#___;</b><p>&middot;</p>point médian<br><span class="txtdegrad1">NS3, pas Win98</span></li>
+                                <li>&amp;bull; <b>&amp;#___;</b><p>&bull;</p>gros point médian</li>
+                                <li>&amp;macr; <b>&amp;#___;</b><p>&macr;</p>macron<br><span class="txtdegrad1">NS3</span></li>
+                                <li>&amp;oline; <b>&amp;#___;</b><p>&oline;</p>tiret en chef (overline, spacing overscore)<br><span class="txtdegrad1">pas IE5, pas Amaya8, pas Win98</span></li>
+                                <li>- <b>&amp;#___;</b><p>-</p>tiret, tiret quart-cadratin, tiret de mots composés</li>
+                                <li>&amp;ndash; <b>&amp;#___;</b><p>&ndash;</p>tiret demi-cadratin, tiret d’incise</li>
+                                <li>&amp;mdash; <b>&amp;#___;</b><p>&mdash;</p>tiret cadratin, tiret de dialogue</li>
+                                <li>_ <b>&amp;#___;</b><p>_</p>tiret bas (underscore)</li>
+                                <li>| <b>&amp;#___;</b><p>|</pséparateur vertical (pipe)</li>
+                                <li>&amp;brvbar; <b>&amp;#___;</b><p>&brvbar;</p>barre verticale scindée<br><span class="txtdegrad1">NS3</span></li>
+                                <li>&amp;zwnj; <b>&amp;#___;</b><p>&zwnj;</p>antiliant sans chasse<br><span class="txtdegrad1">pas Win98</span></li>
+                                <li>&amp;zwj; <b>&amp;#___;</b><p>&zwj;</p>liant sans chasse<br><span class="txtdegrad1">pas Win98</span></li>
+                                <li>&amp;dagger; <b>&amp;#___;</b><p>&dagger;</p>obèle<br><span class="txtdegrad1">pas Amaya8</span></li>
+                                <li>&amp;Dagger; <b>&amp;#___;</b><p>&Dagger;</p>double obèle<br><span class="txtdegrad1">pas Amaya8</span></li>
+                                <li>&amp;sect; <b>&amp;#___;</b><p>&sect;</p>section<br><span class="txtdegrad1">NS3</span></li>
+                                <li>&amp;para; <b>&amp;#___;</b><p>&para;</p>paragraphe<br><span class="txtdegrad1">NS3</span></li>
+                                <li>&amp;copy; <b>&amp;#___;</b><p>&copy;</p>copyright<br><span class="txtdegrad1">NS3</span></li>
+                                <li>&amp;reg; <b>&amp;#___;</b><p>&reg;</p>marque déposée<br><span class="txtdegrad1">NS3</span></li>
+                                <li>&amp;trade; <b>&amp;#___;</b><p>&trade;</p>marque commerciale (trade mark)</li>
+                                <li>&amp;amp; <b>&amp;#___;</b><p>&amp;</p>et commercial, esperluette, ampersand<br><span class="txtdegrad1">XML, NS1</span></li>
+                                <li>@ <b>&amp;#___;</b><p>@</p>arobase (chez)</li>
+                                <li>/ <b>&amp;#___;</b><p>/</p>diviser (slash)</li>
+                                <li>\ <b>&amp;#___;</b><p>\</p>anti-slash</li>
+                                <li>&amp;loz; <b>&amp;#___;</b><p>&loz;</p>losange<br><span class="txtdegrad1">pas IE5</span></li>
+                                <li>&amp;spades; <b>&amp;#___;</b><p>&spades;</p>pique noir<br><span class="txtdegrad1">pas IE5</span></li>
+                                <li>&amp;clubs; <b>&amp;#___;</b><p>&clubs;</p>trèfle noir<br><span class="txtdegrad1">pas IE5</span></li>
+                                <li>&amp;hearts; <b>&amp;#___;</b><p>&hearts;</p>cœur noir<br><span class="txtdegrad1">pas IE5</span></li>
+                                <li>&amp;diams; <b>&amp;#___;</b><p>&diams;</p>carreau noir<br><span class="txtdegrad1">pas IE5</span></li>
+                                <li>&amp;larr; <b>&amp;#___;</b><p>&larr;</p>flèche vers la gauche<br><span class="txtdegrad1">pas IE5</span></li>
+                                <li>&amp;uarr; <b>&amp;#___;</b><p>&uarr;</p>flèche vers le haut<br><span class="txtdegrad1">pas IE5</span></li>
+                                <li>&amp;rarr; <b>&amp;#___;</b><p>&rarr;</p>flèche vers la droite<br><span class="txtdegrad1">pas IE5</span></li>
+                                <li>&amp;darr; <b>&amp;#___;</b><p>&darr;</p>flèche vers le bas<br><span class="txtdegrad1">pas IE5</span></li>
+                                <li>&amp;harr; <b>&amp;#___;</b><p>&harr;</p>flèche bilatérale gauche-droite<br><span class="txtdegrad1">pas IE5</span></li>
                             </ul>
                         </li>
                     </Ol>
+                    <div id="separ1"></div>
+                    <ol>
+                        <li>
+                            <div style="width:100%;border-bottom: solid 1px #d400ff;border-left: solid 3px #04c4b4;border-radius: 0 0 0 8px;margin-left: 5px;padding-left: 5px;"><h2>Caractères<span class="txtdegrad1"> monaitaires</span></h2></div>
+                            <ul>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">___</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">___</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">___</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___</li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">___</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">___</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___</li>
+                            </ul>
+                        </li>
+                    </ol>
+                    <div id="separ1"></div>
+                    <ol>
+                        <li>
+                            <div style="width:100%;border-bottom: solid 1px #d400ff;border-left: solid 3px #04c4b4;border-radius: 0 0 0 8px;margin-left: 5px;padding-left: 5px;"><h2>caractères<span class="txtdegrad1"> scientifiques</span></h2></div>
+                            <ul>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">___</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">___</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">___</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">___</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">___</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">___</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___</li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">___</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">___</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">___</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">___</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">___</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___</li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">___</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">___</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">___</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___</li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">___</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">___</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">___</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">___</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">___</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">___</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">___</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">___</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">___</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___</li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">___</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">___</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">___</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">___</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">___</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">___</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">___</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">___</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">___</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">___</span></li>
+                            </ul>
+                        </li>
+                    </ol>
+                    <div id="separ1"></div>
+                    <ol>
+                        <li>
+                            <div style="width:100%;border-bottom: solid 1px #d400ff;border-left: solid 3px #04c4b4;border-radius: 0 0 0 8px;margin-left: 5px;padding-left: 5px;"><h2>Alphabet<span class="txtdegrad1"> Grec</span></h2></div>
+                            <ul>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___</li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___</li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___</li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___</li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___</li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___</li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___</li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___</li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___</li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___</li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___</li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___</li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___</li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___</li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___</li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___</li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___</li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___</li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___</li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___</li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___</li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___</li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___</li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___</li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___</li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___</li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___</li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___</li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___</li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___</li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___</li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___</li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___</li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___</li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___</li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___</li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___</li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___</li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___</li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___</li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___</li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___</li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___</li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___</li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___</li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___</li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___</li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___</li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___</li>
+                            <ul>
+                        </li>
+                    </ol>
+                    <div id="separ1"></div>
+                    <ol>
+                        <li>
+                            <div style="width:100%;border-bottom: solid 1px #d400ff;border-left: solid 3px #04c4b4;border-radius: 0 0 0 8px;margin-left: 5px;padding-left: 5px;"><h2>Caractères alphabétiques <span class="txtdegrad1">accentués et spéciaux</span></h2></div>
+                            <ul>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">pas NS4</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">pas NS4</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">pas NS4</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">pas NS4</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">NS1</span></li>
+                                <li>&amp;___; <b>&amp;#___;</b><p>&___;</p>___<br><span class="txtdegrad1">pas NS4</span></li>
+                            </ul>
+                        </li>
+                    </ol>
                     <div id="separ1"></div>
                     <div class="w3-clear nextprev">
                         <a id="btninsta" class=" boutons JP-padding-large testbg" href="/moi/tutos_v1/index.html">
