@@ -759,6 +759,14 @@
     width: max-content!important;
 }
 
+@media (max-width:993px){
+    .w3-hide-small.w3-card-2 {
+        margin-left: 3%;
+    }
+    .w3-hide-small.w3-card-2 div {
+        width: 98%!important;
+    }
+}
     </style>
     <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -1167,18 +1175,19 @@
     <div class="w3-main" id="main" style="background-color:white!important">
 
         <div class="w3-row w3-margin-bottom carteD">
-            <div class="w3-col l6 w3-center" style="padding:3%">
+            <div class="w3-col l6 w3-center" style="padding:3% 0">
                 <h1>l'HTML</h1>
                 <p class="w3-xlarge w3-text-dark-grey">Le langage pour construire une page web.</p>
                 <a href="/moi/tutos_v1/html/index.html" style="display: inline-block;"
                     class="dpblockmax btnNeon onoffViol rad3">Tutos HTML</a>
             </div>
-            <div class="w3-col l6 w3-text-dark-grey" style="padding:3%">
+            <div class="w3-col l6 w3-text-dark-grey" style="padding:3% 0">
                 <div class="w3-hide-small w3-card-2" style="padding:16px; border-bottom-left-radius: 20px;">
                     <h3>Exemple d'HTML:</h3>
+                    <div style="width: 92%;">
                     <p class="codepen" data-height="300" data-theme-id="38865" data-default-tab="html"
                         data-user="PsychoActiF" data-slug-hash="YzXZRBP"
-                        style="height: 300px; box-sizing: border-box; display: flex;
+                        style="height: 300px;" box-sizing: border-box; display: flex;
                         align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
                         data-pen-title="Exemple 1">
                         <span>See the Pen <a href="https://codepen.io/PsychoActiF/pen/YzXZRBP">
@@ -1189,13 +1198,15 @@
                     <a href="https://codepen.io/PsychoActiF/full/YzXZRBP" target="_blank"
                         style="margin: 10px 0 1px 4px;" class="dpblockmax btnNeon onoffViol rad10">Résultat <i
                             class="far fa-share-square"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="w3-row w3-hide-medium w3-hide-small carteG" style="color: darkgray;">
-            <div class="w3-col l6" style="padding:3%">
+            <div class="w3-col l6" style="padding:3% 0">
                 <div class="w3-hide-small jp-card" style="padding:16px; border-bottom-right-radius: 20px;">
+                    <div style="width: 92%;float:right">
                     <h3>Exemple de CSS:</h3>
                     <p class="codepen" data-height="300" data-theme-id="38865" data-default-tab="css"
                         data-user="PsychoActiF" data-slug-hash="BaNRQrb"
@@ -1211,6 +1222,8 @@
                     <a href="https://codepen.io/PsychoActiF/full/BaNRQrb" target="_blank"
                         style="margin: 10px 4px 1px 0;float: right;" class="dpblockmax btnNeon onoffTurq rad10">Résultat <i
                             class="far fa-share-square"></i></a>
+                            <div style="clear: both;"></div>
+                        </div>
                     <div style="clear: both;"></div>
                 </div>
             </div>
@@ -1222,15 +1235,16 @@
             </div>
         </div>
 
-        <div class="w3-row w3-hide-large carteG" style="color: darkgray;padding-bottom:30px">
+        <div class="w3-row w3-hide-large carteG" style="color: darkgray">
             <div class="w3-col l6 w3-center" style="padding:3%">
                 <h1>Le CSS</h1>
                 <p class="w3-xlarge">Le langage pour styliser une page web.</p>
                 <a href="/moi/tutos_v1/css/index.html" style="display: inline-block;"
                 class="dpblockmax btnNeon onoffTurq rad3">Tutos CSS</a>
             </div>
-            <div class="w3-col l6" style="padding:3%">
+            <div class="w3-col l6" style="padding:3% 3% 3% 0">
                 <div class="w3-hide-small jp-card" style="padding:16px; border-bottom-right-radius: 20px;">
+                    <div style="width: 95%;float:right">
                     <h3>Exemple de CSS:</h3>
                     <p class="codepen" data-height="300" data-theme-id="38865" data-default-tab="css"
                         data-user="PsychoActiF" data-slug-hash="BaNRQrb"
@@ -1247,6 +1261,8 @@
                             class="far fa-share-square"></i></a>
                     <div style="clear: both;"></div>
                 </div>
+                <div style="clear: both;"></div>
+                </div>
             </div>
         </div>
 
@@ -1257,9 +1273,10 @@
                 <a href="/moi/tutos_v1/js/index.html" style="display: inline-block;"
                 class="dpblockmax btnNeon onoffViol rad3">Tutos JavaScript</a>
             </div>
-            <div class="w3-col l6 w3-text-dark-grey" style="padding:3%">
+            <div class="w3-col l6 w3-text-dark-grey" style="padding:3% 0">
                 <div class="w3-hide-small w3-card-2" style="padding:16px; border-bottom-left-radius: 20px;">
                     <h3>Exemple de JavaScript:</h3>
+                    <div style="width: 92%;">
                     <p class="codepen" data-height="300" data-theme-id="38865" data-default-tab="js"
                         data-user="PsychoActiF" data-slug-hash="BaNRpVK"
                         style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
@@ -1273,13 +1290,15 @@
                     <a href="https://codepen.io/PsychoActiF/full/BaNRpVK" target="_blank"
                     style="margin: 10px 0 1px 4px;" class="dpblockmax btnNeon onoffViol rad10">Résultat <i
                             class="far fa-share-square"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="w3-row w3-hide-medium w3-hide-small carteG" style="color: darkgray;">
-            <div class="w3-col l6" style="padding:3%">
+            <div class="w3-col l6" style="padding:3% 0">
                 <div class="w3-hide-small jp-card" style="padding:16px; border-bottom-right-radius: 20px;">
+                    <div style="width: 92%;float:right">
                     <h3>Exemple d'SQL:</h3>
                     <div class="degrad-Vertical">
                         <div class="w3-code sqlHigh notranslate w3-card-2" style="height:180px;margin-bottom: 0!important;">
@@ -1292,6 +1311,8 @@
                     style="margin: 10px 4px 1px 0;float: right;" class="dpblockmax btnNeon onoffTurq rad10"><i class="far fa-clock"></i> bientôt</a>
                     <div style="clear: both;"></div>
                 </div>
+                <div style="clear: both;"></div>
+                </div>
             </div>
             <div class="w3-col l6 w3-center" style="padding:3%">
                 <h1>PHP/SQL</h1>
@@ -1301,15 +1322,16 @@
             </div>
         </div>
 
-        <div class="w3-row w3-hide-large carteG" style="padding-bottom:30px;color: darkgray;">
+        <div class="w3-row w3-hide-large carteG" style="color: darkgray;">
             <div class="w3-col l6 w3-center" style="padding:3%">
                 <h1>PHP/SQL</h1>
                 <p class="w3-xlarge">Le langage d'accès aux bases de données</p>
                 <a href="/moi/tutos_v1/O_o" style="display: inline-block;"
                 class="dpblockmax btnNeon onoffTurq rad3">Tutos DataB</a>
             </div>
-            <div class="w3-col l6" style="padding:3%">
+            <div class="w3-col l6" style="padding:3% 3% 3% 0">
                 <div class="w3-hide-small jp-card" style="padding:16px; border-bottom-right-radius: 20px;">
+                <div style="width: 95%;float:right">
                     <h3>Exemple d'SQL:</h3>
                     <div class="degrad-Vertical">
                         <div class="w3-code sqlHigh notranslate w3-card-2" style="height:180px;margin-bottom: 0!important;">
@@ -1321,6 +1343,8 @@
                     <a href="/moi/tutos_v1/O_o" target="_blank"
                     style="margin: 10px 4px 1px 0;float: right;" class="dpblockmax btnNeon onoffTurq rad10"><i class="far fa-clock"></i> bientôt</a>
                     <div style="clear: both;"></div>
+                </div>
+                <div style="clear: both;"></div>
                 </div>
             </div>
         </div>
