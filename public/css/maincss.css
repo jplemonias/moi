@@ -122,3 +122,7 @@
     display: block;
     width: max-content;
 }
+.dpinlineb {
+    display: inline-block;
+    vertical-align: middle;
+}
