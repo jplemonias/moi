@@ -1,0 +1,133 @@
+.rad1 {
+    border-radius: 20px 20px 0;
+}
+.rad2 {
+    border-radius: 20px 20px 20px 0;
+}
+.rad3 {
+    border-radius: 20px 20px;
+}
+.rad4 {
+    border-radius: 20px 0 0;
+}
+.rad5 {
+    border-radius: 0  20px 0 0;
+}
+.rad6{
+    border-radius: 20px 0 20px 20px;
+}
+.rad7 {
+    border-radius: 0 20px 20px 20px;
+}
+.rad8 {
+    border-radius: 0 0 0 20px;
+}
+.rad9 {
+    border-radius: 0  0 20px;
+}
+.rad10 {
+    border-radius: 0 0 20px 20px;
+}
+.rad11 {
+    border-radius: 20px 20px 0 0;
+}
+.rad12 {
+    border-radius: 20px 0 0 20px;
+}
+.rad13 {
+    border-radius: 0 20px 20px 0;
+}
+
+.mrgInt_L {
+    padding: 9px 18px;
+    font-size: 15px;
+}
+
+.btnNeon{
+    border: 1px solid;
+    background-color: transparent;
+}
+
+.onoffTurq {
+    border-color: #04c4b483;
+    box-shadow: 2px 2px 5px #04c4b438,
+       -2px 2px 5px #04c4b438,
+       2px -2px 5px #04c4b438,
+       -2px -2px 5px #04c4b438,
+       inset 2px 2px 5px #04c4b438,
+       inset -2px 2px 5px #04c4b438,
+       inset 2px -2px 5px #04c4b438,
+       inset -2px -2px 5px #04c4b438;
+    background: -webkit-gradient(linear,left top,right top,
+       from(#04c4b4),to(#d400ff));
+    background: linear-gradient(90deg,#04c4b4,#d400ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    -webkit-text-decoration-color: #04c4b4!important;
+    text-decoration-color: #04c4b4!important;
+}
+
+.onoffTurq:hover {
+   border-color: #04c4b4;
+   box-shadow: 3px 3px 10px #04c4b483,
+   -3px 3px 10px #04c4b483,
+   3px -3px 10px #04c4b483,
+   -3px -3px 10px #04c4b483,
+   inset 3px 3px 10px #04c4b483,
+   inset -3px 3px 10px #04c4b483,
+   inset 3px -3px 10px #04c4b483,
+   inset -3px -3px 10px #04c4b483;
+    background: -webkit-gradient(linear,left top,right top,
+       from(#d400ff),to(#04c4b4));
+    background: linear-gradient(90deg,#d400ff,#04c4b4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    -webkit-text-decoration-color: #04c4b4!important;
+    text-decoration-color: #04c4b4!important;
+}
+
+.onoffViol {
+    border-color: #d400ff83;
+    box-shadow: 2px 2px 5px #d400ff38,
+       -2px 2px 5px #d400ff38,
+       2px -2px 5px #d400ff38,
+       -2px -2px 5px #d400ff38,
+       inset 2px 2px 5px #d400ff38,
+       inset -2px 2px 5px #d400ff38,
+       inset 2px -2px 5px #d400ff38,
+       inset -2px -2px 5px #d400ff38;
+    background: -webkit-gradient(linear,left top,right top,
+       from(#04c4b4),to(#d400ff));
+    background: linear-gradient(90deg,#04c4b4,#d400ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    -webkit-text-decoration-color: #04c4b4!important;
+    text-decoration-color: #04c4b4!important;
+}
+
+.onoffViol:hover {
+   border-color: #d400ff;
+   box-shadow: 3px 3px 10px #d400ff83,
+   -3px 3px 10px #d400ff83,
+   3px -3px 10px #d400ff83,
+   -3px -3px 10px #d400ff83,
+   inset 3px 3px 10px #d400ff83,
+   inset -3px 3px 10px #d400ff83,
+   inset 3px -3px 10px #d400ff83,
+   inset -3px -3px 10px #d400ff83;
+    background: -webkit-gradient(linear,left top,right top,
+       from(#d400ff),to(#04c4b4));
+    background: linear-gradient(90deg,#d400ff,#04c4b4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    -webkit-text-decoration-color: #04c4b4!important;
+    text-decoration-color: #04c4b4!important;
+}
