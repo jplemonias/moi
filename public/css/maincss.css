@@ -1,51 +1,29 @@
-.rad1 {
-    border-radius: 20px 20px 0;
-}
-.rad2 {
-    border-radius: 20px 20px 20px 0;
-}
-.rad3 {
-    border-radius: 20px 20px;
-}
-.rad4 {
-    border-radius: 20px 0 0;
-}
-.rad5 {
-    border-radius: 0  20px 0 0;
-}
-.rad6{
-    border-radius: 20px 0 20px 20px;
-}
-.rad7 {
-    border-radius: 0 20px 20px 20px;
-}
-.rad8 {
-    border-radius: 0 0 0 20px;
-}
-.rad9 {
-    border-radius: 0  0 20px;
-}
-.rad10 {
-    border-radius: 0 0 20px 20px;
-}
-.rad11 {
-    border-radius: 20px 20px 0 0;
-}
-.rad12 {
-    border-radius: 20px 0 0 20px;
-}
-.rad13 {
-    border-radius: 0 20px 20px 0;
-}
+/******BOUTONS neon******/
 
-.mrgInt_L {
-    padding: 9px 18px;
-    font-size: 15px;
-}
+.rad1{border-radius: 20px 20px 0}
+.rad2{border-radius: 20px 20px 20px 0}
+.rad3{ border-radius: 20px 20px}
+.rad4{border-radius: 20px 0 0}
+.rad5{border-radius: 0 20px 0 0}
+.rad6{border-radius: 20px 0 20px 20px}
+.rad7{border-radius: 0 20px 20px 20px}
+.rad8{border-radius: 0 0 0 20px}
+.rad9{border-radius: 0 0 20px}
+.rad10{border-radius: 0 0 20px 20px}
+.rad11{border-radius: 20px 20px 0 0}
+.rad12{border-radius: 20px 0 0 20px}
+.rad13{border-radius: 0 20px 20px 0}
 
 .btnNeon{
-    border: 1px solid;
+    padding: 9px 18px;
+    font-size: 15px;
     background-color: transparent;
+    border: 1px solid;
+}
+.btnNeon.onoffTurq,
+.btnNeon.onoffTurq:hover{
+    text-decoration:none;
+    margin: 1px 0;
 }
 
 .onoffTurq {
@@ -131,3 +109,5 @@
     -webkit-text-decoration-color: #04c4b4!important;
     text-decoration-color: #04c4b4!important;
 }
+
+/******BOUTONS neon******/
