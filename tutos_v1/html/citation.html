@@ -2,7 +2,7 @@
 <html lang="fr-FR">
 
 <head>
-    <title>Le formatage de texte</title>
+    <title>Les balises de citation</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Keywords"
@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../../public/css/hometuto.css">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Source Code Pro' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d70a89f18c.js" crossorigin="anonymous"></script>
     <script type="application/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
 
@@ -1200,6 +1201,10 @@
                 font-family: 'Source Code Pro', Menlo, Consolas, monospace;
             }
 
+            .w3-panel2.w3-info.intro .w3-code2.sqlHigh.notranslate.w3-card-2 {
+                margin-left: -15px;
+            }
+
             .w3-code {
                 margin-right: -24px !important;
                 font-size: 14px;
@@ -1444,23 +1449,6 @@
             border-left: none;
         }
 
-        .jp-onglet_g_faf {
-            margin-left: -32px;
-            margin-right: -10px;
-            padding: 16px 32px;
-            border-radius: 0 20px 20px 0;
-            background: linear-gradient(135deg, #04c4b4, #d400ff);
-            color: black;
-        }
-
-        .jp-onglet_d_faf {
-            margin-left: 6px !important;
-            padding: 16px 32px;
-            border-radius: 20px 0 0 20px;
-            background: linear-gradient(135deg, #d400ff, #04c4b4);
-            color: black;
-        }
-
         .w3-panel {
             margin-top: 24px;
             margin-bottom: 24px;
@@ -1477,7 +1465,7 @@
             margin-bottom: 24px;
             margin-left: 32px !important;
             margin-right: -16px !important;
-            padding: 16px 32px;
+            padding: 16px 32px 16px 16px;
             border-radius: 20px 0 0 20px;
             background: linear-gradient(135deg, #d400ff, #04c4b4);
             color: black;
@@ -1685,10 +1673,6 @@
         }
 
         @media only screen and (max-device-width: 480px) {
-            .w3-code2 {
-                margin-left: -32px;
-            }
-
             #main {
                 padding: 24px
             }
@@ -1701,12 +1685,9 @@
                 font-size: 25px;
             }
 
-            .jp-onglet_d_faf {
-                margin-right: -40px !important;
-            }
-
-            .jp-onglet_g_faf {
-                margin-left: -40px !important;
+            #ulexemple {
+                padding: 0px !important;
+                list-style: none !important;
             }
 
             .jp-example {
@@ -1719,16 +1700,6 @@
                 margin: 24px 0px 24px -24px;
             }
 
-            #ulexemple {
-                padding: 0px !important;
-                list-style: none !important;
-            }
-
-            .w3-panel2 {
-                margin-right: -24px !important;
-                margin-left: 1px;
-            }
-
             .w3-example {
                 padding: 8px 16px;
                 margin: 24px -24px;
@@ -1739,25 +1710,22 @@
                 margin: 24px -24px;
             }
 
-        }
+            .w3-code2 {
+                margin-left: -24px;
+            }
 
-        @media (max-width:500px) {
+            .w3-panel2 {
+                margin-left: 0px !important;
+                margin-right: -24px !important;
+                padding-right: 33px;
+            }
 
             .w3-panel,
             .w3-info {
                 margin-left: -24px;
+                margin-right: 1px;
             }
-        }
 
-        #fleche {
-            transform-origin: 0 0;
-            transform: rotate(180deg);
-            -webkit-transform: rotate(180deg);
-            /*Safari 3.1+/Chrome*/
-            -o-transform: rotate(180deg);
-            /*Opera 10.5+*/
-            -moz-transform: rotate(180deg);
-            /*Firefox 3.5+*/
         }
     </style>
     <script type="application/javascript">
@@ -1895,8 +1863,8 @@
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/html/attributs.html">Les attributs</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/html/titrage.html">Le titrage</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/html/paragraphes.html">Les paragraphes</a>
-                    <a class="w3-bar-item w3-button padnone jp-selected" href="/moi/tutos_v1/html/formatage.html">Mettre en forme</a>
-                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/html/citation.html">Citer</a>
+                    <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/html/formatage.html">Mettre en forme</a>
+                    <a class="w3-bar-item w3-button padnone jp-selected" href="/moi/tutos_v1/html/citation.html">Citer</a>
                     <a class="w3-bar-item w3-button padnone" href="/moi/tutos_v1/O_o">l'html</a>
                 </div>
                 <div class="w3-col l3 m6">
@@ -2137,99 +2105,75 @@
                     </a>
                 </div>
 
-                <h1>La <span class="txtdegrad1">forme</span></h1>
+                <h1>Les éléments de <span class="txtdegrad1">citation</span></h1>
                 <div id="separ1"></div>
                 <div class="w3-clear nextprev">
-                    <a id="btninsta" class=" boutons JP-padding-large testbg"
-                        href="/moi/tutos_v1/html/paragraphes.html">
+                    <a id="btninsta" class=" boutons JP-padding-large testbg" href="/moi/tutos_v1/html/formatage.html">
                         <i class="fas fa-reply"></i> Précédent</a>
-                    <a id="btnneonD" class="w3-right boutons JP-padding-large testbg" href="/moi/tutos_v1/citation.html">
+                    <a id="btnneonD" class="w3-right boutons JP-padding-large testbg"
+                        href="/moi/tutos_v1/html/O_o">
                         suivant <i class="fas fa-reply reply2"></i></a>
                 </div>
 
-                <div class="w3-row-padding">
-                    <div class="w3-half">
-                        <div class="jp-onglet_g_faf w3-info intro">
-                            <p class="codepen" data-height="404" data-theme-id="38865" data-default-tab="html"
-                                data-user="PsychoActiF" data-slug-hash="KKporpq"
-                                style="height: 404px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
-                                data-pen-title="Titrage">
-                                <span>See the Pen <a href="https://codepen.io/PsychoActiF/pen/KKporpq">
-                                        formatage texte</a> by Psycho@ctiF (<a
-                                        href="https://codepen.io/PsychoActiF">@PsychoActiF</a>)
-                                    on <a href="https://codepen.io">CodePen</a>.</span>
-                            </p>
-                            <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-                        </div>
-                    </div>
-
-                    <div class="w3-half">
-                        <div class=" jp-onglet_d_faf w3-info intro">
-                            <p class="codepen" data-height="404" data-theme-id="38865" data-default-tab="result"
-                                data-user="PsychoActiF" data-slug-hash="KKporpq"
-                                style="height: 404px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
-                                data-pen-title="Titrage">
-                                <span>See the Pen <a href="https://codepen.io/PsychoActiF/pen/KKporpq">
-                                        formatage texte</a> by Psycho@ctiF (<a
-                                        href="https://codepen.io/PsychoActiF">@PsychoActiF</a>)
-                                    on <a href="https://codepen.io">CodePen</a>.</span>
-                            </p>
-                            <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                <div class="w3-panel w3-info intro">
+                    <p>___</p>
+                    <div class="degrad-Vertical">
+                        <div class="w3-code3 sqlHigh notranslate w3-card-2">
+                            ___
                         </div>
                     </div>
                 </div>
-                <p>Comme vous devez le voir au dessus il est possible de modifier l’aspect de la saisie.<br>
-                    Ça n'est pas moins du style mais plus de l’information.</p>
+                <div class="w3-panel2 w3-info intro">
+                    <p>E___</p>
+                    <div class="degrad-Vertical">
+                        <div class="w3-code3 sqlHigh notranslate w3-card-2">
+                            ___
+                        </div>
+                    </div>
+                    <p>MAIS que cela n'est pas recommandé.</p>
+                </div>
 
                 <div id="separ2"></div>
-                <h2>mettre en <span class="txtdegrad1">petit</span> n'est pas<br>mettre en <span
-                        class="txtdegrad1">petit</span> ¯\(°_o)/¯</h2>
-                <p>Ceci</p>
-                <div class="degrad-Vertical">
-                    <div class="w3-code sqlHigh notranslate w3-card-2">
-                        &lt;p&gt;<b>&lt;small&gt;</b>petit texte<b>&lt;/small&gt;</b>&lt;/p&gt;<br>
-                    </div>
-                </div>
-                <p>N'est pas</p>
-                <div class="degrad-Vertical">
-                    <div class="w3-code sqlHigh notranslate w3-card-2">
-                        &lt;p <b>style="font-size: xsmall"</b>&gt;petit texte&lt;/p&gt;
-                    </div>
-                </div>
-                <p>Pourtant devant donner le même résultat.<br>Mais que se passe-t-il si vous voulez changez sa taille
-                    mais pas son intérêt?<br><br>
-                    L'intérêt premier est pour l’accessibilité,<br>par exemple,<br>pour les personne ayant une
-                    adaptation d'affichage de police <br>
-                    ne revoyant qu'une taille unique pour tous les paragraphes décryptés,<br>cela permet de garder les
-                    intérêts portés à certains/nes mots, phrases.<br><br>
-                    Il ce retrouve aussi dans le rendu des moteurs de recherche</p>
+                <h2>Savoir bien <span class="txtdegrad1">rédiger</span></h2>
 
-                <h2>l'<span class="txtdegrad1">importance</span> dans la forme</h2>
-                <p>comme vous pouvez le voir, on peut avoir le même rendu avec des éléments différents,<br><br>mais
-                    encore une fois ceci</p>
+                <p>___
+                </p>
                 <div class="degrad-Vertical">
                     <div class="w3-code sqlHigh notranslate w3-card-2">
-                        &lt;p&gt;<b>&lt;b&gt;</b>gras<b>&lt;/b&gt;</b>&lt;/p&gt;<br>
-                        &lt;p&gt;<b>&lt;i&gt;</b>italique<b>&lt;/i&gt;</b>&lt;/p&gt;<br>
-                        &lt;p&gt;<b>&lt;u&gt;</b>souligné<b>&lt;/u&gt;</b>&lt;/p&gt;<br>
-                        &lt;!--<br>b = Bold<br>
-                        i = Italic<br>
-                        u = Underline<br>--&gt;
+                        ___
                     </div>
                 </div>
-                <p>N'est pas</p>
+                <p>___
+                </p>
                 <div class="degrad-Vertical">
                     <div class="w3-code sqlHigh notranslate w3-card-2">
-                        &lt;p&gt;<b>&lt;strong&gt;</b>gras<b>&lt;/strong&gt;</b>&lt;/p&gt;<br>
-                        &lt;p&gt;<b>&lt;em&gt;</b>italique<b>&lt;/em&gt;</b>&lt;/p&gt;<br>
-                        &lt;p&gt;<b>&lt;ins&gt;</b>souligné<b>&lt;/ins&gt;</b>&lt;/p&gt;<br>
-                        &lt;!--<br>strong = Important<br>
-                        em = Emphasized<br>
-                        ins = Inserted<br>--&gt;
+                        ___
                     </div>
                 </div>
-                <p>Cette fois ci la différence dans la similitude est dans l’interprétation,<br>
-                    dans les deuxième exemple voyez une importance supplémentaire.</p>
+                <p>___
+                </p>
+                <div class="degrad-Vertical">
+                    <div class="w3-code sqlHigh notranslate w3-card-2">
+                        ___
+                    </div>
+                </div>
+
+                <h2>Afficher <span class="txtdegrad1">certains</span> caractères</h2>
+
+                <p>___
+                </p>
+                <div class="degrad-Vertical">
+                    <div class="w3-code sqlHigh notranslate w3-card-2">
+                        ___
+                    </div>
+                </div>
+                <p>___
+                </p>
+                <div class="degrad-Vertical">
+                    <div class="w3-code2 sqlHigh notranslate w3-card-2" style="padding-left: 32px;">
+                        ___
+                    </div>
+                </div>
 
                 <div class="jp-example2 jp-card-exG">
                     <h3>En cours de redaction</h3>
@@ -2237,10 +2181,10 @@
                 </div>
                 <div id="separ1"></div>
                 <div class="w3-clear nextprev">
-                    <a id="btninsta" class=" boutons JP-padding-large testbg"
-                        href="/moi/tutos_v1/html/paragraphes.html"><i class="fas fa-reply"></i> Précédent</a>
-                    <a id="btnneonD" class="w3-right boutons JP-padding-large testbg" href="/moi/tutos_v1/citation.html">suivant
-                        <i class="fas fa-reply reply2"></i></a>
+                    <a id="btninsta" class=" boutons JP-padding-large testbg" href="/moi/tutos_v1/html/formatage.html">
+                        <i class="fas fa-reply"></i> Précédent</a>
+                    <a id="btnneonD" class="w3-right boutons JP-padding-large testbg"
+                        href="/moi/tutos_v1/html/O_o">suivant <i class="fas fa-reply reply2"></i></a>
                 </div>
             </div>
         </div>
@@ -2249,15 +2193,15 @@
                 <!-- Emplacenrt pour redirection-->
                 <span class='psycho-logo'>Psycho <span class='dotcom tcode'>les bons</span>
                     Tutos</aspan><br>
-                    <span class='psycho-logo2  tcode2' style="font-family:'HP','Segoe UI',Arial,sans-serif">DEVELOPPONS
+                    <span class=' psycho-logo2  tcode2' style="font-family:'HP','Segoe UI',Arial,sans-serif">DEVELOPPONS
                         ENSEMBLE</span>
                 </span>
             </a></div>
         <div id="separ3" style='margin-right: 45px;margin-left: 45px;'></div>
-        <div classe='degrad1'>
+        <div classe='degrad3'>
             <div id="footer" class="footer footerdegrad w3-container .w3-padding-32">
                 <div id="separ2"></div>
-                <div class="w3-row-padding w3-center w3-small">
+                <div class="w3-row-padding w3-center w3-small" style="margin:0 -16px">
                     <div class="w3-col l3 m3 s12">
                         <a class="w3-button degrad1 hover-degrad1 w3-block" href="/moi/tutos_v1/index.html"
                             style="white-space:nowrap;text-decoration:none;margin-top:1px;margin-bottom:1px">ACCUEIL</a>
@@ -2406,11 +2350,11 @@
                             style="text-decoration:none">Moi</a><br><br>Merci, Pe@cE.</p>
                     <div class="w3-clear nextprev">
                         <a id="btninsta" class="w3-left boutons JP-padding-large btninstafoot"
-                            href="/moi/tutos_v1/html/paragraphes.html">
+                            href="/moi/tutos_v1/html/formatage.html">
                             <i class="fas fa-reply"></i></a>
                         <i class="fas fa-peace"></i>
                         <a id="btnneonD" class="w3-right boutons JP-padding-large btnneonDfoot"
-                            href="/moi/tutos_v1/citation.html">
+                            href="/moi/tutos_v1/html/O_o">
                             <i class="fas fa-reply reply2"></i></a>
                     </div>
                 </div>
