@@ -21,7 +21,9 @@
     border: 1px solid;
 }
 .btnNeon.onoffTurq,
-.btnNeon.onoffTurq:hover{
+.btnNeon.onoffTurq:hover,
+.btnNeon.onoffViol,
+.btnNeon.onoffViol:hover{
     text-decoration:none;
     margin: 1px 0;
 }
@@ -111,3 +113,12 @@
 }
 
 /******BOUTONS neon******/
+
+.dpblock100 {
+    display: block;
+    width: 100%;
+}
+.dpblockmax {
+    display: block;
+    width: max-content;
+}

@@ -417,10 +417,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
     background: linear-gradient(90deg,#008a7e,#04c4b4,#d400ff);
 }
 #separ3 {
-    margin-top: 11px;
-    margin-bottom: 11px;
-    left: 0;
-    right: 0;
+    margin: 11px 45px;
     content: "";
     height: 3px;
     border-radius: 10px;
