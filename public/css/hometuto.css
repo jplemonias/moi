@@ -759,7 +759,7 @@ td,a:hover {
     -moz-text-decoration: double underline;
 }
 
-
+.fa-file-code,
 .fas.fa-toolbox{
     background: linear-gradient(-45deg, #04c4b4, #d400ff);
     -webkit-background-clip: text;
