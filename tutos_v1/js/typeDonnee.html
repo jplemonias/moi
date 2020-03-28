@@ -2293,88 +2293,78 @@
                 </div>
 
                 <div id="separ2"></div>
-                <h2><span  class="txtdegrad1">___</span></h2>
+                <h2>les <span  class="txtdegrad1">chaînes</span></h2>
                 <p>___</p>
                     <div class="degrad-Vertical">
                         <div class="w3-code sqlHigh notranslate w3-card-2">
-                            ___
+                            var a;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// a est indéfinit<br>
+                            x = 1986;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// maintenant a est un nombre<br>
+                            x = "Penguin Adventure";&nbsp;// et enfin une chaîne
                         </div>
                     </div>
-                    <div class="degrad-Vertical">
-                        <div class="w3-code sqlHigh notranslate w3-card-2">
-                            ___
-                        </div>
-                    </div>
-                    <h2><span  class="txtdegrad1">___</span></h2>
                     <p>___</p>
-                <div class="degrad-Vertical">
-                    <div class="w3-code sqlHigh notranslate w3-card-2">
-                        ___
+                    <div class="degrad-Vertical">
+                        <div class="w3-code sqlHigh notranslate w3-card-2">
+                            var pnom = 'Hideo ';&nbsp;&nbsp;// apostrophe<br>
+                            var nom = "Kojima";&nbsp;&nbsp;&nbsp;// guillemets
+                        </div>
                     </div>
-                </div>
-                <h2><span  class="txtdegrad1">___</span></h2>
-                <p>___</p>
-                <div class="degrad-Vertical">
-                    <div class="w3-code sqlHigh notranslate w3-card-2">
-                        ___
+                    <p>___</p>
+                    <div class="degrad-Vertical">
+                        <div class="w3-code sqlHigh notranslate w3-card-2">
+                            var apo = "s'il y a une apostrophe";<br>
+                            var gui = 'Ou des "guillemets"';
+                        </div>
                     </div>
-                </div>
-                <div class="degrad-Vertical">
-                    <div class="w3-code sqlHigh notranslate w3-card-2">
-                        ___
+                    <h2>les <span  class="txtdegrad1">nombres</span></h2>
+                    <p>___</p>
+                    <div class="degrad-Vertical">
+                        <div class="w3-code sqlHigh notranslate w3-card-2">
+                            var a1 = 1.62; // décimal<br>
+                            var a2 = 162;&nbsp;&nbsp;// entier
+                        </div>
                     </div>
-                </div>
-                <h2><span  class="txtdegrad1">___</span></h2>
-                <p>___</p>
-                <div class="degrad-Vertical">
-                    <div class="w3-code sqlHigh notranslate w3-card-2">
-                        ___
+                    <p>___</p>
+                    <div class="degrad-Vertical">
+                        <div class="w3-code sqlHigh notranslate w3-card-2">
+                            var a1 = "162e5";&nbsp;&nbsp;&nbsp;// 16800000<br>
+                            var a2 = "162e-6";&nbsp;&nbsp;// 0.000161
+                        </div>
                     </div>
-                </div>
-                <p>
-                    ___
-                </p>
-                <div class="degrad-Vertical">
-                    <div class="w3-code sqlHigh notranslate w3-card-2">
-                        ___
+                    <h2>Les <span  class="txtdegrad1">booléens</span></h2>
+                    <p>___</p>
+                    <div class="degrad-Vertical">
+                        <div class="w3-code sqlHigh notranslate w3-card-2">
+                            var a = 5<br>
+                            var b = 5<br>
+                            var c = 2<br>
+                            ( a == c ) // retourne false<br>
+                            ( a == b ) // retourne true
+                        </div>
                     </div>
-                </div>
-                
-                <div class="degrad-Vertical">
-                    <div class="w3-code sqlHigh notranslate w3-card-2">
-                        ___
+                    <p>___</p>
+                    <h2>les <span  class="txtdegrad1">tableaux</span></h2>
+                    <div class="degrad-Vertical">
+                        <div class="w3-code sqlHigh notranslate w3-card-2">
+                            var lang = ["HTML", "CSS", "PHP"];
+                        </div>
                     </div>
-                </div>
+                    <h2>les <span  class="txtdegrad1">objets</span></h2>
                 <div class="degrad-Vertical">
                     <div class="w3-code sqlHigh notranslate w3-card-2">
-                        ___
-                    </div>
-                </div>
-                <div class="degrad-Vertical">
-                    <div class="w3-code sqlHigh notranslate w3-card-2">
-                        ___
-                    </div>
-                </div>
-                <div class="degrad-Vertical">
-                    <div class="w3-code sqlHigh notranslate w3-card-2">
-                        ___
-                    </div>
-                </div>
-                <h2><span  class="txtdegrad1">___</span></h2>
-                <p>___</p>
-                <div class="degrad-Vertical">
-                    <div class="w3-code sqlHigh notranslate w3-card-2">
-                        ___
+                        var jeu1 = {<br>
+                          Concept: "Hideo KOJIMA",<br>
+                          Editeur: "Konami",<br>
+                          annee: 1968,<br>
+                          jeu: "Penguin Adventure"<br>
+                        };
                     </div>
                 </div>
                 <div class="degrad-Vertical">
                     <div class="w3-code sqlHigh notranslate w3-card-2">
-                        ___
-                    </div>
-                </div>
-                <div class="degrad-Vertical">
-                    <div class="w3-code sqlHigh notranslate w3-card-2">
-                        ___
+                        document.getElementById("demo").innerHTML =<br>
+                        jeu1.Concept+" en "+jeu1.annee+" créé "+jeu1.jeu+<br>
+                        "&lt;br&gt;pour"+jeu1.Editeur+".";
                     </div>
                 </div>
                     
