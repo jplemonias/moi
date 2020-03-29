@@ -563,6 +563,12 @@
             }
         }
 
+        @media (min-width: 993px) {
+            .w3-panel.w3-info.intro p{
+                margin-left: 16px;
+            }
+        }
+
         @media (max-width:992px) {
             .top {
                 height: 100px
@@ -1926,6 +1932,11 @@
             });
         })(jQuery);
     </script>
+        <script>
+        var apo = "S'il y a une apostrophe";
+        var gui = 'ou des "guillemets"';
+        document.getElementById("exapoqui2").innerHTML = apo + " à inclure "+ gui+" dans la valeur.";
+        </script>
 </head>
 
 <body>
@@ -2286,18 +2297,24 @@
                         suivant <i class="fas fa-reply reply2"></i></a>
                 </div>
                 <div class="w3-panel w3-info intro">
-                    <p>___</p>>
-                </div>
-                <div class="w3-panel2 w3-info intro">
-                    <p>___</p>
+                    <p>Les types de données sont:<br>
+                        indéfinies<br>
+                        des chaînes<br>
+                        des nombres<br>
+                        et des booléens
+                    </p>
                 </div>
 
                 <div id="separ2"></div>
                 <h2>les <span  class="txtdegrad1">chaînes</span></h2>
                 <p>___</p>
+                <div class="degrad-Vertical">
+                    <div class="w3-code sqlHigh notranslate w3-card-2">
+                        var a;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// a est indéfinit
+                    </div>
+                </div>
                     <div class="degrad-Vertical">
                         <div class="w3-code sqlHigh notranslate w3-card-2">
-                            var a;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// a est indéfinit<br>
                             x = 1986;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// maintenant a est un nombre<br>
                             x = "Penguin Adventure";&nbsp;// et enfin une chaîne
                         </div>
@@ -2309,13 +2326,24 @@
                             var nom = "Kojima";&nbsp;&nbsp;&nbsp;// guillemets
                         </div>
                     </div>
-                    <p>___</p>
+                    <p id="exapoqui1"></p>
+                    <script>
+                        var pnom = "Hideo ";
+                        var nom = 'Kojima';
+                        document.getElementById("exapoqui1").innerHTML=pnom+nom;
+                    </script>
                     <div class="degrad-Vertical">
                         <div class="w3-code sqlHigh notranslate w3-card-2">
-                            var apo = "s'il y a une apostrophe";<br>
-                            var gui = 'Ou des "guillemets"';
+                            var apo = "S'il y a une apostrophe";<br>
+                            var gui = 'ou des "guillemets"';
                         </div>
                     </div>
+                    <p id="exapoqui2"></p>
+                    <script>
+                        var apo = "S'il y a une apostrophe";
+                        var gui = 'ou des "guillemets"';
+                        document.getElementById("exapoqui2").innerHTML=apo+" à inclure "+gui+" dans la valeur.";
+                    </script>
                     <h2>les <span  class="txtdegrad1">nombres</span></h2>
                     <p>___</p>
                     <div class="degrad-Vertical">
@@ -2327,8 +2355,8 @@
                     <p>___</p>
                     <div class="degrad-Vertical">
                         <div class="w3-code sqlHigh notranslate w3-card-2">
-                            var a1 = "162e5";&nbsp;&nbsp;&nbsp;// 16800000<br>
-                            var a2 = "162e-6";&nbsp;&nbsp;// 0.000161
+                            var a3 = "162e5";&nbsp;&nbsp;&nbsp;// 16800000<br>
+                            var a4 = "162e-6";&nbsp;&nbsp;// 0.000161
                         </div>
                     </div>
                     <h2>Les <span  class="txtdegrad1">booléens</span></h2>
@@ -2344,30 +2372,99 @@
                     </div>
                     <p>___</p>
                     <h2>les <span  class="txtdegrad1">tableaux</span></h2>
+                    <p>___</p>
                     <div class="degrad-Vertical">
                         <div class="w3-code sqlHigh notranslate w3-card-2">
                             var lang = ["HTML", "CSS", "PHP"];
                         </div>
                     </div>
+                    <p>___</p>
+                    <div class="degrad-Vertical">
+                        <div class="w3-code sqlHigh notranslate w3-card-2">
+                            .innerHTML = lang[1];
+                        </div>
+                    </div>
+                    <p id="css"></p>
+                    <script>
+                        var lang = ["HTML", "CSS", "PHP"];
+                        document.getElementById("css").innerHTML = lang[1];
+                    </script>
                     <h2>les <span  class="txtdegrad1">objets</span></h2>
+                    <p>___</p>
                 <div class="degrad-Vertical">
                     <div class="w3-code sqlHigh notranslate w3-card-2">
                         var jeu1 = {<br>
-                          Concept: "Hideo KOJIMA",<br>
+                          Concept: pnom+nom,<br>
                           Editeur: "Konami",<br>
-                          annee: 1968,<br>
+                          annee: 1986,<br>
                           jeu: "Penguin Adventure"<br>
                         };
                     </div>
                 </div>
                 <div class="degrad-Vertical">
                     <div class="w3-code sqlHigh notranslate w3-card-2">
-                        document.getElementById("demo").innerHTML =<br>
+                        document.getElementById("ex").innerHTML =<br>
                         jeu1.Concept+" en "+jeu1.annee+" créé "+jeu1.jeu+<br>
-                        "&lt;br&gt;pour"+jeu1.Editeur+".";
+                        "&lt;br&gt;pour "+jeu1.Editeur+".";
                     </div>
                 </div>
-                    
+                <p id="premierJeu"></p>
+                <script>
+                    var pnom = "Hideo ";
+                    var nom = 'Kojima';
+                    var jeu1 = {
+                      Concept: pnom+nom,
+                      Editeur: "Konami",
+                      annee: 1986,
+                      jeu: "Penguin Adventure"
+                    };
+                    document.getElementById("premierJeu").innerHTML =
+                    jeu1.Concept+" en "+jeu1.annee+" créé "+jeu1.jeu+
+                    "<br>pour "+jeu1.Editeur+".";
+                </script>
+                <h2>les données <span class="txtdegrad1">indéfinies </span><span  class="txtdegrad1">vides </span><span  class="txtdegrad1">nules</span></h2>
+                <p>___</p>
+                <div class="degrad-Vertical">
+                    <div class="w3-code sqlHigh notranslate w3-card-2">
+                        var jeu;
+                    </div>
+                </div>
+                <p>___</p>
+                <div class="degrad-Vertical">
+                    <div class="w3-code sqlHigh notranslate w3-card-2">
+                        jeu = undefined;
+                    </div>
+                </div>
+                <p>___</p>
+                <div class="degrad-Vertical">
+                    <div class="w3-code sqlHigh notranslate w3-card-2">
+                        var jeu = "";
+                    </div>
+                </div>
+                <p>___</p>
+                <div class="degrad-Vertical">
+                    <div class="w3-code sqlHigh notranslate w3-card-2">
+                        var jeu = null;
+                    </div>
+                </div>
+                <h2>les données <span class="txtdegrad1">primitives </span>|<span  class="txtdegrad2"> complexes</span></h2>
+                <p>___</p>
+                <div class="degrad-Vertical">
+                    <div class="w3-code sqlHigh notranslate w3-card-2">
+                        typeof "HTML"&nbsp;// Renvoi "string"<br>
+                        typeof 1.62&nbsp;&nbsp;&nbsp;// Renvoi "number"<br>
+                        typeof true&nbsp;&nbsp;&nbsp;// Renvoi "boolean"<br>
+                        typeof a&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/* Renvoi "undefined"<br>
+                        ( si a n'as pas de valeur )*/
+                    </div>
+                </div>
+                <p>___</p>
+                <div class="degrad-Vertical">
+                    <div class="w3-code sqlHigh notranslate w3-card-2">
+                        typeof {lang:'HTML', ordre:1}&nbsp;// Renvoi "object"<br>
+                        typeof function maFonct(){}&nbsp;// Renvoi "function"
+                    </div>
+                </div>
                 <div class="jp-example jp-card-ex">
                     <h3>___</h3>
                     <p>___</p>
