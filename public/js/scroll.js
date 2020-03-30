@@ -1,6 +1,6 @@
 "use strict";
 
-(function() {
+(function () {
 
   // Build new scrollbar DOM elements
   const buildScrollableElement = function (elt, nativeScrollbarOffset) {
@@ -12,7 +12,7 @@
     `;
     let containerDOM = document.createElement("div");
     containerDOM.className = 'Scrollable';
-    
+
     containerDOM.style.width = elt.offsetWidth + 'px';
     containerDOM.style.height = elt.style.height;
     containerDOM.innerHTML = markup;
@@ -33,7 +33,7 @@
     let scrollbarDOM = containerDOM.firstElementChild;
     let scrollbarFillDOM = scrollbarDOM.nextElementSibling;
     let scrollableDOM = containerDOM.lastElementChild;
-    
+
     // 2. Define the sizes
     let boxSize = scrollbarDOM.clientHeight;
     let scrollSize = scrollableDOM.scrollHeight;
@@ -58,18 +58,18 @@
     scrollableDOM.addEventListener("scroll", setScroll);
 
     // 5. Modify the width or the position of scrollbars if the current browser is FF
-    if(isFirefox()) {
-      if(nativeScrollbarOffset) {
+    if (isFirefox()) {
+      if (nativeScrollbarOffset) {
         scrollableDOM.style.width =
           "calc(100% + " + nativeScrollbarOffset + "px)";
-        }
-        else {
-          scrollableDOM.style.paddingRight = nativeScrollbarOffset;
-        }
+      }
+      else {
+        scrollableDOM.style.paddingRight = nativeScrollbarOffset;
+      }
     }
-    
+
     // 6. Add event to scrollbarDOM to handle user's clicks
-    const onScrollbarClick = function($event) {
+    const onScrollbarClick = function ($event) {
       scrollableDOM.scrollTop = scrollSize * ($event.offsetY / boxSize);
     };
     // 7. Handle scrollbar fill mousedown event
@@ -94,16 +94,16 @@
       window.removeEventListener("mousemove", onScrollbarFillMousemove);
       window.removeEventListener("mouseup", onScrollbarFillMouseup);
     };
-    scrollbarFillDOM.addEventListener("mousedown",onScrollbarFillMousedown, false);
-    
+    scrollbarFillDOM.addEventListener("mousedown", onScrollbarFillMousedown, false);
+
     scrollbarDOM.addEventListener("mousedown", onScrollbarClick, false);
   };
 
-  const isFirefox = function() {
+  const isFirefox = function () {
     return typeof InstallTrigger !== 'undefined';
   };
 
-  const scrollbarPresenceDetection = function() {
+  const scrollbarPresenceDetection = function () {
     // Scrollbar presence detection
     let noScrollElement = window.document.createElement("div");
     noScrollElement.style.width = "100px";
@@ -124,11 +124,11 @@
     return nativeScrollbarOffset;
   }
 
-  setTimeout(function() {
+  setTimeout(function () {
     let elements = Array.from(document.getElementsByClassName('scrollable'));
     let nativeScrollbarOffset;
     if (elements.length) nativeScrollbarOffset = scrollbarPresenceDetection();
-    elements.map(function(elt) {
+    elements.map(function (elt) {
       buildScrollableElement(elt, nativeScrollbarOffset);
     });
   });
