@@ -132,8 +132,8 @@
 /* Bouton Animé */
 #btnAnim {
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     right: 15px;
     background: transparent;
     position: absolute;
@@ -144,13 +144,13 @@
 
 #btnAnim .outer {
 animation: animZindexLogo 3520ms linear infinite;
-     height: 37.5%;
+    height: 38.5%;
+    width: 38.5%;
     left: 50%;
+    top: 50%;
+    position: absolute;
     margin-inline-start: -18.75%;
     margin-top: -18.75%;
-    position: absolute;
-    top: 50%;
-    width: 37.5%;
 }
 
 .outer {
