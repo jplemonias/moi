@@ -1439,78 +1439,19 @@
                 document.getElementById("navbtn_" + x).getElementsByTagName("i")[1].style.display = "none";
             }
         }
-        function changecodetheme() {
-            var cc = document.body.className;
-            if (cc.indexOf("darktheme") > -1) {
-                document.body.className = cc.replace("darktheme", "");
-                localStorage.setItem("preferredmode", "light");
-            } else {
-                document.body.className += " darktheme";
-                localStorage.setItem("preferredmode", "dark");
-            }
-        }
-        function open_translate(elmnt) {
-            var a = document.getElementById("google_translate_element");
-            if (a.style.display == "") {
-                a.style.display = "none";
-                elmnt.innerHTML = "<i class='fa'>&#xe801;</i>";
-            } else {
-                a.style.display = "";
-                if (window.innerWidth > 830) {
-                    a.style.width = "20%";
-                } else {
-                    a.style.width = "60%";
-                }
-                elmnt.innerHTML = "<span style='font-family:verdana;font-weight:bold;display:inline-block;width:21px;text-align:center;'>X</span>";
-            }
-        }
-        function open_search(elmnt) {
-            var a = document.getElementById("googleSearch");
-            document.getElementById("navbtn_HTML").style.visibility = "visible";
-            if (a.style.display == "") {
-                a.style.display = "none";
-                elmnt.innerHTML = "<i class='fa'>&#xe802;</i>";
-            } else {
-                a.style.display = "";
-                if (window.innerWidth > 1000) {
-                    a.style.width = "40%";
-                } else if (window.innerWidth > 768) {
-                    document.getElementById("navbtn_HTML").style.visibility = "hidden";
-                    a.style.width = "80%";
-                } else {
-                    a.style.width = "80%";
-                }
-                if (document.getElementById("gsc-i-id1")) { document.getElementById("gsc-i-id1").focus(); }
-                elmnt.innerHTML = "<span style='font-family:verdana;font-weight:bold;display:inline-block;width:23px;text-align:center;'>X</span>";
-            }
-        }
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-                pageLanguage: 'en',
-                autoDisplay: false,
-                gaTrack: true,
-                gaId: 'UA-3855518-1',
-                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-            }, 'google_translate_element');
-        }
-        function clickFBLike() {
-            document.getElementById("fblikeframe").style.display = 'block';
-            document.getElementById("popupDIV").innerHTML = "<iframe src='/fblike.asp?r=" + Math.random() + "' frameborder='no' style='height:200px;width:250px;'></iframe><br><button onclick='hideFBLike()' class='w3-button w3-dark-grey w3-hover-black'>Close</button>";
-        }
-        function hideFBLike() {
-            document.getElementById("fblikeframe").style.display = 'none';
-        }
-        if (window.addEventListener) {
-            document.getElementById("main").addEventListener("click", w3_close_all_nav, true);
-            document.getElementById("mySidenav").addEventListener("click", w3_close_all_nav, true);
-            document.getElementById("main").addEventListener("wheel", w3_close_all_nav, true);
-            document.getElementById("main").addEventListener("touchstart", w3_close_all_nav, true);
-        } else if (window.attachEvent) {
-            document.getElementById("main").attachEvent("onclick", w3_close_all_nav);
-            document.getElementById("mySidenav").attachEvent("onclick", w3_close_all_nav);
-        }
-
+        //com function changecodetheme() {
+        //com     var cc = document.body.className;
+        //com     if (cc.indexOf("darktheme") > -1) {
+        //com         document.body.className = cc.replace("darktheme", "");
+        //com         localStorage.setItem("preferredmode", "light");
+        //com     } else {
+        //com         document.body.className += " darktheme";
+        //com         localStorage.setItem("preferredmode", "dark");
+        //com    }
+        //com }
+        
     </script>
+    <!--
     <script src="/lib/w3codecolor.js"></script>
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script>
@@ -1523,6 +1464,7 @@
                 }
             })();
     </script>
+    -->
 </body>
 <div id="barre-1" style="z-index: 4;">
     <div class="progression" style="width: 0%;"></div>
