@@ -967,3 +967,27 @@ i.fas.fa-peace.D {
         width:100%;
     }
 }
+
+
+/****************************************************/
+
+.white {color: white;}
+.lightskyblue {color: lightskyblue;}
+.blue{color: blue;}
+.gold{color: gold;}
+.orange {color: orange;}
+.darkorange {color: darkorange;}
+.green{color: green;}
+.darkseagreen{color: darkseagreen;}
+.chartreuse{color: chartreuse;}
+
+.pop {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.pop_scroll {
+    opacity: 1;
+    transform: translateY(0);
+    transition: .3s;
+}
