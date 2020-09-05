@@ -162,8 +162,7 @@
                     page statique viable, du
                     javaScript pour le parallaxe par exemple et un peut de php pour l'envoie du mesage.<br>Pour le
                     responsive ce sera <a href="grenoble.html" target="_blank" class="JP-hover-text-turquoise"
-                        style="text-decoration: none;"><span>
-                            << /span>ici<span>></span></a>.
+                        style="text-decoration: none;"><span>&lt;</span>ici<span>></span></a>.
                 </p>
                 <p>Attention préparez vos mirettes, car j'espère bien vous éblouir <span
                         style='font-size:20px;'>&#128527;</span>.</p>
@@ -308,244 +307,143 @@
 
                 </div>
                 <p><i style="float: right;"
-                        class="fab fa-html5 fa-fw JP-hover-text-black JP-xxxlarge JP-margin-right"></i><span id="tcode">
-                        L'html</span>
+                    class="fab fa-html5 fa-fw JP-hover-text-black JP-xxxlarge JP-margin-right"></i><span id="tcode">
+                    L'html</span>
                 <div id="separ1" class="JP-col m8"></div>
                 Pourquoi ces quatre langages ? Voyons ça un peu comme une rédaction interactive.
-                Avant de la rédiger en forme vous allez faire un brouillon. Imaginez que celui-ci soit l'html, nous
+                Avant de la rédiger en forme vous allez faire un brouillon. Imaginez que celui-ci soit l'html, nous
                 allons y écrire tout le contenu de la rédac.
                 Les titres, sous_titres, paragraphes, photos etc... Chaque élément y est reconnu par des balises
                 pour être ensuite interprété sous le bon état.
                 Une image est déclarée comme ceci :<br>
-                <span class="white">
-                    << /span><span class="lightskyblue">img</span><span class="white">></span><br>Il faut aussi
-                        référencer la route pour récupérer l'image et ensuite
-                        pouvoir l'afficher en incluant src="Le/Chemin/DeLimage.jpg" dans la balise.<br>Ce qui donne
-                        :<br>
-                        <span class="white">
-                            << /span><span class="lightskyblue">img</span><span class="orange"> src</span><span
-                                    class="lightskyblue">=</span>
-                                <span class="darkseagreen">"Le/Chemin/DeLimage.jpg"</span><span
-                                    class="white">></span><br>
-                                </p>
-                                <p><i style="float: right;"
-                                        class="fab fa-css3-alt fa-fw JP-hover-text-black JP-xxxlarge JP-margin-right"></i><span
-                                        id="tcode">
-                                        Le css</span>
-                                <div id="separ1" class="JP-col m8"></div>
-                                Une fois la rédaction écrite, on l'a dit c'est un brouillon donc, cela ne ressemble pas
-                                à grand
-                                chose. Il faut le mettre en forme... Dans l'exemple de la balise
-                                de l'image il faut donc l'informer de l'état d'affichage que nous souhaitons, en lui
-                                indiquant sa
-                                hauteur et sa largeur en pixel par un id.<br>
-                                Dans l'html<br><span class="white">
-                                    << /span><span class="lightskyblue">img</span>
-                                        <span class="orange">src</span><span class="lightskyblue">=</span><span
-                                            class="darkseagreen">" "</span><span class="orange"> id</span><span
-                                            class="lightskyblue">=</span><span
-                                            class="darkseagreen">''exTaille''</span><span class="white">></span><br>
-                                        Et dans le css<br><span class="darkorange">.exTaille</span> <span
-                                            class="lightskyblue">{</span><span class="darkseagreen">
-                                            width:</span><span class="green"> 100</span><span
-                                            class="blue">px</span><span class="lightskyblue">;</span><span
-                                            class="darkseagreen"> height:</span><span class="green"> 300</span><span
-                                            class="blue">px</span><span class="lightskyblue"> }</span> 
-                                </span><br>Nous pouvons rendre la page plus dynamique comme par exemple avec :hover qui
-                                se
-                                déclencherait au survol du pointeur<br>
-                                <span class="darkorange">.exTaille:hover</span> <span class="lightskyblue">{</span><span
-                                    class="darkseagreen"> opacity:</span><span class="green"> 0.5</span><span
-                                    class="lightskyblue"> }</span>
-                                <br>ici lorsque nous passons la souris sur l'image elle deviendra opaque à moitié,
-                                l'opacité étant
-                                comprise entre 0 et 1.
-                                </p>
-                                <p><i style="float: right;"
-                                        class="fab fa-js-square fa-fw JP-hover-text-black JP-xxxlarge JP-margin-right"></i><span
-                                        id="tcode"> Le JavaScript</span>
-                                <div id="separ1"></div>
-                                Le JavaScript va permettre de rendre encore plus dynamique votre ''rédaction
-                                interactive'' en
-                                appelant des fonctions qui peuvent réaliser bien plus qu'un simple :hover.
-                                Par exemple sur cette page un des codes JavaScript consiste à informer l'utilisateur que
-                                le
-                                formulaire d'envoi de message est conforme ou non, bloquant l'envoi de celui-ci
-                                jusqu'à ce que le formulaire soit entièrement validé. La fonction ci-dessous affiche le
-                                message
-                                "Formulaire incomplet" dans l'élément  ayant l'id MesInfo si les valeurs renvoyées
-                                sont fausses. Pour ce faire, dans la balise du bouton validant, il faut rajouter <span
-                                    class="darkorange">onclick</span><span class="white">=</span><span
-                                    class="darkseagreen">"<span class="lightskyblue">envoyer</span>()"</span>, qui
-                                permettra d'appeler la fonction lui étant liée.<br>Le code nous intéressant est :<br>
-                                <span style="text-align: initial;"><span class="white"><span class="blue">function
-                                        </span><span class="lightskyblue">envoyer</span>() {<br>
-                                        <span class="blue">if</span> (LeNom <span class="blue">==</span><span
-                                            class="green"> true</span> <span class="blue">&&</span> LeMail <span
-                                            class="blue">==</span><span class="green"> true</span> <span
-                                            class="blue">&&</span> LeMessage <span class="blue">==</span> <span
-                                            class="green">true</span>) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.<span
-                                            class="lightskyblue">getElementById</span> (<span
-                                            class="darkseagreen">'form_msg'</span>).<span
-                                            class="lightskyblue">submit</span>();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
-                                        <span class="blue">else</span> {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.<span
-                                            class="lightskyblue">getElementById</span> (<span
-                                            class="darkseagreen">'MesgInfo'</span>)<span class="chartreuse">.innerText
-                                        </span><span class="blue">=</span> <span class="darkseagreen">"Formulaire
-                                            incomplet"</span>;<br>
-                                        }</span>
-                                </span>
-                                </p>
-                                <p><i style="float: right;"
-                                        class="fab fa-php fa-fw JP-hover-text-black JP-xxxlarge JP-margin-right"></i>
-                                    <span id="tcode">Le php</span>
-                                <div id="separ1"></div>
-                                Jusqu'ici nous n’agissons que sur la partie client c'est à dire, plus simplement, que
-                                tes
-                                informations traitées le sont que sur la machine de l'utilisateur.
-                                Vous l'aurez peut être compris le php permet donc d'envoyer ou de recevoir des
-                                informations depuis,
-                                vers d'autres machines. Le php est utilisé ici pour pouvoir
-                                envoyer un message sur une adresse mail depuis un formulaire.<br>
-                                <span id="codePHP">
-                                    <span class="lightskyblue"><span>
-                                            << /span>?php <br>
+                <span class="white">&lt;</span><span class="lightskyblue">img</span><span 
+                class="white">></span><br>Il faut aussi référencer la route pour récupérer l'image et ensuite
+                pouvoir l'afficher en incluant src="Le/Chemin/DeLimage.jpg" dans la balise.<br>Ce qui donne :<br>
+                <span class="white">&lt;</span><span class="lightskyblue">img</span><span
+                class="orange"> src</span><span class="lightskyblue">=</span>
+                <span class="darkseagreen">"Le/Chemin/DeLimage.jpg"</span><spanclass="white">></span><br>
+            </p>
+            <p><i style="float: right;"
+                    class="fab fa-css3-alt fa-fw JP-hover-text-black JP-xxxlarge JP-margin-right"></i><span id="tcode">
+                    Le css</span>
+                <div id="separ1" class="JP-col m8"></div>
+                Une fois la rédaction écrite, on l'a dit c'est un brouillon donc, cela ne ressemble pas à grand
+                chose. Il faut le mettre en forme... Dans l'exemple de la balise
+                de l'image il faut donc l'informer de l'état d'affichage que nous souhaitons, en lui indiquant sa
+                hauteur et sa largeur en pixel par un id.<br>
+                Dans l'html<br><span class="white">&lt;</span><span class="lightskyblue">img</span>
+                <span class="orange">src</span><span class="lightskyblue">=</span><span
+                class="darkseagreen">" "</span><span class="orange"> id</span><span
+                class="lightskyblue">=</span><span
+                class="darkseagreen">''exTaille''</span><span class="white">></span><br>
+                Et dans le css<br><span class="darkorange">.exTaille</span> <span
+                class="lightskyblue">{</span><span class="darkseagreen">
+                width:</span><span class="green"> 100</span><span
+                class="blue">px</span><span class="lightskyblue">;</span><span
+                class="darkseagreen"> height:</span><span class="green"> 300</span><span
+                class="blue">px</span><span class="lightskyblue"> }</span> 
+                </span><br>Nous pouvons rendre la page plus dynamique comme par exemple avec :hover qui se
+                déclencherait au survol du pointeur<br>
+                <span class="darkorange">.exTaille:hover</span> <span
+                class="lightskyblue">{</span><span class="darkseagreen"> opacity:</span><span
+                class="green"> 0.5</span><span class="lightskyblue"> }</span>
+                <br>ici lorsque nous passons la souris sur l'image elle deviendra opaque à moitié, l'opacité étant
+                comprise entre 0 et 1.
+            </p>
+            <p><i style="float: right;"
+                    class="fab fa-js-square fa-fw JP-hover-text-black JP-xxxlarge JP-margin-right"></i><span
+                    id="tcode"> Le JavaScript</span>
+                <div id="separ1"></div>
+                Le JavaScript va permettre de rendre encore plus dynamique votre ''rédaction interactive'' en
+                appelant des fonctions qui peuvent réaliser bien plus qu'un simple :hover.
+                Par exemple sur cette page un des codes JavaScript consiste à informer l'utilisateur que le
+                formulaire d'envoi de message est conforme ou non, bloquant l'envoi de celui-ci
+                jusqu'à ce que le formulaire soit entièrement validé. La fonction ci-dessous affiche le message
+                "Formulaire incomplet" dans l'élément  ayant l'id MesInfo si les valeurs renvoyées
+                sont fausses. Pour ce faire, dans la balise du bouton validant, il faut rajouter <span
+                class="darkorange">onclick</span><span class="white">=</span><span
+                class="darkseagreen">"<span class="lightskyblue">envoyer</span>()"</span>, qui
+                permettra d'appeler la fonction lui étant liée.<br>Le code nous intéressant est :<br>
+                <span style="text-align: initial;"><span class="white"><span class="blue">function
+                </span><span class="lightskyblue">envoyer</span>() {<br>
+                <span class="blue">if</span> (LeNom <span class="blue">==</span><span
+                class="green"> true</span> <span class="blue">&&</span> LeMail <span
+                class="blue">==</span><span class="green"> true</span> <span
+                class="blue">&&</span> LeMessage <span class="blue">==</span> <span
+                class="green">true</span>) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.<span
+                class="lightskyblue">getElementById</span> (<span
+                class="darkseagreen">'form_msg'</span>).<span
+                class="lightskyblue">submit</span>();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                <span class="blue">else</span> {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.<span
+                class="lightskyblue">getElementById</span> (<span
+                class="darkseagreen">'MesgInfo'</span>)<span
+                class="chartreuse">.innerText </span><span class="blue">=</span> <span
+                class="darkseagreen">"Formulaire incomplet"</span>;<br>}</span>
+                </span>
+            </p>
+            <p><i style="float: right;" class="fab fa-php fa-fw JP-hover-text-black JP-xxxlarge JP-margin-right"></i>
+                <span id="tcode">Le php</span>
+                <div id="separ1"></div>
+                Jusqu'ici nous n’agissons que sur la partie client c'est à dire, plus simplement, que tes
+                informations traitées le sont que sur la machine de l'utilisateur.
+                Vous l'aurez peut être compris le php permet donc d'envoyer ou de recevoir des informations depuis,
+                vers d'autres machines. Le php est utilisé ici pour pouvoir
+                envoyer un message sur une adresse mail depuis un formulaire.<br>
+                <span id="codePHP">
+                    <span class="lightskyblue"><span>&lt;</span>?php <br>
 
-                                                $Expediteur <span class="blue">=</span> $_POST[<span
-                                                    class="darkseagreen">'Name'</span>];
-                                                <span id="txtgrisnoir">//==> on récupérer le nom<br></span>
-                                                $email <span class="blue">=</span> $_POST[<span
-                                                    class="darkseagreen">'Email'</span>];
-                                                <span id="txtgrisnoir">//======> on récupérer l'email<br></span>
-                                                $message <span class="blue">=</span> $_POST[<span
-                                                    class="darkseagreen">'Message'</span>];
-                                                <span id="txtgrisnoir">//==> on récupérer le message<br><br></span>
+                    $Expediteur <span class="blue">=</span> $_POST[<span class="darkseagreen">'Name'</span>];
+                    <span id="txtgrisnoir">//==> on récupérer le nom<br></span>
+                    $email <span class="blue">=</span> $_POST[<span class="darkseagreen">'Email'</span>];
+                    <span id="txtgrisnoir">//======> on récupérer l'email<br></span>
+                    $message <span class="blue">=</span> $_POST[<span class="darkseagreen">'Message'</span>];
+                    <span id="txtgrisnoir">//==> on récupérer le message<br><br></span>
 
-                                                <span id="txtgrisnoir">// on édite le message que contiendras
-                                                    l'email</span><br>
-                                                $msg <span class="blue">=</span><span class="darkseagreen"> "Vous avez
-                                                    reçu un message de:
-                                                    <span class="blue">\t</span><span
-                                                        class="lightskyblue">$Expediteur</span>.<span
-                                                        class="blue">\n</span>"</span>;<br>
-                                                $msg <span class="blue">.=</span><span class="darkseagreen">
-                                                    "Le voici:<span class="blue">\n</span>"</span>;<br>
-                                                $msg <span class="blue">.=</span><span class="darkseagreen">
-                                                    "<span class="blue">\"</span><span
-                                                        class="lightskyblue">$message</span><span
-                                                        class="blue">\"</span>.<span class="blue">\n</span>"</span>;<br>
-                                                $msg <span class="blue">.=</span> <span class="darkseagreen">
-                                                    "Pour lui répondre:<span class="blue">\n</span>"</span>;<br>
-                                                $msg <span class="blue">.=</span> <span class="darkseagreen">"<span
-                                                        class="lightskyblue">$email</span><span
-                                                        class="blue">\n\n</span>"</span>;<br><br>
+                    <span id="txtgrisnoir">// on édite le message que contiendras l'email</span><br>
+                    $msg <span class="blue">=</span><span class="darkseagreen"> "Vous avez reçu un message de:
+                    <span class="blue">\t</span><span class="lightskyblue">$Expediteur</span>.<span 
+                    class="blue">\n</span>"</span>;<br>
+                    $msg <span class="blue">.=</span><span class="darkseagreen"> 
+                    "Le voici:<span class="blue">\n</span>"</span>;<br>
+                    $msg <span class="blue">.=</span><span class="darkseagreen">
+                    "<span class="blue">\"</span><span class="lightskyblue">$message</span><span 
+                    class="blue">\"</span>.<span class="blue">\n</span>"</span>;<br>
+                    $msg <span class="blue">.=</span> <span class="darkseagreen">
+                    "Pour lui répondre:<span class="blue">\n</span>"</span>;<br>
+                    $msg <span class="blue">.=</span> <span class="darkseagreen">"<span
+                    class="lightskyblue">$email</span><span class="blue">\n\n</span>"</span>;<br><br>
 
-                                                $destinataire <span class="blue">=</span><span class="darkseagreen">
-                                                    "TonMail@xxx.xxx"</span>;
-                                                <span id="txtgrisnoir">//==> on cré l'email de réception<br></span>
-                                                $sujet <span class="blue">=</span><span class="darkseagreen"> "Titre du
-                                                    mail"</span>;
-                                                <span id="txtgrisnoir">//======> on cré le sujet du mail<br><br></span>
+                    $destinataire <span class="blue">=</span><span class="darkseagreen"> "TonMail@xxx.xxx"</span>;
+                    <span id="txtgrisnoir">//==> on cré l'email de réception<br></span>
+                    $sujet <span class="blue">=</span><span class="darkseagreen"> "Titre du mail"</span>;
+                    <span id="txtgrisnoir">//======> on cré le sujet du mail<br><br></span>
 
-                                                $mailheaders <span class="blue">=</span><span class="darkseagreen">
-                                                    "From:
-                                                    <span class="lightskyblue">$email $sujet</span> de <span
-                                                        class="lightskyblue">$Expediteur
-                                                    </span><span class="blue">\n</span>"</span>;<br>
-                                                $mailheaders <span class="blue">.=</span><span class="darkseagreen">
-                                                    "Reply-To:
-                                                    <span class="lightskyblue">$email</span><span
-                                                        class="blue">\n\n</span>"</span>;<br><br>
+                    $mailheaders <span class="blue">=</span><span class="darkseagreen"> "From:
+                    <span class="lightskyblue">$email $sujet</span> de <span class="lightskyblue">$Expediteur
+                    </span><span class="blue">\n</span>"</span>;<br>
+                    $mailheaders <span class="blue">.=</span><span class="darkseagreen"> "Reply-To:
+                    <span class="lightskyblue">$email</span><span class="blue">\n\n</span>"</span>;<br><br>
 
-                                                <span class="gold">mail</span> ($destinataire, $sujet, $msg,
-                                                $mailheaders);<br><br>
-                                                <span class="darkseagreen">
-                                                    <span class="gold">echo</span> "<span>
-                                                        << /span>HTML><span>
-                                                                << /span>HEAD>"<span class="lightskyblue">;</span><br>
-                                                                    <span class="gold">echo</span> "<span>
-                                                                        << /span>TITLE>Formulaire envoyé
-                                                                            !<span>
-                                                                                << /span>/TITLE><span>
-                                                                                        << /span>/HEAD><span>
-                                                                                                << /span>BODY>"<span
-                                                                                                        class="lightskyblue">;</span><br>
-                                                                                                    <span
-                                                                                                        class="gold">echo</span>
-                                                                                                    "<span>
-                                                                                                        << /span>H1
-                                                                                                            align=center>Merci,
-                                                                                                            <span
-                                                                                                                class="lightskyblue">$Expediteur</span>.<span>
-                                                                                                                <<
-                                                                                                                    /span>
-                                                                                                                    /H1>"<span
-                                                                                                                        class="lightskyblue">;</span><br>
-                                                                                                                    <span
-                                                                                                                        class="gold">echo</span>
-                                                                                                                    "<span>
-                                                                                                                        <<
-                                                                                                                            /span>
-                                                                                                                            P
-                                                                                                                            align=center>"<span
-                                                                                                                                class="lightskyblue">;</span><br>
-                                                                                                                            <span
-                                                                                                                                class="gold">echo</span>
-                                                                                                                            "Ton
-                                                                                                                            message
-                                                                                                                            à
-                                                                                                                            bien
-                                                                                                                            été
-                                                                                                                            transmit
-                                                                                                                            à:
-                                                                                                                            <span
-                                                                                                                                class="lightskyblue">$destinataire</span>"<span
-                                                                                                                                class="lightskyblue">;</span><br>
-                                                                                                                            <span
-                                                                                                                                class="gold">echo</span>
-                                                                                                                            "<span>
-                                                                                                                                <<
-                                                                                                                                    /span>
-                                                                                                                                    br><span>
-                                                                                                                                        <<
-                                                                                                                                            /span>
-                                                                                                                                            br>Il
-                                                                                                                                            a
-                                                                                                                                            reçu
-                                                                                                                                            ceci:<span>
-                                                                                                                                                <<
-                                                                                                                                                    /span>
-                                                                                                                                                    br><span>
-                                                                                                                                                        <<
-                                                                                                                                                            /span>
-                                                                                                                                                            br><span
-                                                                                                                                                                class="lightskyblue">$sujet</span><span>
-                                                                                                                                                                <<
-                                                                                                                                                                    /span>
-                                                                                                                                                                    br><span>
-                                                                                                                                                                        <<
-                                                                                                                                                                            /span>
-                                                                                                                                                                            br><span
-                                                                                                                                                                                class="lightskyblue">$msg</span><span>
-                                                                                                                                                                                <<
-                                                                                                                                                                                    /span>
-                                                                                                                                                                                    /P>"<span
-                                                                                                                                                                                        class="lightskyblue">;</span><br>
-                                                                                                                                                                                    <span
-                                                                                                                                                                                        class="gold">echo</span>
-                                                                                                                                                                                    "<span>
-                                                                                                                                                                                        <<
-                                                                                                                                                                                            /span>
-                                                                                                                                                                                            /BODY><span>
-                                                                                                                                                                                                <<
-                                                                                                                                                                                                    /span>
-                                                                                                                                                                                                    /HTML>"<span
-                                                                                                                                                                                                        class="lightskyblue">;</span><br>
-                                                                                                                                                                                            </span>
-                                                                                                                                                                                            ?>
-                                                                                                                                                                                    </span>
-                                                                                                                                                                            </span>
-                                                                                                                                                                            </p>
+                    <span class="gold">mail</span> ($destinataire, $sujet, $msg, $mailheaders);<br><br>
+                    <span class="darkseagreen">
+                        
+                    <span class="gold">echo</span> "<span>&lt;</span>HTML><span>&lt;</span>HEAD>"<span class="lightskyblue">;</span><br>
+                    <span class="gold">echo</span> "<span>&lt;</span>TITLE>Formulaire envoyé
+                    !<span>&lt;</span>/TITLE><span>&lt;</span>/HEAD><span>&lt;</span>BODY>"<span class="lightskyblue">;</span><br>
+                    <span class="gold">echo</span> "<span>&lt;</span>H1 align=center>Merci, <span
+                    class="lightskyblue">$Expediteur</span>.<span>&lt;</span>/H1>"<span class="lightskyblue">;</span><br>
+                    <span class="gold">echo</span> "<span>&lt;</span>P align=center>"<span class="lightskyblue">;</span><br>
+                    <span class="gold">echo</span> "Ton message à bien été transmit à: <span class="lightskyblue">$destinataire</span>"<span
+                    class="lightskyblue">;</span><br>
+                    <span class="gold">echo</span> "<span>&lt;</span>br><span>&lt;</span>br>Il a reçu ceci:<span>&lt;</span>br><span>&lt;</span>br><span
+                    class="lightskyblue">$sujet</span><span>&lt;</span>br><span>&lt;</span>br><span
+                    class="lightskyblue">$msg</span><span>&lt;</span>/P>"<span class="lightskyblue">;</span><br>
+                    <span class="gold">echo</span> "<span>&lt;</span>/BODY><span>&lt;</span>/HTML>"<span class="lightskyblue">;</span><br>
+                    </span>
+                    ?>
+                </span>
+            </span>
+            </p>
             </div>
         </div>
     </div>
@@ -620,7 +518,7 @@
                     même le faire; je l'ai aussi hébergé
                     <a href="https://jpgrenoble.000webhostapp.com/index.html" target="_blank"
                         class="JP-hover-text-violet" style="text-decoration: none;"><span>
-                            << /span>ici<span>></span></a>
+                            &lt;</span>ici<span>></span></a>
                     sur 000webhostapp ne moyennant aucune demande pécuniaire, mais un petit "Powered By 000webhost" en
                     guise de footer <span id="smile">&#128527;</span>.<br>
                     Ou simplement en prenant mon mail plus haut ( lorsqu'il y sera ).
