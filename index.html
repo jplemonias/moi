@@ -302,14 +302,16 @@
             <!-- Image contenu dans le troisieme contenu ( comprenons hors parallax ) -->
             <div class="JP-row JP-padding-32 JP-section">
                 <div class="vignettes JP-col m4 JP-container">
-                    <img src="public/img/code.jpg" class="JP-image JP-round ombre" style="width:100%"
+                    <img id="imgcode" src="public/img/code.jpg" class="JP-image JP-round ombre"
                         oncontextmenu="return false" onmousedown="return false">
 
                 </div>
                 <p><i style="float: right;"
                     class="fab fa-html5 fa-fw JP-hover-text-black JP-xxxlarge JP-margin-right"></i><span id="tcode">
                     L'html</span>
-                <div id="separ1" class="JP-col m8"></div>
+                </p>
+                <div class="separ JP-col m8"></div>
+                <p>
                 Pourquoi ces quatre langages ? Voyons ça un peu comme une rédaction interactive.
                 Avant de la rédiger en forme vous allez faire un brouillon. Imaginez que celui-ci soit l'html, nous
                 allons y écrire tout le contenu de la rédac.
@@ -322,11 +324,13 @@
                 <span class="white">&lt;</span><span class="lightskyblue">img</span><span
                 class="orange"> src</span><span class="lightskyblue">=</span>
                 <span class="darkseagreen">"Le/Chemin/DeLimage.jpg"</span><spanclass="white">></span><br>
-            </p>
-            <p><i style="float: right;"
+                </p>
+                <p><i style="float: right;"
                     class="fab fa-css3-alt fa-fw JP-hover-text-black JP-xxxlarge JP-margin-right"></i><span id="tcode">
                     Le css</span>
-                <div id="separ1" class="JP-col m8"></div>
+                </p>
+                <div class="separ JP-col m8"></div>
+                <p>
                 Une fois la rédaction écrite, on l'a dit c'est un brouillon donc, cela ne ressemble pas à grand
                 chose. Il faut le mettre en forme... Dans l'exemple de la balise
                 de l'image il faut donc l'informer de l'état d'affichage que nous souhaitons, en lui indiquant sa
@@ -349,11 +353,13 @@
                 class="green"> 0.5</span><span class="lightskyblue"> }</span>
                 <br>ici lorsque nous passons la souris sur l'image elle deviendra opaque à moitié, l'opacité étant
                 comprise entre 0 et 1.
-            </p>
-            <p><i style="float: right;"
+                </p>
+                <p><i style="float: right;"
                     class="fab fa-js-square fa-fw JP-hover-text-black JP-xxxlarge JP-margin-right"></i><span
                     id="tcode"> Le JavaScript</span>
-                <div id="separ1"></div>
+                </p>
+                <div class="separ"></div>
+                <p>
                 Le JavaScript va permettre de rendre encore plus dynamique votre ''rédaction interactive'' en
                 appelant des fonctions qui peuvent réaliser bien plus qu'un simple :hover.
                 Par exemple sur cette page un des codes JavaScript consiste à informer l'utilisateur que le
@@ -380,10 +386,12 @@
                 class="chartreuse">.innerText </span><span class="blue">=</span> <span
                 class="darkseagreen">"Formulaire incomplet"</span>;<br>}</span>
                 </span>
-            </p>
-            <p><i style="float: right;" class="fab fa-php fa-fw JP-hover-text-black JP-xxxlarge JP-margin-right"></i>
+                </p>
+                <p><i style="float: right;" class="fab fa-php fa-fw JP-hover-text-black JP-xxxlarge JP-margin-right"></i>
                 <span id="tcode">Le php</span>
-                <div id="separ1"></div>
+                </p>
+                <div class="separ"></div>
+                <p>
                 Jusqu'ici nous n’agissons que sur la partie client c'est à dire, plus simplement, que tes
                 informations traitées le sont que sur la machine de l'utilisateur.
                 Vous l'aurez peut être compris le php permet donc d'envoyer ou de recevoir des informations depuis,
@@ -426,7 +434,7 @@
 
                     <span class="gold">mail</span> ($destinataire, $sujet, $msg, $mailheaders);<br><br>
                     <span class="darkseagreen">
-                        
+
                     <span class="gold">echo</span> "<span>&lt;</span>HTML><span>&lt;</span>HEAD>"<span class="lightskyblue">;</span><br>
                     <span class="gold">echo</span> "<span>&lt;</span>TITLE>Formulaire envoyé
                     !<span>&lt;</span>/TITLE><span>&lt;</span>/HEAD><span>&lt;</span>BODY>"<span class="lightskyblue">;</span><br>
@@ -442,8 +450,8 @@
                     </span>
                     ?>
                 </span>
-            </span>
-            </p>
+                </span>
+                </p>
             </div>
         </div>
     </div>
