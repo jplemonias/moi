@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <link rel="icon" type="image/x-icon" href="public/img/ptitspoid.png">
 <link rel="stylesheet" href="public/css/hometuto.css">
+<link rel="stylesheet" href="public/css/maincss.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/d70a89f18c.js" crossorigin="anonymous"></script>
@@ -23,10 +23,9 @@
     }
 
     .bgimg {
-        background-image: url(public/img/rm.png);
+        background: #ffffff80 url(public/img/rm.png) no-repeat center;
+        background-size: contain;
         min-height: 100%;
-        background-position: center;
-        background-size: cover;
     }
 
     .titrag {
@@ -43,6 +42,39 @@
             1px -1px 0em #04c4b4, 1px 1px 0em #04c4b4,
             -1px -1px 0.5em #04c4b4, 1px -1px 0.5em #04c4b4,
             1px 1px 0.5em #04c4b4;
+    }
+
+    #pub {
+        padding: 25px 25px 0 25px;
+        text-align: right;
+    }
+
+    #btnneonD {
+        border-radius: 20px 0 20px 20px;
+        box-shadow: 2px 2px 6px #565656, -2px 2px 4px #565656, 2px -2px 4px #565656, -2px -2px 4px #565656, inset 2px 2px 4px #565656, inset -2px 2px 4px #565656, inset 2px -2px 4px #565656, inset -2px -2px 4px #565656;
+        border: 1px solid #04c4b4;
+        background: -webkit-gradient(linear, left top, right top, from(#04c4b4), to(#d400ff));
+        background: linear-gradient(90deg, #04c4b4, #d400ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+        -webkit-text-decoration-color: #04c4b4 !important;
+        text-decoration-color: #04c4b4 !important;
+    }
+
+    #btninsta {
+        border-radius: 0 20px 20px 20px;
+        box-shadow: 2px 2px 6px #565656, -2px 2px 4px #565656, 2px -2px 4px #565656, -2px -2px 4px #565656, inset 2px 2px 4px #565656, inset -2px 2px 4px #565656, inset 2px -2px 4px #565656, inset -2px -2px 4px #565656;
+        border: 1px solid #d400ff;
+        background: -webkit-gradient(linear, left top, right top, from(#04c4b4), to(#d400ff));
+        background: linear-gradient(90deg, #04c4b4, #d400ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+        -webkit-text-decoration-color: #04c4b4 !important;
+        text-decoration-color: #04c4b4 !important;
     }
 
     .animhaut {
@@ -89,18 +121,20 @@
 
         #pub {
             padding: 25px 0 0 5px !important;
+            
         }
     }
+
     .fa-instagram:before {
-    content: "\f16d";
-}
+        content: "\f16d";
+    }
 </style>
 
 <body>
 
     <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-        <div id='pub' style='overflow:hidden;width: max-content;padding: 25px 0 0 25px;'>
-            <a href='/moi/tutos_v1/' style="clear: both;">
+        <div id='pub'>
+            <a  class="rad6" href='/moi/tutos_v1/' style="width: max-content; float:right; background-color: #00000082; padding: 0 10px 10px;">
                 <!-- Emplacenrt pour redirection-->
                 <span class='psycho-logo'>Psycho <span class='dotcom tcode'>les bons</span> Tutos</aspan><br>
                     <span class=' psycho-logo2  tcode2'
@@ -113,11 +147,15 @@
             <h2 class="w3-xlarge w3-center animbas titrag2">*BIENTÔT DISPONIBLE</h2>
         </div>
         <div style="position: absolute;bottom: 10px;right: 10px;left:10px">
-            <p class="w3-center">artiste:<br>Moi</p>
-            <a id="btnneonD" class="boutons JP-padding-large testbg btninstafoot" href=""> Mon 
+            <span class="btninstafoot" style=" background-color: #00000082; display: inline-flex;">
+                <a id="btnneonD" class="boutons JP-padding-large testbg btninstafoot" href=""> Mon
                 <i class="fab fa-instagram"></i></a>
-            <a id="btninsta" class="w3-right boutons JP-padding-large testbg btnneonDfoot"  style="border: 1px solid #d400ff;" onclick="window.close()">
+            </span>
+            <span class="btnneonDfoot" style=" background-color: #00000082; display: inline-flex; float: right;">
+                <a id="btninsta" class="w3-right boutons JP-padding-large testbg btnneonDfoot"
+                 onclick="window.close()">
                 <i class="fas fa-reply"></i> Retour</a>
+            </span>
         </div>
 
     </div>
