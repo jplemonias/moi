@@ -23,13 +23,15 @@
 
 .btnNeon.onoffTurq,
 .btnNeon.onoffTurq:hover,
+.btnNeon.onoffTurqNone,
+.btnNeon.onoffTurqNone:hover,
 .btnNeon.onoffViol,
 .btnNeon.onoffViol:hover{
     text-decoration:none;
     margin: 1px 0;
 }
 
-.onoffTurq {
+.onoffTurq, .onoffTurqNone {
     border-color: #04c4b483;
     box-shadow: 2px 2px 5px #04c4b438,
        -2px 2px 5px #04c4b438,
@@ -39,6 +41,27 @@
        inset -2px 2px 5px #04c4b438,
        inset 2px -2px 5px #04c4b438,
        inset -2px -2px 5px #04c4b438;
+    background: -webkit-gradient(linear,left top,right top,
+       from(#04c4b4),to(#d400ff));
+    background: linear-gradient(90deg,#04c4b4,#d400ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    -webkit-text-decoration-color: #04c4b4!important;
+    text-decoration-color: #04c4b4!important;
+}
+
+.onoffTurqNone:hover {
+    border-color: #04c4b456;
+    box-shadow: 2px 2px 5px #03837838,
+       -2px 2px 5px #03837838,
+       2px -2px 5px #03837838,
+       -2px -2px 5px #03837838,
+       inset 2px 2px 5px #03837838,
+       inset -2px 2px 5px #03837838,
+       inset 2px -2px 5px #03837838,
+       inset -2px -2px 5px #03837838;
     background: -webkit-gradient(linear,left top,right top,
        from(#04c4b4),to(#d400ff));
     background: linear-gradient(90deg,#04c4b4,#d400ff);
