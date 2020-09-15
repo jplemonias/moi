@@ -53,8 +53,12 @@
     }
 
     #pub {
-        padding: 25px 25px 0 25px;
+        background-color: #00000082;
+        padding: 0 10px 10px;
+        margin: 25px 25px 0 25px;
         text-align: right;
+        width: max-content;
+        float: right;
     }
 
     #btnneonD {
@@ -119,7 +123,7 @@
         }
     }
 
-    @media all and (max-width:488px) {
+    @media all and (max-width:535px) {
 
         .psycho-logo {
             font-size: 31px !important;
@@ -128,23 +132,56 @@
         }
 
         #pub {
-            padding: 25px 0 0 5px !important;
-
+            width: auto;
         }
     }
+
+    @media all and (max-width:1242px) {
+
+        .bgimg2 {
+            background-position: center top 86px;
+        }
+    }
+
+    @media all and (max-width:426px) {
+        .bgimg2 {
+            background-position: center top 120px;
+        }
+
+    }
+
+@media all and (max-width:371px) {
+    .bgimg2 {
+        background-position: center top 145px;
+    }
+    .bgimg {
+        background-position: center bottom 60px;
+    }
+}
+
+@media all and (max-width:325px) {
+    #pub {
+        width: min-content;
+    }
+    .bgimg2 {
+        background-position: center top 200px;
+    }
+    .w3-display-middle .w3-jumbo {
+        font-size: 24px!important;
+    }
+}
 
     .fa-instagram:before {
         content: "\f16d";
     }
 </style>
 
-<body>
+<body style="min-width: 260px;">
 
     <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
         <div class="bgimg2">
-            <div id='pub'>
-                <a class="rad6" href='/moi/tutos_v1/'
-                    style="width: max-content; float:right; background-color: #00000082; padding: 0 10px 10px;">
+            <div id='pub' class="rad6">
+                <a href='/moi/tutos_v1/'>
                     <!-- Emplacenrt pour redirection-->
                     <span class='psycho-logo'>Psycho <span class='dotcom tcode'>les bons</span> Tutos</aspan><br>
                         <span class=' psycho-logo2  tcode2'
