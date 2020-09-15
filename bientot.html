@@ -23,9 +23,17 @@
     }
 
     .bgimg {
-        background: #ffffff80 url(public/img/rm.png) no-repeat center;
+        background: #ffffff80 url(public/img/rm2.png) no-repeat center bottom;
         background-size: contain;
         min-height: 100%;
+    }
+
+    .bgimg2 {
+        background: transparent url(public/img/rm3.png) no-repeat center top;
+        background-size: contain;
+        min-height: 100%;
+        position: absolute;
+        min-width: 100%
     }
 
     .titrag {
@@ -121,7 +129,7 @@
 
         #pub {
             padding: 25px 0 0 5px !important;
-            
+
         }
     }
 
@@ -133,31 +141,34 @@
 <body>
 
     <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-        <div id='pub'>
-            <a  class="rad6" href='/moi/tutos_v1/' style="width: max-content; float:right; background-color: #00000082; padding: 0 10px 10px;">
-                <!-- Emplacenrt pour redirection-->
-                <span class='psycho-logo'>Psycho <span class='dotcom tcode'>les bons</span> Tutos</aspan><br>
-                    <span class=' psycho-logo2  tcode2'
-                        style="font-family:'HP','Segoe UI',Arial,sans-serif;float: right;">DEVELOPPONS ENSEMBLE</span>
-            </a>
+        <div class="bgimg2">
+            <div id='pub'>
+                <a class="rad6" href='/moi/tutos_v1/'
+                    style="width: max-content; float:right; background-color: #00000082; padding: 0 10px 10px;">
+                    <!-- Emplacenrt pour redirection-->
+                    <span class='psycho-logo'>Psycho <span class='dotcom tcode'>les bons</span> Tutos</aspan><br>
+                        <span class=' psycho-logo2  tcode2'
+                            style="font-family:'HP','Segoe UI',Arial,sans-serif;float: right;">DEVELOPPONS
+                            ENSEMBLE</span>
+                </a>
+            </div>
+            <div class="w3-display-middle">
+                <h1 class="w3-jumbo w3-center animhaut titrag">COMING SOON*</h1>
+                <div id="separ2" style="margin:auto;width:60%"></div>
+                <h2 class="w3-xlarge w3-center animbas titrag2">*BIENTÔT DISPONIBLE</h2>
+            </div>
+            <div style="position: absolute;bottom: 10px;right: 10px;left:10px">
+                <span class="btninstafoot" style=" background-color: #00000082; display: inline-flex;">
+                    <a id="btnneonD" class="boutons JP-padding-large testbg btninstafoot" href=""> Mon
+                        <i class="fab fa-instagram"></i></a>
+                </span>
+                <span class="btnneonDfoot" style=" background-color: #00000082; display: inline-flex; float: right;">
+                    <a id="btninsta" class="w3-right boutons JP-padding-large testbg btnneonDfoot"
+                        onclick="window.close()">
+                        <i class="fas fa-reply"></i> Retour</a>
+                </span>
+            </div>
         </div>
-        <div class="w3-display-middle">
-            <h1 class="w3-jumbo w3-center animhaut titrag">COMING SOON*</h1>
-            <div id="separ2" style="margin:auto;width:60%"></div>
-            <h2 class="w3-xlarge w3-center animbas titrag2">*BIENTÔT DISPONIBLE</h2>
-        </div>
-        <div style="position: absolute;bottom: 10px;right: 10px;left:10px">
-            <span class="btninstafoot" style=" background-color: #00000082; display: inline-flex;">
-                <a id="btnneonD" class="boutons JP-padding-large testbg btninstafoot" href=""> Mon
-                <i class="fab fa-instagram"></i></a>
-            </span>
-            <span class="btnneonDfoot" style=" background-color: #00000082; display: inline-flex; float: right;">
-                <a id="btninsta" class="w3-right boutons JP-padding-large testbg btnneonDfoot"
-                 onclick="window.close()">
-                <i class="fas fa-reply"></i> Retour</a>
-            </span>
-        </div>
-
     </div>
 
 </body>
