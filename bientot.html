@@ -18,171 +18,21 @@
     }
 
     body,
-    html {
+    html,
+    #corpBientot {
         height: 100%
     }
 
-    .bgimg {
-        background: #ffffff80 url(public/img/rm2.png) no-repeat center bottom;
-        background-size: contain;
-        min-height: 100%;
-    }
-
-    .bgimg2 {
-        background: transparent url(public/img/rm3.png) no-repeat center top;
-        background-size: contain;
-        min-height: 100%;
-        position: absolute;
-        min-width: 100%
-    }
-
-    .titrag {
-        color: #fff;
-        text-shadow: -1px -1px 0em #d400ff,
-            1px -1px 0em #d400ff, 1px 1px 0em #d400ff,
-            -1px -1px 0.5em #d400ff, 1px -1px 0.5em #d400ff,
-            1px 1px 0.5em #d400ff;
-    }
-
-    .titrag2 {
-        color: #fff;
-        text-shadow: -1px -1px 0em #04c4b4,
-            1px -1px 0em #04c4b4, 1px 1px 0em #04c4b4,
-            -1px -1px 0.5em #04c4b4, 1px -1px 0.5em #04c4b4,
-            1px 1px 0.5em #04c4b4;
-    }
-
-    #pub {
-        background-color: #00000082;
-        padding: 0 10px 10px;
-        margin: 25px 25px 0 25px;
-        text-align: right;
-        width: max-content;
-        float: right;
-    }
-
-    #btnneonD {
-        border-radius: 20px 0 20px 20px;
-        box-shadow: 2px 2px 6px #565656, -2px 2px 4px #565656, 2px -2px 4px #565656, -2px -2px 4px #565656, inset 2px 2px 4px #565656, inset -2px 2px 4px #565656, inset 2px -2px 4px #565656, inset -2px -2px 4px #565656;
-        border: 1px solid #04c4b4;
-        background: -webkit-gradient(linear, left top, right top, from(#04c4b4), to(#d400ff));
-        background: linear-gradient(90deg, #04c4b4, #d400ff);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -webkit-box-decoration-break: clone;
-        box-decoration-break: clone;
-        -webkit-text-decoration-color: #04c4b4 !important;
-        text-decoration-color: #04c4b4 !important;
-    }
-
-    #btninsta {
-        border-radius: 0 20px 20px 20px;
-        box-shadow: 2px 2px 6px #565656, -2px 2px 4px #565656, 2px -2px 4px #565656, -2px -2px 4px #565656, inset 2px 2px 4px #565656, inset -2px 2px 4px #565656, inset 2px -2px 4px #565656, inset -2px -2px 4px #565656;
-        border: 1px solid #d400ff;
-        background: -webkit-gradient(linear, left top, right top, from(#04c4b4), to(#d400ff));
-        background: linear-gradient(90deg, #04c4b4, #d400ff);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -webkit-box-decoration-break: clone;
-        box-decoration-break: clone;
-        -webkit-text-decoration-color: #04c4b4 !important;
-        text-decoration-color: #04c4b4 !important;
-    }
-
-    .animhaut {
-        position: relative;
-        animation: animhaut 0.4s
-    }
-
-    @keyframes animhaut {
-        from {
-            top: -300px;
-            opacity: 0
-        }
-
-        to {
-            top: 0;
-            opacity: 1
-        }
-    }
-
-    .animbas {
-        position: relative;
-        animation: animbas 1s
-    }
-
-    @keyframes animbas {
-        from {
-            bottom: -300px;
-            opacity: 0
-        }
-
-        to {
-            bottom: 0;
-            opacity: 1
-        }
-    }
-
-    @media all and (max-width:535px) {
-
-        .psycho-logo {
-            font-size: 31px !important;
-            letter-spacing: 1px !important;
-            padding: 0;
-        }
-
-        #pub {
-            width: auto;
-        }
-    }
-
-    @media all and (max-width:1242px) {
-
-        .bgimg2 {
-            background-position: center top 86px;
-        }
-    }
-
-    @media all and (max-width:426px) {
-        .bgimg2 {
-            background-position: center top 120px;
-        }
-
-    }
-
-@media all and (max-width:371px) {
-    .bgimg2 {
-        background-position: center top 145px;
-    }
-    .bgimg {
-        background-position: center bottom 60px;
-    }
-}
-
-@media all and (max-width:325px) {
-    #pub {
-        width: min-content;
-    }
-    .bgimg2 {
-        background-position: center top 200px;
-    }
-    .w3-display-middle .w3-jumbo {
-        font-size: 24px!important;
-    }
-}
-
-    .fa-instagram:before {
-        content: "\f16d";
-    }
 </style>
 
-<body style="min-width: 260px;">
+<body style="min-width: 260px; height: 100%;">
 
-    <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+    <div id="corpBientot" class="w3-display-container w3-animate-opacity w3-text-white">
+        <div class="bgimg">
         <div class="bgimg2">
-            <div id='pub' class="rad6">
+            <div id='head_bientot' class="rad6">
                 <a href='/moi/tutos_v1/'>
-                    <!-- Emplacenrt pour redirection-->
+                    <!-- Emplacement pour redirection-->
                     <span class='psycho-logo'>Psycho <span class='dotcom tcode'>les bons</span> Tutos</aspan><br>
                         <span class=' psycho-logo2  tcode2'
                             style="font-family:'HP','Segoe UI',Arial,sans-serif;float: right;">DEVELOPPONS
@@ -190,22 +40,23 @@
                 </a>
             </div>
             <div class="w3-display-middle">
-                <h1 class="w3-jumbo w3-center animhaut titrag">COMING SOON*</h1>
+                <h1 class="w3-jumbo w3-center animhaut titrag_bientot1">COMING SOON*</h1>
                 <div id="separ2" style="margin:auto;width:60%"></div>
-                <h2 class="w3-xlarge w3-center animbas titrag2">*BIENTÔT DISPONIBLE</h2>
+                <h2 class="w3-xlarge w3-center animbas titrag_bientot2">*BIENTÔT DISPONIBLE</h2>
             </div>
-            <div style="position: absolute;bottom: 10px;right: 10px;left:10px">
-                <span class="btninstafoot" style=" background-color: #00000082; display: inline-flex;">
-                    <a id="btnneonD" class="boutons JP-padding-large testbg btninstafoot" href=""> Mon
+        </div>
+    </div>
+            <footer style="position: absolute; bottom: 10px; right: 10px; left:10px; min-width: 240px">
+                <span class="rad2 jp-inlFlex" style=" background-color: #00000054">
+                    <a class="boutons rad2 btnNeon onoffTurq" href=""> Mon
                         <i class="fab fa-instagram"></i></a>
                 </span>
-                <span class="btnneonDfoot" style=" background-color: #00000082; display: inline-flex; float: right;">
-                    <a id="btninsta" class="w3-right boutons JP-padding-large testbg btnneonDfoot"
+                <span class="rad1 jp-fr jp-inlFlex" style=" background-color: #00000054">
+                    <a class=" boutons rad1 btnNeon onoffViol"
                         onclick="window.close()">
                         <i class="fas fa-reply"></i> Retour</a>
                 </span>
-            </div>
-        </div>
+            </footer>
     </div>
 
 </body>
