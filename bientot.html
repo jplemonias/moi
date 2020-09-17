@@ -23,6 +23,143 @@
         height: 100%
     }
 
+    #corpBientot {
+    background: linear-gradient(0.25turn,#d400ff,#04c4b4);
+    background-size: contain;
+}
+.bgimg {
+    background: url(../img/rm2.png) no-repeat center bottom;
+    background-size: contain;
+    min-height: 100%;
+}
+
+.bgimg2 {
+    background: url(../img/rm3.png) no-repeat center top;
+    background-size: contain;
+    min-height: 100%;
+    position: absolute;
+    min-width: 100%
+}
+#head_bientot {
+    background-color: #00000082;
+    padding: 0 10px 10px;
+    margin: 25px 25px 0 25px;
+    text-align: right;
+    width: max-content;
+    float: right;
+}
+
+#head_bientot a {
+    text-decoration: none;
+}
+
+#head_bientot:hover .psycho-logo{
+    background: linear-gradient(-45deg, #04c4b4, #d400ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.titrag_bientot1 {
+    color: #fff;
+    text-shadow: -1px -1px 0em #d400ff,
+        1px -1px 0em #d400ff, 1px 1px 0em #d400ff,
+        -1px -1px 0.5em #d400ff, 1px -1px 0.5em #d400ff,
+        1px 1px 0.5em #d400ff;
+}
+
+.titrag_bientot2 {
+    color: #fff;
+    text-shadow: -1px -1px 0em #04c4b4,
+        1px -1px 0em #04c4b4, 1px 1px 0em #04c4b4,
+        -1px -1px 0.5em #04c4b4, 1px -1px 0.5em #04c4b4,
+        1px 1px 0.5em #04c4b4;
+}
+
+.animhaut {
+    position: relative;
+    animation: animhaut 0.4s
+}
+
+@keyframes animhaut {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+.animbas {
+    position: relative;
+    animation: animbas 1s
+}
+
+@keyframes animbas {
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+@media all and (max-width: 535px) {
+    .psycho-logo {
+        font-size: 31px !important;
+        letter-spacing: 1px !important;
+        padding: 0;
+    }
+
+    #head_bientot {
+        width: auto;
+    }
+
+    .w3-display-middle.w3-jumbo {
+        font-size: 31px !important;
+    }
+}
+
+@media all and (max-width: 1242px) {
+    .bgimg2 {
+        background-position: center top 86px;
+    }
+}
+
+@media all and (max-width: 426px) {
+    .bgimg2 {
+        background-position: center top 120px;
+    }
+}
+
+@media all and (max-width: 371px) {
+    .bgimg2 {
+        background-position: center top 145px;
+    }
+
+    .bgimg {
+        background-position: center bottom 60px;
+    }
+}
+
+@media all and (max-width: 325px) {
+    #head_bientot {
+        width: min-content;
+    }
+
+    .bgimg2 {
+        background-position: center top 200px;
+    }
+
+    .w3-display-middle .w3-jumbo {
+        font-size: 24px!important;
+    }
+}
 </style>
 
 <body style="min-width: 260px; height: 100%;">
