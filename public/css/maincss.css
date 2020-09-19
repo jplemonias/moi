@@ -1,12 +1,14 @@
 .jp-fr {
     float: right;
 }
-
 .jp-fl {
     float: left;
 }
 .jp-inlFlex {
     display: inline-flex;
+}
+.jp-txtTrans {
+    color: transparent;
 }
 /******BOUTONS neon******/
 

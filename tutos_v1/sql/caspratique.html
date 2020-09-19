@@ -11,6 +11,7 @@
         content="Tutoriels d'aide a l'apprentissage de construction Web faciles à comprendre comprenant de nombreux exemples d'utilisation HTML, CSS, JavaScript, SQL, PHP.">
     <link rel="icon" type="image/x-icon" href="../../public/img/ptitspoid.png">
     <link rel="stylesheet" href="../../public/css/hometuto.css">
+    <link rel="stylesheet" href="../../public/css/maincss.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Source Code Pro' rel='stylesheet'>
@@ -2191,10 +2192,11 @@
                     correspondant à id_genre de la première table.
                 </p>
                 <div class="degrad-Vertical">
-                    <div class="w3-code sqlHigh notranslate w3-card-2">
+                    <div class="w3-code sqlHigh notranslate w3-card-2 clickViewable">
+                        du code est volontairement transparent cliquez pour afficher le code au complet.<br>
                         &gt; CREATE TABLE film(id_film INTEGER PRIMARY KEY AUTOINCREMENT,<br>
                         titre VARCHAR(60) NOT NULL UNIQUE, duree INTEGER NOT NULL,<br>
-                        <span style="color: transparent;">id_genre INTEGER NOT NULL</span>);
+                        <span class="jp-txtTrans">id_genre INTEGER NOT NULL</span>);
                     </div>
                 </div>
                 <p>
@@ -2203,18 +2205,18 @@
                     Et pour vous assurer de la bonne réussite de ces derniers exécutez les commandes plus bas.
                 </p>
                 <div class="degrad-Vertical">
-                    <div class="w3-code sqlHigh notranslate w3-card-2">
-                        &gt; <span style="color: transparent;">INSERT INTO film(titre, duree, id_genre) VALUES('Dead
+                    <div class="w3-code sqlHigh notranslate w3-card-2 clickViewable">
+                        &gt; <span class="jp-txtTrans">INSERT INTO film(titre, duree, id_genre) VALUES('Dead
                             Pool', 108, 1);<br></span>
-                        &gt; <span style="color: transparent;">INSERT INTO film(titre, duree, id_genre) VALUES('Paul',
+                        &gt; <span class="jp-txtTrans">INSERT INTO film(titre, duree, id_genre) VALUES('Paul',
                             102, 1);<br></span>
-                        &gt; <span style="color: transparent;">INSERT INTO film(titre, duree, id_genre)
+                        &gt; <span class="jp-txtTrans">INSERT INTO film(titre, duree, id_genre)
                             VALUES('Memento', 120, 2);<br></span>
-                        &gt; <span style="color: transparent;">INSERT INTO film(titre, duree, id_genre) VALUES('Les
+                        &gt; <span class="jp-txtTrans">INSERT INTO film(titre, duree, id_genre) VALUES('Les
                             Rivières pourpres', 106, 2);<br></span>
-                        &gt; <span style="color: transparent;">INSERT INTO film(titre, duree, id_genre)
+                        &gt; <span class="jp-txtTrans">INSERT INTO film(titre, duree, id_genre)
                             VALUES('Chocolat', 119,3);<br></span>
-                        &gt; <span style="color: transparent;">INSERT INTO film(titre, duree, id_genre) VALUES('300',
+                        &gt; <span class="jp-txtTrans">INSERT INTO film(titre, duree, id_genre) VALUES('300',
                             117, 3);</span>
                     </div>
                 </div>
@@ -2274,8 +2276,8 @@
                     Et enfin lier dans film l'id du genre de la table genre
                 </p>
                 <div class="degrad-Vertical">
-                    <div class="w3-code sqlHigh notranslate w3-card-2">
-                        &gt; <span style="color: transparent;">SELECT film.titre, genre.lib_genre FROM film<br>JOIN
+                    <div class="w3-code sqlHigh notranslate w3-card-2 clickViewable">
+                        &gt; <span class="jp-txtTrans">SELECT film.titre, genre.lib_genre FROM film<br>JOIN
                             genre ON film.id_genre = genre.id_genre;</span>
                     </div>
                 </div>
@@ -2607,7 +2609,7 @@
     </div>
 
     </div>
-    <script src="/lib/w3schools_footer.js"></script>
+    <script type="application/javascript" src="../../public/js/txtHidden.js"></script>
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
